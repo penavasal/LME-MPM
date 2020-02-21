@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+\message{ !name(main.tex)}%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % This is a general template file for the LaTeX package SVJour
 % for Springer journals.          Springer Heidelberg 2010/09/16
@@ -124,6 +124,9 @@ grestore
 \journalname{Computational Particle Mechanics}
 %
 \begin{document}
+
+\message{ !name(main.tex) !offset(-3) }
+
 
 \title{Suitability of the local-maximum entropy approximation under
   the Material Point Method framework for dynamic problems. \thanks{Funding: This
@@ -598,14 +601,14 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
 \end{algorithmic}
 \end{algorithm} 
 
-\begin{figure}\sidecaption
+\begin{figure*}\sidecaption
   \centering
   \resizebox{0.6\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/MPM_scheme}
   }
   \caption{MPM standard algorithm.}
   \label{fig:MPM_algorithm}
-\end{figure}
+\end{figure*}
 
 \section{Local max-ent approximants}
 \label{sec:local-max-ent}
@@ -1145,3 +1148,5 @@ bar \ref{fig:stress_analytics_dyka} as is demanded in \cite{Dyka1995}.
 %%% TeX-master: t
 %%% End:
 
+
+\message{ !name(main.tex) !offset(-1152) }
