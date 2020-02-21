@@ -1,0 +1,22 @@
+\begin{tikzpicture} 
+  \scaling{2}; 
+  % Nodos 
+  \point{a}{0}{1};
+  \point{b}{3.75}{1};
+  \point{c}{5}{1};
+  % Barras
+  \beam{2}{a}{b};
+  \beam{2}{b}{c};
+  % Apoyos
+  \support{3}{a}[270];
+  % Fuerzas
+  \lineload{4}{b}{c}[1][0.2];
+  \notation{5}{b}{c}[$5\ m/s$][.5][below][2];
+  % Nombres de nodos
+  \notation{1}{a}{A}[below right];
+  \notation{1}{b}{B}[below right];
+  \notation{1}{c}{C}[below right];
+  % Cotas
+  \dimensioning{1}{a}{b}{0.5}[{\unit[3/4]{L}}];
+  \dimensioning{1}{b}{c}{0.5}[{\unit[1/4]{L}}];
+\end{tikzpicture}
