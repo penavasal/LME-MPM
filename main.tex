@@ -206,12 +206,17 @@ under the dynamic regime by other researchers like Navas {\it et al.}
 (2018)\cite{Navas2018a} and Li {\it et al.} (2012)\cite{Li2012} for
 Optimal Transportation Meshfree (\textbf{OTM}) method.
 
-a comparison between both methods employing \textit{max-ent}  shape
-function is performed in this paper
-
-as well a parametric study for the $\gamma$ parameter
-
-finally, conclusions and future research topics are exposed
+The article is organized as follows. Section \ref{sec:Notation}
+briefly reviews the notation here employed. Next, Section \ref{sec:derivation-mpm}
+is devoted to present briefly the governing equations of the elastic
+problem, the variational formulation and the Galerkin procedure. In Section \ref{sec:epc-algor-mpm} an explicit predictor-corrector
+time integration scheme for the MPM is proposed. Section
+\ref{sec:local-max-ent} briefly reviews the local \textit{max-ent}
+basis functions here employed. In Section \ref{sec:dynamic-benchmark}
+a comparison between both methods MPM and OTM employing \textit{max-ent} shape
+function is performed as well a parametric study for the $\gamma$
+parameter. Finally, conclusions and future research topics are exposed
+in Section \ref{sec:conclusions}.
 
 \section{Notation}
 \label{sec:Notation}
@@ -220,20 +225,30 @@ In what follows, we will adopt the following convention:
   \centering
   \caption{Physical variables involved in the problem}
   \label{tab:notation-table}
-  \begin{tabular}{c c}
-    $\rho$ & Density field \\
-    $\vect{a}$ & Acceleration field \\
-    $\vect{v}$ & Velocity field \\
-    $\vect{u}$ & Displacement field \\
-    $\tens{\sigma}$ & Cauchy stress tensor \\
-    $\tens{\varepsilon}$ & Cauchy strain tensor\\
-    $\tens{D}$ & Constitutive tensor \\
+  \begin{tabular}{c c c}
+    $\rho$ & Density field & Scalar \\
+    $\vect{a}$ & Acceleration field & First order tensor \\
+    $\vect{v}$ & Velocity field & First order tensor \\
+    $\vect{u}$ & Displacement field & Second order tensor \\
+    $\tens{\sigma}$ & Cauchy stress tensor & Second order tensor \\
+    $\tens{\varepsilon}$ & Cauchy strain tensor & Second order tensor \\
+    $\tens{D}$ & Constitutive tensor & Fourth order tensor\\
   \end{tabular}
 \end{table}
 
-The subscript $p$ is used to define a particle variable. While the subscript $I$ is reserved in this
-notation for denoting nodal variables. 
+The subscript $p$ is used to define a particle variable. While the
+subscript $I$ is reserved in this notation for denoting nodal
+variables.
 
+The superscript $\psi$ involves a virtual magnitude.
+
+$\dot{\qed}$ 
+where $\Div{\qed}$ denotes the divergence operator.
+
+where $\GradS{\qed}$ denotes the symmetric part of the gradient
+operation. 
+
+$\varGamma_d$  $\varGamma_n$
 \section{Derivation of the MPM}
 \label{sec:derivation-mpm}
 In this section, we provide an overview of the standard explicit MPM
@@ -247,37 +262,35 @@ algorithmic description of the process.
 
 \subsection{Governing equations }
 \label{sec:governing-equations}
-In the MPM approach a continuum is considered. The continuum behaviour
-can be described by a set of governing equations which are
-
-the balance of momentum equation
+In the MPM approach a continuum is considered. Let define a
+$\varOmega$ domain occupied by an elastic body, and $\partial
+\varOmega$ the boundary of the domain, where $\partial
+\varOmega = \Gamma_d \bigcup \Gamma_n$ and $\Gamma_d \cap  \Gamma_n =
+\emptyset$. The behaviour of the continuum can be described by a set
+of governing equations which are (i) the balance of momentum equation
 \begin{equation}
   \label{eq:Balance-momentum}
 \rho \vect{a} = \Div{\tens{\sigma}} + \rho \vect{b},
 \end{equation}
-where $\Div{\qed}$ denotes the divergence operator. To ensure that the
-velocity field is compatible with the strain field is necessary that
-them satisfy the compatibility equation,
+next (ii) the compatibility equation with ensure that the velocity
+field is compatible with the Cauchy strain field,
 \begin{equation}
   \label{eq:Compatibility-equation}
   \dot{\tens{\varepsilon}} = \GradS{\vect{v}} = \frac{1}{2}\left(
     \Grad{\vect{v}} +  \GradT{\vect{v}} \right),
 \end{equation}
-where $\GradS{\qed}$ denotes the symmetric part of the gradient
-operation. Thorough the constitutive equation, the rate of the Cauchy stress
-tensor is defined to be
+later (iii) the constitutive equation, which relates the rate of Cauchy strain
+tensor with the rate of Cauchy stress tensor,
 \begin{equation}
   \label{eq:Constitutive-equation}
 \dot{\tens{\sigma}} = \tens{D} \colon \dot{\tens{\varepsilon}},
 \end{equation}
-where $\tens{D}$ is the classical elasticity tensor. Finally we
-introduce the total derivative expression over the density field,
+finally we introduce (iv) the mass conservation, which if obtained by
+setting to zero the total derivative of the density field,
 \begin{equation}
   \label{eq:Rho-material-derivative}
-\frac{D \rho}{D t} = \dot{\rho} + \rho \Grad{\vect{v}}.
+  \frac{D \rho}{D t} = \dot{\rho} + \rho \Grad{\vect{v}} = 0.
 \end{equation}
-Where if we impose $\frac{D \rho}{D t}$ to be zero, the conservation
-of mass is guarantee.
 
 \subsection{Variational formulation}
 \label{sec:variational-formulation}
@@ -308,14 +321,15 @@ its weak form.
 
 \subsection{Galerkin procedure}
 \label{sec:Galerkin-procedure}
-In order to arrive to a finite set of equations, the continuum domain
+In order to arrive to a finite set of equations, in contrast with the
+FEM, in the MPM a double discretization procedure is performed as we will
+describe here below. First, the continuum domain
 $\Omega$ is discretized with a finite sum of material points (in the
-following particles), each one represent a part of the discretized domain $\Omega_p$ with $p = 1,2\ldots ,N_p$
-where $N_p$ is the number of particles. The material point $\vec{x}_p$ is
-defined at the centroid of each $\Omega_p$. Further, a computational grid
-is formed of a finite set of grid points with coordinates $\vec{x}_I\
-, I = 1,2\ldots ,N_n$, where $N_n$ is the number of grid nodes.
-
+following particles), each one
+represent a part of the discretized domain $\varOmega_p \subset
+\varOmega$ with $p = 1,2\ldots ,N_p$ where $N_p$ is the number of
+particles. The material point $\vec{x}_p$ is defined at the centroid
+of each $\Omega_p$, figure \ref{fig:MPM-discretization}.
 \begin{figure}\sidecaption
   \centering
   \resizebox{\hsize}{!}{
@@ -326,11 +340,12 @@ is formed of a finite set of grid points with coordinates $\vec{x}_I\
 \end{figure}
 
 Each material point is assigned with initial values of position,
-velocity, mass, volume and stress denoted by $\vec{x}_p$,  $\vec{v}_p$, $m_p$,  $V_p$ and $\tens{\sigma}_p$. The problem is then integrated using a discrete number of time
-steps $k = 1\ldots ,Nt$, where $k$ is the current time step and $N_t$
-is the total number of time steps.  So employing the definition of the
-material integral, individual terms of \eqref{eq:BalanceMomentum_wf}
-are solved as follows. 
+velocity, mass, volume and stress denoted by $\vec{x}_p$,
+$\vec{v}_p$, $m_p$,  $V_p$ and $\tens{\sigma}_p$, but also the
+virtual field $\vect{v}^{\psi}_{p}$. So employing the definition of the
+material integral, where we recover the Riemann integral definition as
+an addition  of a finite set of points. Therefore individual terms in
+\eqref{eq:BalanceMomentum_wf} are solved as follows. 
 \begin{itemize}
 \item Acceleration forces :
 \begin{equation}
@@ -342,7 +357,7 @@ are solved as follows.
   \begin{equation}
     \label{eq:particle_internal_forces}
     \Integral{3}{\tens{\sigma}\ \colon \Grad{\vec{\psi}}} = \sum^{N_p}_{p}
-   \tens{\sigma}_{p}\ \Grad{\tens{\psi}_{p}}\ V_p.
+   \tens{\sigma}_{p}\ \colon \Grad{\tens{\psi}_{p}}\ V_p.
   \end{equation}\\
 \item Body forces :
 \begin{equation}
@@ -359,12 +374,23 @@ are solved as follows.
   \end{aligned} 
 \end{equation}
 \end{itemize}
-where $h$ is the thickness of the continuum in a 2D case. Introducing \eqref{eq:particle_acceleration_forces},
-\eqref{eq:particle_internal_forces}, \eqref{eq:particle_body_forces},
+where $h$ is the thickness of the continuum in a 2D case. Here is
+where the second discretization procedure appears. A background mesh
+composed by a finite set of grid points with coordinates $\vec{x}_I\
+, I = 1,2\ldots ,N_n$, is generated. Where $N_n$ is the number of grid
+nodes. This mesh is employed as a support to compute gradients and divergences. 
+
+Introducing \eqref{eq:particle_acceleration_forces},
+\eqref{eq:particle_internal_forces}, \eqref{eq:particle_body_forces}, 
 and \eqref{eq:particle_load_forces} in \eqref{eq:BalanceMomentum_wf},
-and approximating the virtual displacement of the particle $p$ as
-$\vec{\psi}_{p} = N_I(\vec{x}_p)\cdot \vect{1} = N_{Ip}$. We reach to
-the particle balance of forces of the continuum,
+and approximating the real and virtual velocity  field of the particle
+$p$ as
+\begin{equation}
+  \label{eq:Approx-velocity-mesh}
+  \vec{v}_{p} = \sum^{Nn}_I N_I(\vec{x}_p)\cdot \vect{v}_I
+  \quad \text{and} \quad \vec{v}^{\psi}_{p} = \sum^{Nn}_I N_I(\vec{x}_p)\cdot \vect{1},
+\end{equation}
+we reach to the particle balance of forces of the continuum,
 \begin{equation}
   \label{eq:particle_balance_forces3}
   \dot{\vec{p}}_{I}= \tens{m}_{IJ}\dot{\vec{v}}_{J} = \vec{f}_{I}^{int} + \vec{f}_{I}^{ext},
@@ -373,18 +399,20 @@ where $\dot{\vec{p}}_{I}$ is the rate of momentum at grid node $I$, the nodal ma
 \begin{equation}
   \label{eq:particle_nod_mass}
   \tens{m}_{IJ} =
-  \sum^{Np}_{p} N_{Ip} m_p N_{Jp},
+  \sum^{Np}_{p} N_{Ip} m_p N_{Jp}.
 \end{equation}
-and internal and external forces are computed as follows,
+To improve the computational efficiency and stability, the nodal mass matrix
+\eqref{eq:particle_nod_mass} can be substituted by the lumped mass
+matrix $\tens{m}_{IJ}^{lumped}$.
+Later, internal and external forces are computed as follows,
 \begin{equation}
   \label{eq:nodal_internal_forces}
-  \vec{f}_{I}^{int} = - \sum^{N_p}_{p} \Grad{N_{Ip}}
-  \tens{\sigma}_{p} \frac{m_p}{\rho_p}
+  \vec{f}_{I}^{int} = - \sum^{N_p}_{p} \tens{\sigma}_{p} \colon \Grad{N_{Ip}} \frac{m_p}{\rho_p}
 \end{equation}
 \begin{equation}
   \label{eq:nodal_external_forces}
-  \vec{f}_{I}^{ext} = \sum^{N_p}_{p} N_{Ip} m_p \vec{b}_{p} + \sum^{N_p}_{p}
-  N_{Ip} m_p h^{-1} \vec{t}^s_{p}
+  \vec{f}_{I}^{ext} = \sum^{N_p}_{p} \vec{b}_{p} N_{Ip} m_p  + \sum^{N_p}_{p}
+  N_{Ip} \vec{t}^s_{p} m_p h^{-1} 
 \end{equation}
 where $\tens{\sigma}_{p} = \tens{\sigma}_{p}(\tens{\varepsilon}_{p})$
 is the particle $p$ stress field, which can be integrated employing
@@ -394,40 +422,35 @@ strain tensor is as follows \eqref{eq:IncrStrainPoint}.
   \label{eq:IncrStrainPoint}
   \dot{\tens{\varepsilon}_{p}} = \frac{\Delta
     \tens{\varepsilon}_{p}}{\Delta t} =
-  \frac{1}{2}\left[\Grad{N_{Ip}}\ \vec{v}_{I} + \Grad{N_{Ip}}^T\
-    \vec{v}_{I}\right].
+  \frac{1}{2} \sum^{Nn}_I \left[\Grad{N_{Ip}}\ \otimes \vec{v}_{I} + \vec{v}_{I} \otimes
+    \Grad{N_{Ip}}\ \right].
 \end{equation}
-Later, imposing $\frac{D \rho}{D t} = 0$, we ensures the mass
+Next, imposing $\frac{D \rho}{D t} = 0$, we ensures the mass
 conservation and update the density field.
 \begin{equation}
   \label{eq:MassConservation}
 \dot{\rho} = - \rho\ \mathit{tra} \left( \dot{\tens{\varepsilon}} \right)
 \end{equation}
 
-To improve the computational efficiency and stability, the nodal mass matrix
-\eqref{eq:particle_nod_mass} can be substituted by the lumped mass
-matrix $\tens{m}_I$. Therefore the nodal balance of momentum equation \eqref{eq:particle_balance_forces3} can be simplified to
-\begin{equation}
-  \label{eq:SimplyNodalMomentum}
-  \dot{\vec{p}}_{I} = \tens{m}_I\ \vec{a}_{I} = \vec{f}_{I}^{int} + \vec{f}_{I}^{ext}.
-\end{equation}
-To solve the equation \eqref{eq:SimplyNodalMomentum}, a second order
-temporal integration scheme is required. The next step is to advect
-the particles solving,
+Finally, to solve the equation \eqref{eq:particle_balance_forces3}, a second order
+temporal integration scheme is required. Therefore, time is
+discretized in to a finite set of time steps $k = 1\ldots ,Nt$, where $k$ is the current time step and $N_t$
+is the total number of time steps. Once the nodal equilibrium equation it is solved, the values in the nodes are
+interpolated back in to the particles and each particle it is advected
+to the new position,
 \begin{equation}
   \label{eq:Updated_Lagrangian}
   \dot{\vec{v}}_p = \sum^{N_n}_{I}\vec{a}_{I}\ N_{Ip},\quad and\quad \dot{\vec{x}}_{p} = \sum^{N_n}_{I}\vec{v}_{I}\ N_{Ip}  
 \end{equation}
-To solve this equations, the forward Euler algorithm is the common
-choose for this in the MPM literature. In next lines, a complete
-description of the standard MPM algorithm will be described.
+In the MPM literature, this equations
+(\ref{eq:particle_balance_forces3}) and (\ref{eq:Updated_Lagrangian}),
+are solved with a forward Euler algorithm. In the next section, an
+alternative time integration scheme based on the Newmark a-form is proposed.
 
 \section{Explicit predictor-corrector scheme for MPM.}
 \label{sec:epc-algor-mpm}
 
-To solve equations \eqref{eq:SimplyNodalMomentum} and
-\eqref{eq:Updated_Lagrangian}, a time integration scheme is
-required. It has been described in detail by many researchers
+The time integration scheme of the MPM has been described in detail by many researchers
 \cite{Sulsky1994}, \cite{Bardenhagen2002}, \cite{thesis_Andersen_2009} and summarized
 in Figure \ref{fig:MPM_algorithm}. Other authors have proposed many
 others time integration alternatives like
@@ -443,7 +466,7 @@ update the particles as
   \label{eq:Sulsky-1994-UL-x}
   \vect{x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ \sum^{N_n}_{I}N_{Ip}^{k}\ \vec{v}_{I}^{k}.
 \end{equation}
-However, in Andersen (2009)\cite{thesis_Andersen_2009} this
+However, as Andersen (2009)\cite{thesis_Andersen_2009} point out, this
 algorithm has been shown to be numerically unstable due to that
 $\vect{f}_I^{int,k}$ can be finite for an infinitesimal nodal mass
 $\tens{m}$. This can lead to numerical issues when nodal acceleration
@@ -532,70 +555,70 @@ over a standard forward Euler. It is summarized in shape of
 pseudo-algorithm \ref{alg:PCE-algorithm}.
 
 \begin{algorithm}
-\floatname{algorithm}{Algorithm}
-\renewcommand{\thealgorithm}{}
-\caption{Explicit scheme : Newmark central difference}
-\label{alg:Second_step_MPM_2STG}
-\begin{algorithmic}[1]
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
-  \STATE \textbf{Explicit Newmark Predictor} ($\gamma = 0.5$) :
-  \begin{align*}
-    &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\ \sum^{N_n}_{I}\frac{\vec{p}_{I}^{k}\ N_{Ip}^k}{\tens{M}_I^k} + \frac{1}{2}\Delta t^2\ \sum^{N_n}_{I}\frac{\vec{f}_{I}^{k}\ N_{Ip}^k}{\tens{M}_I^k}\\
-    &\vec{v}_p^{k+1} = \vec{v}_p^n + (1 - \gamma)\  \sum^{N_n}_{I}\frac{\vec{f}_{I}^{k}\ N_{Ip}^k}{\tens{M}_I^k}\Delta t        
-  \end{align*}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \STATE \textbf{Discard the previous nodal values}.
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \STATE \textbf{Transference of particles kinetics information to the
-    mesh}:\\
-  Calculate the lumped mass matrix $\tens{M}_{I}$,
-  and the nodal momentum $\vec{p}_{I}$ with the predicted values.
-  \begin{equation*}
-    \tens{M}_{I} = \sum_{p}^{N_p} m_p\ N_{Ip}^{k+1},
-  \end{equation*}
-  \begin{equation*}
-    \vec{p}_{I}^{k+1} = \sum_{p}^{N_p} m_p\ \vec{v}_{p}^{k+1}\ N_{Ip}^{k+1},
-  \end{equation*}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \STATE \textbf{Impose essential boundary conditions over momentum nodal
-    values}:\\
-  At the fixed boundary, set $\vec{p}_{I}^{k+1} = 0$. Later, get the
-  nodal values of the velocity field $\vec{v}_{I}^{k+1} =
-  \frac{\vec{p}_{I}^{k+1}}{\tens{M}_{I}}$
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \STATE \textbf{Deformation tensor increment calculation}.
-  \begin{align*}
-    &\dot{\tens{\varepsilon}_{p}}^{k+1} = \frac{1}{2}\ \sum_{I}^{N_n}
-    \Grad{N_{Ip}^{k+1}}\vec{v}_{I}^{k+1} +
-      (\Grad{N_{Ip}^{k+1}}\vec{v}_{I}^{k+1})^T \\
-    &\Delta \tens{\varepsilon}_{p}^{k+1} = \Delta t\ \dot{\tens{\varepsilon}_{p}}^{k+1}
-  \end{align*}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \STATE \textbf{Update the density field}:\\
-  \begin{equation*}
-    \rho_p^{k+1} = \frac{\rho_p^k}{1 + \mathit{tra}\left[\Delta\tens{\varepsilon}_{p}^{k+1}\right]}.
-  \end{equation*}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \STATE \textbf{Balance of forces calculation}:\\
-  Calculate the total grid nodal force $\vec{f}_{I}^{k+1} =
-  \vec{f}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$ evaluating
-  \eqref{eq:nodal_internal_forces} and \eqref{eq:nodal_external_forces} in the time step $k+1$. In the
-  grid node $I$ is fixed in one of the spatial dimensions, set it to
-  zero to make the grid nodal acceleration zero in that direction.\\
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \STATE \textbf{Integrate the grid nodal momentum equation :}\\
-  Calculate the nodal momentum $\vec{p}_{I}$ in $k+1$. 
-  \begin{equation*}
-    \vec{p}_{I}^{k+1} = \vec{p}_{I}^{k} + \vec{f}_{I}^{k+1}\Delta t
-  \end{equation*}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \STATE \textbf{Explicit Newmark Predictor}:
-  \begin{equation*}
-    \vec{v}_{p}^{k+1} = \vec{v}_{p}^{k+1} +
-    \gamma \sum^{N_n}_{I}\frac{\vec{f}_{I}^{k+1}\ N_{Ip}^{k+1}}{\tens{m}_I^{k+1}}\Delta t  
-  \end{equation*}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\end{algorithmic}
+  \label{alg:PCE-algorithm}
+  \floatname{algorithm}{Algorithm}
+  \renewcommand{\thealgorithm}{}
+  \caption{Explicit scheme : Newmark central difference}
+  \begin{algorithmic}[1]
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
+    \STATE \textbf{Explicit Newmark Predictor} ($\gamma = 0.5$) :
+    \begin{align*}
+      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\ \sum^{N_n}_{I}\frac{\vec{p}_{I}^{k}\ N_{Ip}^k}{\tens{M}_I^k} + \frac{1}{2}\Delta t^2\ \sum^{N_n}_{I}\frac{\vec{f}_{I}^{k}\ N_{Ip}^k}{\tens{M}_I^k}\\
+      &\vec{v}_p^{k+1} = \vec{v}_p^n + (1 - \gamma)\  \sum^{N_n}_{I}\frac{\vec{f}_{I}^{k}\ N_{Ip}^k}{\tens{M}_I^k}\Delta t        
+    \end{align*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Discard the previous nodal values}.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Transference of particles kinetics information to the
+      mesh}:\\
+    Calculate the lumped mass matrix $\tens{M}_{I}$,
+    and the nodal momentum $\vec{p}_{I}$ with the predicted values.
+    \begin{equation*}
+      \tens{M}_{I} = \sum_{p}^{N_p} m_p\ N_{Ip}^{k+1},
+    \end{equation*}
+    \begin{equation*}
+      \vec{p}_{I}^{k+1} = \sum_{p}^{N_p} m_p\ \vec{v}_{p}^{k+1}\ N_{Ip}^{k+1},
+    \end{equation*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Impose essential boundary conditions over momentum nodal
+      values}:\\
+    At the fixed boundary, set $\vec{p}_{I}^{k+1} = 0$. Later, get the
+    nodal values of the velocity field $\vec{v}_{I}^{k+1} =
+    \frac{\vec{p}_{I}^{k+1}}{\tens{M}_{I}}$
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Deformation tensor increment calculation}.
+    \begin{align*}
+      &\dot{\tens{\varepsilon}_{p}}^{k+1} = \frac{1}{2}\ \sum_{I}^{N_n}
+        \Grad{N_{Ip}^{k+1}}\vec{v}_{I}^{k+1} +
+        (\Grad{N_{Ip}^{k+1}}\vec{v}_{I}^{k+1})^T \\
+      &\Delta \tens{\varepsilon}_{p}^{k+1} = \Delta t\ \dot{\tens{\varepsilon}_{p}}^{k+1}
+    \end{align*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Update the density field}:\\
+    \begin{equation*}
+      \rho_p^{k+1} = \frac{\rho_p^k}{1 + \mathit{tra}\left[\Delta\tens{\varepsilon}_{p}^{k+1}\right]}.
+    \end{equation*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Balance of forces calculation}:\\
+    Calculate the total grid nodal force $\vec{f}_{I}^{k+1} =
+    \vec{f}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$ evaluating
+    \eqref{eq:nodal_internal_forces} and \eqref{eq:nodal_external_forces} in the time step $k+1$. In the
+    grid node $I$ is fixed in one of the spatial dimensions, set it to
+    zero to make the grid nodal acceleration zero in that direction.\\
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Integrate the grid nodal momentum equation :}\\
+    Calculate the nodal momentum $\vec{p}_{I}$ in $k+1$. 
+    \begin{equation*}
+      \vec{p}_{I}^{k+1} = \vec{p}_{I}^{k} + \vec{f}_{I}^{k+1}\Delta t
+    \end{equation*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Explicit Newmark Predictor}:
+    \begin{equation*}
+      \vec{v}_{p}^{k+1} = \vec{v}_{p}^{k+1} +
+      \gamma \sum^{N_n}_{I}\frac{\vec{f}_{I}^{k+1}\ N_{Ip}^{k+1}}{\tens{m}_I^{k+1}}\Delta t  
+    \end{equation*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \end{algorithmic}
 \end{algorithm} 
 
 \begin{figure}\sidecaption
@@ -612,7 +635,7 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
 
 The previous lines describe the main algorithm without defining an
 interpolation technique. A direct consequence of this, is that it is
-possible to adopt a width range of shape functions and interpolation techniques. The MPM has been
+possible to adopt a width range of them. The MPM has been
 successfully applied to a wide range of problems due to its ability to
 deal with large strain problems without mesh distorsion issues inherent to
 mesh based methods like FE. However, in the simulations made with the
@@ -648,21 +671,21 @@ Taking Shannon's entropy as the starting point:
 where $p_I(\vec{x})$ is the probability, equivalent to the mentioned
 shape function $N_I(\vec{x})$,  satisfying both the zeroth and
 first-order consistency. The least-biased approximation scheme is given by
-\begin{eqnarray}
-  \text{(ME)} \hspace{0.2cm} \text{Maximize} \hspace{0.1cm}H(p) &=&  -\sum_{I}^{N_n}{p_I(\vec{x})\log p_I } \nonumber \\
-  \text{subject to} \hspace{0.5cm} p_I &\ge& 0, \hspace{0.5cm} \text{I=1, ..., n} \nonumber \\
-  \sum_{I=1}^{N_n}{p_I} &=& 1 \nonumber \\
-  \sum_{I=1}^{N_n}{p_I \vec{x}_I} &=& \vec{x} \nonumber 
-\end{eqnarray}
+\begin{align*}
+  \text{(LME)} \hspace{0.15cm} \text{Maximize} \hspace{0.15cm} &H(p) = -\sum_{I}^{N_n}{p_I(\vec{x})\log p_I } \nonumber \\
+  \text{subject to} \hspace{0.15cm} &p_I \ge 0, \hspace{0.15cm} \text{I=1, ..., n} \nonumber \\
+  &\sum_{I=1}^{N_n}{p_I} = 1 \nonumber \\
+  &\sum_{I=1}^{N_n}{p_I \vec{x}_I} = \vec{x} \nonumber 
+\end{align*}
 The local max-ent approximation schemes (LME) as a Pareto set,
 defined by \cite{Arroyo2006} is as follows 
-\begin{eqnarray}
-  \text{(LME)}_{\beta} \hspace{0.5cm} \text{For fixed} \hspace{0.2cm} \vec{x} \hspace{0.2cm} \text{minimise}  \nonumber \\
-  \hspace{0.5cm}f_{\beta}(\vec{x}, p) &=& \beta H(\vec{x},p) - H(p)  \nonumber  \\
-  \text{subject to} \hspace{0.5cm} p_I &\ge& 0, \hspace{0.2cm} \text{I=1, ..., n}  \nonumber \\
-  \sum_{I=1}^{N_n}{p_I} &=& 1  \nonumber \\
-  \sum_{I=1}^{N_n}{p_I \, \vec{x}_I} &=& \vec{x}    \nonumber 
-\end{eqnarray}
+\begin{align*}
+  \text{(LME)}_{\beta} \hspace{0.15cm} \text{For fixed} \hspace{0.15cm}
+  \vec{x} \hspace{0.15cm} \text{minimise}  \nonumber \hspace{0.15cm} &f_{\beta}(\vec{x}, p) = \beta H(\vec{x},p) - H(p) \\
+  \text{subject to} \hspace{0.15cm} &p_I \ge 0, \hspace{0.2cm} \text{I=1, ..., n}  \\
+                                                                   &\sum_{I=1}^{N_n}{p_I} = 1 \\
+                                                                   &\sum_{I=1}^{N_n}{p_I \, \vec{x}_I} = \vec{x}
+\end{align*}
 for $\beta \in (0,\infty)$ is Pareto optimal. The unique solution of
 the local max-ent problem (LME)$_\beta$ is: 
 \begin{equation}
@@ -700,107 +723,98 @@ where \tens{J} is the Hessian matrix, defined by:
 %\nonumber \\ &=&
   =\sum_I^{N_n} p_I(\vec{x},\vec{\lambda},\beta) \, (\vec{x} - \vec{x}_I) \label{eq28} 
 \end{eqnarray}
-Note that, the objective of the above procedure is to find the $\vec{\lambda}$ which minimises  $\log Z(\vec{x}, \vec{\lambda})$. 
-The traditional way to obtain such a minimiser  is using Eq.~(\ref{eq27}) to calculate small increments of $\partial\vec{\lambda}$ in a Newton-Raphson approach. 
+Note that, the objective of the above procedure is to find the
+$\vec{\lambda}$ which minimises  $\log Z(\vec{x}, \vec{\lambda})$. The
+traditional way to obtain such a minimiser  is using Eq.~(\ref{eq27})
+to calculate small increments of $\partial\vec{\lambda}$ in a
+Newton-Raphson approach. 
+Similar to alternative non-polynomial meshfree basis functions, the
+LME approximation scheme requires more than $d+1$ nodes to determine
+the values of the shape functions as well as their derivatives at any
+point in the convex hull of the nodal set, where $d$ is the dimension
+of the problem. Due to the FE-compatibility, the LME shape function is
+degenerated to linear finite element shape function if $d+1$
+neighbouring nodes are chosen as the support. The support size of LME
+shape functions may be controlled by adjusting a dimensionless
+parameter, $\gamma=\beta h^2$ (e.g. two dimensional example shown in
+figure. \ref{fig:LME_MPM})\cite{Arroyo2006}.
 
-Similar to alternative non-polynomial meshfree basis functions, the LME approximation scheme requires more than $d+1$ nodes to determine the values of the shape functions as well as their derivatives at any point in the convex hull of the nodal set, where $d$ is the dimension of the problem. Due to the FE-compatibility, the LME shape function is degenerated to linear finite element shape function if $d+1$ neighbouring nodes are chosen as the support. The support size of LME shape functions may be controlled by adjusting a dimensionless parameter, $\gamma=\beta h^2$ (e.g. two dimensional example shown in Fig. \ref{fig:LME_MPM})\cite{Arroyo2006}.
-Since  $p_I$  is defined in  the entire domain, in practice,  the function $\exp(-\beta \vec{r} )$ truncated  by  a given tolerance, 10$^{-6}$, for example,  would ensure a reasonable range of neighbours, see \cite{Arroyo2006} for details. This  tolerance defines the limit values of the influence radius and   is used thereafter to find the neighbour nodes of a given integration point.
 
 \begin{figure}
   \centering
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \subfloat{
+  \subfloat[Piecewise linear (Q4).]{
     \includegraphics[width=0.3\columnwidth]{Figures/MPM_Shape_Fun}
+    \includegraphics[width=0.3\columnwidth]{Figures/MPM_Shape_Fun_dx}
+    \includegraphics[width=0.3\columnwidth]{Figures/MPM_Shape_Fun_dy}
     \label{fig:MPM_Shape_Fun}
   }
-  \subfloat{
-    \includegraphics[width=0.3\columnwidth]{Figures/MPM_Shape_Fun_dx}
-    \label{fig:MPM_Shape_Fun_dx}
-  }
-  \subfloat{
-    \includegraphics[width=0.3\columnwidth]{Figures/MPM_Shape_Fun_dy}
-    \label{fig:MPM_Shape_Fun_dy}
-  }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \qquad
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \subfloat{
+  \subfloat[Local \textit{max-ent} $\gamma=17$.]{
     \includegraphics[width=0.3\columnwidth]{Figures/LME_17_3_Shape_Fun}
+    \includegraphics[width=0.3\columnwidth]{Figures/LME_17_3_Shape_Fun_dx}
+    \includegraphics[width=0.3\columnwidth]{Figures/LME_17_3_Shape_Fun_dy}
     \label{fig:LME_17.3_Shape_Fun}
   }
-  \subfloat{
-    \includegraphics[width=0.3\columnwidth]{Figures/LME_17_3_Shape_Fun_dx}
-    \label{fig:LME_17.3_Shape_Fun_dx}
-  }
-  \subfloat{
-    \includegraphics[width=0.3\columnwidth]{Figures/LME_17_3_Shape_Fun_dy}
-    \label{fig:LME_17.3_Shape_Fun_dy}
-  }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \qquad
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-  \subfloat{
+  \subfloat[Uniform generalized interpolated material point.]{
     \includegraphics[width=0.3\columnwidth]{Figures/GIMP_Shape_Fun}
-    \label{fig:GIMP_Shape_Fun}
-  }
-  \subfloat{
     \includegraphics[width=0.3\columnwidth]{Figures/GIMP_Shape_Fun_dx}
-    \label{fig:GIMP_Shape_Fun_dx}
-  }
-  \subfloat{
     \includegraphics[width=0.3\columnwidth]{Figures/GIMP_Shape_Fun_dy}
-    \label{fig:GIMP_Shape_Fun_dy}
+    \label{fig:GIMP_Shape_Fun}
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \qquad
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \subfloat{
+  \subfloat[Local \textit{max-ent} $\gamma=10$.]{
     \includegraphics[width=0.3\columnwidth]{Figures/LME_10_0_Shape_Fun}
+    \includegraphics[width=0.3\columnwidth]{Figures/LME_10_0_Shape_Fun_dx}
+    \includegraphics[width=0.3\columnwidth]{Figures/LME_10_0_Shape_Fun_dy}
     \label{fig:LME_10.0_Shape_Fun}
   }
-  \subfloat{
-    \includegraphics[width=0.3\columnwidth]{Figures/LME_10_0_Shape_Fun_dx}
-    \label{fig:LME_10.0_Shape_Fun_dx}
-  }
-  \subfloat{
-    \includegraphics[width=0.3\columnwidth]{Figures/LME_10_0_Shape_Fun_dy}
-    \label{fig:LME_10.0_Shape_Fun_dy}
-  }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \qquad
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
-  \subfloat{
+  \subfloat[Local \textit{max-ent} $\gamma=7$.]{
     \includegraphics[width=0.3\columnwidth]{Figures/LME_7_0_Shape_Fun}
+    \includegraphics[width=0.3\columnwidth]{Figures/LME_7_0_Shape_Fun_dx}
+    \includegraphics[width=0.3\columnwidth]{Figures/LME_7_0_Shape_Fun_dy}
     \label{fig:LME_7.0_Shape_Fun}
   }
-  \subfloat{
-    \includegraphics[width=0.3\columnwidth]{Figures/LME_7_0_Shape_Fun_dx}
-    \label{fig:LME_7.0_Shape_Fun_dx}
-  }
-  \subfloat{
-    \includegraphics[width=0.3\columnwidth]{Figures/LME_7_0_Shape_Fun_dy}
-    \label{fig:LME_7.0_Shape_Fun_dy}
-  }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \qquad
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
-  \subfloat{
+  \subfloat[Local \textit{max-ent} $\gamma=5$.]{
     \includegraphics[width=0.3\columnwidth]{Figures/LME_5_0_Shape_Fun}
-    \label{fig:LME_5.0_Shape_Fun}
-  }
-  \subfloat{
     \includegraphics[width=0.3\columnwidth]{Figures/LME_5_0_Shape_Fun_dx}
-    \label{fig:LME_5.0_Shape_Fun_dx}
-  }
-  \subfloat{
     \includegraphics[width=0.3\columnwidth]{Figures/LME_5_0_Shape_Fun_dy}
-    \label{fig:LME_5.0_Shape_Fun_dy}
+    \label{fig:LME_5.0_Shape_Fun}
   }
   \caption{Local max-ent shape functions for a two-dimensional
     arrangement of nodes, and spatial derivatives for several values
     of $\gamma = \beta/h^2$.}
   \label{fig:LME_MPM}
 \end{figure}
+
+Since  $p_I$  is defined in the entire domain, in practice, the
+function $\exp(-\beta \vec{r} )$ truncated  by  a given tolerance,
+10$^{-6}$, for example,  would ensure a reasonable range of
+neighbours, see \cite{Arroyo2006} for details. This tolerance defines
+the limit values of the influence radius and is used thereafter to
+find the neighbour nodes of a given integration point.
+In this research and in \cite{Arroyo2006}, $\Beta$ is a scalar as the
+influence area of the shape function is controlled by the Euclidean
+norm, therefore the search area is geometrically a circle in 2D, or a
+sphere in 3D. Building upon the idea of anisotropic shape functions,
+\cite{Kochmann2019} introduced an enhanced version of the original
+local max-ent scheme, which uses an anisotropic support to deal with
+tensile inestability. Nonetheless this is out of the scope of the
+present document but will be incorporated in future research.
+
 
 \section{Numerical results : 1D Elastic bar}
 \label{sec:dynamic-benchmark}
@@ -856,7 +870,14 @@ displacement is computed. RMS error is defined as follows
 \subsection{Error analysis MPM vs uGIMP vs MPM-\textit{max-ent}}
 \label{sec:study-error}
 
-
+\begin{figure}\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/Velocity-Comparative}
+  }
+  \caption{Velocity evolution at the point in the bar left side.}
+  \label{fig:Dyka-MPM-uGIMP-LME}
+\end{figure}
 
 \subsection{MPM versus OTM}
 \label{sec:mpm-versus-otm}
@@ -864,12 +885,6 @@ displacement is computed. RMS error is defined as follows
 
 \section{Conclusions}
 \label{sec:conclusions}
-
-Building upon the idea of anisotropic shape functions
-\cite{Arroyo2006}, \cite{Kochmann2019} introduced an enhanced version of the
-original local max-ent scheme, which uses an anisotropic support to
-deal with tensile inestability.
-
 
 %\begin{acknowledgements}
 %If you'd like to thank anyone, place your comments here

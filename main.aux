@@ -25,7 +25,6 @@
 \citation{Arroyo2006}
 \citation{Navas2018a}
 \citation{Li2012}
-\citation{Sulsky1994}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
 \newlabel{intro}{{1}{1}{Introduction}{section.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Notation}{1}{section.2}}
@@ -33,6 +32,7 @@
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Physical variables involved in the problem\relax }}{1}{table.caption.1}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{tab:notation-table}{{1}{1}{Physical variables involved in the problem\relax }{table.caption.1}{}}
+\citation{Sulsky1994}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Derivation of the MPM}{2}{section.3}}
 \newlabel{sec:derivation-mpm}{{3}{2}{Derivation of the MPM}{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Governing equations }{2}{subsection.3.1}}
@@ -45,11 +45,11 @@
 \newlabel{sec:variational-formulation}{{3.2}{2}{Variational formulation}{subsection.3.2}{}}
 \newlabel{eq:Hilbert-space}{{5}{2}{Variational formulation}{equation.3.5}{}}
 \newlabel{eq:cauchy-secuence}{{6}{2}{Variational formulation}{equation.3.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces MPM discretization.}}{2}{figure.caption.2}}
-\newlabel{fig:MPM-discretization}{{1}{2}{MPM discretization}{figure.caption.2}{}}
 \newlabel{eq:BalanceMomentum_wf}{{7}{2}{Variational formulation}{equation.3.7}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Galerkin procedure}{2}{subsection.3.3}}
 \newlabel{sec:Galerkin-procedure}{{3.3}{2}{Galerkin procedure}{subsection.3.3}{}}
+\newlabel{eq:particle_acceleration_forces}{{8}{2}{Galerkin procedure}{equation.3.8}{}}
+\newlabel{eq:particle_internal_forces}{{9}{2}{Galerkin procedure}{equation.3.9}{}}
 \citation{Sulsky1994}
 \citation{Bardenhagen2002}
 \citation{thesis_Andersen_2009}
@@ -57,28 +57,24 @@
 \citation{Tran2019e}
 \citation{Charlton2017}
 \citation{Sulsky1994}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces MPM discretization.}}{3}{figure.caption.2}}
+\newlabel{fig:MPM-discretization}{{1}{3}{MPM discretization}{figure.caption.2}{}}
+\newlabel{eq:particle_body_forces}{{10}{3}{Galerkin procedure}{equation.3.10}{}}
+\newlabel{eq:particle_load_forces}{{11}{3}{Galerkin procedure}{equation.3.11}{}}
+\newlabel{eq:Approx-velocity-mesh}{{12}{3}{Galerkin procedure}{equation.3.12}{}}
+\newlabel{eq:particle_balance_forces3}{{13}{3}{Galerkin procedure}{equation.3.13}{}}
+\newlabel{eq:particle_nod_mass}{{14}{3}{Galerkin procedure}{equation.3.14}{}}
+\newlabel{eq:nodal_internal_forces}{{15}{3}{Galerkin procedure}{equation.3.15}{}}
+\newlabel{eq:nodal_external_forces}{{16}{3}{Galerkin procedure}{equation.3.16}{}}
+\newlabel{eq:IncrStrainPoint}{{17}{3}{Galerkin procedure}{equation.3.17}{}}
+\newlabel{eq:MassConservation}{{18}{3}{Galerkin procedure}{equation.3.18}{}}
+\newlabel{eq:Updated_Lagrangian}{{19}{3}{Galerkin procedure}{equation.3.19}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Explicit predictor-corrector scheme for MPM.}{3}{section.4}}
+\newlabel{sec:epc-algor-mpm}{{4}{3}{Explicit predictor-corrector scheme for MPM}{section.4}{}}
 \citation{thesis_Andersen_2009}
 \citation{Zhang_book_2016}
 \citation{Tran2019e}
 \citation{Geranlized_alpha_1993}
-\newlabel{eq:particle_acceleration_forces}{{8}{3}{Galerkin procedure}{equation.3.8}{}}
-\newlabel{eq:particle_internal_forces}{{9}{3}{Galerkin procedure}{equation.3.9}{}}
-\newlabel{eq:particle_body_forces}{{10}{3}{Galerkin procedure}{equation.3.10}{}}
-\newlabel{eq:particle_load_forces}{{11}{3}{Galerkin procedure}{equation.3.11}{}}
-\newlabel{eq:particle_balance_forces3}{{12}{3}{Galerkin procedure}{equation.3.12}{}}
-\newlabel{eq:particle_nod_mass}{{13}{3}{Galerkin procedure}{equation.3.13}{}}
-\newlabel{eq:nodal_internal_forces}{{14}{3}{Galerkin procedure}{equation.3.14}{}}
-\newlabel{eq:nodal_external_forces}{{15}{3}{Galerkin procedure}{equation.3.15}{}}
-\newlabel{eq:IncrStrainPoint}{{16}{3}{Galerkin procedure}{equation.3.16}{}}
-\newlabel{eq:MassConservation}{{17}{3}{Galerkin procedure}{equation.3.17}{}}
-\newlabel{eq:SimplyNodalMomentum}{{18}{3}{Galerkin procedure}{equation.3.18}{}}
-\newlabel{eq:Updated_Lagrangian}{{19}{3}{Galerkin procedure}{equation.3.19}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Explicit predictor-corrector scheme for MPM.}{3}{section.4}}
-\newlabel{sec:epc-algor-mpm}{{4}{3}{Explicit predictor-corrector scheme for MPM}{section.4}{}}
-\newlabel{eq:Sulsky-1994-UL-v}{{20}{3}{Explicit predictor-corrector scheme for MPM}{equation.4.20}{}}
-\newlabel{eq:Sulsky-1994-UL-x}{{21}{3}{Explicit predictor-corrector scheme for MPM}{equation.4.21}{}}
-\newlabel{eq:Zhang-2016-UL-x}{{22}{3}{Explicit predictor-corrector scheme for MPM}{equation.4.22}{}}
-\newlabel{eq:Zhang-2016-UL-v}{{23}{3}{Explicit predictor-corrector scheme for MPM}{equation.4.23}{}}
 \citation{Tran2019e}
 \citation{Tran2019e}
 \citation{Hughes2000}
@@ -90,25 +86,31 @@
 \citation{Arroyo2006}
 \citation{Wobbes2020}
 \citation{Wobbes2020}
+\newlabel{eq:Sulsky-1994-UL-v}{{20}{4}{Explicit predictor-corrector scheme for MPM}{equation.4.20}{}}
+\newlabel{eq:Sulsky-1994-UL-x}{{21}{4}{Explicit predictor-corrector scheme for MPM}{equation.4.21}{}}
+\newlabel{eq:Zhang-2016-UL-x}{{22}{4}{Explicit predictor-corrector scheme for MPM}{equation.4.22}{}}
+\newlabel{eq:Zhang-2016-UL-v}{{23}{4}{Explicit predictor-corrector scheme for MPM}{equation.4.23}{}}
 \newlabel{eq:Tran-2019-GA-v}{{24}{4}{Explicit predictor-corrector scheme for MPM}{equation.4.24}{}}
 \newlabel{eq:Tran-2019-GA-x}{{25}{4}{Explicit predictor-corrector scheme for MPM}{equation.4.25}{}}
 \newlabel{eq:Tran-2019-GA-a}{{26}{4}{Explicit predictor-corrector scheme for MPM}{equation.4.26}{}}
 \newlabel{eq:5}{{27}{4}{Explicit predictor-corrector scheme for MPM}{equation.4.27}{}}
 \newlabel{eq:Predictor-velocity}{{28}{4}{Explicit predictor-corrector scheme for MPM}{equation.4.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces MPM standard algorithm.}}{4}{figure.caption.3}}
-\newlabel{fig:MPM_algorithm}{{2}{4}{MPM standard algorithm}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Local max-ent approximants}{4}{section.5}}
+\newlabel{sec:local-max-ent}{{5}{4}{Local max-ent approximants}{section.5}{}}
 \citation{Jaynes1957}
-\citation{Arroyo2006}
+\newlabel{alg:PCE-algorithm}{{\caption@xref {alg:PCE-algorithm}{ on input line 558}}{5}{Explicit predictor-corrector scheme for MPM}{equation.4.29}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {}{\ignorespaces Explicit scheme : Newmark central difference\relax }}{5}{algorithm.1}}
-\newlabel{alg:Second_step_MPM_2STG}{{}{5}{Explicit scheme : Newmark central difference\relax }{algorithm.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Local max-ent approximants}{5}{section.5}}
-\newlabel{sec:local-max-ent}{{5}{5}{Local max-ent approximants}{section.5}{}}
-\newlabel{eq:Shannon-entropy}{{30}{5}{Local max-ent approximants}{equation.5.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces MPM standard algorithm.}}{5}{figure.caption.3}}
+\newlabel{fig:MPM_algorithm}{{2}{5}{MPM standard algorithm}{figure.caption.3}{}}
 \citation{Arroyo2006}
 \citation{Arroyo2006}
 \citation{Arroyo2006}
+\citation{Arroyo2006}
+\citation{Arroyo2006}
+\citation{Kochmann2019}
 \citation{Dyka1995}
 \citation{Sulsky1994}
+\newlabel{eq:Shannon-entropy}{{30}{6}{Local max-ent approximants}{equation.5.30}{}}
 \newlabel{eq:LME-p}{{31}{6}{Local max-ent approximants}{equation.5.31}{}}
 \newlabel{eq:LME-Z}{{32}{6}{Local max-ent approximants}{equation.5.32}{}}
 \newlabel{eq:LME-grad-p}{{33}{6}{Local max-ent approximants}{equation.5.33}{}}
@@ -116,53 +118,35 @@
 \newlabel{eq26}{{35}{6}{Local max-ent approximants}{equation.5.35}{}}
 \newlabel{eq27}{{36}{6}{Local max-ent approximants}{equation.5.36}{}}
 \newlabel{eq28}{{37}{6}{Local max-ent approximants}{equation.5.36}{}}
-\newlabel{fig:MPM_Shape_Fun}{{3a}{6}{Subfigure 3a}{subfigure.3.1}{}}
-\newlabel{sub@fig:MPM_Shape_Fun}{{(a)}{a}{Subfigure 3a\relax }{subfigure.3.1}{}}
-\newlabel{fig:MPM_Shape_Fun_dx}{{3b}{6}{Subfigure 3b}{subfigure.3.2}{}}
-\newlabel{sub@fig:MPM_Shape_Fun_dx}{{(b)}{b}{Subfigure 3b\relax }{subfigure.3.2}{}}
-\newlabel{fig:MPM_Shape_Fun_dy}{{3c}{6}{Subfigure 3c}{subfigure.3.3}{}}
-\newlabel{sub@fig:MPM_Shape_Fun_dy}{{(c)}{c}{Subfigure 3c\relax }{subfigure.3.3}{}}
-\newlabel{fig:LME_17.3_Shape_Fun}{{3d}{6}{Subfigure 3d}{subfigure.3.4}{}}
-\newlabel{sub@fig:LME_17.3_Shape_Fun}{{(d)}{d}{Subfigure 3d\relax }{subfigure.3.4}{}}
-\newlabel{fig:LME_17.3_Shape_Fun_dx}{{3e}{6}{Subfigure 3e}{subfigure.3.5}{}}
-\newlabel{sub@fig:LME_17.3_Shape_Fun_dx}{{(e)}{e}{Subfigure 3e\relax }{subfigure.3.5}{}}
-\newlabel{fig:LME_17.3_Shape_Fun_dy}{{3f}{6}{Subfigure 3f}{subfigure.3.6}{}}
-\newlabel{sub@fig:LME_17.3_Shape_Fun_dy}{{(f)}{f}{Subfigure 3f\relax }{subfigure.3.6}{}}
-\newlabel{fig:GIMP_Shape_Fun}{{3g}{6}{Subfigure 3g}{subfigure.3.7}{}}
-\newlabel{sub@fig:GIMP_Shape_Fun}{{(g)}{g}{Subfigure 3g\relax }{subfigure.3.7}{}}
-\newlabel{fig:GIMP_Shape_Fun_dx}{{3h}{6}{Subfigure 3h}{subfigure.3.8}{}}
-\newlabel{sub@fig:GIMP_Shape_Fun_dx}{{(h)}{h}{Subfigure 3h\relax }{subfigure.3.8}{}}
-\newlabel{fig:GIMP_Shape_Fun_dy}{{3i}{6}{Subfigure 3i}{subfigure.3.9}{}}
-\newlabel{sub@fig:GIMP_Shape_Fun_dy}{{(i)}{i}{Subfigure 3i\relax }{subfigure.3.9}{}}
-\newlabel{fig:LME_10.0_Shape_Fun}{{3j}{6}{Subfigure 3j}{subfigure.3.10}{}}
-\newlabel{sub@fig:LME_10.0_Shape_Fun}{{(j)}{j}{Subfigure 3j\relax }{subfigure.3.10}{}}
-\newlabel{fig:LME_10.0_Shape_Fun_dx}{{3k}{6}{Subfigure 3k}{subfigure.3.11}{}}
-\newlabel{sub@fig:LME_10.0_Shape_Fun_dx}{{(k)}{k}{Subfigure 3k\relax }{subfigure.3.11}{}}
-\newlabel{fig:LME_10.0_Shape_Fun_dy}{{3l}{6}{Subfigure 3l}{subfigure.3.12}{}}
-\newlabel{sub@fig:LME_10.0_Shape_Fun_dy}{{(l)}{l}{Subfigure 3l\relax }{subfigure.3.12}{}}
-\newlabel{fig:LME_7.0_Shape_Fun}{{3m}{6}{Subfigure 3m}{subfigure.3.13}{}}
-\newlabel{sub@fig:LME_7.0_Shape_Fun}{{(m)}{m}{Subfigure 3m\relax }{subfigure.3.13}{}}
-\newlabel{fig:LME_7.0_Shape_Fun_dx}{{3n}{6}{Subfigure 3n}{subfigure.3.14}{}}
-\newlabel{sub@fig:LME_7.0_Shape_Fun_dx}{{(n)}{n}{Subfigure 3n\relax }{subfigure.3.14}{}}
-\newlabel{fig:LME_7.0_Shape_Fun_dy}{{3o}{6}{Subfigure 3o}{subfigure.3.15}{}}
-\newlabel{sub@fig:LME_7.0_Shape_Fun_dy}{{(o)}{o}{Subfigure 3o\relax }{subfigure.3.15}{}}
-\newlabel{fig:LME_5.0_Shape_Fun}{{3p}{6}{Subfigure 3p}{subfigure.3.16}{}}
-\newlabel{sub@fig:LME_5.0_Shape_Fun}{{(p)}{p}{Subfigure 3p\relax }{subfigure.3.16}{}}
-\newlabel{fig:LME_5.0_Shape_Fun_dx}{{3q}{6}{Subfigure 3q}{subfigure.3.17}{}}
-\newlabel{sub@fig:LME_5.0_Shape_Fun_dx}{{(q)}{q}{Subfigure 3q\relax }{subfigure.3.17}{}}
-\newlabel{fig:LME_5.0_Shape_Fun_dy}{{3r}{6}{Subfigure 3r}{subfigure.3.18}{}}
-\newlabel{sub@fig:LME_5.0_Shape_Fun_dy}{{(r)}{r}{Subfigure 3r\relax }{subfigure.3.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Local max-ent shape functions for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$.\relax }}{6}{figure.caption.4}}
-\newlabel{fig:LME_MPM}{{3}{6}{Local max-ent shape functions for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$.\relax }{figure.caption.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Numerical results : 1D Elastic bar}{6}{section.6}}
 \newlabel{sec:dynamic-benchmark}{{6}{6}{Numerical results : 1D Elastic bar}{section.6}{}}
 \citation{Dyka1995}
 \citation{Dyka1995}
-\citation{Arroyo2006}
-\citation{Kochmann2019}
+\newlabel{fig:MPM_Shape_Fun}{{3a}{7}{Subfigure 3a}{subfigure.3.1}{}}
+\newlabel{sub@fig:MPM_Shape_Fun}{{(a)}{a}{Subfigure 3a\relax }{subfigure.3.1}{}}
+\newlabel{fig:LME_17.3_Shape_Fun}{{3b}{7}{Subfigure 3b}{subfigure.3.2}{}}
+\newlabel{sub@fig:LME_17.3_Shape_Fun}{{(b)}{b}{Subfigure 3b\relax }{subfigure.3.2}{}}
+\newlabel{fig:GIMP_Shape_Fun}{{3c}{7}{Subfigure 3c}{subfigure.3.3}{}}
+\newlabel{sub@fig:GIMP_Shape_Fun}{{(c)}{c}{Subfigure 3c\relax }{subfigure.3.3}{}}
+\newlabel{fig:LME_10.0_Shape_Fun}{{3d}{7}{Subfigure 3d}{subfigure.3.4}{}}
+\newlabel{sub@fig:LME_10.0_Shape_Fun}{{(d)}{d}{Subfigure 3d\relax }{subfigure.3.4}{}}
+\newlabel{fig:LME_7.0_Shape_Fun}{{3e}{7}{Subfigure 3e}{subfigure.3.5}{}}
+\newlabel{sub@fig:LME_7.0_Shape_Fun}{{(e)}{e}{Subfigure 3e\relax }{subfigure.3.5}{}}
+\newlabel{fig:LME_5.0_Shape_Fun}{{3f}{7}{Subfigure 3f}{subfigure.3.6}{}}
+\newlabel{sub@fig:LME_5.0_Shape_Fun}{{(f)}{f}{Subfigure 3f\relax }{subfigure.3.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Local max-ent shape functions for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$.\relax }}{7}{figure.caption.4}}
+\newlabel{fig:LME_MPM}{{3}{7}{Local max-ent shape functions for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$.\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Piecewise linear (Q4).}}}{7}{subfigure.3.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Local \textit {max-ent} $\gamma =17$.}}}{7}{subfigure.3.2}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {Uniform generalized interpolated material point.}}}{7}{subfigure.3.3}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {Local \textit {max-ent} $\gamma =10$.}}}{7}{subfigure.3.4}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {Local \textit {max-ent} $\gamma =7$.}}}{7}{subfigure.3.5}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {Local \textit {max-ent} $\gamma =5$.}}}{7}{subfigure.3.6}}
+\newlabel{eq:3}{{38}{7}{Numerical results : 1D Elastic bar}{equation.6.38}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Geometrical description of the Dyka \cite  {Dyka1995} bar. }}{7}{figure.caption.5}}
 \newlabel{fig:Dyka_Bar}{{4}{7}{Geometrical description of the Dyka \cite {Dyka1995} bar}{figure.caption.5}{}}
-\newlabel{eq:3}{{38}{7}{Numerical results : 1D Elastic bar}{equation.6.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Velocity evolution at the point in the bar left side.}}{7}{figure.caption.6}}
+\newlabel{fig:Dyka-MPM-uGIMP-LME}{{5}{7}{Velocity evolution at the point in the bar left side}{figure.caption.6}{}}
 \newlabel{eq:RMS}{{39}{7}{Numerical results : 1D Elastic bar}{equation.6.39}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Error analysis MPM vs uGIMP vs MPM-\textit  {max-ent}}{7}{subsection.6.1}}
 \newlabel{sec:study-error}{{6.1}{7}{Error analysis MPM vs uGIMP vs MPM-\textit {max-ent}}{subsection.6.1}{}}
@@ -173,22 +157,21 @@
 \@writefile{toc}{\contentsline {section}{\numberline {A}The analytical solution of the 1D Dyka benchmark}{7}{appendix.A}}
 \newlabel{app:analytical_sol}{{A}{7}{The analytical solution of the 1D Dyka benchmark}{appendix.A}{}}
 \newlabel{eq:1D-balance-linear-momentum}{{40}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.40}{}}
-\newlabel{eq:1D-constitutive-equation}{{41}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.41}{}}
-\newlabel{eq:CompatibilityEquation_e}{{42}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.42}{}}
-\newlabel{eq:1D-balance-linear-momentum-II}{{43}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.43}{}}
-\newlabel{eq:1D-constitutive-equation-II}{{44}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.44}{}}
-\newlabel{eq:1D-wave-elastic}{{45}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.45}{}}
-\newlabel{eq:1D-elastic-wave-celerity}{{46}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.46}{}}
-\newlabel{eq:System-stress-velocity}{{47}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.47}{}}
-\newlabel{eq:System-stress-velocity-II}{{48}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.48}{}}
-\newlabel{eq:eq:System-stress-velocity-II}{{A}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.48}{}}
-\newlabel{eq:P-matrix}{{49}{7}{The analytical solution of the 1D Dyka benchmark}{equation.A.49}{}}
 \citation{Dyka1995}
 \citation{Dyka1995}
 \bibstyle{spmpsci}
 \bibdata{Biblio.bib}
 \bibcite{thesis_Andersen_2009}{1}
-\bibcite{Arroyo2006}{2}
+\newlabel{eq:1D-constitutive-equation}{{41}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.41}{}}
+\newlabel{eq:CompatibilityEquation_e}{{42}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.42}{}}
+\newlabel{eq:1D-balance-linear-momentum-II}{{43}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.43}{}}
+\newlabel{eq:1D-constitutive-equation-II}{{44}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.44}{}}
+\newlabel{eq:1D-wave-elastic}{{45}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.45}{}}
+\newlabel{eq:1D-elastic-wave-celerity}{{46}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.46}{}}
+\newlabel{eq:System-stress-velocity}{{47}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.47}{}}
+\newlabel{eq:System-stress-velocity-II}{{48}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.48}{}}
+\newlabel{eq:eq:System-stress-velocity-II}{{A}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.48}{}}
+\newlabel{eq:P-matrix}{{49}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.49}{}}
 \newlabel{eq:Lambda-matrix}{{50}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.50}{}}
 \newlabel{eq:Riemann-definition}{{51}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.51}{}}
 \newlabel{eq:Riemann-II}{{52}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.52}{}}
@@ -199,10 +182,7 @@
 \newlabel{eq:Riemann-I-1D-elastic-bar}{{57}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.57}{}}
 \newlabel{eq:Riemann-II-1D-elastic-bar}{{58}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.58}{}}
 \newlabel{eq:Riemann-stress-velocity}{{59}{8}{The analytical solution of the 1D Dyka benchmark}{equation.A.59}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Velocities values in the right side of the Dyka bar}}{8}{figure.caption.7}}
-\newlabel{fig:vel_analytics_dyka}{{5}{8}{Velocities values in the right side of the Dyka bar}{figure.caption.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Stress values in the last quarter side of the Dyka bar}}{8}{figure.caption.8}}
-\newlabel{fig:stress_analytics_dyka}{{6}{8}{Stress values in the last quarter side of the Dyka bar}{figure.caption.8}{}}
+\bibcite{Arroyo2006}{2}
 \bibcite{Bardenhagen2002}{3}
 \bibcite{Bardenhagen2004}{4}
 \bibcite{Brackbill1986}{5}
@@ -222,4 +202,8 @@
 \bibcite{E_Wobbes_2018}{19}
 \bibcite{Wobbes2020}{20}
 \bibcite{Zhang2011a}{21}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Velocities values in the right side of the Dyka bar}}{9}{figure.caption.8}}
+\newlabel{fig:vel_analytics_dyka}{{6}{9}{Velocities values in the right side of the Dyka bar}{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Stress values in the last quarter side of the Dyka bar}}{9}{figure.caption.9}}
+\newlabel{fig:stress_analytics_dyka}{{7}{9}{Stress values in the last quarter side of the Dyka bar}{figure.caption.9}{}}
 \bibcite{Zhang_book_2016}{22}
