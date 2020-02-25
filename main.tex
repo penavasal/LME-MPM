@@ -133,7 +133,7 @@ grestore
 % \subtitle{}
 
 \titlerunning{Suitability of the LME approximation under
-  the MPM framework for dynamic problems.}        % if too long for running head
+  the MPM framework for dynamic problems.} % if too long for running head
 
 \author{Miguel Molinos \and
   Pedro Navas \and
@@ -180,14 +180,33 @@ Since the proposal of the Material Point Method (\textbf{MPM}) by Sulsky {\it
 a particle-in-cell method \cite{Harlow1956} and a fluid implicit
 particle (FLIP) method \cite{Brackbill1986}, MPM has been used to
 simulate dynamic problems. However, in the simulations made with the
-originalMPM, there are numerical noises \cite{Tran2019e} when it is faced to solve
+original MPM, there are numerical noises \cite{Tran2019e} when it is faced to solve
 classic dynamic benchmarks like the one proposed by Dyka \& Ingel
-(1995)\cite{Dyka1995}. 
+(1995)\cite{Dyka1995}. These numerical inaccuracies give rise to the
+development of other interpolation techniques to overcome this limitation. Some of this
+alternatives techniques are the generalized interpolation material
+point method (GIMP) Bardenhagen \& Kober (2004)\cite{Bardenhagen2004},
+the dual domain material point method (DDMP) Zhang {\it et al.}
+(2011)\cite{Zhang2011a}, the B-Spline MPM Tran {\it et al.}
+(2019)\cite{Tran2019a}, the Conservative Taylor Least
+Squares reconstruction Wobbes {\it et al.}
+(2018)\cite{E_Wobbes_2018} and more recently the local
+maximum-entropy (or local \textit{max-ent}) shape function first
+introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} has been tested
+under the MPM framework by Wobbes {\it et al.}
+(2020)\cite{Wobbes2020}. Alternatively to change the spatial
+interpolation technique other researchers have overcome the well known
+wiggle that tends to appear in this dynamic simulations by filtering
+high-frequencies with an alternative time integration scheme, the
+implicit GIMP (iGIMP) Charlton {\it et al.}
+(2017)\nocite{Charlton2017} or the generalised-$\alpha$ scheme for the
+MPM proposed by Tran \& Solowski (2019)\nocite{Tran2019e}.
 
 The aim of this paper is to mitigate this spurious oscillations by the
-employ of the maximum-entropy (or local \textit{max-ent}) shape
-function under the MPM framework. First introduced by
-\cite{Arroyo2006}, it belongs to the class of convex 
+employ of a suitable combination of the maximum-entropy (or local
+\textit{max-ent}) shape functions, and the proposal of a explicit
+predictor-corrector scheme. Local \textit{max-ent} shape functions was
+first introduced by \cite{Arroyo2006}, it belongs to the class of convex 
 approximation schemes and provides a seamless transition between
 finite elements (\textbf{FE}) and mesh-free interpolations. The
 approximation scheme is based on a compromise between minimizing the
@@ -198,13 +217,20 @@ Delaunay triangulation which effectively resolves the degenerate cases
 resulting from the lack of uniqueness of the triangulation. Local
 \textit{max-ent} basis functions possess many desirable properties for
 meshfree algorithms. First of all, they are entirely defined by the
-nodal set and the domain of analysis. They are also non-negative, satisfy the partition of unity
-property, and provide an exact approximation for affine functions \cite{Arroyo2006}.
-
-This approximation scheme has been proof to have a good performance
-under the dynamic regime by other researchers like Navas {\it et al.}
+nodal set and the domain of analysis. They are also non-negative,
+satisfy the partition of unity property, and provide an exact
+approximation for affine functions \cite{Arroyo2006}. This
+approximation scheme has been proof to have a good performance under
+the dynamic regime by other researchers like Navas {\it et al.}
 (2018)\cite{Navas2018a} and Li {\it et al.} (2012)\cite{Li2012} for
-Optimal Transportation Meshfree (\textbf{OTM}) method.
+Optimal Transportation Meshfree (\textbf{OTM}) method. On the other
+hand, the time integration scheme here proposed is an accommodation of
+the Newmark a-form with $\gamma = 0.5$ and $\beta = 0$ which is the central difference
+explicit (CD). We have choose this method among other suitable
+alternatives as Wilson {\it et al.} (1972)\nocite{Wilson1972} or Chung
+\& Hulbert (1993)\nocite{Geranlized_alpha_1993} because it simplicity
+and it good performance dealing with solids dynamics problems like those
+presented in \cite{Navas2018a}.
 
 The article is organized as follows. Section \ref{sec:Notation}
 briefly reviews the notation here employed. Next, Section \ref{sec:derivation-mpm}
@@ -218,10 +244,13 @@ function is performed as well a parametric study for the $\gamma$
 parameter. Finally, conclusions and future research topics are exposed
 in Section \ref{sec:conclusions}.
 
-\section{Notation}
+\section{Brief note concerning the notation}
 \label{sec:Notation}
-In what follows, we will adopt the following convention:
-\begin{table}[h]
+In what follows, we will adopt the following convention. All the
+physical variables involved in this problem are collected in Table
+\ref{tab:notation-table}.
+
+\begin{table}
   \centering
   \caption{Physical variables involved in the problem}
   \label{tab:notation-table}
@@ -236,19 +265,17 @@ In what follows, we will adopt the following convention:
   \end{tabular}
 \end{table}
 
-The subscript $p$ is used to define a particle variable. While the
-subscript $I$ is reserved in this notation for denoting nodal
-variables.
+Three kind of subscript or superscript are used within paper. The
+subscript $\qed_p$ is used to define a particle variable. While the
+subscript $\qed_I$ is reserved in this notation for denoting nodal
+variables. And finally, the superscript $\qed^{\psi}$ involves a virtual
+magnitude. For the operators, the convention is : $\dot{\qed}$ and
+$\ddot{\qed}$ for the first and second time derivative, $\qued \otimes
+\qued$ means the dyadic operator, $(\cdot)$ and $(\colon)$ means the first
+and second contraction of a tensor, $\Div{\qed}$
+denotes the divergence operator, and finally $\Grad{\qed}$ and
+$\GradS{\qed}$ denotes the gradient and its symmetric part.
 
-The superscript $\psi$ involves a virtual magnitude.
-
-$\dot{\qed}$ 
-where $\Div{\qed}$ denotes the divergence operator.
-
-where $\GradS{\qed}$ denotes the symmetric part of the gradient
-operation. 
-
-$\varGamma_d$  $\varGamma_n$
 \section{Derivation of the MPM}
 \label{sec:derivation-mpm}
 In this section, we provide an overview of the standard explicit MPM
@@ -266,8 +293,10 @@ In the MPM approach a continuum is considered. Let define a
 $\varOmega$ domain occupied by an elastic body, and $\partial
 \varOmega$ the boundary of the domain, where $\partial
 \varOmega = \Gamma_d \bigcup \Gamma_n$ and $\Gamma_d \cap  \Gamma_n =
-\emptyset$. The behaviour of the continuum can be described by a set
-of governing equations which are (i) the balance of momentum equation
+\emptyset$. Note that $\varGamma_d$ is reserved for Dirichlet boundary
+conditions, and  $\varGamma_n$ for the Neumann. The behaviour of the
+continuum can be described by a set of governing equations which are
+(i) the balance of momentum equation
 \begin{equation}
   \label{eq:Balance-momentum}
 \rho \vect{a} = \Div{\tens{\sigma}} + \rho \vect{b},
@@ -289,7 +318,7 @@ finally we introduce (iv) the mass conservation, which if obtained by
 setting to zero the total derivative of the density field,
 \begin{equation}
   \label{eq:Rho-material-derivative}
-  \frac{D \rho}{D t} = \dot{\rho} + \rho \Grad{\vect{v}} = 0.
+  \frac{D \rho}{D t} = \dot{\rho} + \rho \Div\vect{v}} = 0.
 \end{equation}
 
 \subsection{Variational formulation}
@@ -332,7 +361,7 @@ particles. The material point $\vec{x}_p$ is defined at the centroid
 of each $\Omega_p$, figure \ref{fig:MPM-discretization}.
 \begin{figure}\sidecaption
   \centering
-  \resizebox{\hsize}{!}{
+  \resizebox{0.9\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Discretization_MPM}
   }
   \caption{MPM discretization.}
@@ -356,8 +385,8 @@ an addition  of a finite set of points. Therefore individual terms in
 \item Internal forces :
   \begin{equation}
     \label{eq:particle_internal_forces}
-    \Integral{3}{\tens{\sigma}\ \colon \Grad{\vec{\psi}}} = \sum^{N_p}_{p}
-   \tens{\sigma}_{p}\ \colon \Grad{\tens{\psi}_{p}}\ V_p.
+    \Integral{3}{\tens{\sigma}\ \cdot \Grad{\vec{\psi}}} = \sum^{N_p}_{p}
+   \tens{\sigma}_{p}\ \cdot \Grad{\tens{\psi}_{p}}\ V_p.
   \end{equation}\\
 \item Body forces :
 \begin{equation}
@@ -387,8 +416,8 @@ and approximating the real and virtual velocity  field of the particle
 $p$ as
 \begin{equation}
   \label{eq:Approx-velocity-mesh}
-  \vec{v}_{p} = \sum^{Nn}_I N_I(\vec{x}_p)\cdot \vect{v}_I
-  \quad \text{and} \quad \vec{v}^{\psi}_{p} = \sum^{Nn}_I N_I(\vec{x}_p)\cdot \vect{1},
+  \vec{v}_{p} = \sum^{Nn}_I N_I(\vec{x}_p) \vect{v}_I
+  \quad \text{and} \quad \vec{v}^{\psi}_{p} = \sum^{Nn}_I N_I(\vec{x}_p) \vect{1},
 \end{equation}
 we reach to the particle balance of forces of the continuum,
 \begin{equation}
@@ -407,11 +436,11 @@ matrix $\tens{m}_{IJ}^{lumped}$.
 Later, internal and external forces are computed as follows,
 \begin{equation}
   \label{eq:nodal_internal_forces}
-  \vec{f}_{I}^{int} = - \sum^{N_p}_{p} \tens{\sigma}_{p} \colon \Grad{N_{Ip}} \frac{m_p}{\rho_p}
+  \vec{f}_{I}^{int} = - \sum^{N_p}_{p} \tens{\sigma}_{p} \cdot \Grad{N_{Ip}} \frac{m_p}{\rho_p}
 \end{equation}
 \begin{equation}
   \label{eq:nodal_external_forces}
-  \vec{f}_{I}^{ext} = \sum^{N_p}_{p} \vec{b}_{p} N_{Ip} m_p  + \sum^{N_p}_{p}
+  \vec{f}_{I}^{ext} = \sum^{N_p}_{p} N_{Ip} \vec{b}_{p} m_p  + \sum^{N_p}_{p}
   N_{Ip} \vec{t}^s_{p} m_p h^{-1} 
 \end{equation}
 where $\tens{\sigma}_{p} = \tens{\sigma}_{p}(\tens{\varepsilon}_{p})$
@@ -440,7 +469,8 @@ interpolated back in to the particles and each particle it is advected
 to the new position,
 \begin{equation}
   \label{eq:Updated_Lagrangian}
-  \dot{\vec{v}}_p = \sum^{N_n}_{I}\vec{a}_{I}\ N_{Ip},\quad and\quad \dot{\vec{x}}_{p} = \sum^{N_n}_{I}\vec{v}_{I}\ N_{Ip}  
+  \dot{\vec{v}}_p = \sum^{N_n}_{I}N_{Ip}\ \vec{a}_{I},\quad and\quad
+  \dot{\vec{x}}_{p} = \sum^{N_n}_{I}N_{Ip}\ \vec{v}_{I}  
 \end{equation}
 In the MPM literature, this equations
 (\ref{eq:particle_balance_forces3}) and (\ref{eq:Updated_Lagrangian}),
@@ -525,23 +555,20 @@ calculating particles velocity and acceleration as described in
 \begin{equation}
   \label{eq:5}
   \vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
-  \underbrace{\sum^{N_n}_{I}\frac{\vec{p}_{I}^{k}\
-      N_{Ip}^k}{\tens{m}_I^k}}_{\vec{v}_p^{k}} + \frac{1}{2}\Delta
-  t^2\ \underbrace{\sum^{N_n}_{I}\frac{\vec{f}_{I}^{k}\
-      N_{Ip}^k}{\tens{m}_I^k}}_{\vec{a}_p^{k}}
+  \underbrace{\sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{p}_{I}^{k}}{\tens{m}_I^k}}_{\vec{v}_p^{k}} + \frac{1}{2}\Delta
+  t^2\ \underbrace{\sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{f}_{I}^{k}}{\tens{m}_I^k}}_{\vec{a}_p^{k}}
 \end{equation}
 \begin{equation}
   \label{eq:Predictor-velocity}
   \vec{v}_p^{k+1} = \vec{v}_p^n + (1 - \gamma)\ \Delta t\
-  \underbrace{\sum^{N_n}_{I}\frac{\vec{f}_{I}^{k}\
-      N_{Ip}^k}{\tens{m}_I^k}}_{\vec{a}_p^{k}}
+  \underbrace{\sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{f}_{I}^{k}}{\tens{m}_I^k}}_{\vec{a}_p^{k}}
 \end{equation}
 
 Consequently, the \textbf{corrector} stage for the particles velocity is in the
 following way
 \begin{equation}
   \vec{v}_{p}^{k+1} = \vec{v}_{p}^{k+1} +
-  \gamma\ \Delta t\ \underbrace{\sum^{N_n}_{I}\frac{\vec{f}_{I}^{k+1}\ N_{Ip}^{k+1}}{\tens{m}_I^{k+1}}}_{\vec{a}_p^{k+1}}  
+  \gamma\ \Delta t\ \underbrace{\sum^{N_n}_{I}\frac{N_{Ip}^{k+1}\ \vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}}_{\vec{a}_p^{k+1}}  
 \end{equation}
 
 Notice that the predictor of the particle displacement is
@@ -563,8 +590,11 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
     \STATE \textbf{Explicit Newmark Predictor} ($\gamma = 0.5$) :
     \begin{align*}
-      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\ \sum^{N_n}_{I}\frac{\vec{p}_{I}^{k}\ N_{Ip}^k}{\tens{M}_I^k} + \frac{1}{2}\Delta t^2\ \sum^{N_n}_{I}\frac{\vec{f}_{I}^{k}\ N_{Ip}^k}{\tens{M}_I^k}\\
-      &\vec{v}_p^{k+1} = \vec{v}_p^n + (1 - \gamma)\  \sum^{N_n}_{I}\frac{\vec{f}_{I}^{k}\ N_{Ip}^k}{\tens{M}_I^k}\Delta t        
+      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
+        \sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{p}_{I}^{k}}{\tens{M}_I^k} +
+        \frac{1}{2}\Delta t^2\ \sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{f}_{I}^{k}}{\tens{M}_I^k}\\
+      &\vec{v}_p^{k+1} = \vec{v}_p^n + (1 - \gamma)\
+        \sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{f}_{I}^{k}}{\tens{M}_I^k}\Delta t        
     \end{align*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Discard the previous nodal values}.
@@ -574,10 +604,10 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
     Calculate the lumped mass matrix $\tens{M}_{I}$,
     and the nodal momentum $\vec{p}_{I}$ with the predicted values.
     \begin{equation*}
-      \tens{M}_{I} = \sum_{p}^{N_p} m_p\ N_{Ip}^{k+1},
+      \tens{M}_{I} = \sum_{p}^{N_p}N_{Ip}^{k+1}\ m_p,
     \end{equation*}
     \begin{equation*}
-      \vec{p}_{I}^{k+1} = \sum_{p}^{N_p} m_p\ \vec{v}_{p}^{k+1}\ N_{Ip}^{k+1},
+      \vec{p}_{I}^{k+1} = \sum_{p}^{N_p} N_{Ip}^{k+1}\ m_p\ \vec{v}_{p}^{k+1},
     \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Impose essential boundary conditions over momentum nodal
@@ -612,10 +642,10 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
       \vec{p}_{I}^{k+1} = \vec{p}_{I}^{k} + \vec{f}_{I}^{k+1}\Delta t
     \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Explicit Newmark Predictor}:
+    \STATE \textbf{Explicit Newmark Corrector}:
     \begin{equation*}
       \vec{v}_{p}^{k+1} = \vec{v}_{p}^{k+1} +
-      \gamma \sum^{N_n}_{I}\frac{\vec{f}_{I}^{k+1}\ N_{Ip}^{k+1}}{\tens{m}_I^{k+1}}\Delta t  
+      \gamma \sum^{N_n}_{I}\frac{N_{Ip}^{k+1}\ \vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}\Delta t  
     \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \end{algorithmic}
@@ -640,22 +670,16 @@ successfully applied to a wide range of problems due to its ability to
 deal with large strain problems without mesh distorsion issues inherent to
 mesh based methods like FE. However, in the simulations made with the
 original MPM, there are numerical noises when particles crossing
-the cell boundaries. These numerical inaccuracies give rise to the
-development of other interpolation techniques. Some of this
-alternatives techniques are the generalized interpolation material
-point method (GIMP) Bardenhagen \& Kober (2004)\cite{Bardenhagen2004},
-the dual domain material point method (DDMP) Zhang {\it et al.}
-(2011)\cite{Zhang2011a}, the B-Spline MPM Tran {\it et al.}
-(2019)\cite{Tran2019a}, the Conservative Taylor Least
-Squares reconstruction Wobbes {\it et al.}
-(2018)\cite{E_Wobbes_2018} and more recently the local
-maximum-entropy (or local \textit{max-ent}) shape function first
-introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} has been tested
-under the MPM framework by Wobbes {\it et al.}
-(2020)\cite{Wobbes2020} where they prof that simulations performed with the maxent basis functions
-show considerably more accurate stress approximations for
-MPM. Although, in \cite{Wobbes2020} authors does not deep in $\beta$
-parameter benefits
+the cell boundaries. Recently the local maximum-entropy (or local
+\textit{max-ent}) shape function first introduced by Arroyo \& Ortiz
+(2006)\cite{Arroyo2006} has been tested under the MPM framework by
+Wobbes {\it et al.} (2020)\cite{Wobbes2020} where they prof that
+simulations performed with the maxent basis functions show
+considerably more accurate stress approximations for MPM. Although, in
+\cite{Wobbes2020} authors does not deep in $\beta$ parameter
+benefits. In this publication a parametric analysis of $\Beta$ will be
+performed in order to reach a compromise value that minimize the
+presence of wiggle without introducing an additional spurious behaviour.
 
 The maximum-entropy estimate is defined as the type of statistical
 inference, which is the least biased possible on the given information
@@ -822,30 +846,31 @@ present document but will be incorporated in future research.
 In this section, the benchmark proposed by Dyka \& Ingel
 (1995)\cite{Dyka1995} is considered to illustrate the
 capacity of MPM \cite{Sulsky1994} and OTM
-models to avoid tensile instabilities. 
+models to avoid tensile instabilities. Here we employ our in-house
+codes for both MPM and OTM simulations.
 
-In the one-dimensional bar sketched in
-the figure \ref{fig:Dyka_Bar}, the left end of the bar is fixed and
-the right and an initial velocity $v_0 = 5\ m/s$ is given to the last
-quarter of it in the x positive direction. The length of it is 0.1333
-meters with an unit section. The elastic parameters consider for this
-test are:
+In the one-dimensional bar sketched in the figure \ref{fig:Dyka_Bar},
+the left end of the bar is fixed and the right and an initial velocity
+$v_0 = 5\ m/s$ is given to the last quarter of it in the x positive
+direction. The length of it is 0.1333 meters with an unit section. The
+elastic parameters consider for this test are:
 \begin{itemize} 
 \item  Density : $7833\ kg/m3$
 \item  Poisson ratio : $0$
 \item  Elastic modulus : $200 \cdot 10^9\ Pa$
 \end{itemize}
 
-The results are provided for the explicit predictor-corrector version of the
-MPM scheme (Algorithm \ref{alg:PCE-algorithm}) and OTM algorithms. For MPM, piecewise-
-linear, uGIMP and \textit{max-ent} basis functions are employed. The OTM
-algorithm is used only with \textit{max-ent} shape functions. 
+The results are provided for the explicit predictor-corrector version
+of the MPM scheme (Algorithm \ref{alg:PCE-algorithm}) and OTM
+algorithms. For MPM, piecewise-linear, uGIMP and \textit{max-ent}
+basis functions are employed. The OTM algorithm is used only with
+\textit{max-ent} shape functions.
 
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.8\hsize}{!}{
+  \resizebox{\hsize}{!}{
     \input{Figures/Dyka_bar.tex}}
-  \caption{Geometrical description of the Dyka \cite{Dyka1995} bar. }
+  \caption{Geometrical description of the Dyka \cite{Dyka1995} bar.}
   \label{fig:Dyka_Bar}
 \end{figure}
 
@@ -854,6 +879,21 @@ The boundary conditions are:
   \label{eq:3}
   \sigma \rvert_{x=L} = 0 \quad , \quad v \rvert_{x=0} = 0
 \end{equation}
+
+The total simulation time is 0.0002 seconds, a direct consequence of
+that is we let the elastic wave generated travel thorough the bar
+(from A to C and back to A) at least four times. For the spatial
+discretization we will set five different values of the it : 0.1,
+0.05, 0.01, 0.005 and 0.001 millimeters. The initial mesh will be
+composed by a single particle in the center of the element. Regarding
+this, here we give one consideration to properly modellize this
+benchmark under the MPM framework. Notice that the free border of the
+bar has a horizontal displacement of 0.033 millimeters, therefore a
+computational domain with an extra gap of 0.033 millimeters is required in
+order to accommodate the unconstrained displacement of the particles in the
+left border of the bar. Here below the time step is controlled by the courant number, in
+this case, we adopt a middle value of it (CFL=0.5) as a compromise
+between stability and numerical accuracy.
 
 The analytical solution in terms of velocity
 \ref{fig:vel_analytics_dyka}, and stress
@@ -864,8 +904,12 @@ displacement is computed. RMS error is defined as follows
 
 \begin{equation}
   \label{eq:RMS}
-  RMS = \sqrt{\frac{1}{N} \sum^{N}_p \left( \phi_p - \hat{\phi}_p \right)}
+  RMS = \sqrt{\frac{1}{N} \sum^{N}_p \left( \phi_p - \hat{\phi}_p \right)^2},
 \end{equation}
+
+where $\phi_p$ and $\hat{\phi}_p$ are respectively the analytical and
+numerical solutions evaluated in the final time step in the position
+of each particle. 
 
 \subsection{Error analysis MPM vs uGIMP vs MPM-\textit{max-ent}}
 \label{sec:study-error}
@@ -1080,10 +1124,10 @@ is the following:
 \end{equation*}
 and its inverse is:
 \begin{equation*}
-    \Matrix{P}^{-1} = \frac{1}{2} \left[
+    \Matrix{P}^{-1} = \frac{1}{2\ \sqrt{E\rho}} \left[
     \begin{array}{cc}
-      -\frac{1}{\sqrt{E\rho}} & 1\\
-      \frac{1}{\sqrt{E\rho}} & 1 
+      -1 & \frac{1}{\sqrt{E\rho}}\\
+      1 & \frac{1}{\sqrt{E\rho}} 
     \end{array} \right]
 \end{equation*}
 
@@ -1107,17 +1151,17 @@ stress and the velocity as:
 \end{equation}
 
 The boundary conditions are in both cases of radiation as there is not
-wave in-going from the exterior. So for the left side (fixed
+wave in-going from the exterior. So for the right side (fixed
 boundary) we get the following conditions:
 \begin{equation*}
-  &\Re^{I} = 0 \quad and \quad v_{x=0} = 0
+  \Re^{II} = 0 \quad and \quad v_{x=L} = 0
 \end{equation*}
-Therefore $\sigma_{x=0} = \sqrt{\rho E}\Re^{II}$. And in the left side
+Therefore $\sigma_{x=L} = -2*\sqrt{\rho E}\Re^{I}$. And in the left side
 (free boundary) we get the following conditions:
 \begin{equation*}
-  &\Re^{II} = 0 \quad and \quad \sigma_{x=L} = 0
+  \Re^{I} = 0 \quad and \quad \sigma_{x=0} = 0
 \end{equation*}
-Therefore $v_{x=L} = \Re^{I}$. Finally, applying this conditions in
+Therefore $v_{x=0} = 2\Re^{II}$. Finally, applying this conditions in
 the elastic bar sketched in \ref{fig:Dyka_Bar}, is possible to obtain
 the velocity history in the right side of the bar
 \ref{fig:vel_analytics_dyka} and the stress in the last quarter side of the Dyka
