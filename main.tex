@@ -125,15 +125,16 @@ grestore
 %
 \begin{document}
 
-\title{Suitability of the local-maximum entropy approximation under
-  the Material Point Method framework for dynamic problems. \thanks{Funding: This
+\title{Novel improvements in the Material Point Method to face
+  dynamic problems: 
+  Local-maximum entropy approximation and an explicit   predictor-corrector scheme. \thanks{Funding: This
     study was funded by Agustín de Betancourt Foundation (grant number
     262390106114).}
 }
 % \subtitle{}
 
-\titlerunning{Suitability of the LME approximation under
-  the MPM framework for dynamic problems.} % if too long for running head
+\titlerunning{Novel improvements in the Material Point Method to face
+  dynamic problems.} % if too long for running head
 
 \author{Miguel Molinos \and
   Pedro Navas \and
@@ -175,38 +176,39 @@ grestore
 
 \section{Introduction}
 \label{intro}
-Since the proposal of the Material Point Method (\textbf{MPM}) by Sulsky {\it
-  et al.} (1994)\cite{Sulsky1994}, as a generalization of
-a particle-in-cell method \cite{Harlow1956} and a fluid implicit
-particle (FLIP) method \cite{Brackbill1986}, MPM has been used to
-simulate dynamic problems. However, in the simulations made with the
-original MPM, there are numerical noises \cite{Tran2019e} when it is faced to solve
-classic dynamic benchmarks like the one proposed by Dyka \& Ingel
-(1995)\cite{Dyka1995}. These numerical inaccuracies give rise to the
-development of other interpolation techniques to overcome this limitation. Some of this
-alternatives techniques are the generalized interpolation material
-point method (GIMP) Bardenhagen \& Kober (2004)\cite{Bardenhagen2004},
-the dual domain material point method (DDMP) Zhang {\it et al.}
+Since the proposal of the Material Point Method (\textbf{MPM}) by
+Sulsky {\it  et al.} (1994)\cite{Sulsky1994} as a generalization to
+solids of the fluid implicit particle (FLIP) method
+\cite{Brackbill1986}. It popularity has increased due to its ability
+to deal with large strain regime without suffer mesh distortion
+inaccuracies. However, this method suffers other kind of
+instabilities, such those when material points crossing cell
+boundaries. This give rise to the development of other interpolation
+techniques to overcome this limitation such as the generalized
+interpolation material point method (GIMP) Bardenhagen \& Kober
+(2004)\cite{Bardenhagen2004}, the dual
+domain material point method (DDMP) Zhang {\it et al.}
 (2011)\cite{Zhang2011a}, the B-Spline MPM Tran {\it et al.}
-(2019)\cite{Tran2019a}, the Conservative Taylor Least
-Squares reconstruction Wobbes {\it et al.}
-(2018)\cite{E_Wobbes_2018} and more recently the local
-maximum-entropy (or local \textit{max-ent}) shape function first
-introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} has been tested
-under the MPM framework by Wobbes {\it et al.}
-(2020)\cite{Wobbes2020}. Alternatively to change the spatial
-interpolation technique other researchers have overcome the well known
-wiggle that tends to appear in this dynamic simulations by filtering
-high-frequencies with an alternative time integration scheme, the
-implicit GIMP (iGIMP) Charlton {\it et al.}
+(2019)\cite{Tran2019a} or the Conservative Taylor
+Least Squares reconstruction Wobbes {\it et al.}
+(2018)\cite{E_Wobbes_2018}. This techniques are devoted to mitigate the
+``grid crossing'' error.
+Nevertheless, in the presence of shock waves spurious
+numerical noises appears despite of this using techniques \cite{Tran2019e}. These numerical
+inaccuracies also known as wiggles are due to the time discretization
+technique. A simple approach to face those spurious noises is to add a
+damping source to the equilibrium equations. To overcome this
+limitation, many researchers has proposed alternative time integration
+schemes which reduce them by filtering high-frequencies. Some of these
+attempts are the implicit GIMP (iGIMP) Charlton {\it et al.}
 (2017)\nocite{Charlton2017} or the generalised-$\alpha$ scheme for the
 MPM proposed by Tran \& Solowski (2019)\nocite{Tran2019e}.
 
 The aim of this paper is to mitigate this spurious oscillations by the
 employ of a suitable combination of the maximum-entropy (or local
-\textit{max-ent}) shape functions, and the proposal of a explicit
+\textit{max-ent}) $\gamma$ family shape functions, and the proposal of a explicit 
 predictor-corrector scheme. Local \textit{max-ent} shape functions was
-first introduced by \cite{Arroyo2006}, it belongs to the class of convex 
+first introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006}, it belongs to the class of convex 
 approximation schemes and provides a seamless transition between
 finite elements (\textbf{FE}) and mesh-free interpolations. The
 approximation scheme is based on a compromise between minimizing the
@@ -216,16 +218,22 @@ may be regarded as a regularization, or \textit{thermalization}, of
 Delaunay triangulation which effectively resolves the degenerate cases
 resulting from the lack of uniqueness of the triangulation. Local
 \textit{max-ent} basis functions possess many desirable properties for
-meshfree algorithms. First of all, they are entirely defined by the
+mesh-free algorithms. First of all, they are entirely defined by the
 nodal set and the domain of analysis. They are also non-negative,
 satisfy the partition of unity property, and provide an exact
-approximation for affine functions \cite{Arroyo2006}. This
+approximation for affine functions \cite{Arroyo2006}. Furthermore, as
+it is not based in a voxel discretization as the GIMP, it is no prone to suffer
+voxel domains overlap, which can introduce severe inaccuracies. This
 approximation scheme has been proof to have a good performance under
 the dynamic regime by other researchers like Navas {\it et al.}
 (2018)\cite{Navas2018a} and Li {\it et al.} (2012)\cite{Li2012} for
-Optimal Transportation Meshfree (\textbf{OTM}) method. On the other
-hand, the time integration scheme here proposed is an accommodation of
-the Newmark a-form with $\gamma = 0.5$ and $\beta = 0$ which is the central difference
+Optimal Transportation Meshfree (\textbf{OTM}) method. And more
+recently under the MPM framework by Wobbes {\it et
+  al.}(2020)\cite{Wobbes2020} but limiting the $\gamma$ parameter to
+zero. On the other hand, the time integration scheme here proposed is an accommodation of
+the Newmark a-form ($\gamma = 0.5$ and $\beta = 0$)\footnote{Notice
+that these $\gamma$ and $\beta$ parameters does not have the same
+meaning for the LME shape functions.} which is the central difference
 explicit (CD). We have choose this method among other suitable
 alternatives as Wilson {\it et al.} (1972)\nocite{Wilson1972} or Chung
 \& Hulbert (1993)\nocite{Geranlized_alpha_1993} because it simplicity
@@ -241,8 +249,9 @@ time integration scheme for the MPM is proposed. Section
 basis functions here employed. In Section \ref{sec:dynamic-benchmark}
 a comparison between both methods MPM and OTM employing \textit{max-ent} shape
 function is performed as well a parametric study for the $\gamma$
-parameter. Finally, conclusions and future research topics are exposed
-in Section \ref{sec:conclusions}.
+parameter. Both techniques will face to solve a classic dynamic
+benchmark proposed by Dyka \& Ingel (1995)\cite{Dyka1995}. Finally,
+conclusions and future research topics are exposed in Section \ref{sec:conclusions}.
 
 \section{Brief note concerning the notation}
 \label{sec:Notation}
@@ -278,14 +287,17 @@ $\GradS{\qed}$ denotes the gradient and its symmetric part.
 
 \section{Derivation of the MPM}
 \label{sec:derivation-mpm}
-In this section, we provide an overview of the standard explicit MPM
-algorithm as presented by \cite{Sulsky1994}. The method has three main
-steps: a variational recovery process to project particle data to the
-nodes of the grid, a Eulerian step where balance of momentum is
-compute by solving internal and external forces in the nodes, and
-finally the advection of the Lagrangian particles. We will first give
-a introduction to the governing equations and then follow by an
-algorithmic description of the process.
+The aim of this section is to provide an overview of
+the standard explicit MPM algorithm \cite{Sulsky1994}. Therefore, it
+is structured in the following shape: we will first give a
+introduction to the governing equations \ref{sec:governing-equations},
+later the variational statement of the problem will be presented \ref{sec:variational-formulation}, and
+finally a discretization procedure thorough Galerkin is performed \ref{sec:Galerkin-procedure}.
+
+The method has three main steps: (i) a variational recovery process,
+where particle data is projected to the grid nodes, (ii) an Eulerian
+step, where balance of momentum equation is expressed as a nodal
+equilibrium equation thorough a FEM-like procedure, and finally (iii) a Lagrangian advection of the particles.
 
 \subsection{Governing equations }
 \label{sec:governing-equations}
@@ -294,27 +306,26 @@ $\varOmega$ domain occupied by an elastic body, and $\partial
 \varOmega$ the boundary of the domain, where $\partial
 \varOmega = \Gamma_d \bigcup \Gamma_n$ and $\Gamma_d \cap  \Gamma_n =
 \emptyset$. Note that $\varGamma_d$ is reserved for Dirichlet boundary
-conditions, and  $\varGamma_n$ for the Neumann. The behaviour of the
-continuum can be described by a set of governing equations which are
+conditions, and  $\varGamma_n$ for the Neumann. The behaviour of the continuum can be described by a set of governing equations which are
 (i) the balance of momentum equation
 \begin{equation}
   \label{eq:Balance-momentum}
 \rho \vect{a} = \Div{\tens{\sigma}} + \rho \vect{b},
 \end{equation}
-next (ii) the compatibility equation with ensure that the velocity
+(ii) the compatibility equation with ensure that the velocity
 field is compatible with the Cauchy strain field,
 \begin{equation}
   \label{eq:Compatibility-equation}
   \dot{\tens{\varepsilon}} = \GradS{\vect{v}} = \frac{1}{2}\left(
     \Grad{\vect{v}} +  \GradT{\vect{v}} \right),
 \end{equation}
-later (iii) the constitutive equation, which relates the rate of Cauchy strain
+(iii) the constitutive equation, which relates the rate of Cauchy strain
 tensor with the rate of Cauchy stress tensor,
 \begin{equation}
   \label{eq:Constitutive-equation}
 \dot{\tens{\sigma}} = \tens{D} \colon \dot{\tens{\varepsilon}},
 \end{equation}
-finally we introduce (iv) the mass conservation, which if obtained by
+and finally (iv) the mass conservation, which can be obtained by
 setting to zero the total derivative of the density field,
 \begin{equation}
   \label{eq:Rho-material-derivative}
@@ -333,7 +344,7 @@ virtual velocity field such that
 And which satisfies that the Cauchy sequences are convergent in $\varOmega$
 \begin{equation}
   \label{eq:cauchy-secuence}
-  \Integral{3}{\vect{v}^{\psi}} < \infty\ \quad\text{and}\quad \Integral{3}{\Grad{\vect{v}^{\psi}}} < \infty
+  \Integral{3}{\vect{v}^{\psi}} < \infty\ \quad\text{and}\quad \Integral{3}{\tens{\varepsilon}^{\psi}} < \infty
 \end{equation}
 The principle of virtual work states that the equilibrium solution to
 the boundary value problem of elasticity is the function $\vect{v} \in
@@ -474,8 +485,8 @@ to the new position,
 \end{equation}
 In the MPM literature, this equations
 (\ref{eq:particle_balance_forces3}) and (\ref{eq:Updated_Lagrangian}),
-are solved with a forward Euler algorithm. In the next section, an
-alternative time integration scheme based on the Newmark a-form is proposed.
+are solved with an explicit forward Euler algorithm. In the next
+section, an alternative time integration scheme based on the Newmark a-form is presented.
 
 \section{Explicit predictor-corrector scheme for MPM.}
 \label{sec:epc-algor-mpm}
@@ -485,7 +496,7 @@ The time integration scheme of the MPM has been described in detail by many rese
 in Figure \ref{fig:MPM_algorithm}. Other authors have proposed many
 others time integration alternatives like
 \cite{Guilkey2003}, \cite{Tran2019e}, \cite{Charlton2017}. In the first publication on
-the MPM \cite{Sulsky1994}, the nodal acceleration in employed to
+the MPM \cite{Sulsky1994}, the nodal acceleration was employed to
 update the particles as
 \begin{equation}
   \label{eq:Sulsky-1994-UL-v}
@@ -496,8 +507,7 @@ update the particles as
   \label{eq:Sulsky-1994-UL-x}
   \vect{x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ \sum^{N_n}_{I}N_{Ip}^{k}\ \vec{v}_{I}^{k}.
 \end{equation}
-However, as Andersen (2009)\cite{thesis_Andersen_2009} point out, this
-algorithm has been shown to be numerically unstable due to that
+However, as Andersen (2009)\cite{thesis_Andersen_2009} point out, this algorithm has been shown to be numerically unstable due to that
 $\vect{f}_I^{int,k}$ can be finite for an infinitesimal nodal mass
 $\tens{m}$. This can lead to numerical issues when nodal acceleration
 is obtained for evaluating \eqref{eq:Sulsky-1994-UL-x},\eqref{eq:Sulsky-1994-UL-v}. Hence, a
@@ -914,14 +924,14 @@ of each particle.
 \subsection{Error analysis MPM vs uGIMP vs MPM-\textit{max-ent}}
 \label{sec:study-error}
 
-\begin{figure}\sidecaption
+\begin{figure*}\sidecaption
   \centering
-  \resizebox{\hsize}{!}{
+  \resizebox{0.7\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Velocity-Comparative}
   }
   \caption{Velocity evolution at the point in the bar left side.}
   \label{fig:Dyka-MPM-uGIMP-LME}
-\end{figure}
+\end{figure*}
 
 \subsection{MPM versus OTM}
 \label{sec:mpm-versus-otm}
@@ -953,11 +963,10 @@ dynamic behaviour of a 1D elastic bar. The governing equations are the
 following: (i) The balance of linear momentum,
 \begin{equation}
   \label{eq:1D-balance-linear-momentum}
-  \rho\ \Deriv{v}{t} = \Deriv{\sigma}{x} + \rho\ b,
+  \rho\ \Deriv{v}{t} = \Deriv{\sigma}{x},
 \end{equation}
-where $\sigma$ is the stress value, $\rho$ is the density,
-$v$ is the velocity, and $b$ are the body
-forces. (ii) The constitutive model, which for convenience of the
+where $\sigma$ is the stress value, $\rho$ is the density, and 
+$v$ is the velocity. (ii) The constitutive model, which for convenience of the
 following developments will be written in terms of displacement and
 velocities as, 
 \begin{equation}
@@ -970,9 +979,7 @@ also in terms of the velocity field,
   \label{eq:CompatibilityEquation_e}
   \Deriv{\varepsilon}{t} = \Deriv{v}{x}.
 \end{equation}
-Next for simplicity, we remove the body forces from
-\eqref{eq:1D-balance-linear-momentum}, and we will introduce
-\eqref{eq:CompatibilityEquation_e} in
+Next for simplicity, we will introduce \eqref{eq:CompatibilityEquation_e} in 
 \eqref{eq:1D-constitutive-equation}, so we get the following system of equations,
 \begin{align}
   \label{eq:1D-balance-linear-momentum-II}
@@ -1156,7 +1163,7 @@ boundary) we get the following conditions:
 \begin{equation*}
   \Re^{II} = 0 \quad and \quad v_{x=L} = 0
 \end{equation*}
-Therefore $\sigma_{x=L} = -2*\sqrt{\rho E}\Re^{I}$. And in the left side
+Therefore $\sigma_{x=L} = -2\sqrt{\rho E}\ \Re^{I}$. And in the left side
 (free boundary) we get the following conditions:
 \begin{equation*}
   \Re^{I} = 0 \quad and \quad \sigma_{x=0} = 0
