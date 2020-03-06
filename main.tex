@@ -485,19 +485,23 @@ to the new position,
 \end{equation}
 In the MPM literature, this equations
 (\ref{eq:particle_balance_forces3}) and (\ref{eq:Updated_Lagrangian}),
-are solved with an explicit forward Euler algorithm. In the next
-section, an alternative time integration scheme based on the Newmark a-form is presented.
-
-\section{Explicit predictor-corrector scheme for MPM.}
-\label{sec:epc-algor-mpm}
-
-The time integration scheme of the MPM has been described in detail by many researchers
+are solved with an explicit forward Euler algorithm. The time integration scheme of the MPM has been described in detail by many researchers
 \cite{Sulsky1994}, \cite{Bardenhagen2002}, \cite{thesis_Andersen_2009} and summarized
-in Figure \ref{fig:MPM_algorithm}. Other authors have proposed many
-others time integration alternatives like
-\cite{Guilkey2003}, \cite{Tran2019e}, \cite{Charlton2017}. In the first publication on
-the MPM \cite{Sulsky1994}, the nodal acceleration was employed to
-update the particles as
+in Figure \ref{fig:MPM_algorithm}.
+
+\begin{figure}\sidecaption
+  \centering
+  \resizebox{0.55\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/MPM_scheme}
+  }
+  \caption{MPM standard algorithm.}
+  \label{fig:MPM_algorithm}
+\end{figure}
+
+Other authors have proposed many others time integration alternatives
+like \cite{Guilkey2003}, \cite{Tran2019e}, \cite{Charlton2017}. In the
+first publication on the MPM \cite{Sulsky1994}, the nodal acceleration
+was employed to update the particles as
 \begin{equation}
   \label{eq:Sulsky-1994-UL-v}
   \vect{v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\
@@ -547,38 +551,45 @@ time step.
 
 This scheme has prof to damps out the higher frequency noises
 \cite{Tran2019e}. But it can present the same numerical instabilities
-as in \eqref{eq:Sulsky-1994-UL-x},\eqref{eq:Sulsky-1994-UL-v} when nodal masses become infinitesimal.
-Here we propose a explicit predictor-corrector scheme for MPM based on the Newmark a-form with
+as in \eqref{eq:Sulsky-1994-UL-x},\eqref{eq:Sulsky-1994-UL-v} when
+nodal masses become infinitesimal.
+
+\section{Explicit predictor-corrector scheme for MPM.}
+\label{sec:epc-algor-mpm}
+
+In this section, an explicit predictor-corrector time integration
+scheme is presented. It is based in the Newmark a-form 
 $\gamma = 0.5$ and $\beta = 0$ which is the central difference
 explicit. This method is devoted to solve a system of equations of type
 \begin{equation*}
   \Matrix{M}_{IJ}\ddot{\Vector{d}}_{J} + \Matrix{C}_{IJ}\dot{\Vector{d}}_{J} +
-  \Matrix{K}_{IJ}\Vector{d}_{J} = \Vector{F}_{I}
+  \Matrix{K}_{IJ}\Vector{d}_{J} = \Vector{F}_{I}.
 \end{equation*}
-Nevertheless it can be applied for an isolated mass, therefore it is
-possible to apply this methods successfully in the MPM framework as
-was proved by \cite{Tran2019e}. Taking the predictor
-definition from the classic literature \cite{Hughes2000} and
-calculating particles velocity and acceleration as described in 
-\cite{Zhang_book_2016}, we get the following expression for the
+
+As the MPM has a nodal stage, it is possible to apply this methods
+successfully in the MPM framework as was proved by
+\cite{Tran2019e}. Taking the predictor definition from the classic
+literature \cite{Hughes2000} and calculating nodal velocity, and
+updating particles position employing nodal values of velocity and
+acceleration. Therefore we get the following expression for the
 \textbf{predictor} stage for both velocity and displacement.
 \begin{equation}
   \label{eq:5}
   \vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
-  \underbrace{\sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{p}_{I}^{k}}{\tens{m}_I^k}}_{\vec{v}_p^{k}} + \frac{1}{2}\Delta
+  \underbrace{\sum^{N_n}_{I}N_{Ip}^k\ \vec{v}_{I}^{k}}_{\vec{v}_p^{k}} + \frac{1}{2}\Delta
   t^2\ \underbrace{\sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{f}_{I}^{k}}{\tens{m}_I^k}}_{\vec{a}_p^{k}}
 \end{equation}
 \begin{equation}
   \label{eq:Predictor-velocity}
-  \vec{v}_p^{k+1} = \vec{v}_p^n + (1 - \gamma)\ \Delta t\
-  \underbrace{\sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{f}_{I}^{k}}{\tens{m}_I^k}}_{\vec{a}_p^{k}}
+  \vec{v}_I^{k+1} = \vec{v}_I^n + (1 - \gamma)\ \Delta t\ \vec{a}_I^k
+  \quad , \quad \vec{a}_I^k = \frac{\vec{f}_{I}^{k}}{\tens{m}_I^k}
 \end{equation}
 
-Consequently, the \textbf{corrector} stage for the particles velocity is in the
+Consequently, the \textbf{corrector} stage for the nodal velocity is in the
 following way
 \begin{equation}
-  \vec{v}_{p}^{k+1} = \vec{v}_{p}^{k+1} +
-  \gamma\ \Delta t\ \underbrace{\sum^{N_n}_{I}\frac{N_{Ip}^{k+1}\ \vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}}_{\vec{a}_p^{k+1}}  
+  \vec{v}_{I}^{k+1} = \vec{v}_{I}^{k+1} + \gamma\ \Delta t\
+  \vec{a}_I^{k+1} \quad , \quad  \vec{a}_I^{k+1} = \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}} 
 \end{equation}
 
 Notice that the predictor of the particle displacement is
@@ -587,7 +598,14 @@ previous step. However, velocities are computed using half information
 of the past corrector and half of the past predictor. Therefore here we share
 similarities with the \textbf{leapfrog integration} which updates the
 position at full time step, but updates the velocity at half time
-steps. Due to its simplicity allows be implemented with minor modifications
+steps. Notice also that with this approach the calculation of nodal
+momentum vales in not required, and particles velocities is just a
+post-process. So during the lagrangian step only the particles
+position is truly computed. This minimizes the information
+transference between the particles and nodes, and in consequence
+minimizes the associated error to this process. 
+
+Due to its simplicity allows be implemented with minor modifications
 over a standard forward Euler. It is summarized in shape of
 pseudo-algorithm \ref{alg:PCE-algorithm}.
 
@@ -595,36 +613,24 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
   \label{alg:PCE-algorithm}
   \floatname{algorithm}{Algorithm}
   \renewcommand{\thealgorithm}{}
-  \caption{Explicit scheme : Newmark central difference}
+  \caption{Explicit Predictor-Corrector scheme}
   \begin{algorithmic}[1]
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
-    \STATE \textbf{Explicit Newmark Predictor} ($\gamma = 0.5$) :
-    \begin{align*}
-      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
-        \sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{p}_{I}^{k}}{\tens{M}_I^k} +
-        \frac{1}{2}\Delta t^2\ \sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{f}_{I}^{k}}{\tens{M}_I^k}\\
-      &\vec{v}_p^{k+1} = \vec{v}_p^n + (1 - \gamma)\
-        \sum^{N_n}_{I}\frac{N_{Ip}^k\ \vec{f}_{I}^{k}}{\tens{M}_I^k}\Delta t        
-    \end{align*}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Discard the previous nodal values}.
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Transference of particles kinetics information to the
-      mesh}:\\
-    Calculate the lumped mass matrix $\tens{M}_{I}$,
-    and the nodal momentum $\vec{p}_{I}$ with the predicted values.
+    \STATE \textbf{Explicit Newmark Predictor} ($\gamma = 0.5$):
     \begin{equation*}
-      \tens{M}_{I} = \sum_{p}^{N_p}N_{Ip}^{k+1}\ m_p,
-    \end{equation*}
-    \begin{equation*}
-      \vec{p}_{I}^{k+1} = \sum_{p}^{N_p} N_{Ip}^{k+1}\ m_p\ \vec{v}_{p}^{k+1},
+      \vec{v}_I^{k+1} = \vec{v}_I^n + (1 - \gamma)\ \Delta t\ \vec{a}_I^k
+      \quad , \quad \vec{a}_I^k = \frac{\vec{f}_{I}^{k}}{\tens{m}_I^k}      
     \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Impose essential boundary conditions over momentum nodal
-      values}:\\
-    At the fixed boundary, set $\vec{p}_{I}^{k+1} = 0$. Later, get the
-    nodal values of the velocity field $\vec{v}_{I}^{k+1} =
-    \frac{\vec{p}_{I}^{k+1}}{\tens{M}_{I}}$
+    \STATE \textbf{Impose essential boundary conditions}:\\
+    At the fixed boundary, set $\vec{v}_{I}^{k+1} = 0$. 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    % \STATE \textbf{Discard the previous nodal values}.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Update mass matrix}:
+    \begin{equation*}
+      \tens{m}_{I} = \sum_{p}^{N_p}N_{Ip}^{k+1}\ m_p,
+    \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Deformation tensor increment calculation}.
     \begin{align*}
@@ -634,7 +640,7 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
       &\Delta \tens{\varepsilon}_{p}^{k+1} = \Delta t\ \dot{\tens{\varepsilon}_{p}}^{k+1}
     \end{align*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Update the density field}:\\
+    \STATE \textbf{Update the density field}:
     \begin{equation*}
       \rho_p^{k+1} = \frac{\rho_p^k}{1 + \mathit{tra}\left[\Delta\tens{\varepsilon}_{p}^{k+1}\right]}.
     \end{equation*}
@@ -646,28 +652,86 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
     grid node $I$ is fixed in one of the spatial dimensions, set it to
     zero to make the grid nodal acceleration zero in that direction.\\
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Integrate the grid nodal momentum equation :}\\
-    Calculate the nodal momentum $\vec{p}_{I}$ in $k+1$. 
+    \STATE \textbf{Explicit Newmark Corrector} ($\gamma = 0.5$):
     \begin{equation*}
-      \vec{p}_{I}^{k+1} = \vec{p}_{I}^{k} + \vec{f}_{I}^{k+1}\Delta t
+      \vec{v}_{I}^{k+1} = \vec{v}_{I}^{k+1} + \gamma\ \Delta t\
+      \vec{a}_I^{k+1} \quad , \quad  \vec{a}_I^{k+1} = \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}  
     \end{equation*}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Explicit Newmark Corrector}:
-    \begin{equation*}
-      \vec{v}_{p}^{k+1} = \vec{v}_{p}^{k+1} +
-      \gamma \sum^{N_n}_{I}\frac{N_{Ip}^{k+1}\ \vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}\Delta t  
-    \end{equation*}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \STATE \textbf{Update particles position and velocity}:
+    \begin{align*}
+      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
+        \sum^{N_n}_{I} N_{Ip}^k\ \vec{v}_{I}^{k} +
+        \frac{1}{2}\Delta t^2\ \sum^{N_n}_{I}\frac{N_{Ip}^k\
+        \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+      &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
+        \sum^{N_n}_{I}\frac{N_{Ip}^k\
+        \vec{f}_{I}^{k}}{\tens{m}_I^k}
+    \end{align*}
   \end{algorithmic}
 \end{algorithm} 
 
+\subsection{Analysis of the Explicit Predictor-Corrector accuracy}
+\label{sec:EPC-accuracy}
+
+In this section, the benchmark proposed by Dyka \& Ingel
+(1995)\cite{Dyka1995} is considered to illustrate the
+capacity of the proposed time integration algorithm to avoid velocity
+fields instabilities.
+
+In the one-dimensional bar sketched in the figure \ref{fig:Dyka_Bar},
+the left end of the bar is fixed and the right and an initial velocity
+$v_0 = 5\ m/s$ is given to the last quarter of it in the x positive
+direction. The length of it is 0.1333 meters with an unit section.
+
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.6\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/MPM_scheme}
+  \resizebox{\hsize}{!}{
+    \input{Figures/Dyka_bar.tex}}
+  \caption{Geometrical description of the Dyka \cite{Dyka1995} bar.}
+  \label{fig:Dyka_Bar}
+\end{figure}
+
+The elastic parameters consider for this test are:
+\begin{itemize} 
+\item  Density : $7833\ kg/m3$
+\item  Poisson ratio : $0$
+\item  Elastic modulus : $200 \cdot 10^9\ Pa$
+\end{itemize}
+
+The boundary conditions are:
+\begin{equation}
+  \label{eq:3}
+  \sigma \rvert_{x=L} = 0 \quad , \quad v \rvert_{x=0} = 0
+\end{equation}
+
+The total simulation time is 0.0002 seconds, a direct consequence of
+that is we let the elastic wave generated travel thorough the bar
+(from A to C and back to A) at least four times. For the spatial
+discretization we will set a mesh size of 3.3325 millimeters. The
+initial mesh will be composed by a single particle in the center of
+the element. Regarding this, here we give one consideration to
+properly modellize this benchmark under the MPM framework. Notice that
+the free border of the bar has a horizontal displacement of 0.033
+millimeters, therefore a computational domain with an extra gap of
+0.033 millimeters is required in order to accommodate the
+unconstrained displacement of the particles in the left border of the
+bar. Here below the time step is controlled by the courant number, in
+this case, we adopt a middle value of it (CFL=0.5) as a compromise
+between stability and numerical accuracy. 
+
+The analytical solution in terms of velocity
+\ref{fig:vel_analytics_dyka}, and stress
+\ref{fig:stress_analytics_dyka} can be found in the appendix
+\ref{app:analytical_sol} given by the Method of characteristics.
+
+\begin{figure}\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/FE_vs_PCE_CFL_05}
   }
-  \caption{MPM standard algorithm.}
-  \label{fig:MPM_algorithm}
+  \caption{Velocity evolution at the point in the bar left side.}
+  \label{fig:Dyka-PCE-FE}
 \end{figure}
 
 \section{Local max-ent approximants}
@@ -850,66 +914,10 @@ tensile inestability. Nonetheless this is out of the scope of the
 present document but will be incorporated in future research.
 
 
-\section{Numerical results : 1D Elastic bar}
-\label{sec:dynamic-benchmark}
+\subsection{Error analysis MPM vs uGIMP vs MPM-\textit{max-ent}}
+\label{sec:study-error}
 
-In this section, the benchmark proposed by Dyka \& Ingel
-(1995)\cite{Dyka1995} is considered to illustrate the
-capacity of MPM \cite{Sulsky1994} and OTM
-models to avoid tensile instabilities. Here we employ our in-house
-codes for both MPM and OTM simulations.
-
-In the one-dimensional bar sketched in the figure \ref{fig:Dyka_Bar},
-the left end of the bar is fixed and the right and an initial velocity
-$v_0 = 5\ m/s$ is given to the last quarter of it in the x positive
-direction. The length of it is 0.1333 meters with an unit section. The
-elastic parameters consider for this test are:
-\begin{itemize} 
-\item  Density : $7833\ kg/m3$
-\item  Poisson ratio : $0$
-\item  Elastic modulus : $200 \cdot 10^9\ Pa$
-\end{itemize}
-
-The results are provided for the explicit predictor-corrector version
-of the MPM scheme (Algorithm \ref{alg:PCE-algorithm}) and OTM
-algorithms. For MPM, piecewise-linear, uGIMP and \textit{max-ent}
-basis functions are employed. The OTM algorithm is used only with
-\textit{max-ent} shape functions.
-
-\begin{figure}\sidecaption
-  \centering
-  \resizebox{\hsize}{!}{
-    \input{Figures/Dyka_bar.tex}}
-  \caption{Geometrical description of the Dyka \cite{Dyka1995} bar.}
-  \label{fig:Dyka_Bar}
-\end{figure}
-
-The boundary conditions are:
-\begin{equation}
-  \label{eq:3}
-  \sigma \rvert_{x=L} = 0 \quad , \quad v \rvert_{x=0} = 0
-\end{equation}
-
-The total simulation time is 0.0002 seconds, a direct consequence of
-that is we let the elastic wave generated travel thorough the bar
-(from A to C and back to A) at least four times. For the spatial
-discretization we will set five different values of the it : 0.1,
-0.05, 0.01, 0.005 and 0.001 millimeters. The initial mesh will be
-composed by a single particle in the center of the element. Regarding
-this, here we give one consideration to properly modellize this
-benchmark under the MPM framework. Notice that the free border of the
-bar has a horizontal displacement of 0.033 millimeters, therefore a
-computational domain with an extra gap of 0.033 millimeters is required in
-order to accommodate the unconstrained displacement of the particles in the
-left border of the bar. Here below the time step is controlled by the courant number, in
-this case, we adopt a middle value of it (CFL=0.5) as a compromise
-between stability and numerical accuracy.
-
-The analytical solution in terms of velocity
-\ref{fig:vel_analytics_dyka}, and stress
-\ref{fig:stress_analytics_dyka} can be found in the appendix
-\ref{app:analytical_sol} given by the Method of characteristics. For
-the convergence analysis, the root-mean-square (RMS) error in the
+For the convergence analysis, the root-mean-square (RMS) error in the
 displacement is computed. RMS error is defined as follows
 
 \begin{equation}
@@ -919,10 +927,8 @@ displacement is computed. RMS error is defined as follows
 
 where $\phi_p$ and $\hat{\phi}_p$ are respectively the analytical and
 numerical solutions evaluated in the final time step in the position
-of each particle. 
+of each particle.
 
-\subsection{Error analysis MPM vs uGIMP vs MPM-\textit{max-ent}}
-\label{sec:study-error}
 
 \begin{figure*}\sidecaption
   \centering
@@ -936,6 +942,15 @@ of each particle.
 \subsection{MPM versus OTM}
 \label{sec:mpm-versus-otm}
 
+MPM \cite{Sulsky1994} and OTM
+models to avoid tensile instabilities. Here we employ our in-house
+codes for both MPM and OTM simulations.
+
+The results are provided for the explicit predictor-corrector version
+of the MPM scheme (Algorithm \ref{alg:PCE-algorithm}) and OTM
+algorithms. For MPM, piecewise-linear, uGIMP and \textit{max-ent}
+basis functions are employed. The OTM algorithm is used only with
+\textit{max-ent} shape functions.
 
 \section{Conclusions}
 \label{sec:conclusions}
