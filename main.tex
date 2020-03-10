@@ -98,12 +98,12 @@ grestore
 
 % Divergence
 \newcommand{\Div}[1]{
-  \ensuremath{\nabla \cdot {#1}}
+  \ensuremath{div({#1})}
 }
 % Gradient
-\newcommand\Grad[1]{\nabla{#1}}
-\newcommand\GradS[1]{\nabla^s{#1}}
-\newcommand\GradT[1]{\nabla^T{#1}}
+\newcommand\Grad[1]{grad({#1})}
+\newcommand\GradS[1]{grad^s({#1})}
+\newcommand\GradT[1]{grad^T({#1})}
 
 
 % Partial derivative
@@ -283,7 +283,8 @@ $\ddot{\qed}$ for the first and second time derivative, $\qued \otimes
 \qued$ means the dyadic operator, $(\cdot)$ and $(\colon)$ means the first
 and second contraction of a tensor, $\Div{\qed}$
 denotes the divergence operator, and finally $\Grad{\qed}$ and
-$\GradS{\qed}$ denotes the gradient and its symmetric part.
+$\GradS{\qed}$ denotes the gradient and its symmetric part. Einstain
+subscripts convention is adopted so repeated index means addition.
 
 \section{Derivation of the MPM}
 \label{sec:derivation-mpm}
@@ -291,8 +292,9 @@ The aim of this section is to provide an overview of
 the standard explicit MPM algorithm \cite{Sulsky1994}. Therefore, it
 is structured in the following shape: we will first give a
 introduction to the governing equations \ref{sec:governing-equations},
-later the variational statement of the problem will be presented \ref{sec:variational-formulation}, and
-finally a discretization procedure thorough Galerkin is performed \ref{sec:Galerkin-procedure}.
+later the variational statement of the problem will be presented
+\ref{sec:variational-formulation}, and finally a discretization
+procedure thorough Galerkin is performed \ref{sec:Galerkin-procedure}.
 
 The method has three main steps: (i) a variational recovery process,
 where particle data is projected to the grid nodes, (ii) an Eulerian
@@ -306,7 +308,9 @@ $\varOmega$ domain occupied by an elastic body, and $\partial
 \varOmega$ the boundary of the domain, where $\partial
 \varOmega = \Gamma_d \bigcup \Gamma_n$ and $\Gamma_d \cap  \Gamma_n =
 \emptyset$. Note that $\varGamma_d$ is reserved for Dirichlet boundary
-conditions, and  $\varGamma_n$ for the Neumann. The behaviour of the continuum can be described by a set of governing equations which are
+conditions, and  $\varGamma_n$ for the Neumann. In a inifinitesimal
+strain context, the behaviour of the continuum can be described by the
+following set of equations:
 (i) the balance of momentum equation
 \begin{equation}
   \label{eq:Balance-momentum}
@@ -316,8 +320,7 @@ conditions, and  $\varGamma_n$ for the Neumann. The behaviour of the continuum c
 field is compatible with the Cauchy strain field,
 \begin{equation}
   \label{eq:Compatibility-equation}
-  \dot{\tens{\varepsilon}} = \GradS{\vect{v}} = \frac{1}{2}\left(
-    \Grad{\vect{v}} +  \GradT{\vect{v}} \right),
+  \dot{\tens{\varepsilon}} = \GradS{\vect{v}},
 \end{equation}
 (iii) the constitutive equation, which relates the rate of Cauchy strain
 tensor with the rate of Cauchy stress tensor,
@@ -329,7 +332,7 @@ and finally (iv) the mass conservation, which can be obtained by
 setting to zero the total derivative of the density field,
 \begin{equation}
   \label{eq:Rho-material-derivative}
-  \frac{D \rho}{D t} = \dot{\rho} + \rho \Div\vect{v}} = 0.
+  \frac{D \rho}{D t} = \dot{\rho} + \rho \Div{\vect{v}} = 0.
 \end{equation}
 
 \subsection{Variational formulation}
@@ -353,7 +356,7 @@ the boundary value problem of elasticity is the function $\vect{v} \in
 \begin{equation}
   \label{eq:BalanceMomentum_wf}
   \Integral{3}{\rho\ \left( \Deriv{\vec{v}}{t}\ - \vec{b} \right) \cdot \vec{v}^{\psi}} =
-  \Integral{2}{\vec{t}\ \cdot \vec{v}^{\psi}} - \Integral{3}{\tens{\sigma} \cdot
+  \Integral{2}{\vec{t}\ \cdot \vec{v}^{\psi}} - \Integral{3}{\tens{\sigma} \colon
     \tens{\varepsilon}^{\psi}},
 \end{equation}\\
 therefore (\ref{eq:BalanceMomentum_wf}) is the balance of momentum formulated in
@@ -390,27 +393,27 @@ an addition  of a finite set of points. Therefore individual terms in
 \item Acceleration forces :
 \begin{equation}
     \label{eq:particle_acceleration_forces}
-    \Integral{3}{\rho\ \vec{a}\ \vect{v}^{\psi}} =& \sum^{N_p}_{p}
-   \dot{\vec{v}}_{p}\ \vect{v}^{\psi}_{p}\ m_p.
+    \Integral{3}{\rho\ \vec{a} \cdot \vect{v}^{\psi}} =
+    \dot{\vec{v}}_{p} \cdot \vect{v}^{\psi}_{p}\ m_p.
   \end{equation}\\
 \item Internal forces :
   \begin{equation}
     \label{eq:particle_internal_forces}
-    \Integral{3}{\tens{\sigma}\ \cdot \Grad{\vec{\psi}}} = \sum^{N_p}_{p}
-   \tens{\sigma}_{p}\ \cdot \Grad{\tens{\psi}_{p}}\ V_p.
+    \Integral{3}{\tens{\sigma}\ \colon \tens{\varepsilon}^{\psi}} =
+   \tens{\sigma}_{p}\ \colon \tens{\varepsilon}^{\psi}_p \ V_p.
   \end{equation}\\
 \item Body forces :
 \begin{equation}
   \label{eq:particle_body_forces}
-  \Integral{3}{\rho\ \vec{b}\ \vect{v}^{\psi} } = \sum^{N_p}_{p}
-  \vec{b}_{p}\ \vect{v}^{\psi}_p\ m_p.
+  \Integral{3}{\rho\ \vec{b} \cdot \vect{v}^{\psi} } = 
+  \vec{b}_{p} \cdot \vect{v}^{\psi}_p\ m_p.
 \end{equation}\\
 \item Loads :
 \begin{equation}
   \begin{aligned}
     \label{eq:particle_load_forces}
     \Integral{2}{\vec{t}\ \vect{v}^{\psi}} = \Integral{2}{\rho\
-      \vec{t}^s\ \vect{v}^{\psi}} = \sum^{N_p}_{p} \vec{t}^s_{p}\ \vect{v}^{\psi}_{p}\ h^{-1}\ m_p ,
+      \vec{t}^s \cdot \vect{v}^{\psi}} = \vec{t}^s_{p} \cdot \vect{v}^{\psi}_{p}\ h^{-1}\ m_p ,
   \end{aligned} 
 \end{equation}
 \end{itemize}
@@ -427,8 +430,13 @@ and approximating the real and virtual velocity  field of the particle
 $p$ as
 \begin{equation}
   \label{eq:Approx-velocity-mesh}
-  \vec{v}_{p} = \sum^{Nn}_I N_I(\vec{x}_p) \vect{v}_I
-  \quad \text{and} \quad \vec{v}^{\psi}_{p} = \sum^{Nn}_I N_I(\vec{x}_p) \vect{1},
+  \vec{v}_{p} = N_I(\vec{x}_p) \vect{v}_I
+  \quad \text{and} \quad \vec{v}^{\psi}_{p} = N_I(\vec{x}_p) \vect{v}_I^{\psi},
+\end{equation}
+\begin{equation}
+  \label{eq:Approx-gradvelocity-mesh}
+  \Grad{\vect{v}}_p = \vect{v}_I N_I(\vec{x}_p)
+  \quad \text{and} \quad \vec{v}^{\psi}_{p} = \sum^{Nn}_I N_I(\vec{x}_p) \vect{v}_I^{\psi},
 \end{equation}
 we reach to the particle balance of forces of the continuum,
 \begin{equation}
