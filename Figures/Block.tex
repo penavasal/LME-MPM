@@ -91,7 +91,7 @@
 \beam{2}{26}{31};
 \beam{2}{35}{31};
 
-%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%
 \beam{2}{12}{7};
 \beam{2}{7}{6};
 \beam{2}{6}{11};
@@ -117,7 +117,7 @@
 \beam{2}{22}{26};
 \beam{2}{33}{26};
 
-%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%
 \beam{2}{7}{4};
 \beam{2}{4}{3};
 \beam{2}{3}{6};
@@ -192,13 +192,121 @@
 % \support {2}{36}[90];
 
 % Gravity
-\point{g}{12}{5};
-\load{1}{g}[90][3][0];
+\draw[->, line width=1mm] (12,6)--(12,4);
+\node[color=black, very thick] at (17,5)
+{\LARGE$\mathbf{g}(t)= \left\{
+    \begin{array}{ll}
+      0.5 \mathbf{g} (\sin(\frac{2t \pi}{T} - \frac{\pi}{2})+1)  & \mbox{if } t \leq T/2 \\
+      \mathbf{g} & \mbox{if } t > T/2
+    \end{array}
+  \right.$};  
 
 % Cotas
-\dimensioning{1}{23}{36}{-1.5}[$10~m$];
-\dimensioning{2}{23}{1}{-1.5}[$10~m$];
+\dimensioning{1}{23}{36}{-2}[\LARGE$10~m$];
+\dimensioning{2}{23}{1}{-2}[\LARGE$10~m$];
 
+
+% GPS
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 1.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 0.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 3.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 2.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 5.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 4.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 7.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 6.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(0.422650, 8.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(1.577350, 8.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(2.422650, 8.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(3.577350, 8.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(4.422650, 8.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(5.577350, 8.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(6.422650, 8.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(7.577350, 8.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 9.577350)}; 
+\draw plot [only marks, mark=square*] coordinates {(8.422650, 8.422650)}; 
+\draw plot [only marks, mark=square*] coordinates {(9.577350, 8.422650)}; 
 
 \end{tikzpicture}
 

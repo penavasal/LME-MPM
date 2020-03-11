@@ -83,9 +83,13 @@ grestore
 % Tikz
 \usepackage{stanli}
 \usepackage[ugly]{units}
+% \usetikzlibrary{decorations}
+% \usetikzlibrary{arrows}
+\usetikzlibrary{plotmarks}
 
 %\usepackage{latexsym}
 % etc.
+
 %
 
 % Matrix and vector nodes
@@ -921,12 +925,15 @@ local max-ent scheme, which uses an anisotropic support to deal with
 tensile inestability. Nonetheless this is out of the scope of the
 present document but will be incorporated in future research.
 
+In order to test the ability of this interpolation technique to deal
+with grid crossing instabilities, we will simulate the compression of
+a linear elastic soft soil due to the gravity force, \ref{fig:block}.
 
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.8\hsize}{!}{
+  \resizebox{\hsize}{!}{
     \input{Figures/Block.tex}}
-  \caption{Geometrical description of the Dyka \cite{Dyka1995} bar.}
+  \caption{Geometrical description of a soil block }.}
   \label{fig:block}
 \end{figure}
 
