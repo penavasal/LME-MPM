@@ -5,12 +5,12 @@
                      '(("svjour3" "twocolumn")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("subfig" "lofdepth" "lotdepth") ("units" "ugly")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -94,10 +94,6 @@
     "eq:5"
     "eq:Predictor-velocity"
     "alg:PCE-algorithm"
-    "sec:EPC-accuracy"
-    "fig:Dyka_Bar"
-    "eq:3"
-    "fig:Dyka-PCE-FE"
     "sec:local-max-ent"
     "eq:Shannon-entropy"
     "eq:LME-p"
@@ -114,11 +110,14 @@
     "fig:LME_7.0_Shape_Fun"
     "fig:LME_5.0_Shape_Fun"
     "fig:LME_MPM"
+    "sec:Analysis-proposed-improvements."
+    "sec:dyka-bar"
+    "fig:Dyka_Bar"
+    "eq:3"
+    "fig:Dyka-PCE-FE"
+    "sec:andersen-block"
     "fig:block"
-    "sec:study-error"
-    "eq:RMS"
-    "fig:Dyka-MPM-uGIMP-LME"
-    "sec:mpm-versus-otm"
+    "fig:block-MPM"
     "sec:conclusions"
     "app:analytical_sol"
     "eq:1D-balance-linear-momentum"

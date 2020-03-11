@@ -129,13 +129,20 @@ grestore
 %
 \begin{document}
 
-\title{Novel improvements in the Material Point Method to face
-  dynamic problems: 
-  Local-maximum entropy approximation and an explicit   predictor-corrector scheme. \thanks{Funding: This
+% \title{Novel improvements in the Material Point Method to face
+%   dynamic problems: 
+%   Local-maximum entropy approximation and an explicit predictor-corrector scheme. \thanks{Funding: This
+%     study was funded by Agustín de Betancourt Foundation (grant number
+%     262390106114).}
+% }
+
+\title{Enhanced Material Point Method to face
+  dynamic problems:\thanks{Funding: This
     study was funded by Agustín de Betancourt Foundation (grant number
     262390106114).}
 }
-% \subtitle{}
+\subtitle{Local-maximum entropy approximation and an explicit
+  predictor-corrector scheme}
 
 \titlerunning{Novel improvements in the Material Point Method to face
   dynamic problems.} % if too long for running head
@@ -683,69 +690,6 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
   \end{algorithmic}
 \end{algorithm} 
 
-\subsection{Analysis of the Explicit Predictor-Corrector accuracy}
-\label{sec:EPC-accuracy}
-
-In this section, the benchmark proposed by Dyka \& Ingel
-(1995)\cite{Dyka1995} is considered to illustrate the
-capacity of the proposed time integration algorithm to avoid velocity
-fields instabilities.
-
-In the one-dimensional bar sketched in the figure \ref{fig:Dyka_Bar},
-the left end of the bar is fixed and the right and an initial velocity
-$v_0 = 5\ m/s$ is given to the last quarter of it in the x positive
-direction. The length of it is 0.1333 meters with an unit section.
-
-\begin{figure}\sidecaption
-  \centering
-  \resizebox{\hsize}{!}{
-    \input{Figures/Dyka_bar.tex}}
-  \caption{Geometrical description of the Dyka \cite{Dyka1995} bar.}
-  \label{fig:Dyka_Bar}
-\end{figure}
-
-The elastic parameters consider for this test are:
-\begin{itemize} 
-\item  Density : $7833\ kg/m3$
-\item  Poisson ratio : $0$
-\item  Elastic modulus : $200 \cdot 10^9\ Pa$
-\end{itemize}
-
-The boundary conditions are:
-\begin{equation}
-  \label{eq:3}
-  \sigma \rvert_{x=L} = 0 \quad , \quad v \rvert_{x=0} = 0
-\end{equation}
-
-The total simulation time is 0.0002 seconds, a direct consequence of
-that is we let the elastic wave generated travel thorough the bar
-(from A to C and back to A) at least four times. For the spatial
-discretization we will set a mesh size of 3.3325 millimeters. The
-initial mesh will be composed by a single particle in the center of
-the element. Regarding this, here we give one consideration to
-properly modellize this benchmark under the MPM framework. Notice that
-the free border of the bar has a horizontal displacement of 0.033
-millimeters, therefore a computational domain with an extra gap of
-0.033 millimeters is required in order to accommodate the
-unconstrained displacement of the particles in the left border of the
-bar. Here below the time step is controlled by the courant number, in
-this case, we adopt a middle value of it (CFL=0.5) as a compromise
-between stability and numerical accuracy. 
-
-The analytical solution in terms of velocity
-\ref{fig:vel_analytics_dyka}, and stress
-\ref{fig:stress_analytics_dyka} can be found in the appendix
-\ref{app:analytical_sol} given by the Method of characteristics.
-
-\begin{figure}\sidecaption
-  \centering
-  \resizebox{\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/FE_vs_PCE_CFL_05}
-  }
-  \caption{Velocity evolution at the point in the bar left side.}
-  \label{fig:Dyka-PCE-FE}
-\end{figure}
-
 \section{Local max-ent approximants}
 \label{sec:local-max-ent}
 
@@ -925,6 +869,95 @@ local max-ent scheme, which uses an anisotropic support to deal with
 tensile inestability. Nonetheless this is out of the scope of the
 present document but will be incorporated in future research.
 
+% \subsection{Error analysis MPM vs uGIMP vs MPM-\textit{max-ent}}
+% \label{sec:study-error}
+
+% For the convergence analysis, the root-mean-square (RMS) error in the
+% displacement is computed. RMS error is defined as follows
+
+% \begin{equation}
+%   \label{eq:RMS}
+%   RMS = \sqrt{\frac{1}{N} \sum^{N}_p \left( \phi_p - \hat{\phi}_p \right)^2},
+% \end{equation}
+
+% where $\phi_p$ and $\hat{\phi}_p$ are respectively the analytical and
+% numerical solutions evaluated in the final time step in the position
+% of each particle.
+
+\section{Analysis of the proposed improvements.}
+\label{sec:Analysis-proposed-improvements.}
+
+This section is devoted to test the ability of both predictor-corrector
+time integration scheme and the local \textit{max-ent} approximants to
+overcome spurious oscillations due to the grid crossing and high
+frequency loads under the context of the MPM.
+
+\subsection{Dyka bar}
+\label{sec:dyka-bar}
+
+High frequency , the benchmark proposed by Dyka \& Ingel
+(1995)\cite{Dyka1995} is considered to illustrate the
+capacity of the proposed time integration algorithm to avoid velocity
+fields instabilities.
+
+In the one-dimensional bar sketched in the figure \ref{fig:Dyka_Bar},
+the left end of the bar is fixed and the right and an initial velocity
+$v_0 = 5\ m/s$ is given to the last quarter of it in the x positive
+direction. The length of it is 0.1333 meters with an unit section.
+
+\begin{figure}\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \input{Figures/Dyka_bar.tex}}
+  \caption{Geometrical description of the Dyka \cite{Dyka1995} bar.}
+  \label{fig:Dyka_Bar}
+\end{figure}
+
+The elastic parameters consider for this test are:
+\begin{itemize} 
+\item  Density : $7833\ kg/m3$
+\item  Poisson ratio : $0$
+\item  Elastic modulus : $200 \cdot 10^9\ Pa$
+\end{itemize}
+
+The boundary conditions are:
+\begin{equation}
+  \label{eq:3}
+  \sigma \rvert_{x=L} = 0 \quad , \quad v \rvert_{x=0} = 0
+\end{equation}
+
+The total simulation time is 0.0002 seconds, a direct consequence of
+that is we let the elastic wave generated travel thorough the bar
+(from A to C and back to A) at least four times. For the spatial
+discretization we will set a mesh size of 3.3325 millimeters. The
+initial mesh will be composed by a single particle in the center of
+the element. Regarding this, here we give one consideration to
+properly modellize this benchmark under the MPM framework. Notice that
+the free border of the bar has a horizontal displacement of 0.033
+millimeters, therefore a computational domain with an extra gap of
+0.033 millimeters is required in order to accommodate the
+unconstrained displacement of the particles in the left border of the
+bar. Here below the time step is controlled by the courant number, in
+this case, we adopt a middle value of it (CFL=0.5) as a compromise
+between stability and numerical accuracy. 
+
+The analytical solution in terms of velocity
+\ref{fig:vel_analytics_dyka}, and stress
+\ref{fig:stress_analytics_dyka} can be found in the appendix
+\ref{app:analytical_sol} given by the Method of characteristics.
+
+\begin{figure}\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/FE_vs_PCE_CFL_05}
+  }
+  \caption{Velocity evolution at the point in the bar left side.}
+  \label{fig:Dyka-PCE-FE}
+\end{figure}
+
+\subsection{Andersen block}
+\label{sec:andersen-block}
+
 In order to test the ability of this interpolation technique to deal
 with grid crossing instabilities, we will simulate the compression of
 a linear elastic soft soil due to the gravity force, \ref{fig:block}.
@@ -937,44 +970,47 @@ a linear elastic soft soil due to the gravity force, \ref{fig:block}.
   \label{fig:block}
 \end{figure}
 
-
-\subsection{Error analysis MPM vs uGIMP vs MPM-\textit{max-ent}}
-\label{sec:study-error}
-
-For the convergence analysis, the root-mean-square (RMS) error in the
-displacement is computed. RMS error is defined as follows
-
-\begin{equation}
-  \label{eq:RMS}
-  RMS = \sqrt{\frac{1}{N} \sum^{N}_p \left( \phi_p - \hat{\phi}_p \right)^2},
-\end{equation}
-
-where $\phi_p$ and $\hat{\phi}_p$ are respectively the analytical and
-numerical solutions evaluated in the final time step in the position
-of each particle.
-
-
-\begin{figure*}\sidecaption
+\begin{figure}\sidecaption
   \centering
-  \resizebox{0.7\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/Velocity-Comparative}
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/FE_vs_PCE_CFL_05}
   }
-  \caption{Velocity evolution at the point in the bar left side.}
-  \label{fig:Dyka-MPM-uGIMP-LME}
-\end{figure*}
+  \caption{Geometrical description of a soil block.}
+  \label{fig:block-MPM}
+\end{figure}
 
-\subsection{MPM versus OTM}
-\label{sec:mpm-versus-otm}
+\begin{figure}\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/Block_CFL_01_MPM.png}
+  }
+  \caption{Geometrical description of a soil block }.}
+\label{fig:block-MPM}
+\end{figure}
 
-MPM \cite{Sulsky1994} and OTM
-models to avoid tensile instabilities. Here we employ our in-house
-codes for both MPM and OTM simulations.
 
-The results are provided for the explicit predictor-corrector version
-of the MPM scheme (Algorithm \ref{alg:PCE-algorithm}) and OTM
-algorithms. For MPM, piecewise-linear, uGIMP and \textit{max-ent}
-basis functions are employed. The OTM algorithm is used only with
-\textit{max-ent} shape functions.
+% \subsection{MPM versus OTM}
+% \label{sec:mpm-versus-otm}
+
+% MPM \cite{Sulsky1994} and OTM
+% models to avoid tensile instabilities. Here we employ our in-house
+% codes for both MPM and OTM simulations.
+
+% The results are provided for the explicit predictor-corrector version
+% of the MPM scheme (Algorithm \ref{alg:PCE-algorithm}) and OTM
+% algorithms. For MPM, piecewise-linear, uGIMP and \textit{max-ent}
+% basis functions are employed. The OTM algorithm is used only with
+% \textit{max-ent} shape functions.
+
+% \begin{figure*}\sidecaption
+%   \centering
+%   \resizebox{0.7\hsize}{!}{
+%     \includegraphics[width=\textwidth]{./Figures/Velocity-Comparative}
+%   }
+%   \caption{Velocity evolution at the point in the bar left side.}
+%   \label{fig:Dyka-MPM-uGIMP-LME}
+% \end{figure*}
+
 
 \section{Conclusions}
 \label{sec:conclusions}
