@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.19)  11 MAR 2020 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  12 MAR 2020 19:00
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **main.tex
@@ -745,8 +745,8 @@ Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (/usr/share/texmf/tex/latex/preview/preview.sty
-Package: preview 2017/04/24 11.91 (AUCTeX/preview-latex)
+)) (/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/preview.sty
+Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
 
 (/usr/share/texlive/texmf-dist/tex/generic/luatex85/luatex85.sty
 Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
@@ -1002,7 +1002,7 @@ de.tex
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 )) (./main.aux
 
-LaTeX Warning: Label `fig:block-MPM' multiply defined.
+LaTeX Warning: Label `fig:LME_MPM' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -1829,7 +1829,7 @@ Missing character: There is no ; in font nullfont!
 <./Figures/FE_vs_PCE_CFL_05.png, id=297, 462.528pt x 346.896pt>
 File: ./Figures/FE_vs_PCE_CFL_05.png Graphic file (type png)
 <use ./Figures/FE_vs_PCE_CFL_05.png>
-Package pdftex.def Info: ./Figures/FE_vs_PCE_CFL_05.png  used on input line 954
+Package pdftex.def Info: ./Figures/FE_vs_PCE_CFL_05.png  used on input line 956
 .
 (pdftex.def)             Requested size: 495.0pt x 371.27032pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
@@ -2001,34 +2001,10 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:971: Extra }, or forgotten \endgroup.
+./main.tex:974: Extra }, or forgotten \endgroup.
 \sf@endfloatbox ...gefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.971 \end{figure}
-                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-File: ./Figures/FE_vs_PCE_CFL_05.png Graphic file (type png)
-<use ./Figures/FE_vs_PCE_CFL_05.png>
-Package pdftex.def Info: ./Figures/FE_vs_PCE_CFL_05.png  used on input line 978
-.
-(pdftex.def)             Requested size: 495.0pt x 371.27032pt.
-\sidecaption: No sufficient room for the legend; using normal \caption. 
-<./Figures/Block_CFL_01_MPM.png, id=299, 866.23625pt x 805.0075pt>
-File: ./Figures/Block_CFL_01_MPM.png Graphic file (type png)
-<use ./Figures/Block_CFL_01_MPM.png>
-Package pdftex.def Info: ./Figures/Block_CFL_01_MPM.png  used on input line 987
-.
-(pdftex.def)             Requested size: 495.0pt x 460.0137pt.
-\sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:989: Extra }, or forgotten \endgroup.
-\sf@endfloatbox ...gefalse \outer@nobreak \egroup 
-                                                  \color@endbox 
-l.989 \end{figure}
+l.974 \end{figure}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2044,22 +2020,68 @@ res/LME_10_0_Shape_Fun.png> <./Figures/LME_10_0_Shape_Fun_dx.png> <./Figures/LM
 E_10_0_Shape_Fun_dy.png> <./Figures/LME_7_0_Shape_Fun.png> <./Figures/LME_7_0_S
 hape_Fun_dx.png> <./Figures/LME_7_0_Shape_Fun_dy.png> <./Figures/LME_5_0_Shape_
 Fun.png> <./Figures/LME_5_0_Shape_Fun_dx.png> <./Figures/LME_5_0_Shape_Fun_dy.p
-ng>] [8 <./Figures/FE_vs_PCE_CFL_05.png> <./Figures/Block_CFL_01_MPM.png>]
-<Figures/1D_right_Velocity.png, id=380, 462.528pt x 346.896pt>
+ng>]
+<./Figures/Block_CFL_01_Comparative.png, id=343, 569.4876pt x 346.896pt>
+File: ./Figures/Block_CFL_01_Comparative.png Graphic file (type png)
+<use ./Figures/Block_CFL_01_Comparative.png>
+Package pdftex.def Info: ./Figures/Block_CFL_01_Comparative.png  used on input 
+line 1019.
+(pdftex.def)             Requested size: 495.0pt x 301.52711pt.
+
+\sidecaption: No sufficient room for the legend; using normal \caption. 
+./main.tex:1039: Undefined control sequence.
+l.1039 ...ng the spatial variation of $\beta(\vect
+                                                  {x})$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:Block-LME3' on page 8 undefined on input line 104
+4.
+
+[8 <./Figures/FE_vs_PCE_CFL_05.png> <./Figures/Block_CFL_01_Comparative.png>]
+<Figures/Block_LME3_PCE_t0.png, id=361, 832.10875pt x 803.0pt>
+File: Figures/Block_LME3_PCE_t0.png Graphic file (type png)
+<use Figures/Block_LME3_PCE_t0.png>
+Package pdftex.def Info: Figures/Block_LME3_PCE_t0.png  used on input line 1057
+.
+(pdftex.def)             Requested size: 191.17206pt x 184.47781pt.
+<Figures/Block_LME3_PCE_t025.png, id=362, 832.10875pt x 803.0pt>
+File: Figures/Block_LME3_PCE_t025.png Graphic file (type png)
+<use Figures/Block_LME3_PCE_t025.png>
+Package pdftex.def Info: Figures/Block_LME3_PCE_t025.png  used on input line 10
+64.
+(pdftex.def)             Requested size: 191.17206pt x 184.47781pt.
+<Figures/Block_LME3_PCE_t1.png, id=363, 832.10875pt x 803.0pt>
+File: Figures/Block_LME3_PCE_t1.png Graphic file (type png)
+<use Figures/Block_LME3_PCE_t1.png>
+Package pdftex.def Info: Figures/Block_LME3_PCE_t1.png  used on input line 1071
+.
+(pdftex.def)             Requested size: 191.17206pt x 184.47781pt.
+
+
+LaTeX Warning: Float too large for page by 24.13895pt on input line 1079.
+
+[9 <./Figures/Block_LME3_PCE_t0.png> <./Figures/Block_LME3_PCE_t025.png> <./Fig
+ures/Block_LME3_PCE_t1.png>]
+<Figures/1D_right_Velocity.png, id=406, 462.528pt x 346.896pt>
 File: Figures/1D_right_Velocity.png Graphic file (type png)
 <use Figures/1D_right_Velocity.png>
-Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1257
+Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1347
 .
 (pdftex.def)             Requested size: 238.96417pt x 179.22244pt.
 
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-<Figures/1D_left_Stress.png, id=381, 462.528pt x 346.896pt>
+<Figures/1D_left_Stress.png, id=407, 462.528pt x 346.896pt>
 File: Figures/1D_left_Stress.png Graphic file (type png)
 <use Figures/1D_left_Stress.png>
-Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1267.
+Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1357.
 (pdftex.def)             Requested size: 238.96417pt x 179.22244pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-(./main.bbl [9 <./Figures/1D_right_Velocity.png>]
+(./main.bbl [10 <./Figures/1D_right_Velocity.png>]
 Underfull \hbox (badness 1354) in paragraph at lines 52--56
 []\OT1/ptm/m/n/8.5 Dyka, C., In-gel, R.: An ap-proach for ten-sion in-sta-bil-i
 ty in
@@ -2071,17 +2093,17 @@ Underfull \hbox (badness 4181) in paragraph at lines 73--77
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 114--120
+Underfull \hbox (badness 1221) in paragraph at lines 122--128
 \OT1/ptm/m/n/8.5 anal-y-sis of com-plex struc-tures.  Earth-quake En-gi-neer-in
 g &
  []
 
-) [10 <./Figures/1D_left_Stress.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1280.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1280.
+) [11 <./Figures/1D_left_Stress.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1370.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1370.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1280.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1280.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1370.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1370.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 8E1D07C8CA84CD28AC6A5CF536E72E0A;515.
@@ -2096,16 +2118,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1280.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1370.
  ) 
 Here is how much of TeX's memory you used:
- 23791 strings out of 492982
- 472662 string characters out of 6134896
- 635228 words of memory out of 5000000
- 26627 multiletter control sequences out of 15000+600000
- 71785 words of font info for 169 fonts, out of 8000000 for 9000
+ 23809 strings out of 492982
+ 473458 string characters out of 6134895
+ 634210 words of memory out of 5000000
+ 26648 multiletter control sequences out of 15000+600000
+ 67013 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,14n,87p,384b,846s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,14n,87p,426b,846s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -2122,10 +2144,10 @@ live/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main.pdf (10 pages, 1242410 bytes).
+Output written on main.pdf (11 pages, 1330738 bytes).
 PDF statistics:
- 493 PDF objects out of 1000 (max. 8388607)
- 371 compressed objects within 4 object streams
- 142 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 520 PDF objects out of 1000 (max. 8388607)
+ 388 compressed objects within 4 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -89,6 +89,14 @@ Navas, P., L{\'{o}}pez-Querol, S., Yu, R.C., Pastor, M.: {Optimal
 \newblock International Journal for Numerical Methods in Engineering  (2018).
 \newblock \doi{10.1002/nme.5841}
 
+\bibitem{Steffen2008}
+Steffen, M., Kirby, R.M., Berzins, M.: {Analysis and reduction of quadrature
+  errors in the material point method (MPM)}.
+\newblock International Journal for Numerical Methods in Engineering
+  \textbf{76}(6), 922--948 (2008).
+\newblock \doi{10.1002/nme.2360}.
+\newblock \urlprefix\url{http://doi.wiley.com/10.1002/nme.2360}
+
 \bibitem{Sulsky1994}
 Sulsky, D.L., Schreyer, H., Chen, Z.: {A particle method for history-dependent
   materials}.

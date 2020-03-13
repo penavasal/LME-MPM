@@ -884,8 +884,8 @@ present document but will be incorporated in future research.
 % numerical solutions evaluated in the final time step in the position
 % of each particle.
 
-\section{Analysis of the proposed improvements.}
-\label{sec:Analysis-proposed-improvements.}
+\section{Application to linear elasticity dynamic problems.}
+\label{sec:Application-linear-elasticity-dynamic-problems}
 
 This section is devoted to test the ability of both predictor-corrector
 time integration scheme and the local \textit{max-ent} approximants to
@@ -931,15 +931,17 @@ that is we let the elastic wave generated travel thorough the bar
 (from A to C and back to A) at least four times. For the spatial
 discretization we will set a mesh size of 3.3325 millimeters. The
 initial mesh will be composed by a single particle in the center of
-the element. Regarding this, here we give one consideration to
-properly modellize this benchmark under the MPM framework. Notice that
-the free border of the bar has a horizontal displacement of 0.033
-millimeters, therefore a computational domain with an extra gap of
-0.033 millimeters is required in order to accommodate the
-unconstrained displacement of the particles in the left border of the
-bar. Here below the time step is controlled by the courant number, in
-this case, we adopt a middle value of it (CFL=0.5) as a compromise
-between stability and numerical accuracy. 
+the element.
+
+Regarding this, here we give one consideration to properly modellize
+this benchmark under the MPM framework. Notice that the free border of
+the bar has a horizontal displacement of 0.033 millimeters, therefore
+a computational domain with an extra gap of 0.033 millimeters is
+required in order to accommodate the unconstrained displacement of the
+particles in the left border of the bar. Here below the time step is
+controlled by the courant number, in this case, we adopt a middle
+value of it (CFL=0.5) as a compromise between stability and numerical
+accuracy.  
 
 The analytical solution in terms of velocity
 \ref{fig:vel_analytics_dyka}, and stress
@@ -959,8 +961,9 @@ The analytical solution in terms of velocity
 \label{sec:andersen-block}
 
 In order to test the ability of this interpolation technique to deal
-with grid crossing instabilities, we will simulate the compression of
-a linear elastic soft soil due to the gravity force, \ref{fig:block}.
+with grid crossing instabilities we will simulate the vertical
+compression of a square block (10 by 10 meters) of soft soil sketched
+in figure \ref{fig:block} and loaded using an incremental gravitation scheme.
 
 \begin{figure}\sidecaption
   \centering
@@ -970,22 +973,109 @@ a linear elastic soft soil due to the gravity force, \ref{fig:block}.
   \label{fig:block}
 \end{figure}
 
+This test was taken from Andersen (2009)\cite{thesis_Andersen_2009}. The
+elastic parameters consider for this test are: 
+\begin{itemize} 
+\item  Initial density : $6\cdot 10^3\ kg/m^3$
+\item  Poisson ratio : $0$
+\item  Elastic modulus : $5\ MPa$
+\end{itemize}
+The gravity force is a apply as an external force according to the
+equations \eqref{eq:particle_body_forces},
+\eqref{eq:nodal_external_forces}. Using a total time period of T (20
+seconds) to apply the gravity, it is increased from 0 to 9.81$m/s$
+with a sinus function until T/2 and then maintained constant until T
+in order to arrive to a state of equilibrium, 
+\begin{equation}
+  \label{eq:gravity-load-block}
+ \mathbf{g}(t) = \left\{
+    \begin{array}{ll}
+      0.5 \mathbf{g} (\sin(\frac{2t \pi}{T} - \frac{\pi}{2})+1)  & \mbox{if } t \leq T/2 \\
+      \mathbf{g} & \mbox{if } t > T/2
+    \end{array}
+  \right.
+\end{equation}
+
+In order to get a stable solution, we will adopt a time step conducted
+by a Courant number of 0.1. On the other hand, the explicit predictor-corrector
+scheme is here employed looking forward getting better results. For the
+initial spatial discretization we will employ four particles per cell
+($\Delta x = 2\ m$). The initial setting of particles inside of the
+cell changes according to the interpolation technique adopted. For the
+bi-linear shape functions (Q4) and the LME shape functions, the initial
+position corresponds to the location of the gauss-points in a standard
+quadratic finite element. For the uniform-GIMP (uGIMP) shape function
+the initial position of each particle is located in the center of each
+voxel, due to the fact that in the initial situation, the voxel domain
+should not overlap each others, Steffen {\it et al.}
+(2008)\cite{Steffen2008}. Figure \ref{fig:vertical-displacement-block}
+shows the vertical displacement evolution of a point in the free
+surface of the block.
 \begin{figure}\sidecaption
   \centering
   \resizebox{\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/FE_vs_PCE_CFL_05}
+    \includegraphics[width=\textwidth]{./Figures/Block_CFL_01_Comparative}
   }
-  \caption{Geometrical description of a soil block.}
-  \label{fig:block-MPM}
+  \caption{Comparative of the vertical displacement evolution in a
+    point located in the free surface employing different
+    interpolation schemes and numerical techniques.} 
+  \label{fig:vertical-displacement-block}
 \end{figure}
 
-\begin{figure}\sidecaption
+As we can see the simulation using the Q4 interpolation technique
+turns out to be unstable and in the second 15 it fails. The uGIMP
+simulation is more stable than the one performed by the Q4. Despite
+this is still unstable and could trigger severe oscillations if we
+pretend to simulate non-linear materials. The LME simulation was
+performed using two kinds of shape functions, one with a low value of
+the dimensionless parameter, $\gamma = 0.8$, and other with a larger
+value of it, $\gamma = 3.0$. Notice that the results are both
+stable, but the larger values of $\gamma$ give us a very stable
+solution. This is due to the fact that with larger value of $\gamma$,
+the shape functions behaves in a similar way to the FEM, which performs
+very accurate in those cases with a reasonable mesh distorsion, and
+with a lower value it behaves in a similar way to the uGIMP. This
+behaviour was noticed previously by \cite{Arroyo2006}, were authors
+highlight how by adjusting the spatial variation of $\beta(\vect{x})$,
+it is possible to select regions of the domain of analysis which are
+treated by finite elements and regions that are treated in the style
+of meshfree methods, with seamless transitions between those regions.
+
+Figure \ref{fig:Block-LME3} shows the evolution of the vertical stress
+during the loading process. The result is physically realistic as
+stress increments linearly from the top to the bottom of the specimen,
+and the value of the vertical stress in a material point located in
+the bottom of the specimen oscillates centered in $5.2 MPa$, which is
+the analytic value given by $\sigma_{yy} = \rho g h_y$. 
+
+\begin{figure}
   \centering
-  \resizebox{\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/Block_CFL_01_MPM.png}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \subfloat[t = 0 seconds.]{
+    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_t0}
+    \label{fig:Block-LME3-PCE-t0}
   }
-  \caption{Geometrical description of a soil block }.}
-\label{fig:block-MPM}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \qquad
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \subfloat[t = 5 seconds.]{
+    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_t025}
+    \label{fig:Block-LME3-PCE-t025}
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \qquad
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \subfloat[t = 20 seconds]{
+    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_t1}
+    \label{fig:Block-LME3-PCE-t1}
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \caption{Vertical normal stress and position of material points
+    during the loading process for a soft soil ($E = 5\ MPa$, $\rho_0
+    = 6\cdot 10^3\ kg/m^3$). Numerical parameters considered for the
+    simulation are : Local \textit{max-ent} shape function $\gamma =3$
+    and explicit PC scheme with CFL 0.1.}
+  \label{fig:Block-LME3}
 \end{figure}
 
 
