@@ -635,10 +635,11 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
   \caption{Explicit Predictor-Corrector scheme}
   \begin{algorithmic}[1]
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
-    \STATE \textbf{Explicit Newmark Predictor} ($\gamma = 0.5$):
+    \STATE \textbf{Explicit Newmark Predictor} ($\gamma = 0.5$):\\
+    Only in those active nodes:
     \begin{equation*}
       \vec{v}_I^{k+1} = \vec{v}_I^n + (1 - \gamma)\ \Delta t\ \vec{a}_I^k
-      \quad , \quad \vec{a}_I^k = \frac{\vec{f}_{I}^{k}}{\tens{m}_I^k}      
+      \quad , \quad \vec{a}_I^k = \frac{\vec{f}_{I}^{k}}{\tens{m}_I^k}
     \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Impose essential boundary conditions}:\\

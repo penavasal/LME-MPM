@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  14 MAR 2020 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  19 MAR 2020 17:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1644,10 +1644,10 @@ LaTeX Warning: Reference `alg:PCE-algorithm' on page 5 undefined on input line
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 635.
-./main.tex:710: Undefined control sequence.
+./main.tex:711: Undefined control sequence.
 <recently read> \Beta 
                       
-l.710 ...blication a parametric analysis of $\Beta
+l.711 ...blication a parametric analysis of $\Beta
                                                   $ will be
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1656,137 +1656,137 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (3.18332pt too wide) in paragraph at lines 696--713
+Overfull \hbox (3.18332pt too wide) in paragraph at lines 697--714
 \OT1/ptm/m/n/10 The pre-vi-ous lines de-scribe the main al-go-rithm with-out de
 fin-
  []
 
 
-Overfull \hbox (1.70331pt too wide) in paragraph at lines 696--713
+Overfull \hbox (1.70331pt too wide) in paragraph at lines 697--714
 \OT1/ptm/m/n/10 ing the cell bound-aries. Re-cently the lo-cal maximum-entropy
  []
 
 
-Underfull \vbox (badness 2626) has occurred while \output is active []
+Underfull \vbox (badness 2707) has occurred while \output is active []
 
  [5]
-Overfull \hbox (2.14287pt too wide) in paragraph at lines 733--736
+Overfull \hbox (2.14287pt too wide) in paragraph at lines 734--737
 \OT1/ptm/m/n/10 The lo-cal max-ent ap-prox-i-ma-tion schemes (LME) as a Pareto
  []
 
 
-Overfull \hbox (3.2839pt too wide) detected at line 742
+Overfull \hbox (3.2839pt too wide) detected at line 743
 []
  []
 
 <Figures/MPM_Shape_Fun.png, id=249, 462.528pt x 346.896pt>
 File: Figures/MPM_Shape_Fun.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 805.
+Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 806.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/MPM_Shape_Fun_dx.png, id=250, 462.528pt x 346.896pt>
 File: Figures/MPM_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 805.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 806.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/MPM_Shape_Fun_dy.png, id=251, 462.528pt x 346.896pt>
 File: Figures/MPM_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 805.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 806.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_17_3_Shape_Fun.png, id=252, 462.528pt x 346.896pt>
 File: Figures/LME_17_3_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 814
+Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 815
 .
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_17_3_Shape_Fun_dx.png, id=253, 462.528pt x 346.896pt>
 File: Figures/LME_17_3_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dx.png  used on input line 
-814.
+815.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_17_3_Shape_Fun_dy.png, id=254, 462.528pt x 346.896pt>
 File: Figures/LME_17_3_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dy.png  used on input line 
-814.
+815.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/GIMP_Shape_Fun.png, id=255, 462.528pt x 346.896pt>
 File: Figures/GIMP_Shape_Fun.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 823.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 824.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/GIMP_Shape_Fun_dx.png, id=256, 462.528pt x 346.896pt>
 File: Figures/GIMP_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 823.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 824.
 
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/GIMP_Shape_Fun_dy.png, id=257, 462.528pt x 346.896pt>
 File: Figures/GIMP_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 823.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 824.
 
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_10_0_Shape_Fun.png, id=258, 462.528pt x 346.896pt>
 File: Figures/LME_10_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 832
+Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 833
 .
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_10_0_Shape_Fun_dx.png, id=259, 462.528pt x 346.896pt>
 File: Figures/LME_10_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dx.png  used on input line 
-832.
+833.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_10_0_Shape_Fun_dy.png, id=260, 462.528pt x 346.896pt>
 File: Figures/LME_10_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dy.png  used on input line 
-832.
+833.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_7_0_Shape_Fun.png, id=261, 462.528pt x 346.896pt>
 File: Figures/LME_7_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_7_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_7_0_Shape_Fun.png  used on input line 841.
+Package pdftex.def Info: Figures/LME_7_0_Shape_Fun.png  used on input line 842.
 
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_7_0_Shape_Fun_dx.png, id=262, 462.528pt x 346.896pt>
 File: Figures/LME_7_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_7_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_7_0_Shape_Fun_dx.png  used on input line 8
-41.
+42.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_7_0_Shape_Fun_dy.png, id=263, 462.528pt x 346.896pt>
 File: Figures/LME_7_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_7_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_7_0_Shape_Fun_dy.png  used on input line 8
-41.
+42.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_5_0_Shape_Fun.png, id=264, 462.528pt x 346.896pt>
 File: Figures/LME_5_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 850.
+Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 851.
 
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_5_0_Shape_Fun_dx.png, id=265, 462.528pt x 346.896pt>
 File: Figures/LME_5_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dx.png  used on input line 8
-50.
+51.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_5_0_Shape_Fun_dy.png, id=266, 462.528pt x 346.896pt>
 File: Figures/LME_5_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dy.png  used on input line 8
-50.
+51.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
-./main.tex:863: Undefined control sequence.
+./main.tex:864: Undefined control sequence.
 <recently read> \Beta 
                       
-l.863 ...research and in \cite{Arroyo2006}, $\Beta
+l.864 ...research and in \cite{Arroyo2006}, $\Beta
                                                   $ is a scalar as the
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1795,7 +1795,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (0.14357pt too wide) in paragraph at lines 857--871
+Overfull \hbox (0.14357pt too wide) in paragraph at lines 858--872
 \OT1/ptm/m/n/10 present doc-u-ment but will be in-cor-po-rated in fu-ture re-se
 arch. 
  []
@@ -1822,13 +1822,13 @@ Missing character: There is no ; in font nullfont!
 )
 \sidecaption: No sufficient room for the legend; using normal \caption. 
 
-./main.tex:956: LaTeX Error: File `./Figures/FE_vs_PCE_CFL_05' not found.
+./main.tex:957: LaTeX Error: File `./Figures/FE_vs_PCE_CFL_05' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.956   \caption
+l.957   \caption
                 {Velocity evolution at the point in the bar left side.}
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -2014,10 +2014,10 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:974: Extra }, or forgotten \endgroup.
+./main.tex:975: Extra }, or forgotten \endgroup.
 \sf@endfloatbox ...gefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.974 \end{figure}
+l.975 \end{figure}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2029,11 +2029,11 @@ deleted material, e.g., by typing `I$}'.
 File: ./Figures/Block_CFL_01_Comparative.png Graphic file (type png)
 <use ./Figures/Block_CFL_01_Comparative.png>
 Package pdftex.def Info: ./Figures/Block_CFL_01_Comparative.png  used on input 
-line 1019.
+line 1020.
 (pdftex.def)             Requested size: 495.0pt x 371.27032pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:1039: Undefined control sequence.
-l.1039 ...ng the spatial variation of $\beta(\vect
+./main.tex:1040: Undefined control sequence.
+l.1040 ...ng the spatial variation of $\beta(\vect
                                                   {x})$,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2042,13 +2042,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./main.tex:1057: LaTeX Error: File `Figures/Block_LME3_PCE_t0' not found.
+./main.tex:1058: LaTeX Error: File `Figures/Block_LME3_PCE_t0' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1057   }
+l.1058   }
           
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -2056,43 +2056,43 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (4.43486pt too wide) in paragraph at lines 1057--1057
+Overfull \hbox (4.43486pt too wide) in paragraph at lines 1058--1058
 []\OT1/ptm/m/n/8.5 (a)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1057--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
 |\OT1/ptm/m/n/8.5 t
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1057--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
 \OT1/ptm/m/n/8.5 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1057--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
 \OT1/ptm/m/n/8.5 0
  []
 
 
-Overfull \hbox (8.68475pt too wide) in paragraph at lines 1057--1057
+Overfull \hbox (8.68475pt too wide) in paragraph at lines 1058--1058
 \OT1/ptm/m/n/8.5 sec-
  []
 
 
-Overfull \hbox (13.18141pt too wide) in paragraph at lines 1057--1057
+Overfull \hbox (13.18141pt too wide) in paragraph at lines 1058--1058
 \OT1/ptm/m/n/8.5 onds.| 
  []
 
 
-./main.tex:1064: LaTeX Error: File `Figures/Block_LME3_PCE_t025' not found.
+./main.tex:1065: LaTeX Error: File `Figures/Block_LME3_PCE_t025' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1064   }
+l.1065   }
           
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -2100,43 +2100,43 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (4.91092pt too wide) in paragraph at lines 1064--1064
+Overfull \hbox (4.91092pt too wide) in paragraph at lines 1065--1065
 []\OT1/ptm/m/n/8.5 (b)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1064
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1065
 |\OT1/ptm/m/n/8.5 t
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1064
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1065
 \OT1/ptm/m/n/8.5 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1064
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1065
 \OT1/ptm/m/n/8.5 5
  []
 
 
-Overfull \hbox (8.68475pt too wide) in paragraph at lines 1064--1064
+Overfull \hbox (8.68475pt too wide) in paragraph at lines 1065--1065
 \OT1/ptm/m/n/8.5 sec-
  []
 
 
-Overfull \hbox (13.18141pt too wide) in paragraph at lines 1064--1064
+Overfull \hbox (13.18141pt too wide) in paragraph at lines 1065--1065
 \OT1/ptm/m/n/8.5 onds.| 
  []
 
 
-./main.tex:1071: LaTeX Error: File `Figures/Block_LME3_PCE_t1' not found.
+./main.tex:1072: LaTeX Error: File `Figures/Block_LME3_PCE_t1' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1071   }
+l.1072   }
           
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
@@ -2144,32 +2144,32 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (4.43486pt too wide) in paragraph at lines 1071--1071
+Overfull \hbox (4.43486pt too wide) in paragraph at lines 1072--1072
 []\OT1/ptm/m/n/8.5 (c)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
 |\OT1/ptm/m/n/8.5 t
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1072
 \OT1/ptm/m/n/8.5 =
  []
 
 
-Overfull \hbox (3.5pt too wide) in paragraph at lines 1071--1071
+Overfull \hbox (3.5pt too wide) in paragraph at lines 1072--1072
 \OT1/ptm/m/n/8.5 20
  []
 
 
-Overfull \hbox (8.68475pt too wide) in paragraph at lines 1071--1071
+Overfull \hbox (8.68475pt too wide) in paragraph at lines 1072--1072
 \OT1/ptm/m/n/8.5 sec-
  []
 
 
-Overfull \hbox (11.05641pt too wide) in paragraph at lines 1071--1071
+Overfull \hbox (11.05641pt too wide) in paragraph at lines 1072--1072
 \OT1/ptm/m/n/8.5 onds| 
  []
 
@@ -2177,7 +2177,7 @@ Overfull \hbox (11.05641pt too wide) in paragraph at lines 1071--1071
 <Figures/1D_right_Velocity.png, id=408, 462.528pt x 346.896pt>
 File: Figures/1D_right_Velocity.png Graphic file (type png)
 <use Figures/1D_right_Velocity.png>
-Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1347
+Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1348
 .
 (pdftex.def)             Requested size: 238.96417pt x 179.22244pt.
 
@@ -2185,7 +2185,7 @@ Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1347
 <Figures/1D_left_Stress.png, id=409, 462.528pt x 346.896pt>
 File: Figures/1D_left_Stress.png Graphic file (type png)
 <use Figures/1D_left_Stress.png>
-Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1357.
+Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1358.
 (pdftex.def)             Requested size: 238.96417pt x 179.22244pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
 (./main.bbl
@@ -2206,24 +2206,18 @@ g &
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1370.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1371.
  [11
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1370.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1371.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1370.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1370.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1371.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1371.
 
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 6CF84F8E7A2A72B2404173AC136907A1;527.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 8E1D07C8CA84CD28AC6A5CF536E72E0A;515
-(rerunfilecheck)             After:  6CF84F8E7A2A72B2404173AC136907A1;527.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
@@ -2231,16 +2225,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1370.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1371.
  ) 
 Here is how much of TeX's memory you used:
- 23803 strings out of 492982
- 472953 string characters out of 6134895
- 637052 words of memory out of 5000000
- 26631 multiletter control sequences out of 15000+600000
+ 23802 strings out of 492982
+ 472916 string characters out of 6134895
+ 637055 words of memory out of 5000000
+ 26630 multiletter control sequences out of 15000+600000
  67013 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,14n,87p,426b,842s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2260,7 +2251,7 @@ live/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main.pdf (11 pages, 1234726 bytes).
+Output written on main.pdf (11 pages, 1234725 bytes).
 PDF statistics:
  513 PDF objects out of 1000 (max. 8388607)
  389 compressed objects within 4 object streams
