@@ -21,6 +21,7 @@
 %%CreationDate: Mon Sep 29 1997
 %%Creator: programmed by hand (JK)
 %%EndComments
+  
 gsave
 newpath
   20 20 moveto
@@ -694,30 +695,38 @@ pseudo-algorithm \ref{alg:PCE-algorithm}.
 \section{Local max-ent approximants}
 \label{sec:local-max-ent}
 
-The previous lines describe the main algorithm without defining an
-interpolation technique. A direct consequence of this, is that it is
-possible to adopt a width range of them. The MPM has been
-successfully applied to a wide range of problems due to its ability to
-deal with large strain problems without mesh distorsion issues inherent to
-mesh based methods like FE. However, in the simulations made with the
-original MPM, there are numerical noises when particles crossing
-the cell boundaries. Recently the local maximum-entropy (or local
-\textit{max-ent}) shape function first introduced by Arroyo \& Ortiz
-(2006)\cite{Arroyo2006} has been tested under the MPM framework by
-Wobbes {\it et al.} (2020)\cite{Wobbes2020} where they prof that
+% The previous lines describe the main algorithm without defining an
+% interpolation technique, so we are free to apply a wide range of the
+% existing. 
+
+The popularity of the MPM has increase notoriously during
+the recent years due to its ability to deal with large strain problems
+without mesh distorsion issues inherent to mesh based methods like
+FE, see Zdzislaw \cite{Wieckowski2004}. However, in the simulations made with the original MPM, there are
+numerical noises when particles crossing the cell boundaries. Recently
+the local maximum-entropy (or local \textit{max-ent}) shape function
+first introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} has been
+tested under the MPM framework by Wobbes {\it et al.} (2020)\cite{Wobbes2020} where they prof that
 simulations performed with the maxent basis functions show
 considerably more accurate stress approximations for MPM. Although, in
-\cite{Wobbes2020} authors does not deep in $\beta$ parameter
-benefits. In this publication a parametric analysis of $\Beta$ will be
-performed in order to reach a compromise value that minimize the
-presence of wiggle without introducing an additional spurious behaviour.
+\cite{Wobbes2020} authors does not deep in how $\beta$ affects to the
+accuracy and stability of the solution.
 
-The maximum-entropy estimate is defined as the type of statistical
-inference, which is the least biased possible on the given information
-\cite{Jaynes1957}. The basic idea of the shape functions based on such
+The basic idea of the shape functions based on such
 an estimate is to interpret the shape function $N_I(\vec{x})$ as the
 probability of $\vec{x}$ to obtain the value $\vec{x}_I$,  $I=1,
 \dots, n$. Here $n$ is the number of nodes in the domain.
+
+Taking the definition of entropy as a measure of how uncertainty a
+random variable is averaged on all its possible outcomes. 
+
+Therefore following the principle of \textit{maximum-entropy}
+stated by Jaynes \cite{Jaynes1957}, the least biased shape functions
+are those that maximizes the entropy of the scheme
+
+estimate is defined as the type of statistical
+inference, which is the least biased possible on the given information.
+
 Taking Shannon's entropy as the starting point:
 \begin{equation}
   \label{eq:Shannon-entropy}
@@ -725,13 +734,16 @@ Taking Shannon's entropy as the starting point:
 \end{equation}
 where $p_I(\vec{x})$ is the probability, equivalent to the mentioned
 shape function $N_I(\vec{x})$,  satisfying both the zeroth and
-first-order consistency. The least-biased approximation scheme is given by
+first-order consistency.
+
+The least-biased approximation scheme is given by
 \begin{align*}
   \text{(LME)} \hspace{0.15cm} \text{Maximize} \hspace{0.15cm} &H(p) = -\sum_{I}^{N_n}{p_I(\vec{x})\log p_I } \nonumber \\
   \text{subject to} \hspace{0.15cm} &p_I \ge 0, \hspace{0.15cm} \text{I=1, ..., n} \nonumber \\
   &\sum_{I=1}^{N_n}{p_I} = 1 \nonumber \\
   &\sum_{I=1}^{N_n}{p_I \vec{x}_I} = \vec{x} \nonumber 
 \end{align*}
+
 The local max-ent approximation schemes (LME) as a Pareto set,
 defined by \cite{Arroyo2006} is as follows 
 \begin{align*}
@@ -782,7 +794,8 @@ Note that, the objective of the above procedure is to find the
 $\vec{\lambda}$ which minimises  $\log Z(\vec{x}, \vec{\lambda})$. The
 traditional way to obtain such a minimiser  is using Eq.~(\ref{eq27})
 to calculate small increments of $\partial\vec{\lambda}$ in a
-Newton-Raphson approach. 
+Newton-Raphson approach.
+
 Similar to alternative non-polynomial meshfree basis functions, the
 LME approximation scheme requires more than $d+1$ nodes to determine
 the values of the shape functions as well as their derivatives at any
@@ -860,7 +873,10 @@ function $\exp(-\beta \vec{r} )$ truncated  by  a given tolerance,
 10$^{-6}$, for example,  would ensure a reasonable range of
 neighbours, see \cite{Arroyo2006} for details. This tolerance defines
 the limit values of the influence radius and is used thereafter to
-find the neighbour nodes of a given integration point.
+find the neighbour nodes of a given integration point. Regarding this
+aspect an important note in the implementation of this interpolation
+technique in the MPM is 
+
 In this research and in \cite{Arroyo2006}, $\Beta$ is a scalar as the
 influence area of the shape function is controlled by the Euclidean
 norm, therefore the search area is geometrically a circle in 2D, or a
@@ -869,21 +885,6 @@ sphere in 3D. Building upon the idea of anisotropic shape functions,
 local max-ent scheme, which uses an anisotropic support to deal with
 tensile inestability. Nonetheless this is out of the scope of the
 present document but will be incorporated in future research.
-
-% \subsection{Error analysis MPM vs uGIMP vs MPM-\textit{max-ent}}
-% \label{sec:study-error}
-
-% For the convergence analysis, the root-mean-square (RMS) error in the
-% displacement is computed. RMS error is defined as follows
-
-% \begin{equation}
-%   \label{eq:RMS}
-%   RMS = \sqrt{\frac{1}{N} \sum^{N}_p \left( \phi_p - \hat{\phi}_p \right)^2},
-% \end{equation}
-
-% where $\phi_p$ and $\hat{\phi}_p$ are respectively the analytical and
-% numerical solutions evaluated in the final time step in the position
-% of each particle.
 
 \section{Application to linear elasticity dynamic problems.}
 \label{sec:Application-linear-elasticity-dynamic-problems}
@@ -952,11 +953,52 @@ The analytical solution in terms of velocity
 \begin{figure}\sidecaption
   \centering
   \resizebox{\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/FE_vs_PCE_CFL_05}
+    \includegraphics[width=\textwidth]{./Figures/Velocity_FE_vs_PCE_CFL_05}
   }
   \caption{Velocity evolution at the point in the bar left side.}
   \label{fig:Dyka-PCE-FE}
 \end{figure}
+
+\begin{figure}\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/Velocity_LME_gamma_comparative}
+  }
+  \caption{Velocity evolution at the point in the bar left side.}
+  \label{fig:Dyka-LME-gamma}
+\end{figure}
+
+\begin{figure}\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/Velocity_MPM_vs_OTM_Dyka}
+  }
+  \caption{Velocity evolution at the point in the bar left side.}
+  \label{fig:Dyka-OTM-MPM}
+\end{figure}
+
+For the convergence analysis, the root-mean-square (RMS) error in the
+velocity field is computed. RMS error is defined as follows
+
+\begin{equation}
+  \label{eq:RMS}
+  RMS = \sqrt{\frac{1}{N} \sum^{N}_p \left( \vect{v}_p - \hat{\vect{v}}_p \right)^2},
+\end{equation}
+
+where $\vect{v}_p$ and $\hat{\vect{v}}_p$ are respectively the analytical and
+numerical solutions evaluated in the final time step in the position
+of each particle.
+
+
+\begin{figure*}\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/Error_evol}
+  }
+  \caption{Velocity evolution at the point in the bar left side.}
+  \label{fig:Dyka-error-evol}
+\end{figure*}
+
 
 \subsection{Andersen block}
 \label{sec:andersen-block}
@@ -1053,21 +1095,21 @@ the analytic value given by $\sigma_{yy} = \rho g h_y$.
   \centering
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \subfloat[t = 0 seconds.]{
-    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_t0}
+    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_a_t0}
     \label{fig:Block-LME3-PCE-t0}
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \qquad
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \subfloat[t = 5 seconds.]{
-    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_t025}
+    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_b_t025}
     \label{fig:Block-LME3-PCE-t025}
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \qquad
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
   \subfloat[t = 20 seconds]{
-    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_t1}
+    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_c_t1}
     \label{fig:Block-LME3-PCE-t1}
   }
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
@@ -1105,15 +1147,30 @@ the analytic value given by $\sigma_{yy} = \rho g h_y$.
 
 \section{Conclusions}
 \label{sec:conclusions}
+We have developed a new time integration scheme for the MPM, and
+proved how local \textit{max-ent} arise as a promising tool to
+overcome the grid-crossing error.
 
-%\begin{acknowledgements}
-%If you'd like to thank anyone, place your comments here
-%and remove the percent signs.
-%\end{acknowledgements}
+adapt the value of $\beta$ to solve the equations fem-like of
+meshfree-like depending of how behaves the region
 
-% Authors must disclose all relationships or interests that 
-% could have direct or potential influence or impart bias on 
-% the work: 
+This alternative technique overcome the constriction of the GIMP to
+regular mesh.
+
+The time integration here proposed mitigates the presence of wiggles
+and overshot
+
+future research :
+localization of the local max ent
+
+predictor-corrector for high dynamic problems like impact or
+collisions 
+
+\begin{acknowledgements}
+If you'd like to thank anyone, place your comments here
+and remove the percent signs.
+\end{acknowledgements}
+
 %
 \section*{Conflict of interest}
 %
