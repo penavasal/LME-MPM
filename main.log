@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  20 MAR 2020 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.2.19)  23 MAR 2020 17:36
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **main.tex
@@ -745,8 +745,8 @@ Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (/home/migmolper2/.emacs.d/elpa/auctex-12.1.2/latex/preview.sty
-Package: preview 2017/04/24 12.1 (AUCTeX/preview-latex)
+)) (/usr/share/texmf/tex/latex/preview/preview.sty
+Package: preview 2017/04/24 11.91 (AUCTeX/preview-latex)
 
 (/usr/share/texlive/texmf-dist/tex/generic/luatex85/luatex85.sty
 Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
@@ -1645,33 +1645,19 @@ LaTeX Warning: Reference `alg:PCE-algorithm' on page 5 undefined on input line
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 636.
 
-Overfull \hbox (14.81267pt too wide) in paragraph at lines 702--715
-\OT1/ptm/m/n/10 ti-cles cross-ing the cell bound-aries. Re-cently the lo-cal ma
-ximum-
- []
+LaTeX Warning: Citation `Wieckowski2004' on page 5 undefined on input line 705.
+
 
 
 Underfull \vbox (badness 2707) has occurred while \output is active []
 
  [5]
-./main.tex:716: Undefined control sequence.
-<recently read> \Beta 
-                      
-l.716 ...is publication we will deep in how $\Beta
-                                                  $ affects to the
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (3.2839pt too wide) detected at line 752
+Overfull \hbox (3.2839pt too wide) detected at line 755
 []
  []
 
 
-Overfull \hbox (8.11311pt too wide) in paragraph at lines 796--806
+Overfull \hbox (8.11311pt too wide) in paragraph at lines 799--809
 []\OT1/ptm/m/n/10 Similar to al-ter-na-tive non-polynomial mesh-free ba-sis fun
 c-
  []
@@ -1679,111 +1665,111 @@ c-
 <Figures/MPM_Shape_Fun.png, id=249, 462.528pt x 346.896pt>
 File: Figures/MPM_Shape_Fun.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 816.
+Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 819.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/MPM_Shape_Fun_dx.png, id=250, 462.528pt x 346.896pt>
 File: Figures/MPM_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 816.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 819.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/MPM_Shape_Fun_dy.png, id=251, 462.528pt x 346.896pt>
 File: Figures/MPM_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 816.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 819.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_17_3_Shape_Fun.png, id=252, 462.528pt x 346.896pt>
 File: Figures/LME_17_3_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 825
+Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 828
 .
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_17_3_Shape_Fun_dx.png, id=253, 462.528pt x 346.896pt>
 File: Figures/LME_17_3_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dx.png  used on input line 
-825.
+828.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_17_3_Shape_Fun_dy.png, id=254, 462.528pt x 346.896pt>
 File: Figures/LME_17_3_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dy.png  used on input line 
-825.
+828.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/GIMP_Shape_Fun.png, id=255, 462.528pt x 346.896pt>
 File: Figures/GIMP_Shape_Fun.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 834.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 837.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/GIMP_Shape_Fun_dx.png, id=256, 462.528pt x 346.896pt>
 File: Figures/GIMP_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 834.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 837.
 
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/GIMP_Shape_Fun_dy.png, id=257, 462.528pt x 346.896pt>
 File: Figures/GIMP_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 834.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 837.
 
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_10_0_Shape_Fun.png, id=258, 462.528pt x 346.896pt>
 File: Figures/LME_10_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 843
+Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 846
 .
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_10_0_Shape_Fun_dx.png, id=259, 462.528pt x 346.896pt>
 File: Figures/LME_10_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dx.png  used on input line 
-843.
+846.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_10_0_Shape_Fun_dy.png, id=260, 462.528pt x 346.896pt>
 File: Figures/LME_10_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dy.png  used on input line 
-843.
+846.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_7_0_Shape_Fun.png, id=261, 462.528pt x 346.896pt>
 File: Figures/LME_7_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_7_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_7_0_Shape_Fun.png  used on input line 852.
+Package pdftex.def Info: Figures/LME_7_0_Shape_Fun.png  used on input line 855.
 
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_7_0_Shape_Fun_dx.png, id=262, 462.528pt x 346.896pt>
 File: Figures/LME_7_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_7_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_7_0_Shape_Fun_dx.png  used on input line 8
-52.
+55.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_7_0_Shape_Fun_dy.png, id=263, 462.528pt x 346.896pt>
 File: Figures/LME_7_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_7_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_7_0_Shape_Fun_dy.png  used on input line 8
-52.
+55.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_5_0_Shape_Fun.png, id=264, 462.528pt x 346.896pt>
 File: Figures/LME_5_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 861.
+Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 864.
 
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_5_0_Shape_Fun_dx.png, id=265, 462.528pt x 346.896pt>
 File: Figures/LME_5_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dx.png  used on input line 8
-61.
+64.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
 <Figures/LME_5_0_Shape_Fun_dy.png, id=266, 462.528pt x 346.896pt>
 File: Figures/LME_5_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dy.png  used on input line 8
-61.
+64.
 (pdftex.def)             Requested size: 71.68997pt x 53.76302pt.
-./main.tex:877: Undefined control sequence.
+./main.tex:880: Undefined control sequence.
 <recently read> \Beta 
                       
-l.877 ...research and in \cite{Arroyo2006}, $\Beta
+l.880 ...research and in \cite{Arroyo2006}, $\Beta
                                                   $ is a scalar as the
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1791,11 +1777,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-(./Figures/Dyka_bar.tex
+[6] (./Figures/Dyka_bar.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1812,43 +1794,42 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-<./Figures/Velocity_FE_vs_PCE_CFL_05.png, id=297, 462.528pt x 346.896pt>
-File: ./Figures/Velocity_FE_vs_PCE_CFL_05.png Graphic file (type png)
-<use ./Figures/Velocity_FE_vs_PCE_CFL_05.png>
-Package pdftex.def Info: ./Figures/Velocity_FE_vs_PCE_CFL_05.png  used on input
- line 955.
+<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=297, 462.528pt x 346.896pt>
+File: ./Figures/Velocity_FE_vs_PCE_CFL_01.png Graphic file (type png)
+<use ./Figures/Velocity_FE_vs_PCE_CFL_01.png>
+Package pdftex.def Info: ./Figures/Velocity_FE_vs_PCE_CFL_01.png  used on input
+ line 958.
 (pdftex.def)             Requested size: 495.0pt x 371.27032pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
+<./Figures/Velocity_LME_gamma_comparative.png, id=298, 488.5452pt x 666.3294pt>
 
-./main.tex:964: LaTeX Error: File `./Figures/Velocity_LME_gamma_comparative' no
-t found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.964   \caption
-                {Velocity evolution at the point in the bar left side.}
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+File: ./Figures/Velocity_LME_gamma_comparative.png Graphic file (type png)
+<use ./Figures/Velocity_LME_gamma_comparative.png>
+Package pdftex.def Info: ./Figures/Velocity_LME_gamma_comparative.png  used on 
+input line 967.
+(pdftex.def)             Requested size: 495.0pt x 675.14287pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=298, 462.528pt x 346.896pt>
+<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=299, 462.528pt x 346.896pt>
+File: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png Graphic file (type png)
+<use ./Figures/Velocity_uGIMP_vs_LME_Dyka.png>
+Package pdftex.def Info: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png  used on inpu
+t line 977.
+(pdftex.def)             Requested size: 495.0pt x 371.27032pt.
+\sidecaption: No sufficient room for the legend; using normal \caption. 
+<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=300, 462.528pt x 346.896pt>
 File: ./Figures/Velocity_MPM_vs_OTM_Dyka.png Graphic file (type png)
 <use ./Figures/Velocity_MPM_vs_OTM_Dyka.png>
 Package pdftex.def Info: ./Figures/Velocity_MPM_vs_OTM_Dyka.png  used on input 
-line 973.
+line 986.
 (pdftex.def)             Requested size: 495.0pt x 371.27032pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
 
-Overfull \hbox (8.44392pt too wide) in paragraph at lines 977--979
+Overfull \hbox (8.44392pt too wide) in paragraph at lines 990--992
 []\OT1/ptm/m/n/10 For the con-ver-gence anal-y-sis, the root-mean-square (RMS)
  []
 
-./main.tex:982: Undefined control sequence.
-l.982 ...\sqrt{\frac{1}{N} \sum^{N}_p \left( \vect
+./main.tex:995: Undefined control sequence.
+l.995 ...\sqrt{\frac{1}{N} \sum^{N}_p \left( \vect
                                                   {v}_p - \hat{\vect{v}}_p \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1856,10 +1837,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:982: Undefined control sequence.
+./main.tex:995: Undefined control sequence.
 <recently read> \vect 
                       
-l.982 ...^{N}_p \left( \vect{v}_p - \hat{\vect{v}}
+l.995 ...^{N}_p \left( \vect{v}_p - \hat{\vect{v}}
                                                   _p \right)^2},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1867,10 +1848,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:982: Undefined control sequence.
+./main.tex:995: Undefined control sequence.
 <argument> \vect 
                  {v}
-l.982 ...^{N}_p \left( \vect{v}_p - \hat{\vect{v}}
+l.995 ...^{N}_p \left( \vect{v}_p - \hat{\vect{v}}
                                                   _p \right)^2},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1878,45 +1859,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:985: Undefined control sequence.
-<recently read> \vect 
-                      
-l.985 where $\vect
-                  {v}_p$ and $\hat{\vect{v}}_p$ are respectively the analyti...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:985: Undefined control sequence.
-<recently read> \vect 
-                      
-l.985 where $\vect{v}_p$ and $\hat{\vect{v}}
-                                            _p$ are respectively the analyti...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:985: Undefined control sequence.
-<argument> \vect 
-                 {v}
-l.985 where $\vect{v}_p$ and $\hat{\vect{v}}
-                                            _p$ are respectively the analyti...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./Figures/Error_evol.png, id=299, 1248.8256pt x 304.9794pt>
-File: ./Figures/Error_evol.png Graphic file (type png)
-<use ./Figures/Error_evol.png>
-Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 995.
-(pdftex.def)             Requested size: 495.0pt x 120.88203pt.
-\sidecaption: No sufficient room for the legend; using normal \caption. 
 [7 <./Figures/MPM_Shape_Fun.png> <./Figures/MPM_Shape_Fun_dx.png> <./Figures/MP
 M_Shape_Fun_dy.png> <./Figures/LME_17_3_Shape_Fun.png> <./Figures/LME_17_3_Shap
 e_Fun_dx.png> <./Figures/LME_17_3_Shape_Fun_dy.png> <./Figures/GIMP_Shape_Fun.p
@@ -1925,7 +1867,47 @@ res/LME_10_0_Shape_Fun.png> <./Figures/LME_10_0_Shape_Fun_dx.png> <./Figures/LM
 E_10_0_Shape_Fun_dy.png> <./Figures/LME_7_0_Shape_Fun.png> <./Figures/LME_7_0_S
 hape_Fun_dx.png> <./Figures/LME_7_0_Shape_Fun_dy.png> <./Figures/LME_5_0_Shape_
 Fun.png> <./Figures/LME_5_0_Shape_Fun_dx.png> <./Figures/LME_5_0_Shape_Fun_dy.p
-ng>] (./Figures/Block.tex
+ng>]
+./main.tex:998: Undefined control sequence.
+<recently read> \vect 
+                      
+l.998 where $\vect
+                  {v}_p$ and $\hat{\vect{v}}_p$ are respectively the analyti...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:998: Undefined control sequence.
+<recently read> \vect 
+                      
+l.998 where $\vect{v}_p$ and $\hat{\vect{v}}
+                                            _p$ are respectively the analyti...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:998: Undefined control sequence.
+<argument> \vect 
+                 {v}
+l.998 where $\vect{v}_p$ and $\hat{\vect{v}}
+                                            _p$ are respectively the analyti...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./Figures/Error_evol.png, id=336, 1214.136pt x 667.7748pt>
+File: ./Figures/Error_evol.png Graphic file (type png)
+<use ./Figures/Error_evol.png>
+Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1008.
+(pdftex.def)             Requested size: 495.0pt x 272.25084pt.
+\sidecaption: No sufficient room for the legend; using normal \caption. 
+(./Figures/Block.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2095,10 +2077,10 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:1014: Extra }, or forgotten \endgroup.
+./main.tex:1027: Extra }, or forgotten \endgroup.
 \sf@endfloatbox ...gefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.1014 \end{figure}
+l.1027 \end{figure}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2106,15 +2088,19 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<./Figures/Block_CFL_01_Comparative.png, id=344, 462.528pt x 346.896pt>
+[8 <./Figures/Velocity_FE_vs_PCE_CFL_01.png> <./Figures/Velocity_LME_gamma_comp
+arative.png> <./Figures/Velocity_uGIMP_vs_LME_Dyka.png> <./Figures/Velocity_MPM
+_vs_OTM_Dyka.png>]
+<./Figures/Block_CFL_01_Comparative.png, id=365, 462.528pt x 346.896pt>
 File: ./Figures/Block_CFL_01_Comparative.png Graphic file (type png)
 <use ./Figures/Block_CFL_01_Comparative.png>
 Package pdftex.def Info: ./Figures/Block_CFL_01_Comparative.png  used on input 
-line 1059.
+line 1072.
 (pdftex.def)             Requested size: 495.0pt x 371.27032pt.
+
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:1079: Undefined control sequence.
-l.1079 ...ng the spatial variation of $\beta(\vect
+./main.tex:1092: Undefined control sequence.
+l.1092 ...ng the spatial variation of $\beta(\vect
                                                   {x})$,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2122,43 +2108,47 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Block_LME3_PCE_a_t0.png, id=348, 832.10875pt x 803.0pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./Figures/Error_evol.png>]
+<Figures/Block_LME3_PCE_a_t0.png, id=380, 832.10875pt x 803.0pt>
 File: Figures/Block_LME3_PCE_a_t0.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_a_t0.png>
-Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 10
-97.
+Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 11
+10.
 (pdftex.def)             Requested size: 191.17206pt x 184.47781pt.
-<Figures/Block_LME3_PCE_b_t025.png, id=349, 832.10875pt x 803.0pt>
+<Figures/Block_LME3_PCE_b_t025.png, id=381, 832.10875pt x 803.0pt>
 File: Figures/Block_LME3_PCE_b_t025.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_b_t025.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_b_t025.png  used on input line 
-1104.
+1117.
 (pdftex.def)             Requested size: 191.17206pt x 184.47781pt.
-<Figures/Block_LME3_PCE_c_t1.png, id=350, 832.10875pt x 803.0pt>
+<Figures/Block_LME3_PCE_c_t1.png, id=382, 832.10875pt x 803.0pt>
 File: Figures/Block_LME3_PCE_c_t1.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_c_t1.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_c_t1.png  used on input line 11
-11.
+24.
 (pdftex.def)             Requested size: 191.17206pt x 184.47781pt.
 
-LaTeX Warning: Float too large for page by 24.13895pt on input line 1119.
 
-[8 <./Figures/Velocity_FE_vs_PCE_CFL_05.png> <./Figures/Velocity_MPM_vs_OTM_Dyk
-a.png>] [9 <./Figures/Error_evol.png> <./Figures/Block_CFL_01_Comparative.png>]
-[10 <./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.png> <
-./Figures/Block_LME3_PCE_c_t1.png>]
-<Figures/1D_right_Velocity.png, id=431, 462.528pt x 346.896pt>
+LaTeX Warning: Float too large for page by 24.13895pt on input line 1132.
+
+[10 <./Figures/Block_CFL_01_Comparative.png> <./Figures/Block_LME3_PCE_a_t0.png
+> <./Figures/Block_LME3_PCE_b_t025.png> <./Figures/Block_LME3_PCE_c_t1.png>]
+[11]
+<Figures/1D_right_Velocity.png, id=443, 462.528pt x 346.896pt>
 File: Figures/1D_right_Velocity.png Graphic file (type png)
 <use Figures/1D_right_Velocity.png>
-Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1387
+Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1415
 .
 (pdftex.def)             Requested size: 238.96417pt x 179.22244pt.
 
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-<Figures/1D_left_Stress.png, id=432, 462.528pt x 346.896pt>
+<Figures/1D_left_Stress.png, id=444, 462.528pt x 346.896pt>
 File: Figures/1D_left_Stress.png Graphic file (type png)
 <use Figures/1D_left_Stress.png>
-Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1397.
+Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1425.
 (pdftex.def)             Requested size: 238.96417pt x 179.22244pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
 (./main.bbl
@@ -2172,21 +2162,22 @@ Underfull \hbox (badness 4181) in paragraph at lines 73--77
 []\OT1/ptm/m/n/8.5 Kumar, S., Danas, K., Kochmann, D.M.: En-hanced lo-cal
  []
 
-[11 <./Figures/1D_right_Velocity.png> <./Figures/1D_left_Stress.png>]
+
 Underfull \hbox (badness 1221) in paragraph at lines 122--128
 \OT1/ptm/m/n/8.5 anal-y-sis of com-plex struc-tures.  Earth-quake En-gi-neer-in
 g &
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1410.
- [12
+[12 <./Figures/1D_right_Velocity.png> <./Figures/1D_left_Stress.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1438.
+ [13
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1410.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1410.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1410.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1438.
+
+(./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1438.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1438.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6CF84F8E7A2A72B2404173AC136907A1;527.
@@ -2198,16 +2189,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1410.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1438.
  ) 
 Here is how much of TeX's memory you used:
- 23841 strings out of 492982
- 474084 string characters out of 6134895
- 634597 words of memory out of 5000000
- 26658 multiletter control sequences out of 15000+600000
+ 23844 strings out of 492982
+ 474463 string characters out of 6134896
+ 628023 words of memory out of 5000000
+ 26668 multiletter control sequences out of 15000+600000
  67013 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  52i,14n,87p,429b,842s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2227,10 +2215,10 @@ live/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main.pdf (12 pages, 1448181 bytes).
+Output written on main.pdf (13 pages, 1519479 bytes).
 PDF statistics:
- 537 PDF objects out of 1000 (max. 8388607)
- 400 compressed objects within 4 object streams
- 155 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 
