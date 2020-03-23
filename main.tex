@@ -88,6 +88,11 @@ grestore
 % \usetikzlibrary{arrows}
 \usetikzlibrary{plotmarks}
 
+\usetikzlibrary{%
+    decorations.pathreplacing,%
+    decorations.pathmorphing%
+}
+
 %\usepackage{latexsym}
 % etc.
 
@@ -385,14 +390,23 @@ represent a part of the discretized domain $\varOmega_p \subset
 \varOmega$ with $p = 1,2\ldots ,N_p$ where $N_p$ is the number of
 particles. The material point $\vec{x}_p$ is defined at the centroid
 of each $\Omega_p$, figure \ref{fig:MPM-discretization}.
+
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.9\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/Discretization_MPM}
-  }
+  \resizebox{\hsize}{!}{
+    \input{Figures/Discretization_MPM.tex}}
   \caption{MPM discretization.}
   \label{fig:MPM-discretization}
 \end{figure}
+
+% \begin{figure}\sidecaption
+%   \centering
+%   \resizebox{0.9\hsize}{!}{
+%     \includegraphics[width=\textwidth]{./Figures/Discretization_MPM}
+%   }
+%   \caption{MPM discretization.}
+%   \label{fig:MPM-discretization}
+% \end{figure}
 
 Each material point is assigned with initial values of position,
 velocity, mass, volume and stress denoted by $\vec{x}_p$,
@@ -962,7 +976,7 @@ The analytical solution in terms of velocity
 \begin{figure}\sidecaption
   \centering
   \resizebox{\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/Velocity_LME_gamma_comparative}
+    \includegraphics[width=\textwidth]{./Figures/Velocity_MPM_LME_gamma_comparative}
   }
   \caption{Velocity evolution at the point in the bar left side.}
   \label{fig:Dyka-LME-gamma}

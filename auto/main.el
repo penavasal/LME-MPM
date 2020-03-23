@@ -14,6 +14,7 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
+    "Figures/Discretization_MPM"
     "Figures/Dyka_bar"
     "Figures/Block"
     "fix-cm"
