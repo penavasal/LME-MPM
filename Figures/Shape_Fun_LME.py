@@ -1,10 +1,7 @@
 #!/home/migmolper2/anaconda3/bin/python3
 
+from mayavi import mlab
 import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm
-from matplotlib.ticker import LinearLocator, FixedLocator, FormatStrFormatter
 
 """
   Shape functions based in :
@@ -219,44 +216,43 @@ def LME_lambda_NR(l, lambda_GP, Beta):
     # return the lagrange multipliers value
     return lambda_GP
 
-N_gp = 35
-N_n = 5
-L = 2.
-DX = (2*L-0.2)/N_n
-Gamma = 17.3 # 17.3
-Gamma = ([17.3,10.0,7.0,5.0])
-Node = 12 # 12
-format_fig='png'
-# Show
-Show_grafs = False
 
-xp = yp = np.linspace(-L+0.1, L-0.1, N_gp)
-zp = np.zeros([1,N_gp])
-Xp, Yp = np.meshgrid(xp, yp, indexing='ij', sparse=False)
-Zp = np.zeros([N_gp,N_gp])
-N_I = np.zeros_like(Zp)
-dNdx_I = np.zeros_like(Zp)
-dNdy_I = np.zeros_like(Zp)
+def print_LME(Gamma):
+    N_gp = 35
+    N_n = 5
+    L = 2.
+    # Gamma = ([17.3,10.0,7.0,5.0])
+    Node = 12 # 12
+    format_fig='png'
+    # Show
+    Show_grafs = False
 
-xI = yI = np.linspace(-L, L, N_n)
-zI = np.zeros([1,N_n])
-XI, YI = np.meshgrid(xI, yI, indexing='ij', sparse=False)
-ZI = np.zeros([N_n,N_n])
+    xp = yp = np.linspace(-L+0.1, L-0.1, N_gp)
+    zp = np.zeros([1,N_gp])
+    Xp, Yp = np.meshgrid(xp, yp, indexing='ij', sparse=False)
+    Zp = np.zeros([N_gp,N_gp])
+    N_I = np.zeros_like(Zp)
+    dNdx_I = np.zeros_like(Zp)
+    dNdy_I = np.zeros_like(Zp)
 
-l = np.zeros([N_n*N_n,2])
+    xI = yI = np.linspace(-L, L, N_n)
+    zI = np.zeros([1,N_n])
+    XI, YI = np.meshgrid(xI, yI, indexing='ij', sparse=False)
+    ZI = np.zeros([N_n,N_n])
 
-lambda_GP = np.zeros([N_gp*N_gp,2])
-Xp_Yp = np.zeros([N_gp*N_gp,2])
+    l = np.zeros([N_n*N_n,2])
 
-for i in range(0,N_gp):
-    for j in range(0,N_gp):
-        Xp_Yp[i*N_gp + j][0] = Xp[i][j]
-        Xp_Yp[i*N_gp + j][1] = Yp[i][j]
+    lambda_GP = np.zeros([N_gp*N_gp,2])
+    Xp_Yp = np.zeros([N_gp*N_gp,2])
 
-for Gamma_i in Gamma:
+    for i in range(0,N_gp):
+        for j in range(0,N_gp):
+            Xp_Yp[i*N_gp + j][0] = Xp[i][j]
+            Xp_Yp[i*N_gp + j][1] = Yp[i][j]
+
 
     # Get the value of gamma
-    Beta = Gamma_i/(L*L)
+    Beta = Gamma/(L*L)
     
     # Distance to the GPa
     for a in range(0,N_gp*N_gp):
@@ -264,18 +260,18 @@ for Gamma_i in Gamma:
             for j in range(0,N_n):
                 l[i*N_n + j][0] = Xp_Yp[a][0] - XI[i][j]
                 l[i*N_n + j][1] = Xp_Yp[a][1] - YI[i][j]
-
+            
         lambda_GP[a,:] = LME_lambda_NR(l, np.zeros([2]), Beta);
 
-        # GPs
-        # ax.scatter(XI, YI, ZI, c='r', marker='o')
+    # GPs
+    # ax.scatter(XI, YI, ZI, c='r', marker='o')
 
     for a in range(0,N_gp*N_gp):
         for i in range(0,N_n):
             for j in range(0,N_n):
                 l[i*N_n + j][0] = Xp_Yp[a][0] - XI[i][j]
                 l[i*N_n + j][1] = Xp_Yp[a][1] - YI[i][j]
-            
+                
         N_I_GP = LME_p(l, lambda_GP[a,:], Beta)
         dN_I_GP = LME_dp(l, N_I_GP)
         i = int(a/(N_gp))
@@ -285,84 +281,25 @@ for Gamma_i in Gamma:
         dNdy_I[i][j] = dN_I_GP[1][Node]
 
 
-    fig = plt.figure()
-    ax = fig.gca(projection='3d')
-    ax.grid(False)
-    ax.xaxis.pane.set_edgecolor('black')
-    ax.yaxis.pane.set_edgecolor('black')
-    ax.zaxis.pane.set_edgecolor('black')
-    ax.xaxis.pane.fill = False
-    ax.yaxis.pane.fill = False
-    ax.zaxis.pane.fill = False
-    ax.axes.xaxis.set_ticklabels([])
-    ax.axes.yaxis.set_ticklabels([])
-    for line in ax.xaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.yaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.zaxis.get_ticklines():
-        line.set_visible(False)
-    surf = ax.plot_surface(Xp, Yp, N_I, rstride=1, cstride=1, cmap=cm.jet,
-                           linewidth=0, antialiased=False)
-    ax.set_zlim3d(0.00, 1.00)
-    ax.set_zticks([0, 0.5, 1])
-    plt.tight_layout()
-    plt.savefig('LME_%1.1f_Shape_Fun.%s'%(Gamma_i,format_fig))  
-    if Show_grafs:
-        plt.show()
-    fig.clear()
-
-
-    fig = plt.figure()
-    ax = fig.gca(projection='3d')
-    ax.grid(False)
-    ax.xaxis.pane.set_edgecolor('black')
-    ax.yaxis.pane.set_edgecolor('black')
-    ax.zaxis.pane.set_edgecolor('black')
-    ax.xaxis.pane.fill = False
-    ax.yaxis.pane.fill = False
-    ax.zaxis.pane.fill = False
-    ax.axes.xaxis.set_ticklabels([])
-    ax.axes.yaxis.set_ticklabels([])
-    ax.axes.zaxis.set_ticklabels([])
-    for line in ax.xaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.yaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.zaxis.get_ticklines():
-        line.set_visible(False)    
-    surf = ax.plot_surface(Xp, Yp, dNdx_I, rstride=1, cstride=1, cmap=cm.jet,
-                           linewidth=0, antialiased=False)
-    ax.set_zlim3d(-1.00, 1.00)
-    plt.tight_layout()
-    plt.savefig('LME_%1.1f_Shape_Fun_dx.%s'%(Gamma_i,format_fig))  
-    if Show_grafs:
-        plt.show()
-    fig.clear()
+    surf = mlab.mesh(Xp, Yp, N_I)
+    surf.actor.actor.scale = (1.0, 1.0, 4.0)
     
-    fig = plt.figure()
-    ax = fig.gca(projection='3d')
-    ax.grid(False)
-    ax.xaxis.pane.set_edgecolor('black')
-    ax.yaxis.pane.set_edgecolor('black')
-    ax.zaxis.pane.set_edgecolor('black')
-    ax.xaxis.pane.fill = False
-    ax.yaxis.pane.fill = False
-    ax.zaxis.pane.fill = False
-    ax.axes.xaxis.set_ticklabels([])
-    ax.axes.yaxis.set_ticklabels([])
-    ax.axes.zaxis.set_ticklabels([])
-    for line in ax.xaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.yaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.zaxis.get_ticklines():
-        line.set_visible(False)
-    surf = ax.plot_surface(Xp, Yp, dNdy_I, rstride=1, cstride=1, cmap=cm.jet,
-                        linewidth=0, antialiased=False)
-    ax.set_zlim3d(-1.00, 1.00)
-    plt.tight_layout()
-    plt.savefig('LME_%1.1f_Shape_Fun_dy.%s'%(Gamma_i,format_fig))  
     if Show_grafs:
-        plt.show()
-    fig.clear()
+        mlab.show(surf)
+
+
+    # dNdx_surf = mlab.mesh(Xp, Yp, dNdx_I)
+    # # surf.actor.actor.scale = (0.25, 0.25, 1.0)
+    
+    # if Show_grafs:
+    #     mlab.axes(dNdx_surf)
+    #     mlab.outline(dNdx_surf)
+    #     mlab.show(dNdx_surf)
+    
+    # dNdy_surf = mlab.mesh(Xp, Yp, dNdy_I)
+    # # surf.actor.actor.scale = (0.25, 0.25, 1.0)
+    
+    # if Show_grafs:
+    #     mlab.axes(dNdy_surf)
+    #     mlab.outline(dNdy_surf)
+    #     mlab.show(dNdy_surf)

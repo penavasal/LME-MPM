@@ -21,6 +21,9 @@
     "svjour3"
     "svjour310"
     "subfig"
+    "graphicx"
+    "subcaption"
+    "subfigure"
     "mathptmx"
     "amssymb"
     "amsmath"
@@ -92,8 +95,11 @@
     "eq:Tran-2019-GA-x"
     "eq:Tran-2019-GA-a"
     "sec:epc-algor-mpm"
-    "eq:5"
-    "eq:Predictor-velocity"
+    "eq:Predictor-velocity-I"
+    "eq:Variational-recovery"
+    "eq:Predictor-velocity-II"
+    "eq:Corrector-velocity"
+    "eq:Update-lagrangian-pce"
     "alg:PCE-algorithm"
     "sec:local-max-ent"
     "eq:Shannon-entropy"
@@ -104,12 +110,6 @@
     "eq26"
     "eq27"
     "eq28"
-    "fig:MPM_Shape_Fun"
-    "fig:LME_17.3_Shape_Fun"
-    "fig:GIMP_Shape_Fun"
-    "fig:LME_10.0_Shape_Fun"
-    "fig:LME_7.0_Shape_Fun"
-    "fig:LME_5.0_Shape_Fun"
     "fig:LME_MPM"
     "sec:Application-linear-elasticity-dynamic-problems"
     "sec:dyka-bar"
@@ -155,6 +155,6 @@
     "fig:vel_analytics_dyka"
     "fig:stress_analytics_dyka")
    (LaTeX-add-bibliographies
-    "Biblio.bib"))
+    "Biblio"))
  :latex)
 

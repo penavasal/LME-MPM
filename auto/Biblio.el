@@ -2,6 +2,9 @@
  "Biblio"
  (lambda ()
    (LaTeX-add-bibitems
+    "DHAKAL2016301"
+    "ZZ1992_I"
+    "Xiaojian94"
     "Kochmann2019"
     "Jaynes1957"
     "Arroyo2006"

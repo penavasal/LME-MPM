@@ -1,10 +1,7 @@
 #!/opt/anaconda3/bin/python3
 
+from mayavi import mlab
 import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm
-from matplotlib.ticker import LinearLocator, FixedLocator, FormatStrFormatter
 
 def GIMP(L, lp, Xp, Xi):
     """"""
@@ -39,98 +36,51 @@ def d_GIMP(L, lp, Xp, Xi):
     return d_Sip
 
 
-def print_dx_GIMP():
+def print_dx_GIMP(Show_grafs):
     N = 50
     xp = yp = np.linspace(-2, 2, N)
     Xp, Yp = np.meshgrid(xp, yp, indexing='ij', sparse=False)
-    Sip_xDy = np.zeros([N,N])
+    Sip_dxdy = np.zeros([N,N])
     xi = yi = 0
     L = 1.
     lp = 1/4.
-    # Show
-    Show_grafs = False
+
     format_fig = 'png'
 
     for i in range(0,N):
         for j in range(0,N):
-            Sip_xDy[i][j] = d_GIMP(L,lp,xp[i],xi) * GIMP(L,lp,yp[j],yi) 
+            Sip_dxdy[i][j] = d_GIMP(L,lp,xp[i],xi) * GIMP(L,lp,yp[j],yi) 
             
-    fig = plt.figure()
-    ax = fig.gca(projection='3d')
-    ax.grid(False)
-    ax.xaxis.pane.set_edgecolor('black')
-    ax.yaxis.pane.set_edgecolor('black')
-    ax.zaxis.pane.set_edgecolor('black')
-    ax.xaxis.pane.fill = False
-    ax.yaxis.pane.fill = False
-    ax.zaxis.pane.fill = False
-    ax.axes.xaxis.set_ticklabels([])
-    ax.axes.yaxis.set_ticklabels([])
-    ax.axes.zaxis.set_ticklabels([])
-    for line in ax.xaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.yaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.zaxis.get_ticklines():
-        line.set_visible(False)
-        
-    surf = ax.plot_surface(Xp, Yp, Sip_xDy, rstride=1,
-                           cstride=1, cmap=cm.jet,
-                           linewidth=0, antialiased=False)
-    ax.set_zlim3d(-1.00, 1.00)
-    plt.tight_layout()
-    plt.savefig('GIMP_Shape_Fun_dx.%s'%(format_fig))
-    if Show_grafs:
-        plt.show()
-    fig.clear()
-
-def print_dy_GIMP():
-    N = 50
-    xp = yp = np.linspace(-2, 2, N)
-    Xp, Yp = np.meshgrid(xp, yp, indexing='ij', sparse=False)
-    Sip_xDy = np.zeros([N,N])
-    xi = yi = 0
-    L = 1.
-    lp = 1/4.
-    # Show
-    Show_grafs = False
-    format_fig = 'png'
-
-    for i in range(0,N):
-        for j in range(0,N):
-            Sip_xDy[i][j] = GIMP(L,lp,xp[i],xi) * d_GIMP(L,lp,yp[j],yi) 
-            
-
-    fig = plt.figure()
-    ax = fig.gca(projection='3d')
-    ax.grid(False)
-    ax.xaxis.pane.set_edgecolor('black')
-    ax.yaxis.pane.set_edgecolor('black')
-    ax.zaxis.pane.set_edgecolor('black')
-    ax.xaxis.pane.fill = False
-    ax.yaxis.pane.fill = False
-    ax.zaxis.pane.fill = False
-    ax.axes.xaxis.set_ticklabels([])
-    ax.axes.yaxis.set_ticklabels([])
-    ax.axes.zaxis.set_ticklabels([])
-    for line in ax.xaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.yaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.zaxis.get_ticklines():
-        line.set_visible(False)
-            
-    surf = ax.plot_surface(Xp, Yp, Sip_xDy, rstride=1,
-                           cstride=1, cmap=cm.jet,
-                           linewidth=0, antialiased=False)
-    ax.set_zlim3d(-1.00, 1.00)
-    plt.tight_layout()
-    plt.savefig('GIMP_Shape_Fun_dy.%s'%(format_fig))  
-    if Show_grafs:
-        plt.show()
-    fig.clear()
+    surf = mlab.mesh(Xp, Yp, Sip_dxdy)
     
-def print_GIMP():
+    if Show_grafs:
+        mlab.axes(surf)
+        mlab.outline(surf)
+        mlab.show(surf)
+
+def print_dy_GIMP(Show_grafs):
+    N = 50
+    xp = yp = np.linspace(-2, 2, N)
+    Xp, Yp = np.meshgrid(xp, yp, indexing='ij', sparse=False)
+    Sip_dxdy = np.zeros([N,N])
+    xi = yi = 0
+    L = 1.
+    lp = 1/4.
+
+    for i in range(0,N):
+        for j in range(0,N):
+            Sip_dxdy[i][j] = GIMP(L,lp,xp[i],xi) * d_GIMP(L,lp,yp[j],yi) 
+            
+
+    surf = mlab.mesh(Xp, Yp, Sip_dxdy)
+    # surf.actor.actor.scale = (0.25, 0.25, 1.0)
+    
+    if Show_grafs:
+        mlab.axes(surf)
+        mlab.outline(surf)
+        mlab.show(surf)
+    
+def print_GIMP(Show_grafs):
     N = 50
     xp = yp = np.linspace(-2, 2, N)
     Xp, Yp = np.meshgrid(xp, yp, indexing='ij', sparse=False)
@@ -138,44 +88,18 @@ def print_GIMP():
     xi = yi = 0
     L = 1.
     lp = 1/4.
-    # Show
-    Show_grafs = False
-    format_fig = 'png'
 
     for i in range(0,N):
         for j in range(0,N):
             Sip_xy[i][j] = GIMP(L,lp,xp[i],xi) * GIMP(L,lp,yp[j],yi)
             
-    fig = plt.figure()
-    ax = fig.gca(projection='3d')
-    ax.grid(False)
-    ax.xaxis.pane.set_edgecolor('black')
-    ax.yaxis.pane.set_edgecolor('black')
-    ax.zaxis.pane.set_edgecolor('black')
-    ax.xaxis.pane.fill = False
-    ax.yaxis.pane.fill = False
-    ax.zaxis.pane.fill = False
-    ax.axes.xaxis.set_ticklabels([])
-    ax.axes.yaxis.set_ticklabels([])
-    for line in ax.xaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.yaxis.get_ticklines():
-        line.set_visible(False)
-    for line in ax.zaxis.get_ticklines():
-        line.set_visible(False)
-        
-    surf = ax.plot_surface(Xp, Yp, Sip_xy, rstride=1,
-                           cstride=1, cmap=cm.jet,
-                           linewidth=0, antialiased=False)
-    ax.set_zlim3d(0.00, 1.00)
-    ax.set_zticks([0, 0.5, 1])
-    plt.tight_layout()
-    plt.savefig('GIMP_Shape_Fun.%s'%(format_fig))  
+    surf = mlab.mesh(Xp, Yp, Sip_xy)
+    surf.actor.actor.scale = (1.0, 1.0, 4.0)
+    
     if Show_grafs:
-        plt.show()
-    fig.clear()
+        mlab.show(surf)
 
-print_GIMP()
-print_dx_GIMP()
-print_dy_GIMP()
+print_GIMP(True)
+# print_dx_GIMP(True)
+# print_dy_GIMP(True)
 
