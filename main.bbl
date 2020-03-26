@@ -48,6 +48,14 @@ Chung, J., Hulbert, G.M.: {A Time Integration Algorithm for Structural Dynamics
 \newblock J. Appl. Mech. \textbf{60}(2), 371 (1993).
 \newblock \doi{10.1115/1.2900803}
 
+\bibitem{DHAKAL2016301}
+Dhakal, T.R., Zhang, D.Z.: Material point methods applied to one-dimensional
+  shock waves and dual domain material point method with sub-points.
+\newblock Journal of Computational Physics \textbf{325}, 301 -- 313 (2016).
+\newblock \doi{https://doi.org/10.1016/j.jcp.2016.08.033}.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0021999116303904}
+
 \bibitem{Dyka1995}
 Dyka, C., Ingel, R.: {An approach for tension instability in smoothed particle
   hydrodynamics (SPH)}.
@@ -110,19 +118,21 @@ Sulsky, D.L., Schreyer, H., Chen, Z.: {A particle method for history-dependent
   \textbf{118}(1), 179--196 (1994).
 \newblock \doi{10.1016/0045-7825(94)90112-0}
 
+\bibitem{TIELEN2017265}
+Tielen, R., Wobbes, E., Möller, M., Beuth, L.: A high order material point
+  method.
+\newblock Procedia Engineering \textbf{175}, 265 -- 272 (2017).
+\newblock \doi{https://doi.org/10.1016/j.proeng.2017.01.022}.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S187770581730022X}.
+\newblock Proceedings of the 1st International Conference on the Material Point
+  Method (MPM 2017)
+
 \bibitem{Tran2019e}
 Tran, Q.A., So{\l}owski, W.: {Temporal and null-space filter for the material
   point method}.
 \newblock International Journal for Numerical Methods in Engineering  (2019).
 \newblock \doi{10.1002/nme.6138}
-
-\bibitem{Tran2019a}
-Tran, Q.A.A., Wobbes, E., Solowski, W.T., M{\"{o}}ller, M., Vuik, C.: {Moving
-  least squares reconstruction for B-spline Material Point Method}.
-\newblock In: 2nd International Conference on the Material Point Method for
-  Modelling Soil-Water-Structure Interaction Anura3D, January, pp. 35--41
-  (2019).
-\newblock \urlprefix\url{https://aaltodoc.aalto.fi/handle/123456789/36294}
 
 \bibitem{Wilson1972}
 Wilson, E.L., Farhoomand, I., Bathe, K.J.: {Nonlinear dynamic analysis of

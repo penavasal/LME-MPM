@@ -5,16 +5,15 @@
                      '(("svjour3" "twocolumn")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("subfig" "lofdepth" "lotdepth") ("units" "ugly")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
-    "Figures/Discretization_MPM"
     "Figures/Dyka_bar"
     "Figures/Block"
     "fix-cm"
@@ -62,9 +61,10 @@
     "sec:Notation"
     "tab:notation-table"
     "sec:derivation-mpm"
-    "sec:governing-equations"
-    "eq:Balance-momentum"
+    "sec:The boundary-value-problem"
+    "fig:Continuum-solid"
     "eq:Compatibility-equation"
+    "eq:Balance-momentum"
     "eq:Constitutive-equation"
     "eq:Rho-material-derivative"
     "sec:variational-formulation"
@@ -72,13 +72,11 @@
     "eq:cauchy-secuence"
     "eq:BalanceMomentum_wf"
     "sec:Galerkin-procedure"
-    "fig:MPM-discretization"
     "eq:particle_acceleration_forces"
     "eq:particle_internal_forces"
     "eq:particle_body_forces"
     "eq:particle_load_forces"
-    "eq:Approx-velocity-mesh"
-    "eq:Approx-gradvelocity-mesh"
+    "fig:MPM-discretization"
     "eq:particle_balance_forces3"
     "eq:particle_nod_mass"
     "eq:nodal_internal_forces"
@@ -100,9 +98,10 @@
     "eq:Predictor-velocity-II"
     "eq:Corrector-velocity"
     "eq:Update-lagrangian-pce"
-    "alg:PCE-algorithm"
     "sec:local-max-ent"
     "eq:Shannon-entropy"
+    "eq:least-biased-approximation-scheme"
+    "eq:LME-scheme-pareto-set"
     "eq:LME-p"
     "eq:LME-Z"
     "eq:LME-grad-p"
@@ -110,6 +109,7 @@
     "eq26"
     "eq27"
     "eq28"
+    "fig:Particle-discretization"
     "fig:LME_MPM"
     "sec:Application-linear-elasticity-dynamic-problems"
     "sec:dyka-bar"
@@ -130,6 +130,7 @@
     "fig:Block-LME3-PCE-t1"
     "fig:Block-LME3"
     "sec:conclusions"
+    "app:explicit-predictor-algorithm"
     "app:analytical_sol"
     "eq:1D-balance-linear-momentum"
     "eq:1D-constitutive-equation"

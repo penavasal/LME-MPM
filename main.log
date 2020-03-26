@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  25 MAR 2020 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  27 MAR 2020 00:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1353,76 +1353,40 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.5> not available
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ­ in font ptmr7t!
 
-LaTeX Warning: Citation `DHAKAL2016301' on page 1 undefined on input line 242.
-
-
-Overfull \hbox (2.05307pt too wide) in paragraph at lines 249--251
-[]\OT1/ptm/m/n/10 the Con-ser-va-tive Tay-lor Least Squares \OT1/ptm/b/n/10 CTL
-S \OT1/ptm/m/n/10 re-con-struc-
+Overfull \hbox (6.02306pt too wide) in paragraph at lines 188--213
+\OT1/ptm/m/n/10 re-cent years as an al-ter-na-tive to Fi-nite El-e-ment Method 
+(FEM)
  []
 
 
-Overfull \hbox (5.31355pt too wide) in paragraph at lines 253--274
-\OT1/ptm/m/n/10 cently un-der the MPM frame-work by Wobbes \OT1/ptm/m/it/10 et 
-al.\OT1/ptm/m/n/10 (2020)[[]]
- []
+Underfull \vbox (badness 4582) has occurred while \output is active []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Overfull \hbox (4.04297pt too wide) in paragraph at lines 280--289
-\OT1/ptm/m/n/10 re-searchers has pro-posed al-ter-na-tive time in-te-gra-tion s
-chemes
+Overfull \hbox (2.03345pt too wide) in paragraph at lines 256--280
+\OT1/ptm/m/n/10 in-ter-po-la-tions. The ap-prox-i-ma-tion scheme is based on a 
+com-
  []
 
 
-Overfull \hbox (9.71338pt too wide) in paragraph at lines 301--305
-\OT1/ptm/m/n/10 tions, and the pro-posal of a ex-plicit predictor-corrector sch
-eme. 
+Overfull \hbox (2.09332pt too wide) in paragraph at lines 307--315
+\OT1/ptm/m/n/10 maximum-entropy (or lo-cal \OT1/ptm/m/it/10 max-ent\OT1/ptm/m/n
+/10 ) fam-ily shape func-tions,
  []
 
 
-LaTeX Warning: Reference `sec:dynamic-benchmark' on page 2 undefined on input l
-ine 313.
+Underfull \vbox (badness 2426) has occurred while \output is active []
 
-./main.tex:332: Undefined control sequence.
-<recently read> \vect 
-                      
-l.332     $\vect
-                {a}$ & Acceleration field & First order tensor \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./main.tex:333: Undefined control sequence.
-<recently read> \vect 
-                      
-l.333     $\vect
-                {v}$ & Velocity field & First order tensor \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:334: Undefined control sequence.
-<recently read> \vect 
-                      
-l.334     $\vect
-                {u}$ & Displacement field & Second order tensor \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:346: Undefined control sequence.
+./main.tex:336: Undefined control sequence.
 <recently read> \qued 
                       
-l.346 ... first and second time derivative, $\qued
+l.336 ... first and second time derivative, $\qued
                                                    \otimes
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1430,8 +1394,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:347: Undefined control sequence.
-l.347 \qued
+./main.tex:337: Undefined control sequence.
+l.337 \qued
            $ means the dyadic operator, $(\cdot)$ and $(\colon)$ means the f...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1439,46 +1403,137 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+./main.tex:349: Undefined control sequence.
+<recently read> \vect 
+                      
+l.349     $\vect
+                {a}$ & Acceleration field & First order tensor \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:350: Undefined control sequence.
+<recently read> \vect 
+                      
+l.350     $\vect
+                {v}$ & Velocity field & First order tensor \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:351: Undefined control sequence.
+<recently read> \vect 
+                      
+l.351     $\vect
+                {u}$ & Displacement field & First order tensor \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:352: Undefined control sequence.
+<recently read> \vect 
+                      
+l.352     $\vect
+                {x}$ & Global coordinates & First order tensor \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:353: Undefined control sequence.
+<recently read> \vect 
+                      
+l.353     $\vect
+                {\xi}$ & Local coordinates & First order tensor \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [2]
-./main.tex:381: Undefined control sequence.
-l.381 \rho \vect
-                {a} = \Div{\tens{\sigma}} + \rho \vect{b},
+<Figures/Continuum-solid.png, id=124, 789.6702pt x 574.7874pt>
+File: Figures/Continuum-solid.png Graphic file (type png)
+<use Figures/Continuum-solid.png>
+Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 390.
+(pdftex.def)             Requested size: 495.0pt x 360.30247pt.
+
+\sidecaption: No sufficient room for the legend; using normal \caption. 
+./main.tex:396: Undefined control sequence.
+<recently read> \vect 
+                      
+l.396 In this context the field $\vect
+                                      {u}$ allows to describe the \textit{gl...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:381: Undefined control sequence.
-l.381 ...ect{a} = \Div{\tens{\sigma}} + \rho \vect
-                                                  {b},
+./main.tex:400: Undefined control sequence.
+<recently read> \vect 
+                      
+l.400 field $\vect
+                  {u}$ through the following set of governing equations and
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:387: Undefined control sequence.
+./main.tex:402: Undefined control sequence.
+<recently read> \vect 
+                      
+l.402   equation} that extracts from $\vect
+                                           {u}$ the strain field is,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:405: Undefined control sequence.
 <argument> \vect 
-                 {v}
-l.387 ...ot{\tens{\varepsilon}} = \GradS{\vect{v}}
-                                                  ,
+                 {u}
+l.405   \tens{\varepsilon} = \GradS{\vect{u}}
+                                             ,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+./main.tex:416: Undefined control sequence.
+<argument> D\vect 
+                  {v}
+l.416 \rho \frac{D\vect{v}}{Dt}
+                                = \Div{\tens{\sigma}} + \rho \vect{b}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (5.14311pt too wide) in paragraph at lines 388--391
-\OT1/ptm/m/n/10 (iii) the con-sti-tu-tive equa-tion, which re-lates the rate of
- Cauchy
- []
+./main.tex:416: Undefined control sequence.
+l.416 ...}}{Dt} = \Div{\tens{\sigma}} + \rho \vect
+                                                  {b}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-./main.tex:399: Undefined control sequence.
+./main.tex:430: Undefined control sequence.
 <argument> div({\vect 
                       {v}})
-l.399 ...}{D t} = \dot{\rho} + \rho \Div{\vect{v}}
+l.430 ...}{D t} = \dot{\rho} + \rho \Div{\vect{v}}
                                                    = 0.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1486,35 +1541,35 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:408: Undefined control sequence.
-l.408   \vect
-             {v}^{\psi} \in \mathcal{H}^1_0(\Omega) = \{ \vect{v}^{\psi} \in
+./main.tex:439: Undefined control sequence.
+l.439   \vect
+             {u}^{\psi} \in \mathcal{H}^1_0(\Omega) = \{ \vect{u}^{\psi} \in
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:408: Undefined control sequence.
-l.408 ...i} \in \mathcal{H}^1_0(\Omega) = \{ \vect
-                                                  {v}^{\psi} \in
+./main.tex:439: Undefined control sequence.
+l.439 ...i} \in \mathcal{H}^1_0(\Omega) = \{ \vect
+                                                  {u}^{\psi} \in
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:409: Undefined control sequence.
-l.409   \mathcal{H}^1 \mid \vect
-                                {v}^{\psi} = \vect{0}\ \text{on}\ \Gamma_d \}.
+./main.tex:440: Undefined control sequence.
+l.440   \mathcal{H}^1 \mid \vect
+                                {u}^{\psi} = \vect{0}\ \text{on}\ \Gamma_d \}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:409: Undefined control sequence.
-l.409   \mathcal{H}^1 \mid \vect{v}^{\psi} = \vect
+./main.tex:440: Undefined control sequence.
+l.440   \mathcal{H}^1 \mid \vect{u}^{\psi} = \vect
                                                   {0}\ \text{on}\ \Gamma_d \}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1522,33 +1577,33 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:414: Undefined control sequence.
+./main.tex:445: Undefined control sequence.
 <argument> \int _{\varOmega }{\vect 
-                                    {v}^{\psi }}\ d\varOmega 
-l.414   \Integral{3}{\vect{v}^{\psi}} <
-                                        \infty\ \quad\text{and}\quad \Integr...
+                                    {u}^{\psi }}\ d\varOmega 
+l.445   \Integral{3}{\vect{u}^{\psi}} <
+                                        \infty\ \quad\text{and}\quad
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:417: Undefined control sequence.
+./main.tex:449: Undefined control sequence.
 <recently read> \vect 
                       
-l.417 ...blem of elasticity is the function $\vect
-                                                  {v} \in
+l.449 ...blem of elasticity is the function $\vect
+                                                  {u} \in
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:418: Undefined control sequence.
+./main.tex:450: Undefined control sequence.
 <recently read> \vect 
                       
-l.418 \mathcal{H}^1_0$ such that, for $\vect
-                                            {v}^{\psi} \in
+l.450 \mathcal{H}^1_0$ such that, for $\vect
+                                            {u}^{\psi} \in
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1556,28 +1611,27 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (0.31343pt too wide) in paragraph at lines 415--420
-\OT1/ptm/m/n/10 lu-tion to the bound-ary value prob-lem of elas-tic-ity is the 
-func-
+Overfull \hbox (1.74336pt too wide) in paragraph at lines 447--452
+\OT1/ptm/m/n/10 lu-tion to the boundary-value prob-lem of elas-tic-ity is the f
+unc-
  []
 
-(./Figures/Discretization_MPM.tex)
-\sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:461: Undefined control sequence.
+./main.tex:477: Undefined control sequence.
 <recently read> \vect 
                       
-l.461 virtual field $\vect
-                          {v}^{\psi}_{p}$. So employing the definition of the
+l.477 virtual displacement field $\vect
+                                       {u}^{\psi}_{p}$. Therefore, employing
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:470: Undefined control sequence.
-<argument> ...Omega }{\rho \ \vec {a} \cdot \vect 
-                                                  {v}^{\psi }}\ d\varOmega 
-l.470 ...3}{\rho\ \vec{a} \cdot \vect{v}^{\psi}} =
+[3 <./Figures/Continuum-solid.png>]
+./main.tex:486: Undefined control sequence.
+<argument> ...\ \frac {d\vec {v}}{dt} \cdot \vect 
+                                                  {u}^{\psi }}\ d\varOmega 
+l.486 ...ac{d\vec{v}}{dt} \cdot \vect{u}^{\psi}} =
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1585,9 +1639,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:471: Undefined control sequence.
-l.471     \dot{\vec{v}}_{p} \cdot \vect
-                                       {v}^{\psi}_{p}\ m_p.
+./main.tex:487: Undefined control sequence.
+l.487     \frac{d\vec{v}_{p}}{dt} \cdot \vect
+                                             {u}^{\psi}_{p}\ m_p.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1595,19 +1649,19 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
-./main.tex:482: Undefined control sequence.
+./main.tex:498: Undefined control sequence.
 <argument> ...Omega }{\rho \ \vec {b} \cdot \vect 
-                                                  {v}^{\psi } }\ d\varOmega 
-l.482 ...}{\rho\ \vec{b} \cdot \vect{v}^{\psi} } =
+                                                  {u}^{\psi } }\ d\varOmega 
+l.498 ...}{\rho\ \vec{b} \cdot \vect{u}^{\psi} } =
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1615,9 +1669,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:483: Undefined control sequence.
-l.483   \vec{b}_{p} \cdot \vect
-                               {v}^{\psi}_p\ m_p.
+./main.tex:499: Undefined control sequence.
+l.499   \vec{b}_{p} \cdot \vect
+                               {u}^{\psi}_p\ m_p.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1625,14 +1679,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
-./main.tex:489: Undefined control sequence.
+./main.tex:505: Undefined control sequence.
 <argument> \int _{\varGamma _d}{\vec {t}\ \vect 
-                                                {v}^{\psi }}\ d\varGamma 
-l.489     \Integral{2}{\vec{t}\ \vect{v}^{\psi}} =
+                                                {u}^{\psi }}\ d\varGamma 
+l.505     \Integral{2}{\vec{t}\ \vect{u}^{\psi}} =
                                                    \Integral{2}{\rho\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1640,57 +1694,63 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:490: Undefined control sequence.
+./main.tex:506: Undefined control sequence.
 <argument> ..._d}{\rho \^^M\vec {t}^s \cdot \vect 
-                                                  {v}^{\psi }}\ d\varGamma 
-l.490       \vec{t}^s \cdot \vect{v}^{\psi}} =
-                                               \vec{t}^s_{p} \cdot \vect{v}^...
+                                                  {u}^{\psi }}\ d\varGamma 
+l.506       \vec{t}^s \cdot \vect{u}^{\psi}} =
+                                               \vec{t}^s_{p} \cdot \vect{u}^...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:490: Undefined control sequence.
-l.490 ...ct{v}^{\psi}} = \vec{t}^s_{p} \cdot \vect
-                                                  {v}^{\psi}_{p}\ h^{-1}\ m_p ,
+./main.tex:506: Undefined control sequence.
+l.506 ...ct{u}^{\psi}} = \vec{t}^s_{p} \cdot \vect
+                                                  {u}^{\psi}_{p}\ h^{-1}\ m_p ,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[3]
-./main.tex:507: Undefined control sequence.
-l.507   \vec{v}_{p} = N_{Ip} \vect
-                                  {v}_I
+<Figures/Mesh-particles-back.png, id=153, 853.9905pt x 857.8449pt>
+File: Figures/Mesh-particles-back.png Graphic file (type png)
+<use Figures/Mesh-particles-back.png>
+Package pdftex.def Info: Figures/Mesh-particles-back.png  used on input line 52
+1.
+(pdftex.def)             Requested size: 495.0pt x 497.23624pt.
+\sidecaption: No sufficient room for the legend; using normal \caption. 
+./main.tex:532: Undefined control sequence.
+l.532 $p$ as $\vec{u}_{p} = N_{Ip} \vect
+                                        {u}_I$, $\vec{u}^{\psi}_{p} = N_{Ip}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:508: Undefined control sequence.
-l.508 ...} \quad \vec{v}^{\psi}_{p} = N_{Ip} \vect
-                                                  {v}_I^{\psi},
+./main.tex:532: Undefined control sequence.
+l.532 ...u}_I$, $\vec{u}^{\psi}_{p} = N_{Ip} \vect
+                                                  {u}_I^{\psi}$,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:512: Undefined control sequence.
-l.512   \tens{\dot{\varepsilon}}_p = (\vect
-                                           {v}_I \otimes \Grad{N_{Ip}})^s
+./main.tex:533: Undefined control sequence.
+l.533 ...radient as $\tens{\varepsilon}_p = (\vect
+                                                  {u}_I \otimes
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:514: Undefined control sequence.
-l.514   (\vect
-              {v}_I^{\psi} \otimes \Grad{N_{Ip}})^s ,
+./main.tex:534: Undefined control sequence.
+l.534 ...^s$, $\tens{\varepsilon}_p^{\psi}= (\vect
+                                                  {u}_I^{\psi} \otimes \Grad...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1698,19 +1758,28 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (3.73296pt too wide) in paragraph at lines 566--572
-\OT1/ptm/m/n/10 In the MPM lit-er-a-ture, this equa-tions ([]14[]) and ([]20[])
+Overfull \hbox (10.16011pt too wide) in paragraph at lines 510--536
+\OT1/ptm/m/n/10 its gra-di-ent as $\OML/ztmcm/m/it/10 "[] \OT1/ztmcm/m/n/10 = (
+\OML/ztmcm/m/it/10 u[] \OMS/ztmcm/m/n/10 
+ \OML/ztmcm/m/it/10 grad\OT1/ztmcm/m/n/10 ([]))[]$\OT1/ptm/m/n/10 , $\OML/ztmcm
+/m/it/10 "[] \OT1/ztmcm/m/n/10 = (\OML/ztmcm/m/it/10 u[] \OMS/ztmcm/m/n/10 
+ \OML/ztmcm/m/it/10 grad\OT1/ztmcm/m/n/10 ([]))[]$\OT1/ptm/m/n/10 .
+ []
+
+<./Figures/MPM_scheme.png, id=173, 501.3129pt x 1096.095pt>
+File: ./Figures/MPM_scheme.png Graphic file (type png)
+<use ./Figures/MPM_scheme.png>
+Package pdftex.def Info: ./Figures/MPM_scheme.png  used on input line 597.
+(pdftex.def)             Requested size: 495.0pt x 1082.34435pt.
+\sidecaption: No sufficient room for the legend; using normal \caption. 
+
+Overfull \hbox (3.73296pt too wide) in paragraph at lines 585--605
+\OT1/ptm/m/n/10 In the MPM lit-er-a-ture, this equa-tions ([]12[]) and ([]18[])
 , are solved
  []
 
-<./Figures/MPM_scheme.png, id=153, 501.3129pt x 1096.095pt>
-File: ./Figures/MPM_scheme.png Graphic file (type png)
-<use ./Figures/MPM_scheme.png>
-Package pdftex.def Info: ./Figures/MPM_scheme.png  used on input line 578.
-(pdftex.def)             Requested size: 495.0pt x 1082.34435pt.
-\sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:588: Undefined control sequence.
-l.588   \vect
+./main.tex:607: Undefined control sequence.
+l.607   \vect
              {v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{a}_{I...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1718,8 +1787,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:588: Undefined control sequence.
-l.588   \vect{v}_p^{k+1} = \vect
+./main.tex:607: Undefined control sequence.
+l.607   \vect{v}_p^{k+1} = \vect
                                 {v}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{a}_{I...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1727,8 +1796,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:592: Undefined control sequence.
-l.592   \vect
+./main.tex:611: Undefined control sequence.
+l.611   \vect
              {x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{v}_{I...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1736,8 +1805,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:592: Undefined control sequence.
-l.592   \vect{x}_p^{k+1} = \vect
+./main.tex:611: Undefined control sequence.
+l.611   \vect{x}_p^{k+1} = \vect
                                 {x}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{v}_{I...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1745,10 +1814,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:595: Undefined control sequence.
+./main.tex:614: Undefined control sequence.
 <recently read> \vect 
                       
-l.595 $\vect
+l.614 $\vect
             {f}_I^{int,k}$ can be finite for an infinitesimal nodal mass
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1756,82 +1825,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[4 <./Figures/MPM_scheme.png>]
-./main.tex:602: Undefined control sequence.
-l.602   \vect
-             {x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:602: Undefined control sequence.
-l.602   \vect{x}_p^{k+1} = \vect
-                                {x}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:606: Undefined control sequence.
-l.606   \vect
-             {v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:606: Undefined control sequence.
-l.606   \vect{v}_p^{k+1} = \vect
-                                {v}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:616: Undefined control sequence.
-l.616   \vect
-             {v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\  N_{Ip}^{k}\ \left[(1 ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:616: Undefined control sequence.
-l.616   \vect{v}_p^{k+1} = \vect
-                                {v}_p^{k} + \Delta t\  N_{Ip}^{k}\ \left[(1 ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:616: Undefined control sequence.
-l.616 ...t\  N_{Ip}^{k}\ \left[(1 - \gamma)\ \vect
-                                                  {a}_I^{k} +
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./main.tex:617: Undefined control sequence.
-l.617     \gamma\ \vect
-                       {a}_I^{k+1} \right],\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+[4 <./Figures/Mesh-particles-back.png>]
 ./main.tex:621: Undefined control sequence.
 l.621   \vect
-             {x}_p^{k+1} = \vect{x}_p^{k} + N_{Ip}^{k} \left[ \Delta t\ \vec...
+             {x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1840,6 +1837,78 @@ and I'll forget about whatever was undefined.
 
 ./main.tex:621: Undefined control sequence.
 l.621   \vect{x}_p^{k+1} = \vect
+                                {x}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:625: Undefined control sequence.
+l.625   \vect
+             {v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:625: Undefined control sequence.
+l.625   \vect{v}_p^{k+1} = \vect
+                                {v}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:635: Undefined control sequence.
+l.635   \vect
+             {v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\  N_{Ip}^{k}\ \left[(1 ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:635: Undefined control sequence.
+l.635   \vect{v}_p^{k+1} = \vect
+                                {v}_p^{k} + \Delta t\  N_{Ip}^{k}\ \left[(1 ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:635: Undefined control sequence.
+l.635 ...t\  N_{Ip}^{k}\ \left[(1 - \gamma)\ \vect
+                                                  {a}_I^{k} +
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:636: Undefined control sequence.
+l.636     \gamma\ \vect
+                       {a}_I^{k+1} \right],\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:640: Undefined control sequence.
+l.640   \vect
+             {x}_p^{k+1} = \vect{x}_p^{k} + N_{Ip}^{k} \left[ \Delta t\ \vec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./main.tex:640: Undefined control sequence.
+l.640   \vect{x}_p^{k+1} = \vect
                                 {x}_p^{k} + N_{Ip}^{k} \left[ \Delta t\ \vec...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1847,8 +1916,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:626: Undefined control sequence.
-l.626   \vect
+./main.tex:645: Undefined control sequence.
+l.645   \vect
              {a}_p^{k+1} = N_{Ip}^{k}\ \vec{a}_{I}^{k+1}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1856,148 +1925,136 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Overfull \hbox (3.50375pt too wide) in paragraph at lines 651--653
-[]\OT1/ptm/m/n/10 Taking the pre-dic-tor def-i-ni-tion from and cal-cu-lat-ing 
-nodal
- []
-
-
-Overfull \hbox (0.86267pt too wide) in paragraph at lines 696--700
-\OT1/ptm/m/n/10 can in-tro-duce in-sta-bil-i-ties due to nu-mer-i-cal can-cel-l
-a-tion like-
- []
-
-
-Overfull \hbox (2.65286pt too wide) in paragraph at lines 705--713
-\OT1/ptm/m/n/10 mer-i-cally sta-ble and min-i-mize the com-pu-ta-tional ef-fort
-. Once
- []
-
-
-Overfull \hbox (3.15338pt too wide) in paragraph at lines 705--713
+[5 <./Figures/MPM_scheme.png>]
+Overfull \hbox (3.15338pt too wide) in paragraph at lines 716--725
 \OT1/ptm/m/n/10 al-go-rithm con-tin-ues to reach to the equi-lib-rium equa-tion
  [].
  []
 
 
-Overfull \hbox (5.97336pt too wide) in paragraph at lines 718--719
-[]\OT1/ptm/m/n/10 Finally up-dated par-ti-cle ki-net-ics are com-puted us-ing n
-odal
+Underfull \vbox (badness 7832) has occurred while \output is active []
+
+ [6]
+Overfull \hbox (2.14287pt too wide) in paragraph at lines 800--803
+\OT1/ptm/m/n/10 The lo-cal max-ent ap-prox-i-ma-tion schemes (LME) as a Pareto
  []
 
-[5]
 
-Package caption Warning: \label without proper reference on input line 719.
-See the caption package documentation for explanation.
+./main.tex:813: Package amsmath Error: Multiple \label's: label 'eq:least-biase
+d-approximation-scheme' will be lost.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.813 \end{align*}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Warning: Reference `alg:PCE-algorithm' on page 6 undefined on input line 
-740.
-
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 746.
-[6]
-Overfull \hbox (3.2839pt too wide) detected at line 866
+Overfull \hbox (3.2839pt too wide) detected at line 813
 []
  []
 
-
-Overfull \hbox (8.11311pt too wide) in paragraph at lines 910--920
-[]\OT1/ptm/m/n/10 Similar to al-ter-na-tive non-polynomial mesh-free ba-sis fun
-c-
- []
-
-<Figures/MPM_Shape_Fun.png, id=277, 772.8875pt x 667.49374pt>
+<./Figures/Particle-discretization.png, id=290, 469.2732pt x 478.1865pt>
+File: ./Figures/Particle-discretization.png Graphic file (type png)
+<use ./Figures/Particle-discretization.png>
+Package pdftex.def Info: ./Figures/Particle-discretization.png  used on input l
+ine 887.
+(pdftex.def)             Requested size: 495.0pt x 504.42363pt.
+\sidecaption: No sufficient room for the legend; using normal \caption. 
+<Figures/MPM_Shape_Fun.png, id=292, 772.8875pt x 667.49374pt>
 File: Figures/MPM_Shape_Fun.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 929.
+Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 906.
 (pdftex.def)             Requested size: 79.20181pt x 68.39308pt.
-<Figures/MPM_Shape_Fun_dx.png, id=278, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dx.png, id=293, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 929.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 906.
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-<Figures/MPM_Shape_Fun_dy.png, id=279, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dy.png, id=294, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 929.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 906.
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-<Figures/LME_17_3_Shape_Fun.png, id=280, 772.8875pt x 667.49374pt>
+<Figures/LME_17_3_Shape_Fun.png, id=295, 772.8875pt x 667.49374pt>
 File: Figures/LME_17_3_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 936
+Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 913
 .
 (pdftex.def)             Requested size: 79.20181pt x 68.39308pt.
-<Figures/LME_17_3_Shape_Fun_dx.png, id=281, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dx.png, id=296, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dx.png  used on input line 
-936.
+913.
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-<Figures/LME_17_3_Shape_Fun_dy.png, id=282, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dy.png, id=297, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dy.png  used on input line 
-936.
+913.
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-<Figures/GIMP_Shape_Fun.png, id=283, 772.8875pt x 667.49374pt>
+<Figures/GIMP_Shape_Fun.png, id=298, 772.8875pt x 667.49374pt>
 File: Figures/GIMP_Shape_Fun.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 943.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 920.
 (pdftex.def)             Requested size: 79.20181pt x 68.39308pt.
-<Figures/GIMP_Shape_Fun_dx.png, id=284, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dx.png, id=299, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 943.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 920.
 
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-<Figures/GIMP_Shape_Fun_dy.png, id=285, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dy.png, id=300, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 943.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 920.
 
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-<Figures/LME_10_0_Shape_Fun.png, id=286, 772.8875pt x 667.49374pt>
+<Figures/LME_10_0_Shape_Fun.png, id=301, 772.8875pt x 667.49374pt>
 File: Figures/LME_10_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 950
+Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 927
 .
 (pdftex.def)             Requested size: 79.20181pt x 68.39308pt.
-<Figures/LME_10_0_Shape_Fun_dx.png, id=287, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dx.png, id=302, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dx.png  used on input line 
-950.
+927.
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-<Figures/LME_10_0_Shape_Fun_dy.png, id=288, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dy.png, id=303, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dy.png  used on input line 
-950.
+927.
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-<Figures/LME_5_0_Shape_Fun.png, id=289, 772.8875pt x 667.49374pt>
+<Figures/LME_5_0_Shape_Fun.png, id=304, 772.8875pt x 667.49374pt>
 File: Figures/LME_5_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 957.
+Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 934.
 
 (pdftex.def)             Requested size: 79.20181pt x 68.39308pt.
-<Figures/LME_5_0_Shape_Fun_dx.png, id=290, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dx.png, id=305, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dx.png  used on input line 9
-57.
+34.
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-<Figures/LME_5_0_Shape_Fun_dy.png, id=291, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dy.png, id=306, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dy.png  used on input line 9
-57.
+34.
 (pdftex.def)             Requested size: 79.20181pt x 68.80447pt.
-./main.tex:973: Undefined control sequence.
+./main.tex:942: Undefined control sequence.
 <recently read> \Beta 
                       
-l.973 ...research and in \cite{Arroyo2006}, $\Beta
+l.942 ...research and in \cite{Arroyo2006}, $\Beta
                                                   $ is a scalar as the
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2005,7 +2062,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[7] (./Figures/Dyka_bar.tex
+
+Overfull \hbox (11.0235pt too wide) in paragraph at lines 877--950
+\OT1/ptm/m/n/10 ma-tion tech-nique has been widely. Due to the FE-compatibility
+,
+ []
+
+
+Underfull \vbox (badness 1292) has occurred while \output is active []
+
+ [7 <./Figures/Particle-discretization.png>] (./Figures/Dyka_bar.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2022,22 +2088,22 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=323, 462.528pt x 346.896pt>
+<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=337, 462.528pt x 346.896pt>
 File: ./Figures/Velocity_FE_vs_PCE_CFL_01.png Graphic file (type png)
 <use ./Figures/Velocity_FE_vs_PCE_CFL_01.png>
 Package pdftex.def Info: ./Figures/Velocity_FE_vs_PCE_CFL_01.png  used on input
- line 1051.
+ line 1020.
 (pdftex.def)             Requested size: 495.0pt x 371.27032pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
 
-./main.tex:1060: LaTeX Error: File `./Figures/Velocity_MPM_LME_gamma_comparativ
+./main.tex:1029: LaTeX Error: File `./Figures/Velocity_MPM_LME_gamma_comparativ
 e' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1060   \caption
+l.1029   \caption
                  {Velocity evolution at the point in the bar left side.}
 I could not locate the file with any of these extensions:
 .pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.ep
@@ -2046,27 +2112,27 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=324, 462.528pt x 346.896pt>
+<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=338, 462.528pt x 346.896pt>
 File: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png Graphic file (type png)
 <use ./Figures/Velocity_uGIMP_vs_LME_Dyka.png>
 Package pdftex.def Info: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png  used on inpu
-t line 1070.
+t line 1039.
 (pdftex.def)             Requested size: 495.0pt x 371.27032pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=325, 462.528pt x 346.896pt>
+<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=339, 462.528pt x 346.896pt>
 File: ./Figures/Velocity_MPM_vs_OTM_Dyka.png Graphic file (type png)
 <use ./Figures/Velocity_MPM_vs_OTM_Dyka.png>
 Package pdftex.def Info: ./Figures/Velocity_MPM_vs_OTM_Dyka.png  used on input 
-line 1079.
+line 1048.
 (pdftex.def)             Requested size: 495.0pt x 371.27032pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
 
-Overfull \hbox (8.44392pt too wide) in paragraph at lines 1083--1085
+Overfull \hbox (8.44392pt too wide) in paragraph at lines 1052--1054
 []\OT1/ptm/m/n/10 For the con-ver-gence anal-y-sis, the root-mean-square (RMS)
  []
 
-./main.tex:1088: Undefined control sequence.
-l.1088 ...sqrt{\frac{1}{N} \sum^{N}_p \left( \vect
+./main.tex:1057: Undefined control sequence.
+l.1057 ...sqrt{\frac{1}{N} \sum^{N}_p \left( \vect
                                                   {v}_p - \hat{\vect{v}}_p \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2074,10 +2140,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:1088: Undefined control sequence.
+./main.tex:1057: Undefined control sequence.
 <recently read> \vect 
                       
-l.1088 ...{N}_p \left( \vect{v}_p - \hat{\vect{v}}
+l.1057 ...{N}_p \left( \vect{v}_p - \hat{\vect{v}}
                                                   _p \right)^2},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2085,10 +2151,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:1088: Undefined control sequence.
+./main.tex:1057: Undefined control sequence.
 <argument> \vect 
                  {v}
-l.1088 ...{N}_p \left( \vect{v}_p - \hat{\vect{v}}
+l.1057 ...{N}_p \left( \vect{v}_p - \hat{\vect{v}}
                                                   _p \right)^2},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2096,23 +2162,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./Figures/MPM_Shape_Fun.png (PNG copy)> <./Figures/MPM_Shape_Fun_dx.png (P
-NG copy)> <./Figures/MPM_Shape_Fun_dy.png (PNG copy)> <./Figures/LME_17_3_Shape
-_Fun.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun_dx.png (PNG copy)> <./Figure
-s/LME_17_3_Shape_Fun_dy.png (PNG copy)> <./Figures/GIMP_Shape_Fun.png (PNG copy
-)> <./Figures/GIMP_Shape_Fun_dx.png (PNG copy)> <./Figures/GIMP_Shape_Fun_dy.pn
-g (PNG copy)> <./Figures/LME_10_0_Shape_Fun.png (PNG copy)> <./Figures/LME_10_0
-_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_10_0_Shape_Fun_dy.png (PNG copy)> 
-<./Figures/LME_5_0_Shape_Fun.png (PNG copy)> <./Figures/LME_5_0_Shape_Fun_dx.pn
-g (PNG copy)> <./Figures/LME_5_0_Shape_Fun_dy.png (PNG copy)> <./Figures/Veloci
-ty_FE_vs_PCE_CFL_01.png>]
-./main.tex:1091: Undefined control sequence.
+./main.tex:1060: Undefined control sequence.
 <recently read> \vect 
                       
-l.1091 where $\vect
+l.1060 where $\vect
                    {v}_p$ and $\hat{\vect{v}}_p$ are respectively the analyt...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2120,10 +2173,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:1091: Undefined control sequence.
+./main.tex:1060: Undefined control sequence.
 <recently read> \vect 
                       
-l.1091 where $\vect{v}_p$ and $\hat{\vect{v}}
+l.1060 where $\vect{v}_p$ and $\hat{\vect{v}}
                                              _p$ are respectively the analyt...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2131,10 +2184,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:1091: Undefined control sequence.
+./main.tex:1060: Undefined control sequence.
 <argument> \vect 
                  {v}
-l.1091 where $\vect{v}_p$ and $\hat{\vect{v}}
+l.1060 where $\vect{v}_p$ and $\hat{\vect{v}}
                                              _p$ are respectively the analyt...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2142,10 +2195,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Error_evol.png, id=344, 652.5981pt x 371.4678pt>
+<./Figures/Error_evol.png, id=340, 652.5981pt x 371.4678pt>
 File: ./Figures/Error_evol.png Graphic file (type png)
 <use ./Figures/Error_evol.png>
-Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1101.
+Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1070.
 (pdftex.def)             Requested size: 495.0pt x 281.75731pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
 (./Figures/Block.tex
@@ -2318,10 +2371,10 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:1120: Extra }, or forgotten \endgroup.
+./main.tex:1089: Extra }, or forgotten \endgroup.
 \sf@endfloatbox ...gefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.1120 \end{figure}
+l.1089 \end{figure}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2329,15 +2382,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<./Figures/Block_CFL_01_Comparative.png, id=353, 462.528pt x 346.896pt>
+<./Figures/Block_CFL_01_Comparative.png, id=349, 462.528pt x 346.896pt>
 File: ./Figures/Block_CFL_01_Comparative.png Graphic file (type png)
 <use ./Figures/Block_CFL_01_Comparative.png>
 Package pdftex.def Info: ./Figures/Block_CFL_01_Comparative.png  used on input 
-line 1165.
+line 1134.
 (pdftex.def)             Requested size: 495.0pt x 371.27032pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-./main.tex:1185: Undefined control sequence.
-l.1185 ...ng the spatial variation of $\beta(\vect
+./main.tex:1154: Undefined control sequence.
+l.1154 ...ng the spatial variation of $\beta(\vect
                                                   {x})$,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2345,66 +2398,77 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[9 <./Figures/Velocity_uGIMP_vs_LME_Dyka.png> <./Figures/Velocity_MPM_vs_OTM_Dy
-ka.png>]
-<Figures/Block_LME3_PCE_a_t0.png, id=375, 420.57124pt x 515.9275pt>
+[8]
+Underfull \vbox (badness 1755) has occurred while \output is active []
+
+ [9 <./Figures/MPM_Shape_Fun.png (PNG copy)> <./Figures/MPM_Shape_Fun_dx.png (P
+NG copy)> <./Figures/MPM_Shape_Fun_dy.png (PNG copy)> <./Figures/LME_17_3_Shape
+_Fun.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun_dx.png (PNG copy)> <./Figure
+s/LME_17_3_Shape_Fun_dy.png (PNG copy)> <./Figures/GIMP_Shape_Fun.png (PNG copy
+)> <./Figures/GIMP_Shape_Fun_dx.png (PNG copy)> <./Figures/GIMP_Shape_Fun_dy.pn
+g (PNG copy)> <./Figures/LME_10_0_Shape_Fun.png (PNG copy)> <./Figures/LME_10_0
+_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_10_0_Shape_Fun_dy.png (PNG copy)> 
+<./Figures/LME_5_0_Shape_Fun.png (PNG copy)> <./Figures/LME_5_0_Shape_Fun_dx.pn
+g (PNG copy)> <./Figures/LME_5_0_Shape_Fun_dy.png (PNG copy)> <./Figures/Veloci
+ty_FE_vs_PCE_CFL_01.png> <./Figures/Velocity_uGIMP_vs_LME_Dyka.png>]
+<Figures/Block_LME3_PCE_a_t0.png, id=388, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_a_t0.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_a_t0.png>
-Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 12
-03.
+Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 11
+72.
 (pdftex.def)             Requested size: 191.17206pt x 234.51907pt.
-<Figures/Block_LME3_PCE_b_t025.png, id=376, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_b_t025.png, id=389, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_b_t025.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_b_t025.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_b_t025.png  used on input line 
-1210.
+1179.
 (pdftex.def)             Requested size: 191.17206pt x 234.51907pt.
-<Figures/Block_LME3_PCE_c_t1.png, id=377, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_c_t1.png, id=390, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_c_t1.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_c_t1.png>
-Package pdftex.def Info: Figures/Block_LME3_PCE_c_t1.png  used on input line 12
-17.
+Package pdftex.def Info: Figures/Block_LME3_PCE_c_t1.png  used on input line 11
+86.
 (pdftex.def)             Requested size: 191.17206pt x 234.51907pt.
 
 
-LaTeX Warning: Float too large for page by 174.26273pt on input line 1225.
+LaTeX Warning: Float too large for page by 174.26273pt on input line 1194.
 
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 1259.
+[10 <./Figures/Velocity_MPM_vs_OTM_Dyka.png>]
+Underfull \vbox (badness 4266) has occurred while \output is active []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 6016) has occurred while \output is active []
-
- [10 <./Figures/Error_evol.png> <./Figures/Block_CFL_01_Comparative.png>] [11 <
+ [11 <./Figures/Error_evol.png> <./Figures/Block_CFL_01_Comparative.png>] [12 <
 ./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.png> <./Fig
 ures/Block_LME3_PCE_c_t1.png>]
-<Figures/1D_right_Velocity.png, id=430, 462.528pt x 346.896pt>
+<Figures/1D_right_Velocity.png, id=467, 462.528pt x 346.896pt>
 File: Figures/1D_right_Velocity.png Graphic file (type png)
 <use Figures/1D_right_Velocity.png>
-Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1508
+Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1543
 .
 (pdftex.def)             Requested size: 238.96417pt x 179.22244pt.
 
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-<Figures/1D_left_Stress.png, id=431, 462.528pt x 346.896pt>
+<Figures/1D_left_Stress.png, id=468, 462.528pt x 346.896pt>
 File: Figures/1D_left_Stress.png Graphic file (type png)
 <use Figures/1D_left_Stress.png>
-Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1518.
+Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1553.
 (pdftex.def)             Requested size: 238.96417pt x 179.22244pt.
 \sidecaption: No sufficient room for the legend; using normal \caption. 
-(./main.bbl [12 <./Figures/1D_right_Velocity.png>]
-Underfull \hbox (badness 1354) in paragraph at lines 52--56
+(./main.bbl [13 <./Figures/1D_right_Velocity.png> <./Figures/1D_left_Stress.png
+>]
+Underfull \hbox (badness 1354) in paragraph at lines 60--64
 []\OT1/ptm/m/n/8.5 Dyka, C., In-gel, R.: An ap-proach for ten-sion in-sta-bil-i
 ty in
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 73--77
+Underfull \hbox (badness 4181) in paragraph at lines 81--85
 []\OT1/ptm/m/n/8.5 Kumar, S., Danas, K., Kochmann, D.M.: En-hanced lo-cal
  []
 
-./main.bbl:88: Misplaced alignment tab character &.
-l.88 \newblock Computers &
+./main.bbl:96: Misplaced alignment tab character &.
+l.96 \newblock Computers &
                            Structures - COMPUT STRUCT \textbf{53}, 27--33 (1...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2413,62 +2477,63 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
 
-Underfull \hbox (badness 1221) in paragraph at lines 128--134
+Underfull \hbox (badness 1946) in paragraph at lines 122--130
+[]\OT1/ptm/m/n/8.5 Tielen, R., Wobbes, E., Mller, M., Beuth, L.: A high or-
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 138--144
 \OT1/ptm/m/n/8.5 anal-y-sis of com-plex struc-tures.  Earth-quake En-gi-neer-in
 g &
  []
 
-) [13 <./Figures/1D_left_Stress.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1531.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1531.
+) [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1566.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1566.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1531.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1531.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1566.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1566.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6CF84F8E7A2A72B2404173AC136907A1;527.
+(rerunfilecheck)             Checksum: 5779AECC673B1B14042CC8067536AB29;601.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1531.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1566.
  ) 
 Here is how much of TeX's memory you used:
- 24148 strings out of 492982
- 479442 string characters out of 6134895
- 635181 words of memory out of 5000000
- 26943 multiletter control sequences out of 15000+600000
+ 24046 strings out of 492982
+ 477345 string characters out of 6134895
+ 650035 words of memory out of 5000000
+ 26837 multiletter control sequences out of 15000+600000
  67520 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 52i,14n,87p,429b,905s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
-st, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on main.pdf (13 pages, 1441481 bytes).
+ 52i,18n,87p,429b,842s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on main.pdf (14 pages, 2776555 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
- 166 named destinations out of 1000 (max. 500000)
- 207 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 584 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
