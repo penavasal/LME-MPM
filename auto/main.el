@@ -5,12 +5,12 @@
                      '(("svjour3" "twocolumn")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("subfig" "lofdepth" "lotdepth") ("units" "ugly")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -114,23 +114,19 @@
     "sec:Application-linear-elasticity-dynamic-problems"
     "sec:dyka-bar"
     "fig:Dyka_Bar"
-    "eq:3"
+    "eq:Cel"
+    "fig:Dyka-error-evol"
+    "eq:RMS"
     "fig:Dyka-PCE-FE"
     "fig:Dyka-LME-gamma"
     "fig:Dyka-uGIMP-LME"
     "fig:Dyka-OTM-MPM"
-    "eq:RMS"
-    "fig:Dyka-error-evol"
     "sec:andersen-block"
     "fig:block"
     "eq:gravity-load-block"
-    "fig:vertical-displacement-block"
-    "fig:Block-LME3-PCE-t0"
-    "fig:Block-LME3-PCE-t025"
-    "fig:Block-LME3-PCE-t1"
     "fig:Block-LME3"
+    "fig:vertical-displacement-block"
     "sec:conclusions"
-    "app:explicit-predictor-algorithm"
     "app:analytical_sol"
     "eq:1D-balance-linear-momentum"
     "eq:1D-constitutive-equation"

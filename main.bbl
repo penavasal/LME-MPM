@@ -83,6 +83,14 @@ Kumar, S., Danas, K., Kochmann, D.M.: {Enhanced local maximum-entropy
 \newblock Computer Methods in Applied Mechanics and Engineering  (2019).
 \newblock \doi{10.1016/j.cma.2018.10.030}
 
+\bibitem{Li2010}
+Li, B., Habbal, F., Ortiz, M.: {Optimal transportation meshfree approximation
+  schemes for fluid and plastic flows}.
+\newblock International Journal for Numerical Methods in Engineering
+  \textbf{83}(12), 1541--1579 (2010).
+\newblock \doi{10.1002/nme.2869}.
+\newblock \urlprefix\url{http://doi.wiley.com/10.1002/nme.2869}
+
 \bibitem{Li2012}
 Li, B., Kidane, A., Ravichandran, G., Ortiz, M.: {Verification and validation
   of the Optimal Transportation Meshfree (OTM) simulation of terminal

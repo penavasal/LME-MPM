@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: spmpsci.bst
 Database file #1: Biblio.bib
-You've used 27 entries,
+You've used 28 entries,
             2945 wiz_defined-function locations,
-            814 strings with 10541 characters,
-and the built_in function-call counts, 12443 in all, are:
-= -- 1012
-> -- 409
+            824 strings with 10742 characters,
+and the built_in function-call counts, 13002 in all, are:
+= -- 1061
+> -- 426
 < -- 0
-+ -- 171
-- -- 142
-* -- 789
-:= -- 1737
-add.period$ -- 55
-call.type$ -- 27
-change.case$ -- 151
++ -- 178
+- -- 148
+* -- 830
+:= -- 1812
+add.period$ -- 58
+call.type$ -- 28
+change.case$ -- 157
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 1119
-empty$ -- 1116
-format.name$ -- 163
-if$ -- 2591
+cite$ -- 28
+duplicate$ -- 1165
+empty$ -- 1165
+format.name$ -- 170
+if$ -- 2707
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 265
-newline$ -- 144
-num.names$ -- 54
-pop$ -- 419
+int.to.str$ -- 28
+missing$ -- 276
+newline$ -- 150
+num.names$ -- 56
+pop$ -- 433
 preamble$ -- 1
-purify$ -- 125
+purify$ -- 130
 quote$ -- 0
-skip$ -- 220
+skip$ -- 228
 stack$ -- 0
-substring$ -- 527
-swap$ -- 616
+substring$ -- 563
+swap$ -- 645
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
+type$ -- 108
 warning$ -- 0
-while$ -- 80
-width$ -- 29
-write$ -- 323
+while$ -- 84
+width$ -- 30
+write$ -- 337

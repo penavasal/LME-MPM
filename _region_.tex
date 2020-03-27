@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+\message{ !name(main.tex)}%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % This is a general template file for the LaTeX package SVJour
 % for Springer journals.          Springer Heidelberg 2010/09/16
@@ -137,6 +137,9 @@ grestore
 %
 \begin{document}
 
+\message{ !name(main.tex) !offset(-3) }
+
+
 % \title{Novel improvements in the Material Point Method to face
 %   dynamic problems: 
 %   Local-maximum entropy approximation and an explicit predictor-corrector scheme. \thanks{Funding: This
@@ -234,8 +237,7 @@ weighting functions is only achieved at considerable effort and
 computational cost.  Furthermore, as it is  a voxel based
 discretization technique, it is prone to suffer voxel domains overlap
 or gaps when the material point mesh becomes irregular, which can
-introduce severe inaccuracies as noticed Steffen {\it et al.}
-(2008)\cite{Steffen2008}. This is similar to the difficulty
+introduce severe inaccuracies. This is similar to the difficulty
 encountered by the finite element methods due to element distortion.
 A more robust alternative is the dual domain material point method
 (DDMP) proposed by Zhang {\it et al.}
@@ -386,7 +388,7 @@ the sketched in the figure~\ref{fig:Continuum-solid}, and $\partial
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.5\hsize}{!}{
+  \resizebox{0.8\hsize}{!}{
     \includegraphics[width=\textwidth]{Figures/Continuum-solid}}
   \caption{Description of the boundary-value-problem in a
     continuum. Red lines represents the closure $\partial \varOmega$
@@ -517,7 +519,7 @@ divergences.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.5\hsize}{!}{
+  \resizebox{0.8\hsize}{!}{
     \includegraphics[width=\textwidth]{Figures/Mesh-particles-back}}
   \caption{Description of the spatial discretization for domain presented in the
     figure~\ref{fig:Continuum-solid}. Blue mesh represent the
@@ -592,10 +594,10 @@ in figure~\ref{fig:MPM_algorithm}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.5\hsize}{!}{
+  \resizebox{0.8\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/MPM_scheme}
   }
-  \caption{Description of the three steps in MPM standard algorithm.}
+  \caption{Description of MPM standard algorithm.}
   \label{fig:MPM_algorithm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -749,71 +751,7 @@ full time step, but updates the velocity at half time steps. Notice
 also that with this approach the calculation of nodal momentum values
 are not required. Due to its simplicity allows be implemented with minor modifications
 over a standard forward Euler. It is summarized in shape of
-pseudo-algorithm.
-
-\begin{algorithm}
-  \floatname{algorithm}{Algorithm}
-  \renewcommand{\thealgorithm}{}
-  \caption{Explicit Predictor-Corrector scheme}
-  \begin{algorithmic}[1]
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
-    \STATE \textbf{Update mass matrix}:
-    \begin{equation*}
-      \tens{m}_{I} = N_{Ip}^{k}\ m_p,
-    \end{equation*}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Explicit Newmark Predictor}:\\
-    \begin{equation*}
-      \vec{v}_I^{pred} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}
-    \end{equation*}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Impose essential boundary conditions}:\\
-    At the fixed boundary, set $\vec{v}_{I}^{pred} = 0$. 
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    % \STATE \textbf{Discard the previous nodal values}.
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Deformation tensor increment calculation}.
-    \begin{align*}
-      &\dot{\tens{\varepsilon}_{p}}^{k+1} = \left[ \vec{v}_{I}^{pred} \otimes
-        \Grad{N_{Ip}^{k+1}} \right]^s \\
-      &\Delta \tens{\varepsilon}_{p}^{k+1} = \Delta t\ \dot{\tens{\varepsilon}_{p}}^{k+1}
-    \end{align*}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Update the density field}:
-    \begin{equation*}
-      \rho_p^{k+1} = \frac{\rho_p^k}{1 + \mathit{tra}\left[\Delta\tens{\varepsilon}_{p}^{k+1}\right]}.
-    \end{equation*}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Balance of forces calculation}:\\
-    Calculate the total grid nodal force $\vec{f}_{I}^{k+1} =
-    \vec{f}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$ evaluating
-    \eqref{eq:nodal_internal_forces} and
-    \eqref{eq:nodal_external_forces} in the time step $k+1$.
-    In the grid node $I$ is fixed in one of the spatial dimensions, set it to
-    zero to make the grid nodal acceleration zero in that direction.\\
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Explicit Newmark Corrector}:
-    \begin{equation*}
-      \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}  
-    \end{equation*}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \STATE \textbf{Update particles lagrangian quantities}:
-    \begin{align*}
-      &\vec{a}_p^{k+1} = \vec{a}_p^n +
-        \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
-        \frac{N_{Ip}^k\
-        \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
-         N_{Ip}^k\ \vec{v}_{I}^{k} +
-        \frac{1}{2}\Delta t^2\ \frac{N_{Ip}^k\
-        \vec{f}_{I}^{k}}{\tens{m}_I^k}
-    \end{align*}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Reset nodal values}
-  \end{algorithmic}
-\end{algorithm} 
-
+pseudo-algorithm \ref{app:explicit-predictor-algorithm}.
 
 \section{Local max-ent approximants}
 \label{sec:local-max-ent}
@@ -943,7 +881,7 @@ figure~\ref{fig:Particle-discretization}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.5\hsize}{!}{
+  \resizebox{\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Particle-discretization}
   }
   \caption{This tolerance defines the limit values of the influence
@@ -963,37 +901,37 @@ shape function. A proof of this statements is observed in figure~\ref{fig:LME_MP
   \centering
   \subfigure[Q4]{
     \begin{tabular}{c}
-      \includegraphics[width=0.14\textwidth]{Figures/MPM_Shape_Fun}\\
-      \includegraphics[width=0.14\textwidth]{Figures/MPM_Shape_Fun_dx}\\
-      \includegraphics[width=0.14\textwidth]{Figures/MPM_Shape_Fun_dy}
+      \includegraphics[width=0.16\textwidth]{Figures/MPM_Shape_Fun}\\
+      \includegraphics[width=0.16\textwidth]{Figures/MPM_Shape_Fun_dx}\\
+      \includegraphics[width=0.16\textwidth]{Figures/MPM_Shape_Fun_dy}
     \end{tabular}  
   }
   \subfigure[$\text{LME}_{17}$]{
     \begin{tabular}{c}
-      \includegraphics[width=0.14\textwidth]{Figures/LME_17_3_Shape_Fun}\\
-      \includegraphics[width=0.14\textwidth]{Figures/LME_17_3_Shape_Fun_dx}\\
-      \includegraphics[width=0.14\textwidth]{Figures/LME_17_3_Shape_Fun_dy}
+      \includegraphics[width=0.16\textwidth]{Figures/LME_17_3_Shape_Fun}\\
+      \includegraphics[width=0.16\textwidth]{Figures/LME_17_3_Shape_Fun_dx}\\
+      \includegraphics[width=0.16\textwidth]{Figures/LME_17_3_Shape_Fun_dy}
     \end{tabular}
   }
   \subfigure[uGIMP]{
     \begin{tabular}{c}
-      \includegraphics[width=0.14\textwidth]{Figures/GIMP_Shape_Fun}\\
-      \includegraphics[width=0.14\textwidth]{Figures/GIMP_Shape_Fun_dx}\\
-      \includegraphics[width=0.14\textwidth]{Figures/GIMP_Shape_Fun_dy}
+      \includegraphics[width=0.16\textwidth]{Figures/GIMP_Shape_Fun}\\
+      \includegraphics[width=0.16\textwidth]{Figures/GIMP_Shape_Fun_dx}\\
+      \includegraphics[width=0.16\textwidth]{Figures/GIMP_Shape_Fun_dy}
     \end{tabular}
   }
   \subfigure[$\text{LME}_{10}$]{
     \begin{tabular}{c}
-      \includegraphics[width=0.14\textwidth]{Figures/LME_10_0_Shape_Fun}\\
-      \includegraphics[width=0.14\textwidth]{Figures/LME_10_0_Shape_Fun_dx}\\
-      \includegraphics[width=0.14\textwidth]{Figures/LME_10_0_Shape_Fun_dy}    
+      \includegraphics[width=0.16\textwidth]{Figures/LME_10_0_Shape_Fun}\\
+      \includegraphics[width=0.16\textwidth]{Figures/LME_10_0_Shape_Fun_dx}\\
+      \includegraphics[width=0.16\textwidth]{Figures/LME_10_0_Shape_Fun_dy}    
     \end{tabular}
   }
   \subfigure[$\text{LME}_{5}$]{
     \begin{tabular}{c}
-      \includegraphics[width=0.14\textwidth]{Figures/LME_5_0_Shape_Fun}\\
-      \includegraphics[width=0.14\textwidth]{Figures/LME_5_0_Shape_Fun_dx}\\
-      \includegraphics[width=0.14\textwidth]{Figures/LME_5_0_Shape_Fun_dy}
+      \includegraphics[width=0.16\textwidth]{Figures/LME_5_0_Shape_Fun}\\
+      \includegraphics[width=0.16\textwidth]{Figures/LME_5_0_Shape_Fun_dx}\\
+      \includegraphics[width=0.16\textwidth]{Figures/LME_5_0_Shape_Fun_dy}
     \end{tabular}
   }
   \caption{Comparative of linear piecewise shape functions (Q4) and
@@ -1079,25 +1017,7 @@ particles in the left border of the bar. Naturally this problem arise
 when the mesh size is small enough that relative displacement of the
 particles are larger then the distance to the border, so grid crossing
 phenomena could appear even in those cases with infinitesimal
-displacements.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{figure*}\sidecaption
-  \centering
-  \resizebox{0.7\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/Error_evol}
-  }
-  \caption{Velocity evolution at the point in the Dyka bar left side,
-    convergence plots for FE and PCE. The plot is subdivided with
-    colours, the darker part of the diagram shows coincides when the
-    relative movement of the particles is large enough to produce the
-    grid crossing phenomena. The lightest part of the diagram
-    coincides when the relative movement of the particles in
-    negligible in comparison with the mesh size. And in the middle
-    region a transition behaviour take place.}
-  \label{fig:Dyka-error-evol}
-\end{figure*}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this case, an analytical solution is possible
+displacements. In this case, an analytical solution is possible
 thought the characteristics method described in the appendix
 \ref{app:analytical_sol}. To measure the convergence of the solutions
 for the different time integration and approximation schemes the
@@ -1120,7 +1040,7 @@ between both schemes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.9\hsize}{!}{
+  \resizebox{\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Velocity_FE_vs_PCE_CFL_01}
   }
   \caption{Comparative of the PCE \textit{versus} the FE. In the
@@ -1157,7 +1077,7 @@ movement of the particles occurs as far we reduce the mesh size.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.9\hsize}{!}{
+  \resizebox{\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Velocity_LME_gamma_comparative}
   }
   \caption{Sensitive of LME approximants performance to changes in the
@@ -1168,7 +1088,7 @@ movement of the particles occurs as far we reduce the mesh size.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Figure \ref{fig:Dyka-uGIMP-LME} compares the performance of the
-uGIMP~\cite{Bardenhagen2004} shape function \textit{versus} the LME approximation scheme with
+uGIMP shape function \textit{versus} the LME approximation scheme with
 a adimensional regularization parameter $\gamma$ of 4.0. Although it
 does not shows remarkable differences, LME approximats exhibits a more
 robust behaviour than the uGIMP shape functions. Regarding this, notice
@@ -1184,31 +1104,40 @@ nodal layout.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.9\hsize}{!}{
+  \resizebox{\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Velocity_uGIMP_vs_LME_Dyka}
   }
   \caption{Velocity evolution at the point in the bar left side.}
   \label{fig:Dyka-uGIMP-LME}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Finally, figure \ref{fig:Dyka-OTM-MPM} compares the solution obtained
-with OTM~\cite{Li2010} \textit{versus} the solution obtained with MPM,
-both with same time integration scheme and spatial discretization. For
-this case the performance of MPM is robust and stable than OTM. As we
-can appreciate, during the first half of the simulation both method
-seem to perform in a similar way, but during the second half of the
-simulation after the elastic wave has travel from the free border to
-the fixed one and back, in OTM the solution becomes noisy than the
-one performed by MPM.  
+Finally, figure \ref{fig:Dyka-OTM-MPM}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.9\hsize}{!}{
+  \resizebox{\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Velocity_MPM_vs_OTM_Dyka}
   }
   \caption{Velocity evolution at the point in the bar left side.}
   \label{fig:Dyka-OTM-MPM}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{figure*}\sidecaption
+  \centering
+  \resizebox{0.7\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/Error_evol}
+  }
+  \caption{Velocity evolution at the point in the Dyka bar left side,
+    convergence plots for FE and PCE. The plot is subdivided with
+    colours, the darker part of the diagram shows coincides when the
+    relative movement of the particles is large enough to produce the
+    grid crossing phenomena. The lightest part of the diagram
+    coincides when the relative movement of the particles in
+    negligible in comparison with the mesh size. And in the middle
+    region a transition behaviour take place.}
+  \label{fig:Dyka-error-evol}
+\end{figure*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Andersen block}
@@ -1217,18 +1146,17 @@ one performed by MPM.
 In order to test the ability of this interpolation technique to deal
 with grid crossing instabilities we will simulate the vertical
 compression of a square block (10 by 10 meters) of soft soil sketched
-in figure~\ref{fig:block} and loaded using an incremental gravitation
-scheme.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+in figure~\ref{fig:block} and loaded using an incremental gravitation scheme.
+
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.7\hsize}{!}{
+  \resizebox{\hsize}{!}{
     \input{Figures/Block.tex}}
   \caption{Geometrical description of a soil block }.}
   \label{fig:block}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-This test was taken from PhD thesis of Andersen (2009)\cite{thesis_Andersen_2009}. The
+
+This test was taken from Andersen (2009)\cite{thesis_Andersen_2009}. The
 elastic parameters consider for this test are: 
 \begin{itemize} 
 \item  Initial density : $6\cdot 10^3\ kg/m^3$
@@ -1250,66 +1178,22 @@ in order to arrive to a state of equilibrium,
     \end{array}
   \right.
 \end{equation}
+
 In order to get a stable solution, we will adopt a time step conducted
 by a Courant number of 0.1. On the other hand, the explicit predictor-corrector
 scheme is here employed looking forward getting better results. For the
 initial spatial discretization we will employ four particles per cell
 ($\Delta x = 2\ m$). The initial setting of particles inside of the
 cell changes according to the approximation technique adopted. For the
-bi-linear shape functions and the LME approximants, the initial
+bi-linear shape functions (Q4) and the LME shape functions, the initial
 position corresponds to the location of the gauss-points in a standard
-quadratic finite element. For the uGIMP shape function the initial
-position of each particle is located in the center of each voxel, due
-to the fact that in the initial situation, the voxel domain should not
-overlap each others.
-
-Figure~\ref{fig:Block-LME3} shows the evolution of the vertical stress
-during the loading process. The result is physically realistic as
-stress increments linearly from the top to the bottom of the specimen,
-and the value of the vertical stress in a material point located in
-the bottom of the specimen oscillates centered in $5.2 MPa$, which is
-the analytic value given by $\sigma_{yy} = \rho g h_y$.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure*}
-  \centering
-  \subfigure[t = 0 seconds.]{
-    \includegraphics[width=0.32\textwidth]{Figures/Block_LME3_PCE_a_t0}
-  }
-  \subfigure[t = 5 seconds.]{
-    \includegraphics[width=0.32\textwidth]{Figures/Block_LME3_PCE_b_t025}
-  }
-  \subfigure[t = 20 seconds]{
-    \includegraphics[width=0.32\textwidth]{Figures/Block_LME3_PCE_c_t1}
-  }
-  \caption{Vertical normal stress and position of material points
-    during the loading process for a soft soil ($E = 5\ MPa$, $\rho_0
-    = 6\cdot 10^3\ kg/m^3$). Numerical parameters considered for the
-    simulation are : Local \textit{max-ent} shape function $\gamma =3$
-    and explicit PC scheme with CFL 0.1.}
-  \label{fig:Block-LME3}
-\end{figure*}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Figure~\ref{fig:vertical-displacement-block} shows the vertical
-displacement evolution of a point in the free surface of the block. As
-we can see the simulation using the Q4 interpolation technique turns
-out to be unstable and in the second 15 it fails. The uGIMP simulation
-is more stable than the one performed by the Q4. Despite this is still
-unstable and could trigger severe oscillations if we pretend to
-simulate non-linear materials. The LME simulation was performed using
-two kinds of shape functions, one with a low value of the
-dimensionless parameter, $\gamma = 0.8$, and other with a larger value
-of it, $\gamma = 3.0$. Notice that the results are both stable, but
-the larger values of $\gamma$ give us a very stable solution. This is
-due to the fact that with larger value of $\gamma$, the shape
-functions behaves in a similar way to the FEM, which performs very
-accurate in those cases with a reasonable mesh distorsion, and with a
-lower value it behaves in a similar way to the uGIMP. This behaviour
-was noticed previously by \cite{Arroyo2006}, were authors highlight
-how by adjusting the spatial variation of $\beta(\vect{x})$, it is
-possible to select regions of the domain of analysis which are treated
-by finite elements and regions that are treated in the style of
-meshfree methods, with seamless transitions between those regions. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+quadratic finite element. For the uniform-GIMP (uGIMP) shape function
+the initial position of each particle is located in the center of each
+voxel, due to the fact that in the initial situation, the voxel domain
+should not overlap each others, Steffen {\it et al.}
+(2008)\cite{Steffen2008}. Figure~\ref{fig:vertical-displacement-block}
+shows the vertical displacement evolution of a point in the free
+surface of the block.
 \begin{figure}\sidecaption
   \centering
   \resizebox{\hsize}{!}{
@@ -1320,35 +1204,83 @@ meshfree methods, with seamless transitions between those regions.
     interpolation schemes and numerical techniques.} 
   \label{fig:vertical-displacement-block}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+As we can see the simulation using the Q4 interpolation technique
+turns out to be unstable and in the second 15 it fails. The uGIMP
+simulation is more stable than the one performed by the Q4. Despite
+this is still unstable and could trigger severe oscillations if we
+pretend to simulate non-linear materials. The LME simulation was
+performed using two kinds of shape functions, one with a low value of
+the dimensionless parameter, $\gamma = 0.8$, and other with a larger
+value of it, $\gamma = 3.0$. Notice that the results are both
+stable, but the larger values of $\gamma$ give us a very stable
+solution. This is due to the fact that with larger value of $\gamma$,
+the shape functions behaves in a similar way to the FEM, which performs
+very accurate in those cases with a reasonable mesh distorsion, and
+with a lower value it behaves in a similar way to the uGIMP. This
+behaviour was noticed previously by \cite{Arroyo2006}, were authors
+highlight how by adjusting the spatial variation of $\beta(\vect{x})$,
+it is possible to select regions of the domain of analysis which are
+treated by finite elements and regions that are treated in the style
+of meshfree methods, with seamless transitions between those regions.
+
+Figure~\ref{fig:Block-LME3} shows the evolution of the vertical stress
+during the loading process. The result is physically realistic as
+stress increments linearly from the top to the bottom of the specimen,
+and the value of the vertical stress in a material point located in
+the bottom of the specimen oscillates centered in $5.2 MPa$, which is
+the analytic value given by $\sigma_{yy} = \rho g h_y$. 
+
+\begin{figure}
+  \centering
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \subfloat[t = 0 seconds.]{
+    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_a_t0}
+    \label{fig:Block-LME3-PCE-t0}
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \qquad
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \subfloat[t = 5 seconds.]{
+    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_b_t025}
+    \label{fig:Block-LME3-PCE-t025}
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \qquad
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \subfloat[t = 20 seconds]{
+    \includegraphics[width=0.8\columnwidth]{Figures/Block_LME3_PCE_c_t1}
+    \label{fig:Block-LME3-PCE-t1}
+  }
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+  \caption{Vertical normal stress and position of material points
+    during the loading process for a soft soil ($E = 5\ MPa$, $\rho_0
+    = 6\cdot 10^3\ kg/m^3$). Numerical parameters considered for the
+    simulation are : Local \textit{max-ent} shape function $\gamma =3$
+    and explicit PC scheme with CFL 0.1.}
+  \label{fig:Block-LME3}
+\end{figure}
 
 \section{Conclusions}
 \label{sec:conclusions}
-We have developed a novel time integration scheme for MPM, and
-proved how local \textit{max-ent} approximation scheme could be
-employed as a useful technique in MPM. The PCE arise as a highly
-efficient alternative for challenging dynamic problems like coupled
-$u-p_w$ without appeal to expensive implicit time integration
-algorithms. Also the procedure employed to design the PCE algorithm open
-the door to revisit a huge variety of time integration schemes
-developed originally for FEM, which can be rearranged to MPM framework
-with some modifications. Anyway, further research should be done to improve the
-formal comprehension of the algorithm good performance. This paper
-also enhances the suitability of the local \textit{max-ent} as a
-general promising alternative to the wide range of approximation
-techniques developed for the MPM to overcome grid crossing
-limitations and avoids the constriction of the uGIMP of a regular mesh
-or a high density of particles per cell. Future research of the
-group will be on the employ of this scheme to improve the localization
-capabilities of MPM for viscoplastic materials. Finally we remark on the possibility of adapting
-the function $\beta(\vect{x})$ as a second order tensor with the aim
-of adapt the shape function with the strain field which improves the
-performance of it in the aforementioned localization
-capabilities. Other possibility is to adapt the value of $\beta$ to
-solve the equations fem-like of meshfree-like depending of how behaves
-the region, this could be extremely useful in simulating all together
-initialization and propagation of fast landslides.
+We have developed a new time integration scheme for MPM, and
+proved how local \textit{max-ent} arise as a promising tool to
+overcome the grid-crossing error.
+
+adapt the value of $\beta$ to solve the equations fem-like of
+meshfree-like depending of how behaves the region
+
+This alternative technique overcome the constriction of the GIMP to
+regular mesh.
+
+The time integration here proposed mitigates the presence of wiggles
+and overshot
+
+future research :
+localization of the local max ent
+
+predictor-corrector for high dynamic problems like impact or
+collisions 
 
 \begin{acknowledgements}
 If you'd like to thank anyone, place your comments here
@@ -1361,6 +1293,72 @@ and remove the percent signs.
 The authors declare that they have no conflict of interest.
 
 \appendix
+
+\section{Explicit predictor-corrector algorithm}
+\label{app:explicit-predictor-algorithm}
+
+\begin{algorithm}
+  \floatname{algorithm}{Algorithm}
+  \renewcommand{\thealgorithm}{}
+  \caption{Explicit Predictor-Corrector scheme}
+  \begin{algorithmic}[1]
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
+    \STATE \textbf{Update mass matrix}:
+    \begin{equation*}
+      \tens{m}_{I} = N_{Ip}^{k}\ m_p,
+    \end{equation*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Explicit Newmark Predictor}:\\
+    \begin{equation*}
+      \vec{v}_I^{pred} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}
+    \end{equation*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Impose essential boundary conditions}:\\
+    At the fixed boundary, set $\vec{v}_{I}^{pred} = 0$. 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    % \STATE \textbf{Discard the previous nodal values}.
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Deformation tensor increment calculation}.
+    \begin{align*}
+      &\dot{\tens{\varepsilon}_{p}}^{k+1} = \left[ \vec{v}_{I}^{pred} \otimes
+        \Grad{N_{Ip}^{k+1}} \right]^s \\
+      &\Delta \tens{\varepsilon}_{p}^{k+1} = \Delta t\ \dot{\tens{\varepsilon}_{p}}^{k+1}
+    \end{align*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Update the density field}:
+    \begin{equation*}
+      \rho_p^{k+1} = \frac{\rho_p^k}{1 + \mathit{tra}\left[\Delta\tens{\varepsilon}_{p}^{k+1}\right]}.
+    \end{equation*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Balance of forces calculation}:\\
+    Calculate the total grid nodal force $\vec{f}_{I}^{k+1} =
+    \vec{f}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$ evaluating
+    \eqref{eq:nodal_internal_forces} and
+    \eqref{eq:nodal_external_forces} in the time step $k+1$.
+    In the grid node $I$ is fixed in one of the spatial dimensions, set it to
+    zero to make the grid nodal acceleration zero in that direction.\\
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Explicit Newmark Corrector}:
+    \begin{equation*}
+      \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}  
+    \end{equation*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \STATE \textbf{Update particles lagrangian quantities}:
+    \begin{align*}
+      &\vec{a}_p^{k+1} = \vec{a}_p^n +
+        \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+      &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
+        \frac{N_{Ip}^k\
+        \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
+         N_{Ip}^k\ \vec{v}_{I}^{k} +
+        \frac{1}{2}\Delta t^2\ \frac{N_{Ip}^k\
+        \vec{f}_{I}^{k}}{\tens{m}_I^k}
+    \end{align*}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \STATE \textbf{Reset nodal values}
+  \end{algorithmic}
+\end{algorithm} 
 
 \section{The analytical solution of the 1D Dyka benchmark}
 \label{app:analytical_sol}
@@ -1617,3 +1615,5 @@ bar plotted in the figure~\ref{fig:stress_analytics_dyka} as is demanded in \cit
 %%% TeX-master: t
 %%% End:
 
+
+\message{ !name(main.tex) !offset(-1619) }
