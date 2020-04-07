@@ -730,8 +730,7 @@ in FEM,
 Finally updated particle kinetics are computed using nodal values as,
 \begin{align}
   \label{eq:Update-lagrangian-pce}
-        &\vec{a}_p^{k+1} = \vec{a}_p^n +
-        \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+        &\vec{a}_p^{k+1} = \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
       &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
         \frac{N_{Ip}^k\
         \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
@@ -799,8 +798,7 @@ pseudo-algorithm.
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \STATE \textbf{Update particles lagrangian quantities}:
     \begin{align*}
-      &\vec{a}_p^{k+1} = \vec{a}_p^n +
-        \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+      &\vec{a}_p^{k+1} = \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
       &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
         \frac{N_{Ip}^k\
         \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
