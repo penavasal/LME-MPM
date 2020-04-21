@@ -1,0 +1,1290 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  21 APR 2020 20:41
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**2020_EFM_MPM_Eigensoftening.tex
+(./2020_EFM_MPM_Eigensoftening.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(./elsarticle.cls
+Document Class: elsarticle 2019/01/14, 3.1: Elsevier Ltd
+\@bls=\dimen102
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+\c@tnote=\count87
+\c@fnote=\count88
+\c@cnote=\count89
+\c@ead=\count90
+\c@author=\count91
+\@eadauthor=\toks15
+\c@affn=\count92
+\absbox=\box26
+\keybox=\box27
+\Columnwidth=\dimen106
+\space@left=\dimen107
+\els@boxa=\box28
+\els@boxb=\box29
+\leftMargin=\dimen108
+\@enLab=\toks16
+\@sep=\skip43
+\@@sep=\skip44
+
+(./2020_EFM_MPM_Eigensoftening.spl)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count93
+)
+\splwrite=\write3
+\openout3 = `2020_EFM_MPM_Eigensoftening.spl'.
+
+\appnamewidth=\dimen109
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count94
+\float@exts=\toks17
+\float@box=\box30
+\@float@everytoks=\toks18
+\@floatcapt=\box31
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen110
+\captionmargin@=\dimen111
+\captionwidth=\dimen112
+\caption@tempdima=\dimen113
+\caption@indent=\dimen114
+\caption@parindent=\dimen115
+\caption@hangindent=\dimen116
+)
+\c@ContinuedFloat=\count95
+Package caption Info: float package is loaded.
+)
+\c@KVtest=\count96
+\sf@farskip=\skip47
+\sf@captopadj=\dimen117
+\sf@capskip=\skip48
+\sf@nearskip=\skip49
+\c@subfigure=\count97
+\c@subfigure@save=\count98
+\c@lofdepth=\count99
+\c@subtable=\count100
+\c@subtable@save=\count101
+\c@lotdepth=\count102
+\sf@top=\skip50
+\sf@bottom=\skip51
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks19
+\SOUL@lasttoken=\toks20
+\SOUL@cmds=\toks21
+\SOUL@buffer=\toks22
+\SOUL@token=\toks23
+\SOUL@spaceskip=\skip52
+\SOUL@ttwidth=\dimen118
+\SOUL@uldp=\dimen119
+\SOUL@ulht=\dimen120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algcompatible.sty
+Package: algcompatible 
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count103
+\c@ALG@rem=\count104
+\c@ALG@nested=\count105
+\ALG@tlm=\skip53
+\ALG@thistlm=\skip54
+\c@ALG@Lnr=\count106
+\c@ALG@blocknr=\count107
+\c@ALG@storecount=\count108
+\c@ALG@tmpcounter=\count109
+\ALG@tmplength=\skip55
+)
+Document Style - algorithmic compatible environments for the `algorithmicx' sty
+le
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks24
+\c@algorithm=\count110
+)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count111
+\c@ALC@line=\count112
+\c@ALC@rem=\count113
+\c@ALC@depth=\count114
+\ALC@tlm=\skip56
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:51: LaTeX Er
+ror: Command \algorithmicindent already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \newlength{\algorithmicindent}
+                                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:52: LaTeX Er
+ror: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \setlength{\algorithmicindent}{0pt}
+                                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:66: LaTeX Er
+ror: Command \algorithmicrequire already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 ...nd{\algorithmicrequire}{\textbf{Require:}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:67: LaTeX Er
+ror: Command \algorithmicensure already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ...mand{\algorithmicensure}{\textbf{Ensure:}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:68: LaTeX Er
+ror: Command \algorithmiccomment already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \newcommand{\algorithmiccomment}[1]{\{#1\}}
+                                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:69: LaTeX Er
+ror: Command \algorithmicend already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \newcommand{\algorithmicend}{\textbf{end}}
+                                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:70: LaTeX Er
+ror: Command \algorithmicif already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \newcommand{\algorithmicif}{\textbf{if}}
+                                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:71: LaTeX Er
+ror: Command \algorithmicthen already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 \newcommand{\algorithmicthen}{\textbf{then}}
+                                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:72: LaTeX Er
+ror: Command \algorithmicelse already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 \newcommand{\algorithmicelse}{\textbf{else}}
+                                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:75: LaTeX Er
+ror: Command \algorithmicfor already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \newcommand{\algorithmicfor}{\textbf{for}}
+                                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:76: LaTeX Er
+ror: Command \algorithmicforall already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ...mand{\algorithmicforall}{\textbf{for all}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:77: LaTeX Er
+ror: Command \algorithmicdo already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \newcommand{\algorithmicdo}{\textbf{do}}
+                                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:79: LaTeX Er
+ror: Command \algorithmicwhile already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 ...command{\algorithmicwhile}{\textbf{while}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:81: LaTeX Er
+ror: Command \algorithmicloop already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \newcommand{\algorithmicloop}{\textbf{loop}}
+                                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:83: LaTeX Er
+ror: Command \algorithmicrepeat already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 ...mmand{\algorithmicrepeat}{\textbf{repeat}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:84: LaTeX Er
+ror: Command \algorithmicuntil already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ...command{\algorithmicuntil}{\textbf{until}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty:229: LaTeX E
+rror: Command \algorithmic already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 {\end{list}}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip57
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks25
+\ex@=\dimen121
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen122
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count115
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count116
+\leftroot@=\count117
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count118
+\DOTSCASE@=\count119
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box32
+\strutbox@=\box33
+\big@size=\dimen123
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count120
+\c@MaxMatrixCols=\count121
+\dotsspace@=\muskip10
+\c@parentequation=\count122
+\dspbrk@lvl=\count123
+\tag@help=\toks26
+\row@=\count124
+\column@=\count125
+\maxfields@=\count126
+\andhelp@=\toks27
+\eqnshift@=\dimen124
+\alignsep@=\dimen125
+\tagshift@=\dimen126
+\tagwidth@=\dimen127
+\totwidth@=\dimen128
+\lineht@=\dimen129
+\@envbody=\toks28
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks29
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks30
+\thm@bodyfont=\toks31
+\thm@headfont=\toks32
+\thm@notefont=\toks33
+\thm@headpunct=\toks34
+\thm@preskip=\skip60
+\thm@postskip=\skip61
+\thm@headsep=\skip62
+\dth@everypar=\toks35
+LaTeX Info: Redefining \qed on input line 274.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+
+./2020_EFM_MPM_Eigensoftening.tex:20: LaTeX Error: Command \vec already defined
+.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 }
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./2020_EFM_MPM_Eigensoftening.tex:50: Undefined control sequence.
+l.50 \modulolinenumbers
+                       [5]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:50: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \modulolinenumbers[
+                        5]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(./2020_EFM_MPM_Eigensoftening.aux
+
+LaTeX Warning: Label `fig:Damage-ft-wc' multiply defined.
+
+)
+\openout1 = `2020_EFM_MPM_Eigensoftening.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count127
+\scratchdimen=\dimen130
+\scratchbox=\box34
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen131
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
+\everyMPtoPDFconversion=\toks37
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 121.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 121.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+./2020_EFM_MPM_Eigensoftening.tex:123: Undefined control sequence.
+l.123 \linenumbers
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[2
+
+] [3] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 314--329
+
+ []
+
+<Figures/Particle-failed.png, id=33, 557.2017pt x 521.7894pt>
+File: Figures/Particle-failed.png Graphic file (type png)
+<use Figures/Particle-failed.png>
+Package pdftex.def Info: Figures/Particle-failed.png  used on input line 347.
+(pdftex.def)             Requested size: 195.0pt x 182.60513pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--364
+
+ []
+
+[6]
+<Figures/Damage.pdf, id=39, 190.95741pt x 161.78944pt>
+File: Figures/Damage.pdf Graphic file (type pdf)
+<use Figures/Damage.pdf>
+Package pdftex.def Info: Figures/Damage.pdf  used on input line 385.
+(pdftex.def)             Requested size: 195.0pt x 165.21559pt.
+ [7 <./Figures/Particle-failed.png>]
+<Figures/Brazilian.pdf, id=46, 181.80661pt x 257.1134pt>
+File: Figures/Brazilian.pdf Graphic file (type pdf)
+<use Figures/Brazilian.pdf>
+Package pdftex.def Info: Figures/Brazilian.pdf  used on input line 429.
+(pdftex.def)             Requested size: 195.0pt x 275.7834pt.
+<Figures/Drop_weight.pdf, id=47, 1295.99269pt x 658.31584pt>
+File: Figures/Drop_weight.pdf Graphic file (type pdf)
+<use Figures/Drop_weight.pdf>
+Package pdftex.def Info: Figures/Drop_weight.pdf  used on input line 439.
+(pdftex.def)             Requested size: 312.00119pt x 158.48119pt.
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ­ in font cmr12!
+
+Overfull \hbox (40.26776pt too wide) in paragraph at lines 451--452
+[]\OT1/cmr/m/n/12 The first au-thor ac-knowl-edges the fel-low-ship Agustn de B
+e-tan-court 262390106114. 
+ []
+
+[8 <./Figures/Damage.pdf>] [9 <./Figures/Brazilian.pdf> <./Figures/Drop_weight.
+pdf
+
+pdfTeX warning: pdflatex (file ./Figures/Drop_weight.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+
+./2020_EFM_MPM_Eigensoftening.tex:475: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.475     \begin
+                {equation*}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:475: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.475     \begin
+                {equation*}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:475: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.475     \begin
+                {equation*}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:480: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.480     A
+           t the fixed boundary, set $\vec{v}_{I}^{pred} = 0$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:480: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.480     A
+           t the fixed boundary, set $\vec{v}_{I}^{pred} = 0$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:480: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.480     A
+           t the fixed boundary, set $\vec{v}_{I}^{pred} = 0$.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:499: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.499     C
+           alculate the total grid nodal force $\vec{f}_{I}^{k+1} =
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:499: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.499     C
+           alculate the total grid nodal force $\vec{f}_{I}^{k+1} =
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:499: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.499     C
+           alculate the total grid nodal force $\vec{f}_{I}^{k+1} =
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `eq:nodal_internal_forces' on page 10 undefined on inp
+ut line 501.
+
+
+LaTeX Warning: Reference `eq:nodal_external_forces' on page 10 undefined on inp
+ut line 502.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:506: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.506     \STATE
+                 \textbf{Explicit Newmark Corrector}:
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:506: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.506     \STATE
+                 \textbf{Explicit Newmark Corrector}:
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:506: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.506     \STATE
+                 \textbf{Explicit Newmark Corrector}:
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 494--507
+\OT1/cmr/bx/n/12 Compute dam-age pa-ram-e-ter\OT1/cmr/m/n/12 : \OT1/cmr/bx/n/12
+ Bal-ance of forces cal-cu-la-
+ []
+
+
+./2020_EFM_MPM_Eigensoftening.tex:524: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.524   \end{algorithmic}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:534: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.534     N
+           umber of particles: $N_p$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:534: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.534     N
+           umber of particles: $N_p$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:534: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.534     N
+           umber of particles: $N_p$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:535: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.535     $
+           \epsilon$-neighbourhood of each particle $p$ : $B_{\epsilon,p}$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:535: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.535     $
+           \epsilon$-neighbourhood of each particle $p$ : $B_{\epsilon,p}$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:535: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.535     $
+           \epsilon$-neighbourhood of each particle $p$ : $B_{\epsilon,p}$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:536: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.536     \REQUIRE
+                   Material data\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:536: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.536     \REQUIRE
+                   Material data\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:536: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.536     \REQUIRE
+                   Material data\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:537: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.537     T
+           ensile strength: $f_{t,p}$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:537: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.537     T
+           ensile strength: $f_{t,p}$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:537: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.537     T
+           ensile strength: $f_{t,p}$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:538: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.538     B
+           andwidth of the cohesive fracture: $h_{\epsilon,p}$ \\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:538: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.538     B
+           andwidth of the cohesive fracture: $h_{\epsilon,p}$ \\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:538: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.538     B
+           andwidth of the cohesive fracture: $h_{\epsilon,p}$ \\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:539: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.539     C
+           ritical opening displacement: $w_c$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:539: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.539     C
+           ritical opening displacement: $w_c$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:539: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.539     C
+           ritical opening displacement: $w_c$\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:540: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.540     \ENSURE
+                  Return damage parameter $\chi := \{\chi_p\}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:540: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.540     \ENSURE
+                  Return damage parameter $\chi := \{\chi_p\}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:540: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.540     \ENSURE
+                  Return damage parameter $\chi := \{\chi_p\}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./2020_EFM_MPM_Eigensoftening.tex:543: Undefined control sequence.
+l.543     \IF{$\chi_p = 0$ \AND
+                                $\epsilon_{f,p} = 0$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./2020_EFM_MPM_Eigensoftening.tex:554: Undefined control sequence.
+l.554     \ELSE[$\chi_p \neq 1$ \AND
+                                     $\epsilon_{f,p} > 0$]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./2020_EFM_MPM_Eigensoftening.tex:559: LaTeX Error: Something's wrong--perhaps 
+a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.559   \end{algorithmic}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 533--559
+\OT1/cmr/m/n/12 of the co-he-sive frac-ture: $\OML/cmm/m/it/12 h[]$ []\OT1/cmr/
+m/n/12 Critical open-ing dis-place-ment:
+ []
+
+(./2020_EFM_MPM_Eigensoftening.bbl
+./2020_EFM_MPM_Eigensoftening.bbl:10: Misplaced alignment tab character &.
+l.10 ...method, Computer Modeling in Engineering &
+                                                   Sciences 16.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./2020_EFM_MPM_Eigensoftening.bbl:29: Misplaced alignment tab character &.
+l.29 ..., CMES. Computer Modeling in Engineering &
+                                                   Sciences
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 40--44
+\OT1/cmr/m/n/12 A seam-less bridge be-tween fi-nite el-e-ments and mesh-free me
+th-
+ []
+
+[10
+
+] [11]) [12] (./2020_EFM_MPM_Eigensoftening.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5397 strings out of 492982
+ 77187 string characters out of 6134895
+ 150151 words of memory out of 5000000
+ 8858 multiletter control sequences out of 15000+600000
+ 14014 words of font info for 53 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,16n,42p,298b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb>
+Output written on 2020_EFM_MPM_Eigensoftening.pdf (12 pages, 382990 bytes).
+PDF statistics:
+ 149 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+
