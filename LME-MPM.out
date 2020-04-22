@@ -1,0 +1,13 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Brief note concerning the notation}{}% 2
+\BOOKMARK [1][-]{section.3}{Derivation of MPM procedure}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{The boundary-value problem}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Variational formulation}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Galerkin procedure}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Explicit predictor-corrector scheme for MPM.}{}% 7
+\BOOKMARK [1][-]{section.5}{Local max-ent approximants}{}% 8
+\BOOKMARK [1][-]{section.6}{Application to linear elasticity dynamic problems.}{}% 9
+\BOOKMARK [2][-]{subsection.6.1}{Dyka bar}{section.6}% 10
+\BOOKMARK [2][-]{subsection.6.2}{Andersen block}{section.6}% 11
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 12
+\BOOKMARK [1][-]{appendix.A}{The analytical solution of the 1D Dyka benchmark}{}% 13
