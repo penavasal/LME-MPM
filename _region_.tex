@@ -1,79 +1,4 @@
-\message{ !name(LME-MPM.tex)}% %%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
-% %
-% % This is a general template file for the LaTeX package SVJour
-% % for Springer journals.          Springer Heidelberg 2010/09/16
-% %
-% % Copy it to a new file with a new name and use it as the basis
-% % for your article. Delete % signs as needed.
-% %
-% % This template includes a few options for different layouts and
-% % content for various journals. Please consult a previous issue of
-% % your journal as needed.
-% %
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %
-% % First comes an example EPS file -- just ignore it and
-% % proceed on the \documentclass line
-% % your LaTeX will extract the file if required
-% \begin{filecontents*}{example.eps}
-% %!PS-Adobe-3.0 EPSF-3.0
-% %%BoundingBox: 19 19 221 221
-% %%CreationDate: Mon Sep 29 1997
-% %%Creator: programmed by hand (JK)
-% %%EndComments
-  
-% gsave
-% newpath
-%   20 20 moveto
-%   20 220 lineto
-%   220 220 lineto
-%   220 20 lineto
-% closepath
-% 2 setlinewidth
-% gsave
-%   .4 setgray fill
-% grestore
-% stroke
-% grestore
-% \end{filecontents*}
-% %
-% \RequirePackage{fix-cm}
-% %
-% %\documentclass{svjour3}                     % onecolumn (standard format)
-% %\documentclass[smallcondensed]{svjour3}     % onecolumn (ditto)
-% %\documentclass[smallextended]{svjour3}       % onecolumn (second format)
-% \documentclass[twocolumn]{svjour3}          % twocolumn
-% %
-% % flush right qed marks, e.g. at end of proof
-% \smartqed
-
-% \usepackage[lofdepth,lotdepth]{subfig}
-% \usepackage{graphicx}
-% \usepackage{subcaption}
-
-% \usepackage{amsmath,amsthm,amssymb}
-
-% \usepackage{amsfonts}
-% \usepackage{epstopdf}
-% \usepackage{mathrsfs} % para formato de letra
-% \usepackage{hyperref}
-% \usepackage{enumitem}
-% \usepackage{array}
-% \usepackage{tabularx}
-% \usepackage{supertabular}
-% \usepackage{fancyhdr}
-% \usepackage{multirow}
-% \usepackage{color}
-% \usepackage{makeidx}
-% \usepackage{setspace}
-% \usepackage{epsfig}
-
-% \usepackage{pgf}
-% % \usepgfplotslibrary{external} 
-% % \tikzexternalize
-
-% %\usepackage{latexsym}
-
+\message{ !name(LME-MPM.tex)}
 \documentclass[preprint,12pt,a4paper]{elsarticle}
 
 \usepackage{lineno,hyperref}
@@ -139,6 +64,118 @@
   }
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Init glossaries
+\usepackage[acronym]{glossaries}
+
+\makeglossaries
+
+\newglossaryentry{domain}
+{
+  name=$\varOmega$,
+  description={Continuum domain}
+}
+
+\newglossaryentry{contour}
+{
+  name=$\partial\varOmega$,
+  description={Boundary of the continuum domain $\varOmega$. Also
+    defined as $\Gamma$}
+}
+
+\newglossaryentry{dirichlet-boundary}
+{
+  name=$ \Gamma_d$,
+  description={Essential or Dirichlet boundary conditions over $\partial\varOmega$}
+}
+
+\newglossaryentry{neumann-boundary}
+{
+  name=$ \Gamma_n$,
+  description={Natural or Nemann boundary conditions over $\partial\varOmega$}
+}
+
+\newglossaryentry{rho}
+{
+  name=$\rho$,
+  description={Describes the scalar density field}
+}
+
+\newglossaryentry{a}
+{
+  name=$\vect{a}$,
+  description={First order tensor which describes the acceleration field}
+}
+
+\newglossaryentry{v}
+{
+  name=$\vect{v}$,
+  description={First order tensor which describes the velocity field}
+}
+
+\newglossaryentry{u}
+{
+  name=$\vect{u}$,
+  description={First order tensor which describes the displacement field}
+}
+
+\newglossaryentry{x}
+{
+  name=$\vect{x}$,
+  description={First order tensor which describes the global coordinates field}
+}
+
+\newglossaryentry{xi}
+{
+  name=$\vect{\xi}$,
+  description={First order tensor which describes the local coordinates field}
+}
+
+
+\newglossaryentry{stress}
+{
+  name=$\tens{\sigma}$,
+  description={Second order tensor which means the Cauchy stress tensor}
+}
+
+
+\newglossaryentry{strain}
+{
+  name=$\tens{\varepsilon}$,
+  description={Second order tensor which means the Cauchy strain tensor}
+}
+
+
+\newglossaryentry{Constitutive}
+{
+  name=$\tens{D}$,
+  description={Four order tensor which means the constitutive response
+    of the material}
+}
+
+
+\newglossaryentry{LME-beta}
+{
+  name=$\beta$,
+  description={Regularization or thermalization parameter of the
+    LME$_{\beta}$ Pareto set}
+}
+
+\newacronym{mpm}{MPM}{Material Point Method}
+\newacronym{otm}{OTM}{Optimal Transportation Meshfree}
+\newacronym{sph}{SPH}{Smoothed Particle Hydrodynamics}
+\newacronym{fem}{FEM}{Finite Element Method}
+\newacronym{lme}{LME}{Local Maximum-Entropy}
+\newacronym{flip}{FLIP}{Fluid Implicit Particle}
+\newacronym{gimp}{GIMP}{Generalized Interpolation Material Point}
+\newacronym{igimp}{iGIMP}{Implicit GIMP}
+\newacronym{ugimp}{uGIMP}{Uniform GIMP}
+\newacronym{ddmp}{DDMP}{Dual Domain Material Point}
+\newacronym{ctls}{CTLS}{Conservative Taylor Least Squares}
+
+% End glossaries
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \modulolinenumbers[5]
 
 \journalname{Computer Methods in Applied Mechanics and Engineering}
@@ -198,24 +235,25 @@ and Miguel Martín Stickle$^a$
 }
 
 \begin{abstract}
-  Material Point Method (MPM) has arisen in the recent years as an
-  alternative to Finite Element Method (FEM) under the large
+  \acrfull{mpm} has arisen in the recent years as an
+  alternative to \acrfull{fem} under the large
   deformation regime. However, the simulation of shock waves
   propagation and other high frequency problems is still challenging
-  under this approach due the incapability of the standard MPM time
+  under this approach due the incapability of the standard \acrshort{MPM} time
   integration scheme to filter spurious noises. To overcome this
-  limitation in this paper, an explicit predictor-corrector time integration scheme has been proposed. Its superior performance mitigates the 
-  presence of spurious oscillations with minimal dissipation in high
-  frequency problems. Other source of numerical noise in MPM 
+  limitation in this paper, an explicit predictor-corrector time
+  integration scheme has been proposed. Its superior performance
+  mitigates the presence of spurious oscillations with minimal dissipation in high
+  frequency problems. Other source of numerical noise in \acrshort{MPM} 
   occurs when to material points cross computational grid
   boundaries and motivated due to the lack of smoothness of the interpolation
   functions. This noise results in spurious local variations at the material
   points, where strain-stress fields are computed. This could invalidate
   the solution in one case, or damage it in another. To overcome it,
-  this document adopts the \textit{local maximum-entropy approximation
-    schemes} (LME) a robust substitute for the wide range of shape
-  function in MPM. Local \textit{max-ent} approximation may be regarded as a
-  \textit{thermalization} of Delaunay triangulation which resolves the
+  this document adopts the \acrfull{lme} approximation schemes a
+  robust substitute for the wide range of shape function in
+  \acrshort{MPM}. Local \textit{max-ent} approximation may be regarded
+  as a \textit{thermalization} of Delaunay triangulation which resolves the
   degenerate cases resulting from the lack or uniqueness of the
   triangulation. Furthermore, by modifying a regularization parameter they
   are able to behave finite element like or as a mesh-free
@@ -225,7 +263,7 @@ and Miguel Martín Stickle$^a$
 \end{abstract}
 
 \begin{keyword}
-  LME \sep MPM \sep Explicit predictor-corrector \sep Dynamic problems}
+  \acrshort{lme} \sep \acrshort{mpm} \sep Explicit predictor-corrector \sep Dynamic problems}
 \end{keyword}
 
 \end{frontmatter}
@@ -234,17 +272,15 @@ and Miguel Martín Stickle$^a$
 
 \section{Introduction}
 \label{intro}
-Since the proposal of MPM by Sulsky {\it  et al.}
-(1994)~\cite{Sulsky1994} as a generalization to solids of the Fluid
-Implicit Particle (FLIP) method~\cite{Brackbill1986}. It popularity
+Since the proposal of \acrshort{mpm} by Sulsky {\it  et al.}
+(1994)~\cite{Sulsky1994} as a generalization to solids of the \acrfull{flip} method~\cite{Brackbill1986}. It popularity
 has increased due to its ability to deal with large strain regime
 without suffer mesh distortion inaccuracies.
 
 However, this method suffers other kind of instabilities, such those
 when material points crossing cell boundaries. This give rise to the
 development of other interpolation techniques to overcome this
-limitation such as the generalized interpolation material point method
-(GIMP) Bardenhagen \& Kober (2004)~\cite{Bardenhagen2004}, which has
+limitation such as the \acrfull{gimp} method Bardenhagen \& Kober (2004)~\cite{Bardenhagen2004}, which has
 demonstrate to have a good performance in the finite deformation
 regime. However, in the absence of a regular grid, construction of the
 weighting functions is only achieved at considerable effort and
@@ -262,10 +298,10 @@ decreases~\cite{DHAKAL2016301}, therefore DDMP requires a large number
 of particles needed for convergence, this
 makes the method very expensive. In recent years the employ of
 spline-lines has gain popularity with the introduction of the B-Spline
-MPM proposed by Roel Tielen {\it et al.} (2017)~\cite{TIELEN2017265},
+\acrshort{mpm} proposed by Roel Tielen {\it et al.} (2017)~\cite{TIELEN2017265},
 this technique allows the employ of unstructured set of notes and
 particles. More recently, approximants derived from minimization has
-been introduced in to MPM framework with the Conservative Taylor
+been introduced in to \acrshort{mpm} framework with the Conservative Taylor
 Least Squares (CTLS) reconstruction proposed by Wobbes {\it et al.}
 (2018)~\cite{E_Wobbes_2018}, unfortunately when particles are spread in
 a challenging way, the quality of the CTLS approximation decrease
@@ -273,7 +309,7 @@ locally.
 
 This document adopts the \textit{local maximum-entropy approximation
     schemes} (LME) as a robust substitute for the wide range of shape
-  function in MPM. First introduced by Arroyo \& Ortiz
+  function in \acrshort{mpm}. First introduced by Arroyo \& Ortiz
 (2006)~\cite{Arroyo2006}, it belongs to the class of convex 
 approximation schemes and provides a seamless transition between
 finite element method (FEM) and mesh-free interpolations. The
@@ -292,9 +328,9 @@ approximation scheme has been proof to have a good performance under
 the dynamic regime by other researchers like Navas {\it et al.}
 (2018)~\cite{Navas2018a} and Li {\it et al.} (2012)~\cite{Li2012} for
 Optimal Transportation Meshfree (OTM) method. And more
-recently under MPM framework by Wobbes {\it et
+recently under \acrshort{mpm} framework by Wobbes {\it et
   al.}(2020)~\cite{Wobbes2020} but without exploring the benefits of
-the regularization parameter $\beta$.
+the regularization parameter \gls{LME-beta}.
 
 This techniques are devoted to mitigate the
 ``grid crossing'' error. Nevertheless, in the presence of shock waves spurious
@@ -308,10 +344,10 @@ techniques. To avoid introducing this nonphysical sources, many
 researchers has proposed alternative time integration
 schemes which reduce the presence of high frequency noises by
 filtering them or increasing the accuracy of the time integration
-scheme. One of the most popular is the implicit GIMP (iGIMP)
+scheme. One of the most popular is the \acrfull{igimp}
 Charlton {\it et al.} (2017)~\cite{Charlton2017}, more recently Tran \&
 Solowski (2019)~\cite{Tran2019e} proposed a generalised-$\alpha$ scheme
-for MPM with promising results but at the expense of increasing
+for \acrshort{mpm} with promising results but at the expense of increasing
 the computational effort. In this paper a less time consuming and high
 efficient explicit predictor corrector integration method has been
 proposed. It consists in an accommodation of the Newmark
@@ -335,47 +371,19 @@ The article is organized as follows. Section \ref{sec:Notation}
 briefly reviews the notation here employed. Next, Section \ref{sec:derivation-mpm}
 is devoted to present briefly the governing equations of the elastic
 problem, the variational formulation and the Galerkin procedure. In Section \ref{sec:epc-algor-mpm} an explicit predictor-corrector
-time integration scheme for MPM is proposed. Section
+time integration scheme for \acrshort{mpm} is proposed. Section
 \ref{sec:local-max-ent} briefly reviews the local \textit{max-ent}
 basis functions here employed. In Section
 \ref{sec:Application-linear-elasticity-dynamic-problems} applications
 to prove the numerical accuracy of the proposed approach are presented. Finally,
 conclusions and future research topics are exposed in Section \ref{sec:conclusions}.
 
-\section{Brief note concerning the notation}
-\label{sec:Notation}
-In what follows, we will adopt the following convention. All the
-physical variables involved in this problem are collected in Table
-\ref{tab:notation-table}. Three kind of subscript or superscript are used within paper. The subscript$\qed_p$ is used to define a particle variable. While the
-subscript$\qed_I$ is reserved in this notation for denoting nodal
-variables. And finally, the superscript $\qed^{\psi}$ involves a
-virtual magnitude. For the operators, the convention is : $\dot{\qed}$ and
-$\ddot{\qed}$ for the first and second time derivative, $\qued \otimes
-\qued$ means the dyadic operator, $(\cdot)$ and $(\colon)$ means the first and second contraction of a tensor, $\Div{\qed}$ denotes the
-divergence operator, and finally $\Grad{\qed}$ and $\GradS{\qed}$
-denotes the gradient and its symmetric part. Einstain subscripts
-convention is adopted therefore repeated index means addition. 
-\begin{table}
-  \centering
-  \caption{Physical variables involved in the problem}
-  \label{tab:notation-table}
-  \begin{tabular}{c c c}
-    $\rho$ & Density field & Scalar \\
-    $\vect{a}$ & Acceleration field & First order tensor \\
-    $\vect{v}$ & Velocity field & First order tensor \\
-    $\vect{u}$ & Displacement field & First order tensor \\
-    $\vect{x}$ & Global coordinates & First order tensor \\
-    $\vect{\xi}$ & Local coordinates & First order tensor \\
-    $\tens{\sigma}$ & Cauchy stress tensor & Second order tensor \\
-    $\tens{\varepsilon}$ & Cauchy strain tensor & Second order tensor \\
-    $\tens{D}$ & Constitutive tensor & Fourth order tensor\\
-  \end{tabular}
-\end{table}
 
-\section{Derivation of MPM procedure}
+\section{The meshfreesubsection procedure}
 \label{sec:derivation-mpm}
+
 The aim of this section is to provide an overview of the standard
-explicit MPM algorithm~\cite{Sulsky1994}. In consequence it
+explicit \acrshort{mpm} algorithm~\cite{Sulsky1994}. In consequence it
 is structured as follows: the governing equations will be introduced
 in \ref{sec:The boundary-value-problem}, later the variational statement of
 the problem will be presented \ref{sec:variational-formulation}, and
@@ -385,17 +393,28 @@ variational recovery process, where particle data is projected to the
 grid nodes, (ii) an Eulerian step, where balance of momentum equation
 is expressed as a nodal equilibrium equation thorough a FEM-like
 procedure, and finally (iii) a Lagrangian advection of the
-particles. In consequence MPM can be regarded as a
+particles. In consequence \acrshort{mpm} can be regarded as a
 Lagrangian-Eulerian method where particles carries on all the physical
 information and a set of background nodes is employed to
-compute the equilibrium equation.
+compute the equilibrium equation. In what follows, we will adopt the
+following convention. Three kind of subscript or superscript are used
+within paper. The subscript $\Box_p$ is used to define a particle
+variable. While the subscript $\Box_I$ is reserved in this notation for denoting nodal
+variables. And finally, the superscript $\Box^{\psi}$ involves a
+virtual magnitude. For the operators, the convention is : $\dot{\Box}$ and
+$\ddot{\Box}$ for the first and second time derivative, $\qued \otimes
+\qued$ means the dyadic operator, $\Box \cdot \Box$ and $\Box \colon \Box$ means the
+first and second contraction of a tensor, $\Div{\Box}$ denotes the
+divergence operator, and finally $\Grad{\Box}$ and $\GradS{\Box}$
+denotes the gradient and its symmetric part. Einstain subscripts
+convention is adopted therefore repeated index means addition.  
 
-\subsection{The boundary-value problem}
-\label{sec:The boundary-value-problem}
-In MPM the continuum mechanics approach is considered. So on, let
-define a continuum domain $\varOmega$ occupied by an elastic body like
-the sketched in the figure~\ref{fig:Continuum-solid}, and $\partial
-\varOmega$ the boundaries of the domain defined by $\partial \varOmega
+\subsection{Derivation of MPM procedure}
+\label{sec:derivation-mpm}
+
+In \acrshort{mpm} the continuum mechanics approach is considered. So on, let
+define a continuum \gls{domain}  occupied by an elastic body like
+the sketched in the figure~\ref{fig:Continuum-solid}, and \gls{contour} the boundaries of the domain defined by $\partial \varOmega
 = \Gamma_d \bigcup \Gamma_n$ and $\Gamma_d \cap  \Gamma_n = \emptyset$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
@@ -408,13 +427,13 @@ the sketched in the figure~\ref{fig:Continuum-solid}, and $\partial
   \label{fig:Continuum-solid}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this context the field $\vect{u}$ allows to describe the \textit{global state}
+In this context the field \gls{u} allows to describe the \textit{global state}
 of the system. Now the variable $\phi =
 (\tens{\varepsilon},\tens{\sigma})$ is defined as the set of \textit{local
   states} at any point of the continuum which can be derived from the
-field $\vect{u}$ through the following set of governing equations and
+field \gls{u} through the following set of governing equations and
 restrictions that must be satisfied. First (i) the \textit{compatibility
-  equation} that extracts from $\vect{u}$ the strain field is,
+  equation} that extracts from \gls{u} the strain field \gls{strain} is,
 \begin{equation}
   \label{eq:Compatibility-equation}
   \tens{\varepsilon} = \GradS{\vect{u}},
@@ -424,7 +443,7 @@ $\varGamma_d$. An additional consideration over the strain field is
 the assumption of inifinitesimal strain, therefore second order terms
 in the spatial derivatives can be neglected. The corresponding
 conjugate variable for the strain field if the stress field
-$\tens{\sigma}$, which satisfies (ii) the \textit{conservation of
+\gls{stress}, which satisfies (ii) the \textit{conservation of
   momentum equation}
 \begin{equation}
   \label{eq:Balance-momentum}
@@ -432,7 +451,7 @@ $\tens{\sigma}$, which satisfies (ii) the \textit{conservation of
 \end{equation}
 together with the natural boundary conditions of the Neumann type
 $\varGamma_n$. Next (iii) the constitutive equation as a linear
-application from $\Re^n$ to  $\Re^n$, which relates the
+application from $\Re^n$ to $\Re^n$, which relates the
 strain tensor with the stress tensor,
 \begin{equation}
   \label{eq:Constitutive-equation}
@@ -445,9 +464,6 @@ setting to zero the total derivative of the density field,
   \frac{D \rho}{D t} = \dot{\rho} + \rho \Div{\vect{v}} = 0.
 \end{equation}
 
-
-\subsection{Variational formulation}
-\label{sec:variational-formulation}
 To write the variational statement of the problem, let us define a
 virtual displacement field such that
 \begin{equation}
@@ -476,10 +492,8 @@ therefore (\ref{eq:BalanceMomentum_wf}) together with
 \eqref{eq:Rho-material-derivative} represents the weak form
 formulation of the problem.
 
-\subsection{Galerkin procedure}
-\label{sec:Galerkin-procedure}
 In order to arrive to a finite set of equations, in contrast with the
-FEM, in MPM a double discretization procedure is performed as we will
+FEM, in \acrshort{mpm} a double discretization procedure is performed as we will
 describe here below. First, the continuum domain
 $\Omega$ is discretized with a finite sum of material points (in the
 following particles), each one
@@ -599,24 +613,24 @@ to the new position,
   \dot{\vec{v}}_p = N_{Ip}\ \vec{a}_{I},\quad and\quad
   \dot{\vec{x}}_{p} = N_{Ip}\ \vec{v}_{I}  
 \end{equation}
-In MPM literature, this equations
+In \acrshort{mpm} literature, this equations
 (\ref{eq:particle_balance_forces3}) and (\ref{eq:Updated_Lagrangian}),
-are solved with an explicit forward Euler algorithm. The time integration scheme of MPM has been described in detail by many researchers
+are solved with an explicit forward Euler algorithm. The time integration scheme of \acrshort{mpm} has been described in detail by many researchers
 \cite{Sulsky1994}, \cite{Bardenhagen2002}, \cite{thesis_Andersen_2009} and summarized
 in figure~\ref{fig:MPM_algorithm}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
-  \resizebox{0.5\hsize}{!}{
+  \resizebox{0.8\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/MPM_scheme_horizontal}
   }
-  \caption{Description of the three steps in MPM standard algorithm.}
+  \caption{Description of the three steps in \acrshort{mpm} standard algorithm.}
   \label{fig:MPM_algorithm}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Other authors have proposed many others time integration alternatives
 like \cite{Guilkey2003}, \cite{Tran2019e}, \cite{Charlton2017}. In the
-first publication on MPM \cite{Sulsky1994}, the nodal acceleration
+first publication on \acrshort{mpm} \cite{Sulsky1994}, the nodal acceleration
 was employed to update the particles as
 \begin{equation}
   \label{eq:Sulsky-1994-UL-v}
@@ -641,7 +655,7 @@ corrected version of this algorithm in shown in Zhang {\it et al.}
   \vect{v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec{f}_{I}^{k}}{\tens{m}_I},
 \end{equation}
 Later Tran \& Solowski (2019)\cite{Tran2019e} presented a
-generalized-$\alpha$ scheme for MPM inspired in the explicit time
+generalized-$\alpha$ scheme for \acrshort{mpm} inspired in the explicit time
 integration algorithm proposed by Chung \& Hulbert
 (1993)\cite{Geranlized_alpha_1993}, but with the particularity that
 the acceleration is evaluated both in the beginning and the end of the
@@ -667,7 +681,7 @@ as in \eqref{eq:Sulsky-1994-UL-x},\eqref{eq:Sulsky-1994-UL-v} when
 nodal masses become infinitesimal, and requires extra storage for
 nodal values of acceleration and previous steps.
 
-\section{Explicit predictor-corrector scheme for MPM.}
+\subsection{Explicit predictor-corrector scheme for \acrshort{mpm}.}
 \label{sec:epc-algor-mpm}
 
 In this section, a explicit predictor-corrector time integration
@@ -678,8 +692,8 @@ explicit. This method is devoted to solve a system of equations of the type
   \Matrix{M}_{IJ}\ddot{\Vector{d}}_{J} + \Matrix{C}_{IJ}\dot{\Vector{d}}_{J} +
   \Matrix{K}_{IJ}\Vector{d}_{J} = \Vector{F}_{I}.
 \end{equation*}
-As MPM has a nodal stage, it is possible to apply this methods
-successfully in MPM framework as was proved by
+As \acrshort{mpm} has a nodal stage, it is possible to apply this methods
+successfully in \acrshort{mpm} framework as was proved by
 \cite{Tran2019e}. Taking the predictor definition from and calculating
 nodal velocity, and updating particles position employing nodal values
 of velocity and acceleration. The predictor-corrector algorithm has
@@ -698,12 +712,12 @@ and the stability of the algorithm. As point out Liu
 $O(\Delta t^3)$ when $\gamma = 0.5$, and is unconditionally stable if
 $ 0 < \gamma \leq 0.25$.
 
-To accommodate this step to MPM framework, it is necessary to get
+To accommodate this step to \acrshort{mpm} framework, it is necessary to get
 the nodal values of the velocity and acceleration throughout a variational
 recovery process where particles quantities are transferred to the
 mesh nodes. This technique arise as a generalization of the super-convergent recovery
 procedures described by Zienkiewicz \& Zhu \cite{ZZ1992_I} (\textit{ZZ})
-in the context of FEM. In MPM Gauss quadrature is not employed as
+in the context of FEM. In \acrshort{mpm} Gauss quadrature is not employed as
 integrals are computed following the Riemann integral definition,
 where each component of the summation correspond to a particle of the
 discretization. Also Bardenhagen \& Kober \cite{Bardenhagen2004}
@@ -714,7 +728,7 @@ proved that thorough this information-transference technique mass and momentum a
    \Phi_I = \frac{m_p N_{Ip} \Phi_p}{m_I}
  \end{equation}
  Therefore, to get a analogous expression for
- \eqref{eq:Predictor-velocity-I} in the context of MPM, the
+ \eqref{eq:Predictor-velocity-I} in the context of \acrshort{mpm}, the
  procedure described in the equation \eqref{eq:Variational-recovery}
  is employed reaching to,
  \begin{equation}
@@ -733,7 +747,7 @@ equivalent formulation \eqref{eq:Predictor-velocity-II},
 This way of computing the nodal predictor is both numerically stable
 and minimize the computational effort. Once nodal velocity are
 obtained, the essential boundary conditions are imposed. And in the
-following, the ``classic'' MPM algorithm continues to reach to the
+following, the ``classic'' \acrshort{mpm} algorithm continues to reach to the
 equilibrium equation \eqref{eq:particle_balance_forces3}. Here we
 continue with the \textit{corrector} stage, due to the fact that we
 already have nodal velocity, this step is computed in the same way as
@@ -827,19 +841,19 @@ pseudo-algorithm.
   \end{algorithmic}
 \end{algorithm}
 
-\section{Local \textit{max-ent} approximants}
+\subsection{Local \textit{max-ent} approximants}
 \label{sec:local-max-ent}
-The popularity of MPM has increase notoriously during
+The popularity of \acrshort{mpm} has increase notoriously during
 the recent years due to its ability to deal with large strain problems
 without mesh distorsion issues inherent to mesh based methods like
 FEM, see Zdzislaw \cite{Wieckowski2004}. However, in the simulations
-made with the original MPM, there are numerical noises when particles
+made with the original \acrshort{mpm}, there are numerical noises when particles
 crossing the cell boundaries. Local maximum-entropy (or
 local \textit{max-ent}) shape function first introduced by Arroyo \&
-Ortiz (2006)\cite{Arroyo2006} has been recently tested under MPM framework
+Ortiz (2006)\cite{Arroyo2006} has been recently tested under \acrshort{mpm} framework
 by Wobbes {\it et al.} (2020)\cite{Wobbes2020} where they prof that
 simulations performed with the \textit{max-ent} basis functions show
-considerably more accurate stress approximations for MPM. Although, in
+considerably more accurate stress approximations for \acrshort{mpm}. Although, in
 \cite{Wobbes2020} authors does not deep in how the regularization
 parameter $\beta$ affects to the accuracy and stability of the solution.
 The basic idea of the shape functions based on such
@@ -950,7 +964,7 @@ This tolerance defines the limit values of the influence radius and is used ther
 find the neighbour nodes of a given integration point. An aditional remark is that in similariti  to alternative non-polynomial meshfree basis functions, the LME approximation scheme requires more than $d+1$ nodes to determine the values of the shape functions as well as their derivatives at any point in the convex hull of the nodal set, where $d$ is the dimension of the problem.
 
 This interpolation technique avoid one important shortcoming when using
-GIMP or B-Spline MPM regarding the computational domain boundaries
+\acrshort{gimp} or B-Spline \acrshort{mpm} regarding the computational domain boundaries
 Steffen {\it et al.} (2008)\cite{Steffen2008b}. Which is the
 additional considerations in the applications of the boundary
 conditions. This is motivated because of their increased extents, it
@@ -976,7 +990,7 @@ described does not requires the employ of this artifacts.
 Due to the FE-compatibility, the LME shape function is degenerated to
 linear finite element shape function if $d+1$ neighbouring nodes are
 chosen as the support. Furthermore, with a conveniently adopted
-\textit{regularization} parameter it is possible to get a GIMP-like
+\textit{regularization} parameter it is possible to get a \acrshort{gimp}-like
 shape function. A proof of this statements is observed in figure~\ref{fig:LME_MPM}.  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}
@@ -1038,17 +1052,17 @@ present document but will be incorporated in future research.
 This section is devoted to test the ability of both predictor-corrector
 time integration scheme and the local \textit{max-ent} approximants to
 overcome spurious oscillations due to the grid crossing and high
-frequency loads under the context of MPM Two different test has
+frequency loads under the context of \acrshort{mpm} Two different test has
 been adopted for this purpose, the benchmark proposed by Dyka \& Ingel
 (1995)\cite{Dyka1995} and the test proposed in the PhD thesis of
 Andersen (2009)\cite{thesis_Andersen_2009}. In all calculations we confine out attention to
 uniformly distribute node and particle sets. The accuracy of the PCE
 scheme is compared to the standard FE. In addition \textit{max-ent} solutions
-are compared with those provided by uGIMP and Q4 shape functions, also
-we compare MPM performance with OTM and FEM. All simulations were
+are compared with those provided by \acrfull{ugimp} and Q4 shape functions, also
+we compare \acrshort{mpm} performance with OTM and FEM. All simulations were
 performed with in-hose software. 
 
-\subsection{Dyka bar}
+\subsection{Dyka bar \cite{Dyka1995}}
 \label{sec:dyka-bar}
 
 This benchmark was proposed due to its ability to shows the capability
@@ -1081,7 +1095,7 @@ discretization we propose a set a seven nodal mesh sizes (0.1, 0.3325, 0.5,
 1.0, 3.3325, 6.665, 10.0) in millimeters. For each element a number of
 four particles was selected. In the initial layout, particles are
 occupying the exact quadrature points of a linear quadrilateral. With
-the exception of the uGIMP simulation where gaps or overlap between
+the exception of the \acrshort{ugimp} simulation where gaps or overlap between
 voxels of each particle are not allowed. In those cases, each particles
 occupy the center of each cell quarter. For all simulations, time step
 is controlled by a Courant-Friedrichs-Levy condition of 0.1, were the adopted
@@ -1188,12 +1202,12 @@ movement of the particles occurs as far we reduce the mesh size.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Figure \ref{fig:Dyka-uGIMP-LME} compares the performance of the
-uGIMP~\cite{Bardenhagen2004} shape function \textit{versus} the LME approximation scheme with
+\acrshort{ugimp}~\cite{Bardenhagen2004} shape function \textit{versus} the LME approximation scheme with
 a adimensional regularization parameter $\gamma$ of 4.0. Although it
 does not shows remarkable differences, LME approximats exhibits a more
-robust behaviour than the uGIMP shape functions. Regarding this, notice
-the absence of uGIMP values for a mesh size of 0.3325 and 0.5
-millimeters. During these simulation the uGIMP suffered an unstable
+robust behaviour than the \acrshort{ugimp} shape functions. Regarding this, notice
+the absence of \acrshort{ugimp} values for a mesh size of 0.3325 and 0.5
+millimeters. During these simulation the \acrshort{ugimp} suffered an unstable
 increase of the error so we decided to no include this nodes in the
 plot. A feasible explanation for this phenomena could be the presence
 of numerical cancellation which could produce gaps between
@@ -1212,14 +1226,14 @@ nodal layout.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Finally, figure \ref{fig:Dyka-OTM-MPM} compares the solution obtained
-with OTM~\cite{Li2010} \textit{versus} the solution obtained with MPM,
+with OTM~\cite{Li2010} \textit{versus} the solution obtained with \acrshort{mpm},
 both with same time integration scheme and spatial discretization. For
-this case the performance of MPM is robust and stable than OTM. As we
+this case the performance of \acrshort{mpm} is robust and stable than OTM. As we
 can appreciate, during the first half of the simulation both method
 seem to perform in a similar way, but during the second half of the
 simulation after the elastic wave has travel from the free border to
 the fixed one and back, in OTM the solution becomes noisy than the
-one performed by MPM.  
+one performed by \acrshort{mpm}.  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
@@ -1278,7 +1292,7 @@ initial spatial discretization we will employ four particles per cell
 cell changes according to the approximation technique adopted. For the
 bi-linear shape functions and the LME approximants, the initial
 position corresponds to the location of the gauss-points in a standard
-quadratic finite element. For the uGIMP shape function the initial
+quadratic finite element. For the \acrshort{ugimp} shape function the initial
 position of each particle is located in the center of each voxel, due
 to the fact that in the initial situation, the voxel domain should not
 overlap each others.
@@ -1312,7 +1326,7 @@ the analytic value given by $\sigma_{yy} = \rho g h_y$.
 Figure~\ref{fig:vertical-displacement-block} shows the vertical
 displacement evolution of a point in the free surface of the block. As
 we can see the simulation using the Q4 interpolation technique turns
-out to be unstable and in the second 15 it fails. The uGIMP simulation
+out to be unstable and in the second 15 it fails. The \acrshort{ugimp} simulation
 is more stable than the one performed by the Q4. Despite this is still
 unstable and could trigger severe oscillations if we pretend to
 simulate non-linear materials. The LME simulation was performed using
@@ -1323,7 +1337,7 @@ the larger values of $\gamma$ give us a very stable solution. This is
 due to the fact that with larger value of $\gamma$, the shape
 functions behaves in a similar way to the FEM, which performs very
 accurate in those cases with a reasonable mesh distorsion, and with a
-lower value it behaves in a similar way to the uGIMP. This behaviour
+lower value it behaves in a similar way to the \acrshort{ugimp}. This behaviour
 was noticed previously by \cite{Arroyo2006}, were authors highlight
 how by adjusting the spatial variation of $\beta(\vect{x})$, it is
 possible to select regions of the domain of analysis which are treated
@@ -1345,23 +1359,23 @@ meshfree methods, with seamless transitions between those regions.
 
 \section{Conclusions}
 \label{sec:conclusions}
-We have developed a novel time integration scheme for MPM, and
+We have developed a novel time integration scheme for \acrshort{mpm}, and
 proved how local \textit{max-ent} approximation scheme could be
-employed as an useful technique in MPM. The PCE arise as a highly
+employed as an useful technique in \acrshort{mpm}. The PCE arise as a highly
 efficient alternative for challenging dynamic problems like coupled
 $u-p_w$ without appeal to expensive implicit time integration
 algorithms. Also the procedure employed to design the PCE algorithm open
 the door to revisit a huge variety of time integration schemes
-developed originally for FEM, which can be rearranged to MPM framework
+developed originally for FEM, which can be rearranged to \acrshort{mpm} framework
 with some modifications. Anyway, further research should be done to improve the
 formal comprehension of the algorithm good performance. This paper
 also enhances the suitability of the local \textit{max-ent} as a
 general promising alternative to the wide range of approximation.
-techniques developed for the MPM to overcome grid crossing
-limitations and to avoid the constriction of the uGIMP of a regular mesh
+techniques developed for the \acrshort{mpm} to overcome grid crossing
+limitations and to avoid the constriction of the \acrshort{ugimp} of a regular mesh
 or a high density of particles per cell. Future research of the
 group will be on the employ of this scheme to improve the localization
-capabilities of MPM for viscoplastic materials. Finally we remark on
+capabilities of \acrshort{mpm} for viscoplastic materials. Finally we remark on
 the possibility of adapting the function $\beta(\vect{x})$ as a second
 order tensor with the aim of adapt the shape function with the strain field which improves the
 performance of it in the aforementioned localization
@@ -1379,6 +1393,9 @@ and remove the percent signs.
 \section*{Conflict of interest}
 %
 The authors declare that they have no conflict of interest.
+
+% \printglossary[type=\acronymtype]
+\printglossaries
 
 \appendix
 
@@ -1632,4 +1649,4 @@ bar plotted in the figure~\ref{fig:stress_analytics_dyka} as is demanded in \cit
 %%% mode: latex
 %%% TeX-master: t
 %%% End:
-\message{ !name(LME-MPM.tex) !offset(-1635) }
+\message{ !name(LME-MPM.tex) !offset(-1652) }

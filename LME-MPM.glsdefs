@@ -1,0 +1,30 @@
+\ifglsentryexists{neumann-boundary}{}%
+{%
+\gls@defglossaryentry{neumann-boundary}%
+{%
+name={$ \Gamma _n$},%
+sort={$ \Gamma _n$},%
+type={main},%
+first={$ \Gamma _n$},%
+firstplural={$ \Gamma _n$s},%
+text={$ \Gamma _n$},%
+plural={$ \Gamma _n$s},%
+description={Natural or Nemann boundary conditions over $\partial \varOmega $},%
+descriptionplural={Natural or Nemann boundary conditions over $\partial \varOmega $},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
