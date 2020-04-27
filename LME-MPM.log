@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  27 APR 2020 13:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  27 APR 2020 14:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1203,21 +1203,21 @@ Package caption Info: subfigure package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-ABD: EveryShipout initializing macros (./LME-MPM.glsdefs)
-LaTeX Font Info:    Try loading font information for U+msa on input line 259.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 259.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+ABD: EveryShipout initializing macros (./LME-MPM.glsdefs) [1
 
 \openout6 = `LME-MPM.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for U+msa on input line 283.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 283.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ­ in font cmr12!
 
@@ -1227,51 +1227,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 [2
 
-]
-./LME-MPM.tex:294: You can't use `\/' in vertical mode.
-\@cancel ...ht \unitlength \p@ \canc@thinlines {\/
-                                                  \raise \dimen@ \hbox {\ooa...
-l.294 ... other kind of instabilities, such those}
-                                                   \red{On the one hand, the...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-./LME-MPM.tex:294: You can't use `\raise' in vertical mode.
-\@cancel ...tlength \p@ \canc@thinlines {\/\raise 
-                                                  \dimen@ \hbox {\ooalign {#...
-l.294 ... other kind of instabilities, such those}
-                                                   \red{On the one hand, the...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-./LME-MPM.tex:294: Missing number, treated as zero.
-<to be read again> 
-                   \hbox 
-l.294 ... other kind of instabilities, such those}
-                                                   \red{On the one hand, the...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./LME-MPM.tex:294: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \hbox 
-l.294 ... other kind of instabilities, such those}
-                                                   \red{On the one hand, the...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-[3]
-./LME-MPM.tex:369: Undefined control sequence.
-l.369 ...accommodation of the traditional \acrsull
+] [3]
+./LME-MPM.tex:366: Undefined control sequence.
+l.366 ...accommodation of the traditional \acrsull
                                                   {npc} scheme, widely emplo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1280,10 +1238,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [4]
-./LME-MPM.tex:413: Undefined control sequence.
+./LME-MPM.tex:410: Undefined control sequence.
 <recently read> \qued 
                       
-l.413 ... first and second time derivative, $\qued
+l.410 ... first and second time derivative, $\qued
                                                    \otimes
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1291,8 +1249,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./LME-MPM.tex:414: Undefined control sequence.
-l.414 \qued
+./LME-MPM.tex:411: Undefined control sequence.
+l.411 \qued
            $ means the dyadic operator, $\Box \cdot \Box$ and $\Box \colon \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1301,10 +1259,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [5]
-./LME-MPM.tex:430: Undefined control sequence.
+./LME-MPM.tex:427: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.430 \begin{figure}\sidecaption
+l.427 \begin{figure}\sidecaption
                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1315,36 +1273,36 @@ and I'll forget about whatever was undefined.
 <Figures/Continuum-solid.png, id=34, 789.6702pt x 574.7874pt>
 File: Figures/Continuum-solid.png Graphic file (type png)
 <use Figures/Continuum-solid.png>
-Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 433.
+Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 430.
 (pdftex.def)             Requested size: 390.0pt x 283.876pt.
 [6 <./Figures/Continuum-solid.png>] [7]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 517.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 514.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 517.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 514.
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
 
  []
 
-./LME-MPM.tex:551: Undefined control sequence.
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
+
+ []
+
+./LME-MPM.tex:548: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.551 \begin{figure}\sidecaption
+l.548 \begin{figure}\sidecaption
                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1352,29 +1310,29 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Mesh-particles-back.png, id=49, 775.2162pt x 819.06pt>
+<Figures/Mesh-particles-back.png, id=48, 775.2162pt x 819.06pt>
 File: Figures/Mesh-particles-back.png Graphic file (type png)
 <use Figures/Mesh-particles-back.png>
 Package pdftex.def Info: Figures/Mesh-particles-back.png  used on input line 55
-4.
+1.
 (pdftex.def)             Requested size: 390.0pt x 412.06606pt.
 [8] [9 <./Figures/Mesh-particles-back.png>]
 
-./LME-MPM.tex:628: Package glossaries Error: Glossary entry `MPM' has not been 
+./LME-MPM.tex:624: Package glossaries Error: Glossary entry `MPM' has not been 
 defined.
 
 See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.628 ...e of the figure~\ref{fig:MPM_algorithm}.}
+l.624 ...e of the figure~\ref{fig:MPM_algorithm}.}
                                                   
 You need to define a glossary entry before you can use it.
 
-./LME-MPM.tex:630: Undefined control sequence.
+./LME-MPM.tex:626: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.630 \begin{figure}\sidecaption
+l.626 \begin{figure}\sidecaption
                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1382,66 +1340,65 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/MPM_scheme_horizontal.pdf, id=58, 1093.2543pt x 345.51567pt>
+<./Figures/MPM_scheme_horizontal.pdf, id=57, 1093.2543pt x 345.51567pt>
 File: ./Figures/MPM_scheme_horizontal.pdf Graphic file (type pdf)
 <use ./Figures/MPM_scheme_horizontal.pdf>
 Package pdftex.def Info: ./Figures/MPM_scheme_horizontal.pdf  used on input lin
-e 634.
+e 630.
 (pdftex.def)             Requested size: 390.0pt x 123.25203pt.
 
 Package natbib Warning: Citation `Guilkey2003' on page 10 undefined on input li
-ne 640.
+ne 636.
 
 
 Package natbib Warning: Citation `Charlton2017' on page 10 undefined on input l
-ine 640.
+ine 636.
 
 [10 <./Figures/MPM_scheme_horizontal.pdf>] [11] [12]
 
-./LME-MPM.tex:857: Package glossaries Error: Glossary entry `LME' has not been 
+./LME-MPM.tex:854: Package glossaries Error: Glossary entry `LME' has not been 
 defined.
 
 See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.857 ...nt of the \acrshort{LME} shape functions}
+l.854 ...nt of the \acrshort{LME} shape functions}
                                                   .
 You need to define a glossary entry before you can use it.
 
 [13] [14]
 
-./LME-MPM.tex:915: Package amsmath Error: Multiple \label's: label 'eq:least-bi
+./LME-MPM.tex:912: Package amsmath Error: Multiple \label's: label 'eq:least-bi
 ased-approximation-scheme' will be lost.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.915 \end{align*}
+l.912 \end{align*}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[15]
 
-./LME-MPM.tex:927: Package amsmath Error: Multiple \label's: label 'eq:RAJAN' w
+./LME-MPM.tex:924: Package amsmath Error: Multiple \label's: label 'eq:RAJAN' w
 ill be lost.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.927 \end{align*}
+l.924 \end{align*}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[16]
-./LME-MPM.tex:954: Misplaced alignment tab character &.
-l.954 \nabla N_I^* &
+[15]
+./LME-MPM.tex:951: Misplaced alignment tab character &.
+l.951 \nabla N_I^* &
                     =& N^*_I  \, \left(\nabla f^*_I-\sum_J^{N_n} N^*_J \, \n...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1450,8 +1407,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./LME-MPM.tex:954: Misplaced alignment tab character &.
-l.954 \nabla N_I^* &=&
+./LME-MPM.tex:951: Misplaced alignment tab character &.
+l.951 \nabla N_I^* &=&
                        N^*_I  \, \left(\nabla f^*_I-\sum_J^{N_n} N^*_J \, \n...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1460,25 +1417,9 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./LME-MPM.tex:985: Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.985 \begin{figure}\sidecaption
-                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./Figures/Particle-discretization.png, id=83, 775.2162pt x 819.06pt>
-File: ./Figures/Particle-discretization.png Graphic file (type png)
-<use ./Figures/Particle-discretization.png>
-Package pdftex.def Info: ./Figures/Particle-discretization.png  used on input l
-ine 989.
-(pdftex.def)             Requested size: 390.0pt x 412.06606pt.
-./LME-MPM.tex:997: Undefined control sequence.
-l.997 Due to the \short
+[16]
+./LME-MPM.tex:981: Undefined control sequence.
+l.981 Due to the \short
                        {fem}-compatibility, the \acrshort{lme} shape functio...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1486,98 +1427,96 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/MPM_Shape_Fun.png, id=84, 772.8875pt x 667.49374pt>
+<Figures/MPM_Shape_Fun.png, id=83, 772.8875pt x 667.49374pt>
 File: Figures/MPM_Shape_Fun.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 1011.
+Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 995.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/MPM_Shape_Fun_dx.png, id=85, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dx.png, id=84, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 1011.
-
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 995.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/MPM_Shape_Fun_dy.png, id=86, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dy.png, id=85, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 1011.
-
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 995.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_17_3_Shape_Fun.png, id=87, 772.8875pt x 667.49374pt>
+<Figures/LME_17_3_Shape_Fun.png, id=86, 772.8875pt x 667.49374pt>
 File: Figures/LME_17_3_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 101
-8.
+Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 100
+2.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_17_3_Shape_Fun_dx.png, id=88, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dx.png, id=87, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dx.png  used on input line 
-1018.
+1002.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_17_3_Shape_Fun_dy.png, id=89, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dy.png, id=88, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dy.png  used on input line 
-1018.
+1002.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/GIMP_Shape_Fun.png, id=90, 772.8875pt x 667.49374pt>
+<Figures/GIMP_Shape_Fun.png, id=89, 772.8875pt x 667.49374pt>
 File: Figures/GIMP_Shape_Fun.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 1025.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 1009.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/GIMP_Shape_Fun_dx.png, id=91, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dx.png, id=90, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 1025
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 1009
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/GIMP_Shape_Fun_dy.png, id=92, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dy.png, id=91, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 1025
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 1009
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_10_0_Shape_Fun.png, id=93, 772.8875pt x 667.49374pt>
+<Figures/LME_10_0_Shape_Fun.png, id=92, 772.8875pt x 667.49374pt>
 File: Figures/LME_10_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 103
-2.
+Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 101
+6.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_10_0_Shape_Fun_dx.png, id=94, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dx.png, id=93, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dx.png  used on input line 
-1032.
+1016.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_10_0_Shape_Fun_dy.png, id=95, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dy.png, id=94, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dy.png  used on input line 
-1032.
+1016.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_5_0_Shape_Fun.png, id=96, 772.8875pt x 667.49374pt>
+<Figures/LME_5_0_Shape_Fun.png, id=95, 772.8875pt x 667.49374pt>
 File: Figures/LME_5_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 1039
+Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 1023
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_5_0_Shape_Fun_dx.png, id=97, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dx.png, id=96, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dx.png  used on input line 1
-039.
+023.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_5_0_Shape_Fun_dy.png, id=98, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dy.png, id=97, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dy.png  used on input line 1
-039.
+023.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-./LME-MPM.tex:1048: Undefined control sequence.
+./LME-MPM.tex:1032: Undefined control sequence.
 <recently read> \Beta 
                       
-l.1048 ...esearch and in \cite{Arroyo2006}, $\Beta
+l.1032 ...esearch and in \cite{Arroyo2006}, $\Beta
                                                   $ is a scalar as the
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1585,20 +1524,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[17] [18 <./Figures/Particle-discretization.png> <./Figures/MPM_Shape_Fun.png (
-PNG copy)> <./Figures/MPM_Shape_Fun_dx.png (PNG copy)> <./Figures/MPM_Shape_Fun
-_dy.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun.png (PNG copy)> <./Figures/LM
-E_17_3_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun_dy.png (PNG c
-opy)> <./Figures/GIMP_Shape_Fun.png (PNG copy)> <./Figures/GIMP_Shape_Fun_dx.pn
-g (PNG copy)> <./Figures/GIMP_Shape_Fun_dy.png (PNG copy)> <./Figures/LME_10_0_
-Shape_Fun.png (PNG copy)> <./Figures/LME_10_0_Shape_Fun_dx.png (PNG copy)> <./F
-igures/LME_10_0_Shape_Fun_dy.png (PNG copy)> <./Figures/LME_5_0_Shape_Fun.png (
-PNG copy)> <./Figures/LME_5_0_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_5_0_S
-hape_Fun_dy.png (PNG copy)>]
-./LME-MPM.tex:1088: Undefined control sequence.
+[17] [18 <./Figures/MPM_Shape_Fun.png (PNG copy)> <./Figures/MPM_Shape_Fun_dx.p
+ng (PNG copy)> <./Figures/MPM_Shape_Fun_dy.png (PNG copy)> <./Figures/LME_17_3_
+Shape_Fun.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun_dx.png (PNG copy)> <./F
+igures/LME_17_3_Shape_Fun_dy.png (PNG copy)> <./Figures/GIMP_Shape_Fun.png (PNG
+ copy)> <./Figures/GIMP_Shape_Fun_dx.png (PNG copy)> <./Figures/GIMP_Shape_Fun_
+dy.png (PNG copy)> <./Figures/LME_10_0_Shape_Fun.png (PNG copy)> <./Figures/LME
+_10_0_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_10_0_Shape_Fun_dy.png (PNG co
+py)> <./Figures/LME_5_0_Shape_Fun.png (PNG copy)> <./Figures/LME_5_0_Shape_Fun_
+dx.png (PNG copy)> <./Figures/LME_5_0_Shape_Fun_dy.png (PNG copy)>]
+./LME-MPM.tex:1072: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1088 \begin{figure}\sidecaption
+l.1072 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1623,46 +1561,45 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 ) [19]
 
-./LME-MPM.tex:1134: Package glossaries Error: Glossary entry `NPC' has not been
+./LME-MPM.tex:1118: Package glossaries Error: Glossary entry `NPC' has not been
  defined.
 
 See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1134 ...ower close to the grid-crossing region.}
+l.1118 ...ower close to the grid-crossing region.}
                                                   
 You need to define a glossary entry before you can use it.
 
 
-./LME-MPM.tex:1134: Package glossaries Error: Glossary entry `LME' has not been
+./LME-MPM.tex:1118: Package glossaries Error: Glossary entry `LME' has not been
  defined.
 
 See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1134 ...ower close to the grid-crossing region.}
+l.1118 ...ower close to the grid-crossing region.}
                                                   
 You need to define a glossary entry before you can use it.
 
 
-./LME-MPM.tex:1134: Package glossaries Error: Glossary entry `uGIMP' has not be
+./LME-MPM.tex:1118: Package glossaries Error: Glossary entry `uGIMP' has not be
 en defined.
 
 See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1134 ...ower close to the grid-crossing region.}
+l.1118 ...ower close to the grid-crossing region.}
                                                   
 You need to define a glossary entry before you can use it.
 
-[20]
-./LME-MPM.tex:1137: Undefined control sequence.
+./LME-MPM.tex:1121: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1137 \begin{figure*}\sidecaption
+l.1121 \begin{figure*}\sidecaption
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1670,15 +1607,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Error_evol.png, id=113, 652.5981pt x 371.4678pt>
+<./Figures/Error_evol.png, id=108, 652.5981pt x 371.4678pt>
 File: ./Figures/Error_evol.png Graphic file (type png)
 <use ./Figures/Error_evol.png>
-Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1141.
+Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1125.
 (pdftex.def)             Requested size: 390.0pt x 221.9925pt.
-./LME-MPM.tex:1163: Undefined control sequence.
+./LME-MPM.tex:1145: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1163 \begin{figure}\sidecaption
+l.1145 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1686,21 +1623,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=114, 462.528pt x 346.896pt>
+<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=109, 462.528pt x 346.896pt>
 File: ./Figures/Velocity_FE_vs_PCE_CFL_01.png Graphic file (type png)
 <use ./Figures/Velocity_FE_vs_PCE_CFL_01.png>
 Package pdftex.def Info: ./Figures/Velocity_FE_vs_PCE_CFL_01.png  used on input
- line 1167.
+ line 1149.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-
-Overfull \hbox (44.97987pt too wide) in paragraph at lines 1154--1174
-\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 E[]$ \OT1/cmr/m/n/12 sec-onds. []
- []
-
-./LME-MPM.tex:1199: Undefined control sequence.
+./LME-MPM.tex:1181: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1199 \begin{figure}\sidecaption
+l.1181 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1708,14 +1640,31 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Velocity_LME_gamma_comparative.png, id=115, 488.5452pt x 666.3294pt>
+<./Figures/Velocity_LME_gamma_comparative.png, id=110, 488.5452pt x 666.3294pt>
 
 File: ./Figures/Velocity_LME_gamma_comparative.png Graphic file (type png)
 <use ./Figures/Velocity_LME_gamma_comparative.png>
 Package pdftex.def Info: ./Figures/Velocity_LME_gamma_comparative.png  used on 
-input line 1203.
+input line 1185.
 (pdftex.def)             Requested size: 390.0pt x 531.93567pt.
-[21 <./Figures/Error_evol.png>]
+[20 <./Figures/Error_evol.png>] [21 <./Figures/Velocity_FE_vs_PCE_CFL_01.png>]
+./LME-MPM.tex:1206: Undefined control sequence.
+<recently read> \sidecaption 
+                             
+l.1206 \begin{figure}\sidecaption
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=119, 462.528pt x 346.896pt>
+File: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png Graphic file (type png)
+<use ./Figures/Velocity_uGIMP_vs_LME_Dyka.png>
+Package pdftex.def Info: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png  used on inpu
+t line 1210.
+(pdftex.def)             Requested size: 390.0pt x 292.5128pt.
 ./LME-MPM.tex:1224: Undefined control sequence.
 <recently read> \sidecaption 
                              
@@ -1727,37 +1676,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=120, 462.528pt x 346.896pt>
-File: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png Graphic file (type png)
-<use ./Figures/Velocity_uGIMP_vs_LME_Dyka.png>
-Package pdftex.def Info: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png  used on inpu
-t line 1228.
-(pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-[22 <./Figures/Velocity_FE_vs_PCE_CFL_01.png>] [23 <./Figures/Velocity_LME_gamm
-a_comparative.png>]
-./LME-MPM.tex:1242: Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1242 \begin{figure}\sidecaption
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=129, 462.528pt x 346.896pt>
+<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=120, 462.528pt x 346.896pt>
 File: ./Figures/Velocity_MPM_vs_OTM_Dyka.png Graphic file (type png)
 <use ./Figures/Velocity_MPM_vs_OTM_Dyka.png>
 Package pdftex.def Info: ./Figures/Velocity_MPM_vs_OTM_Dyka.png  used on input 
-line 1246.
+line 1228.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-[24 <./Figures/Velocity_uGIMP_vs_LME_Dyka.png>] [25 <./Figures/Velocity_MPM_vs_
-OTM_Dyka.png>]
-./LME-MPM.tex:1261: Undefined control sequence.
+[22] [23 <./Figures/Velocity_LME_gamma_comparative.png>] [24 <./Figures/Velocit
+y_uGIMP_vs_LME_Dyka.png> <./Figures/Velocity_MPM_vs_OTM_Dyka.png>]
+./LME-MPM.tex:1243: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1261 \begin{figure}\sidecaption
+l.1243 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1923,32 +1853,32 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-) [26
+) [25
 
 ]
-<Figures/Block_LME3_PCE_a_t0.png, id=142, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_a_t0.png, id=137, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_a_t0.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_a_t0.png>
-Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 13
-15.
+Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 12
+97.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures/Block_LME3_PCE_b_t025.png, id=143, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_b_t025.png, id=138, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_b_t025.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_b_t025.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_b_t025.png  used on input line 
-1318.
+1300.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures/Block_LME3_PCE_c_t1.png, id=144, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_c_t1.png, id=139, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_c_t1.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_c_t1.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_c_t1.png  used on input line 13
-21.
+03.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
 
-./LME-MPM.tex:1352: Undefined control sequence.
+./LME-MPM.tex:1334: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1352 \begin{figure}\sidecaption
+l.1334 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1956,37 +1886,37 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Block_CFL_01_Comparative.png, id=145, 462.528pt x 346.896pt>
+<./Figures/Block_CFL_01_Comparative.png, id=140, 462.528pt x 346.896pt>
 File: ./Figures/Block_CFL_01_Comparative.png Graphic file (type png)
 <use ./Figures/Block_CFL_01_Comparative.png>
 Package pdftex.def Info: ./Figures/Block_CFL_01_Comparative.png  used on input 
-line 1356.
+line 1338.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-[27 <./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.png> <
-./Figures/Block_LME3_PCE_c_t1.png>] [28 <./Figures/Block_CFL_01_Comparative.png
+[26 <./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.png> <
+./Figures/Block_LME3_PCE_c_t1.png>] [27 <./Figures/Block_CFL_01_Comparative.png
 >]
 
-./LME-MPM.tex:1392: LaTeX Error: Environment acknowledgements undefined.
+./LME-MPM.tex:1374: LaTeX Error: Environment acknowledgements undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1392 \begin{acknowledgements}
+l.1374 \begin{acknowledgements}
                                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./LME-MPM.tex:1395: LaTeX Error: \begin{document} ended by \end{acknowledgement
+./LME-MPM.tex:1377: LaTeX Error: \begin{document} ended by \end{acknowledgement
 s}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1395 \end{acknowledgements}
+l.1377 \end{acknowledgements}
                              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1999,19 +1929,19 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
 No file LME-MPM.gls.
 No file LME-MPM.acr.
-[29] [30]
-Overfull \hbox (42.77832pt too wide) in paragraph at lines 1510--1516
+[28] [29]
+Overfull \hbox (42.77832pt too wide) in paragraph at lines 1492--1498
 \OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 dif-fer-ent eigen-val-ues $\OMS/cmsy/m/n/12
  f\OML/cmm/m/it/12 ^^U[]; ^^U[]; [] ; ^^U[]; [] ^^U[]\OMS/cmsy/m/n/12 g$ \OT1/c
 mr/m/n/12 and $\OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 eigen-vec-tors $\OMS/cmsy/m/
 n/12 f[]\OML/cmm/m/it/12 ; []; [] ; []; [] []\OMS/cmsy/m/n/12 g$
  []
 
-[31]
-./LME-MPM.tex:1631: Undefined control sequence.
+[30]
+./LME-MPM.tex:1613: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1631 \begin{figure}\sidecaption
+l.1613 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2019,16 +1949,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/1D_right_Velocity.png, id=166, 462.528pt x 346.896pt>
+<Figures/1D_right_Velocity.png, id=160, 462.528pt x 346.896pt>
 File: Figures/1D_right_Velocity.png Graphic file (type png)
 <use Figures/1D_right_Velocity.png>
-Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1635
+Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1617
 .
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-./LME-MPM.tex:1641: Undefined control sequence.
+./LME-MPM.tex:1623: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1641 \begin{figure}\sidecaption
+l.1623 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2036,12 +1966,12 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/1D_left_Stress.png, id=167, 462.528pt x 346.896pt>
+<Figures/1D_left_Stress.png, id=161, 462.528pt x 346.896pt>
 File: Figures/1D_left_Stress.png Graphic file (type png)
 <use Figures/1D_left_Stress.png>
-Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1645.
+Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1627.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-(./LME-MPM.bbl [32] [33 <./Figures/1D_right_Velocity.png>] [34 <./Figures/1D_le
+(./LME-MPM.bbl [31] [32 <./Figures/1D_right_Velocity.png>] [33 <./Figures/1D_le
 ft_Stress.png>]
 Overfull \hbox (75.2845pt too wide) in paragraph at lines 36--43
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 https://www.sciencedirect.com/science/arti
@@ -2068,10 +1998,10 @@ Underfull \hbox (badness 2368) in paragraph at lines 75--79
 th-
  []
 
-[35]
+[34]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no Ÿ in font cmr12!
- [36]
+ [35]
 Underfull \hbox (badness 6893) in paragraph at lines 158--163
 []\OT1/cmr/m/n/12 T. J. Charl-ton, W. M. Coombs, C. E. Au-garde, iGIMP:
  []
@@ -2100,7 +2030,7 @@ Overfull \hbox (69.1095pt too wide) in paragraph at lines 165--172
 le/pii/S0045782517301779 
  []
 
-[37]
+[36]
 ./LME-MPM.bbl:213: Misplaced alignment tab character &.
 l.213   algorithm, Computers &
                                Structures - COMPUT STRUCT 53 (1994) 27--33.
@@ -2149,42 +2079,42 @@ a-
 
 Package natbib Warning: There were undefined citations.
 
-[38] (./LME-MPM.aux)
+[37] (./LME-MPM.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 24383 strings out of 492982
- 479958 string characters out of 6134895
- 657824 words of memory out of 5000000
- 27371 multiletter control sequences out of 15000+600000
+ 24377 strings out of 492982
+ 479735 string characters out of 6134895
+ 657764 words of memory out of 5000000
+ 27366 multiletter control sequences out of 15000+600000
  19411 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,16n,79p,1972b,832s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msam10.pfb>
-Output written on LME-MPM.pdf (38 pages, 1930696 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/symbols/msam10.pfb>
+Output written on LME-MPM.pdf (37 pages, 1759176 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 254 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

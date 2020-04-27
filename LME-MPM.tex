@@ -180,12 +180,16 @@
 % End glossaries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\red}[1]{
+\newcommand{\PNA}[1]{
   \textcolor{red}{{#1}}
 }
 
 \newcommand{\MMP}[1]{
   \textcolor{blue}{{#1}}
+}
+
+\newcommand{\MMS}[1]{
+  \textcolor{gree}{{#1}}
 }
 
 
@@ -234,7 +238,7 @@
 \title{Enhanced Material Point Method to face
   dynamic problems: Local-maximum entropy approximation and explicit
   predictor-corrector scheme\\
-  \red{On the dynamic assessment of the Local-Maximum Entropy Material Point Method through an Explicit Predictor-Corrector Scheme}}
+  \PNA{On the dynamic assessment of the Local-Maximum Entropy Material Point Method through an Explicit Predictor-Corrector Scheme}}
 
 %% Group authors per affiliation:
 \author{
@@ -256,21 +260,21 @@ and Miguel Martín Stickle$^a$
   integration scheme to filter spurious noises. To overcome this
   limitation in this paper, an Explicit Predictor-Corrector time
   integration scheme has been proposed. Its \textcolor{red}{powerful}
-  \cancel{superior} performance mitigates the presence of spurious
-  oscillations with minimal dissipation in high frequency
-  problems. Other source of numerical noise in \acrshort{mpm} occurs
-  when the material points cross computational grid boundaries, being
-  this issue motivated by the lack of smoothness of the interpolation
-  functions. This noise results in spurious local variations at the
-  material points, where strain-stress fields are computed. This could
-  lead to inaccurate solutions as well as aborted simulations in the
-  worst cases. To overcome it, this document adopts the \acrfull{lme}
-  approximation schemes as a robust substitute of the traditional shape function in
-  \acrshort{mpm}. \acrshort{lme} approximation may be regarded
-  as a \textit{thermalization} of Delaunay triangulation which resolves the
+  performance mitigates the presence of spurious oscillations with
+  minimal dissipation in high frequency problems. Other source of
+  numerical noise in \acrshort{mpm} occurs when the material points
+  cross computational grid boundaries, being this issue motivated by
+  the lack of smoothness of the interpolation functions. This noise
+  results in spurious local variations at the material points, where
+  strain-stress fields are computed. This could lead to inaccurate
+  solutions as well as aborted simulations in the worst cases. To
+  overcome it, this document adopts the \acrfull{lme} approximation
+  schemes as a robust substitute of the traditional shape function in
+  \acrshort{mpm}. \acrshort{lme} approximation may be regarded as a
+  \textit{thermalization} of Delaunay triangulation which resolves the
   degenerate cases resulting from the lack or uniqueness of the
-  triangulation. Furthermore, by modifying a regularization parameter they
-  are able to behave finite element like or as a meshfree
+  triangulation. Furthermore, by modifying a regularization parameter
+  they are able to behave finite element like or as a meshfree
   method. This capability allows to face a wide range of physics
   with a single shape function family. Finally this paper demonstrates
   the performance of both improvements thorough numerical examples.    
@@ -289,13 +293,12 @@ and Miguel Martín Stickle$^a$
 Since the proposal of \acrshort{mpm} by Sulsky {\it  et al.}
 (1994)~\cite{Sulsky1994} as a generalization to solids of the \acrfull{flip} method~\cite{Brackbill1986}, its popularity
 has increased due to its ability to deal with large strain regime
-without suffer mesh distortion inaccuracies. \red{One of the main fields where this method is strong is the dynamic one since the original time integration scheme proposed was the \acrfull{fe}~\cite{Sulsky1994}, carried out in a explicit manner. However, in this type or problems, the main instabilities of the original \acrshort{mpm} are even marked.}
+without suffer mesh distortion inaccuracies. \PNA{One of the main fields where this method is strong is the dynamic one since the original time integration scheme proposed was the \acrfull{fe}~\cite{Sulsky1994}, carried out in a explicit manner. However, in this type or problems, the main instabilities of the original \acrshort{mpm} are even marked.}
 
-\cancel{However, this method suffers other kind of instabilities, such those} \red{On the one hand, the main source of instability occurs}
-when material points cross cell boundaries. This \cancel{give rise to} provoked the
-development of other interpolation techniques to overcome this
-limitation such as the \acrfull{gimp} method Bardenhagen \& Kober
-(2004)~\cite{Bardenhagen2004}, which has
+\PNA{On the one hand, the main source of instability occurs} when
+material points cross cell boundaries. This provoked the development
+of other interpolation techniques to overcome this limitation such as
+the \acrfull{gimp} method Bardenhagen \& Kober (2004)~\cite{Bardenhagen2004}, which has
 demonstrated to have a good performance in the finite deformation
 regime. However, in the absence of a regular grid, construction of the
 weighting functions is only achieved at considerable effort and
@@ -319,8 +322,7 @@ reconstruction proposed by Wobbes {\it et al.}
 (2018)~\cite{E_Wobbes_2018}. Unfortunately, when particles are spread in
 a challenging way, the quality of the \acrshort{ctls} approximation decreases locally.
 
-This document adopts the \acrfull{lme}, or Local \textit{Max-Ent} approximates, as a robust substitute \cancel{for the
-wide range of} \red{of the aforementioned} shape functions in \acrshort{mpm}. First introduced by Arroyo \& Ortiz
+This document adopts the \acrfull{lme}, or Local \textit{Max-Ent} approximates, as a robust substitute \PNA{of the aforementioned} shape functions in \acrshort{mpm}. First introduced by Arroyo \& Ortiz
 (2006)~\cite{Arroyo2006}, it belongs to the class of convex 
 approximation schemes and provides a seamless transition between
 \acrshort{fem} and meshfree interpolations. The
@@ -337,7 +339,7 @@ approximation for related functions~\cite{Arroyo2006}. Important contributions o
 the dynamic regime by other researchers, being important the contributions of Li {\it et al.} (2012)~\cite{Li2012} and Navas {\it et al.}
 (2018)~\cite{Navas:17b,Navas2018a} in the explicit regime and Navas {\it et al.}~\cite{Navas2016,Navas2016b,Navas:17c} and Wriggers and coworkers~\cite{Wriggers18} with implicit schemes. And more
 recently, under \acrshort{mpm} framework, the work made by Wobbes {\it et
-  al.}(2020)~\cite{Wobbes2020}. \cancel{but without exploring} \red{The proposed research delves into the benefits of
+  al.}(2020)~\cite{Wobbes2020}.\PNA{The proposed research delves into the benefits of
 the regularization parameter, \gls{LME-beta}, and the analogy of the different obtained shape functions derive by the tuning of this parameter and the traditional \acrshort{mpm} ones.}
 
 The aforementioned techniques are devoted to mitigate the
@@ -350,8 +352,7 @@ approach has been widely employed in this and many other numerical
 techniques. To avoid introducing this nonphysical sources, many
 researchers has proposed alternative time integration
 schemes which reduce the presence of high frequency noises by
-filtering them or increasing \red{somehow} the accuracy. \cancel{of
-  the time integration scheme.} \MMP{One of the first attempts of it was
+filtering them or increasing \PNA{somehow} the accuracy. \MMP{One of the first attempts of it was
 the proposal of an implicit time integration scheme by Guilkey \&
 Weiss \cite{Guilkey_2003}. More recently Wang {\it et al.}
 \cite{Wang_2016} to downsize this spurious noises add a nonvoiscous
@@ -376,7 +377,7 @@ framework in~\cite{Navas2018a}.
 The aim of this document is to mitigate the spurious oscillations due
 inaccuracies in both space and time discretization by the employment of a
 suitable combination of the \acrshort{lme} family shape functions, and the proposal of an explicit predictor-corrector scheme. The advantages of
-this approach will be illustrated through several \cancel{simple but} challenging test cases \red{on the elastic regime}: the
+this approach will be illustrated through several challenging test cases \PNA{on the elastic regime}: the
 propagation of shock waves in a elastic bar and the response of a block of soil gradually loaded with gravitational forces.
 
 The article is organised as follows. Section \ref{sec:meshfree-methodology}
@@ -417,7 +418,7 @@ divergence operator, and finally $\Grad{\Box}$ and $\GradS{\Box}$
 denotes the gradient and its symmetric part. Einstein subscripts
 convention is adopted therefore repeated index means addition.  
 
-\red{Following, the \acrshort{mpm} methodology, the explicit predictor-corrector scheme and \acrshort{lme} approximation shape functions are describe in subsection \ref{sec:derivation-mpm},\ref{sec:epc-algor-mpm} and \ref{sec:local-max-ent} respectively.}
+\PNA{Following, the \acrshort{mpm} methodology, the explicit predictor-corrector scheme and \acrshort{lme} approximation shape functions are describe in subsection \ref{sec:derivation-mpm},\ref{sec:epc-algor-mpm} and \ref{sec:local-max-ent} respectively.}
 
 \subsection{Derivation of MPM procedure}
 \label{sec:derivation-mpm}
@@ -442,7 +443,7 @@ of the system. Now the variable $\phi =
 (\tens{\varepsilon},\tens{\sigma})$ is defined as the set of \textit{local
   states} at any point of the continuum which can be derived from the
 field \gls{u} through the following set of governing equations and
-restrictions that must be satisfied. \red{First (i) the \textit{compatibility
+restrictions that must be satisfied. \PNA{First (i) the \textit{compatibility
   equation}, where the the strain field \gls{strain} is extracted from \gls{u} is defined as:}
 \begin{equation}
   \label{eq:Compatibility-equation}
@@ -450,7 +451,7 @@ restrictions that must be satisfied. \red{First (i) the \textit{compatibility
 \end{equation}
 together with essential boundary conditions of Dirichlet type \gls{dirichlet-boundary}. An additional consideration over the strain field is
 the assumption of inifinitesimal strain, therefore second order terms
-in the spatial derivatives can be neglected. \red{Therefore, the stress field \gls{stress} will be considered the corresponding conjugate variable for the strain field, being the one} which satisfies (ii) the \textit{conservation of
+in the spatial derivatives can be neglected. \PNA{Therefore, the stress field \gls{stress} will be considered the corresponding conjugate variable for the strain field, being the one} which satisfies (ii) the \textit{conservation of
   momentum equation}:
 \begin{equation}
   \label{eq:Balance-momentum}
@@ -463,7 +464,7 @@ strain tensor with the stress tensor:
   \label{eq:Constitutive-equation}
 \tens{\sigma} = \tens{D} \colon \tens{\varepsilon}.
 \end{equation}
-\red{In this research, plane strain Linear Elasticity has been considered. Thus the constitutive tensor, \tens{D}, is the well known linear elastic one.} The final restriction is (iv) the mass conservation, which can be obtained by
+\PNA{In this research, plane strain Linear Elasticity has been considered. Thus the constitutive tensor, \tens{D}, is the well known linear elastic one.} The final restriction is (iv) the mass conservation, which can be obtained by
 setting to zero the total derivative of the density field,
 \begin{equation}
   \label{eq:Rho-material-derivative}
@@ -509,7 +510,7 @@ Initial values of position,
 velocity, mass, volume and stress denoted by $\vec{x}_p$,
 $\vec{v}_p$, $m_p$,  $V_p$ and $\tens{\sigma}_p$ respectively are assigned to each material point, which also owns the
 virtual displacement field $\vect{u}^{\psi}_{p}$. Therefore, employing
-the definition of the material integral, where Riemann \red{ALGUNA CITA AQUI}
+the definition of the material integral, where Riemann \PNA{ALGUNA CITA AQUI}
 integral definition is recovered as an addition of a finite set of points, and
 their volumes are interpreted as quadrature weights. Consequently,
 individual terms in \eqref{eq:BalanceMomentum_wf} are solved as follows. 
@@ -544,7 +545,7 @@ individual terms in \eqref{eq:BalanceMomentum_wf} are solved as follows.
 where $h$ is the thickness of the continuum in a 2D case. Following, the aforementioned second discretization procedure appears. A background mesh
 composed by a finite set of grid points with coordinates $\vec{x}_I\
 , I = 1,2\ldots ,N_n$, is generated, being $N_n$ the number of grid
-nodes. \red{Spatial derivatives, such as gradients and
+nodes. \PNA{Spatial derivatives, such as gradients and
 divergences, are computed through the support of the background mesh.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -604,8 +605,7 @@ This leads to a suitable equation to update the density field:
   \label{eq:MassConservation}
 \dot{\rho} = - \rho\ \mathit{trace} \left( \dot{\tens{\varepsilon}} \right).
 \end{equation}
-Finally, to solve the equation \eqref{eq:particle_balance_forces3}, a second order
-\cancel{temporal} \red{time} integration scheme is required. Therefore, time is
+Finally, to solve the equation \eqref{eq:particle_balance_forces3}, a second order \PNA{time} integration scheme is required. Therefore, time is
 discretized into a finite set of time steps $k = 1\ldots ,Nt$, where $k$ is the current time step and $N_t$
 is the total number of time steps. Once the nodal equilibrium equation is solved, the values at the nodes are
 interpolated back into the particles, which are advected
@@ -615,7 +615,7 @@ to the new position through:
   \dot{\vec{v}}_p = N_{Ip}\ \vec{a}_{I},\quad and\quad
   \dot{\vec{x}}_{p} = N_{Ip}\ \vec{v}_{I}  
 \end{equation}
-\red{Traditionally, Eqs.
+\PNA{Traditionally, Eqs.
 \eqref{eq:particle_balance_forces3} and ~\eqref{eq:Updated_Lagrangian},
 are solved with an explicit forward Euler algorithm. In the following subsection, this and the proposed schemes are described}.
 
@@ -624,7 +624,7 @@ are solved with an explicit forward Euler algorithm. In the following subsection
 %\subsection{Explicit predictor-corrector scheme for \acrshort{mpm}.}
 \label{sec:epc-algor-mpm}
 
-\red{As was stated previosuly, an explicit forward Euler algorithm has been utilized widely within the \acrshort{MPM} methodology. This scheme has been described in detail by many researchers
+\PNA{As was stated previosuly, an explicit forward Euler algorithm has been utilized widely within the \acrshort{MPM} methodology. This scheme has been described in detail by many researchers
 \cite{Sulsky1994}, \cite{Bardenhagen2002}, \cite{thesis_Andersen_2009} and can be sketched by the scheme of the figure~\ref{fig:MPM_algorithm}.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
@@ -649,8 +649,8 @@ was employed to update the particles as
   \vect{x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{v}_{I}^{k}.
 \end{equation}
 However, as Andersen (2009)\cite{thesis_Andersen_2009} pointed out, this algorithm has been shown to be numerically unstable due to that
-$\vect{f}_I^{int,k}$ can be finite for an infinitesimal nodal mass
-$\tens{m}$\red{NO ENTIENDO??}. This issue may lead to numerical issues when nodal acceleration
+$\vect{f}_I^{int,k}$ can be infinite for an infinitesimal nodal mass
+$\tens{m}$. This issue may lead to numerical issues when nodal acceleration
 is obtained in the evaluation of the Eqs. \eqref{eq:Sulsky-1994-UL-x} and \eqref{eq:Sulsky-1994-UL-v}. Hence, a
 corrected version of this algorithm was proposed by Zhang {\it et al.}
 (2016)\cite{Zhang_book_2016}:
@@ -696,7 +696,7 @@ $\gamma = 0.5$ and $\beta = 0$. This method is devoted to solve a system of equa
   \Matrix{M}_{IJ}\ddot{\Vector{d}}_{J} + \Matrix{C}_{IJ}\dot{\Vector{d}}_{J} +
   \Matrix{K}_{IJ}\Vector{d}_{J} = \Vector{F}_{I}.
 \end{equation*}
-\red{The nodal \acrshort{mpm} stage allows to apply this method
+\PNA{The nodal \acrshort{mpm} stage allows to apply this method
 in the \acrshort{mpm} framework in a similar manner that the one
 proposed by Tran~\it{et al.}~\cite{Tran2019e}. Taking into account the predictor definition, it is possible to calculate
 nodal velocities and update particles position employing nodal values
@@ -823,8 +823,9 @@ over the standard forward Euler. The full implementation is summarized in the al
     \vec{f}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$ by evaluating
     \eqref{eq:nodal_internal_forces} and
     \eqref{eq:nodal_external_forces} in the time step $k+1$.
-    In the grid node, $I$ is fixed in one of the spatial dimensions, set it to
-    zero to make the grid nodal acceleration zero in that direction.\red{NO ENTIEND??}\\
+    \MMP{In those nodes where $\Deriv{\vect{v}_I^{k}}{t} \big\rvert_{\Gamma_d} = 0$,
+      the acceleration is fixed to zero and nodal forces are stored as
+      reactions.}\\
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Explicit Newmark Corrector}:
     \begin{equation*}
@@ -854,12 +855,12 @@ the recent years due to its ability to deal with large strain problems
 without mesh distorsion issues inherent to mesh based methods like
 \acrshort{fem}, see Wi{\c{e}}ckowski \cite{Wieckowski2004}. However, in the simulations
 made with the original \acrshort{mpm}, numerical noises appear when particles
-cross the cell boundaries. \red{Solving this issue is the main goal of the employment of the \acrshort{LME} shape functions}.
+cross the cell boundaries. \PNA{Solving this issue is the main goal of the employment of the \acrshort{LME} shape functions}.
 
 \acrfull{lme} approximation schemes were
 first introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} and has been
 recently tested under \acrshort{mpm} framework by Wobbes {\it et al.}
-(2020)\cite{Wobbes2020}. \red{The performed simulations of \acrshort{mpm}
+(2020)\cite{Wobbes2020}. \PNA{The performed simulations of \acrshort{mpm}
 within \acrshort{lme} in \cite{Wobbes2020} shows considerably more accurate stress
 approximations than traditional \acrshort{mpm} schemes. However, 
 how the regularization parameter $\beta$
@@ -968,7 +969,7 @@ controlled by adjusting a dimensionless parameter, $\gamma=\beta h^2$
 spacing. 
 Since $N_I$ is defined in the entire domain, in practice, the
 function $\exp(-\beta \vec{r} )$ truncated  by  a given tolerance,
-10$^{-6}$ \red{in this research} \cancel{for example},  would ensure a reasonable range of
+10$^{-6}$ \PNA{in this research},  would ensure a reasonable range of
 neighbours (see \cite{Arroyo2006} for details).
 This tolerance defines the limit values of the influence radius and is used thereafter to
 find the neighbour nodes of a given integration point. An additional remark is that, analogous to alternative non-polynomial meshfree basis functions, the \acrshort{lme} approximation scheme requires more than $d+1$ nodes to determine the values of the shape functions as well as their derivatives at any point in the convex hull of the nodal set, where $d$ is the dimension of the problem.
@@ -977,28 +978,15 @@ This interpolation technique avoids important shortcomings when using
 \acrshort{gimp} or B-Spline \acrshort{mpm} regarding the computational domain boundaries
 (see Steffen {\it et al.} (2008)\cite{Steffen2008b}), which are related to the
 additional considerations in the application of the boundary
-conditions. Motivated by their increased extents, particles may share an influence radius that lies outside of the simulation domain. Some researchers have solved this problem with the so called ``extra'' or ``ghost'' nodes \cancel{by other investigators}. These nodes require especial treatment, similar
+conditions. Motivated by their increased extents, particles may share an influence radius that lies outside of the simulation domain. Some researchers have solved this problem with the so called ``extra'' or ``ghost'' nodes. These nodes require especial treatment, similar
 to those employed in the \acrfull{sph}, for
 further details see Liu \& Liu (2003)\cite{Liu2003}. The approach here
 described does not requires the employment of this artifices.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
-  \centering
-  \resizebox{0.5\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/Particle-discretization}
-  }
-  \caption{This tolerance defines the limit values of the influence
-    radius and is used thereafter to find the neighbour nodes of a
-    given integration point. The picture also shows the neighbourhood
-    criterion to select those node inside of \gls{domain}.} 
-  \label{fig:Particle-discretization}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Due to the \short{fem}-compatibility, the \acrshort{lme} shape function is degenerated to
 linear finite element shape function if $d+1$ neighbouring nodes are
 chosen as the support. Furthermore, with a conveniently adopted
 \textit{regularization} parameter it is possible to get a \acrshort{gimp}-like
-shape function. A proof of this statements is observed in figure~\ref{fig:LME_MPM}\red{COMENTAR MAS; ES LA DIFERENCIA CON WOBBES}. 
+shape function. A proof of this statements is observed in figure~\ref{fig:LME_MPM}\PNA{COMENTAR MAS; ES LA DIFERENCIA CON WOBBES}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}
   \centering
@@ -1051,7 +1039,7 @@ norm, therefore the search area is geometrically a circle in 2D, or a
 sphere in 3D. Building upon the idea of anisotropic shape functions,
 \cite{Kochmann2019} introduced an enhanced version of the original
 \acrshort{lme} scheme, which uses an anisotropic support to deal with 
-tensile instability. \red{This is another benefit of the proposed methodology, that, although is out of the scope of the
+tensile instability. \PNA{This is another benefit of the proposed methodology, that, although is out of the scope of the
 present document, will be incorporated in future research.}
 
 \section{Application to linear elasticity dynamic problems.}
@@ -1072,7 +1060,7 @@ calculations a regular background mesh was set. All simulations were performed w
 \subsection{Dyka's bar \cite{Dyka1995}}
 \label{sec:dyka-bar}
 
-This benchmark was proposed \red{by Dyka~\cite{Dyka1995} since allows so study easily the capability}
+This benchmark was proposed \PNA{by Dyka~\cite{Dyka1995} since allows so study easily the capability}
 of the proposed time integration algorithm to avoid velocity
 field instabilities. It consists of a one-dimensional bar of a length of 0.1333 meters, sketched in the
 figure~\ref{fig:Dyka_Bar}. The boundary conditions are: displacements are constrained ($\vect{v} \rvert_{x=L} = 0$) in the right
@@ -1093,7 +1081,7 @@ left quarter of the bar. Finally, the elastic parameters considered for this tes
   \label{fig:Dyka_Bar}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this case, \cancel{a duration of } 0.0001 seconds \red{are considered }in the simulation. Therefore, the elastic wave generated travel through the bar
+In this case, 0.0001 seconds \PNA{are considered }in the simulation. Therefore, the elastic wave generated travel through the bar
 (from A to C and back to A) at least two times. For the spatial
 discretization, a set of seven nodal mesh sizes (0.1, 0.3325, 0.5,
 1.0, 3.3325, 6.665, 10.0 millimeters) are considered. For each element a number of
@@ -1131,7 +1119,7 @@ error is defined as
 \end{equation}
 where $\vect{v}_p$ and $\hat{\vect{v}}_p$ are respectively the analytical and
 numerical solutions evaluated in the final time step in the position
-of each particle. \red{In Fig. \ref{fig:Dyka-error-evol} the evolution of the RMS is obtained for both time integration schemes. The right figure, with the \acrshort{NPC} results, shows lower values of the estimated error, denoting the higher performance of this methodology. About the spatial discretization, the \acrshort{LME} schemes show an error comparable to the obtained with the \acrshort{uGIMP}, being even lower close to the grid-crossing region.}
+of each particle. \PNA{In Fig. \ref{fig:Dyka-error-evol} the evolution of the RMS is obtained for both time integration schemes. The right figure, with the \acrshort{NPC} results, shows lower values of the estimated error, denoting the higher performance of this methodology. About the spatial discretization, the \acrshort{LME} schemes show an error comparable to the obtained with the \acrshort{uGIMP}, being even lower close to the grid-crossing region.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{figure*}\sidecaption
@@ -1156,9 +1144,7 @@ schemes is plotted in figure \ref{fig:Dyka-NPC-FE}. It demonstrates the
 superior performance of the \acrshort{npc} \textit{versus} the \acrshort{fe}. In the \acrshort{npc} the
 spurious oscillations are quickly mitigated in the first time steps,
 and the error is not propagated in time, opposite to the results of the \acrshort{fe} scheme, where the
-simulation becomes unstable after $6E^{5}$ seconds. \cancel{Figure
-\ref{fig:Dyka-error-evol} also remarks the remarkable difference
-between both schemes.} 
+simulation becomes unstable after $6E^{5}$ seconds.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
@@ -1184,16 +1170,16 @@ materials. On the other hand larger values of the parameter $\beta$
 makes the solution tend to the linear \acrshort{fem} solution as the athermal limit is reached \cite{Arroyo2006}. Intermediate values of the
 regularization parameters give us a compromise between the both
 scenarios here described. An additional observation, concerning to the
-solution sensibility depending on the regularization parameters, \red{is the behaviour of the solution depending on the decreasing of mesh
+solution sensibility depending on the regularization parameters, \PNA{is the behaviour of the solution depending on the decreasing of mesh
 size}. For larger mesh sizes, where the relative particle displacement
 is negligible in comparison with the cell size, the global behaviour
-is \acrshort{fem}-like; therefore, larger values of $\gamma$ \red{may offer better results}. On the other hand, when mesh size is small enough to produce
+is \acrshort{fem}-like; therefore, larger values of $\gamma$ \PNA{may offer better results}. On the other hand, when mesh size is small enough to produce
 grid-crossing meshfree behaviour is required to ensure the
-convergence of the solution and tiny values of $\gamma$ \red{may lead to better
+convergence of the solution and tiny values of $\gamma$ \PNA{may lead to better
 performances}. Convergence plot in figure \eqref{fig:Dyka-error-evol}
 shows how the slope, for the larger values of $\gamma$, decreases
 monotonically with the value of the mesh size, in contrast with larger
-values of $\gamma$, \red{where the performance is punished with significant
+values of $\gamma$, \PNA{where the performance is punished with significant
 movement of the particles as far as the mesh size is reduced.} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
@@ -1209,17 +1195,17 @@ movement of the particles as far as the mesh size is reduced.}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\red{The performance of the
+\PNA{The performance of the
 \acrshort{ugimp}~\cite{Bardenhagen2004} shape function \textit{versus} the \acrshort{lme} approximation scheme with
 a dimensionless regularization parameter $\gamma$ of 4.0 is compared in Figure \ref{fig:Dyka-uGIMP-LME}. Although remarkable differences are not observed, more
 robust behaviour is exhibited by the \acrshort{lme} approximants than the \acrshort{ugimp} shape functions.} Regarding this, notice
 the absence of \acrshort{ugimp} values for a mesh size of 0.3325 and 0.5
-millimeters. \red{The reason is due to an unstable
+millimeters. \PNA{The reason is due to an unstable
 increasing of the error suffered during \acrshort{ugimp} simulations of these mesh sizes which yield unacceptable results}. A feasible
 explanation for this phenomena could be the presence of numerical
 cancellation which could produce gaps between voxels. Further research
 should be done in this direction for getting a better comprehension of
-this phenomenon. \red{Conversely, this shortcoming is not suffered by \acrshort{lme}, independently of regular or with irregular nodal layout.}
+this phenomenon. \PNA{Conversely, this shortcoming is not suffered by \acrshort{lme}, independently of regular or with irregular nodal layout.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering

@@ -5,12 +5,12 @@
                      '(("elsarticle" "preprint" "12pt" "a4paper")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("units" "ugly") ("glossaries" "acronym")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -36,8 +36,9 @@
     "glossaries")
    (TeX-add-symbols
     '("Deriv" ["argument"] 2)
+    '("MMS" 1)
     '("MMP" 1)
-    '("red" 1)
+    '("PNA" 1)
     '("Integral" 2)
     '("GradT" 1)
     '("GradS" 1)
@@ -98,7 +99,6 @@
     "eq:LME-grad-p"
     "eq:LME-f"
     "eq26"
-    "fig:Particle-discretization"
     "fig:LME_MPM"
     "sec:Application-linear-elasticity-dynamic-problems"
     "sec:dyka-bar"
