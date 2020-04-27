@@ -705,7 +705,7 @@ of velocity and acceleration.}
 
 The predictor-corrector algorithm has
 been described in the classic literature \cite{Hughes2000}, and its
-stability and computational advantages were widely proven by Liu
+stability and computational advantages were widely validated by Liu
 \cite{Xiaojian94}. The ``classic'' \acrfull{npc} algorithm starts with a
 predicted value of the nodal velocities at the $(k+1)$th time step, denoted by $\vec{\tilde{v}}_I^{k+1}$, which is calculated as follows:
 \begin{equation}
@@ -848,29 +848,33 @@ over the standard forward Euler. The full implementation is summarized in the al
   \end{algorithmic}
 \end{algorithm}
 
-\subsection{Local \textit{max-ent} approximants}
+\subsection{Local \textit{Max-Ent} approximants}
 \label{sec:local-max-ent}
-The popularity of \acrshort{mpm} has increase notoriously during
+The popularity of the \acrshort{mpm} has increased notoriously during
 the recent years due to its ability to deal with large strain problems
 without mesh distorsion issues inherent to mesh based methods like
-\acrshort{fem}, see Zdzislaw \cite{Wieckowski2004}. However, in the simulations
-made with the original \acrshort{mpm}, there are numerical noises when particles
-crossing the cell boundaries. \acrfull{lme} approximation schemes were
-first introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} has been
+\acrshort{fem}, see Wi{\c{e}}ckowski \cite{Wieckowski2004}. However, in the simulations
+made with the original \acrshort{mpm}, numerical noises appear when particles
+cross the cell boundaries. \red{Solving this issue is the main goal of the employment of the \acrshort{LME} shape functions}.
+
+\acrfull{lme} approximation schemes were
+first introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} and has been
 recently tested under \acrshort{mpm} framework by Wobbes {\it et al.}
-(2020)\cite{Wobbes2020} where they prof that simulations performed
-with \acrshort{lme}, shows considerably more accurate stress
-approximations for \acrshort{mpm}. Although, in \cite{Wobbes2020}
-authors does not deep in how the regularization parameter $\beta$
-affects to the accuracy and stability of the solution. The basic idea
-of the shape functions based on such an estimate is to interpret the shape function $N_I(\vec{x})$ as a probability. This allow us to introduce two important limits:
+(2020)\cite{Wobbes2020}. \red{The performed simulations of \acrshort{mpm}
+within \acrshort{lme} in \cite{Wobbes2020} shows considerably more accurate stress
+approximations than traditional \acrshort{mpm} schemes. However, 
+how the regularization parameter $\beta$
+affects to the accuracy and stability of the solution is not assessed deeply in that research, which is considered interesting in the present manuscript; the tuning of this $\beta$ parameter allows to make the comparison of the accuracy against analogous traditional \acrshort{mpm} shape function.} 
+
+The basic idea
+of the shape functions based on such an estimate is to interpret the shape function $N_I(\vec{x})$ as a probability. This allows us to introduce two important limits:
 the principle of maximum-entropy (\textit{max-ent}) statistical
 inference stated by \cite{Jaynes1957}, and the Delaunay triangulation
 which ensures the minimal width of the shape function. 
 
-This approximation scheme represents a optimal compromise, in the sense of
+This approximation scheme represents an optimal compromise, in the sense of
 Pareto, between the \textit{unbiased statistical inference} based on
-the nodal data which leads to the principle of \textit{maximum-entropy}
+the nodal data which leads to the principle of \textit{Maximum-Entropy}
 stated by Jaynes \cite{Jaynes1957}, and the definition of local shape
 functions of \textit{least width} the least biased shape functions.
 
@@ -897,7 +901,7 @@ given by
   \end{cases}
 \end{align*}
 On the other hand, the control of the shape function width and its
-dacay with distance away from the corresponding nodes is a desirable property. To reach to this objective \cite{Arroyo2006} propose the following linear program,
+decay with distance away from the corresponding nodes is a desirable property. To reach to this objective \cite{Arroyo2006} propose the following linear program,
 \begin{align*}
   \label{eq:RAJAN}
   \text{(RAJ)} \hspace{0.15cm} &\text{For fixed} \hspace{0.15cm}
@@ -922,8 +926,8 @@ To reach to a compromise between two competing objectives, a Pareto set is defin
     \sum\limits_{I=1}^{N_n}{N_I \vec{x}_I} = \vec{x} \\
   \end{cases}
 \end{align*}
-The regularization o \textit{thermalization} parameter
-between the two criterion $\beta$ has Pareto optimal values in the range
+The regularization or \textit{thermalization} parameter
+between the two criterion, $\beta$, has Pareto optimal values in the range
 $\beta \in (0,\infty)$. The unique solution of
 the local \textit{max-ent} problem \acrshort{lme}$_\beta$ is:
 \begin{equation}
@@ -937,7 +941,7 @@ where
 Z(\vec{x}, {\vec{\lambda}}) = \sum_{I=1}^{N_n}{ \exp \left[ -\beta \; |\vec{x}-\vec{x}_I|^2 + \vec{\lambda} \cdot (\vec{x}-\vec{x}_I)  \right]}
 \end{equation}
 being $\vec{\lambda}^*(\vec{x})$ the unique minimiser for the function $\log
-Z(\vec{x}, \vec{\lambda})$. The traditional way to obtain such a minimiser is using Eq.~(\ref{eq:LME-J}) to calculate small increments of $\partial\vec{\lambda}$ in a Newton-Raphson approach. Where $\tens{J}$ is the Hessian matrix, defined by:
+Z(\vec{x}, \vec{\lambda})$. The traditional way to obtain such a minimiser is using Eq.~(\ref{eq:LME-J}) to calculate small increments of $\partial\vec{\lambda}$ in a Newton-Raphson approach. $\tens{J}$ is defined as the Hessian matrix, obtained by:
 \begin{eqnarray}
   \label{eq:LME-J} 
   \tens{J}(\vec{x}, \vec{\lambda},\beta) &\equiv& \frac{\partial
@@ -955,7 +959,7 @@ where
   \label{eq:LME-f}
 f^*_I(\vec{x},  \vec{\lambda},\beta)=-\beta \, |\vec{x}-\vec{x}_I|^2 + \vec{\lambda}   \,  (\vec{x}-\vec{x}_I)
 \end{equation}
-Employing the chain rule, rearranging and considering $\beta$ as a constant, Arroyo and Ortiz~\cite{Arroyo2006} obtained the following expression for the gradient of the sahep function.
+Employing the chain rule, rearranging and considering $\beta$ as a constant, Arroyo and Ortiz~\cite{Arroyo2006} obtained the following expression for the gradient of the shape function.
 \begin{eqnarray}
 \nabla N_I^* &=& -N_I^* \,  (\tens{J}^*)^{-1} \,  (\vec{x} - \vec{x}_I) \label{eq26} 
 \end{eqnarray}
@@ -965,22 +969,19 @@ controlled by adjusting a dimensionless parameter, $\gamma=\beta h^2$
 spacing. 
 Since $N_I$ is defined in the entire domain, in practice, the
 function $\exp(-\beta \vec{r} )$ truncated  by  a given tolerance,
-10$^{-6}$, for example,  would ensure a reasonable range of
-neighbours, see \cite{Arroyo2006} for details.
+10$^{-6}$ \red{in this research} \cancel{for example},  would ensure a reasonable range of
+neighbours (see \cite{Arroyo2006} for details).
 This tolerance defines the limit values of the influence radius and is used thereafter to
-find the neighbour nodes of a given integration point. An aditional remark is that in similariti  to alternative non-polynomial meshfree basis functions, the \acrshort{lme} approximation scheme requires more than $d+1$ nodes to determine the values of the shape functions as well as their derivatives at any point in the convex hull of the nodal set, where $d$ is the dimension of the problem.
+find the neighbour nodes of a given integration point. An additional remark is that, analogous to alternative non-polynomial meshfree basis functions, the \acrshort{lme} approximation scheme requires more than $d+1$ nodes to determine the values of the shape functions as well as their derivatives at any point in the convex hull of the nodal set, where $d$ is the dimension of the problem.
 
-This interpolation technique avoid one important shortcoming when using
+This interpolation technique avoids important shortcomings when using
 \acrshort{gimp} or B-Spline \acrshort{mpm} regarding the computational domain boundaries
-Steffen {\it et al.} (2008)\cite{Steffen2008b}. Which is the
-additional considerations in the applications of the boundary
-conditions. This is motivated because of their increased extents, it
-is possible for particles to influence, and be influenced by, nodes
-that lie outside of the simulation domain. Some researchers have solve
-this problems with ``extra'', or the called ``ghost'' nodes by other investigators. Anyway this nodes requires especial treatments similar
+(see Steffen {\it et al.} (2008)\cite{Steffen2008b}), which are related to the
+additional considerations in the application of the boundary
+conditions. Motivated by their increased extents, particles may share an influence radius that lies outside of the simulation domain. Some researchers have solved this problem with the so called ``extra'' or ``ghost'' nodes \cancel{by other investigators}. These nodes require especial treatment, similar
 to those employed in the \acrfull{sph}, for
 further details see Liu \& Liu (2003)\cite{Liu2003}. The approach here
-described does not requires the employ of this artifacts.
+described does not requires the employment of this artifices.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
@@ -998,7 +999,7 @@ Due to the \short{fem}-compatibility, the \acrshort{lme} shape function is degen
 linear finite element shape function if $d+1$ neighbouring nodes are
 chosen as the support. Furthermore, with a conveniently adopted
 \textit{regularization} parameter it is possible to get a \acrshort{gimp}-like
-shape function. A proof of this statements is observed in figure~\ref{fig:LME_MPM}.  
+shape function. A proof of this statements is observed in figure~\ref{fig:LME_MPM}\red{COMENTAR MAS; ES LA DIFERENCIA CON WOBBES}. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}
   \centering
@@ -1044,42 +1045,41 @@ shape function. A proof of this statements is observed in figure~\ref{fig:LME_MP
   \label{fig:LME_MPM}
 \end{figure*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 In this research and in \cite{Arroyo2006}, $\Beta$ is a scalar as the
 influence area of the shape function is controlled by the Euclidean
 norm, therefore the search area is geometrically a circle in 2D, or a
 sphere in 3D. Building upon the idea of anisotropic shape functions,
 \cite{Kochmann2019} introduced an enhanced version of the original
 \acrshort{lme} scheme, which uses an anisotropic support to deal with 
-tensile inestability. Nonetheless this is out of the scope of the
-present document but will be incorporated in future research.
+tensile instability. \red{This is another benefit of the proposed methodology, that, although is out of the scope of the
+present document, will be incorporated in future research.}
 
 \section{Application to linear elasticity dynamic problems.}
 \label{sec:Application-linear-elasticity-dynamic-problems}
 
 This section is devoted to test the ability of both predictor-corrector
-time integration scheme and the local \textit{max-ent} approximants to
+time integration scheme and the Local \textit{Max-Ent} approximants to
 overcome spurious oscillations due to the grid crossing and high
-frequency loads under the context of \acrshort{mpm} Two different test has
-been adopted for this purpose, the benchmark proposed by Dyka \& Ingel
+frequency loads under the context of \acrshort{mpm}. Two different test have
+been adopted for this purpose: the benchmark proposed by Dyka \& Ingel
 (1995)\cite{Dyka1995} and the test proposed in the PhD thesis of
-Andersen (2009)\cite{thesis_Andersen_2009}. Thought them, the accuracy of the \acrshort{npc}
-scheme is compared to the standard \acrshort{fe}. In addition \acrshort{lme} solutions
+Andersen (2009)\cite{thesis_Andersen_2009}. On the one hand, the accuracy of the \acrfull{npc}
+scheme is compared to the standard \acrfull{fe} in order to assess the performance of the time integration schemes. On the other hand,  \acrshort{lme} solutions
 are compared with those provided by \acrfull{ugimp} and Q4 shape
 functions. To avoid some mesh-dependent issues, in all
-calculations a regular background mesh was setted. All simulations were performed with in-hose software.
+calculations a regular background mesh was set. All simulations were performed with in-hose software.
 
-\subsection{Dyka bar \cite{Dyka1995}}
+\subsection{Dyka's bar \cite{Dyka1995}}
 \label{sec:dyka-bar}
 
-This benchmark was proposed due to its ability to shows the capability
+This benchmark was proposed \red{by Dyka~\cite{Dyka1995} since allows so study easily the capability}
 of the proposed time integration algorithm to avoid velocity
-fields instabilities. It consists in a one-dimensional bar with a
-length of 0.1333 meters, sketched in the
-figure~\ref{fig:Dyka_Bar}. The boundary conditions are: in the right
-border displacement are constrained ($\vect{v} \rvert_{x=L} = 0$) and
-in the left displacement are let free ($\tens{\sigma} \rvert_{x=0} =
-0$). And a initial velocity of $\vect{v}_o = - 5\ m/s$ is given to the
-last quarter of it. Finally, the elastic parameters consider for this test are:
+field instabilities. It consists of a one-dimensional bar of a length of 0.1333 meters, sketched in the
+figure~\ref{fig:Dyka_Bar}. The boundary conditions are: displacements are constrained ($\vect{v} \rvert_{x=L} = 0$) in the right
+border, letting free in the rest of the body and ($\tens{\sigma} \rvert_{x=0} =
+0$). An initial velocity of $\vect{v}_o = - 5\ m/s$ is given to the
+left quarter of the bar. Finally, the elastic parameters considered for this test are:
 \begin{itemize} 
 \item  Density : $7833\ kg/m3$
 \item  Poisson ratio : $0$
@@ -1094,51 +1094,34 @@ last quarter of it. Finally, the elastic parameters consider for this test are:
   \label{fig:Dyka_Bar}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this case a duration of 0.0001 seconds for the simulation is
-consider. Therefore, the elastic wave generated travel thorough the bar
+In this case, \cancel{a duration of } 0.0001 seconds \red{are considered }in the simulation. Therefore, the elastic wave generated travel through the bar
 (from A to C and back to A) at least two times. For the spatial
-discretization we adopt a set of seven nodal mesh sizes (0.1, 0.3325, 0.5,
-1.0, 3.3325, 6.665, 10.0) in millimeters. For each element a number of
+discretization, a set of seven nodal mesh sizes (0.1, 0.3325, 0.5,
+1.0, 3.3325, 6.665, 10.0 millimeters) are considered. For each element a number of
 four particles was selected. In the initial layout, particles are
-occupying the exact quadrature points of a linear quadrilateral. With
-the exception of the \acrshort{ugimp} simulation where gaps or overlap between
-voxels of each particle are not allowed. In those cases, each particles
-occupy the center of each cell quarter. For all simulations, time step
+occupying the exact quadrature points of a linear quadrilateral, with
+the exception of the \acrshort{ugimp} simulation, where gaps or overlap between
+voxels of each particle are not allowed. In those cases, each particle
+occupies the center of each cell quarter. For all simulations, time step
 is controlled by a Courant-Friedrichs-Levy condition of 0.1, were the adopted
-celerity is computed as,
+celerity is computed as:
 \begin{equation}
   \label{eq:Cel}
-  Cel = \max\{\max_{p \in \Omega_p}\{ \vect{v}_p \} , \max_{p \in \Omega_p}\{ \sqrt{\frac{E_p}{\rho_p}} \} \}
+  Cel = \max\{\max_{p \in \Omega_p}\{ \vect{v}_p \} , \max_{p \in \Omega_p}\{ \sqrt{\frac{E_p}{\rho_p}} \} \}.
 \end{equation}
-A important consideration regarding modellization concerns to the
+An important consideration regarding modellization concerns to the
 background mesh. Notice that free border of the bar has a maximum
 horizontal displacement of 0.03 millimeters, therefore 
 a computational domain with an extra gap of 0.03 millimeters is
 required in order to accommodate the unconstrained displacement of the
-particles in the left border of the bar. Naturally this problem arise
+particles in the left border of the bar. Naturally this problem arises
 when the mesh size is small enough that relative displacement of the
-particles are larger then the distance to the border, so grid crossing
+particles is larger then the distance to the border, so grid crossing
 phenomena could appear even in those cases with infinitesimal
 displacements.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{figure*}\sidecaption
-  \centering
-  \resizebox{\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/Error_evol}
-  }
-  \caption{Velocity evolution at the point in the Dyka bar left side,
-    convergence plots for \acrshort{fe} and \acrshort{npc}. The plot is subdivided with
-    colours, the darker part of the diagram shows coincides when the
-    relative movement of the particles is large enough to produce the
-    grid crossing phenomena. The lightest part of the diagram
-    coincides when the relative movement of the particles in
-    negligible in comparison with the mesh size. And in the middle
-    region a transition behaviour take place.}
-  \label{fig:Dyka-error-evol}
-\end{figure*}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In this case, an analytical solution is possible
-thought the characteristics method described in the appendix
+
+In this case, an analytical solution can be obtained
+through the characteristics method, described in the appendix
 \ref{app:analytical_sol}. To measure the convergence of the solutions
 for the different time integration and approximation schemes the
 root-mean-square (RMS) error in the velocity field is computed. RMS
@@ -1149,14 +1132,34 @@ error is defined as
 \end{equation}
 where $\vect{v}_p$ and $\hat{\vect{v}}_p$ are respectively the analytical and
 numerical solutions evaluated in the final time step in the position
-of each particle. A first comparative between both time integration
-scheme is plotted in figure \ref{fig:Dyka-NPC-FE}. It demonstrates the
+of each particle. \red{In Fig. \ref{fig:Dyka-error-evol} the evolution of the RMS is obtained for both time integration schemes. The right figure, with the \acrshort{NPC} results, shows lower values of the estimated error, denoting the higher performance of this methodology. About the spatial discretization, the \acrshort{LME} schemes show an error comparable to the obtained with the \acrshort{uGIMP}, being even lower close to the grid-crossing region.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{figure*}\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/Error_evol}
+  }
+  \caption{Velocity error evolution at the point A in the Dyka's bar ,
+    convergence plots for \acrshort{fe} and \acrshort{npc}. The plot is subdivided with
+    colours, the darker part of the diagram shows coincides when the
+    relative movement of the particles is large enough to produce the
+    grid crossing phenomena. The lightest part of the diagram
+    coincides when the relative movement of the particles in
+    negligible in comparison with the mesh size. And in the middle
+    region a transition behaviour take place.}
+  \label{fig:Dyka-error-evol}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+A first comparative between the velocity results of both time integration
+schemes is plotted in figure \ref{fig:Dyka-NPC-FE}. It demonstrates the
 superior performance of the \acrshort{npc} \textit{versus} the \acrshort{fe}. In the \acrshort{npc} the
 spurious oscillations are quickly mitigated in the first time steps,
-and does not propagate the error in time in opposite to \acrshort{fe} where the
-simulation becomes unstable after $6E^{5}$ seconds. Figure
+and the error is not propagated in time, opposite to the results of the \acrshort{fe} scheme, where the
+simulation becomes unstable after $6E^{5}$ seconds. \cancel{Figure
 \ref{fig:Dyka-error-evol} also remarks the remarkable difference
-between both schemes. 
+between both schemes.} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
@@ -1169,31 +1172,30 @@ between both schemes.
   \label{fig:Dyka-NPC-FE}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Figure \eqref{fig:Dyka-LME-gamma} shows the sensibility of the \acrshort{lme}
-approximation scheme to variations in the a-dimensional parameter
-$\beta$ that controls the value of the regularization parameter
-$\gamma$ depending of the mesh size. Notice how lower values of
+approximation scheme to variations in the parameter
+$\gamma$, which is the one that controls the value of the regularization parameter
+$\beta$ together with of the mesh size. Notice how lower values of
 gamma exhibits a behaviour with a soft decay in some parts of the
 simulation due to the increase of nodes adopted to regularize the
 solutions. This capability could be useful in simulations where
 extremely noise oscillations could damage the solutions like memory
 materials. On the other hand larger values of the parameter $\beta$
-makes the solution tend to the linear \acrshort{fem} solution as the athermal
-limit is reached \cite{Arroyo2006}. Intermediate values of the
+makes the solution tend to the linear \acrshort{fem} solution as the athermal limit is reached \cite{Arroyo2006}. Intermediate values of the
 regularization parameters give us a compromise between the both
-scenarios here described. An additional observation concerning the
-solution sensibility to regularization parameters occurs when mesh
-size decreases. For larger mesh size where the relative particle displacement
+scenarios here described. An additional observation, concerning to the
+solution sensibility depending on the regularization parameters, \red{is the behaviour of the solution depending on the decreasing of mesh
+size}. For larger mesh sizes, where the relative particle displacement
 is negligible in comparison with the cell size, the global behaviour
-is \acrshort{fem}-like, therefore larger values of $\gamma$ has offers better
-results. On the other hand, when mesh size is small enough to produce
-grid-crossing and mesh-free behaviour is required to ensures the
-convergence of the solution, tiny values of $\gamma$ has a better
-performance. Convergence plot in figure \eqref{fig:Dyka-error-evol}
-shows how the slope for the larger values of $\gamma$ decreases
-monotonically with the value of the mesh size, in contrast to larger
-values of it, whose suffers a punishment of the performance when significant
-movement of the particles occurs as far mesh size is reduced.  
+is \acrshort{fem}-like; therefore, larger values of $\gamma$ \red{may offer better results}. On the other hand, when mesh size is small enough to produce
+grid-crossing meshfree behaviour is required to ensure the
+convergence of the solution and tiny values of $\gamma$ \red{may lead to better
+performances}. Convergence plot in figure \eqref{fig:Dyka-error-evol}
+shows how the slope, for the larger values of $\gamma$, decreases
+monotonically with the value of the mesh size, in contrast with larger
+values of $\gamma$, \red{where the performance is punished with significant
+movement of the particles as far as the mesh size is reduced.} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
@@ -1201,25 +1203,24 @@ movement of the particles occurs as far mesh size is reduced.
     \includegraphics[width=\textwidth]{./Figures/Velocity_LME_gamma_comparative}
   }
   \caption{Sensitive of LME approximants performance to changes in the
-    adimensional regularization parameter $\gamma = \beta/h^2$. To
+    dimensionless regularization parameter $\gamma = \beta/h^2$. To
     illustrate it, the velocity evolution at the point in the bar left side
     is plotted.}
   \label{fig:Dyka-LME-gamma}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Figure \ref{fig:Dyka-uGIMP-LME} compares the performance of the
+
+\red{The performance of the
 \acrshort{ugimp}~\cite{Bardenhagen2004} shape function \textit{versus} the \acrshort{lme} approximation scheme with
-a adimensional regularization parameter $\gamma$ of 4.0. Although it
-does not shows remarkable differences, \acrshort{lme} approximats exhibits a more
-robust behaviour than the \acrshort{ugimp} shape functions. Regarding this, notice
+a dimensionless regularization parameter $\gamma$ of 4.0 is compared in Figure \ref{fig:Dyka-uGIMP-LME}. Although remarkable differences are not observed, more
+robust behaviour is exhibited by the \acrshort{lme} approximants than the \acrshort{ugimp} shape functions.} Regarding this, notice
 the absence of \acrshort{ugimp} values for a mesh size of 0.3325 and 0.5
-millimeters. This is because during these simulation the \acrshort{ugimp} suffered an unstable
-increase of the error which yield unacceptable results. A feasible
+millimeters. \red{The reason is due to an unstable
+increasing of the error suffered during \acrshort{ugimp} simulations of these mesh sizes which yield unacceptable results}. A feasible
 explanation for this phenomena could be the presence of numerical
 cancellation which could produce gaps between voxels. Further research
 should be done in this direction for getting a better comprehension of
-this phenomena. In opposite, \acrshort{lme} approximation does not
-suffers this phenomena either with irregular nodal layout.
+this phenomenon. \red{Conversely, this shortcoming is not suffered by \acrshort{lme}, independently of regular or with irregular nodal layout.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
   \centering
@@ -1230,14 +1231,13 @@ suffers this phenomena either with irregular nodal layout.
   \label{fig:Dyka-uGIMP-LME}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Finally, figure \ref{fig:Dyka-OTM-MPM} compares the solution obtained
-with \acrshort{otm}~\cite{Li2010} \textit{versus} the solution obtained with \acrshort{mpm},
-both with same time integration scheme and spatial discretization. For
-this case the performance of \acrshort{mpm} is robust and stable than
+
+Finally, the \acrshort{otm}~\cite{Li2010} \textit{versus} obtained solution is compared against the one obtained with \acrshort{mpm}, both with same time integration scheme and spatial discretization, and results are shown in figure \ref{fig:Dyka-OTM-MPM}. In
+this case, the performance of \acrshort{mpm} presents better robustness and stability than the
 \acrshort{otm}. During the first half of the simulation both method 
 seem to perform in a similar way, but during the second half of the
 simulation after the elastic wave has travel from the free border to
-the fixed one and back, in \acrshort{otm} the solution becomes noisy than the
+the fixed one and back, in \acrshort{otm} the solution becomes more noisy than the
 one performed by \acrshort{mpm}.  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
@@ -1250,7 +1250,8 @@ one performed by \acrshort{mpm}.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Andersen block}
+\clearpage
+\subsection{Rigid block}
 \label{sec:andersen-block}
 
 The following test was proposed to measure proof the ability of this
@@ -1262,7 +1263,7 @@ loaded by a body force. Details of the problem are sketched in figure~\ref{fig:b
   \centering
   \resizebox{0.7\hsize}{!}{
     \input{Figures/Block.tex}}
-  \caption{Geometrical description of a soil block }.}
+  \caption{Geometrical description of a soil block }.
   \label{fig:block}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1500,7 +1501,7 @@ $\Vector{\phi}$ and $\Matrix{A}$ in coupling matrix between both equations,
 \end{equation*}
 Note that the nature of \label{eq:eq:System-stress-velocity-II} is still
 hyperbolic despite the fact it does not have a second order
-temporal derivative as \eqref{eq:1D-wave-elastic}. A proof of this can
+time derivative as \eqref{eq:1D-wave-elastic}. A proof of this can
 be easily obtained if we get the zeros of the hypersurface defined by
 \eqref{eq:1D-wave-elastic}. And later the eigenvalues of $\Matrix{A}$
 in \eqref{eq:System-stress-velocity-II}. In both cases, eigenvalues
