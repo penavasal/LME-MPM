@@ -77,11 +77,9 @@ M.~Arroyo, M.~Ortiz, {Local maximum-entropy approximation schemes: A seamless
   for Numerical Methods in Engineering\href
   {http://dx.doi.org/10.1002/nme.1534} {\path{doi:10.1002/nme.1534}}.
 
-\bibitem{Navas2018a}
-P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, M.~Pastor, {Optimal transportation
-  meshfree method in geotechnical engineering problems under large deformation
-  regime}, International Journal for Numerical Methods in Engineering\href
-  {http://dx.doi.org/10.1002/nme.5841} {\path{doi:10.1002/nme.5841}}.
+\bibitem{Sukumar15}
+D.~Mill\'an, N.~Sukumar, M.~Arroyo, Cell-based maximum-entropy approximants,
+  Comput. Meth. Appl. Mech. Engrg. 284 (2015) 712--731.
 
 \bibitem{Li2012}
 B.~Li, A.~Kidane, G.~Ravichandran, M.~Ortiz, {Verification and validation of
@@ -89,6 +87,45 @@ B.~Li, A.~Kidane, G.~Ravichandran, M.~Ortiz, {Verification and validation of
   International Journal of Impact Engineering\href
   {http://dx.doi.org/10.1016/j.ijimpeng.2011.11.003}
   {\path{doi:10.1016/j.ijimpeng.2011.11.003}}.
+
+\bibitem{Navas:17b}
+{Explicit meshfree solution for large deformation dynamic problems in saturated
+  porous media.}, Acta geotechnica 13 (2018) 227--242.
+\newblock \href {http://dx.doi.org/10.1007/s11440-017-0612-7}
+  {\path{doi:10.1007/s11440-017-0612-7}}.
+
+\bibitem{Navas2018a}
+P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, M.~Pastor, {Optimal transportation
+  meshfree method in geotechnical engineering problems under large deformation
+  regime}, International Journal for Numerical Methods in Engineering\href
+  {http://dx.doi.org/10.1002/nme.5841} {\path{doi:10.1002/nme.5841}}.
+
+\bibitem{Navas2016}
+P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, B.~Li, {B-bar based algorithm
+  applied to meshfree numerical schemes to solve unconfined seepage problems
+  through porous media}, Int. J. Numer. Anal. Methods Geomech. 40~(6) (2016)
+  962--984.
+\newblock \href {http://dx.doi.org/10.1002/nag.2472}
+  {\path{doi:10.1002/nag.2472}}.
+
+\bibitem{Navas2016b}
+{Dynamic consolidation problems in saturated soils solved through u-w
+  formulation in a {\{}LME{\}} meshfree framework}, Comput. Geotech. 79 (2016)
+  55--72.
+\newblock \href {http://dx.doi.org/10.1016/j.compgeo.2016.05.021}
+  {\path{doi:10.1016/j.compgeo.2016.05.021}}.
+
+\bibitem{Navas:17c}
+P.~Navas, L.~Sanavia, S.~L{\'{o}}pez-Querol, R.~C. Yu, u-w formulation for
+  dynamic problems in large deformation regime solved through an implicit
+  meshfree scheme., Comput. Mech. 62 (2018) 745--760.
+\newblock \href {http://dx.doi.org/10.1007/s00466-017-1524-y}
+  {\path{doi:10.1007/s00466-017-1524-y}}.
+
+\bibitem{Wriggers18}
+C.Weißenfels, P.Wriggers, Stabilization algorithm for the optimal
+  transportation meshfree approximation scheme, Comput. Meth. Appl. Mech.
+  Engrg. 329 (2018) 421--443.
 
 \bibitem{Wobbes2020}
 E.~Wobbes, R.~Tielen, M.~M{\"{o}}ller, C.~Vuik, {Comparison and unification of
@@ -102,12 +139,36 @@ Q.~A. Tran, W.~So{\l}owski, {Temporal and null-space filter for the material
   Engineering\href {http://dx.doi.org/10.1002/nme.6138}
   {\path{doi:10.1002/nme.6138}}.
 
-\bibitem{Charlton2017}
+\bibitem{Guilkey_2003}
+J.~Guilkey, J.~Weiss, Implicit time integration for the material point method:
+  Quantitative and algorithmic comparisons with the finite element method,
+  International Journal for Numerical Methods in Engineering 57 (2003) 1323 --
+  1338.
+\newblock \href {http://dx.doi.org/10.1002/nme.729}
+  {\path{doi:10.1002/nme.729}}.
+
+\bibitem{Wang_2016}
+B.~Wang, P.~Vardon, M.~Hicks, Z.~Chen, Development of an implicit material
+  point method for geotechnical applications, Computers and Geotechnics 71
+  (2016) 159--167.
+\newblock \href {http://dx.doi.org/10.1016/j.compgeo.2015.08.008}
+  {\path{doi:10.1016/j.compgeo.2015.08.008}}.
+
+\bibitem{Charlton_2017}
 T.~J. Charlton, W.~M. Coombs, C.~E. Augarde, {iGIMP: An implicit generalised
   interpolation material point method for large deformations}, Computers {\&}
   Structures 190 (2017) 108--125.
 \newblock \href {http://dx.doi.org/10.1016/j.compstruc.2017.05.004}
   {\path{doi:10.1016/j.compstruc.2017.05.004}}.
+
+\bibitem{LU_2018}
+M.~Lu, J.~Zhang, H.~Zhang, Y.~Zheng, Z.~Chen,
+  \href{http://www.sciencedirect.com/science/article/pii/S0045782517301779}{Time-discontinuous
+  material point method for transient problems}, Computer Methods in Applied
+  Mechanics and Engineering 328 (2018) 663 -- 685.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.cma.2017.09.022}
+  {\path{doi:https://doi.org/10.1016/j.cma.2017.09.022}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0045782517301779}
 
 \bibitem{Wilson1972}
 E.~L. Wilson, I.~Farhoomand, K.~J. Bathe,
@@ -136,11 +197,6 @@ S.~G.~S. Bardenhagen, {Energy Conservation Error in the Material Point Method
 S.~M. Andersen, {Material-Point Analysis of Large-Strain Problems: modelling of
   landslides}, Ph.D. thesis, Department of Civil Engineering, Aalborg
   University (2009).
-
-\bibitem{Guilkey2003}
-J.~Guilkey, J.~A. Weiss, {Implicit time integration for the material point
-  method : Quantitative and algorithmic comparisons with the nite element
-  method}, International Journal for Numerical Methods in Engineering.
 
 \bibitem{Zhang_book_2016}
 X.~Zhang, Z.~Chen, Y.~Liu, {The Material Point Method: A Continuum-Based

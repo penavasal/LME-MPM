@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  25 APR 2020 03:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.12)  27 APR 2020 13:33
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -99,122 +99,9 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box30
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
-)
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
-)
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-)
-\@linkdim=\dimen115
-\Hy@linkcounter=\count101
-\Hy@pagecounter=\count102
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
-)
-\Hy@SavedSpaceFactor=\count103
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-Package hyperref Info: Hyper figures OFF on input line 4509.
-Package hyperref Info: Link nesting OFF on input line 4514.
-Package hyperref Info: Hyper index ON on input line 4517.
-Package hyperref Info: Plain pages OFF on input line 4524.
-Package hyperref Info: Backreferencing OFF on input line 4529.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count104
-
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen116
-\Fld@menulength=\count105
-\Field@Width=\dimen117
-\Fld@charsize=\dimen118
-Package hyperref Info: Hyper figures OFF on input line 6369.
-Package hyperref Info: Link nesting OFF on input line 6374.
-Package hyperref Info: Hyper index ON on input line 6377.
-Package hyperref Info: backreferencing OFF on input line 6384.
-Package hyperref Info: Link coloring OFF on input line 6389.
-Package hyperref Info: Link coloring with OCG OFF on input line 6394.
-Package hyperref Info: PDF/A mode OFF on input line 6399.
-LaTeX Info: Redefining \ref on input line 6439.
-LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count106
-\c@Item=\count107
-\c@Hfootnote=\count108
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count109
-\c@bookmark@seq@number=\count110
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip47
-)
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count111
+\c@float@type=\count101
 \float@exts=\toks18
 \float@box=\box31
 \@float@everytoks=\toks19
@@ -229,31 +116,30 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen119
-\captionmargin@=\dimen120
-\captionwidth=\dimen121
-\caption@tempdima=\dimen122
-\caption@indent=\dimen123
-\caption@parindent=\dimen124
-\caption@hangindent=\dimen125
+\captionmargin=\dimen115
+\captionmargin@=\dimen116
+\captionwidth=\dimen117
+\caption@tempdima=\dimen118
+\caption@indent=\dimen119
+\caption@parindent=\dimen120
+\caption@hangindent=\dimen121
 )
-\c@ContinuedFloat=\count112
+\c@ContinuedFloat=\count102
 Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
 )
-\c@KVtest=\count113
-\sf@farskip=\skip48
-\sf@captopadj=\dimen126
-\sf@capskip=\skip49
-\sf@nearskip=\skip50
-\c@subfigure=\count114
-\c@subfigure@save=\count115
-\c@lofdepth=\count116
-\c@subtable=\count117
-\c@subtable@save=\count118
-\c@lotdepth=\count119
-\sf@top=\skip51
-\sf@bottom=\skip52
+\c@KVtest=\count103
+\sf@farskip=\skip47
+\sf@captopadj=\dimen122
+\sf@capskip=\skip48
+\sf@nearskip=\skip49
+\c@subfigure=\count104
+\c@subfigure@save=\count105
+\c@lofdepth=\count106
+\c@subtable=\count107
+\c@subtable@save=\count108
+\c@lotdepth=\count109
+\sf@top=\skip50
+\sf@bottom=\skip51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -270,10 +156,13 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@cmds=\toks22
 \SOUL@buffer=\toks23
 \SOUL@token=\toks24
-\SOUL@spaceskip=\skip53
-\SOUL@ttwidth=\dimen127
-\SOUL@uldp=\dimen128
-\SOUL@ulht=\dimen129
+\SOUL@spaceskip=\skip52
+\SOUL@ttwidth=\dimen123
+\SOUL@uldp=\dimen124
+\SOUL@ulht=\dimen125
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -283,28 +172,25 @@ nment
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks25
-\c@algorithm=\count120
+\c@algorithm=\count110
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count121
-\c@ALC@line=\count122
-\c@ALC@rem=\count123
-\c@ALC@depth=\count124
-\ALC@tlm=\skip54
-\algorithmicindent=\skip55
-)
-(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
-Package: cancel 2013/04/12 v2.2 Cancel math terms
+\c@ALC@unique=\count111
+\c@ALC@line=\count112
+\c@ALC@rem=\count113
+\c@ALC@depth=\count114
+\ALC@tlm=\skip53
+\algorithmicindent=\skip54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip56
-\subfigcapskip=\skip57
-\subfigcaptopadj=\dimen130
-\subfigbottomskip=\skip58
-\subfigcapmargin=\dimen131
-\subfiglabelskip=\skip59
+\subfigtopskip=\skip55
+\subfigcapskip=\skip56
+\subfigcaptopadj=\dimen126
+\subfigbottomskip=\skip57
+\subfigcapmargin=\dimen127
+\subfiglabelskip=\skip58
 
 
 /usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty:113: LaTeX Erro
@@ -400,8 +286,8 @@ or  <return>  to continue without it.
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip60
-\subfig@bottom=\skip61
+\subfig@top=\skip59
+\subfig@bottom=\skip60
 
 
 /usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty:294: LaTeX Erro
@@ -495,7 +381,7 @@ or  <return>  to continue without it.
 
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip62
+\@mathmargin=\skip61
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -504,49 +390,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks26
-\ex@=\dimen132
+\ex@=\dimen128
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen133
+\pmbraise@=\dimen129
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count125
+\inf@bad=\count115
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count126
-\leftroot@=\count127
+\uproot@=\count116
+\leftroot@=\count117
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count128
-\DOTSCASE@=\count129
+\classnum@=\count118
+\DOTSCASE@=\count119
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box33
 \strutbox@=\box34
-\big@size=\dimen134
+\big@size=\dimen130
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count130
-\c@MaxMatrixCols=\count131
-\dotsspace@=\muskip11
-\c@parentequation=\count132
-\dspbrk@lvl=\count133
+\macc@depth=\count120
+\c@MaxMatrixCols=\count121
+\dotsspace@=\muskip10
+\c@parentequation=\count122
+\dspbrk@lvl=\count123
 \tag@help=\toks27
-\row@=\count134
-\column@=\count135
-\maxfields@=\count136
+\row@=\count124
+\column@=\count125
+\maxfields@=\count126
 \andhelp@=\toks28
-\eqnshift@=\dimen135
-\alignsep@=\dimen136
-\tagshift@=\dimen137
-\tagwidth@=\dimen138
-\totwidth@=\dimen139
-\lineht@=\dimen140
+\eqnshift@=\dimen131
+\alignsep@=\dimen132
+\tagshift@=\dimen133
+\tagwidth@=\dimen134
+\totwidth@=\dimen135
+\lineht@=\dimen136
 \@envbody=\toks29
-\multlinegap=\skip63
-\multlinetaggap=\skip64
+\multlinegap=\skip62
+\multlinetaggap=\skip63
 \mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
@@ -558,9 +444,9 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headfont=\toks33
 \thm@notefont=\toks34
 \thm@headpunct=\toks35
-\thm@preskip=\skip65
-\thm@postskip=\skip66
-\thm@headsep=\skip67
+\thm@preskip=\skip64
+\thm@postskip=\skip65
+\thm@headsep=\skip66
 \dth@everypar=\toks36
 LaTeX Info: Redefining \qed on input line 274.
 )
@@ -577,8 +463,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
-\integerpart=\count137
-\decimalpart=\count138
+\integerpart=\count127
+\decimalpart=\count128
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -590,8 +476,8 @@ Package: stanli
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks37
-\pgfutil@tempdima=\dimen141
-\pgfutil@tempdimb=\dimen142
+\pgfutil@tempdima=\dimen137
+\pgfutil@tempdimb=\dimen138
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -617,20 +503,20 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 ex
 \pgfkeys@tmptoks=\toks40
 ))
-\pgf@x=\dimen143
-\pgf@y=\dimen144
-\pgf@xa=\dimen145
-\pgf@ya=\dimen146
-\pgf@xb=\dimen147
-\pgf@yb=\dimen148
-\pgf@xc=\dimen149
-\pgf@yc=\dimen150
+\pgf@x=\dimen139
+\pgf@y=\dimen140
+\pgf@xa=\dimen141
+\pgf@ya=\dimen142
+\pgf@xb=\dimen143
+\pgf@yb=\dimen144
+\pgf@xc=\dimen145
+\pgf@yc=\dimen146
 \w@pgf@writea=\write5
 \r@pgf@reada=\read1
-\c@pgf@counta=\count139
-\c@pgf@countb=\count140
-\c@pgf@countc=\count141
-\c@pgf@countd=\count142
+\c@pgf@counta=\count129
+\c@pgf@countb=\count130
+\c@pgf@countc=\count131
+\c@pgf@countd=\count132
 \t@pgf@toka=\toks41
 \t@pgf@tokb=\toks42
 \t@pgf@tokc=\toks43
@@ -649,8 +535,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count143
-\pgfsyssoftpath@bigbuffer@items=\count144
+\pgfsyssoftpath@smallbuffer@items=\count133
+\pgfsyssoftpath@bigbuffer@items=\count134
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -680,8 +566,8 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen151
-\pgfmath@count=\count145
+\pgfmath@dimen=\dimen147
+\pgfmath@count=\count135
 \pgfmath@box=\box36
 \pgfmath@toks=\toks44
 \pgfmath@stack@operand=\toks45
@@ -705,37 +591,37 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count146
+\c@pgfmathroundto@lastzeros=\count136
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen152
-\pgf@picmaxx=\dimen153
-\pgf@picminy=\dimen154
-\pgf@picmaxy=\dimen155
-\pgf@pathminx=\dimen156
-\pgf@pathmaxx=\dimen157
-\pgf@pathminy=\dimen158
-\pgf@pathmaxy=\dimen159
-\pgf@xx=\dimen160
-\pgf@xy=\dimen161
-\pgf@yx=\dimen162
-\pgf@yy=\dimen163
-\pgf@zx=\dimen164
-\pgf@zy=\dimen165
+\pgf@picminx=\dimen148
+\pgf@picmaxx=\dimen149
+\pgf@picminy=\dimen150
+\pgf@picmaxy=\dimen151
+\pgf@pathminx=\dimen152
+\pgf@pathmaxx=\dimen153
+\pgf@pathminy=\dimen154
+\pgf@pathmaxy=\dimen155
+\pgf@xx=\dimen156
+\pgf@xy=\dimen157
+\pgf@yx=\dimen158
+\pgf@yy=\dimen159
+\pgf@zx=\dimen160
+\pgf@zy=\dimen161
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen166
-\pgf@path@lasty=\dimen167
+\pgf@path@lastx=\dimen162
+\pgf@path@lasty=\dimen163
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen168
-\pgf@shorten@start@additional=\dimen169
+\pgf@shorten@end@additional=\dimen164
+\pgf@shorten@start@additional=\dimen165
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
@@ -743,19 +629,19 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box37
 \pgf@hbox=\box38
 \pgf@layerbox@main=\box39
-\pgf@picture@serial@count=\count147
+\pgf@picture@serial@count=\count137
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen170
+\pgflinewidth=\dimen166
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen171
-\pgf@pt@y=\dimen172
-\pgf@pt@temp=\dimen173
+\pgf@pt@x=\dimen167
+\pgf@pt@y=\dimen168
+\pgf@pt@temp=\dimen169
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -771,12 +657,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen174
+\pgfarrowsep=\dimen170
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen175
-\pgf@sys@shading@range@num=\count148
+\pgf@max=\dimen171
+\pgf@sys@shading@range@num=\count138
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -807,8 +693,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen176
-\pgf@nodesepend=\dimen177
+\pgf@nodesepstart=\dimen172
+\pgf@nodesepend=\dimen173
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -822,8 +708,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen178
-\pgffor@skip=\dimen179
+\pgffor@iter=\dimen174
+\pgffor@skip=\dimen175
 \pgffor@stack=\toks47
 \pgffor@toks=\toks48
 ))
@@ -833,31 +719,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count149
-\pgfplotmarksize=\dimen180
+\pgf@plot@mark@count=\count139
+\pgfplotmarksize=\dimen176
 )
-\tikz@lastx=\dimen181
-\tikz@lasty=\dimen182
-\tikz@lastxsaved=\dimen183
-\tikz@lastysaved=\dimen184
-\tikzleveldistance=\dimen185
-\tikzsiblingdistance=\dimen186
+\tikz@lastx=\dimen177
+\tikz@lasty=\dimen178
+\tikz@lastxsaved=\dimen179
+\tikz@lastysaved=\dimen180
+\tikzleveldistance=\dimen181
+\tikzsiblingdistance=\dimen182
 \tikz@figbox=\box42
 \tikz@figbox@bg=\box43
 \tikz@tempbox=\box44
 \tikz@tempbox@bg=\box45
-\tikztreelevel=\count150
-\tikznumberofchildren=\count151
-\tikznumberofcurrentchild=\count152
-\tikz@fig@count=\count153
+\tikztreelevel=\count140
+\tikznumberofchildren=\count141
+\tikznumberofcurrentchild=\count142
+\tikz@fig@count=\count143
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count154
-\pgfmatrixcurrentcolumn=\count155
-\pgf@matrix@numberofcolumns=\count156
+\pgfmatrixcurrentrow=\count144
+\pgfmatrixcurrentcolumn=\count145
+\pgf@matrix@numberofcolumns=\count146
 )
-\tikz@expandcount=\count157
+\tikz@expandcount=\count147
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -874,10 +760,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks49
 \XKV@tempa@toks=\toks50
 )
-\XKV@depth=\count158
+\XKV@depth=\count148
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\xargs@max=\count159
+\xargs@max=\count149
 \xargs@toksa=\toks51
 \xargs@toksb=\toks52
 )
@@ -960,7 +846,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen187
+\arrowsize=\dimen183
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypositioning.code.tex
@@ -990,14 +876,14 @@ zlibrarydecorations.pathreplacing.code.tex
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
 e.tex
-\pgfdecoratedcompleteddistance=\dimen188
-\pgfdecoratedremainingdistance=\dimen189
-\pgfdecoratedinputsegmentcompleteddistance=\dimen190
-\pgfdecoratedinputsegmentremainingdistance=\dimen191
-\pgf@decorate@distancetomove=\dimen192
-\pgf@decorate@repeatstate=\count160
-\pgfdecorationsegmentamplitude=\dimen193
-\pgfdecorationsegmentlength=\dimen194
+\pgfdecoratedcompleteddistance=\dimen184
+\pgfdecoratedremainingdistance=\dimen185
+\pgfdecoratedinputsegmentcompleteddistance=\dimen186
+\pgfdecoratedinputsegmentremainingdistance=\dimen187
+\pgf@decorate@distancetomove=\dimen188
+\pgf@decorate@repeatstate=\count150
+\pgfdecorationsegmentamplitude=\dimen189
+\pgfdecorationsegmentlength=\dimen190
 )
 \tikz@lib@dec@box=\box66
 )
@@ -1019,9 +905,9 @@ Package: units 1998/08/04 v0.9b Typesetting units
 
 (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip68
-\L@UnitsRaiseTextstyle=\skip69
-\L@UnitsRaiseScriptstyle=\skip70
+\L@UnitsRaiseDisplaystyle=\skip67
+\L@UnitsRaiseTextstyle=\skip68
+\L@UnitsRaiseScriptstyle=\skip69
 LaTeX Info: Redefining \nicefrac on input line 131.
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
@@ -1032,20 +918,6 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 de.tex
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 ))
-
-./LME-MPM.tex:37: LaTeX Error: Command \vec already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 }
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2017/11/14 v4.35 (NLCT)
 
@@ -1054,7 +926,7 @@ Package: mfirstuc 2017/11/14 v2.06 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count161
+\etb@tempcnta=\count151
 )
 \@glsmfirst=\toks55
 \@glsmrest=\toks56
@@ -1070,7 +942,7 @@ Package: datatool-base 2017/11/12 v2.29 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count162
+\c@su@anzahl=\count152
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2017/11/12 v2.29 (NLCT)
@@ -1081,19 +953,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count163
+\actioncount=\count153
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count164
-\FP@xia=\count165
-\FP@xib=\count166
-\FP@xfa=\count167
-\FP@xfb=\count168
-\FP@rega=\count169
-\FP@regb=\count170
-\FP@regs=\count171
-\FP@times=\count172
+\FP@xs=\count154
+\FP@xia=\count155
+\FP@xib=\count156
+\FP@xfa=\count157
+\FP@xfb=\count158
+\FP@rega=\count159
+\FP@regb=\count160
+\FP@regs=\count161
+\FP@times=\count162
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1112,7 +984,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count173
+\FPseed=\count163
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1124,22 +996,22 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks57
-\@dtl@tmpcount=\count174
-\dtl@tmplength=\skip71
-\dtl@sortresult=\count175
-\@dtl@numgrpsepcount=\count176
-\@dtl@datatype=\count177
-\dtl@codeA=\count178
-\dtl@codeB=\count179
-\@dtl@foreach@level=\count180
+\@dtl@tmpcount=\count164
+\dtl@tmplength=\skip70
+\dtl@sortresult=\count165
+\@dtl@numgrpsepcount=\count166
+\@dtl@datatype=\count167
+\dtl@codeA=\count168
+\dtl@codeB=\count169
+\@dtl@foreach@level=\count170
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
 307.sty
 Package: glossaries-compatible-307 2017/11/14 v4.35 (NLCT)
 )
-\gls@level=\count181
+\gls@level=\count171
 \@gls@tmpb=\toks58
-\gls@tmplen=\skip72
+\gls@tmplen=\skip71
 \glskeylisttok=\toks59
 \glslabeltok=\toks60
 \glsshorttok=\toks61
@@ -1150,124 +1022,69 @@ y
 Package: glossary-hypernav 2017/11/14 v4.35 (NLCT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2017/11/14 v4.35 (NLCT)
-\glslistdottedwidth=\skip73
+\glslistdottedwidth=\skip72
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2017/11/14 v4.35 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip74
-\LTright=\skip75
-\LTpre=\skip76
-\LTpost=\skip77
-\LTchunksize=\count182
-\LTcapwidth=\dimen195
+\LTleft=\skip73
+\LTright=\skip74
+\LTpre=\skip75
+\LTpost=\skip76
+\LTchunksize=\count172
+\LTcapwidth=\dimen191
 \LT@head=\box67
 \LT@firsthead=\box68
 \LT@foot=\box69
 \LT@lastfoot=\box70
-\LT@cols=\count183
-\LT@rows=\count184
-\c@LT@tables=\count185
-\c@LT@chunks=\count186
+\LT@cols=\count173
+\LT@rows=\count174
+\c@LT@tables=\count175
+\c@LT@chunks=\count176
 \LT@p@ftn=\toks63
 )
-\glsdescwidth=\skip78
-\glspagelistwidth=\skip79
+\glsdescwidth=\skip77
+\glspagelistwidth=\skip78
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2017/11/14 v4.35 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count187
-\ST@wd=\dimen196
-\ST@rightskip=\skip80
-\ST@leftskip=\skip81
-\ST@parfillskip=\skip82
-\ST@pageleft=\dimen197
-\ST@headht=\dimen198
-\ST@tailht=\dimen199
-\ST@pagesofar=\dimen256
-\ST@pboxht=\dimen257
-\ST@lineht=\dimen258
-\ST@stretchht=\dimen259
-\ST@prevht=\dimen260
-\ST@toadd=\dimen261
-\ST@dimen=\dimen262
+\c@tracingst=\count177
+\ST@wd=\dimen192
+\ST@rightskip=\skip79
+\ST@leftskip=\skip80
+\ST@parfillskip=\skip81
+\ST@pageleft=\dimen193
+\ST@headht=\dimen194
+\ST@tailht=\dimen195
+\ST@pagesofar=\dimen196
+\ST@pboxht=\dimen197
+\ST@lineht=\dimen198
+\ST@stretchht=\dimen199
+\ST@prevht=\dimen256
+\ST@toadd=\dimen257
+\ST@dimen=\dimen258
 \ST@pbox=\box71
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2017/11/14 v4.35 (NLCT)
-\glstreeindent=\skip83
+\glstreeindent=\skip82
 ))
 \glswrite=\write6
 \glo@main@file=\write7
 \openout7 = `LME-MPM.glo'.
 
-Package glossaries Info: Writing glossary file LME-MPM.glo on input line 71.
+Package glossaries Info: Writing glossary file LME-MPM.glo on input line 73.
 \glo@acronym@file=\write8
 \openout8 = `LME-MPM.acn'.
 
-Package glossaries Info: Writing glossary file LME-MPM.acn on input line 71.
+Package glossaries Info: Writing glossary file LME-MPM.acn on input line 73.
 
-./LME-MPM.tex:108: Undefined control sequence.
-\@glo@name ->$\vect 
-                    {a}$
-l.108 }
-       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:114: Undefined control sequence.
-\@glo@name ->$\vect 
-                    {v}$
-l.114 }
-       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:120: Undefined control sequence.
-\@glo@name ->$\vect 
-                    {u}$
-l.120 }
-       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:126: Undefined control sequence.
-\@glo@name ->$\vect 
-                    {x}$
-l.126 }
-       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:132: Undefined control sequence.
-\@glo@name ->$\vect 
-                    {\xi }$
-l.132 }
-       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:183: Undefined control sequence.
-l.183 \journalname
+./LME-MPM.tex:196: Undefined control sequence.
+l.196 \journalname
                   {Computer Methods in Applied Mechanics and Engineering}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1276,13 +1093,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./LME-MPM.tex:183: LaTeX Error: Missing \begin{document}.
+./LME-MPM.tex:196: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.183 \journalname{C
+l.196 \journalname{C
                     omputer Methods in Applied Mechanics and Engineering}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1294,38 +1111,75 @@ LaTeX Warning: Label `eq:Predictor-velocity-II' multiply defined.
 )
 \openout1 = `LME-MPM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 217.
-LaTeX Font Info:    ... okay on input line 217.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 230.
+LaTeX Font Info:    ... okay on input line 230.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 230.
+LaTeX Font Info:    ... okay on input line 230.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 230.
+LaTeX Font Info:    ... okay on input line 230.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 230.
+LaTeX Font Info:    ... okay on input line 230.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 230.
+LaTeX Font Info:    ... okay on input line 230.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 230.
+LaTeX Font Info:    ... okay on input line 230.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count188
-\scratchdimen=\dimen263
+\scratchcounter=\count178
+\scratchdimen=\dimen259
 \scratchbox=\box72
-\nofMPsegments=\count189
-\nofMParguments=\count190
+\nofMPsegments=\count179
+\nofMParguments=\count180
 \everyMPshowfont=\toks64
-\MPscratchCnt=\count191
-\MPscratchDim=\dimen264
-\MPnumerator=\count192
-\makeMPintoPDFobject=\count193
+\MPscratchCnt=\count181
+\MPscratchDim=\dimen260
+\MPnumerator=\count182
+\makeMPintoPDFobject=\count183
 \everyMPtoPDFconversion=\toks65
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
@@ -1338,25 +1192,6 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring OFF on input line 217.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count194
-)
-LaTeX Info: Redefining \ref on input line 217.
-LaTeX Info: Redefining \pageref on input line 217.
-LaTeX Info: Redefining \nameref on input line 217.
-
-(./LME-MPM.out) (./LME-MPM.out)
-\@outlinefile=\write9
-\openout9 = `LME-MPM.out'.
-
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: longtable package is loaded.
@@ -1369,84 +1204,20 @@ Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros (./LME-MPM.glsdefs)
-./LME-MPM.tex:266: Extra }, or forgotten \endgroup.
-\endkeyword ->\par \egroup 
-                           
-l.266 \end{keyword}
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 268.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 268.
-
-[1
-
-\openout6 = `LME-MPM.ist'.
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 268.
+LaTeX Font Info:    Try loading font information for U+msa on input line 259.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 268.
+LaTeX Font Info:    Try loading font information for U+msb on input line 259.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1
+
+\openout6 = `LME-MPM.ist'.
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ≠ in font cmr12!
 
@@ -1456,10 +1227,52 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 [2
 
-] [3]
-./LME-MPM.tex:351: Undefined control sequence.
-l.351 ...sists in an accommodation of the \acrsull
-                                                  {npc}. This method
+]
+./LME-MPM.tex:294: You can't use `\/' in vertical mode.
+\@cancel ...ht \unitlength \p@ \canc@thinlines {\/
+                                                  \raise \dimen@ \hbox {\ooa...
+l.294 ... other kind of instabilities, such those}
+                                                   \red{On the one hand, the...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./LME-MPM.tex:294: You can't use `\raise' in vertical mode.
+\@cancel ...tlength \p@ \canc@thinlines {\/\raise 
+                                                  \dimen@ \hbox {\ooalign {#...
+l.294 ... other kind of instabilities, such those}
+                                                   \red{On the one hand, the...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./LME-MPM.tex:294: Missing number, treated as zero.
+<to be read again> 
+                   \hbox 
+l.294 ... other kind of instabilities, such those}
+                                                   \red{On the one hand, the...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./LME-MPM.tex:294: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \hbox 
+l.294 ... other kind of instabilities, such those}
+                                                   \red{On the one hand, the...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+[3]
+./LME-MPM.tex:370: Undefined control sequence.
+l.370 ...accommodation of the traditional \acrsull
+                                                  {npc} scheme, widely emplo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1467,10 +1280,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [4]
-./LME-MPM.tex:397: Undefined control sequence.
+./LME-MPM.tex:414: Undefined control sequence.
 <recently read> \qued 
                       
-l.397 ... first and second time derivative, $\qued
+l.414 ... first and second time derivative, $\qued
                                                    \otimes
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1478,8 +1291,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./LME-MPM.tex:398: Undefined control sequence.
-l.398 \qued
+./LME-MPM.tex:415: Undefined control sequence.
+l.415 \qued
            $ means the dyadic operator, $\Box \cdot \Box$ and $\Box \colon \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1487,10 +1300,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./LME-MPM.tex:412: Undefined control sequence.
+[5]
+./LME-MPM.tex:431: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.412 \begin{figure}\sidecaption
+l.431 \begin{figure}\sidecaption
                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1498,287 +1312,39 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Continuum-solid.png, id=180, 789.6702pt x 574.7874pt>
+<Figures/Continuum-solid.png, id=34, 789.6702pt x 574.7874pt>
 File: Figures/Continuum-solid.png Graphic file (type png)
 <use Figures/Continuum-solid.png>
-Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 415.
+Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 434.
 (pdftex.def)             Requested size: 390.0pt x 283.876pt.
-[5 <./Figures/Continuum-solid.png>]
-./LME-MPM.tex:431: Undefined control sequence.
-<argument> \vect 
-                 {u}
-l.431   \tens{\varepsilon} = \GradS{\vect{u}}
-                                             ,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[6 <./Figures/Continuum-solid.png>] [7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 518.
 
-./LME-MPM.tex:441: Undefined control sequence.
-<argument> D\vect 
-                  {v}
-l.441 \rho \frac{D\vect{v}}{Dt}
-                                = \Div{\tens{\sigma}} + \rho \vect{b}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./LME-MPM.tex:441: Undefined control sequence.
-l.441 ...}}{Dt} = \Div{\tens{\sigma}} + \rho \vect
-                                                  {b}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:454: Undefined control sequence.
-<argument> div({\vect 
-                      {v}})
-l.454 ...}{D t} = \dot{\rho} + \rho \Div{\vect{v}}
-                                                   = 0.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:461: Undefined control sequence.
-l.461   \vect
-             {u}^{\psi} \in \mathcal{H}^1_0(\Omega) = \{ \vect{u}^{\psi} \in
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:461: Undefined control sequence.
-l.461 ...i} \in \mathcal{H}^1_0(\Omega) = \{ \vect
-                                                  {u}^{\psi} \in
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:462: Undefined control sequence.
-l.462   \mathcal{H}^1 \mid \vect
-                                {u}^{\psi} = \vect{0}\ \text{on}\ \Gamma_d \}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:462: Undefined control sequence.
-l.462   \mathcal{H}^1 \mid \vect{u}^{\psi} = \vect
-                                                  {0}\ \text{on}\ \Gamma_d \}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:467: Undefined control sequence.
-<argument> \int _{\varOmega }{\vect 
-                                    {u}^{\psi }}\ d\varOmega 
-l.467   \Integral{3}{\vect{u}^{\psi}} <
-                                        \infty\ \quad\text{and}\quad
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:471: Undefined control sequence.
-<recently read> \vect 
-                      
-l.471 ...blem of elasticity is the function $\vect
-                                                  {u} \in
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:472: Undefined control sequence.
-<recently read> \vect 
-                      
-l.472 \mathcal{H}^1_0$ such that, for $\vect
-                                            {u}^{\psi} \in
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:496: Undefined control sequence.
-<recently read> \vect 
-                      
-l.496 virtual displacement field $\vect
-                                       {u}^{\psi}_{p}$. Therefore, employing
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[6]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 502.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 502.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 518.
 
-./LME-MPM.tex:505: Undefined control sequence.
-<argument> ...\ \frac {d\vec {v}}{dt} \cdot \vect 
-                                                  {u}^{\psi }}\ d\varOmega 
-l.505 ...ac{d\vec{v}}{dt} \cdot \vect{u}^{\psi}} =
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:506: Undefined control sequence.
-l.506     \frac{d\vec{v}_{p}}{dt} \cdot \vect
-                                             {u}^{\psi}_{p}\ m_p.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 507--508
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--514
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
 
  []
 
-./LME-MPM.tex:517: Undefined control sequence.
-<argument> ...Omega }{\rho \ \vec {b} \cdot \vect 
-                                                  {u}^{\psi } }\ d\varOmega 
-l.517 ...}{\rho\ \vec{b} \cdot \vect{u}^{\psi} } =
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./LME-MPM.tex:518: Undefined control sequence.
-l.518   \vec{b}_{p} \cdot \vect
-                               {u}^{\psi}_p\ m_p.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 519--520
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
 
  []
-
-./LME-MPM.tex:524: Undefined control sequence.
-<argument> \int _{\varGamma _d}{\vec {t}\ \vect 
-                                                {u}^{\psi }}\ d\varGamma 
-l.524     \Integral{2}{\vec{t}\ \vect{u}^{\psi}} =
-                                                   \Integral{2}{\rho\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:525: Undefined control sequence.
-<argument> ..._d}{\rho \^^M\vec {t}^s \cdot \vect 
-                                                  {u}^{\psi }}\ d\varGamma 
-l.525       \vec{t}^s \cdot \vect{u}^{\psi}} =
-                                               \vec{t}^s_{p} \cdot \vect{u}^...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:525: Undefined control sequence.
-l.525 ...ct{u}^{\psi}} = \vec{t}^s_{p} \cdot \vect
-                                                  {u}^{\psi}_{p}\ h^{-1}\ m_p ,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:536: Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.536 \begin{figure}\sidecaption
-                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<Figures/Mesh-particles-back.png, id=227, 853.9905pt x 857.8449pt>
-File: Figures/Mesh-particles-back.png Graphic file (type png)
-<use Figures/Mesh-particles-back.png>
-Package pdftex.def Info: Figures/Mesh-particles-back.png  used on input line 53
-9.
-(pdftex.def)             Requested size: 390.0pt x 391.7599pt.
-./LME-MPM.tex:550: Undefined control sequence.
-l.550 $p$ as $\vec{u}_{p} = N_{Ip} \vect
-                                        {u}_I$, $\vec{u}^{\psi}_{p} = N_{Ip}...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:550: Undefined control sequence.
-l.550 ...u}_I$, $\vec{u}^{\psi}_{p} = N_{Ip} \vect
-                                                  {u}_I^{\psi}$,
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:551: Undefined control sequence.
-l.551 ...radient as $\tens{\varepsilon}_p = (\vect
-                                                  {u}_I \otimes
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 ./LME-MPM.tex:552: Undefined control sequence.
-l.552 ...^s$, $\tens{\varepsilon}_p^{\psi}= (\vect
-                                                  {u}_I^{\psi} \otimes \Grad...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[7] [8 <./Figures/Mesh-particles-back.png>]
-./LME-MPM.tex:610: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.610 \begin{figure}\sidecaption
+l.552 \begin{figure}\sidecaption
                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1786,202 +1352,82 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/MPM_scheme_horizontal.pdf, id=267, 1093.2543pt x 345.51567pt>
+<Figures/Mesh-particles-back.png, id=49, 775.2162pt x 819.06pt>
+File: Figures/Mesh-particles-back.png Graphic file (type png)
+<use Figures/Mesh-particles-back.png>
+Package pdftex.def Info: Figures/Mesh-particles-back.png  used on input line 55
+5.
+(pdftex.def)             Requested size: 390.0pt x 412.06606pt.
+[8] [9 <./Figures/Mesh-particles-back.png>]
+
+./LME-MPM.tex:629: Package glossaries Error: Glossary entry `MPM' has not been 
+defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.629 ...e of the figure~\ref{fig:MPM_algorithm}.}
+                                                  
+You need to define a glossary entry before you can use it.
+
+./LME-MPM.tex:631: Undefined control sequence.
+<recently read> \sidecaption 
+                             
+l.631 \begin{figure}\sidecaption
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./Figures/MPM_scheme_horizontal.pdf, id=58, 1093.2543pt x 345.51567pt>
 File: ./Figures/MPM_scheme_horizontal.pdf Graphic file (type pdf)
 <use ./Figures/MPM_scheme_horizontal.pdf>
 Package pdftex.def Info: ./Figures/MPM_scheme_horizontal.pdf  used on input lin
-e 614.
+e 635.
 (pdftex.def)             Requested size: 390.0pt x 123.25203pt.
-./LME-MPM.tex:625: Undefined control sequence.
-l.625   \vect
-             {v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{a}_{I...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-./LME-MPM.tex:625: Undefined control sequence.
-l.625   \vect{v}_p^{k+1} = \vect
-                                {v}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{a}_{I...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:629: Undefined control sequence.
-l.629   \vect
-             {x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{v}_{I...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:629: Undefined control sequence.
-l.629   \vect{x}_p^{k+1} = \vect
-                                {x}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{v}_{I...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:632: Undefined control sequence.
-<recently read> \vect 
-                      
-l.632 $\vect
-            {f}_I^{int,k}$ can be finite for an infinitesimal nodal mass
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:639: Undefined control sequence.
-l.639   \vect
-             {x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:639: Undefined control sequence.
-l.639   \vect{x}_p^{k+1} = \vect
-                                {x}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:643: Undefined control sequence.
-l.643   \vect
-             {v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:643: Undefined control sequence.
-l.643   \vect{v}_p^{k+1} = \vect
-                                {v}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[9 <./Figures/MPM_scheme_horizontal.pdf>]
-./LME-MPM.tex:653: Undefined control sequence.
-l.653   \vect
-             {v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\  N_{Ip}^{k}\ \left[(1 ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:653: Undefined control sequence.
-l.653   \vect{v}_p^{k+1} = \vect
-                                {v}_p^{k} + \Delta t\  N_{Ip}^{k}\ \left[(1 ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:653: Undefined control sequence.
-l.653 ...t\  N_{Ip}^{k}\ \left[(1 - \gamma)\ \vect
-                                                  {a}_I^{k} +
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:654: Undefined control sequence.
-l.654     \gamma\ \vect
-                       {a}_I^{k+1} \right],\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:658: Undefined control sequence.
-l.658   \vect
-             {x}_p^{k+1} = \vect{x}_p^{k} + N_{Ip}^{k} \left[ \Delta t\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:658: Undefined control sequence.
-l.658   \vect{x}_p^{k+1} = \vect
-                                {x}_p^{k} + N_{Ip}^{k} \left[ \Delta t\ \vec...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:663: Undefined control sequence.
-l.663   \vect
-             {a}_p^{k+1} = N_{Ip}^{k}\ \vec{a}_{I}^{k+1}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Package natbib Warning: Citation `Guilkey2003' on page 10 undefined on input li
+ne 641.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 672.
+Package natbib Warning: Citation `Charlton2017' on page 10 undefined on input l
+ine 641.
 
-[10] [11]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 773.
+[10 <./Figures/MPM_scheme_horizontal.pdf>] [11] [12] [13] [14]
 
-
-LaTeX Warning: Float too large for page by 56.27759pt on input line 830.
-
-[12] [13]
-
-./LME-MPM.tex:893: Package amsmath Error: Multiple \label's: label 'eq:least-bi
+./LME-MPM.tex:912: Package amsmath Error: Multiple \label's: label 'eq:least-bi
 ased-approximation-scheme' will be lost.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.893 \end{align*}
+l.912 \end{align*}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./LME-MPM.tex:905: Package amsmath Error: Multiple \label's: label 'eq:RAJAN' w
+./LME-MPM.tex:924: Package amsmath Error: Multiple \label's: label 'eq:RAJAN' w
 ill be lost.
 
 See the amsmath package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.905 \end{align*}
+l.924 \end{align*}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[14]
-./LME-MPM.tex:932: Misplaced alignment tab character &.
-l.932 \nabla N_I^* &
+[15]
+./LME-MPM.tex:951: Misplaced alignment tab character &.
+l.951 \nabla N_I^* &
                     =& N^*_I  \, \left(\nabla f^*_I-\sum_J^{N_n} N^*_J \, \n...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1990,8 +1436,8 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./LME-MPM.tex:932: Misplaced alignment tab character &.
-l.932 \nabla N_I^* &=&
+./LME-MPM.tex:951: Misplaced alignment tab character &.
+l.951 \nabla N_I^* &=&
                        N^*_I  \, \left(\nabla f^*_I-\sum_J^{N_n} N^*_J \, \n...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2000,11 +1446,11 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[15]
-./LME-MPM.tex:966: Undefined control sequence.
+[16]
+./LME-MPM.tex:985: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.966 \begin{figure}\sidecaption
+l.985 \begin{figure}\sidecaption
                                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2012,14 +1458,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Particle-discretization.png, id=419, 450.9648pt x 607.5498pt>
+<./Figures/Particle-discretization.png, id=83, 775.2162pt x 819.06pt>
 File: ./Figures/Particle-discretization.png Graphic file (type png)
 <use ./Figures/Particle-discretization.png>
 Package pdftex.def Info: ./Figures/Particle-discretization.png  used on input l
-ine 970.
-(pdftex.def)             Requested size: 390.0pt x 525.43993pt.
-./LME-MPM.tex:978: Undefined control sequence.
-l.978 Due to the \short
+ine 989.
+(pdftex.def)             Requested size: 390.0pt x 412.06606pt.
+./LME-MPM.tex:997: Undefined control sequence.
+l.997 Due to the \short
                        {fem}-compatibility, the \acrshort{lme} shape functio...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2027,96 +1473,98 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/MPM_Shape_Fun.png, id=425, 772.8875pt x 667.49374pt>
+<Figures/MPM_Shape_Fun.png, id=84, 772.8875pt x 667.49374pt>
 File: Figures/MPM_Shape_Fun.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 992.
+Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 1011.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/MPM_Shape_Fun_dx.png, id=426, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dx.png, id=85, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 992.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 1011.
+
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/MPM_Shape_Fun_dy.png, id=427, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dy.png, id=86, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 992.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 1011.
+
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_17_3_Shape_Fun.png, id=428, 772.8875pt x 667.49374pt>
+<Figures/LME_17_3_Shape_Fun.png, id=87, 772.8875pt x 667.49374pt>
 File: Figures/LME_17_3_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 999
-.
+Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 101
+8.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_17_3_Shape_Fun_dx.png, id=429, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dx.png, id=88, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dx.png  used on input line 
-999.
+1018.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_17_3_Shape_Fun_dy.png, id=430, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dy.png, id=89, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dy.png  used on input line 
-999.
+1018.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/GIMP_Shape_Fun.png, id=431, 772.8875pt x 667.49374pt>
+<Figures/GIMP_Shape_Fun.png, id=90, 772.8875pt x 667.49374pt>
 File: Figures/GIMP_Shape_Fun.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 1006.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 1025.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/GIMP_Shape_Fun_dx.png, id=432, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dx.png, id=91, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 1006
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 1025
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/GIMP_Shape_Fun_dy.png, id=433, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dy.png, id=92, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 1006
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 1025
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_10_0_Shape_Fun.png, id=434, 772.8875pt x 667.49374pt>
+<Figures/LME_10_0_Shape_Fun.png, id=93, 772.8875pt x 667.49374pt>
 File: Figures/LME_10_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 101
-3.
+Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 103
+2.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_10_0_Shape_Fun_dx.png, id=435, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dx.png, id=94, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dx.png  used on input line 
-1013.
+1032.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_10_0_Shape_Fun_dy.png, id=436, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dy.png, id=95, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dy.png  used on input line 
-1013.
+1032.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_5_0_Shape_Fun.png, id=437, 772.8875pt x 667.49374pt>
+<Figures/LME_5_0_Shape_Fun.png, id=96, 772.8875pt x 667.49374pt>
 File: Figures/LME_5_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 1020
+Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 1039
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_5_0_Shape_Fun_dx.png, id=438, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dx.png, id=97, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dx.png  used on input line 1
-020.
+039.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_5_0_Shape_Fun_dy.png, id=439, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dy.png, id=98, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dy.png  used on input line 1
-020.
+039.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-./LME-MPM.tex:1028: Undefined control sequence.
+./LME-MPM.tex:1047: Undefined control sequence.
 <recently read> \Beta 
                       
-l.1028 ...esearch and in \cite{Arroyo2006}, $\Beta
+l.1047 ...esearch and in \cite{Arroyo2006}, $\Beta
                                                   $ is a scalar as the
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2124,7 +1572,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[16] [17 <./Figures/Particle-discretization.png> <./Figures/MPM_Shape_Fun.png (
+[17] [18 <./Figures/Particle-discretization.png> <./Figures/MPM_Shape_Fun.png (
 PNG copy)> <./Figures/MPM_Shape_Fun_dx.png (PNG copy)> <./Figures/MPM_Shape_Fun
 _dy.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun.png (PNG copy)> <./Figures/LM
 E_17_3_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun_dy.png (PNG c
@@ -2134,60 +1582,10 @@ Shape_Fun.png (PNG copy)> <./Figures/LME_10_0_Shape_Fun_dx.png (PNG copy)> <./F
 igures/LME_10_0_Shape_Fun_dy.png (PNG copy)> <./Figures/LME_5_0_Shape_Fun.png (
 PNG copy)> <./Figures/LME_5_0_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_5_0_S
 hape_Fun_dy.png (PNG copy)>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1052.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 1052.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 1052.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1052.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 1052.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 1052.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 1052.
-
-./LME-MPM.tex:1060: Undefined control sequence.
-<recently read> \vect 
-                      
-l.1060 border displacement are constrained ($\vect
-                                                  {v} \rvert_{x=L} = 0$) and
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1062: Undefined control sequence.
-<recently read> \vect 
-                      
-l.1062 0$). And a initial velocity of $\vect
-                                            {v}_o = - 5\ m/s$ is given to the
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1070: Undefined control sequence.
+./LME-MPM.tex:1089: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1070 \begin{figure}\sidecaption
+l.1089 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2210,20 +1608,11 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-) [18]
-./LME-MPM.tex:1092: Undefined control sequence.
-l.1092   Cel = \max\{\max_{p \in \Omega_p}\{ \vect
-                                                  {v}_p \} , \max_{p \in \Om...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1105: Undefined control sequence.
+) [19]
+./LME-MPM.tex:1124: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1105 \begin{figure*}\sidecaption
+l.1124 \begin{figure*}\sidecaption
                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2231,79 +1620,15 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Error_evol.png, id=490, 652.5981pt x 371.4678pt>
+<./Figures/Error_evol.png, id=110, 652.5981pt x 371.4678pt>
 File: ./Figures/Error_evol.png Graphic file (type png)
 <use ./Figures/Error_evol.png>
-Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1109.
+Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1128.
 (pdftex.def)             Requested size: 390.0pt x 221.9925pt.
-./LME-MPM.tex:1129: Undefined control sequence.
-l.1129 ...sqrt{\frac{1}{N} \sum^{N}_p \left( \vect
-                                                  {v}_p - \hat{\vect{v}}_p \...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1129: Undefined control sequence.
-<recently read> \vect 
-                      
-l.1129 ...{N}_p \left( \vect{v}_p - \hat{\vect{v}}
-                                                  _p \right)^2},
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1129: Undefined control sequence.
-<argument> \vect 
-                 {v}
-l.1129 ...{N}_p \left( \vect{v}_p - \hat{\vect{v}}
-                                                  _p \right)^2},
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1131: Undefined control sequence.
-<recently read> \vect 
-                      
-l.1131 where $\vect
-                   {v}_p$ and $\hat{\vect{v}}_p$ are respectively the analyt...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1131: Undefined control sequence.
-<recently read> \vect 
-                      
-l.1131 where $\vect{v}_p$ and $\hat{\vect{v}}
-                                             _p$ are respectively the analyt...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1131: Undefined control sequence.
-<argument> \vect 
-                 {v}
-l.1131 where $\vect{v}_p$ and $\hat{\vect{v}}
-                                             _p$ are respectively the analyt...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1142: Undefined control sequence.
+./LME-MPM.tex:1161: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1142 \begin{figure}\sidecaption
+l.1161 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2311,16 +1636,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=502, 462.528pt x 346.896pt>
+<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=111, 462.528pt x 346.896pt>
 File: ./Figures/Velocity_FE_vs_PCE_CFL_01.png Graphic file (type png)
 <use ./Figures/Velocity_FE_vs_PCE_CFL_01.png>
 Package pdftex.def Info: ./Figures/Velocity_FE_vs_PCE_CFL_01.png  used on input
- line 1146.
+ line 1165.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-./LME-MPM.tex:1179: Undefined control sequence.
+./LME-MPM.tex:1198: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1179 \begin{figure}\sidecaption
+l.1198 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2328,30 +1653,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Velocity_LME_gamma_comparative.png, id=513, 488.5452pt x 666.3294pt>
+<./Figures/Velocity_LME_gamma_comparative.png, id=112, 488.5452pt x 666.3294pt>
 
 File: ./Figures/Velocity_LME_gamma_comparative.png Graphic file (type png)
 <use ./Figures/Velocity_LME_gamma_comparative.png>
 Package pdftex.def Info: ./Figures/Velocity_LME_gamma_comparative.png  used on 
-input line 1183.
+input line 1202.
 (pdftex.def)             Requested size: 390.0pt x 531.93567pt.
-./LME-MPM.tex:1205: Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1205 \begin{figure}\sidecaption
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=523, 462.528pt x 346.896pt>
-File: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png Graphic file (type png)
-<use ./Figures/Velocity_uGIMP_vs_LME_Dyka.png>
-Package pdftex.def Info: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png  used on inpu
-t line 1209.
-(pdftex.def)             Requested size: 390.0pt x 292.5128pt.
 ./LME-MPM.tex:1224: Undefined control sequence.
 <recently read> \sidecaption 
                              
@@ -2363,18 +1671,35 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=532, 462.528pt x 346.896pt>
+<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=113, 462.528pt x 346.896pt>
+File: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png Graphic file (type png)
+<use ./Figures/Velocity_uGIMP_vs_LME_Dyka.png>
+Package pdftex.def Info: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png  used on inpu
+t line 1228.
+(pdftex.def)             Requested size: 390.0pt x 292.5128pt.
+./LME-MPM.tex:1243: Undefined control sequence.
+<recently read> \sidecaption 
+                             
+l.1243 \begin{figure}\sidecaption
+                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=114, 462.528pt x 346.896pt>
 File: ./Figures/Velocity_MPM_vs_OTM_Dyka.png Graphic file (type png)
 <use ./Figures/Velocity_MPM_vs_OTM_Dyka.png>
 Package pdftex.def Info: ./Figures/Velocity_MPM_vs_OTM_Dyka.png  used on input 
-line 1228.
+line 1247.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-[19] [20 <./Figures/Error_evol.png>] [21 <./Figures/Velocity_FE_vs_PCE_CFL_01.p
-ng>] [22 <./Figures/Velocity_LME_gamma_comparative.png>]
-./LME-MPM.tex:1242: Undefined control sequence.
+[20] [21 <./Figures/Error_evol.png>] [22 <./Figures/Velocity_FE_vs_PCE_CFL_01.p
+ng>] [23 <./Figures/Velocity_LME_gamma_comparative.png>]
+./LME-MPM.tex:1261: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1242 \begin{figure}\sidecaption
+l.1261 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2541,10 +1866,10 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 )
-./LME-MPM.tex:1248: Extra }, or forgotten \endgroup.
+./LME-MPM.tex:1267: Extra }, or forgotten \endgroup.
 \sf@endfloatbox ...gefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.1248 \end{figure}
+l.1267 \end{figure}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2552,40 +1877,31 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[23 <./Figures/Velocity_uGIMP_vs_LME_Dyka.png>] [24 <./Figures/Velocity_MPM_vs_
+[24 <./Figures/Velocity_uGIMP_vs_LME_Dyka.png>] [25 <./Figures/Velocity_MPM_vs_
 OTM_Dyka.png>]
-<Figures/Block_LME3_PCE_a_t0.png, id=580, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_a_t0.png, id=139, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_a_t0.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_a_t0.png>
-Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 12
-96.
+Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 13
+15.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures/Block_LME3_PCE_b_t025.png, id=581, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_b_t025.png, id=140, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_b_t025.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_b_t025.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_b_t025.png  used on input line 
-1299.
+1318.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures/Block_LME3_PCE_c_t1.png, id=582, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_c_t1.png, id=141, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_c_t1.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_c_t1.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_c_t1.png  used on input line 13
-02.
+21.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
 
-./LME-MPM.tex:1328: Undefined control sequence.
-l.1328 ...ng the spatial variation of $\beta(\vect
-                                                  {x})$, it is
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.tex:1333: Undefined control sequence.
+./LME-MPM.tex:1352: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1333 \begin{figure}\sidecaption
+l.1352 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2593,77 +1909,51 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./Figures/Block_CFL_01_Comparative.png, id=589, 462.528pt x 346.896pt>
+<./Figures/Block_CFL_01_Comparative.png, id=142, 462.528pt x 346.896pt>
 File: ./Figures/Block_CFL_01_Comparative.png Graphic file (type png)
 <use ./Figures/Block_CFL_01_Comparative.png>
 Package pdftex.def Info: ./Figures/Block_CFL_01_Comparative.png  used on input 
-line 1337.
+line 1356.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-[25]
-./LME-MPM.tex:1365: Undefined control sequence.
-l.1365 ...ty of adapting the function $\beta(\vect
-                                                  {x})$ as a second
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[26] [27 <./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.p
+ng> <./Figures/Block_LME3_PCE_c_t1.png>] [28 <./Figures/Block_CFL_01_Comparativ
+e.png>]
 
-[26 <./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.png> <
-./Figures/Block_LME3_PCE_c_t1.png>] [27 <./Figures/Block_CFL_01_Comparative.png
->]
-
-./LME-MPM.tex:1373: LaTeX Error: Environment acknowledgements undefined.
+./LME-MPM.tex:1392: LaTeX Error: Environment acknowledgements undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1373 \begin{acknowledgements}
+l.1392 \begin{acknowledgements}
                                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./LME-MPM.tex:1376: LaTeX Error: \begin{document} ended by \end{acknowledgement
+./LME-MPM.tex:1395: LaTeX Error: \begin{document} ended by \end{acknowledgement
 s}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1376 \end{acknowledgements}
+l.1395 \end{acknowledgements}
                              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-(./LME-MPM.gls
-./LME-MPM.gls:21: Undefined control sequence.
-<recently read> \vect 
-                      
-l.21 ...nter[]{page}\glsnumberformat{5\delimN 6}}}
-                                                  %
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./LME-MPM.gls:21: Undefined control sequence.
-<recently read> \vect 
-                      
-l.21 ...nter[]{page}\glsnumberformat{5\delimN 6}}}
-                                                  %
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./LME-MPM.acr [28]) [29]
-Overfull \hbox (42.77832pt too wide) in paragraph at lines 1485--1491
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no Å in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ì in font cmr12!
+No file LME-MPM.gls.
+No file LME-MPM.acr.
+[29]
+Overfull \hbox (42.77832pt too wide) in paragraph at lines 1510--1516
 \OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 dif-fer-ent eigen-val-ues $\OMS/cmsy/m/n/12
  f\OML/cmm/m/it/12 ^^U[]; ^^U[]; [] ; ^^U[]; [] ^^U[]\OMS/cmsy/m/n/12 g$ \OT1/c
 mr/m/n/12 and $\OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 eigen-vec-tors $\OMS/cmsy/m/
@@ -2671,10 +1961,10 @@ n/12 f[]\OML/cmm/m/it/12 ; []; [] ; []; [] []\OMS/cmsy/m/n/12 g$
  []
 
 [30] [31]
-./LME-MPM.tex:1606: Undefined control sequence.
+./LME-MPM.tex:1631: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1606 \begin{figure}\sidecaption
+l.1631 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2682,16 +1972,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/1D_right_Velocity.png, id=747, 462.528pt x 346.896pt>
+<Figures/1D_right_Velocity.png, id=166, 462.528pt x 346.896pt>
 File: Figures/1D_right_Velocity.png Graphic file (type png)
 <use Figures/1D_right_Velocity.png>
-Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1610
+Package pdftex.def Info: Figures/1D_right_Velocity.png  used on input line 1635
 .
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-./LME-MPM.tex:1616: Undefined control sequence.
+./LME-MPM.tex:1641: Undefined control sequence.
 <recently read> \sidecaption 
                              
-l.1616 \begin{figure}\sidecaption
+l.1641 \begin{figure}\sidecaption
                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2699,35 +1989,73 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/1D_left_Stress.png, id=748, 462.528pt x 346.896pt>
+<Figures/1D_left_Stress.png, id=167, 462.528pt x 346.896pt>
 File: Figures/1D_left_Stress.png Graphic file (type png)
 <use Figures/1D_left_Stress.png>
-Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1620.
+Package pdftex.def Info: Figures/1D_left_Stress.png  used on input line 1645.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
 (./LME-MPM.bbl [32] [33 <./Figures/1D_right_Velocity.png>] [34 <./Figures/1D_le
 ft_Stress.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 36--43
-\OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 https : / / www . sciencedirect . com /
- science / article / pii /
+Overfull \hbox (75.2845pt too wide) in paragraph at lines 36--43
+\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 https://www.sciencedirect.com/science/arti
+cle/pii/S0021999111002804 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--53
-\OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
-science / article / pii /
+Overfull \hbox (69.1095pt too wide) in paragraph at lines 45--53
+\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
+le/pii/S0021999116303904 
  []
 
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ∂ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--64
-\OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
-science / article / pii /
+Overfull \hbox (69.1095pt too wide) in paragraph at lines 55--64
+\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
+le/pii/S187770581730022X 
  []
 
-[35] [36]
-./LME-MPM.bbl:157: Misplaced alignment tab character &.
-l.157   algorithm, Computers &
+
+Underfull \hbox (badness 2368) in paragraph at lines 75--79
+\OT1/cmr/m/n/12 A seam-less bridge be-tween fi-nite el-e-ments and mesh-free me
+th-
+ []
+
+[35]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ü in font cmr12!
+ [36]
+Underfull \hbox (badness 6893) in paragraph at lines 158--163
+[]\OT1/cmr/m/n/12 T. J. Charl-ton, W. M. Coombs, C. E. Au-garde, iGIMP:
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 158--163
+\OT1/cmr/m/n/12 An im-plicit gen-er-alised in-ter-po-la-tion ma-te-rial point m
+ethod for
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 158--163
+\OT1/cmr/m/n/12 large de-for-ma-tions, Com-put-ers & Struc-tures 190 (2017) 108
+--125.
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 165--172
+\OT1/cmr/m/n/12 ma-te-rial point method for tran-sient prob-lems, Com-puter Met
+h-
+ []
+
+
+Overfull \hbox (69.1095pt too wide) in paragraph at lines 165--172
+\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
+le/pii/S0045782517301779 
+ []
+
+[37]
+./LME-MPM.bbl:213: Misplaced alignment tab character &.
+l.213   algorithm, Computers &
                                Structures - COMPUT STRUCT 53 (1994) 27--33.
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2737,39 +2065,56 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--191
-\OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 https : / / books . google . es / books
- / about /
+Underfull \hbox (badness 3612) in paragraph at lines 225--230
+[]\OT1/cmr/m/n/12 W. Zdzis-law, The ma-te-rial point method in large strain en-
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--191
-\OT1/cmtt/m/n/12 Smoothed{_}Particle{_}Hydrodynamics . html ? id =
+Underfull \hbox (badness 10000) in paragraph at lines 225--230
+\OT1/cmr/m/n/12 gi-neer-ing prob-lems, Com-puter Meth-ods in Ap-plied Me-chan-
  []
 
-[37]) [38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1630.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1630.
- (./LME-MPM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1630.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1630.
 
-Package rerunfilecheck Info: File `LME-MPM.out' has not changed.
-(rerunfilecheck)             Checksum: 175D4869555F5F175A816F3719CD677F;695.
+Underfull \hbox (badness 2181) in paragraph at lines 225--230
+\OT1/cmr/m/n/12 ics and En-gi-neer-ing 193 (39-41 SPEC. ISS.) (2004) 4417--4438
+.
+ []
 
+
+Overfull \hbox (272.14359pt too wide) in paragraph at lines 242--247
+\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 https://books.google.es/books/about/Smooth
+ed[]Particle[]Hydrodynamics.html?id=[]cwFMmEQvZQC&redir[]esc=y 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--253
+[]\OT1/cmr/m/n/12 S. Ku-mar, K. Danas, D. M. Kochmann, En-hanced lo-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--253
+\OT1/cmr/m/n/12 maximum-entropy ap-prox-i-ma-tion for sta-ble mesh-free sim-u-l
+a-
+ []
+
+)
+
+Package natbib Warning: There were undefined citations.
+
+[38] (./LME-MPM.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1630.
  ) 
 Here is how much of TeX's memory you used:
- 28009 strings out of 492982
- 534521 string characters out of 6134895
- 748249 words of memory out of 5000000
- 30772 multiletter control sequences out of 15000+600000
+ 24382 strings out of 492982
+ 479950 string characters out of 6134895
+ 663045 words of memory out of 5000000
+ 27370 multiletter control sequences out of 15000+600000
  19411 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,79p,1972b,847s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,16n,79p,1972b,832s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -2787,11 +2132,12 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/symbols/msam10.pfb>
-Output written on LME-MPM.pdf (38 pages, 2868456 bytes).
+Output written on LME-MPM.pdf (38 pages, 1928353 bytes).
 PDF statistics:
- 976 PDF objects out of 1000 (max. 8388607)
- 852 compressed objects within 9 object streams
- 203 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

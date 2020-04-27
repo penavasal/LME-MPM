@@ -5,12 +5,12 @@
                      '(("elsarticle" "preprint" "12pt" "a4paper")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("units" "ugly") ("glossaries" "acronym")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -19,14 +19,13 @@
     "elsarticle"
     "elsarticle12"
     "lineno"
-    "hyperref"
     "float"
     "subfig"
     "color"
     "soul"
+    "cancel"
     "algorithm"
     "algorithmic"
-    "cancel"
     "subfigure"
     "amsmath"
     "amsthm"
@@ -37,6 +36,8 @@
     "glossaries")
    (TeX-add-symbols
     '("Deriv" ["argument"] 2)
+    '("MMP" 1)
+    '("red" 1)
     '("Integral" 2)
     '("GradT" 1)
     '("GradS" 1)
@@ -45,7 +46,7 @@
     '("Vector" 1)
     '("Matrix" 1)
     '("tens" 1)
-    '("vec" 1))
+    '("vect" 1))
    (LaTeX-add-labels
     "intro"
     "sec:meshfree-methodology"
@@ -70,6 +71,7 @@
     "eq:IncrStrainPoint"
     "eq:MassConservation"
     "eq:Updated_Lagrangian"
+    "sec:epc-algor-mpm"
     "fig:MPM_algorithm"
     "eq:Sulsky-1994-UL-v"
     "eq:Sulsky-1994-UL-x"
@@ -78,12 +80,12 @@
     "eq:Tran-2019-GA-v"
     "eq:Tran-2019-GA-x"
     "eq:Tran-2019-GA-a"
-    "sec:epc-algor-mpm"
     "eq:Predictor-velocity-I"
     "eq:Variational-recovery"
     "eq:Predictor-velocity-II"
     "eq:Corrector-velocity"
     "eq:Update-lagrangian-pce"
+    "algo:1"
     "sec:local-max-ent"
     "eq:Shannon-entropy"
     "eq:least-biased-approximation-scheme"

@@ -3,44 +3,49 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: LME-MPM.aux
 The style file: elsarticle-num.bst
 Database file #1: Biblio/Biblio.bib
-You've used 30 entries,
+Warning--I didn't find a database entry for "Guilkey2003"
+Warning--I didn't find a database entry for "Charlton2017"
+Warning--empty author in Navas:17b
+Warning--empty author in Navas2016b
+You've used 38 entries,
             2937 wiz_defined-function locations,
-            908 strings with 11736 characters,
-and the built_in function-call counts, 8710 in all, are:
-= -- 876
-> -- 273
+            977 strings with 13494 characters,
+and the built_in function-call counts, 11387 in all, are:
+= -- 1158
+> -- 347
 < -- 0
-+ -- 111
-- -- 81
-* -- 694
-:= -- 1214
-add.period$ -- 46
-call.type$ -- 30
-change.case$ -- 28
++ -- 141
+- -- 103
+* -- 937
+:= -- 1570
+add.period$ -- 61
+call.type$ -- 38
+change.case$ -- 36
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 233
-empty$ -- 940
-format.name$ -- 105
-if$ -- 2231
+cite$ -- 40
+duplicate$ -- 299
+empty$ -- 1220
+format.name$ -- 133
+if$ -- 2908
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 32
-newline$ -- 121
-num.names$ -- 30
-pop$ -- 165
+int.to.str$ -- 38
+missing$ -- 40
+newline$ -- 153
+num.names$ -- 36
+pop$ -- 197
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 545
+skip$ -- 689
 stack$ -- 0
-substring$ -- 446
-swap$ -- 72
+substring$ -- 663
+swap$ -- 96
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 60
-width$ -- 32
-write$ -- 284
+warning$ -- 2
+while$ -- 79
+width$ -- 40
+write$ -- 362
+(There were 4 warnings)

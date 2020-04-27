@@ -1,7 +1,8 @@
 
 \documentclass[preprint,12pt,a4paper]{elsarticle}
 
-\usepackage{lineno,hyperref}
+\usepackage{lineno}
+% \usepackage{hredyperref}
 \usepackage{float}
 \usepackage{subfig}
 \usepackage{color}
@@ -44,9 +45,6 @@
 }
 \newcommand{\Vector}[1]{
   \ensuremath{\mathbf{{#1}}}
-}
-\newcommand{\red}[1]{
-  \textcolor{red}{{#1}}
 }
 % Divergence
 \newcommand{\Div}[1]{
@@ -182,6 +180,17 @@
 % End glossaries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\red}[1]{
+  \textcolor{red}{{#1}}
+}
+
+\newcommand{\MMP}[1]{
+  \textcolor{blue}{{#1}}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \modulolinenumbers[5]
 
 \journalname{Computer Methods in Applied Mechanics and Engineering}
@@ -246,15 +255,17 @@ and Miguel Martín Stickle$^a$
   under this approach due the incapability of the standard \acrshort{mpm} time
   integration scheme to filter spurious noises. To overcome this
   limitation in this paper, an Explicit Predictor-Corrector time
-  integration scheme has been proposed. Its \textcolor{red}{powerful} \cancel{superior} performance
-  mitigates the presence of spurious oscillations with minimal dissipation in high
-  frequency problems. Other source of numerical noise in \acrshort{mpm} 
-  occurs when the material points cross computational grid
-  boundaries, being this issue motivated by the lack of smoothness of the interpolation
-  functions. This noise results in spurious local variations at the material
-  points, where strain-stress fields are computed. This could lead to inaccurate solutions as well as aborted simulations in the worst cases. To overcome it,
-  this document adopts the \acrfull{lme} approximation schemes as a
-  robust substitute of the traditional shape function in
+  integration scheme has been proposed. Its \textcolor{red}{powerful}
+  \cancel{superior} performance mitigates the presence of spurious
+  oscillations with minimal dissipation in high frequency
+  problems. Other source of numerical noise in \acrshort{mpm} occurs
+  when the material points cross computational grid boundaries, being
+  this issue motivated by the lack of smoothness of the interpolation
+  functions. This noise results in spurious local variations at the
+  material points, where strain-stress fields are computed. This could
+  lead to inaccurate solutions as well as aborted simulations in the
+  worst cases. To overcome it, this document adopts the \acrfull{lme}
+  approximation schemes as a robust substitute of the traditional shape function in
   \acrshort{mpm}. \acrshort{lme} approximation may be regarded
   as a \textit{thermalization} of Delaunay triangulation which resolves the
   degenerate cases resulting from the lack or uniqueness of the
@@ -339,13 +350,23 @@ approach has been widely employed in this and many other numerical
 techniques. To avoid introducing this nonphysical sources, many
 researchers has proposed alternative time integration
 schemes which reduce the presence of high frequency noises by
-filtering them or increasing \red{somehow} the accuracy. \cancel{of the time integration
-scheme.} One of the most popular is the \acrfull{igimp}
-Charlton {\it et al.} (2017)~\cite{Charlton2017} \red{DECIR MAS DE ESTO}. More recently Tran \&
-Solowski (2019)~\cite{Tran2019e} proposed a generalised-$\alpha$ scheme
-for \acrshort{mpm} with promising results but at the expense of increasing
-the computational effort. In this paper a less time consuming and high
-efficient explicit predictor-corrector integration method has been
+filtering them or increasing \red{somehow} the accuracy. \cancel{of
+  the time integration scheme.} \MMP{One of the first attempts of it was
+the proposal of an implicit time integration scheme by Guilkey \&
+Weiss \cite{Guilkey_2003}. More recently Wang {\it et al.}
+\cite{Wang_2016} to downsize this spurious noises add a nonvoiscous
+damping to the linear momentum balance equation, and later Charlton
+{\it et al.} \cite{Charlton_2017} extended this scheme to the
+\acrshort{gimp} approach, and introducing the well-know
+\acrfull{igimp} method. However, the local damping introduced by
+\cite{Wang_2016} can totally over-damp the solution in time-dependent
+simulations such as in consolidation process. Within the explicit
+time integration schemes, Lu {\it et al.}\cite{LU_2018} introduced the time-discontinuous Galerkin method to control the spurious noises
+propagation, and later Tran \& Solowski~\cite{Tran2019e}
+proposed a generalised-$\alpha$ scheme for \acrshort{mpm} with
+promising results but at the expense of increasing the computational
+effort.}
+In this paper a less time consuming and high efficient explicit predictor-corrector integration method has been
 proposed. It consists in an accommodation of the traditional \acrsull{npc} scheme, widely employed in Finite Element methods. This method
 has been chosen among other suitable alternatives as those proposed
 by Wilson {\it et al.} (1972)~\cite{Wilson1972} or Chung \& Hulbert
