@@ -988,9 +988,8 @@ adopted \textit{regularization} parameter it is possible to get a
 behaviour can be obtained for lower values of $\gamma$ since the
 support of the shape function is drastically increase, and therefore
 \textit{smoother} solutions are obtained. See \cite{Navas2016} for an
-application of this capability, in this publication authors smooth 
-oscillations due to excess of pore water pressure in consolidation
-problems.}A proof of this statements is observed in figure~\ref{fig:LME_MPM}.
+application of this capability, where publication oscillations due to
+excess of pore water pressure in consolidation problems are smoothed out by using this technique.}A proof of this statements is observed in figure~\ref{fig:LME_MPM}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}
   \centering
@@ -1349,36 +1348,32 @@ meshfree methods, with seamless transitions between those regions.
 
 \section{Conclusions}
 \label{sec:conclusions}
-We have developed a novel time integration scheme for \acrshort{mpm}, and
-proved how local \textit{max-ent} approximation scheme could be
-employed as an useful technique in \acrshort{mpm}. The \acrshort{npc} arise as a highly
-efficient alternative for challenging dynamic problems like coupled
-$u-p_w$ without appeal to expensive implicit time integration
-algorithms. Also the procedure employed to design the \acrshort{npc} algorithm open
-the door to revisit a huge variety of time integration schemes
-developed originally for \acrshort{fem}, which can be rearranged to \acrshort{mpm} framework
-with some modifications. Anyway, further research should be done to improve the
-formal comprehension of the algorithm good performance. This paper
-also enhances the suitability of the \acrshort{lme} approximation as a
-general promising alternative to the wide range of approximation.
-techniques developed for the \acrshort{mpm} to overcome grid crossing
-limitations and to avoid the constriction of the \acrshort{ugimp} of a regular mesh
-or a high density of particles per cell. Future research of the
-group will be on the employ of this scheme to improve the localization
-capabilities of \acrshort{mpm} for viscoplastic materials. Finally we remark on
-the possibility of adapting the function $\beta(\vect{x})$ as a second
-order tensor with the aim of adapt the shape function with the strain field which improves the
-performance of it in the aforementioned localization
-capabilities. Other possibility is to adapt the value of $\beta$ to
-solve the equations \acrshort{fem}-like of meshfree-like depending of how behaves
-the region, this could be extremely useful in simulating all together
-initialization and propagation of fast landslides.
-
-\begin{acknowledgements}
-If you'd like to thank anyone, place your comments here
-and remove the percent signs.
-\end{acknowledgements}
-
+We have developed a novel time integration scheme for
+\acrshort{mpm}. The \acrshort{npc} arise as a highly efficient
+alternative for demanding dynamic problems like coupled $u-p_w$
+without appeal to expensive implicit time integration algorithms. Also
+the procedure employed to design the \acrshort{npc} algorithm open the
+door to revisit a huge variety of time integration schemes developed
+originally for \acrshort{fem}, which can be rearranged to
+\acrshort{mpm} framework with some modifications. Anyway, further
+research should be done to elucidate the formal comprehension of the
+algorithm good performance. This paper also enhances the skills of
+local \textit{max-ent} approximation scheme as a robust and versatile
+tool in the \acrshort{mpm} framework. It also come up as a promising
+alternative to other approximation techniques developed for the
+\acrshort{mpm} to overcome grid crossing limitations and to avoid the
+constriction of the \acrshort{ugimp} of a regular mesh or a high
+density of particles per cell. Future research of the group will be on
+the employ of this scheme to strengthen the localization capabilities of
+\acrshort{mpm} for viscoplastic materials. Finally we remark on the
+possibility of adapting the function $\beta(\vect{x})$ through the finite strain
+tensor in order to guide the shape function in the principal strain
+direction to way select the most suitable set of nodes. Other
+research line is the possibility to adapt the value of $\beta$ to solve the equations
+\acrshort{fem}-like of meshfree-like depending of how behaves the
+region, this could be extremely useful to reproduce such challenging
+scenarios as simulating simultaneously both initialization and
+propagation stages of fast landslides.
 % 
 \section*{Conflict of interest}
 %
