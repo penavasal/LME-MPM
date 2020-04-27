@@ -19,6 +19,7 @@
     "elsarticle"
     "elsarticle12"
     "lineno"
+    "hyperref"
     "float"
     "subfig"
     "color"
@@ -123,7 +124,6 @@
     "eq:1D-balance-linear-momentum-II"
     "eq:1D-constitutive-equation-II"
     "eq:1D-wave-elastic"
-    "eq:1D-elastic-wave-celerity"
     "eq:System-stress-velocity"
     "eq:System-stress-velocity-II"
     "eq:eq:System-stress-velocity-II"
@@ -137,9 +137,7 @@
     "eq:SystemEquations_sigma_v_VI"
     "eq:Riemann-I-1D-elastic-bar"
     "eq:Riemann-II-1D-elastic-bar"
-    "eq:Riemann-stress-velocity"
-    "fig:vel_analytics_dyka"
-    "fig:stress_analytics_dyka")
+    "eq:Riemann-stress-velocity")
    (LaTeX-add-bibliographies
     "Biblio/Biblio"))
  :latex)

@@ -2,6 +2,10 @@
  "Biblio"
  (lambda ()
    (LaTeX-add-bibitems
+    "Navas2016"
+    "Navas2016b"
+    "Navas:17c"
+    "Riemann_1854"
     "LU_2018"
     "Charlton_2017"
     "Wang_2016"
@@ -284,9 +288,6 @@
     "Alikarami2015"
     "Navas2018a"
     "Navas:17b"
-    "Navas2016"
-    "Navas2016b"
-    "Navas:17c"
     "Sukumar15"
     "Wriggers18"
     "QuecedoGutierrez1997"
