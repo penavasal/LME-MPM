@@ -1239,9 +1239,9 @@ one performed by \acrshort{mpm}.
 \subsection{Rigid block}
 \label{sec:andersen-block}
 
-The following test was proposed to measure proof the ability of this
+The following test was proposed to \PNA{validate} \cancel{measure proof} the ability of the proposed
 interpolation technique to deal with grid crossing instabilities. It
-consists in the simulation of a square block of soil incrementally
+consists of the simulation of a square block of soil incrementally
 loaded by a body force. Details of the problem are sketched in figure~\ref{fig:block}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}\sidecaption
@@ -1252,19 +1252,19 @@ loaded by a body force. Details of the problem are sketched in figure~\ref{fig:b
   \label{fig:block}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-This test was taken from PhD thesis of Andersen (2009)\cite{thesis_Andersen_2009}. The
-elastic parameters consider for this test are: 
+This test was \cancel{taken from PhD thesis of Andersen} \PNA{previously proposed by Andersen} (2009)\cite{thesis_Andersen_2009}. The
+elastic parameters considered for this test are: 
 \begin{itemize} 
 \item  Initial density : $6\cdot 10^3\ kg/m^3$
 \item  Poisson ratio : $0$
 \item  Elastic modulus : $5\ MPa$
 \end{itemize}
-The gravity force is a apply as an external force according to the
-equations \eqref{eq:particle_body_forces},
+The gravity force is applied as an external force according to the
+equations \eqref{eq:particle_body_forces} and
 \eqref{eq:nodal_external_forces}. Using a total time period of T (20
 seconds) to apply the gravity, it is increased from 0 to 9.81$m/s$
-with a sinus function until T/2 and then maintained constant until T
-in order to arrive to a state of equilibrium, 
+with a sinusoidal function until T/2 and then maintained constant until T
+in order to reach the equilibrium state:
 \begin{equation}
   \label{eq:gravity-load-block}
  \mathbf{g}(t) = \left\{
@@ -1276,7 +1276,7 @@ in order to arrive to a state of equilibrium,
 \end{equation}
 In order to get a stable solution, time step was conducted by a
 Courant number of 0.1. On the other hand, the explicit
-predictor-corrector scheme is here employed looking forward getting better results. For the
+predictor-corrector scheme is here employed looking forward to getting better results. For the
 initial spatial discretization four particles per cell
 ($\Delta x = 2\ m$) were adopted. The initial layout of particles inside of the
 cell changes according to the approximation technique adopted. For the
@@ -1289,9 +1289,9 @@ overlap each others.
 
 Figure~\ref{fig:Block-LME3} shows the evolution of the vertical stress
 during the loading process. The result is physically realistic as
-stress increments linearly from the top to the bottom of the specimen,
+the stress increases linearly from the top to the bottom of the specimen,
 and the value of the vertical stress in a material point located in
-the bottom of the specimen oscillates centered in $5.2 MPa$, which is
+the bottom of the specimen oscillates around $5.2 MPa$, which is
 the analytic value given by $\sigma_{yy} = \rho g h_y$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}
@@ -1313,12 +1313,13 @@ the analytic value given by $\sigma_{yy} = \rho g h_y$.
   \label{fig:Block-LME3}
 \end{figure*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Figure~\ref{fig:vertical-displacement-block} shows the vertical
 displacement evolution of a point in the free surface of the
 block. This figure shows how simulations performed with a bi-linear
 interpolation technique (Q4) turns out to be unstable during
-cell-crossing and consequently fails. The \acrshort{ugimp} simulation
-is more stable than the one performed by the Q4. Despite this is still
+cell-crossing and consequently fail. The \acrshort{ugimp} simulation
+is more stable than the one performed by the Q4, \PNA{although} \cancel{Despite this} is still
 unstable and could trigger severe oscillations in simulation with
 non-linear  materials. The \acrshort{lme} simulation was performed
 using two kinds of shape functions, one with a low value of the
@@ -1329,8 +1330,8 @@ due to the fact that with larger value of $\gamma$, the shape
 functions behaves in a similar way to the \acrshort{fem}, which performs very
 accurate in those cases with a reasonable mesh distorsion, and with a
 lower value it behaves in a similar way to the \acrshort{ugimp}. This behaviour
-was noticed previously by \cite{Arroyo2006}, were authors highlight
-how by adjusting the spatial variation of $\beta(\vect{x})$, it is
+was noticed previously by \cite{Arroyo2006}, were authors highlighted
+how, by adjusting the spatial variation of $\beta(\vect{x})$, it is
 possible to select regions of the domain of analysis which are treated
 by finite elements and regions that are treated in the style of
 meshfree methods, with seamless transitions between those regions. 
