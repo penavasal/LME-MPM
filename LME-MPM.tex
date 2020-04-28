@@ -93,7 +93,7 @@
 \newglossaryentry{neumann-boundary}
 {
   name=$ \Gamma_n$,
-  description={Natural or Nemann boundary conditions over $\partial\varOmega$}
+  description={Natural or Neumann boundary conditions over $\partial\varOmega$}
 }
 
 \newglossaryentry{rho}
@@ -349,12 +349,12 @@ as wiggles, arise due to inaccuracies in the time discretization technique.
 A simple approach to face those spurious noises lies on the addition of nonphysical damping sources to the equilibrium equations. This
 approach has been widely employed in this and many other numerical
 techniques. To avoid introducing this nonphysical sources, many
-researchers has proposed alternative time integration
+researchers have proposed alternative time integration
 schemes which reduce the presence of high frequency noises by
-filtering them or increasing\PNA{somehow} the accuracy.\MMP{One of the first attempts of it was
+filtering them or increasing\PNA{somehow} the accuracy.\MMP{One of the first attempts was
 the proposal of an implicit time integration scheme by Guilkey \&
 Weiss \cite{Guilkey_2003}. More recently Wang {\it et al.}
-\cite{Wang_2016} to downsize this spurious noises add a nonvoiscous
+\cite{Wang_2016} downsized these spurious noises by adding a non-viscous
 damping to the linear momentum balance equation, and later Charlton
 {\it et al.} \cite{Charlton_2017} extended this scheme to the
 \acrshort{gimp} approach introducing the \acrfull{igimp}
@@ -366,7 +366,7 @@ propagation, and later Tran \& Solowski~\cite{Tran2019e}
 proposed a generalised-$\alpha$ scheme for \acrshort{mpm} with
 promising results but at the expense of increasing the computational
 effort.} In this paper a less time consuming and high efficient explicit predictor-corrector integration method has been
-proposed. It consists in an accommodation of the traditional \acrsull{npc} scheme, widely employed in Finite Element methods. This method
+proposed. It consists of an accommodation of the traditional \acrsull{npc} scheme, widely employed in Finite Element methods. This method
 has been chosen among other suitable alternatives as those proposed
 by Wilson {\it et al.} (1972)~\cite{Wilson1972} or Chung \& Hulbert
 (1993)~\cite{Geranlized_alpha_1993} because its simplicity and its good
@@ -1348,32 +1348,32 @@ meshfree methods, with seamless transitions between those regions.
 
 \section{Conclusions}
 \label{sec:conclusions}
-We have developed a novel time integration scheme for
-\acrshort{mpm}. The \acrshort{npc} arise as a highly efficient
-alternative for demanding dynamic problems like coupled $u-p_w$
-without appeal to expensive implicit time integration algorithms. Also
+\PNA{The proposed research has dived into the performance of the \acrfull{mpm} within dynamic problems of very fast loading rate. The main goal, which was the enhancement of such a methodology with different time and spatial discretization tools in order to stabilize the solution, has been satisfactory fulfilled.} 
+
+\PNA{On the one hand,} a novel time integration scheme for
+\acrshort{mpm} has been carried out. The \acrshort{npc} arises as a highly efficient
+alternative for demanding dynamic problems \PNA{with high frequency of the applied loads. In the literature, several approaches of the \acrshort{npc} are proposed in order to compete on accuracy with expensive implicit time integration algorithms.} \PNA{The main achievement of the proposed time discretization has been observed within the Dyka's bar \ref{sec:dyka-bar}, obtaining lower values of the error than the ones obtained with the \acrfull{fe} scheme.}
+Also,
 the procedure employed to design the \acrshort{npc} algorithm open the
 door to revisit a huge variety of time integration schemes developed
-originally for \acrshort{fem}, which can be rearranged to
-\acrshort{mpm} framework with some modifications. Anyway, further
-research should be done to elucidate the formal comprehension of the
-algorithm good performance. This paper also enhances the skills of
-local \textit{max-ent} approximation scheme as a robust and versatile
-tool in the \acrshort{mpm} framework. It also come up as a promising
-alternative to other approximation techniques developed for the
-\acrshort{mpm} to overcome grid crossing limitations and to avoid the
+originally for \acrshort{fem}, which can be rearranged to the
+\acrshort{mpm} framework with the required modifications. \PNA{As well as the implementation of enhanced time integration schemes, further
+research may be done in the comprehension of the
+good performance of the algorithm within non-linear solutions, such as the coupling between different phases or the non-linear constitutive behaviour of the materials: the employment of this scheme to strengthen the localization capabilities of \acrshort{mpm} for viscoplastic materials is on the scope of this research line. The comparison with traditional time schemes in the non-linear field will improve the formal understanding of the proposed methodology.}
+
+\PNA{On the other hand, the spatial discretization of the \acrshort{mpm} is enhanced thanks to the powerful skills of the \acrfull{lme} approximation scheme, which has been validated as a robust and versatile
+tool in the \acrshort{mpm} framework.} It also comes up as a promising
+alternative to other approximation techniques\PNA{, developed within the
+\acrshort{mpm} field, in order }to overcome grid crossing limitations and to avoid the
 constriction of the \acrshort{ugimp} of a regular mesh or a high
-density of particles per cell. Future research of the group will be on
-the employ of this scheme to strengthen the localization capabilities of
-\acrshort{mpm} for viscoplastic materials. Finally we remark on the
-possibility of adapting the function $\beta(\vect{x})$ through the finite strain
+density of particles per cell. \PNA{Several research lines of the \acrshort{lme} scheme dive into the improvement of the methodology, focusing in the optimization of the calculation of the shape function and the possibility of adapting the parameter $\beta(\vect{x})$ through the finite strain
 tensor in order to guide the shape function in the principal strain
-direction to way select the most suitable set of nodes. Other
-research line is the possibility to adapt the value of $\beta$ to solve the equations
+direction to select the most suitable set of nodes adapted to the strain, as well as the possibility of adapting} the value of $\beta$ to solve the equations
 \acrshort{fem}-like of meshfree-like depending of how behaves the
-region, this could be extremely useful to reproduce such challenging
-scenarios as simulating simultaneously both initialization and
-propagation stages of fast landslides.
+region. \PNA{Together with the implementation of non-linear behaviours, previously mentioned, challenging
+scenarios could be reproduced, being the main purpose of the research line the simultaneous simulation of both initialization and
+propagation stages of fast landslides.}
+
 % 
 \section*{Conflict of interest}
 %
