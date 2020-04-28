@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{The meshfree methodology}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Derivation of MPM procedure}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{mpm time integration scheme: the Explicit Predictor-Corrector proposal}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{mpm time integration scheme: the Newmark Predictor-Corrector proposal}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Local Max-Ent approximants}{section.2}% 5
 \BOOKMARK [1][-]{section.3}{Application to linear elasticity dynamic problems.}{}% 6
 \BOOKMARK [2][-]{subsection.3.1}{Dyka's bar Dyka1995}{section.3}% 7
