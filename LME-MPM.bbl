@@ -162,6 +162,16 @@ T.~J. Charlton, W.~M. Coombs, C.~E. Augarde, {iGIMP: An implicit generalised
 \newblock \href {http://dx.doi.org/10.1016/j.compstruc.2017.05.004}
   {\path{doi:10.1016/j.compstruc.2017.05.004}}.
 
+\bibitem{Soga_2017}
+S.~Kularathna, K.~Soga,
+  \href{http://www.sciencedirect.com/science/article/pii/S0045782516313081}{Implicit
+  formulation of material point method for analysis of incompressible
+  materials}, Computer Methods in Applied Mechanics and Engineering 313 (2017)
+  673 -- 686.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.cma.2016.10.013}
+  {\path{doi:https://doi.org/10.1016/j.cma.2016.10.013}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0045782516313081}
+
 \bibitem{LU_2018}
 M.~Lu, J.~Zhang, H.~Zhang, Y.~Zheng, Z.~Chen,
   \href{http://www.sciencedirect.com/science/article/pii/S0045782517301779}{Time-discontinuous
@@ -252,6 +262,26 @@ G.~R. G.-R. Liu, M.~B. Liu,
   particle hydrodynamics : a meshfree particle method}}, World Scientific,
   2003.
 \newline\urlprefix\url{https://books.google.es/books/about/Smoothed{\_}Particle{\_}Hydrodynamics.html?id={\_}cwFMmEQvZQC{\&}redir{\_}esc=y}
+
+\bibitem{Augarde_2013}
+Z.~Ullah, W.~Coombs, C.~Augarde,
+  \href{http://www.sciencedirect.com/science/article/pii/S0045782513001941}{An
+  adaptive finite element/meshless coupled method based on local maximum
+  entropy shape functions for linear and nonlinear problems}, Computer Methods
+  in Applied Mechanics and Engineering 267 (2013) 111 -- 132.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.cma.2013.07.018}
+  {\path{doi:https://doi.org/10.1016/j.cma.2013.07.018}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0045782513001941}
+
+\bibitem{Arduino_2018}
+W.-C. Yang, P.~Arduino, G.~R. Miller, P.~Mackenzie-Helnwein,
+  \href{http://www.sciencedirect.com/science/article/pii/S0045782518302263}{Smoothing
+  algorithm for stabilization of the material point method for fluid–solid
+  interaction problems}, Computer Methods in Applied Mechanics and Engineering
+  342 (2018) 177 -- 199.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.cma.2018.04.041}
+  {\path{doi:https://doi.org/10.1016/j.cma.2018.04.041}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0045782518302263}
 
 \bibitem{Kochmann2019}
 S.~Kumar, K.~Danas, D.~M. Kochmann, {Enhanced local maximum-entropy

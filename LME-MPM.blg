@@ -5,45 +5,45 @@ The style file: elsarticle-num.bst
 Database file #1: Biblio/Biblio.bib
 Name 1 in "Wi{\c{e}}ckowski, Zdzislaw," has a comma at the end for entry Wieckowski2004
 while executing---line 1495 of file elsarticle-num.bst
-You've used 39 entries,
+You've used 42 entries,
             2937 wiz_defined-function locations,
-            981 strings with 13706 characters,
-and the built_in function-call counts, 11824 in all, are:
-= -- 1200
-> -- 375
+            1006 strings with 14614 characters,
+and the built_in function-call counts, 12931 in all, are:
+= -- 1317
+> -- 405
 < -- 0
-+ -- 151
-- -- 112
-* -- 970
-:= -- 1645
-add.period$ -- 63
-call.type$ -- 39
-change.case$ -- 37
++ -- 163
+- -- 121
+* -- 1075
+:= -- 1798
+add.period$ -- 69
+call.type$ -- 42
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 308
-empty$ -- 1256
-format.name$ -- 144
-if$ -- 3012
+cite$ -- 42
+duplicate$ -- 338
+empty$ -- 1373
+format.name$ -- 156
+if$ -- 3294
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 41
-newline$ -- 157
-num.names$ -- 39
-pop$ -- 200
+int.to.str$ -- 42
+missing$ -- 44
+newline$ -- 172
+num.names$ -- 42
+pop$ -- 215
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 712
+skip$ -- 763
 stack$ -- 0
-substring$ -- 687
-swap$ -- 99
+substring$ -- 768
+swap$ -- 111
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 83
-width$ -- 41
-write$ -- 374
+while$ -- 89
+width$ -- 44
+write$ -- 407
 (There was 1 error message)

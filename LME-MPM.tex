@@ -3,6 +3,7 @@
 \usepackage{lineno}
 \usepackage{hyperref}
 \usepackage{float}
+\usepackage{textcomp}
 \usepackage{subfig}
 \usepackage{color}
 \usepackage{soul}
@@ -166,6 +167,7 @@
 \newacronym{otm}{OTM}{Optimal Transportation Meshfree}
 \newacronym{sph}{SPH}{Smoothed Particle Hydrodynamics}
 \newacronym{fem}{FEM}{Finite Element Method}
+\newacronym{efgm}{EFGM}{Element-Free Galerkin Method} 
 \newacronym{lme}{LME}{Local Maximum-Entropy}
 \newacronym{flip}{FLIP}{Fluid Implicit Particle}
 \newacronym{gimp}{GIMP}{Generalized Interpolation Material Point}
@@ -336,7 +338,9 @@ nodal set and the domain of analysis. They are also non-negative,
 satisfy the partition of unity property, and provide an exact
 approximation for related functions~\cite{Arroyo2006}. Important contributions on the Maximum-Entropy have been made by Sukumar and coworkers~\cite{Sukumar15} with Cell-based techniques and the ones carried within the \acrfull{otm} method. The latter methodology has been proven to have a good performance under
 the dynamic regime by other researchers, being important the contributions of Li {\it et al.} (2012)~\cite{Li2012} and Navas {\it et al.}
-(2018)~\cite{Navas:17b,Navas2018a} in the explicit regime and Navas {\it et al.}~\cite{Navas2016,Navas2016b,Navas:17c} and Wriggers and coworkers~\cite{Wriggers18} with implicit schemes. And more
+(2018)~\cite{Navas:17b,Navas2018a} in the explicit regime and Navas
+{\it et al.}~\cite{Navas2016,Navas2016b,Navas:17c} and Wriggers and
+coworkers~\cite{Wriggers18} with implicit schemes. More
 recently, under \acrshort{mpm} framework, the work made by Wobbes {\it et
   al.}(2020)~\cite{Wobbes2020}.\PNA{The proposed research delves into the benefits of
 the regularization parameter, \gls{LME-beta}, and the analogy of the different obtained shape functions derive by the tuning of this parameter and the traditional \acrshort{mpm} ones.}
@@ -360,8 +364,11 @@ damping to the linear momentum balance equation, and later Charlton
 \acrshort{gimp} approach introducing the \acrfull{igimp}
 method. However, the local damping introduced by 
 \cite{Wang_2016} can totally over-damp the solution in time-dependent
-simulations such as in consolidation process. Within the explicit
-time integration schemes, Lu {\it et al.}\cite{LU_2018} introduced the time-discontinuous Galerkin method to control the spurious noises
+simulations such as in consolidation process. In a recent publication,
+Kularathna \& Soga \cite{Soga_2017} study an implicit treatment of the pressure in MPM algorithm to simulate material incompressibility
+avoiding artificial pressure oscillations by applying
+Chorin\textquotesingle s
+projection. Within the explicit time integration schemes, Lu {\it et al.}\cite{LU_2018} introduced the time-discontinuous Galerkin method to control the spurious noises
 propagation, and later Tran \& Solowski~\cite{Tran2019e}
 proposed a generalised-$\alpha$ scheme for \acrshort{mpm} with
 promising results but at the expense of increasing the computational
@@ -982,14 +989,21 @@ described does not requires the employment of this artifices.
 Due to the \short{fem}-compatibility, the \acrshort{lme} shape
 function is degenerated to linear finite element shape function if
 $d+1$ neighbouring nodes are chosen as the support, where $d$ is the
-number of dimensions in the problem. Furthermore, with a conveniently
+number of dimensions in the problem. \MMP{Ullah {\it et al.}
+  \cite{Augarde_2013} take advantage of the \acrshort{lme}
+  \short{fem}-compatibility to couple the
+  \acrfull{efgm} and \short{fem} for linear elasticity and for problems with both material and geometrical nonlinearities.}Furthermore, with a conveniently
 adopted \textit{regularization} parameter it is possible to get a 
 \acrshort{gimp}-like shape function.\MMP{Finally \short{sph}-like
 behaviour can be obtained for lower values of $\gamma$ since the
 support of the shape function is drastically increase, and therefore
 \textit{smoother} solutions are obtained. See \cite{Navas2016} for an
 application of this capability, where publication oscillations due to
-excess of pore water pressure in consolidation problems are smoothed out by using this technique.}A proof of this statements is observed in figure~\ref{fig:LME_MPM}.
+excess of pore water pressure in consolidation problems are smoothed
+out by using this technique. The employment of smoothing algorithm is
+also straightforward in the fluid-solid interaction problems
+\cite{Arduino_2018}.A proof of this statements is observed in
+figure~\ref{fig:LME_MPM}, where the \acrshort{lme} adaptability is illustrate.}\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}
   \centering
@@ -1236,7 +1250,7 @@ one performed by \acrshort{mpm}.
 \subsection{Rigid block}
 \label{sec:andersen-block}
 
-The following test was proposed to \PNA{validate} \cancel{measure proof} the ability of the proposed
+The following test was proposed to \PNA{validate} the ability of the proposed
 interpolation technique to deal with grid crossing instabilities. It
 consists of the simulation of a square block of soil incrementally
 loaded by a body force. Details of the problem are sketched in figure~\ref{fig:block}
@@ -1249,7 +1263,7 @@ loaded by a body force. Details of the problem are sketched in figure~\ref{fig:b
   \label{fig:block}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-This test was \cancel{taken from PhD thesis of Andersen} \PNA{previously proposed by Andersen} (2009)\cite{thesis_Andersen_2009}. The
+This test was \PNA{previously proposed by Andersen} (2009)\cite{thesis_Andersen_2009}. The
 elastic parameters considered for this test are: 
 \begin{itemize} 
 \item  Initial density : $6\cdot 10^3\ kg/m^3$
@@ -1316,7 +1330,7 @@ displacement evolution of a point in the free surface of the
 block. This figure shows how simulations performed with a bi-linear
 interpolation technique (Q4) turns out to be unstable during
 cell-crossing and consequently fail. The \acrshort{ugimp} simulation
-is more stable than the one performed by the Q4, \PNA{although} \cancel{Despite this} is still
+is more stable than the one performed by the Q4, \PNA{although} is still
 unstable and could trigger severe oscillations in simulation with
 non-linear  materials. The \acrshort{lme} simulation was performed
 using two kinds of shape functions, one with a low value of the

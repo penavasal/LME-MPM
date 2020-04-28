@@ -1,5 +1,90 @@
 
 %------------------------------------------------------
+% Articulos Arduino y colaboradores
+
+@article{Arduino_2018,
+title = "Smoothing algorithm for stabilization of the material point method for fluid–solid interaction problems",
+journal = "Computer Methods in Applied Mechanics and Engineering",
+volume = "342",
+pages = "177 - 199",
+year = "2018",
+issn = "0045-7825",
+doi = "https://doi.org/10.1016/j.cma.2018.04.041",
+url = "http://www.sciencedirect.com/science/article/pii/S0045782518302263",
+author = "Wen-Chia Yang and Pedro Arduino and Gregory R. Miller and Peter Mackenzie-Helnwein",
+keywords = "Material point method, Fluid–solid interaction, Anti-locking and stabilization, Meshfree methods"
+}
+
+
+%------------------------------------------------------
+% Articulos Soga y colaboradores
+
+@article{Soga_2017,
+title = "Implicit formulation of material point method for analysis of incompressible materials",
+journal = "Computer Methods in Applied Mechanics and Engineering",
+volume = "313",
+pages = "673 - 686",
+year = "2017",
+issn = "0045-7825",
+doi = "https://doi.org/10.1016/j.cma.2016.10.013",
+url = "http://www.sciencedirect.com/science/article/pii/S0045782516313081",
+author = "Shyamini Kularathna and Kenichi Soga",
+keywords = "Material point method, Incompressible material, Implicit pressure, Projection method"
+}
+
+%------------------------------------------------------
+% Articulos de Augarde y colaboradores
+
+@article{Augarde_2019,
+title = "On the use of domain-based material point methods for problems involving large distortion",
+journal = "Computer Methods in Applied Mechanics and Engineering",
+volume = "355",
+pages = "1003 - 1025",
+year = "2019",
+issn = "0045-7825",
+doi = "https://doi.org/10.1016/j.cma.2019.07.011",
+url = "http://www.sciencedirect.com/science/article/pii/S0045782519304074",
+author = "L. Wang and W.M. Coombs and C.E. Augarde and M. Cortis and T.J. Charlton and M.J. Brown and J. Knappett and A. Brennan and C. Davidson and D. Richards and A. Blake",
+keywords = "Material point method, Convected particle domain interpolation, Large deformation mechanics, Elasto-plasticity, Distortion"
+}
+
+@article{Augarde_2013,
+title = "An adaptive finite element/meshless coupled method based on local maximum entropy shape functions for linear and nonlinear problems",
+journal = "Computer Methods in Applied Mechanics and Engineering",
+volume = "267",
+pages = "111 - 132",
+year = "2013",
+issn = "0045-7825",
+doi = "https://doi.org/10.1016/j.cma.2013.07.018",
+url = "http://www.sciencedirect.com/science/article/pii/S0045782513001941",
+author = "Z. Ullah and W.M. Coombs and C.E. Augarde",
+keywords = "Meshless method, Maximum entropy shape functions, FE–EFGM coupling, Error estimation, Adaptivity, Superconvergent patch recovery"}
+
+@article{Charlton_2017,
+author = {Charlton, T.J. J and Coombs, W.M. M and Augarde, C.E. E},
+doi = {10.1016/j.compstruc.2017.05.004},
+issn = {00457949},
+journal = {Computers {\&} Structures},
+pages = {108--125},
+title = {{iGIMP: An implicit generalised interpolation material point method for large deformations}},
+volume = {190},
+year = {2017}
+}
+
+@article{Charlton2017a,
+abstract = {The modelling of geomechanics problems can require a method that allows large deformations and non-linear material behaviour, in this respect the Generalised Material Point Method (GIMPM) is ideal. A fully implicit version of GIMPM has recently been developed for geomechanics problems and some aspects of its implementation are described here. An area that has received less attention in material point methods is that conventional analysis techniques constructed in terms of stress and strain are unable to resolve structural instabilities such as shear banding. This is because they do not contain any measure of the length of the microstructure of the material analysed, such as molecule size or grain structure. Gradient theories provide extensions of the classical equations with additional higher-order terms. The use of length scales makes it possible to model a finite thickness shear band which is not possible with traditional methods. Much work has been done on using gradient theories to include the effect of microstructure in the finite element method (and other numerical analysis techniques) however this yet to be combined with material point methods. In this paper the key equations that are required to extend the implicit GIMPM method to include gradient elasto-plasticity are detailed.},
+author = {Charlton, Tim J. and Coombs, William M. and Augarde, Charles E.},
+doi = {10.1016/j.proeng.2017.01.036},
+file = {:home/miguelmolinos/Documentos/BiblioMendeley/Charlton, Coombs, Augarde/Procedia Engineering/2017 - Gradient Elasto-plasticity with the Generalised Interpolation Material Point Method.pdf:pdf},
+issn = {18777058},
+journal = {Procedia Engineering},
+pages = {110--115},
+title = {{Gradient Elasto-plasticity with the Generalised Interpolation Material Point Method}},
+volume = {175},
+year = {2017}
+}
+
+%------------------------------------------------------
 % Artículos Pedro
 
 @article{Navas2016,
@@ -64,17 +149,6 @@ doi = "https://doi.org/10.1016/j.cma.2017.09.022",
 url = "http://www.sciencedirect.com/science/article/pii/S0045782517301779",
 author = "Mengkai Lu and Jiayong Zhang and Hongwu Zhang and Yonggang Zheng and Zhen Chen",
 keywords = "Material point method, Time-discontinuous formulation, Transient responses, Impact, Solids"
-}
-
-@article{Charlton_2017,
-author = {Charlton, T.J. J and Coombs, W.M. M and Augarde, C.E. E},
-doi = {10.1016/j.compstruc.2017.05.004},
-issn = {00457949},
-journal = {Computers {\&} Structures},
-pages = {108--125},
-title = {{iGIMP: An implicit generalised interpolation material point method for large deformations}},
-volume = {190},
-year = {2017}
 }
 
 @article{Wang_2016,
@@ -461,18 +535,7 @@ title = {{Stability analysis of particle methods with corrected derivatives}},
 volume = {43},
 year = {2002}
 }
-@article{Charlton2017a,
-abstract = {The modelling of geomechanics problems can require a method that allows large deformations and non-linear material behaviour, in this respect the Generalised Material Point Method (GIMPM) is ideal. A fully implicit version of GIMPM has recently been developed for geomechanics problems and some aspects of its implementation are described here. An area that has received less attention in material point methods is that conventional analysis techniques constructed in terms of stress and strain are unable to resolve structural instabilities such as shear banding. This is because they do not contain any measure of the length of the microstructure of the material analysed, such as molecule size or grain structure. Gradient theories provide extensions of the classical equations with additional higher-order terms. The use of length scales makes it possible to model a finite thickness shear band which is not possible with traditional methods. Much work has been done on using gradient theories to include the effect of microstructure in the finite element method (and other numerical analysis techniques) however this yet to be combined with material point methods. In this paper the key equations that are required to extend the implicit GIMPM method to include gradient elasto-plasticity are detailed.},
-author = {Charlton, Tim J. and Coombs, William M. and Augarde, Charles E.},
-doi = {10.1016/j.proeng.2017.01.036},
-file = {:home/miguelmolinos/Documentos/BiblioMendeley/Charlton, Coombs, Augarde/Procedia Engineering/2017 - Gradient Elasto-plasticity with the Generalised Interpolation Material Point Method.pdf:pdf},
-issn = {18777058},
-journal = {Procedia Engineering},
-pages = {110--115},
-title = {{Gradient Elasto-plasticity with the Generalised Interpolation Material Point Method}},
-volume = {175},
-year = {2017}
-}
+
 @article{Onate1996,
 abstract = {In this paper a meshless procedure termed 'the finite point method' for solving convection-diffusion and fluid flow type problems is presented. The method is based on the use of a weighted least-square interpolation procedure together with point collocation for evaluating the approximation integrals. Special emphasis is given to the stabilization of the convective terms and the Neumann boundary condition which has been found to be essential to obtain accurate results. Some examples of application to diffusive and convective transport and compressible flow problems using quadratic FP interpolations are presented.},
 author = {O{\~{n}}ate, Eugenio and Idelsohn, Sergio R. and Zienkiewicz, O. C. and Taylor, Robert L. (Robert Leroy) and Sacco, C.},
