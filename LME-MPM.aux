@@ -63,30 +63,30 @@
 \newlabel{sec:derivation-mpm}{{2.1}{6}{Derivation of MPM procedure}{subsection.2.1}{}}
 \newlabel{eq:Compatibility-equation}{{1}{6}{Derivation of MPM procedure}{equation.2.1}{}}
 \newlabel{eq:Balance-momentum}{{2}{6}{Derivation of MPM procedure}{equation.2.2}{}}
+\newlabel{eq:Constitutive-equation}{{3}{6}{Derivation of MPM procedure}{equation.2.3}{}}
 \citation{Riemann_1854}
-\newlabel{eq:Constitutive-equation}{{3}{7}{Derivation of MPM procedure}{equation.2.3}{}}
 \newlabel{eq:Rho-material-derivative}{{4}{7}{Derivation of MPM procedure}{equation.2.4}{}}
 \newlabel{eq:Hilbert-space}{{5}{7}{Derivation of MPM procedure}{equation.2.5}{}}
 \newlabel{eq:cauchy-secuence}{{6}{7}{Derivation of MPM procedure}{equation.2.6}{}}
 \newlabel{eq:BalanceMomentum_wf}{{7}{7}{Derivation of MPM procedure}{equation.2.7}{}}
-\newlabel{eq:particle_acceleration_forces}{{8}{8}{Derivation of MPM procedure}{equation.2.8}{}}
+\newlabel{eq:particle_acceleration_forces}{{8}{7}{Derivation of MPM procedure}{equation.2.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Description of the spatial discretization for domain presented in the figure\nobreakspace  {}\ref  {fig:Continuum-solid}. Blue mesh represent the background computational support, and the red mesh conforms the discretized continuum body.\relax }}{8}{figure.caption.2}}
+\newlabel{fig:MPM-discretization}{{2}{8}{Description of the spatial discretization for domain presented in the figure~\ref {fig:Continuum-solid}. Blue mesh represent the background computational support, and the red mesh conforms the discretized continuum body.\relax }{figure.caption.2}{}}
 \newlabel{eq:particle_internal_forces}{{9}{8}{Derivation of MPM procedure}{equation.2.9}{}}
 \newlabel{eq:particle_body_forces}{{10}{8}{Derivation of MPM procedure}{equation.2.10}{}}
 \newlabel{eq:particle_load_forces}{{11}{8}{Derivation of MPM procedure}{equation.2.11}{}}
-\newlabel{eq:particle_balance_forces3}{{12}{8}{Derivation of MPM procedure}{equation.2.12}{}}
-\newlabel{eq:particle_nod_mass}{{13}{8}{Derivation of MPM procedure}{equation.2.13}{}}
-\newlabel{eq:nodal_internal_forces}{{14}{8}{Derivation of MPM procedure}{equation.2.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Description of the spatial discretization for domain presented in the figure\nobreakspace  {}\ref  {fig:Continuum-solid}. Blue mesh represent the background computational support, and the red mesh conforms the discretized continuum body.\relax }}{9}{figure.caption.2}}
-\newlabel{fig:MPM-discretization}{{2}{9}{Description of the spatial discretization for domain presented in the figure~\ref {fig:Continuum-solid}. Blue mesh represent the background computational support, and the red mesh conforms the discretized continuum body.\relax }{figure.caption.2}{}}
-\newlabel{eq:nodal_external_forces}{{15}{9}{Derivation of MPM procedure}{equation.2.15}{}}
-\newlabel{eq:IncrStrainPoint}{{16}{9}{Derivation of MPM procedure}{equation.2.16}{}}
-\newlabel{eq:MassConservation}{{17}{9}{Derivation of MPM procedure}{equation.2.17}{}}
-\newlabel{eq:Updated_Lagrangian}{{18}{9}{Derivation of MPM procedure}{equation.2.18}{}}
 \citation{Sulsky1994}
 \citation{Bardenhagen2002}
 \citation{thesis_Andersen_2009}
 \citation{Guilkey_2003,Charlton_2017,Tran2019e}
 \citation{Sulsky1994}
+\newlabel{eq:particle_balance_forces3}{{12}{9}{Derivation of MPM procedure}{equation.2.12}{}}
+\newlabel{eq:particle_nod_mass}{{13}{9}{Derivation of MPM procedure}{equation.2.13}{}}
+\newlabel{eq:nodal_internal_forces}{{14}{9}{Derivation of MPM procedure}{equation.2.14}{}}
+\newlabel{eq:nodal_external_forces}{{15}{9}{Derivation of MPM procedure}{equation.2.15}{}}
+\newlabel{eq:IncrStrainPoint}{{16}{9}{Derivation of MPM procedure}{equation.2.16}{}}
+\newlabel{eq:MassConservation}{{17}{9}{Derivation of MPM procedure}{equation.2.17}{}}
+\newlabel{eq:Updated_Lagrangian}{{18}{9}{Derivation of MPM procedure}{equation.2.18}{}}
 \citation{thesis_Andersen_2009}
 \citation{Zhang_book_2016}
 \citation{Tran2019e}
@@ -99,6 +99,7 @@
 \newlabel{eq:Sulsky-1994-UL-x}{{20}{10}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.20}{}}
 \newlabel{eq:Zhang-2016-UL-x}{{21}{10}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.21}{}}
 \newlabel{eq:Zhang-2016-UL-v}{{22}{10}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.22}{}}
+\newlabel{eq:Tran-2019-GA-v}{{23}{10}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.23}{}}
 \citation{Tran2019e}
 \citation{Tran2019e}
 \citation{Hughes2000}
@@ -106,7 +107,6 @@
 \citation{Xiaojian94}
 \citation{ZZ1992_I}
 \citation{Bardenhagen2004}
-\newlabel{eq:Tran-2019-GA-v}{{23}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.23}{}}
 \newlabel{eq:Tran-2019-GA-x}{{24}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.24}{}}
 \newlabel{eq:Tran-2019-GA-a}{{25}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.25}{}}
 \newlabel{eq:Predictor-velocity-I}{{26}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.26}{}}
@@ -123,21 +123,15 @@
 \citation{Jaynes1957}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Local \textit  {Max-Ent} approximants}{13}{subsection.2.3}}
 \newlabel{sec:local-max-ent}{{2.3}{13}{Local \textit {Max-Ent} approximants}{subsection.2.3}{}}
+\newlabel{eq:Shannon-entropy}{{34}{13}{Local \textit {Max-Ent} approximants}{equation.2.34}{}}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {}{\ignorespaces \acrfull {npc} scheme\relax }}{14}{algorithm.1}}
 \newlabel{algo:1}{{}{14}{\acrfull {npc} scheme\relax }{algorithm.1}{}}
 \citation{Arroyo2006}
 \citation{Arroyo2006}
-\newlabel{eq:Shannon-entropy}{{34}{15}{Local \textit {Max-Ent} approximants}{equation.2.34}{}}
+\newlabel{eq:LME-p}{{35}{15}{Local \textit {Max-Ent} approximants}{equation.2.35}{}}
 \citation{Arroyo2006}
 \citation{Arroyo2006}
 \citation{Arroyo2006}
-\newlabel{eq:LME-p}{{35}{16}{Local \textit {Max-Ent} approximants}{equation.2.35}{}}
-\newlabel{eq:LME-Z}{{36}{16}{Local \textit {Max-Ent} approximants}{equation.2.36}{}}
-\newlabel{eq:LME-J}{{37}{16}{Local \textit {Max-Ent} approximants}{equation.2.37}{}}
-\newlabel{eq:LME-r}{{38}{16}{Local \textit {Max-Ent} approximants}{equation.2.37}{}}
-\newlabel{eq:LME-grad-p}{{39}{16}{Local \textit {Max-Ent} approximants}{equation.2.39}{}}
-\newlabel{eq:LME-f}{{40}{16}{Local \textit {Max-Ent} approximants}{equation.2.40}{}}
-\newlabel{eq26}{{41}{16}{Local \textit {Max-Ent} approximants}{equation.2.41}{}}
 \citation{Steffen2008b}
 \citation{Liu2003}
 \citation{Augarde_2013}
@@ -145,33 +139,39 @@
 \citation{Arduino_2018}
 \citation{Arroyo2006}
 \citation{Kochmann2019}
+\newlabel{eq:LME-Z}{{36}{16}{Local \textit {Max-Ent} approximants}{equation.2.36}{}}
+\newlabel{eq:LME-J}{{37}{16}{Local \textit {Max-Ent} approximants}{equation.2.37}{}}
+\newlabel{eq:LME-r}{{38}{16}{Local \textit {Max-Ent} approximants}{equation.2.37}{}}
+\newlabel{eq:LME-grad-p}{{39}{16}{Local \textit {Max-Ent} approximants}{equation.2.39}{}}
+\newlabel{eq:LME-f}{{40}{16}{Local \textit {Max-Ent} approximants}{equation.2.40}{}}
+\newlabel{eq26}{{41}{16}{Local \textit {Max-Ent} approximants}{equation.2.41}{}}
 \citation{Dyka1995}
 \citation{thesis_Andersen_2009}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Application to linear elasticity dynamic problems.}{17}{section.3}}
+\newlabel{sec:Application-linear-elasticity-dynamic-problems}{{3}{17}{Application to linear elasticity dynamic problems}{section.3}{}}
+\citation{Dyka1995}
+\citation{Dyka1995}
 \citation{Dyka1995}
 \citation{Dyka1995}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Comparative of linear piecewise shape functions (Q4) and \acrshort {ugimp} shape functions \textit  {versus} \acrshort {lme} approximation for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$.\relax }}{18}{figure.caption.4}}
 \newlabel{fig:LME_MPM}{{4}{18}{Comparative of linear piecewise shape functions (Q4) and \acrshort {ugimp} shape functions \textit {versus} \acrshort {lme} approximation for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$.\relax }{figure.caption.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Application to linear elasticity dynamic problems.}{18}{section.3}}
-\newlabel{sec:Application-linear-elasticity-dynamic-problems}{{3}{18}{Application to linear elasticity dynamic problems}{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dyka's bar \cite  {Dyka1995}}{18}{subsection.3.1}}
 \newlabel{sec:dyka-bar}{{3.1}{18}{Dyka's bar \cite {Dyka1995}}{subsection.3.1}{}}
-\citation{Dyka1995}
-\citation{Dyka1995}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Geometrical description of the Dyka \cite  {Dyka1995} bar.\relax }}{19}{figure.caption.5}}
 \newlabel{fig:Dyka_Bar}{{5}{19}{Geometrical description of the Dyka \cite {Dyka1995} bar.\relax }{figure.caption.5}{}}
 \newlabel{eq:Cel}{{42}{19}{Dyka's bar \cite {Dyka1995}}{equation.3.42}{}}
+\newlabel{eq:RMS}{{43}{19}{Dyka's bar \cite {Dyka1995}}{equation.3.43}{}}
 \citation{Arroyo2006}
 \citation{Bardenhagen2004}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Velocity error evolution at the point A in the Dyka's bar , convergence plots for \acrshort {fe} and \acrshort {npc}. The plot is subdivided with colours, the darker part of the diagram shows coincides when the relative movement of the particles is large enough to produce the grid crossing phenomena. The lightest part of the diagram coincides when the relative movement of the particles in negligible in comparison with the mesh size. And in the middle region a transition behaviour take place.\relax }}{20}{figure.caption.6}}
 \newlabel{fig:Dyka-error-evol}{{6}{20}{Velocity error evolution at the point A in the Dyka's bar , convergence plots for \acrshort {fe} and \acrshort {npc}. The plot is subdivided with colours, the darker part of the diagram shows coincides when the relative movement of the particles is large enough to produce the grid crossing phenomena. The lightest part of the diagram coincides when the relative movement of the particles in negligible in comparison with the mesh size. And in the middle region a transition behaviour take place.\relax }{figure.caption.6}{}}
-\newlabel{eq:RMS}{{43}{20}{Dyka's bar \cite {Dyka1995}}{equation.3.43}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  \leavevmode {\color  {green}{comparison of \acrshort {npc} and \acrshort {fe} performances}} : In the picture the velocity evolution at the point in the bar left side is plotted.\relax }}{21}{figure.caption.7}}
 \newlabel{fig:Dyka-NPC-FE}{{7}{21}{\MP {comparison of \acrshort {npc} and \acrshort {fe} performances}: In the picture the velocity evolution at the point in the bar left side is plotted.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  \leavevmode {\color  {green}{Sensitivity}}  of LME approximants performance to changes in the dimensionless regularization parameter $\gamma = \beta /h^2$. To illustrate it, the velocity evolution at the point in the bar left side is plotted.\relax }}{22}{figure.caption.8}}
+\newlabel{fig:Dyka-LME-gamma}{{8}{22}{\MP {Sensitivity} of LME approximants performance to changes in the dimensionless regularization parameter $\gamma = \beta /h^2$. To illustrate it, the velocity evolution at the point in the bar left side is plotted.\relax }{figure.caption.8}{}}
 \citation{Li2010}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  \leavevmode {\color  {green}{Sensitivity}}  of LME approximants performance to changes in the dimensionless regularization parameter $\gamma = \beta /h^2$. To illustrate it, the velocity evolution at the point in the bar left side is plotted.\relax }}{23}{figure.caption.8}}
-\newlabel{fig:Dyka-LME-gamma}{{8}{23}{\MP {Sensitivity} of LME approximants performance to changes in the dimensionless regularization parameter $\gamma = \beta /h^2$. To illustrate it, the velocity evolution at the point in the bar left side is plotted.\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Velocity evolution at the point in the bar left side.\relax }}{24}{figure.caption.9}}
-\newlabel{fig:Dyka-uGIMP-LME}{{9}{24}{Velocity evolution at the point in the bar left side.\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Velocity evolution at the point in the bar left side.\relax }}{23}{figure.caption.9}}
+\newlabel{fig:Dyka-uGIMP-LME}{{9}{23}{Velocity evolution at the point in the bar left side.\relax }{figure.caption.9}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Velocity evolution at the point in the bar left side.\relax }}{24}{figure.caption.10}}
 \newlabel{fig:Dyka-OTM-MPM}{{10}{24}{Velocity evolution at the point in the bar left side.\relax }{figure.caption.10}{}}
 \citation{thesis_Andersen_2009}

@@ -240,10 +240,10 @@
 
 %% Group authors per affiliation:
 \author{
-Miguel Molinos$^a\footnote{Corresponding author: m.molinoss@outlook.es}$
+Miguel Molinos$^a$
 Pedro Navas$^a$\footnote{Corresponding author: p.navas@upm.es},
 Manuel Pastor$^a$
-and Miguel Martín Stickle$^a$ 
+and Miguel Mart\'in Stickle$^a$ 
 }
 \address{
   $^a$ ETSI Caminos, Canales y Puertos, Universidad Polit\'ectnica de Madrid.\\ c. Prof. Aranguren 3, 28040 Madrid, Spain
@@ -256,11 +256,11 @@ and Miguel Martín Stickle$^a$
   propagation and \MP{in the large deformation regime} is still challenging
   under this approach due the incapability of the standard \acrshort{mpm} time
   integration scheme to filter spurious noises. \MP{To overcome it ,
-    we propose in this paper an explicit Predictor-Corrector time integration scheme}. Its \textcolor{red}{powerful}
-  performance mitigates the presence of spurious oscillations with
-  minimal dissipation in high frequency problems. Other source of
-  numerical noise in \acrshort{mpm} occurs when the material points
-  cross computational grid boundaries, being \MP{caused} by
+    we propose in this paper an explicit Predictor-Corrector time
+    integration scheme}. Its \PNA{powerful} performance mitigates the
+  presence of spurious oscillations with minimal dissipation in high
+  frequency problems. Other source of numerical noise in
+  \acrshort{mpm} occurs when the material points cross computational grid boundaries, being \MP{caused} by
   the lack of smoothness of the interpolation functions. This noise
   results in spurious local variations at the material points, where
   strain-stress fields are computed. This could lead to inaccurate
@@ -280,6 +280,17 @@ and Miguel Martín Stickle$^a$
 \begin{keyword}
   \acrshort{lme} \sep \acrshort{mpm} \sep Explicit predictor-corrector \sep Dynamic problems
 \end{keyword}
+
+\begin{highlights}
+\item We have proposed a new and efficient time integration scheme for
+  the \acrshort{mpm}.
+\item The proposal of the \acrshort{lme} approximation technique
+  under the \acrshort{mpm} framework as a robust substitute of the
+  traditional shape function.
+\item Our approach have clear benefits for fast dynamics simulation
+  since reduces the presence of spurious oscillations without
+  damp the solution. 
+\end{highlights}
 
 \end{frontmatter}
 
