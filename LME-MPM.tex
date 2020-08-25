@@ -174,6 +174,7 @@
 \newacronym{igimp}{iGIMP}{Implicit GIMP}
 \newacronym{ugimp}{uGIMP}{Uniform GIMP}
 \newacronym{ddmp}{DDMP}{Dual Domain Material Point}
+\newacronym{cpdi}{CPDI}{Convected Particle Domain Interpolation}
 \newacronym{ctls}{CTLS}{Conservative Taylor Least Squares}
 \newacronym{npc}{NPC}{Newmark Predictor-Corrector}
 \newacronym{fe}{FE}{Forward Euler}
@@ -181,17 +182,14 @@
 % End glossaries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\PNA}[1]{
+\newcommand{\CORRECTIONS}[1]{
   \textcolor{red}{{#1}}
 }
 
-\newcommand{\MMP}[1]{
+\newcommand{\MODIFIED}[1]{
   \textcolor{blue}{{#1}}
 }
 
-\newcommand{\MP}[1]{
-  \textcolor{green}{{#1}}
-}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -335,8 +333,13 @@ A more robust alternative is the \acrfull{ddmp} method proposed by Zhang {\it et
 (2011)~\cite{Zhang2011a}. Unfortunately this method shows an
 unsatisfactory behaviour when particle/cell ratio
 decreases. Therefore \acrshort{ddmp} a large
-number of particles is needed for convergence~\cite{DHAKAL2016301}, what makes the method
-very expensive. In recent years the employment of spline-lines as shape functions has gain popularity with the introduction of the B-Spline 
+number of particles is needed for convergence~\cite{DHAKAL2016301}, what makes the method very expensive. 
+
+\MODIFIED{
+\cite{Sadeghirad_et_al_IJNME_2011}
+}
+
+ In recent years the employment of spline-lines as shape functions has gain popularity with the introduction of the B-Spline 
 \acrshort{mpm} proposed by Tielen {\it et al.} (2017)~\cite{TIELEN2017265},
 this technique allows the employment of unstructured set of notes and
 particles. More recently, approximants derived from minimization has
