@@ -51,6 +51,19 @@ T.~R. Dhakal, D.~Z. Zhang,
   {\path{doi:https://doi.org/10.1016/j.jcp.2016.08.033}}.
 \newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0021999116303904}
 
+\bibitem{Sadeghirad_et_al_IJNME_2011}
+A.~Sadeghirad, R.~M. Brannon, J.~Burghardt,
+  \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.3110}{A convected
+  particle domain interpolation technique to extend applicability of the
+  material point method for problems involving massive deformations},
+  International Journal for Numerical Methods in Engineering 86~(12) (2011)
+  1435--1456.
+\newblock \href
+  {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.3110}
+  {\path{arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1002/nme.3110}},
+  \href {http://dx.doi.org/10.1002/nme.3110} {\path{doi:10.1002/nme.3110}}.
+\newline\urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.3110}
+
 \bibitem{TIELEN2017265}
 R.~Tielen, E.~Wobbes, M.~Möller, L.~Beuth,
   \href{http://www.sciencedirect.com/science/article/pii/S187770581730022X}{A
@@ -204,6 +217,12 @@ B.~Riemann, Über die darstellbarkeit einer function durch eine
 \newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.cma.2017.09.022}
   {\path{doi:https://doi.org/10.1016/j.cma.2017.09.022}}.
 
+\bibitem{Zhang_book_2016}
+X.~Zhang, Z.~Chen, Y.~Liu, {The Material Point Method: A Continuum-Based
+  Particle Method for Extreme Loading Cases}, Elsevier, 2016.
+\newblock \href {http://dx.doi.org/10.1016/b978-0-12-407716-4.00003-x}
+  {\path{doi:10.1016/b978-0-12-407716-4.00003-x}}.
+
 \bibitem{Bardenhagen2002}
 S.~G.~S. Bardenhagen, {Energy Conservation Error in the Material Point Method
   for Solid Mechanics}, Journal of Computational Physics 180~(1) (2002)
@@ -216,19 +235,13 @@ S.~M. Andersen, {Material-Point Analysis of Large-Strain Problems: modelling of
   landslides}, Ph.D. thesis, Department of Civil Engineering, Aalborg
   University (2009).
 
-\bibitem{Zhang_book_2016}
-X.~Zhang, Z.~Chen, Y.~Liu, {The Material Point Method: A Continuum-Based
-  Particle Method for Extreme Loading Cases}, Elsevier, 2016.
-\newblock \href {http://dx.doi.org/10.1016/b978-0-12-407716-4.00003-x}
-  {\path{doi:10.1016/b978-0-12-407716-4.00003-x}}.
-
 \bibitem{Hughes2000}
 T.~J.~R. Hughes, {The finite element method : linear static and dynamic finite
   element analysis}, Dover Publications, 2000.
 
 \bibitem{Xiaojian94}
 X.~Liu, On the stability of a newmark's scheme-based predictor-corrector
-  algorithm, Computers & Structures - COMPUT STRUCT 53 (1994) 27--33.
+  algorithm, Computers {\&} Structures 53 (1994) 27--33.
 \newblock \href {http://dx.doi.org/10.1016/0045-7949(94)90126-0}
   {\path{doi:10.1016/0045-7949(94)90126-0}}.
 
@@ -288,6 +301,15 @@ S.~Kumar, K.~Danas, D.~M. Kochmann, {Enhanced local maximum-entropy
   approximation for stable meshfree simulations}, Computer Methods in Applied
   Mechanics and Engineering\href {http://dx.doi.org/10.1016/j.cma.2018.10.030}
   {\path{doi:10.1016/j.cma.2018.10.030}}.
+
+\bibitem{Cortis2018a}
+M.~Cortis, W.~Coombs, C.~Augarde, M.~Brown, A.~Brennan, S.~Robinson,
+  \href{http://doi.wiley.com/10.1002/nme.5606}{{Imposition of essential
+  boundary conditions in the material point method}}, International Journal for
+  Numerical Methods in Engineering 113~(1) (2018) 130--152.
+\newblock \href {http://dx.doi.org/10.1002/nme.5606}
+  {\path{doi:10.1002/nme.5606}}.
+\newline\urlprefix\url{http://doi.wiley.com/10.1002/nme.5606}
 
 \bibitem{Dyka1995}
 C.~Dyka, R.~Ingel, {An approach for tension instability in smoothed particle

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.23)  25 AUG 2020 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.23)  26 AUG 2020 14:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -229,43 +229,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen151
-\captionmargin@=\dimen152
-\captionwidth=\dimen153
-\caption@tempdima=\dimen154
-\caption@indent=\dimen155
-\caption@parindent=\dimen156
-\caption@hangindent=\dimen157
-Package caption Info: elsarticle document class detected.
-)
-\c@caption@flags=\count266
-\c@continuedfloat=\count267
-Package caption Info: float package is loaded.
-Package caption Info: hyperref package is loaded.
-)
-\c@KVtest=\count268
-\sf@farskip=\skip54
-\sf@captopadj=\dimen158
-\sf@capskip=\skip55
-\sf@nearskip=\skip56
-\c@subfigure=\count269
-\c@subfigure@save=\count270
-\c@lofdepth=\count271
-\c@subtable=\count272
-\c@subtable@save=\count273
-\c@lotdepth=\count274
-\sf@top=\skip57
-\sf@bottom=\skip58
-)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
 
@@ -281,10 +244,10 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@cmds=\toks23
 \SOUL@buffer=\toks24
 \SOUL@token=\toks25
-\SOUL@spaceskip=\skip59
-\SOUL@ttwidth=\dimen159
-\SOUL@uldp=\dimen160
-\SOUL@ulht=\dimen161
+\SOUL@spaceskip=\skip54
+\SOUL@ttwidth=\dimen151
+\SOUL@uldp=\dimen152
+\SOUL@ulht=\dimen153
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
@@ -297,204 +260,40 @@ nment
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks26
-\c@algorithm=\count275
+\c@algorithm=\count266
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count276
-\c@ALC@line=\count277
-\c@ALC@rem=\count278
-\c@ALC@depth=\count279
-\ALC@tlm=\skip60
-\algorithmicindent=\skip61
+\c@ALC@unique=\count267
+\c@ALC@line=\count268
+\c@ALC@rem=\count269
+\c@ALC@depth=\count270
+\ALC@tlm=\skip55
+\algorithmicindent=\skip56
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip62
-\subfigcapskip=\skip63
-\subfigcaptopadj=\dimen162
-\subfigbottomskip=\skip64
-\subfigcapmargin=\dimen163
-\subfiglabelskip=\skip65
-
-
-! LaTeX Error: Command \c@subfigure already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.113 \newcounter{subfigure}
-                            [figure]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \l@subfigure already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.123 ...xxxline{\ext@subfigure}{2}{3.8em}{2.5em}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@lofdepth already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124 \newcounter{lofdepth}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@subtable already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.126 \newcounter{subtable}
-                           [table]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \l@subtable already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 ...dxxxline{\ext@subtable}{2}{3.8em}{2.5em}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \c@lotdepth already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 \newcounter{lotdepth}
-                           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+\subfigtopskip=\skip57
+\subfigcapskip=\skip58
+\subfigcaptopadj=\dimen154
+\subfigbottomskip=\skip59
+\subfigcapmargin=\dimen155
+\subfiglabelskip=\skip60
+\c@subfigure=\count271
+\c@lofdepth=\count272
+\c@subtable=\count273
+\c@lotdepth=\count274
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2020/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip66
-\subfig@bottom=\skip67
-
-
-! LaTeX Error: Command \listsubcaptions already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.294     {\@listsubcaptions{\@captype}}}
-                                         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \@listsubcaptions already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.305   \gdef\@subfigcaptionlist{}}
-                                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \@dottedxxxline already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.358   \fi}
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \subfloat@label already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.386 ...           \@nameuse{thesub\@captype}.)}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \sf@@sub@label already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.411   \@esphack}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Command \subref already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.413   \ref{sub@#1}}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+\subfig@top=\skip61
+\subfig@bottom=\skip62
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip68
+\@mathmargin=\skip63
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -503,49 +302,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks27
-\ex@=\dimen164
+\ex@=\dimen156
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen165
+\pmbraise@=\dimen157
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count280
+\inf@bad=\count275
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count281
-\leftroot@=\count282
+\uproot@=\count276
+\leftroot@=\count277
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count283
-\DOTSCASE@=\count284
+\classnum@=\count278
+\DOTSCASE@=\count279
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
 \Mathstrutbox@=\box52
 \strutbox@=\box53
-\big@size=\dimen166
+\big@size=\dimen158
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count285
-\c@MaxMatrixCols=\count286
+\macc@depth=\count280
+\c@MaxMatrixCols=\count281
 \dotsspace@=\muskip17
-\c@parentequation=\count287
-\dspbrk@lvl=\count288
+\c@parentequation=\count282
+\dspbrk@lvl=\count283
 \tag@help=\toks28
-\row@=\count289
-\column@=\count290
-\maxfields@=\count291
+\row@=\count284
+\column@=\count285
+\maxfields@=\count286
 \andhelp@=\toks29
-\eqnshift@=\dimen167
-\alignsep@=\dimen168
-\tagshift@=\dimen169
-\tagwidth@=\dimen170
-\totwidth@=\dimen171
-\lineht@=\dimen172
+\eqnshift@=\dimen159
+\alignsep@=\dimen160
+\tagshift@=\dimen161
+\tagwidth@=\dimen162
+\totwidth@=\dimen163
+\lineht@=\dimen164
 \@envbody=\toks30
-\multlinegap=\skip69
-\multlinetaggap=\skip70
+\multlinegap=\skip64
+\multlinetaggap=\skip65
 \mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
@@ -557,9 +356,9 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headfont=\toks34
 \thm@notefont=\toks35
 \thm@headpunct=\toks36
-\thm@preskip=\skip71
-\thm@postskip=\skip72
-\thm@headsep=\skip73
+\thm@preskip=\skip66
+\thm@postskip=\skip67
+\thm@headsep=\skip68
 \dth@everypar=\toks37
 LaTeX Info: Redefining \qed on input line 274.
 )
@@ -576,8 +375,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2020/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count292
-\decimalpart=\count293
+\integerpart=\count287
+\decimalpart=\count288
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
@@ -590,8 +389,8 @@ Package: stanli
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks38
-\pgfutil@tempdima=\dimen173
-\pgfutil@tempdimb=\dimen174
+\pgfutil@tempdima=\dimen165
+\pgfutil@tempdimb=\dimen166
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
@@ -618,26 +417,26 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 ode.tex
 \pgfkeys@tmptoks=\toks41
 ))
-\pgf@x=\dimen175
-\pgf@y=\dimen176
-\pgf@xa=\dimen177
-\pgf@ya=\dimen178
-\pgf@xb=\dimen179
-\pgf@yb=\dimen180
-\pgf@xc=\dimen181
-\pgf@yc=\dimen182
-\pgf@xd=\dimen183
-\pgf@yd=\dimen184
+\pgf@x=\dimen167
+\pgf@y=\dimen168
+\pgf@xa=\dimen169
+\pgf@ya=\dimen170
+\pgf@xb=\dimen171
+\pgf@yb=\dimen172
+\pgf@xc=\dimen173
+\pgf@yc=\dimen174
+\pgf@xd=\dimen175
+\pgf@yd=\dimen176
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count294
-\c@pgf@countb=\count295
-\c@pgf@countc=\count296
-\c@pgf@countd=\count297
+\c@pgf@counta=\count289
+\c@pgf@countb=\count290
+\c@pgf@countc=\count291
+\c@pgf@countd=\count292
 \t@pgf@toka=\toks42
 \t@pgf@tokb=\toks43
 \t@pgf@tokc=\toks44
-\pgf@sys@id@count=\count298
+\pgf@sys@id@count=\count293
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
@@ -655,8 +454,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count299
-\pgfsyssoftpath@bigbuffer@items=\count300
+\pgfsyssoftpath@smallbuffer@items=\count294
+\pgfsyssoftpath@bigbuffer@items=\count295
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -685,8 +484,8 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen185
-\pgfmath@count=\count301
+\pgfmath@dimen=\dimen177
+\pgfmath@count=\count296
 \pgfmath@box=\box55
 \pgfmath@toks=\toks45
 \pgfmath@stack@operand=\toks46
@@ -711,37 +510,37 @@ code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count302
+\c@pgfmathroundto@lastzeros=\count297
 )) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen186
-\pgf@picmaxx=\dimen187
-\pgf@picminy=\dimen188
-\pgf@picmaxy=\dimen189
-\pgf@pathminx=\dimen190
-\pgf@pathmaxx=\dimen191
-\pgf@pathminy=\dimen192
-\pgf@pathmaxy=\dimen193
-\pgf@xx=\dimen194
-\pgf@xy=\dimen195
-\pgf@yx=\dimen196
-\pgf@yy=\dimen197
-\pgf@zx=\dimen198
-\pgf@zy=\dimen199
+\pgf@picminx=\dimen178
+\pgf@picmaxx=\dimen179
+\pgf@picminy=\dimen180
+\pgf@picmaxy=\dimen181
+\pgf@pathminx=\dimen182
+\pgf@pathmaxx=\dimen183
+\pgf@pathminy=\dimen184
+\pgf@pathmaxy=\dimen185
+\pgf@xx=\dimen186
+\pgf@xy=\dimen187
+\pgf@yx=\dimen188
+\pgf@yy=\dimen189
+\pgf@zx=\dimen190
+\pgf@zy=\dimen191
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen256
-\pgf@path@lasty=\dimen257
+\pgf@path@lastx=\dimen192
+\pgf@path@lasty=\dimen193
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen258
-\pgf@shorten@start@additional=\dimen259
+\pgf@shorten@end@additional=\dimen194
+\pgf@shorten@start@additional=\dimen195
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
@@ -749,19 +548,19 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count303
+\pgf@picture@serial@count=\count298
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen260
+\pgflinewidth=\dimen196
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen261
-\pgf@pt@y=\dimen262
-\pgf@pt@temp=\dimen263
+\pgf@pt@x=\dimen197
+\pgf@pt@y=\dimen198
+\pgf@pt@temp=\dimen199
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -778,14 +577,14 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen264
+\pgfarrowsep=\dimen256
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen265
-\pgf@sys@shading@range@num=\count304
-\pgf@shadingcount=\count305
+\pgf@max=\dimen257
+\pgf@sys@shading@range@num=\count299
+\pgf@shadingcount=\count300
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -824,8 +623,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen266
-\pgf@nodesepend=\dimen267
+\pgf@nodesepstart=\dimen258
+\pgf@nodesepend=\dimen259
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -840,8 +639,8 @@ Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen268
-\pgffor@skip=\dimen269
+\pgffor@iter=\dimen260
+\pgffor@skip=\dimen261
 \pgffor@stack=\toks48
 \pgffor@toks=\toks49
 ))
@@ -852,34 +651,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count306
-\pgfplotmarksize=\dimen270
+\pgf@plot@mark@count=\count301
+\pgfplotmarksize=\dimen262
 )
-\tikz@lastx=\dimen271
-\tikz@lasty=\dimen272
-\tikz@lastxsaved=\dimen273
-\tikz@lastysaved=\dimen274
-\tikz@lastmovetox=\dimen275
-\tikz@lastmovetoy=\dimen276
-\tikzleveldistance=\dimen277
-\tikzsiblingdistance=\dimen278
+\tikz@lastx=\dimen263
+\tikz@lasty=\dimen264
+\tikz@lastxsaved=\dimen265
+\tikz@lastysaved=\dimen266
+\tikz@lastmovetox=\dimen267
+\tikz@lastmovetoy=\dimen268
+\tikzleveldistance=\dimen269
+\tikzsiblingdistance=\dimen270
 \tikz@figbox=\box61
 \tikz@figbox@bg=\box62
 \tikz@tempbox=\box63
 \tikz@tempbox@bg=\box64
-\tikztreelevel=\count307
-\tikznumberofchildren=\count308
-\tikznumberofcurrentchild=\count309
-\tikz@fig@count=\count310
+\tikztreelevel=\count302
+\tikznumberofchildren=\count303
+\tikznumberofcurrentchild=\count304
+\tikz@fig@count=\count305
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count311
-\pgfmatrixcurrentcolumn=\count312
-\pgf@matrix@numberofcolumns=\count313
+\pgfmatrixcurrentrow=\count306
+\pgfmatrixcurrentcolumn=\count307
+\pgf@matrix@numberofcolumns=\count308
 )
-\tikz@expandcount=\count314
+\tikz@expandcount=\count309
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -896,10 +695,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks50
 \XKV@tempa@toks=\toks51
 )
-\XKV@depth=\count315
+\XKV@depth=\count310
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\xargs@max=\count316
+\xargs@max=\count311
 \xargs@toksa=\toks52
 \xargs@toksb=\toks53
 )
@@ -978,7 +777,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen279
+\arrowsize=\dimen271
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
@@ -1008,14 +807,14 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen280
-\pgfdecoratedremainingdistance=\dimen281
-\pgfdecoratedinputsegmentcompleteddistance=\dimen282
-\pgfdecoratedinputsegmentremainingdistance=\dimen283
-\pgf@decorate@distancetomove=\dimen284
-\pgf@decorate@repeatstate=\count317
-\pgfdecorationsegmentamplitude=\dimen285
-\pgfdecorationsegmentlength=\dimen286
+\pgfdecoratedcompleteddistance=\dimen272
+\pgfdecoratedremainingdistance=\dimen273
+\pgfdecoratedinputsegmentcompleteddistance=\dimen274
+\pgfdecoratedinputsegmentremainingdistance=\dimen275
+\pgf@decorate@distancetomove=\dimen276
+\pgf@decorate@repeatstate=\count312
+\pgfdecorationsegmentamplitude=\dimen277
+\pgfdecorationsegmentlength=\dimen278
 )
 \tikz@lib@dec@box=\box85
 )
@@ -1037,9 +836,9 @@ Package: units 1998/08/04 v0.9b Typesetting units
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip74
-\L@UnitsRaiseTextstyle=\skip75
-\L@UnitsRaiseScriptstyle=\skip76
+\L@UnitsRaiseDisplaystyle=\skip69
+\L@UnitsRaiseTextstyle=\skip70
+\L@UnitsRaiseScriptstyle=\skip71
 LaTeX Info: Redefining \nicefrac on input line 131.
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
@@ -1058,7 +857,7 @@ Package: mfirstuc 2017/11/14 v2.06 (NLCT)
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count318
+\etb@tempcnta=\count313
 )
 \@glsmfirst=\toks56
 \@glsmrest=\toks57
@@ -1074,7 +873,7 @@ Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count319
+\c@su@anzahl=\count314
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
@@ -1085,19 +884,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count320
+\actioncount=\count315
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count321
-\FP@xia=\count322
-\FP@xib=\count323
-\FP@xfa=\count324
-\FP@xfb=\count325
-\FP@rega=\count326
-\FP@regb=\count327
-\FP@regs=\count328
-\FP@times=\count329
+\FP@xs=\count316
+\FP@xia=\count317
+\FP@xib=\count318
+\FP@xfa=\count319
+\FP@xfb=\count320
+\FP@rega=\count321
+\FP@regb=\count322
+\FP@regs=\count323
+\FP@times=\count324
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1116,7 +915,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count330
+\FPseed=\count325
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1128,22 +927,22 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks58
-\@dtl@tmpcount=\count331
-\dtl@tmplength=\skip77
-\dtl@sortresult=\count332
-\@dtl@numgrpsepcount=\count333
-\@dtl@datatype=\count334
-\dtl@codeA=\count335
-\dtl@codeB=\count336
-\@dtl@foreach@level=\count337
+\@dtl@tmpcount=\count326
+\dtl@tmplength=\skip72
+\dtl@sortresult=\count327
+\@dtl@numgrpsepcount=\count328
+\@dtl@datatype=\count329
+\dtl@codeA=\count330
+\dtl@codeB=\count331
+\@dtl@foreach@level=\count332
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/glossaries/base/glossaries-compat
 ible-307.sty
 Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
 )
-\gls@level=\count338
+\gls@level=\count333
 \@gls@tmpb=\toks59
-\gls@tmplen=\skip78
+\gls@tmplen=\skip73
 \glskeylisttok=\toks60
 \glslabeltok=\toks61
 \glsshorttok=\toks62
@@ -1156,92 +955,71 @@ Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-list.s
 ty
 Package: glossary-list 2020/03/19 v4.46 (NLCT)
-\glslistdottedwidth=\skip79
+\glslistdottedwidth=\skip74
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-long.s
 ty
 Package: glossary-long 2020/03/19 v4.46 (NLCT)
  (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip80
-\LTright=\skip81
-\LTpre=\skip82
-\LTpost=\skip83
-\LTchunksize=\count339
-\LTcapwidth=\dimen287
+\LTleft=\skip75
+\LTright=\skip76
+\LTpre=\skip77
+\LTpost=\skip78
+\LTchunksize=\count334
+\LTcapwidth=\dimen279
 \LT@head=\box86
 \LT@firsthead=\box87
 \LT@foot=\box88
 \LT@lastfoot=\box89
-\LT@cols=\count340
-\LT@rows=\count341
-\c@LT@tables=\count342
-\c@LT@chunks=\count343
+\LT@cols=\count335
+\LT@rows=\count336
+\c@LT@tables=\count337
+\c@LT@chunks=\count338
 \LT@p@ftn=\toks64
 )
-\glsdescwidth=\skip84
-\glspagelistwidth=\skip85
+\glsdescwidth=\skip79
+\glspagelistwidth=\skip80
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-super.
 sty
 Package: glossary-super 2020/03/19 v4.46 (NLCT)
  (/usr/local/texlive/2020/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count344
-\ST@wd=\dimen288
-\ST@rightskip=\skip86
-\ST@leftskip=\skip87
-\ST@parfillskip=\skip88
-\ST@pageleft=\dimen289
-\ST@headht=\dimen290
-\ST@tailht=\dimen291
-\ST@pagesofar=\dimen292
-\ST@pboxht=\dimen293
-\ST@lineht=\dimen294
-\ST@prevht=\dimen295
-\ST@toadd=\dimen296
-\ST@dimen=\dimen297
+\c@tracingst=\count339
+\ST@wd=\dimen280
+\ST@rightskip=\skip81
+\ST@leftskip=\skip82
+\ST@parfillskip=\skip83
+\ST@pageleft=\dimen281
+\ST@headht=\dimen282
+\ST@tailht=\dimen283
+\ST@pagesofar=\dimen284
+\ST@pboxht=\dimen285
+\ST@lineht=\dimen286
+\ST@prevht=\dimen287
+\ST@toadd=\dimen288
+\ST@dimen=\dimen289
 \ST@pbox=\box90
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
 ty
 Package: glossary-tree 2020/03/19 v4.46 (NLCT)
-\glstreeindent=\skip89
+\glstreeindent=\skip84
 ))
 \glswrite=\write5
 \glo@main@file=\write6
 \openout6 = `LME-MPM.glo'.
 
-Package glossaries Info: Writing glossary file LME-MPM.glo on input line 73.
+Package glossaries Info: Writing glossary file LME-MPM.glo on input line 72.
 \glo@acronym@file=\write7
 \openout7 = `LME-MPM.acn'.
 
-Package glossaries Info: Writing glossary file LME-MPM.acn on input line 73.
-
-! Undefined control sequence.
-l.199 \journalname
-                  {Computer Methods in Applied Mechanics and Engineering}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.199 \journalname{C
-                    omputer Methods in Applied Mechanics and Engineering}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Package glossaries Info: Writing glossary file LME-MPM.acn on input line 72.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count345
+\l__kernel_color_stack_int=\count340
 \l__pdf_internal_box=\box91
 )
 (./LME-MPM.aux
@@ -1251,34 +1029,34 @@ LaTeX Warning: Label `eq:Predictor-velocity-II' multiply defined.
 )
 \openout1 = `LME-MPM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 233.
-LaTeX Font Info:    ... okay on input line 233.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 232.
+LaTeX Font Info:    ... okay on input line 232.
  (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count346
-\scratchdimen=\dimen298
+\scratchcounter=\count341
+\scratchdimen=\dimen290
 \scratchbox=\box92
-\nofMPsegments=\count347
-\nofMParguments=\count348
+\nofMPsegments=\count342
+\nofMParguments=\count343
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count349
-\MPscratchDim=\dimen299
-\MPnumerator=\count350
-\makeMPintoPDFobject=\count351
+\MPscratchCnt=\count344
+\MPscratchDim=\dimen291
+\MPnumerator=\count345
+\makeMPintoPDFobject=\count346
 \everyMPtoPDFconversion=\toks66
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1290,7 +1068,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box93
-Package hyperref Info: Link coloring OFF on input line 233.
+Package hyperref Info: Link coloring OFF on input line 232.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1302,34 +1080,24 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count352
+\c@section@level=\count347
 )
-LaTeX Info: Redefining \ref on input line 233.
-LaTeX Info: Redefining \pageref on input line 233.
-LaTeX Info: Redefining \nameref on input line 233.
+LaTeX Info: Redefining \ref on input line 232.
+LaTeX Info: Redefining \pageref on input line 232.
+LaTeX Info: Redefining \nameref on input line 232.
  (./LME-MPM.out) (./LME-MPM.out)
 \@outlinefile=\write8
 \openout8 = `LME-MPM.out'.
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: longtable package is loaded.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
-)
-Package caption Info: subfigure package is loaded.
-Package caption Info: supertabular package is loaded.
-Package caption Info: End \AtBeginDocument code.
-
-ABD: EveryShipout initializing macros (./LME-MPM.glsdefs)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 282
+ ABD: EveryShipout initializing macros
+(./LME-MPM.glsdefs)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 280
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 282
+LaTeX Font Info:    Trying to load font information for U+msb on input line 280
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1337,441 +1105,257 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 306.
+(hyperref)                removing `superscript' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 306.
+(hyperref)                removing `superscript' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 306.
+(hyperref)                removing `\@ifnextchar' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 306.
+(hyperref)                removing `superscript' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 306.
+(hyperref)                removing `superscript' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 304.
 
 [1
 
 \openout5 = `LME-MPM.ist'.
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (20.99063pt too wide) has occurred while \output is active
+\OT1/cmr/m/it/10 Preprint submitted to Computer Methods in Applied Mechanics an
+d Engineering August 26, 2020
+ []
+
+
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [2
 
-]
-
-Package natbib Warning: Citation `Sadeghirad_et_al_IJNME_2011' on page 3 undefi
-ned on input line 340.
-
-[3]
-! Undefined control sequence.
-l.401 ...accommodation of the traditional \acrsull
-                                                  {npc} scheme, widely emplo...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[4]
-! Undefined control sequence.
-<recently read> \qued 
-                      
-l.445 ... first and second time derivative, $\qued
-                                                   \otimes
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.446 \qued
-           $ means the dyadic operator, $\Box \cdot \Box$ and $\Box \colon \...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[5]
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.459 \begin{figure}\sidecaption
-                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<Figures/Continuum-solid.png, id=225, 789.6702pt x 574.7874pt>
+] [3] [4] [5]
+<Figures/Continuum-solid.png, id=231, 789.6702pt x 574.7874pt>
 File: Figures/Continuum-solid.png Graphic file (type png)
 <use Figures/Continuum-solid.png>
-Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 462.
+Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 455.
 (pdftex.def)             Requested size: 390.0pt x 283.876pt.
-[6 <./Figures/Continuum-solid.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 554--555
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.480 \begin{equation}
+                       <./Figures/Continuum-solid.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 523--529
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--567
-
- []
-
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.583 \begin{figure}\sidecaption
-                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<Figures/Mesh-particles-back.png, id=273, 775.2162pt x 819.06pt>
+[7]
+<Figures/Mesh-particles-back.png, id=285, 775.2162pt x 819.06pt>
 File: Figures/Mesh-particles-back.png Graphic file (type png)
 <use Figures/Mesh-particles-back.png>
-Package pdftex.def Info: Figures/Mesh-particles-back.png  used on input line 58
-6.
+Package pdftex.def Info: Figures/Mesh-particles-back.png  used on input line 55
+4.
 (pdftex.def)             Requested size: 390.0pt x 412.06606pt.
-[8] [9 <./Figures/Mesh-particles-back.png>]
+ [8] [9pdfTeX warning (ext4): destination with the same identifier (name{figure
+.2}) has been already used, duplicate ignored
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\acrshort' on input line 654.
-
-
-! Package glossaries Error: Glossary entry `MPM' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.658 ...tilized widely within the \acrshort{MPM} 
-                                                  methodology. This scheme h...
-
-You need to define a glossary entry before you can use it.
-
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.661 \begin{figure}\sidecaption
-                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./Figures/MPM_scheme_horizontal.pdf, id=312, 1093.2543pt x 345.51567pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.595 \begin{equation}
+                       <./Figures/Mesh-particles-back.png>]
+<./Figures/MPM_scheme_horizontal.pdf, id=326, 1093.2543pt x 345.51567pt>
 File: ./Figures/MPM_scheme_horizontal.pdf Graphic file (type pdf)
 <use ./Figures/MPM_scheme_horizontal.pdf>
 Package pdftex.def Info: ./Figures/MPM_scheme_horizontal.pdf  used on input lin
-e 665.
+e 633.
 (pdftex.def)             Requested size: 390.0pt x 123.25203pt.
-[10 <./Figures/MPM_scheme_horizontal.pdf>] [11] [12]
+ [10] [11pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3}) has been already used, duplicate ignored
 
-Package hyperref Warning: Suppressing empty link on input line 817.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.695 \begin{equation*}
+                        <./Figures/MPM_scheme_horizontal.pdf>] [12]
+
+Package hyperref Warning: Suppressing empty link on input line 784.
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 822.
+put line 789.
 
-LaTeX Warning: Float too large for page by 44.9575pt on input line 880.
+LaTeX Warning: Float too large for page by 6.68906pt on input line 838.
 
-
-! Package glossaries Error: Glossary entry `LME' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.889 ... of the employment of the \acrshort{LME} 
-                                                  shape functions.
-You need to define a glossary entry before you can use it.
-
-[13] [14]
-
-! Package amsmath Error: Multiple \label's: label 'eq:least-biased-approximatio
-n-scheme' will be lost.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.946 \end{align*}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package amsmath Error: Multiple \label's: label 'eq:RAJAN' will be lost.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.958 \end{align*}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[15]
-! Misplaced alignment tab character &.
-l.985 \nabla N_I^* &
-                    =& N^*_I  \, \left(\nabla f^*_I-\sum_J^{N_n} N^*_J \, \n...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.985 \nabla N_I^* &=&
-                       N^*_I  \, \left(\nabla f^*_I-\sum_J^{N_n} N^*_J \, \n...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[16]
-! Undefined control sequence.
-l.1015 Due to the \short
-                        {fem}-compatibility, the \acrshort{lme} shape
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1020   \short
-               {fem}-compatibility to couple the
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1021      \acrfull{efgm} and \short
-                                     {fem} for linear elasticity and for pro...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.1023 ...imp}-like shape function. Finally \short
-                                                  {sph}-like
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<Figures/MPM_Shape_Fun.png, id=475, 772.8875pt x 667.49374pt>
+[13] [14] [15] [16]
+<Figures/MPM_Shape_Fun.png, id=485, 772.8875pt x 667.49374pt>
 File: Figures/MPM_Shape_Fun.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 1042.
+Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 997.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/MPM_Shape_Fun_dx.png, id=476, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dx.png, id=486, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 1042.
-
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 997.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/MPM_Shape_Fun_dy.png, id=477, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dy.png, id=487, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 1042.
-
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 997.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_17_3_Shape_Fun.png, id=478, 772.8875pt x 667.49374pt>
+<Figures/LME_17_3_Shape_Fun.png, id=488, 772.8875pt x 667.49374pt>
 File: Figures/LME_17_3_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 104
-8.
+Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 100
+4.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_17_3_Shape_Fun_dx.png, id=479, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dx.png, id=489, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dx.png  used on input line 
-1048.
+1004.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_17_3_Shape_Fun_dy.png, id=480, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dy.png, id=490, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dy.png  used on input line 
-1048.
+1004.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/GIMP_Shape_Fun.png, id=481, 772.8875pt x 667.49374pt>
+<Figures/GIMP_Shape_Fun.png, id=491, 772.8875pt x 667.49374pt>
 File: Figures/GIMP_Shape_Fun.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 1055.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 1011.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/GIMP_Shape_Fun_dx.png, id=482, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dx.png, id=492, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 1055
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 1011
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/GIMP_Shape_Fun_dy.png, id=483, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dy.png, id=493, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 1055
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 1011
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_10_0_Shape_Fun.png, id=484, 772.8875pt x 667.49374pt>
+<Figures/LME_10_0_Shape_Fun.png, id=494, 772.8875pt x 667.49374pt>
 File: Figures/LME_10_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 105
-9.
+Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 101
+5.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_10_0_Shape_Fun_dx.png, id=485, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dx.png, id=495, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dx.png  used on input line 
-1059.
+1015.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_10_0_Shape_Fun_dy.png, id=486, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dy.png, id=496, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dy.png  used on input line 
-1059.
+1015.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_5_0_Shape_Fun.png, id=487, 772.8875pt x 667.49374pt>
+<Figures/LME_5_0_Shape_Fun.png, id=497, 772.8875pt x 667.49374pt>
 File: Figures/LME_5_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 1066
+Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 1022
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_5_0_Shape_Fun_dx.png, id=488, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dx.png, id=498, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dx.png  used on input line 1
-066.
+022.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_5_0_Shape_Fun_dy.png, id=489, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dy.png, id=499, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dy.png  used on input line 1
-066.
+022.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-! Undefined control sequence.
-<recently read> \Beta 
-                      
-l.1074 ...esearch and in \cite{Arroyo2006}, $\Beta
-                                                  $ is a scalar as the
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[17]
+ [17] [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1099.
+(hyperref)                removing `\begingroup' on input line 1055.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 1099.
+(hyperref)                removing `\<let>-command' on input line 1055.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 1099.
+(hyperref)                removing `\NAT@ctype' on input line 1055.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1099.
+(hyperref)                removing `\z@' on input line 1055.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 1099.
+(hyperref)                removing `\let' on input line 1055.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 1099.
+(hyperref)                removing `\let' on input line 1055.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 1099.
+(hyperref)                removing `\new@ifnextchar' on input line 1055.
 
-[18 <./Figures/MPM_Shape_Fun.png (PNG copy)> <./Figures/MPM_Shape_Fun_dx.png (P
-NG copy)> <./Figures/MPM_Shape_Fun_dy.png (PNG copy)> <./Figures/LME_17_3_Shape
-_Fun.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun_dx.png (PNG copy)> <./Figure
-s/LME_17_3_Shape_Fun_dy.png (PNG copy)> <./Figures/GIMP_Shape_Fun.png (PNG copy
-)> <./Figures/GIMP_Shape_Fun_dx.png (PNG copy)> <./Figures/GIMP_Shape_Fun_dy.pn
-g (PNG copy)> <./Figures/LME_10_0_Shape_Fun.png (PNG copy)> <./Figures/LME_10_0
-_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_10_0_Shape_Fun_dy.png (PNG copy)> 
-<./Figures/LME_5_0_Shape_Fun.png (PNG copy)> <./Figures/LME_5_0_Shape_Fun_dx.pn
-g (PNG copy)> <./Figures/LME_5_0_Shape_Fun_dy.png (PNG copy)>]
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1115 \begin{figure}\sidecaption
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 
-(./Figures/Dyka_bar.tex
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1068 \item  E
+               lastic modulus : $200 \cdot 10^9\ Pa$ <./Figures/MPM_Shape_Fun.p
+ng (PNG copy)> <./Figures/MPM_Shape_Fun_dx.png (PNG copy)> <./Figures/MPM_Shape
+_Fun_dy.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun.png (PNG copy)> <./Figure
+s/LME_17_3_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_17_3_Shape_Fun_dy.png (P
+NG copy)> <./Figures/GIMP_Shape_Fun.png (PNG copy)> <./Figures/GIMP_Shape_Fun_d
+x.png (PNG copy)> <./Figures/GIMP_Shape_Fun_dy.png (PNG copy)> <./Figures/LME_1
+0_0_Shape_Fun.png (PNG copy)> <./Figures/LME_10_0_Shape_Fun_dx.png (PNG copy)> 
+<./Figures/LME_10_0_Shape_Fun_dy.png (PNG copy)> <./Figures/LME_5_0_Shape_Fun.p
+ng (PNG copy)> <./Figures/LME_5_0_Shape_Fun_dx.png (PNG copy)> <./Figures/LME_5
+_0_Shape_Fun_dy.png (PNG copy)>] (./Figures/Dyka_bar.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1786,144 +1370,78 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-) [19]
+) [20pdfTeX warning (ext4): destination with the same identifier (name{figure.5
+}) has been already used, duplicate ignored
 
-! Package glossaries Error: Glossary entry `NPC' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1161 ...e right figure, with the \acrshort{NPC} 
-                                                  results, shows lower value...
-
-You need to define a glossary entry before you can use it.
-
-
-! Package glossaries Error: Glossary entry `LME' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1161 ...tial discretization, the \acrshort{LME} 
-                                                  schemes show an error comp...
-
-You need to define a glossary entry before you can use it.
-
-
-! Package glossaries Error: Glossary entry `uGIMP' has not been defined.
-
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1161 ... the obtained with the \acrshort{uGIMP},
-                                                   being even lower close to...
-
-You need to define a glossary entry before you can use it.
-
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1164 \begin{figure*}\sidecaption
-                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./Figures/Error_evol.png, id=546, 745.8264pt x 443.7378pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1115 \end{equation}
+                     ]
+<./Figures/Error_evol.png, id=575, 745.8264pt x 443.7378pt>
 File: ./Figures/Error_evol.png Graphic file (type png)
 <use ./Figures/Error_evol.png>
-Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1168.
+Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1126.
 (pdftex.def)             Requested size: 390.0pt x 232.03822pt.
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1188 \begin{figure}\sidecaption
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=556, 617.30624pt x 462.72874pt>
+<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=585, 617.30624pt x 462.72874pt>
 File: ./Figures/Velocity_FE_vs_PCE_CFL_01.png Graphic file (type png)
 <use ./Figures/Velocity_FE_vs_PCE_CFL_01.png>
 Package pdftex.def Info: ./Figures/Velocity_FE_vs_PCE_CFL_01.png  used on input
- line 1192.
+ line 1151.
 (pdftex.def)             Requested size: 390.0pt x 292.34674pt.
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1223 \begin{figure}\sidecaption
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
+) has been already used, duplicate ignored
 
-<./Figures/Velocity_LME_gamma_comparative.png, id=567, 651.43375pt x 889.3225pt
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1158 
+        <./Figures/Error_evol.png>]
+<./Figures/Velocity_LME_gamma_comparative.png, id=604, 651.43375pt x 889.3225pt
 >
 File: ./Figures/Velocity_LME_gamma_comparative.png Graphic file (type png)
 <use ./Figures/Velocity_LME_gamma_comparative.png>
 Package pdftex.def Info: ./Figures/Velocity_LME_gamma_comparative.png  used on 
-input line 1227.
+input line 1187.
 (pdftex.def)             Requested size: 390.0pt x 532.43059pt.
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1247 \begin{figure}\sidecaption
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=577, 617.30624pt x 462.72874pt>
+<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=614, 617.30624pt x 462.72874pt>
 File: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png Graphic file (type png)
 <use ./Figures/Velocity_uGIMP_vs_LME_Dyka.png>
 Package pdftex.def Info: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png  used on inpu
-t line 1251.
+t line 1212.
 (pdftex.def)             Requested size: 390.0pt x 292.34674pt.
-[20] [21 <./Figures/Error_evol.png>]
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1265 \begin{figure}\sidecaption
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ [22pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
+) has been already used, duplicate ignored
 
-<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=600, 617.30624pt x 462.72874pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1217 
+        <./Figures/Velocity_FE_vs_PCE_CFL_01.png>]
+<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=629, 617.30624pt x 462.72874pt>
 File: ./Figures/Velocity_MPM_vs_OTM_Dyka.png Graphic file (type png)
 <use ./Figures/Velocity_MPM_vs_OTM_Dyka.png>
 Package pdftex.def Info: ./Figures/Velocity_MPM_vs_OTM_Dyka.png  used on input 
-line 1269.
+line 1231.
 (pdftex.def)             Requested size: 390.0pt x 292.34674pt.
-[22 <./Figures/Velocity_FE_vs_PCE_CFL_01.png>] [23 <./Figures/Velocity_LME_gamm
-a_comparative.png>] [24 <./Figures/Velocity_uGIMP_vs_LME_Dyka.png>] [25 <./Figu
-res/Velocity_MPM_vs_OTM_Dyka.png>]
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1284 \begin{figure}\sidecaption
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ [23] [24pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.8}) has been already used, duplicate ignored
 
-(./Figures/Block.tex
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1237 \clearpage
+                  <./Figures/Velocity_LME_gamma_comparative.png>] [25pdfTeX war
+ning (ext4): destination with the same identifier (name{figure.9}) has been alr
+eady used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1237 \clearpage
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1237 \clearpage
+                  <./Figures/Velocity_uGIMP_vs_LME_Dyka.png> <./Figures/Velocit
+y_MPM_vs_OTM_Dyka.png>] (./Figures/Block.tex
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -2081,48 +1599,63 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-) [26
+)
+
+LaTeX Warning: Reference `eq:particle_body_forces' on page 26 undefined on inpu
+t line 1263.
+
+
+LaTeX Warning: Reference `eq:nodal_external_forces' on page 26 undefined on inp
+ut line 1264.
+
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.11}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1289 
+       
 
 ]
-<Figures/Block_LME3_PCE_a_t0.png, id=638, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_a_t0.png, id=660, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_a_t0.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_a_t0.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 13
-38.
+01.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures/Block_LME3_PCE_b_t025.png, id=639, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_b_t025.png, id=661, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_b_t025.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_b_t025.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_b_t025.png  used on input line 
-1341.
+1304.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures/Block_LME3_PCE_c_t1.png, id=640, 420.57124pt x 515.9275pt>
+<Figures/Block_LME3_PCE_c_t1.png, id=662, 420.57124pt x 515.9275pt>
 File: Figures/Block_LME3_PCE_c_t1.png Graphic file (type png)
 <use Figures/Block_LME3_PCE_c_t1.png>
 Package pdftex.def Info: Figures/Block_LME3_PCE_c_t1.png  used on input line 13
-44.
+07.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-
-! Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1376 \begin{figure}\sidecaption
-                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./Figures/Block_CFL_01_Comparative.png, id=647, 462.528pt x 346.896pt>
+<./Figures/Block_CFL_01_Comparative.png, id=669, 462.528pt x 346.896pt>
 File: ./Figures/Block_CFL_01_Comparative.png Graphic file (type png)
 <use ./Figures/Block_CFL_01_Comparative.png>
 Package pdftex.def Info: ./Figures/Block_CFL_01_Comparative.png  used on input 
-line 1380.
+line 1344.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
-[27 <./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.png> <
-./Figures/Block_LME3_PCE_c_t1.png>] [28 <./Figures/Block_CFL_01_Comparative.png
->] [29]
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1351 
+        <./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.pn
+g> <./Figures/Block_LME3_PCE_c_t1.png>] [28pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.13}) has been already used, duplicate igno
+red
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1365 
+        <./Figures/Block_CFL_01_Comparative.png>] [29]
 No file LME-MPM.gls.
 No file LME-MPM.acr.
 [30] [31] (./LME-MPM.bbl [32]
@@ -2138,131 +1671,126 @@ science / article / pii /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--64
+Underfull \hbox (badness 10000) in paragraph at lines 55--66
+\OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 https : / / onlinelibrary . wiley . com
+ / doi / abs / 10 . 1002 / nme .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--77
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
 science / article / pii /
  []
 
 [33] [34]
-Underfull \hbox (badness 1931) in paragraph at lines 166--174
+Underfull \hbox (badness 1931) in paragraph at lines 179--187
 []\OT1/cmr/m/n/12 S. Ku-larathna, K. Soga, []Im-plicit for-mu-la-tion of ma-te-
 rial point
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--174
+Underfull \hbox (badness 10000) in paragraph at lines 179--187
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
 science / article / pii /
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 176--183
+Underfull \hbox (badness 2020) in paragraph at lines 189--196
 \OT1/cmr/m/n/12 ma-te-rial point method for tran-sient prob-lems[], Com-puter M
 eth-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--183
+Underfull \hbox (badness 10000) in paragraph at lines 189--196
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
 science / article / pii /
  []
 
 [35]
-Underfull \hbox (badness 1924) in paragraph at lines 201--206
+Underfull \hbox (badness 1924) in paragraph at lines 214--219
 []\OT1/cmr/m/n/12 B. Rie-mann, []Uber die darstell-barkeit einer func-tion durc
 h eine
  []
 
-! Misplaced alignment tab character &.
-l.231   algorithm, Computers &
-                               Structures - COMPUT STRUCT 53 (1994) 27--33.
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 260--265
+Underfull \hbox (badness 10000) in paragraph at lines 273--278
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 https : / / books . google . es / books
  / about /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--265
+Underfull \hbox (badness 10000) in paragraph at lines 273--278
 \OT1/cmtt/m/n/12 Smoothed{_}Particle{_}Hydrodynamics . html ? id =
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 267--275
+Underfull \hbox (badness 4531) in paragraph at lines 280--288
 []\OT1/cmr/m/n/12 Z. Ul-lah, W. Coombs, C. Au-garde, []An adap-tive fi-nite el-
 e-
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 267--275
+Underfull \hbox (badness 1052) in paragraph at lines 280--288
 \OT1/cmr/m/n/12 ment/meshless cou-pled method based on lo-cal max-i-mum en-trop
 y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--275
+Underfull \hbox (badness 10000) in paragraph at lines 280--288
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
 science / article / pii /
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 277--285
+Underfull \hbox (badness 1629) in paragraph at lines 290--298
 []\OT1/cmr/m/n/12 W.-C. Yang, P. Ar-duino, G. R. Miller, P. Mackenzie-Helnwein,
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--285
+Underfull \hbox (badness 10000) in paragraph at lines 290--298
 []\OT1/cmr/m/n/12 Smooth-ing al-go-rithm for sta-bi-liza-tion of the ma-te-rial
  point
  []
 
 
-Underfull \hbox (badness 6708) in paragraph at lines 277--285
+Underfull \hbox (badness 6708) in paragraph at lines 290--298
 \OT1/cmr/m/n/12 method for fluid{solid in-ter-ac-tion prob-lems[], Com-puter Me
 th-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--285
+Underfull \hbox (badness 10000) in paragraph at lines 290--298
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
 science / article / pii /
  []
 
-)
-
-Package natbib Warning: There were undefined citations.
-
-[37]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1608.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1608.
+[37]) [38]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1572.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1572.
  (./LME-MPM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1608.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1608.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1572.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1572.
 
 Package rerunfilecheck Info: File `LME-MPM.out' has not changed.
-(rerunfilecheck)             Checksum: DBEA705B171BD5565EBC3A4142350537;719.
+(rerunfilecheck)             Checksum: 669492AFC01967ED32CA4883A8D8A9C7;719.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1608.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1572.
  ) 
 Here is how much of TeX's memory you used:
- 29231 strings out of 480608
- 560755 string characters out of 5903630
- 949243 words of memory out of 5000000
- 44251 multiletter control sequences out of 15000+600000
+ 28088 strings out of 480608
+ 539652 string characters out of 5903630
+ 935217 words of memory out of 5000000
+ 43114 multiletter control sequences out of 15000+600000
  548753 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,16n,81p,987b,836s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,17n,81p,987b,828s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:ugimp} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -2272,17 +1800,20 @@ eplaced by a fixed one
 pdfTeX warning (dest): name{glo:sph} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{glo:npc} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{glo:neumann-boundary} has been referenced but does 
 not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:nbc} has been referenced but does not exist, re
+placed by a fixed one
 
 pdfTeX warning (dest): name{glo:stress} has been referenced but does not exist,
  replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:dirichlet-boundary} has been referenced but doe
 s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:dbc} has been referenced but does not exist, re
+placed by a fixed one
 
 pdfTeX warning (dest): name{glo:strain} has been referenced but does not exist,
  replaced by a fixed one
@@ -2296,6 +1827,9 @@ pdfTeX warning (dest): name{glo:contour} has been referenced but does not exist
 pdfTeX warning (dest): name{glo:domain} has been referenced but does not exist,
  replaced by a fixed one
 
+pdfTeX warning (dest): name{glo:npc} has been referenced but does not exist, re
+placed by a fixed one
+
 pdfTeX warning (dest): name{glo:igimp} has been referenced but does not exist, 
 replaced by a fixed one
 
@@ -2306,6 +1840,9 @@ pdfTeX warning (dest): name{glo:otm} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{glo:ctls} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:cpdi} has been referenced but does not exist, r
 eplaced by a fixed one
 
 pdfTeX warning (dest): name{glo:ddmp} has been referenced but does not exist, r
@@ -2331,31 +1868,30 @@ placed by a fixed one
 
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on LME-MPM.pdf (37 pages, 1826450 bytes).
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on LME-MPM.pdf (38 pages, 1824344 bytes).
 PDF statistics:
- 1011 PDF objects out of 1200 (max. 8388607)
- 892 compressed objects within 9 object streams
- 209 named destinations out of 1000 (max. 500000)
+ 1055 PDF objects out of 1200 (max. 8388607)
+ 939 compressed objects within 10 object streams
+ 216 named destinations out of 1000 (max. 500000)
  228 words of extra memory for PDF output out of 10000 (max. 10000000)
 

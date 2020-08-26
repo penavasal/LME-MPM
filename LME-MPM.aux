@@ -32,6 +32,7 @@
 \citation{Zhang2011a}
 \citation{DHAKAL2016301}
 \citation{Sadeghirad_et_al_IJNME_2011}
+\citation{Sadeghirad_et_al_IJNME_2011}
 \citation{TIELEN2017265}
 \citation{E_Wobbes_2018}
 \citation{Arroyo2006}
@@ -58,31 +59,29 @@
 \citation{Sulsky1994}
 \@writefile{toc}{\contentsline {section}{\numberline {2}The meshfree methodology}{5}{section.2}\protected@file@percent }
 \newlabel{sec:meshfree-methodology}{{2}{5}{The meshfree methodology}{section.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Description of the boundary-value-problem in a continuum. Red lines represents the closure $\partial \varOmega $ of the domain $\varOmega $ represented in gray.\relax }}{6}{figure.caption.2}\protected@file@percent }
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:Continuum-solid}{{1}{6}{Description of the boundary-value-problem in a continuum. Red lines represents the closure $\partial \varOmega $ of the domain $\varOmega $ represented in gray.\relax }{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Description of the boundary-value-problem in a continuum. Red lines represents the closure $\partial \Omega $ of the domain $\Omega $ represented in gray.}}{6}{figure.1}\protected@file@percent }
+\newlabel{fig:Continuum-solid}{{1}{6}{Description of the boundary-value-problem in a continuum. Red lines represents the closure $\partial \Omega $ of the domain $\Omega $ represented in gray}{figure.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Derivation of MPM procedure}{6}{subsection.2.1}\protected@file@percent }
 \newlabel{sec:derivation-mpm}{{2.1}{6}{Derivation of MPM procedure}{subsection.2.1}{}}
 \newlabel{eq:Compatibility-equation}{{1}{6}{Derivation of MPM procedure}{equation.2.1}{}}
-\citation{Riemann_1854}
 \newlabel{eq:Balance-momentum}{{2}{7}{Derivation of MPM procedure}{equation.2.2}{}}
 \newlabel{eq:Constitutive-equation}{{3}{7}{Derivation of MPM procedure}{equation.2.3}{}}
 \newlabel{eq:Rho-material-derivative}{{4}{7}{Derivation of MPM procedure}{equation.2.4}{}}
 \newlabel{eq:Hilbert-space}{{5}{7}{Derivation of MPM procedure}{equation.2.5}{}}
 \newlabel{eq:cauchy-secuence}{{6}{7}{Derivation of MPM procedure}{equation.2.6}{}}
 \newlabel{eq:BalanceMomentum_wf}{{7}{7}{Derivation of MPM procedure}{equation.2.7}{}}
-\newlabel{eq:particle_acceleration_forces}{{8}{8}{Derivation of MPM procedure}{equation.2.8}{}}
-\newlabel{eq:particle_internal_forces}{{9}{8}{Derivation of MPM procedure}{equation.2.9}{}}
-\newlabel{eq:particle_body_forces}{{10}{8}{Derivation of MPM procedure}{equation.2.10}{}}
-\newlabel{eq:particle_load_forces}{{11}{8}{Derivation of MPM procedure}{equation.2.11}{}}
-\newlabel{eq:particle_balance_forces3}{{12}{8}{Derivation of MPM procedure}{equation.2.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Description of the spatial discretization for domain presented in the figure\nobreakspace  {}\ref  {fig:Continuum-solid}. Blue mesh represent the background computational support, and the red mesh conforms the discretized continuum body.\relax }}{9}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:MPM-discretization}{{2}{9}{Description of the spatial discretization for domain presented in the figure~\ref {fig:Continuum-solid}. Blue mesh represent the background computational support, and the red mesh conforms the discretized continuum body.\relax }{figure.caption.3}{}}
-\newlabel{eq:particle_nod_mass}{{13}{9}{Derivation of MPM procedure}{equation.2.13}{}}
-\newlabel{eq:nodal_internal_forces}{{14}{9}{Derivation of MPM procedure}{equation.2.14}{}}
-\newlabel{eq:nodal_external_forces}{{15}{9}{Derivation of MPM procedure}{equation.2.15}{}}
-\newlabel{eq:IncrStrainPoint}{{16}{9}{Derivation of MPM procedure}{equation.2.16}{}}
-\newlabel{eq:MassConservation}{{17}{9}{Derivation of MPM procedure}{equation.2.17}{}}
+\citation{Riemann_1854}
+\newlabel{eq:variable_reconstruction}{{8}{8}{Derivation of MPM procedure}{equation.2.8}{}}
+\newlabel{eq:grad_variable_reconstruction}{{9}{8}{Derivation of MPM procedure}{equation.2.9}{}}
+\newlabel{eq:particle_variable_reconstruction}{{10}{8}{Derivation of MPM procedure}{equation.2.10}{}}
+\newlabel{eq:particle_riemann_integral}{{12}{8}{Derivation of MPM procedure}{equation.2.12}{}}
+\newlabel{eq:particle_acceleration_forces_I}{{13}{8}{Derivation of MPM procedure}{equation.2.13}{}}
+\newlabel{eq:particle_acceleration_forces_II}{{14}{8}{Derivation of MPM procedure}{equation.2.14}{}}
+\citation{Zhang_book_2016}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Description of the spatial discretisation for domain presented in the figure\nobreakspace  {}\ref  {fig:Continuum-solid}. Blue mesh represent the background computational support, and the red mesh conforms the discretised continuum body.}}{9}{figure.2}\protected@file@percent }
+\newlabel{fig:MPM-discretization}{{2}{9}{Description of the spatial discretisation for domain presented in the figure~\ref {fig:Continuum-solid}. Blue mesh represent the background computational support, and the red mesh conforms the discretised continuum body}{figure.2}{}}
+\newlabel{eq:particle_acceleration_forces_III}{{15}{9}{Derivation of MPM procedure}{equation.2.15}{}}
+\newlabel{eq:BalanceMomentum_wf_discretized}{{16}{9}{Derivation of MPM procedure}{equation.2.16}{}}
 \citation{Sulsky1994}
 \citation{Bardenhagen2002}
 \citation{thesis_Andersen_2009}
@@ -90,55 +89,52 @@
 \citation{Sulsky1994}
 \citation{thesis_Andersen_2009}
 \citation{Zhang_book_2016}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Description of the three steps in \acrshort {mpm} standard algorithm.\relax }}{10}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:MPM_algorithm}{{3}{10}{Description of the three steps in \acrshort {mpm} standard algorithm.\relax }{figure.caption.4}{}}
-\newlabel{eq:Updated_Lagrangian}{{18}{10}{Derivation of MPM procedure}{equation.2.18}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{10}{subsection.2.2}\protected@file@percent }
-\newlabel{sec:epc-algor-mpm}{{2.2}{10}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{subsection.2.2}{}}
-\newlabel{eq:Sulsky-1994-UL-v}{{19}{10}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.19}{}}
-\newlabel{eq:Sulsky-1994-UL-x}{{20}{10}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.20}{}}
+\newlabel{eq:IncrStrainPoint}{{17}{10}{Derivation of MPM procedure}{equation.2.17}{}}
+\newlabel{eq:MassConservation}{{18}{10}{Derivation of MPM procedure}{equation.2.18}{}}
+\newlabel{eq:Updated_Lagrangian}{{19}{10}{Derivation of MPM procedure}{equation.2.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}MPM time integration scheme: the Newmark Predictor-Corrector proposal}{10}{subsection.2.2}\protected@file@percent }
+\newlabel{sec:epc-algor-mpm}{{2.2}{10}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{subsection.2.2}{}}
+\newlabel{eq:Sulsky-1994-UL-v}{{20}{10}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.20}{}}
+\newlabel{eq:Sulsky-1994-UL-x}{{21}{10}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.21}{}}
 \citation{Tran2019e}
 \citation{Geranlized_alpha_1993}
 \citation{Tran2019e}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Description of the three steps in \acrshort {mpm} standard algorithm.}}{11}{figure.3}\protected@file@percent }
+\newlabel{fig:MPM_algorithm}{{3}{11}{Description of the three steps in \acrshort {mpm} standard algorithm}{figure.3}{}}
+\newlabel{eq:Zhang-2016-UL-x}{{22}{11}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.22}{}}
+\newlabel{eq:Zhang-2016-UL-v}{{23}{11}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.23}{}}
+\newlabel{eq:Tran-2019-GA-v}{{24}{11}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.24}{}}
+\newlabel{eq:Tran-2019-GA-x}{{25}{11}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.25}{}}
+\newlabel{eq:Tran-2019-GA-a}{{26}{11}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.26}{}}
 \citation{Tran2019e}
 \citation{Hughes2000}
 \citation{Xiaojian94}
 \citation{Xiaojian94}
-\newlabel{eq:Zhang-2016-UL-x}{{21}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.21}{}}
-\newlabel{eq:Zhang-2016-UL-v}{{22}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.22}{}}
-\newlabel{eq:Tran-2019-GA-v}{{23}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.23}{}}
-\newlabel{eq:Tran-2019-GA-x}{{24}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.24}{}}
-\newlabel{eq:Tran-2019-GA-a}{{25}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.25}{}}
-\newlabel{eq:Predictor-velocity-I}{{26}{11}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.26}{}}
 \citation{ZZ1992_I}
 \citation{Bardenhagen2004}
-\newlabel{eq:Variational-recovery}{{27}{12}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.27}{}}
-\newlabel{eq:Predictor-velocity-II}{{28}{12}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.28}{}}
-\newlabel{eq:Predictor-velocity-II}{{29}{12}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.29}{}}
-\newlabel{eq:Corrector-velocity}{{30}{12}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.30}{}}
+\newlabel{eq:Predictor-velocity-I}{{27}{12}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.27}{}}
+\newlabel{eq:Variational-recovery}{{28}{12}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.28}{}}
+\newlabel{eq:Predictor-velocity-II}{{29}{13}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.29}{}}
+\newlabel{eq:Predictor-velocity-II}{{30}{13}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.30}{}}
+\newlabel{eq:Corrector-velocity}{{31}{13}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.31}{}}
+\newlabel{eq:Update-lagrangian-pce}{{32}{13}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.32}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {}{\ignorespaces \acrfull {npc} scheme}}{14}{algorithm.1}\protected@file@percent }
+\newlabel{algo:1}{{}{14}{MPM time integration scheme: the Newmark Predictor-Corrector proposal}{algorithm.1}{}}
 \citation{Wieckowski2004}
 \citation{Arroyo2006}
 \citation{Wobbes2020}
 \citation{Wobbes2020}
 \citation{Jaynes1957}
 \citation{Jaynes1957}
-\newlabel{eq:Update-lagrangian-pce}{{31}{13}{\acrshort {mpm} time integration scheme: the Newmark Predictor-Corrector proposal}{equation.2.31}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Local \textit  {Max-Ent} approximants}{13}{subsection.2.3}\protected@file@percent }
-\newlabel{sec:local-max-ent}{{2.3}{13}{Local \textit {Max-Ent} approximants}{subsection.2.3}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {}{\ignorespaces \acrfull {npc} scheme\relax }}{14}{algorithm.1}\protected@file@percent }
-\newlabel{algo:1}{{}{14}{\acrfull {npc} scheme\relax }{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Local \textit  {Max-Ent} approximants}{15}{subsection.2.3}\protected@file@percent }
+\newlabel{sec:local-max-ent}{{2.3}{15}{Local \textit {Max-Ent} approximants}{subsection.2.3}{}}
+\newlabel{eq:Shannon-entropy}{{35}{15}{Local \textit {Max-Ent} approximants}{equation.2.35}{}}
 \citation{Arroyo2006}
 \citation{Arroyo2006}
-\newlabel{eq:Shannon-entropy}{{34}{15}{Local \textit {Max-Ent} approximants}{equation.2.34}{}}
+\newlabel{eq:LME-p}{{36}{16}{Local \textit {Max-Ent} approximants}{equation.2.36}{}}
 \citation{Arroyo2006}
 \citation{Arroyo2006}
 \citation{Arroyo2006}
-\newlabel{eq:LME-p}{{35}{16}{Local \textit {Max-Ent} approximants}{equation.2.35}{}}
-\newlabel{eq:LME-Z}{{36}{16}{Local \textit {Max-Ent} approximants}{equation.2.36}{}}
-\newlabel{eq:LME-J}{{37}{16}{Local \textit {Max-Ent} approximants}{equation.2.37}{}}
-\newlabel{eq:LME-r}{{38}{16}{Local \textit {Max-Ent} approximants}{equation.2.37}{}}
-\newlabel{eq:LME-grad-p}{{39}{16}{Local \textit {Max-Ent} approximants}{equation.2.39}{}}
-\newlabel{eq:LME-f}{{40}{16}{Local \textit {Max-Ent} approximants}{equation.2.40}{}}
 \citation{Steffen2008b}
 \citation{Liu2003}
 \citation{Augarde_2013}
@@ -146,47 +142,61 @@
 \citation{Arduino_2018}
 \citation{Arroyo2006}
 \citation{Kochmann2019}
-\newlabel{eq26}{{41}{17}{Local \textit {Max-Ent} approximants}{equation.2.41}{}}
+\citation{Arroyo2006}
+\citation{Cortis2018a}
+\newlabel{eq:LME-Z}{{37}{17}{Local \textit {Max-Ent} approximants}{equation.2.37}{}}
+\newlabel{eq:LME-J}{{38}{17}{Local \textit {Max-Ent} approximants}{equation.2.38}{}}
+\newlabel{eq:LME-r}{{39}{17}{Local \textit {Max-Ent} approximants}{equation.2.38}{}}
+\newlabel{eq:LME-grad-p}{{40}{17}{Local \textit {Max-Ent} approximants}{equation.2.40}{}}
+\newlabel{eq:LME-f}{{41}{17}{Local \textit {Max-Ent} approximants}{equation.2.41}{}}
+\newlabel{eq26}{{42}{17}{Local \textit {Max-Ent} approximants}{equation.2.42}{}}
 \citation{Dyka1995}
 \citation{thesis_Andersen_2009}
 \citation{Dyka1995}
 \citation{Dyka1995}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Comparative of linear piecewise shape functions (Q4) and \acrshort {ugimp} shape functions \textit  {versus} \acrshort {lme} approximation for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$.\relax }}{18}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:LME_MPM}{{4}{18}{Comparative of linear piecewise shape functions (Q4) and \acrshort {ugimp} shape functions \textit {versus} \acrshort {lme} approximation for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$.\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Application to linear elasticity dynamic problems.}{18}{section.3}\protected@file@percent }
-\newlabel{sec:Application-linear-elasticity-dynamic-problems}{{3}{18}{Application to linear elasticity dynamic problems}{section.3}{}}
-\citation{Dyka1995}
-\citation{Dyka1995}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Geometrical description of the Dyka \cite  {Dyka1995} bar.\relax }}{19}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:Dyka_Bar}{{5}{19}{Geometrical description of the Dyka \cite {Dyka1995} bar.\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Comparative of linear piecewise shape functions (Q4) and \acrshort {ugimp} shape functions \textit  {versus} \acrshort {lme} approximation for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$.}}{19}{figure.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Q4}}}{19}{figure.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {$\text {LME}_{17}$}}}{19}{figure.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {uGIMP}}}{19}{figure.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {$\text {LME}_{10}$}}}{19}{figure.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {$\text {LME}_{5}$}}}{19}{figure.4}\protected@file@percent }
+\newlabel{fig:LME_MPM}{{4}{19}{Comparative of linear piecewise shape functions (Q4) and \acrshort {ugimp} shape functions \textit {versus} \acrshort {lme} approximation for a two-dimensional arrangement of nodes, and spatial derivatives for several values of $\gamma = \beta /h^2$}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Application to linear elasticity dynamic problems.}{19}{section.3}\protected@file@percent }
+\newlabel{sec:Application-linear-elasticity-dynamic-problems}{{3}{19}{Application to linear elasticity dynamic problems}{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dyka's bar \cite  {Dyka1995}}{19}{subsection.3.1}\protected@file@percent }
 \newlabel{sec:dyka-bar}{{3.1}{19}{Dyka's bar \cite {Dyka1995}}{subsection.3.1}{}}
-\newlabel{eq:Cel}{{42}{19}{Dyka's bar \cite {Dyka1995}}{equation.3.42}{}}
+\citation{Dyka1995}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Geometrical description of the Dyka \cite  {Dyka1995} bar.}}{20}{figure.5}\protected@file@percent }
+\newlabel{fig:Dyka_Bar}{{5}{20}{Geometrical description of the Dyka \cite {Dyka1995} bar}{figure.5}{}}
+\newlabel{eq:Cel}{{43}{20}{Dyka's bar \cite {Dyka1995}}{equation.3.43}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Velocity error evolution at the point A in the Dyka's bar , convergence plots for \acrshort {fe} and \acrshort {npc}. The plot is subdivided with colours, the darker part of the diagram shows coincides when the relative movement of the particles is large enough to produce the grid crossing phenomena. The lightest part of the diagram coincides when the relative movement of the particles in negligible in comparison with the mesh size. And in the middle region a transition behaviour take place.}}{21}{figure.6}\protected@file@percent }
+\newlabel{fig:Dyka-error-evol}{{6}{21}{Velocity error evolution at the point A in the Dyka's bar , convergence plots for \acrshort {fe} and \acrshort {npc}. The plot is subdivided with colours, the darker part of the diagram shows coincides when the relative movement of the particles is large enough to produce the grid crossing phenomena. The lightest part of the diagram coincides when the relative movement of the particles in negligible in comparison with the mesh size. And in the middle region a transition behaviour take place}{figure.6}{}}
+\newlabel{eq:RMS}{{44}{21}{Dyka's bar \cite {Dyka1995}}{equation.3.44}{}}
 \citation{Arroyo2006}
 \citation{Bardenhagen2004}
-\newlabel{eq:RMS}{{43}{20}{Dyka's bar \cite {Dyka1995}}{equation.3.43}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Velocity error evolution at the point A in the Dyka's bar , convergence plots for \acrshort {fe} and \acrshort {npc}. The plot is subdivided with colours, the darker part of the diagram shows coincides when the relative movement of the particles is large enough to produce the grid crossing phenomena. The lightest part of the diagram coincides when the relative movement of the particles in negligible in comparison with the mesh size. And in the middle region a transition behaviour take place.\relax }}{21}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:Dyka-error-evol}{{6}{21}{Velocity error evolution at the point A in the Dyka's bar , convergence plots for \acrshort {fe} and \acrshort {npc}. The plot is subdivided with colours, the darker part of the diagram shows coincides when the relative movement of the particles is large enough to produce the grid crossing phenomena. The lightest part of the diagram coincides when the relative movement of the particles in negligible in comparison with the mesh size. And in the middle region a transition behaviour take place.\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Comparison of \acrshort {npc} and \acrshort {fe} performances: In the picture the velocity evolution at the point in the bar left side is plotted.}}{22}{figure.7}\protected@file@percent }
+\newlabel{fig:Dyka-NPC-FE}{{7}{22}{Comparison of \acrshort {npc} and \acrshort {fe} performances: In the picture the velocity evolution at the point in the bar left side is plotted}{figure.7}{}}
 \citation{Li2010}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Comparison of \acrshort {npc} and \acrshort {fe} performances: In the picture the velocity evolution at the point in the bar left side is plotted.\relax }}{22}{figure.caption.8}\protected@file@percent }
-\newlabel{fig:Dyka-NPC-FE}{{7}{22}{Comparison of \acrshort {npc} and \acrshort {fe} performances: In the picture the velocity evolution at the point in the bar left side is plotted.\relax }{figure.caption.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Sensitivity of LME approximants performance to changes in the dimensionless regularization parameter $\gamma = \beta /h^2$. To illustrate it, the velocity evolution at the point in the bar left side is plotted.\relax }}{23}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:Dyka-LME-gamma}{{8}{23}{Sensitivity of LME approximants performance to changes in the dimensionless regularization parameter $\gamma = \beta /h^2$. To illustrate it, the velocity evolution at the point in the bar left side is plotted.\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Velocity evolution at the point in the bar left side.\relax }}{24}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:Dyka-uGIMP-LME}{{9}{24}{Velocity evolution at the point in the bar left side.\relax }{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Velocity evolution at the point in the bar left side.\relax }}{25}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:Dyka-OTM-MPM}{{10}{25}{Velocity evolution at the point in the bar left side.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Sensitivity of LME approximants performance to changes in the dimensionless regularization parameter $\gamma = \beta /h^2$. To illustrate it, the velocity evolution at the point in the bar left side is plotted.}}{24}{figure.8}\protected@file@percent }
+\newlabel{fig:Dyka-LME-gamma}{{8}{24}{Sensitivity of LME approximants performance to changes in the dimensionless regularization parameter $\gamma = \beta /h^2$. To illustrate it, the velocity evolution at the point in the bar left side is plotted}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Velocity evolution at the point in the bar left side.}}{25}{figure.9}\protected@file@percent }
+\newlabel{fig:Dyka-uGIMP-LME}{{9}{25}{Velocity evolution at the point in the bar left side}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Velocity evolution at the point in the bar left side.}}{25}{figure.10}\protected@file@percent }
+\newlabel{fig:Dyka-OTM-MPM}{{10}{25}{Velocity evolution at the point in the bar left side}{figure.10}{}}
 \citation{thesis_Andersen_2009}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Geometrical description of a soil block \relax }}{26}{figure.caption.12}\protected@file@percent }
-\newlabel{fig:block}{{11}{26}{Geometrical description of a soil block \relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Geometrical description of a soil block }}{26}{figure.11}\protected@file@percent }
+\newlabel{fig:block}{{11}{26}{Geometrical description of a soil block}{figure.11}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Rigid block}{26}{subsection.3.2}\protected@file@percent }
 \newlabel{sec:andersen-block}{{3.2}{26}{Rigid block}{subsection.3.2}{}}
-\newlabel{eq:gravity-load-block}{{44}{26}{Rigid block}{equation.3.44}{}}
+\newlabel{eq:gravity-load-block}{{45}{26}{Rigid block}{equation.3.45}{}}
 \citation{Arroyo2006}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Vertical normal stress and position of material points during the loading process for a soft soil ($E = 5\ MPa$, $\rho _0 = 6\cdot 10^3\ kg/m^3$). Numerical parameters considered for the simulation are : Local \textit  {max-ent} shape function $\gamma =3$ and explicit PC scheme with CFL 0.1.\relax }}{27}{figure.caption.13}\protected@file@percent }
-\newlabel{fig:Block-LME3}{{12}{27}{Vertical normal stress and position of material points during the loading process for a soft soil ($E = 5\ MPa$, $\rho _0 = 6\cdot 10^3\ kg/m^3$). Numerical parameters considered for the simulation are : Local \textit {max-ent} shape function $\gamma =3$ and explicit PC scheme with CFL 0.1.\relax }{figure.caption.13}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Comparative of the vertical displacement evolution in a point located in the free surface employing different interpolation schemes and numerical techniques.\relax }}{28}{figure.caption.14}\protected@file@percent }
-\newlabel{fig:vertical-displacement-block}{{13}{28}{Comparative of the vertical displacement evolution in a point located in the free surface employing different interpolation schemes and numerical techniques.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Vertical normal stress and position of material points during the loading process for a soft soil ($E = 5\ MPa$, $\rho _0 = 6\cdot 10^3\ kg/m^3$). Numerical parameters considered for the simulation are : Local \textit  {max-ent} shape function $\gamma =3$ and explicit PC scheme with CFL 0.1.}}{27}{figure.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {t = 0 seconds.}}}{27}{figure.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {t = 5 seconds.}}}{27}{figure.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {t = 20 seconds}}}{27}{figure.12}\protected@file@percent }
+\newlabel{fig:Block-LME3}{{12}{27}{Vertical normal stress and position of material points during the loading process for a soft soil ($E = 5\ MPa$, $\rho _0 = 6\cdot 10^3\ kg/m^3$). Numerical parameters considered for the simulation are : Local \textit {max-ent} shape function $\gamma =3$ and explicit PC scheme with CFL 0.1}{figure.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Comparative of the vertical displacement evolution in a point located in the free surface employing different interpolation schemes and numerical techniques.}}{28}{figure.13}\protected@file@percent }
+\newlabel{fig:vertical-displacement-block}{{13}{28}{Comparative of the vertical displacement evolution in a point located in the free surface employing different interpolation schemes and numerical techniques}{figure.13}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions}{28}{section.4}\protected@file@percent }
 \newlabel{sec:conclusions}{{4}{28}{Conclusions}{section.4}{}}
 \@writefile{toc}{\let\numberline\tmptocnumberline}
@@ -221,40 +231,42 @@
 \bibcite{Steffen2008}{{4}{}{{}}{{}}}
 \bibcite{Zhang2011a}{{5}{}{{}}{{}}}
 \bibcite{DHAKAL2016301}{{6}{}{{}}{{}}}
-\bibcite{TIELEN2017265}{{7}{}{{}}{{}}}
-\bibcite{E_Wobbes_2018}{{8}{}{{}}{{}}}
-\bibcite{Arroyo2006}{{9}{}{{}}{{}}}
-\bibcite{Sukumar15}{{10}{}{{}}{{}}}
-\bibcite{Li2012}{{11}{}{{}}{{}}}
-\bibcite{Navas:17b}{{12}{}{{}}{{}}}
-\bibcite{Navas2018a}{{13}{}{{}}{{}}}
-\bibcite{Navas2016}{{14}{}{{}}{{}}}
-\bibcite{Navas2016b}{{15}{}{{}}{{}}}
-\bibcite{Navas:17c}{{16}{}{{}}{{}}}
-\bibcite{Wriggers18}{{17}{}{{}}{{}}}
-\bibcite{Wobbes2020}{{18}{}{{}}{{}}}
-\bibcite{Tran2019e}{{19}{}{{}}{{}}}
-\bibcite{Guilkey_2003}{{20}{}{{}}{{}}}
-\bibcite{Wang_2016}{{21}{}{{}}{{}}}
-\bibcite{Charlton_2017}{{22}{}{{}}{{}}}
-\bibcite{Soga_2017}{{23}{}{{}}{{}}}
-\bibcite{LU_2018}{{24}{}{{}}{{}}}
-\bibcite{Wilson1972}{{25}{}{{}}{{}}}
-\bibcite{Geranlized_alpha_1993}{{26}{}{{}}{{}}}
-\bibcite{Riemann_1854}{{27}{}{{}}{{}}}
-\bibcite{Bardenhagen2002}{{28}{}{{}}{{}}}
-\bibcite{thesis_Andersen_2009}{{29}{}{{}}{{}}}
-\bibcite{Zhang_book_2016}{{30}{}{{}}{{}}}
-\bibcite{Hughes2000}{{31}{}{{}}{{}}}
-\bibcite{Xiaojian94}{{32}{}{{}}{{}}}
-\bibcite{ZZ1992_I}{{33}{}{{}}{{}}}
-\bibcite{Wieckowski2004}{{34}{}{{}}{{}}}
-\bibcite{Jaynes1957}{{35}{}{{}}{{}}}
-\bibcite{Steffen2008b}{{36}{}{{}}{{}}}
-\bibcite{Liu2003}{{37}{}{{}}{{}}}
-\bibcite{Augarde_2013}{{38}{}{{}}{{}}}
-\bibcite{Arduino_2018}{{39}{}{{}}{{}}}
-\bibcite{Kochmann2019}{{40}{}{{}}{{}}}
-\bibcite{Dyka1995}{{41}{}{{}}{{}}}
-\bibcite{Li2010}{{42}{}{{}}{{}}}
+\bibcite{Sadeghirad_et_al_IJNME_2011}{{7}{}{{}}{{}}}
+\bibcite{TIELEN2017265}{{8}{}{{}}{{}}}
+\bibcite{E_Wobbes_2018}{{9}{}{{}}{{}}}
+\bibcite{Arroyo2006}{{10}{}{{}}{{}}}
+\bibcite{Sukumar15}{{11}{}{{}}{{}}}
+\bibcite{Li2012}{{12}{}{{}}{{}}}
+\bibcite{Navas:17b}{{13}{}{{}}{{}}}
+\bibcite{Navas2018a}{{14}{}{{}}{{}}}
+\bibcite{Navas2016}{{15}{}{{}}{{}}}
+\bibcite{Navas2016b}{{16}{}{{}}{{}}}
+\bibcite{Navas:17c}{{17}{}{{}}{{}}}
+\bibcite{Wriggers18}{{18}{}{{}}{{}}}
+\bibcite{Wobbes2020}{{19}{}{{}}{{}}}
+\bibcite{Tran2019e}{{20}{}{{}}{{}}}
+\bibcite{Guilkey_2003}{{21}{}{{}}{{}}}
+\bibcite{Wang_2016}{{22}{}{{}}{{}}}
+\bibcite{Charlton_2017}{{23}{}{{}}{{}}}
+\bibcite{Soga_2017}{{24}{}{{}}{{}}}
+\bibcite{LU_2018}{{25}{}{{}}{{}}}
+\bibcite{Wilson1972}{{26}{}{{}}{{}}}
+\bibcite{Geranlized_alpha_1993}{{27}{}{{}}{{}}}
+\bibcite{Riemann_1854}{{28}{}{{}}{{}}}
+\bibcite{Zhang_book_2016}{{29}{}{{}}{{}}}
+\bibcite{Bardenhagen2002}{{30}{}{{}}{{}}}
+\bibcite{thesis_Andersen_2009}{{31}{}{{}}{{}}}
+\bibcite{Hughes2000}{{32}{}{{}}{{}}}
+\bibcite{Xiaojian94}{{33}{}{{}}{{}}}
+\bibcite{ZZ1992_I}{{34}{}{{}}{{}}}
+\bibcite{Wieckowski2004}{{35}{}{{}}{{}}}
+\bibcite{Jaynes1957}{{36}{}{{}}{{}}}
+\bibcite{Steffen2008b}{{37}{}{{}}{{}}}
+\bibcite{Liu2003}{{38}{}{{}}{{}}}
+\bibcite{Augarde_2013}{{39}{}{{}}{{}}}
+\bibcite{Arduino_2018}{{40}{}{{}}{{}}}
+\bibcite{Kochmann2019}{{41}{}{{}}{{}}}
+\bibcite{Cortis2018a}{{42}{}{{}}{{}}}
+\bibcite{Dyka1995}{{43}{}{{}}{{}}}
+\bibcite{Li2010}{{44}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
