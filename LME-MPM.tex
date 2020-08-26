@@ -4,7 +4,6 @@
 \usepackage{hyperref}
 \usepackage{float}
 \usepackage{textcomp}
-\usepackage{subfig}
 \usepackage{color}
 \usepackage{soul}
 \usepackage{cancel}
@@ -61,8 +60,8 @@
 % Integral
 \newcommand{\Integral}[2]{
   \IfStrEqCase{#1}{
-    {2}{\ensuremath{\int_{\varGamma_d}{#2}\ d\varGamma}}
-    {3}{\ensuremath{\int_{\varOmega}{#2}\ d\varOmega}}
+    {2}{\ensuremath{\int_{\Gamma_d}{#2}\ d\Gamma}}
+    {3}{\ensuremath{\int_{\Omega}{#2}\ d\Omega}}
   }
 }
 
@@ -74,27 +73,27 @@
 
 \newglossaryentry{domain}
 {
-  name=$\varOmega$,
+  name=$\Omega$,
   description={Continuum domain}
 }
 
 \newglossaryentry{contour}
 {
-  name=$\partial\varOmega$,
-  description={Boundary of the continuum domain $\varOmega$. Also
+  name=$\partial\Omega$,
+  description={Boundary of the continuum domain $\Omega$. Also
     defined as $\Gamma$}
 }
 
 \newglossaryentry{dirichlet-boundary}
 {
   name=$ \Gamma_d$,
-  description={Essential or Dirichlet boundary conditions over $\partial\varOmega$}
+  description={Essential or Dirichlet boundary conditions over $\partial\Omega$}
 }
 
 \newglossaryentry{neumann-boundary}
 {
   name=$ \Gamma_n$,
-  description={Natural or Neumann boundary conditions over $\partial\varOmega$}
+  description={Natural or Neumann boundary conditions over $\partial\Omega$}
 }
 
 \newglossaryentry{rho}
@@ -105,31 +104,31 @@
 
 \newglossaryentry{a}
 {
-  name=$\vect{a}$,
+  name=$\vec{a}$,
   description={First order tensor which describes the acceleration field}
 }
 
 \newglossaryentry{v}
 {
-  name=$\vect{v}$,
+  name=$\vec{v}$,
   description={First order tensor which describes the velocity field}
 }
 
 \newglossaryentry{u}
 {
-  name=$\vect{u}$,
+  name=$\vec{u}$,
   description={First order tensor which describes the displacement field}
 }
 
 \newglossaryentry{x}
 {
-  name=$\vect{x}$,
+  name=$\vec{x}$,
   description={First order tensor which describes the global coordinates field}
 }
 
 \newglossaryentry{xi}
 {
-  name=$\vect{\xi}$,
+  name=$\vec{\xi}$,
   description={First order tensor which describes the local coordinates field}
 }
 
@@ -178,6 +177,8 @@
 \newacronym{ctls}{CTLS}{Conservative Taylor Least Squares}
 \newacronym{npc}{NPC}{Newmark Predictor-Corrector}
 \newacronym{fe}{FE}{Forward Euler}
+\newacronym{dbc}{DBC}{Dirichlet boundary conditions}
+\newacronym{nbc}{NBC}{Neumann boundary conditions}
 
 % End glossaries
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -191,13 +192,11 @@
 }
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \modulolinenumbers[5]
 
-\journalname{Computer Methods in Applied Mechanics and Engineering}
-
+\journal{Computer Methods in Applied Mechanics and Engineering}
 %%%%%%%%%%%%%%%%%%%%%%%
 %% Elsevier bibliography styles
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -242,8 +241,7 @@
 Miguel Molinos$^a$,
 Pedro Navas$^a$\footnote{Corresponding author: p.navas@upm.es},
 Manuel Pastor$^a$
-and Miguel Mart\'in Stickle$^a$ 
-}
+and Miguel Mart\'in Stickle$^a$}
 \address{
   $^a$ ETSI Caminos, Canales y Puertos, Universidad Polit\'ectnica de Madrid.\\ c. Prof. Aranguren 3, 28040 Madrid, Spain
 }
@@ -324,7 +322,7 @@ demonstrated to have a good performance in the finite deformation
 regime. However, in the absence of a regular grid, construction of the
 weighting functions is only achieved at considerable effort and
 computational cost.  Furthermore, as it is a voxel-based
-discretization technique, it is prone to suffer voxel domains overlap
+discretisation technique, it is prone to suffer voxel domains overlap
 or gaps when the material point mesh becomes irregular, which can
 introduce severe inaccuracies as noticed by Steffen {\it et al.}
 (2008)\cite{Steffen2008}. This is similar to the difficulty
@@ -333,13 +331,7 @@ A more robust alternative is the \acrfull{ddmp} method proposed by Zhang {\it et
 (2011)~\cite{Zhang2011a}. Unfortunately this method shows an
 unsatisfactory behaviour when particle/cell ratio
 decreases. Therefore \acrshort{ddmp} a large
-number of particles is needed for convergence~\cite{DHAKAL2016301}, what makes the method very expensive. 
-
-\MODIFIED{
-\cite{Sadeghirad_et_al_IJNME_2011}
-}
-
- In recent years the employment of spline-lines as shape functions has gain popularity with the introduction of the B-Spline 
+number of particles is needed for convergence~\cite{DHAKAL2016301}, what makes the method very expensive. \MODIFIED{To avoid the tensile instabilities quite commons in extensions, Sadeghirad {\it et al.} (2011) \cite{Sadeghirad_et_al_IJNME_2011} developed the \acrshort{cpdi} \cite{Sadeghirad_et_al_IJNME_2011}}. In recent years the employment of spline-lines as shape functions has gain popularity with the introduction of the B-Spline 
 \acrshort{mpm} proposed by Tielen {\it et al.} (2017)~\cite{TIELEN2017265},
 this technique allows the employment of unstructured set of notes and
 particles. More recently, approximants derived from minimization has
@@ -374,7 +366,7 @@ The aforementioned techniques are devoted to mitigate the
 ``grid crossing'' error. Nevertheless, in the presence of shock waves spurious,
 numerical noises appear despite of the employment of these
 techniques~\cite{Tran2019e}. These numerical inaccuracies, also known
-as wiggles, arise due to inaccuracies in the time discretization technique.
+as wiggles, arise due to inaccuracies in the time discretisation technique.
 A simple approach to face those spurious noises lies on the addition of nonphysical damping sources to the equilibrium equations. This
 approach has been widely employed in this and many other numerical
 techniques. To avoid introducing this nonphysical sources, many
@@ -398,7 +390,7 @@ propagation, and later Tran \& Solowski~\cite{Tran2019e}
 proposed a generalised-$\alpha$ scheme for \acrshort{mpm} with
 promising results but at the expense of increasing the computational
 effort. In this paper a less time consuming and high efficient explicit predictor-corrector integration method is
-proposed. It consists of an accommodation of the traditional \acrsull{npc} scheme, widely employed in Finite Element methods. This method
+proposed. It consists of an accommodation of the traditional \acrfull{npc} scheme, widely employed in Finite Element methods. This method
 has been chosen among other suitable alternatives as those proposed
 by Wilson {\it et al.} (1972)~\cite{Wilson1972} or Chung \& Hulbert
 (1993)~\cite{Geranlized_alpha_1993} because its simplicity and good
@@ -406,7 +398,7 @@ performance dealing with solid dynamic problems under a meshfree
 framework in~\cite{Navas2018a}.
 
 The aim of this document is to mitigate the spurious oscillations due to
-inaccuracies in both space and time discretization by the employment of a
+inaccuracies in both space and time discretisation by the employment of a
 suitable combination of the \acrshort{lme} family shape functions, and the proposal of an explicit predictor-corrector scheme. The advantages of
 this approach will be illustrated through several demanding test cases on the elastic regime: the
 propagation of shock waves in an elastic bar and the response of a block of soil gradually loaded with gravitational forces.
@@ -438,14 +430,14 @@ Lagrangian-Eulerian method where particles carry on all the physical
 information and a set of background nodes is employed to
 compute the equilibrium equation. In what follows, we will adopt the
 following convention. Three kind of subscripts or superscripts are used
-within paper. The subscript $\Box_p$ is used to define a particle
-variable. While the subscript $\Box_I$ is reserved in this notation for denoting nodal
-variables. And finally, the superscript $\Box^{\psi}$ involves a
-virtual magnitude. For the operators, the convention is: $\dot{\Box}$ and
-$\ddot{\Box}$ for the first and second time derivative, $\qued \otimes
-\qued$ means the dyadic operator, $\Box \cdot \Box$ and $\Box \colon \Box$ means the
-first and second contraction of a tensor, $\Div{\Box}$ denotes the
-divergence operator, and finally $\Grad{\Box}$ and $\GradS{\Box}$
+within paper. The subscript $\square_p$ is used to define a particle
+variable. While the subscript $\square_I$ is reserved in this notation for denoting nodal
+variables. And finally, the superscript $\square^{\psi}$ involves a
+virtual magnitude. For the operators, the convention is: $\dot{\square}$ and
+$\ddot{\square}$ for the first and second time derivative, $\square \otimes
+\square$ means the dyadic operator, $\square \cdot \square$ and $\square \colon \square$ means the
+first and second contraction of a tensor, $\Div{\square}$ denotes the
+divergence operator, and finally $\Grad{\square}$ and $\GradS{\square}$
 denotes the gradient and its symmetric part. Einstein subscripts
 convention is adopted therefore repeated index means addition. Following, the \acrshort{mpm} methodology, the explicit predictor-corrector scheme and \acrshort{lme} approximation shape functions are describe in subsection \ref{sec:derivation-mpm},\ref{sec:epc-algor-mpm} and \ref{sec:local-max-ent} respectively.
 
@@ -453,16 +445,17 @@ convention is adopted therefore repeated index means addition. Following, the \a
 \label{sec:derivation-mpm}
 
 In \acrshort{mpm} the continuum mechanics approach is considered. So on, we will consider a region \gls{domain} occupied by an elastic body like
-the sketched in the figure~\ref{fig:Continuum-solid}, and \gls{contour} the boundaries of the domain defined by $\partial \varOmega
-= \Gamma_d \bigcup \Gamma_n$ and $\Gamma_d \cap  \Gamma_n = \emptyset$.
+the sketched in the figure~\ref{fig:Continuum-solid}, and \gls{contour} the boundaries of the domain defined by $\partial \Omega
+= \Gamma_d \cup \Gamma_n$ and $\Gamma_d \cap  \Gamma_n = \emptyset$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{0.5\hsize}{!}{
     \includegraphics[width=\textwidth]{Figures/Continuum-solid}}
   \caption{Description of the boundary-value-problem in a
-    continuum. Red lines represents the closure $\partial \varOmega$
-    of the domain $\varOmega$ represented in gray.}
+    continuum. Red lines represents the closure $\partial \Omega$
+    of the domain $\Omega$ represented in gray.}
   \label{fig:Continuum-solid}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -475,10 +468,10 @@ restrictions that must be satisfied. First (i) we will relate
   global to local state by the \textit{compatibility equation}, where the the strain field \gls{strain} is extracted from \gls{u} is defined as:
 \begin{equation}
   \label{eq:Compatibility-equation}
-  \tens{\varepsilon} = \GradS{\vect{u}},
+  \tens{\varepsilon} = \GradS{\vec{u}},
 \end{equation}
-together with essential boundary conditions of Dirichlet type
-\gls{dirichlet-boundary}. We will further assume that strains are
+together with essential or \acrfull{dbc} \gls{dirichlet-boundary}. We will further assume that 
+strains are 
 infinitesimal, therefore second order terms
 in the spatial derivatives can be neglected. From here, the
 stress field \gls{stress} will be considered the corresponding
@@ -486,9 +479,9 @@ conjugate variable for the strain field, being the one which
 satisfies (ii) the \textit{conservation of lineal momentum equation}:
 \begin{equation}
   \label{eq:Balance-momentum}
-\rho \frac{D\vect{v}}{Dt} = \Div{\tens{\sigma}} + \rho \vect{b}
+\rho \frac{D\vec{v}}{Dt} = \Div{\tens{\sigma}} + \rho \vec{b}
 \end{equation}
-together with the natural boundary conditions of the Neumann type \gls{neumann-boundary}.  An aditional component will be (iii) the constitutive equation as a linear
+together with the natural of \acrfull{nbc} \gls{neumann-boundary}.  An aditional component will be (iii) the constitutive equation as a linear
 application from $\mathbb{R}^n$ to $\mathbb{R}^n$, which relate stress and strain increments as,
 \begin{equation}
   \label{eq:Constitutive-equation}
@@ -500,165 +493,140 @@ In this research, plane strain Linear Elasticity has been
 conservation, which can be obtained by setting to zero the total derivative of the density field,
 \begin{equation}
   \label{eq:Rho-material-derivative}
-  \frac{D \rho}{D t} = \dot{\rho} + \rho \Div{\vect{v}} = 0.
+  \frac{D \rho}{D t} = \dot{\rho} + \rho \Div{\vec{v}} = 0.
 \end{equation}
 
 In order to obtain the variational statement of the problem, let us define a
 virtual displacement field such that
 \begin{equation}
   \label{eq:Hilbert-space}
-  \vect{u}^{\psi} \in \mathcal{H}^1_0(\Omega) = \{ \vect{u}^{\psi} \in
-  \mathcal{H}^1 \mid \vect{u}^{\psi} = \vect{0}\ \text{on}\ \Gamma_d \};
+  \vec{u}^{\psi} \in \mathcal{H}^1_0(\Omega) = \{ \vec{u}^{\psi} \in
+  \mathcal{H}^1 \mid \vec{u}^{\psi} = \vec{0}\ \text{on}\ \Gamma_d \};
 \end{equation}
 in which the Cauchy sequences are convergent in \gls{domain} as well:
 \begin{equation}
   \label{eq:cauchy-secuence}
-  \Integral{3}{\vect{u}^{\psi}} < \infty\ \quad\text{and}\quad
+  \Integral{3}{\vec{u}^{\psi}} < \infty\ \quad\text{and}\quad
   \Integral{3}{\tens{\varepsilon}^{\psi}} < \infty.
 \end{equation}
 The principle of virtual work states that the equilibrium solution to
-the boundary-value problem of elasticity is the function $\vect{u} \in
-\mathcal{H}^1_0$ such that, for any $\vect{u}^{\psi} \in
+the boundary-value problem of elasticity is the function $\vec{u} \in
+\mathcal{H}^1_0$ such that, for any $\vec{u}^{\psi} \in
 \mathcal{H}^1_0$,
 the following holds:
+%%%%%%%%%%%%%%%%%%%%%
 \begin{equation}
   \label{eq:BalanceMomentum_wf}
   \Integral{3}{\rho\ \left( \frac{d\vec{v}}{dt}\ - \vec{b} \right) \cdot \vec{u}^{\psi}} =
   \Integral{2}{\vec{t}\ \cdot \vec{u}^{\psi}} - \Integral{3}{\tens{\sigma} \colon
    \tens{\varepsilon}^{\psi}}.
 \end{equation}\\
+%%%%%%%%%%%%%%%%%%%%%
 Thus, equation~\eqref{eq:BalanceMomentum_wf}, together with
 \eqref{eq:Constitutive-equation} and
 \eqref{eq:Rho-material-derivative}, represents the weak form
-formulation of the problem.
+formulation of the problem. Next, we will discretise the set of equations of the mathematical model using a double discretisation procedure, see figure~\ref{fig:MPM-discretization}.\\
 
-Next, we will discretize the set of equations of the mathematical model using a double discretization procedure. First, the continuum \gls{domain} is discretized with a finite sum of material points (also denominated particles the manuscript). Each material point
-represents a part of the discretized domain $\varOmega_p \subset
-\varOmega$ with $p = 1,2\ldots ,N_p$ where $N_p$ is the number of
-particles. The material point location, $\vec{x}_p$, is defined at the centroid
-of each $\Omega_p$ (see figure~\ref{fig:MPM-discretization} for details).
-Initial values of position,
-velocity, mass, volume and stress denoted by $\vec{x}_p$,
-$\vec{v}_p$, $m_p$,  $V_p$ and $\tens{\sigma}_p$ respectively are assigned to each material point, which also owns the
-virtual displacement field $\vect{u}^{\psi}_{p}$. Regarding numerical integration, the material derivatives are
-  evaluated using the Riemann integral definition \cite{Riemann_1854}
-  applied to a finite set of points which associated volumes are
-  interpreted as quadrature weights. Consequently,
-individual terms in \eqref{eq:BalanceMomentum_wf} are solved as follows. 
-\begin{itemize}
-\item Acceleration forces :
+\MODIFIED{First, the velocity field and the virtual displacements fields are discretised in a finite set of nodes $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^n$, where $\mathcal{B} = 1, \ldots, N_I$. The continuum field can be reconstructed with the help of nodal values and an appropriate interpolation function $N_I(\vec{x})$. Also spatial derivatives of those quantities, such as gradients and divergences, are computed through the support of the background set of nodes as.}
+\begin{align}
+    \label{eq:variable_reconstruction}
+    \varphi(\vec{x}) &= \sum_{I\ \in\ \mathcal{B}} N_I(\vec{x})\ \varphi_I \\
+    \label{eq:grad_variable_reconstruction}
+    \Grad{\varphi}(\vec{x}) &= \sum_{I\ \in\ \mathcal{B}} \Grad{N_I(\vec{x})}\ \varphi_I
+\end{align}
+\MODIFIED{Secondly, the continuum \gls{domain} is discretised with a finite set of material points (also denominated particles the manuscript) $\hat{\Omega} = \{ \vec{x}_p, p \in \mathcal{C} \} \subset \Omega$, where $\mathcal{C} = 1, \ldots, N_p$. Any particle field such as position, velocity, mass, volume and stress denoted by $\vec{x}_p$, $\vec{v}_p$, $m_p$, $V_p$ and $\tens{\sigma}_p$ respectively are assigned to each material point. Furthermore, any particle field $\varphi_p$ can be reconstructed within the nodes in the neighbourhood of each particle, $\mathcal{B}_p \subset \mathcal{B}$, and evaluating the interpolation function in the position of each particle as}
+\begin{align}
+    \label{eq:particle_variable_reconstruction}
+\varphi_p &= \sum_{I\ \in\ \mathcal{B}_p} N_I(\vec{x}_p)\ \varphi_I \\
+\Grad{\varphi_p} &= \sum_{I\ \in\ \mathcal{B}_p} \Grad{N_I(\vec{x}_p)}\ \varphi_I
+\end{align}
+\MODIFIED{Regarding numerical integration, the material derivatives are evaluated using the Riemann integral definition \cite{Riemann_1854} applied to a finite set of points which associated volumes $V_p$ are interpreted as quadrature weights.}
 \begin{equation}
-    \label{eq:particle_acceleration_forces}
-    \Integral{3}{\rho\ \frac{d\vec{v}}{dt} \cdot \vect{u}^{\psi}} =
-    \frac{d\vec{v}_{p}}{dt} \cdot \vect{u}^{\psi}_{p}\ m_p.
-  \end{equation}\\
-\item Internal forces :
-  \begin{equation}
-    \label{eq:particle_internal_forces}
-    \Integral{3}{\tens{\sigma}\ \colon \tens{\varepsilon}^{\psi}} =
-   \tens{\sigma}_{p}\ \colon \tens{\varepsilon}^{\psi}_p \ V_p.
-  \end{equation}\\
-\item Body forces :
-\begin{equation}
-  \label{eq:particle_body_forces}
-  \Integral{3}{\rho\ \vec{b} \cdot \vect{u}^{\psi} } = 
-  \vec{b}_{p} \cdot \vect{u}^{\psi}_p\ m_p.
-\end{equation}\\
-\item Loads :
-\begin{equation}
-  \begin{aligned}
-    \label{eq:particle_load_forces}
-    \Integral{2}{\vec{t}\ \vect{u}^{\psi}} = \Integral{2}{\rho\
-      \vec{t}^s \cdot \vect{u}^{\psi}} = \vec{t}^s_{p} \cdot \vect{u}^{\psi}_{p}\ h^{-1}\ m_p ,
-  \end{aligned} 
+    \label{eq:particle_riemann_integral}
+\Integral{3}{\varphi} = \sum_{p\ \in\ \mathcal{C}} \varphi_p\ V_p 
 \end{equation}
-\end{itemize}
-where $h$ is the thickness of the continuum in a 2D case. Next, we
-  will proceed with the second step of the discretization. It is based on using a background grid with coordinates $\vec{x}_I\
-, I = 1,2\ldots ,N_n$, is generated, being $N_n$ the number of grid
-nodes. Spatial derivatives, such as gradients and
-divergences, are computed through the support of the background mesh.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{0.5\hsize}{!}{
     \includegraphics[width=\textwidth]{Figures/Mesh-particles-back}}
-  \caption{Description of the spatial discretization for domain presented in the
+  \caption{Description of the spatial discretisation for domain presented in the
     figure~\ref{fig:Continuum-solid}. Blue mesh represent the
     background computational support, and the red mesh conforms the
-    discretized continuum body.}
+    discretised continuum body.}
   \label{fig:MPM-discretization}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Introducing \eqref{eq:particle_acceleration_forces},
-\eqref{eq:particle_internal_forces}, \eqref{eq:particle_body_forces},  \eqref{eq:particle_load_forces} in \eqref{eq:BalanceMomentum_wf},
-approximating the displacement field of the particle
-$p$ as $\vec{u}_{p} = N_{Ip} \vect{u}_I$, $\vec{u}^{\psi}_{p} = N_{Ip} \vect{u}_I^{\psi}$,
-and its gradient as $\tens{\varepsilon}_p = (\vect{u}_I \otimes
-\Grad{N_{Ip}})^s$, $\tens{\varepsilon}_p^{\psi}= (\vect{u}_I^{\psi} \otimes \Grad{N_{Ip}})^s$.
-nodal balance of forces of the continuum yields:
+\MODIFIED{Let us illustrate the procedure described above by fully developing the term of the acceleration forces in \eqref{eq:BalanceMomentum_wf}. Employing the definition \eqref{eq:variable_reconstruction} the velocity and virtual displacement fields can be approximated within its nodal values. Hence, the acceleration forces is reduced to}
 \begin{equation}
-  \label{eq:particle_balance_forces3}
-  \dot{\vec{p}}_{I}= \tens{m}_{IJ}\dot{\vec{v}}_{J} = \vec{f}_{I}^{int} + \vec{f}_{I}^{ext},
+    \label{eq:particle_acceleration_forces_I}
+    \sum_{I,J\ \in\ \mathcal{B}} \Integral{3}{ \rho\ N_J(\vec{x})  \frac{d\vec{v}_J}{dt}\ \cdot N_I(\vec{x})\vec{u}_I^{\psi}}.
 \end{equation}
-where $\dot{\vec{p}}_{I}$ is the rate of momentum at grid node $I$ and $\tens{m}_{IJ}$, the nodal mass matrix, is obtained through:
+\MODIFIED{Rearranging terms in \ref{eq:particle_acceleration_forces_I}, and subtracting from the integral those discrete variables, the following expression is obtained}
 \begin{equation}
-  \label{eq:particle_nod_mass}
-  \tens{m}_{IJ} = N_{Ip} m_p N_{Jp}.
+    \label{eq:particle_acceleration_forces_II}
+    \sum_{I,J\ \in\ \mathcal{B}} \vec{u}_I^{\psi} \cdot \Integral{3}{ N_I(\vec{x})\ \rho\ N_J(\vec{x})}\ \frac{d\vec{v}_J}{dt}.
 \end{equation}
-In order to improve the computational efficiency and stability, the nodal mass matrix
-\eqref{eq:particle_nod_mass} can be substituted by the lumped mass
-matrix $\tens{m}_{IJ}^{lumped}$.
-Following, internal and external forces are computed as follows,
+\MODIFIED{Now, employing the particle integral definition \eqref{eq:particle_riemann_integral} to compute the integral of \eqref{eq:particle_acceleration_forces_II}, and simplifying the it, is possible to achieve a discrete expression o the acceleration forces term as}
+%%%%%%%%%%%%%%%%
 \begin{equation}
-  \label{eq:nodal_internal_forces}
-  \vec{f}_{I}^{int} = - \tens{\sigma}_{p} \cdot \Grad{N_{Ip}} \frac{m_p}{\rho_p}
+\label{eq:particle_acceleration_forces_III}
+\begin{split}
+&\sum_{I,J\ \in\ \mathcal{B}} \vec{u}_I^{\psi} \cdot \sum_{p\ \in\ \mathcal{C}} N_{Ip}\ \rho_p\ N_{Jp}\ V_p\ \frac{d\vec{v}_J}{dt} = \\
+&= \sum_{I,J\ \in\ \mathcal{B}} \vec{u}_I^{\psi} \cdot \sum_{p\ \in\ \mathcal{C}} N_{Ip}\ m_p\ N_{Jp}\ \frac{d\vec{v}_J}{dt} = \\
+&= \tens{m}_{IJ}\ \frac{d\vec{v}_J}{dt}
+\end{split}
 \end{equation}
+%%%%%%%%%%%%%%%%
+\MODIFIED{Where $\tens{m}_{IJ}$, is the nodal mass matrix, and $N_{Ip}, N_{Jp}$ are the interpolation functions for nodes $I,J$ evaluated in the position of each particle $p$. In order to improve the computational efficiency and stability, the nodal mass matrix can be substituted by the lumped mass matrix $\tens{m}_{IJ}^{lumped}$. The remaining terms of \eqref{eq:BalanceMomentum_wf} are obtained within a similar procedure and can be found in literature, see for instance \cite{Zhang_book_2016}.
+So equation \eqref{eq:BalanceMomentum_wf} has been discretised as}
+%%%%%%%%%%%%%%%%%%%%%
 \begin{equation}
-  \label{eq:nodal_external_forces}
-  \vec{f}_{I}^{ext} = N_{Ip}\ \vec{b}_{p}\ m_p  + N_{Ip}\ \vec{t}^s_{p}\ m_p h^{-1} 
+\label{eq:BalanceMomentum_wf_discretized}
+    \tens{m}_{IJ}\ \frac{d\vec{v}_J}{dt} = \sum_{p\ \in\ \mathcal{C}} - \tens{\sigma}_{p} \cdot \Grad{N_{Ip}} \frac{m_p}{\rho_p} + N_{Ip}\ \vec{b}_{p}\ m_p  + N_{Ip}\ \vec{t}^s_{p}\ m_p h^{-1}
 \end{equation}
-where $\tens{\sigma}_{p} = \tens{\sigma}_{p}(\tens{\varepsilon}_{p})$
+%%%%%%%%%%%%%%%%%%%%%
+\MODIFIED{Where $h$ is the soil thickness in 2D, and $\tens{\sigma}_{p} = \tens{\sigma}_{p}(\tens{\varepsilon}_{p})$
 is the particle $p$ stress field, which can be integrated employing
-the suitable constitutive model. The strain tensor rate, $\dot{ \tens{\varepsilon}}_{p}$, as a measure of the time derivative of the strain tensor, is updated employing the velocity at the background mesh by the equation:
+the suitable constitutive model. The particle strain field is approximated thorough the time integration of the rate of stress tensor, which is computed employing the velocity at the background set of nodes by the equation}
+%%%%%%%%%%%%%%%%%%%%%
 \begin{equation}
   \label{eq:IncrStrainPoint}
   \dot{\tens{\varepsilon}_{p}} = \frac{\Delta
-    \tens{\varepsilon}_{p}}{\Delta t} =
+    \tens{\varepsilon}_{p}}{\Delta t} = \sum_{I\ \in\ \mathcal{B}_p}
   \frac{1}{2} \left[\Grad{N_{Ip}}\ \otimes \vec{v}_{I} + \vec{v}_{I} \otimes
     \Grad{N_{Ip}}\ \right].
 \end{equation}
-Next, mass conservation is guaranteed by enforcing the null value of
+%%%%%%%%%%%%%%%%%%%%%
+Finally, mass conservation is guaranteed by enforcing the null value of
 the material derivative of the density field $\frac{D \rho}{D t} = 0$.
 This leads to a suitable equation to update the density field:
 \begin{equation}
   \label{eq:MassConservation}
 \dot{\rho} = - \rho\ \mathit{trace} \left( \dot{\tens{\varepsilon}} \right).
 \end{equation}
-Finally, to solve the equation \eqref{eq:particle_balance_forces3}, a second order time integration scheme is required. Therefore, time is
-discretized into a finite set of time steps $k = 1\ldots ,Nt$, where $k$ is the current time step and $N_t$
-is the total number of time steps. Once the nodal equilibrium equation is solved, the values at the nodes are
-interpolated back into the particles, which are advected
+Observe that to solve the equation \eqref{eq:BalanceMomentum_wf_discretized}, a second order time integration scheme is required. Therefore, time is
+discretised into a finite set of time steps $k = 1\ldots ,Nt$, where $k$ is the current time step and $N_t$ is the total number of time steps. Once the nodal equilibrium equation is solved, the values at the nodes are interpolated back into the particles, which are advected
 to the new position through:
 \begin{equation}
   \label{eq:Updated_Lagrangian}
-  \dot{\vec{v}}_p = N_{Ip}\ \vec{a}_{I},\quad and\quad
-  \dot{\vec{x}}_{p} = N_{Ip}\ \vec{v}_{I}  
+  \dot{\vec{v}}_p = \sum_{I\ \in\ \mathcal{B}_p} N_{Ip}\ \vec{a}_{I},\quad \text{and} \quad
+  \dot{\vec{x}}_{p} = \sum_{I\ \in\ \mathcal{B}_p} N_{Ip}\ \vec{v}_{I}.  
 \end{equation}
-Traditionally, Eqs.
-\eqref{eq:particle_balance_forces3} and ~\eqref{eq:Updated_Lagrangian},
+Traditionally, Eqs. \eqref{eq:BalanceMomentum_wf_discretized} and ~\eqref{eq:Updated_Lagrangian},
 are solved with an explicit forward Euler algorithm. In the following subsection, this and the proposed schemes are described.
 
-
-\subsection{\acrshort{mpm} time integration scheme: the Newmark Predictor-Corrector proposal}
+\subsection{MPM time integration scheme: the Newmark Predictor-Corrector proposal}
 %\subsection{Explicit predictor-corrector scheme for \acrshort{mpm}.}
 \label{sec:epc-algor-mpm}
 
-As was stated previosuly, an explicit forward Euler algorithm has been utilized widely within the \acrshort{MPM} methodology. This scheme has been described in detail by many researchers
+As was stated previosuly, an explicit forward Euler algorithm has been utilized widely within the \acrshort{mpm} methodology. This scheme has been described in detail by many researchers
 \cite{Sulsky1994}, \cite{Bardenhagen2002}, \cite{thesis_Andersen_2009} and can be sketched by the scheme of the figure~\ref{fig:MPM_algorithm}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{0.8\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/MPM_scheme_horizontal}
@@ -673,25 +641,25 @@ first publication on \acrshort{mpm} \cite{Sulsky1994}, the nodal acceleration
 was employed to update the particles as
 \begin{equation}
   \label{eq:Sulsky-1994-UL-v}
-  \vect{v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{a}_{I}^{k}
+  \vec{v}_p^{k+1} = \vec{v}_p^{k} + \sum_{I\ \in\ \mathcal{B}_p} \Delta t\ N_{Ip}^{k}\ \vec{a}_{I}^{k},
 \end{equation}
 \begin{equation}
   \label{eq:Sulsky-1994-UL-x}
-  \vect{x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ N_{Ip}^{k}\ \vec{v}_{I}^{k}.
+  \vec{x}_p^{k+1} = \vec{x}_p^{k} + \sum_{I\ \in\ \mathcal{B}_p} \Delta t\ N_{Ip}^{k}\ \vec{v}_{I}^{k}.
 \end{equation}
 However, as Andersen (2009)\cite{thesis_Andersen_2009} pointed out, this algorithm has been shown to be numerically unstable due to that
-$\vect{f}_I^{int,k}$ can be infinite for an infinitesimal nodal mass
-$\tens{m}$. This issue may lead to numerical problems when nodal acceleration
+$\vec{f}_I^{int,k}$ can be infinite for an infinitesimal nodal mass
+$\tens{m}_I$. This issue may lead to numerical problems when nodal acceleration
 is obtained in the evaluation of the Eqs. \eqref{eq:Sulsky-1994-UL-x} and \eqref{eq:Sulsky-1994-UL-v}. Hence, a
 corrected version of this algorithm was proposed by Zhang {\it et al.}
 (2016)\cite{Zhang_book_2016}:
 \begin{equation}
   \label{eq:Zhang-2016-UL-x}
-  \vect{x}_p^{k+1} = \vect{x}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec{p}_{I}^{k}}{\tens{m}_I}, 
+  \vec{x}_p^{k+1} = \vec{x}_p^{k} + \sum_{I\ \in\ \mathcal{B}_p} \Delta t\ \frac{N_{Ip}^{k}\ \vec{p}_{I}^{k}}{\tens{m}_I}, 
 \end{equation}
 \begin{equation}
   \label{eq:Zhang-2016-UL-v}
-  \vect{v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\ \frac{N_{Ip}^{k}\ \vec{f}_{I}^{k}}{\tens{m}_I}.
+  \vec{v}_p^{k+1} = \vec{v}_p^{k} + \sum_{I\ \in\ \mathcal{B}_p} \Delta t\ \frac{N_{Ip}^{k}\ \vec{f}_{I}^{k}}{\tens{m}_I}.
 \end{equation}
 Delving into the improvement of the accuracy of the \acrshort{mpm} explicit schemes, Tran \& Solowski (2019)\cite{Tran2019e} presented a
 generalized-$\alpha$ scheme for \acrshort{mpm} inspired in the explicit time
@@ -701,17 +669,17 @@ the acceleration is evaluated both in the beginning and the end of the
 time step.
 \begin{equation}
   \label{eq:Tran-2019-GA-v}
-  \vect{v}_p^{k+1} = \vect{v}_p^{k} + \Delta t\  N_{Ip}^{k}\ \left[(1 - \gamma)\ \vect{a}_I^{k} +
-    \gamma\ \vect{a}_I^{k+1} \right],\\
+  \vec{v}_p^{k+1} = \vec{v}_p^{k} + \sum_{I\ \in\ \mathcal{B}_p} \Delta t\  N_{Ip}^{k}\ \left[(1 - \gamma)\ \vec{a}_I^{k} +
+    \gamma\ \vec{a}_I^{k+1} \right],\\
 \end{equation}
 \begin{equation}
 \label{eq:Tran-2019-GA-x}
-  \vect{x}_p^{k+1} = \vect{x}_p^{k} + N_{Ip}^{k} \left[ \Delta t\ \vec{v}_{I}^{k}+ \Delta t^2\left( (\frac{1}{2} - \beta)\
+  \vec{x}_p^{k+1} = \vec{x}_p^{k} + \sum_{I\ \in\ \mathcal{B}_p} N_{Ip}^{k} \left[ \Delta t\ \vec{v}_{I}^{k}+ \Delta t^2\left( (\frac{1}{2} - \beta)\
     \vec{a}_{I}^{k} + \beta\ \vec{a}_{I}^{k+1} \right) \right],
 \end{equation}
 \begin{equation}
   \label{eq:Tran-2019-GA-a}
-  \vect{a}_p^{k+1} = N_{Ip}^{k}\ \vec{a}_{I}^{k+1}.
+  \vec{a}_p^{k+1} = \sum_{I\ \in\ \mathcal{B}_p} N_{Ip}^{k}\ \vec{a}_{I}^{k+1}.
 \end{equation}
 
 This scheme has been proven to damp out the highest frequency noises
@@ -725,7 +693,7 @@ scheme is proposed. It is based on the Newmark central differences
 explicit scheme, which is also referred to as a-form 
 $\gamma = 0.5$ and $\beta = 0$. This method is devoted to solve a system of equations of the type
 \begin{equation*}
-  \Matrix{M}_{IJ}\ddot{\Vector{d}}_{J} + \Matrix{C}_{IJ}\dot{\Vector{d}}_{J} +
+ \sum_{J\ \in\ \mathcal{B}} \Matrix{M}_{IJ}\ddot{\Vector{d}}_{J} + \Matrix{C}_{IJ}\dot{\Vector{d}}_{J} +
   \Matrix{K}_{IJ}\Vector{d}_{J} = \Vector{F}_{I}.
 \end{equation*}
 The nodal \acrshort{mpm} stage allows to apply this method
@@ -758,12 +726,12 @@ procedures described by Zienkiewicz \& Zhu \cite{ZZ1992_I} (\textit{ZZ})
 in the context of \acrshort{fem}. In \acrshort{mpm}, Gauss quadratures are not employed. However, 
 integrals are computed following the Riemann integral definition,
 where each component of the summation corresponds to a particle of the
-discretization. Also Bardenhagen \& Kober \cite{Bardenhagen2004}
+discretisation. Also Bardenhagen \& Kober \cite{Bardenhagen2004}
 proved that through this information-transference technique mass and momentum are conserved. So for a general particle variable $\Phi_p$, employing the
 \textit{ZZ} technique, it is possible to get its nodal homologous $\Phi_I$  as:
 \begin{equation}
   \label{eq:Variational-recovery}
-   \Phi_I = \frac{m_p N_{Ip} \Phi_p}{m_I}.
+   \Phi_I = \sum_{p\ \in\ \mathcal{C}} \frac{m_p N_{Ip} \Phi_p}{m_I}.
  \end{equation}
  Therefore, to get an analogous expression for
  \eqref{eq:Predictor-velocity-I} in the context of \acrshort{mpm}, the
@@ -771,7 +739,7 @@ proved that through this information-transference technique mass and momentum ar
  is employed, obtainen the following expression:
  \begin{equation}
    \label{eq:Predictor-velocity-II}
-   \vec{\tilde{v}}_I^{k+1} = \underbrace{\frac{N_{Ip}^{k} m_p
+   \vec{\tilde{v}}_I^{k+1} = \sum_{p\ \in\ \mathcal{C}} \underbrace{\frac{N_{Ip}^{k} m_p
        \vec{v}_p^k}{m_I}}_{\vec{v}_I^{k}} + (1 - \gamma)\ \Delta t\  \underbrace{\frac{N_{Ip}^{k} m_p \vec{a}_p^k}{m_I}}_{\vec{a}_I^{k}}.
  \end{equation}
 Nonetheless this way of computing the predictor stage can introduce
@@ -780,13 +748,13 @@ Sulky algorithm. Thankfully, this can be avoided easily by the
 equivalent formulation proposed as follows: 
 \begin{equation}
   \label{eq:Predictor-velocity-II}
-  \vec{\tilde{v}}_I^{k+1} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}.
+  \vec{\tilde{v}}_I^{k+1} =  \sum_{p\ \in\ \mathcal{C}} \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}.
 \end{equation}
 This way of computing the nodal predictor is both numerically stable
 and minimize the computational effort. Once nodal velocities are
-obtained, the essential boundary conditions are imposed over \gls{dirichlet-boundary}. And in the
+obtained, the \acrshort{dbc} are imposed over \gls{dirichlet-boundary}. And in the
 following, the ``classic'' \acrshort{mpm} algorithm continues to reach to the
-equilibrium equation \eqref{eq:particle_balance_forces3}. Next, the
+equilibrium equation \eqref{eq:BalanceMomentum_wf_discretized}. Next, the
 \textit{corrector} stage is introduced. As nodal
 velocities were obtained earlier, this step is computed in the same way as
 in \acrshort{fem},
@@ -797,11 +765,11 @@ in \acrshort{fem},
 Finally updated particle accelerations, velocities and positions are updated as,
 \begin{align}
   \label{eq:Update-lagrangian-pce}
-        &\vec{a}_p^{k+1} = \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
+        &\vec{a}_p^{k+1} = \sum_{I\ \in\ \mathcal{B}_p} \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
+      &\vec{v}_p^{k+1} = \vec{v}_p^n + \sum_{I\ \in\ \mathcal{B}_p} \Delta t\
         \frac{N_{Ip}^k\
         \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
+      &\vec{x}_p^{k+1} = \vec{x}_p^n + \sum_{I\ \in\ \mathcal{B}_p} \Delta t\
          N_{Ip}^k\ \vec{v}_{I}^{k} +
         \frac{1}{2}\Delta t^2\ \frac{N_{Ip}^k\
         \vec{f}_{I}^{k}}{\tens{m}_I^k}.
@@ -813,8 +781,7 @@ are computed using the corrected velocities. Therefore here we share similaritie
 with the \textit{leapfrog scheme} where position is not updated at
 full time step, but the velocity is updated at half time steps. Notice
 also that, with this approach, the calculation of nodal momentum values
-are not required. Due to its simplicity, the proposed scheme can be implemented with minor modifications
-over the standard forward Euler. The full implementation is summarized in the algorithm~\ref{algo:1}.
+are not required. Due to its simplicity, the proposed scheme can be implemented with minor modifications over the standard forward Euler. The full implementation is summarized in the algorithm~\ref{algo:1}.
 
 \begin{algorithm}
   \floatname{algorithm}{Algorithm 1}
@@ -822,14 +789,11 @@ over the standard forward Euler. The full implementation is summarized in the al
   \caption{\acrfull{npc} scheme} \label{algo:1}
   \begin{algorithmic}[1]
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% º
-    \STATE \textbf{Update mass matrix}:
-    \begin{equation*}
-      \tens{m}_{I} = N_{Ip}^{k}\ m_p,
-    \end{equation*}
+    \STATE \textbf{Update mass matrix}.
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Explicit Newmark Predictor}:\\
     \begin{equation*}
-      \vec{v}_I^{pred} = \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}
+      \vec{v}_I^{pred} = \sum_{p\ \in\ \mathcal{C}} \frac{ N_{Ip}^{k} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}.
     \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Impose essential boundary conditions}:\\
@@ -838,11 +802,9 @@ over the standard forward Euler. The full implementation is summarized in the al
     % \STATE \textbf{Discard the previous nodal values}.
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Deformation tensor increment calculation}.
-    \begin{align*}
-      &\dot{\tens{\varepsilon}_{p}}^{k+1} = \left[ \vec{v}_{I}^{pred} \otimes
-        \Grad{N_{Ip}^{k+1}} \right]^s \\
-      &\Delta \tens{\varepsilon}_{p}^{k+1} = \Delta t\ \dot{\tens{\varepsilon}_{p}}^{k+1}
-    \end{align*}
+    \begin{equation*}
+      \dot{\tens{\varepsilon}_{p}}^{k+1} = \sum_{I\ \in\ \mathcal{B}_p} \left[ \vec{v}_{I}^{pred} \otimes \Grad{N_{Ip}^{k+1}} \right]^s\ \quad \text{and}\ \quad \Delta \tens{\varepsilon}_{p}^{k+1} = \Delta t\ \dot{\tens{\varepsilon}_{p}}^{k+1}.
+    \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Update the density field}:
     \begin{equation*}
@@ -850,32 +812,28 @@ over the standard forward Euler. The full implementation is summarized in the al
     \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Balance of forces calculation}:\\
-    Calculate the total grid nodal force $\vec{f}_{I}^{k+1} =
-    \vec{f}_{I}^{int,k+1} + \vec{f}_{I}^{ext,k+1}$ by evaluating
-    \eqref{eq:nodal_internal_forces} and
-    \eqref{eq:nodal_external_forces} in the time step $k+1$.
-    In those nodes where $\Deriv{\vect{v}_I^{k}}{t} \big\rvert_{\Gamma_d} = 0$,
-      the acceleration is fixed to zero and nodal forces are stored as
-      reactions.\\
+    Calculate the total grid nodal forces by evaluating the right hand side of 
+    \eqref{eq:BalanceMomentum_wf_discretized} in the time step $k+1$.
+    In those nodes where $\Deriv{\vec{v}_I^{k}}{t} \big\rvert_{\Gamma_d} = 0$, the acceleration is fixed to zero and nodal forces are stored as reactions.\\
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Explicit Newmark Corrector}:
     \begin{equation*}
-      \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}  
+      \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I^{k+1}}.
     \end{equation*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \STATE \textbf{Update particles lagrangian quantities}:
     \begin{align*}
-      &\vec{a}_p^{k+1} = \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{v}_p^{k+1} = \vec{v}_p^n + \Delta t\
+      &\vec{a}_p^{k+1} = \sum_{I\ \in\ \mathcal{B}_p} \frac{N_{Ip}^k\vec{f}_{I}^{k}}{\tens{m}_I^k},\\
+      &\vec{v}_p^{k+1} = \vec{v}_p^n + \sum_{I\ \in\ \mathcal{B}_p} \Delta t\
         \frac{N_{Ip}^k\
-        \vec{f}_{I}^{k}}{\tens{m}_I^k}\\
-      &\vec{x}_p^{k+1} = \vec{x}_p^n + \Delta t\
+        \vec{f}_{I}^{k}}{\tens{m}_I^k},\\
+      &\vec{x}_p^{k+1} = \vec{x}_p^n + \sum_{I\ \in\ \mathcal{B}_p} \Delta t\
          N_{Ip}^k\ \vec{v}_{I}^{k} +
         \frac{1}{2}\Delta t^2\ \frac{N_{Ip}^k\
-        \vec{f}_{I}^{k}}{\tens{m}_I^k}
+        \vec{f}_{I}^{k}}{\tens{m}_I^k}.
     \end{align*}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    \STATE \textbf{Reset nodal values}
+    \STATE \textbf{Reset nodal values}.
   \end{algorithmic}
 \end{algorithm}
 
@@ -886,7 +844,7 @@ the recent years due to its ability to deal with large strain problems
 without mesh distorsion issues inherent to mesh based methods like
 \acrshort{fem}, see Wi{\c{e}}ckowski \cite{Wieckowski2004}. However, in the simulations
 made with the original \acrshort{mpm}, numerical noises appear when particles
-cross the cell boundaries. Solving this issue is the main goal of the employment of the \acrshort{LME} shape functions.
+cross the cell boundaries. Solving this issue is the main goal of the employment of the \acrshort{lme} shape functions.
 
 \acrfull{lme} approximation schemes were
 first introduced by Arroyo \& Ortiz (2006)\cite{Arroyo2006} and has been
@@ -933,7 +891,7 @@ given by
 On the other hand, the control of the shape function width and its
 decay with distance away from the corresponding nodes is a desirable property. To reach to this objective \cite{Arroyo2006} propose the following linear program,
 \begin{align*}
-  \label{eq:RAJAN}
+  %\label{eq:RAJAN}
   \text{(RAJ)} \hspace{0.15cm} &\text{For fixed} \hspace{0.15cm}
   \vec{x} \hspace{0.15cm} \text{minimize} \hspace{0.15cm} U(\vec{x}_p,N_I) \equiv
 \sum_I N_I |\vec{x}_p - \vec{x}_I |^2\\
@@ -946,7 +904,7 @@ decay with distance away from the corresponding nodes is a desirable property. T
 \end{align*}
 To reach to a compromise between two competing objectives, a Pareto set is defined by \cite{Arroyo2006} as,
 \begin{align*}
-  \label{eq:LME-scheme-pareto-set}
+  %\label{eq:LME-scheme-pareto-set}
   \text{(LME)}_{\beta} \hspace{0.15cm} &\text{For fixed} \hspace{0.15cm}
   \vec{x} \hspace{0.15cm} \text{minimize} \hspace{0.15cm} f_{\beta}(\vec{x}, N_I) \equiv \beta U(\vec{x},N_I) - H(N_I) \\
   &\text{subject to}\
@@ -982,7 +940,7 @@ Z(\vec{x}, \vec{\lambda})$. The traditional way to obtain such a minimiser is us
 In order to obtain the first derivatives of the shape function, it is also necessary to compute~$\nabla N_I^*$
 \begin{equation}
   \label{eq:LME-grad-p}
-\nabla N_I^* &=& N^*_I  \, \left(\nabla f^*_I-\sum_J^{N_n} N^*_J \, \nabla f^*_J\right)
+\nabla N_I^* = N^*_I  \, \left(\nabla f^*_I-\sum_J^{N_n} N^*_J \, \nabla f^*_J\right)
 \end{equation}
 where
 \begin{equation}
@@ -1012,15 +970,12 @@ conditions. Motivated by their increased extents, particles may share an influen
 to those employed in the \acrfull{sph}, for
 further details see Liu \& Liu (2003)\cite{Liu2003}. The approach here
 described does not requires the employment of this artifices.
-Due to the \short{fem}-compatibility, the \acrshort{lme} shape
+Due to the \acrshort{fem}-compatibility, the \acrshort{lme} shape
 function is degenerated to linear finite element shape function if
 $d+1$ neighbouring nodes are chosen as the support, where $d$ is the
-number of dimensions in the problem. Ullah {\it et al.}
-  \cite{Augarde_2013} took advantage of the \acrshort{lme}
-  \short{fem}-compatibility to couple the
-     \acrfull{efgm} and \short{fem} for linear elasticity and for problems with both material and geometrical non-linearities. Furthermore, with a conveniently
+number of dimensions in the problem. Ullah {\it et al.} \cite{Augarde_2013} took advantage of the \acrshort{lme} \acrshort{fem}-compatibility to couple the \acrfull{efgm} and \acrshort{fem} for linear elasticity and for problems with both material and geometrical non-linearities. Furthermore, with a conveniently
 adopted \textit{regularization} parameter it is possible to get a 
-\acrshort{gimp}-like shape function. Finally \short{sph}-like
+\acrshort{gimp}-like shape function. Finally \acrshort{sph}-like
 behaviour can be obtained for lower values of $\gamma$ since the
 support of the shape function is drastically increased, and therefore
 \textit{smoother} solutions are obtained. See \cite{Navas2016} for an
@@ -1041,7 +996,8 @@ figure~\ref{fig:LME_MPM}, where the \acrshort{lme} adaptability is illustrated.\
     \end{tabular}
   }
   \subfigure[$\text{LME}_{17}$]{
-    \begin{tabular}{c}      \includegraphics[width=0.14\textwidth]{Figures/LME_17_3_Shape_Fun}\\
+    \begin{tabular}{c}      
+      \includegraphics[width=0.14\textwidth]{Figures/LME_17_3_Shape_Fun}\\
       \includegraphics[width=0.14\textwidth]{Figures/LME_17_3_Shape_Fun_dx}\\
       \includegraphics[width=0.14\textwidth]{Figures/LME_17_3_Shape_Fun_dy}
     \end{tabular}
@@ -1071,14 +1027,14 @@ figure~\ref{fig:LME_MPM}, where the \acrshort{lme} adaptability is illustrated.\
   \label{fig:LME_MPM}
 \end{figure*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-In this research and in \cite{Arroyo2006}, $\Beta$ is a scalar as the
+In this research and in \cite{Arroyo2006}, $\beta$ is a scalar as the
 influence area of the shape function is controlled by the Euclidean
 norm, therefore the search area is geometrically a circle in 2D, or a
 sphere in 3D. Building upon the idea of anisotropic shape functions,
 \cite{Kochmann2019} introduced an enhanced version of the original
 \acrshort{lme} scheme, which uses an anisotropic support to deal with 
-tensile instability. This is another benefit of the proposed methodology, that, although is out of the scope of the
-present document, will be incorporated in future research.
+tensile instability. This is another benefit of the proposed methodology, that, although is out of the scope of the present document, will be incorporated in future research.
+\MODIFIED{Unfortunately, local \textit{max-ent} approximation technique only provides an efficient tool to transfer information from particles to nodes and vice versa to the \acrshort{mpm}. Hence, the difficulties of imposing \acrshort{dbc} in the \acrshort{mpm} persists since they are a direct consequence of discretising the continuum with material points instead of nodes, where traditionally \acrshort{dbc} are imposed. However, any available technique employed to overcome this situation in the standard \acrshort{mpm} can be translated to the \textit{max-ent} one thanks to the Kronecker-Delta property inherent to it \cite{Arroyo2006}. See for instance the work of Cortis {\it et al.} (2018) \cite{Cortis2018a}}.
 
 \section{Application to linear elasticity dynamic problems.}
 \label{sec:Application-linear-elasticity-dynamic-problems}
@@ -1103,8 +1059,8 @@ This benchmark was proposed by Dyka~\cite{Dyka1995} since allows to study easily
 of the proposed time integration algorithm to avoid velocity
 field instabilities. It consists of a one-dimensional bar of a length
 of 0.1333 meters, sketched in the figure~\ref{fig:Dyka_Bar}. The
-boundary conditions are: displacements are constrained ($\vect{v}
-\rvert_{x=L} = 0$) in the right border, being free on all other boundaries. An initial velocity of $\vect{v}_o = - 5\ m/s$ is given to the
+boundary conditions are: displacements are constrained ($\vec{v}
+\rvert_{x=L} = 0$) in the right border, being free on all other boundaries. An initial velocity of $\vec{v}_o = - 5\ m/s$ is given to the
 left quarter of the bar. Finally, the elastic parameters chosen for this test are:
 \begin{itemize} 
 \item  Density : $7833\ kg/m3$
@@ -1112,7 +1068,8 @@ left quarter of the bar. Finally, the elastic parameters chosen for this test ar
 \item  Elastic modulus : $200 \cdot 10^9\ Pa$
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{\hsize}{!}{
     \input{Figures/Dyka_bar.tex}}
@@ -1123,7 +1080,7 @@ left quarter of the bar. Finally, the elastic parameters chosen for this test ar
 In the proposed example, the simulation extends from time zero up to 0.00001 s.
 This time interval allows the elastic wave to travel a distance of 2.6
 lengths of the bar. For the spatial
-discretization, a set of seven nodal mesh sizes (0.1, 0.3325, 0.5,
+discretisation, a set of seven nodal mesh sizes (0.1, 0.3325, 0.5,
 1.0, 3.3325, 6.665, 10.0 millimeters) are considered. For each element a number of
 four particles was selected. In the initial layout, particles are located the exact quadrature points of a linear quadrilateral, with
 the exception of the \acrshort{ugimp} simulation, where gaps or overlap between
@@ -1133,7 +1090,7 @@ is controlled by a Courant-Friedrichs-Levy condition of 0.1, were the adopted
 celerity is computed as:
 \begin{equation}
   \label{eq:Cel}
-  Cel = \max\{\max_{p \in \Omega_p}\{ \vect{v}_p \} , \max_{p \in \Omega_p}\{ \sqrt{\frac{E_p}{\rho_p}} \} \}.
+  Cel = \max\{\max_{p \in \Omega_p}\{ \vec{v}_p \} , \max_{p \in \Omega_p}\{ \sqrt{\frac{E_p}{\rho_p}} \} \}.
 \end{equation}
 An important consideration regarding modellization concerns the
 background mesh. Notice that free border of the bar has a maximum
@@ -1154,14 +1111,15 @@ root-mean-square (RMS) error in the velocity field is computed. RMS
 error is defined as
 \begin{equation}
   \label{eq:RMS}
-  RMS = \sqrt{\frac{1}{N} \sum^{N}_p \left( \vect{v}_p - \hat{\vect{v}}_p \right)^2},
+  RMS = \sqrt{\frac{1}{N} \sum^{N}_p \left( \vec{v}_p - \hat{\vec{v}}_p \right)^2},
 \end{equation}
-where $\vect{v}_p$ and $\hat{\vect{v}}_p$ are respectively the analytical and
+where $\vec{v}_p$ and $\hat{\vec{v}}_p$ are respectively the analytical and
 numerical solutions evaluated in the final time step in the position
-of each particle. In Fig. \ref{fig:Dyka-error-evol} the evolution of the RMS is obtained for both time integration schemes. The right figure, with the \acrshort{NPC} results, shows lower values of the estimated error, denoting the higher performance of this methodology. About the spatial discretization, the \acrshort{LME} schemes show an error comparable to the obtained with the \acrshort{uGIMP}, being even lower close to the grid-crossing region.
+of each particle. In Fig. \ref{fig:Dyka-error-evol} the evolution of the RMS is obtained for both time integration schemes. The right figure, with the \acrshort{npc} results, shows lower values of the estimated error, denoting the higher performance of this methodology. About the spatial discretisation, the \acrshort{lme} schemes show an error comparable to the obtained with the \acrshort{ugimp}, being even lower close to the grid-crossing region.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{figure*}\sidecaption
+\begin{figure*}
+%\sidecaption
   \centering
   \resizebox{\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Error_evol}
@@ -1185,7 +1143,8 @@ spurious oscillations are quickly mitigated in the first time steps,
 and the error is not propagated in time, opposite to the results of the \acrshort{fe} scheme, where the
 simulation becomes unstable after $6E^{5}$ seconds.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{0.9\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Velocity_FE_vs_PCE_CFL_01}
@@ -1220,7 +1179,8 @@ monotonically with the value of the mesh size, in contrast with larger
 values of $\gamma$, where the performance is punished with significant
 movement of the particles as far as the mesh size is reduced.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{0.9\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Velocity_LME_gamma_comparative}
@@ -1244,7 +1204,8 @@ cancellation which could produce gaps between voxels. Further research
 should be done in this direction for getting a better comprehension of
 this phenomenon. Conversely, this shortcoming is not suffered by \acrshort{lme}, independently of regular or with irregular nodal layout.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{0.9\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Velocity_uGIMP_vs_LME_Dyka}
@@ -1254,7 +1215,7 @@ this phenomenon. Conversely, this shortcoming is not suffered by \acrshort{lme},
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Finally, the \acrshort{otm}~\cite{Li2010} solution is compared against the one obtained with \acrshort{mpm}, both with same time integration scheme and spatial discretization, and results are shown in figure \ref{fig:Dyka-OTM-MPM}. In
+Finally, the \acrshort{otm}~\cite{Li2010} solution is compared against the one obtained with \acrshort{mpm}, both with same time integration scheme and spatial discretisation, and results are shown in figure \ref{fig:Dyka-OTM-MPM}. In
 this case, the performance of \acrshort{mpm} presents better robustness and stability than the
 \acrshort{otm}. During the first half of the simulation both method 
 seem to perform in a similar way, but during the second half of the
@@ -1262,7 +1223,8 @@ simulation after the elastic wave has travel from the free border to
 the fixed one and back, in \acrshort{otm} the solution becomes more noisy than the
 one performed by \acrshort{mpm}.  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{0.9\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Velocity_MPM_vs_OTM_Dyka}
@@ -1281,7 +1243,8 @@ interpolation technique to deal with grid crossing instabilities. It
 consists of the simulation of a square block of soil incrementally
 loaded by a body force. Details of the problem are sketched in figure~\ref{fig:block}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{0.7\hsize}{!}{
     \input{Figures/Block.tex}}
@@ -1314,7 +1277,7 @@ in order to reach the equilibrium state:
 In order to get a stable solution, time step was conducted by a
 Courant number of 0.1. On the other hand, the explicit
 predictor-corrector scheme is here employed looking forward to getting better results. For the
-initial spatial discretization four particles per cell
+initial spatial discretisation four particles per cell
 ($\Delta x = 2\ m$) were adopted. The initial layout of particles inside of the
 cell changes according to the approximation technique adopted. For the
 bi-linear shape functions and the \acrshort{lme} approximants, the initial
@@ -1368,12 +1331,13 @@ functions behaves in a similar way to the \acrshort{fem}, which performs very
 accurate in those cases with a reasonable mesh distorsion, and with a
 lower value it behaves in a similar way to the \acrshort{ugimp}. This behaviour
 was noticed previously by \cite{Arroyo2006}, were authors highlighted
-how, by adjusting the spatial variation of $\beta(\vect{x})$, it is
+how, by adjusting the spatial variation of $\beta(\vec{x})$, it is
 possible to select regions of the domain of analysis which are treated
 by finite elements and regions that are treated in the style of
 meshfree methods, with seamless transitions between those regions. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}\sidecaption
+\begin{figure}
+%\sidecaption
   \centering
   \resizebox{\hsize}{!}{
     \includegraphics[width=\textwidth]{./Figures/Block_CFL_01_Comparative}
@@ -1388,10 +1352,10 @@ meshfree methods, with seamless transitions between those regions.
 
 \section{Conclusions}
 \label{sec:conclusions}
-We have proposed in this paper an enhanced methodology which improves \acrfull{mpm} behaviour in fast dynamics problems. Different time and space discretization techniques have been presented and their performance being compared agains other approaches in two benchmark problems.
+We have proposed in this paper an enhanced methodology which improves \acrfull{mpm} behaviour in fast dynamics problems. Different time and space discretisation techniques have been presented and their performance being compared agains other approaches in two benchmark problems.
 First, a novel time integration scheme for
 \acrshort{mpm} has been carried out. The \acrshort{npc} has been
-  shown to be a highly efficient alternative for demanding fast dynamics problems. In the literature, several approaches of the \acrshort{npc} are proposed in order to compete on accuracy with expensive implicit time integration algorithms. The main achievement of the proposed time discretization has been observed within the Dyka's bar \ref{sec:dyka-bar}, obtaining lower values of the error than the ones obtained with the \acrfull{fe} scheme.
+  shown to be a highly efficient alternative for demanding fast dynamics problems. In the literature, several approaches of the \acrshort{npc} are proposed in order to compete on accuracy with expensive implicit time integration algorithms. The main achievement of the proposed time discretisation has been observed within the Dyka's bar \ref{sec:dyka-bar}, obtaining lower values of the error than the ones obtained with the \acrfull{fe} scheme.
 Also, the procedure employed to design the \acrshort{npc} algorithm opens the
 door to revisit a huge variety of time integration schemes developed
 originally for \acrshort{fem}, which can be implemented within a
@@ -1399,14 +1363,14 @@ originally for \acrshort{fem}, which can be implemented within a
 addition to the implementation of enhanced time integration schemes, further
 research can be done in the analysis of the good performance of the algorithm within non-linear solutions, such as the coupling between different phases or the non-linear constitutive behaviour of the materials: the employment of this scheme to strengthen the localization capabilities of \acrshort{mpm} for viscoplastic materials is on the scope of this research line. The comparison with traditional time schemes in the non-linear field will improve the formal understanding of the proposed methodology.
 
-On the other hand, the spatial discretization of the \acrshort{mpm} is enhanced thanks to the powerful skills of the \acrfull{lme} approximation scheme, which has been validated as a robust and versatile
+On the other hand, the spatial discretisation of the \acrshort{mpm} is enhanced thanks to the powerful skills of the \acrfull{lme} approximation scheme, which has been validated as a robust and versatile
 tool in the \acrshort{mpm} framework. It also comes up as a promising
 alternative to other approximation techniques, developed within the
 \acrshort{mpm} framework, in order to overcome grid crossing limitations and to avoid the
 constriction of the \acrshort{ugimp} of a regular mesh or a high
-density of particles per cell. Several research lines of the \acrshort{lme} scheme dive into the improvement of the methodology, focusing in the optimization of the calculation of the shape function and the possibility of adapting the parameter $\beta(\vect{x})$ through the finite strain
+density of particles per cell. Several research lines of the \acrshort{lme} scheme dive into the improvement of the methodology, focusing in the optimization of the calculation of the shape function and the possibility of adapting the parameter $\beta(\vec{x})$ through the finite strain
 tensor in order to align the shape functions in the principal strain
-direction to select the most suitable set of nodes adapted to the strain, as well as the possibility of adapting the value of $\beta$ to solve the equations
+direction to select the most suitable set of nodes adapted to the strain as well as the possibility of adapting the value of $\beta$ to solve the equations
 \acrshort{fem}-like of meshfree-like depending of how behaves the
 region. Together with the implementation of non-linear behaviours, previously mentioned, challenging
 scenarios could be reproduced, being the main purpose of the research line the simultaneous simulation of both initialization and
