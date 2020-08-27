@@ -21,6 +21,10 @@
 
 
 % Tikz
+% \usepackage{tikz}
+%\usepackage[active,tightpage]{preview}
+%\PreviewEnvironment{tikzpicture}
+%setlength\PreviewBorder{5pt}
 \usepackage{stanli}
 \usepackage[ugly]{units}
 % \usetikzlibrary{decorations}
@@ -30,7 +34,7 @@
 \usetikzlibrary{%
     decorations.pathreplacing,%
     decorations.pathmorphing%
-}
+  }
 
 
 \newcommand{\vect}[1]{
@@ -1042,15 +1046,15 @@ tensile instability. This is another benefit of the proposed methodology, that, 
 This section is devoted to test the ability of both predictor-corrector
 time integration scheme and the Local \textit{Max-Ent} approximants to
 overcome spurious oscillations due to the grid crossing and high
-frequency loads under the context of \acrshort{mpm}. Two different test have
+frequency loads under the context of \acrshort{mpm}. \MODIFIED{Three different test have
 been adopted for this purpose: the benchmark proposed by Dyka \& Ingel
-(1995)\cite{Dyka1995} and the test proposed in the PhD thesis of
-Andersen (2009)\cite{thesis_Andersen_2009}. On the one hand, the accuracy of the \acrfull{npc}
-scheme is compared to the standard \acrfull{fe} in order to assess the performance of the time integration schemes. On the other hand,  \acrshort{lme} solutions
+(1995)\cite{Dyka1995}, the test proposed in the PhD thesis of
+Andersen (2009)\cite{thesis_Andersen_2009} and the classical example of two colliding discs provided by Sulsky {\it et al.} (1994) \cite{Sulsky1994}. The first example is devoted to test the accuracy of the \acrfull{npc} scheme is compared to the standard \acrfull{fe} in order to assess the performance of the time integration schemes. In the second example,  \acrshort{lme} solutions
 are compared with those provided by \acrfull{ugimp} and Q4 shape
-functions. To avoid some mesh-dependent issues, in all
+functions. Finally, in the third example the present approach is tested under a scenario where shocks and grid crossing occurs.} To avoid some mesh-dependent issues, in all
 calculations a regular background mesh was set. All simulations were
 performed with in-house software.
+
 
 \subsection{Dyka's bar \cite{Dyka1995}}
 \label{sec:dyka-bar}
@@ -1259,9 +1263,7 @@ elastic parameters considered for this test are:
 \item  Poisson ratio : $0$
 \item  Elastic modulus : $5\ MPa$
 \end{itemize}
-The gravity force is applied as an external force according to the
-equations \eqref{eq:particle_body_forces} and
-\eqref{eq:nodal_external_forces}. Using a total time period of T (20
+The gravity force is applied as an external force. Using a total time period of T (20
 seconds) to apply the gravity, it is increased from 0 to 9.81$m/s$
 with a sinusoidal function until T/2 and then maintained constant until T
 in order to reach the equilibrium state:
@@ -1349,6 +1351,19 @@ meshfree methods, with seamless transitions between those regions.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Impact of two elastic discs}
+\label{sec:Impact-two-elastic-discs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+\sidecaption
+ \centering
+ \resizebox{0.7\hsize}{!}{
+   \input{Figures/Sulsky_discs.tex}}
+ \caption{Geometrical description of the two colliding discs problem.}
+ \label{fig:Sulsky_discs}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Conclusions}
 \label{sec:conclusions}

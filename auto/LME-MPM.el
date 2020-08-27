@@ -11,18 +11,19 @@
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
     "Figures/Dyka_bar"
     "Figures/Block"
+    "Figures/Sulsky_discs"
     "elsarticle"
     "elsarticle12"
     "lineno"
     "hyperref"
     "float"
     "textcomp"
-    "subfig"
     "color"
     "soul"
     "cancel"
@@ -38,9 +39,8 @@
     "glossaries")
    (TeX-add-symbols
     '("Deriv" ["argument"] 2)
-    '("MP" 1)
-    '("MMP" 1)
-    '("PNA" 1)
+    '("MODIFIED" 1)
+    '("CORRECTIONS" 1)
     '("Integral" 2)
     '("GradT" 1)
     '("GradS" 1)
@@ -62,15 +62,15 @@
     "eq:Hilbert-space"
     "eq:cauchy-secuence"
     "eq:BalanceMomentum_wf"
-    "eq:particle_acceleration_forces"
-    "eq:particle_internal_forces"
-    "eq:particle_body_forces"
-    "eq:particle_load_forces"
+    "eq:variable_reconstruction"
+    "eq:grad_variable_reconstruction"
+    "eq:particle_variable_reconstruction"
+    "eq:particle_riemann_integral"
     "fig:MPM-discretization"
-    "eq:particle_balance_forces3"
-    "eq:particle_nod_mass"
-    "eq:nodal_internal_forces"
-    "eq:nodal_external_forces"
+    "eq:particle_acceleration_forces_I"
+    "eq:particle_acceleration_forces_II"
+    "eq:particle_acceleration_forces_III"
+    "eq:BalanceMomentum_wf_discretized"
     "eq:IncrStrainPoint"
     "eq:MassConservation"
     "eq:Updated_Lagrangian"
@@ -92,8 +92,6 @@
     "sec:local-max-ent"
     "eq:Shannon-entropy"
     "eq:least-biased-approximation-scheme"
-    "eq:RAJAN"
-    "eq:LME-scheme-pareto-set"
     "eq:LME-p"
     "eq:LME-Z"
     "eq:LME-J"
@@ -117,6 +115,8 @@
     "eq:gravity-load-block"
     "fig:Block-LME3"
     "fig:vertical-displacement-block"
+    "sec:Impact-two-elastic-discs"
+    "fig:Sulsky_discs"
     "sec:conclusions"
     "app:analytical_sol"
     "eq:1D-balance-linear-momentum"
