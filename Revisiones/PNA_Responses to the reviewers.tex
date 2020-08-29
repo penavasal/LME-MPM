@@ -5,6 +5,7 @@
 \usepackage{cite}
 \usepackage{color}
 \usepackage{bm}
+\usepackage{amsmath}
 
 % \geometry{landscape} % rotated page geometry
 
@@ -59,9 +60,12 @@ The development of the MPM approach has been revised considering the proposal of
 
 \item \textit{There is little discussion on some of the pitfalls of using max-ent, e.g. the need for a convex domain, the issue of determining Lagrange Multiplier solutions for points close to boundaries, i.e. the solutions process here at Eqns 37 and 38.}\\
 
-Further discussion has been added. 
+Of course, the employment of the Max-Ent shape function is not free of difficulties. Some requirements such as the need for a convex domain, as well as those derived from its calculation (the determination of the Lagrange Multipliers, specially at the boundaries, or the obtainment of the minimizer of the logarithmic function), make the usage of Max-Ent shape functions a challenging tool.  
 
-Of course, the employment of the Max-Ent shape function is not free of difficulties. Some requirements such as the need for a convex domain, as well as those derived from its calculation (the determination of the Lagrange Multipliers, specially at the boundaries, or the obtainment of the minimizer of the logarithmic function), make the usage of Max-Ent shape functions a challenging tool. However, the results depicted in this manuscript will strengthen the motivation of its employment in order to mitigate typical MPM problems such as cell-crossing or stress instabilities.
+Additionally, Arroyo \& Ortiz~\cite{Arroyo2006} briefly discussed the existence of non-convex domains, and proposed some solutions to it. 
+For instance, the possibility of replacing the Euclidean distance $\lVert  x - x_a  \rVert$ in the definition of the shape functions by the length of the shortest path contained within the domain connecting $x$ and $x_a$. Or by decomposing the non-convex domain into convex sub-domains.  On the other hand, this topic has been extensively studied in the context of MLS-based meshfree methods, for instance visibility, diffraction, and constrained path criteria.  These methods are directly applicable to local \textit{max-ent} approximation. 
+
+However, the results depicted in this manuscript will strengthen the motivation of its employment in order to mitigate typical MPM problems such as cell-crossing or stress instabilities.  
 
 \item \textit{Does the use of max-ent solve the problem of imposing Dirichlet boundary conditions in the MPM?}\\
 
@@ -102,14 +106,12 @@ S. Ma and X. Zhang and X.M. Qiu.
 \newblock{Comparison study of MPM and SPH in modeling hypervelocity impact problems}.
 \newblock{International Journal of Impact Engineering}, 36(2):272--282, 2009.
 
+\bibitem{Arroyo2006}
+Arroyo, M. and Ortiz, M..
+\newblock{Local maximum-entropy approximation schemes: A seamless bridge between finite elements and meshfree methods}.
+\newblock{International Journal for Numerical Methods in Engineering},  2006.
+
 \end{thebibliography}
 
 \end{document}
 
-
-%Del revisor 2:
-%1- Meter paja de eso y fuera
-%2- Yo haria referencia al paper de Wobbes, como lo nombren ellos, y decir que haces referencia a un paper contrastado....
-%3- Hablar de eso, que hay pequeña discusion, pues se discute mas... 
-%4- No, no lo soluciona, pero en OTM lo hace. Habría que conseguir una conjunción de lo que hace OTM con lo que hacen otros metodos en MPM para imponer boundary conditions....
-%5- Leerse que hacen esos pollos, si esta bien y crees que puedes mter algun ejemplo, se puede intentar y asi tb se contenta al revisor 1

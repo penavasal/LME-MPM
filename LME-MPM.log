@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.23)  27 AUG 2020 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.23)  29 AUG 2020 20:16
 entering extended mode
- \write18 enabled.
- file:line:error style messages enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **LME-MPM.tex
 (./LME-MPM.tex
@@ -850,6 +849,14 @@ File: tikzlibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowinset=\dimen279
+\pgfarrowlength=\dimen280
+\pgfarrowwidth=\dimen281
+\pgfarrowlinewidth=\dimen282
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2020/03/19 v4.46 (NLCT)
 
@@ -968,7 +975,7 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTpre=\skip77
 \LTpost=\skip78
 \LTchunksize=\count334
-\LTcapwidth=\dimen279
+\LTcapwidth=\dimen283
 \LT@head=\box86
 \LT@firsthead=\box87
 \LT@foot=\box88
@@ -988,19 +995,19 @@ Package: glossary-super 2020/03/19 v4.46 (NLCT)
  (/usr/local/texlive/2020/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \c@tracingst=\count339
-\ST@wd=\dimen280
+\ST@wd=\dimen284
 \ST@rightskip=\skip81
 \ST@leftskip=\skip82
 \ST@parfillskip=\skip83
-\ST@pageleft=\dimen281
-\ST@headht=\dimen282
-\ST@tailht=\dimen283
-\ST@pagesofar=\dimen284
-\ST@pboxht=\dimen285
-\ST@lineht=\dimen286
-\ST@prevht=\dimen287
-\ST@toadd=\dimen288
-\ST@dimen=\dimen289
+\ST@pageleft=\dimen285
+\ST@headht=\dimen286
+\ST@tailht=\dimen287
+\ST@pagesofar=\dimen288
+\ST@pboxht=\dimen289
+\ST@lineht=\dimen290
+\ST@prevht=\dimen291
+\ST@toadd=\dimen292
+\ST@dimen=\dimen293
 \ST@pbox=\box90
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-tree.s
@@ -1012,11 +1019,11 @@ Package: glossary-tree 2020/03/19 v4.46 (NLCT)
 \glo@main@file=\write6
 \openout6 = `LME-MPM.glo'.
 
-Package glossaries Info: Writing glossary file LME-MPM.glo on input line 76.
+Package glossaries Info: Writing glossary file LME-MPM.glo on input line 77.
 \glo@acronym@file=\write7
 \openout7 = `LME-MPM.acn'.
 
-Package glossaries Info: Writing glossary file LME-MPM.acn on input line 76.
+Package glossaries Info: Writing glossary file LME-MPM.acn on input line 77.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
@@ -1030,32 +1037,32 @@ LaTeX Warning: Label `eq:Predictor-velocity-II' multiply defined.
 )
 \openout1 = `LME-MPM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 236.
-LaTeX Font Info:    ... okay on input line 236.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 240.
+LaTeX Font Info:    ... okay on input line 240.
  (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count341
-\scratchdimen=\dimen290
+\scratchdimen=\dimen294
 \scratchbox=\box92
 \nofMPsegments=\count342
 \nofMParguments=\count343
 \everyMPshowfont=\toks65
 \MPscratchCnt=\count344
-\MPscratchDim=\dimen291
+\MPscratchDim=\dimen295
 \MPnumerator=\count345
 \makeMPintoPDFobject=\count346
 \everyMPtoPDFconversion=\toks66
@@ -1069,7 +1076,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box93
-Package hyperref Info: Link coloring OFF on input line 236.
+Package hyperref Info: Link coloring OFF on input line 240.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1083,22 +1090,22 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count347
 )
-LaTeX Info: Redefining \ref on input line 236.
-LaTeX Info: Redefining \pageref on input line 236.
-LaTeX Info: Redefining \nameref on input line 236.
+LaTeX Info: Redefining \ref on input line 240.
+LaTeX Info: Redefining \pageref on input line 240.
+LaTeX Info: Redefining \nameref on input line 240.
  (./LME-MPM.out) (./LME-MPM.out)
 \@outlinefile=\write8
 \openout8 = `LME-MPM.out'.
 
  ABD: EveryShipout initializing macros
 (./LME-MPM.glsdefs)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 284
+LaTeX Font Info:    Trying to load font information for U+msa on input line 288
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 284
+LaTeX Font Info:    Trying to load font information for U+msb on input line 288
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1106,55 +1113,55 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 308.
+(hyperref)                removing `superscript' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 308.
+(hyperref)                removing `superscript' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 308.
+(hyperref)                removing `\@ifnextchar' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 308.
+(hyperref)                removing `superscript' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 308.
+(hyperref)                removing `superscript' on input line 312.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 312.
 
 [1
 
@@ -1163,7 +1170,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (20.99063pt too wide) has occurred while \output is active
 \OT1/cmr/m/it/10 Preprint submitted to Computer Methods in Applied Mechanics an
-d Engineering August 27, 2020
+d Engineering August 29, 2020
  []
 
 
@@ -1174,181 +1181,183 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [2
 
 ] [3] [4] [5]
-<Figures/Continuum-solid.png, id=235, 789.6702pt x 574.7874pt>
+<Figures/Continuum-solid.png, id=244, 789.6702pt x 574.7874pt>
 File: Figures/Continuum-solid.png Graphic file (type png)
 <use Figures/Continuum-solid.png>
-Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 459.
+Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 465.
 (pdftex.def)             Requested size: 390.0pt x 283.876pt.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.484 \begin{equation}
-                       <./Figures/Continuum-solid.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 527--533
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 533--539
 
  []
 
-[7]
-<Figures/Mesh-particles-back.png, id=289, 775.2162pt x 819.06pt>
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.539 
+       <./Figures/Continuum-solid.png>]
+<Figures/Mesh-particles-back.png, id=295, 775.2162pt x 819.06pt>
 File: Figures/Mesh-particles-back.png Graphic file (type png)
 <use Figures/Mesh-particles-back.png>
-Package pdftex.def Info: Figures/Mesh-particles-back.png  used on input line 55
-8.
+Package pdftex.def Info: Figures/Mesh-particles-back.png  used on input line 56
+4.
 (pdftex.def)             Requested size: 390.0pt x 412.06606pt.
  [8] [9pdfTeX warning (ext4): destination with the same identifier (name{figure
 .2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.599 \begin{equation}
+l.596 \begin{equation}
                        <./Figures/Mesh-particles-back.png>]
-<./Figures/MPM_scheme_horizontal.pdf, id=330, 1093.2543pt x 345.51567pt>
+<./Figures/MPM_scheme_horizontal.pdf, id=337, 1093.2543pt x 345.51567pt>
 File: ./Figures/MPM_scheme_horizontal.pdf Graphic file (type pdf)
 <use ./Figures/MPM_scheme_horizontal.pdf>
 Package pdftex.def Info: ./Figures/MPM_scheme_horizontal.pdf  used on input lin
-e 637.
+e 643.
 (pdftex.def)             Requested size: 390.0pt x 123.25203pt.
  [10] [11pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.699 \begin{equation*}
-                        <./Figures/MPM_scheme_horizontal.pdf>] [12]
+l.693 \end{equation}
+                     <./Figures/MPM_scheme_horizontal.pdf>] [12]
 
-Package hyperref Warning: Suppressing empty link on input line 788.
+Package hyperref Warning: Suppressing empty link on input line 794.
 
+[13]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 793.
+put line 799.
 
-LaTeX Warning: Float too large for page by 6.68906pt on input line 842.
 
-[13] [14] [15] [16]
-<Figures/MPM_Shape_Fun.png, id=489, 772.8875pt x 667.49374pt>
+LaTeX Warning: Float too large for page by 6.68906pt on input line 848.
+
+[14] [15] [16] [17]
+<Figures/MPM_Shape_Fun.png, id=507, 772.8875pt x 667.49374pt>
 File: Figures/MPM_Shape_Fun.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 1001.
+Package pdftex.def Info: Figures/MPM_Shape_Fun.png  used on input line 1007.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/MPM_Shape_Fun_dx.png, id=490, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dx.png, id=508, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 1001.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dx.png  used on input line 1007.
 
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/MPM_Shape_Fun_dy.png, id=491, 772.8875pt x 671.50874pt>
+<Figures/MPM_Shape_Fun_dy.png, id=509, 772.8875pt x 671.50874pt>
 File: Figures/MPM_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/MPM_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 1001.
+Package pdftex.def Info: Figures/MPM_Shape_Fun_dy.png  used on input line 1007.
 
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_17_3_Shape_Fun.png, id=492, 772.8875pt x 667.49374pt>
+<Figures/LME_17_3_Shape_Fun.png, id=510, 772.8875pt x 667.49374pt>
 File: Figures/LME_17_3_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 100
-8.
+Package pdftex.def Info: Figures/LME_17_3_Shape_Fun.png  used on input line 101
+4.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_17_3_Shape_Fun_dx.png, id=493, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dx.png, id=511, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dx.png  used on input line 
-1008.
+1014.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_17_3_Shape_Fun_dy.png, id=494, 772.8875pt x 671.50874pt>
+<Figures/LME_17_3_Shape_Fun_dy.png, id=512, 772.8875pt x 671.50874pt>
 File: Figures/LME_17_3_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_17_3_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_17_3_Shape_Fun_dy.png  used on input line 
-1008.
+1014.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/GIMP_Shape_Fun.png, id=495, 772.8875pt x 667.49374pt>
+<Figures/GIMP_Shape_Fun.png, id=513, 772.8875pt x 667.49374pt>
 File: Figures/GIMP_Shape_Fun.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 1015.
+Package pdftex.def Info: Figures/GIMP_Shape_Fun.png  used on input line 1021.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/GIMP_Shape_Fun_dx.png, id=496, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dx.png, id=514, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dx.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 1015
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dx.png  used on input line 1021
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/GIMP_Shape_Fun_dy.png, id=497, 772.8875pt x 671.50874pt>
+<Figures/GIMP_Shape_Fun_dy.png, id=515, 772.8875pt x 671.50874pt>
 File: Figures/GIMP_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/GIMP_Shape_Fun_dy.png>
-Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 1015
+Package pdftex.def Info: Figures/GIMP_Shape_Fun_dy.png  used on input line 1021
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_10_0_Shape_Fun.png, id=498, 772.8875pt x 667.49374pt>
+<Figures/LME_10_0_Shape_Fun.png, id=516, 772.8875pt x 667.49374pt>
 File: Figures/LME_10_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 101
-9.
+Package pdftex.def Info: Figures/LME_10_0_Shape_Fun.png  used on input line 102
+5.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_10_0_Shape_Fun_dx.png, id=499, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dx.png, id=517, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dx.png  used on input line 
-1019.
+1025.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_10_0_Shape_Fun_dy.png, id=500, 772.8875pt x 671.50874pt>
+<Figures/LME_10_0_Shape_Fun_dy.png, id=518, 772.8875pt x 671.50874pt>
 File: Figures/LME_10_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_10_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_10_0_Shape_Fun_dy.png  used on input line 
-1019.
+1025.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_5_0_Shape_Fun.png, id=501, 772.8875pt x 667.49374pt>
+<Figures/LME_5_0_Shape_Fun.png, id=519, 772.8875pt x 667.49374pt>
 File: Figures/LME_5_0_Shape_Fun.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun.png>
-Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 1026
+Package pdftex.def Info: Figures/LME_5_0_Shape_Fun.png  used on input line 1032
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures/LME_5_0_Shape_Fun_dx.png, id=502, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dx.png, id=520, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dx.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dx.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dx.png  used on input line 1
-026.
+032.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures/LME_5_0_Shape_Fun_dy.png, id=503, 772.8875pt x 671.50874pt>
+<Figures/LME_5_0_Shape_Fun_dy.png, id=521, 772.8875pt x 671.50874pt>
 File: Figures/LME_5_0_Shape_Fun_dy.png Graphic file (type png)
 <use Figures/LME_5_0_Shape_Fun_dy.png>
 Package pdftex.def Info: Figures/LME_5_0_Shape_Fun_dy.png  used on input line 1
-026.
+032.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
- [17] [18]
+ [18]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 1059.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 1059.
+(hyperref)                removing `\begingroup' on input line 1065.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 1059.
+(hyperref)                removing `\<let>-command' on input line 1065.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1059.
+(hyperref)                removing `\NAT@ctype' on input line 1065.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 1059.
+(hyperref)                removing `\z@' on input line 1065.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 1059.
+(hyperref)                removing `\let' on input line 1065.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 1059.
+(hyperref)                removing `\let' on input line 1065.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 1065.
 
 [19pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1070 \item
+l.1076 \item
               Density : $7833\ kg/m3$ <./Figures/MPM_Shape_Fun.png (PNG copy)> 
 <./Figures/MPM_Shape_Fun_dx.png (PNG copy)> <./Figures/MPM_Shape_Fun_dy.png (PN
 G copy)> <./Figures/LME_17_3_Shape_Fun.png (PNG copy)> <./Figures/LME_17_3_Shap
@@ -1378,305 +1387,306 @@ Missing character: There is no ; in font nullfont!
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1116 \begin{equation}
-                       ]
-<./Figures/Error_evol.png, id=580, 745.8264pt x 443.7378pt>
+l.1115 
+       ]
+<./Figures/Error_evol.png, id=589, 745.8264pt x 443.7378pt>
 File: ./Figures/Error_evol.png Graphic file (type png)
 <use ./Figures/Error_evol.png>
-Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1130.
+Package pdftex.def Info: ./Figures/Error_evol.png  used on input line 1136.
 (pdftex.def)             Requested size: 390.0pt x 232.03822pt.
-<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=590, 617.30624pt x 462.72874pt>
+<./Figures/Velocity_FE_vs_PCE_CFL_01.png, id=599, 617.30624pt x 462.72874pt>
 File: ./Figures/Velocity_FE_vs_PCE_CFL_01.png Graphic file (type png)
 <use ./Figures/Velocity_FE_vs_PCE_CFL_01.png>
 Package pdftex.def Info: ./Figures/Velocity_FE_vs_PCE_CFL_01.png  used on input
- line 1155.
+ line 1161.
 (pdftex.def)             Requested size: 390.0pt x 292.34674pt.
- [21pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1162 
-        <./Figures/Error_evol.png>]
-<./Figures/Velocity_LME_gamma_comparative.png, id=609, 651.43375pt x 889.3225pt
+<./Figures/Velocity_LME_gamma_comparative.png, id=610, 651.43375pt x 889.3225pt
 >
 File: ./Figures/Velocity_LME_gamma_comparative.png Graphic file (type png)
 <use ./Figures/Velocity_LME_gamma_comparative.png>
 Package pdftex.def Info: ./Figures/Velocity_LME_gamma_comparative.png  used on 
-input line 1191.
+input line 1197.
 (pdftex.def)             Requested size: 390.0pt x 532.43059pt.
-<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=619, 617.30624pt x 462.72874pt>
+<./Figures/Velocity_uGIMP_vs_LME_Dyka.png, id=620, 617.30624pt x 462.72874pt>
 File: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png Graphic file (type png)
 <use ./Figures/Velocity_uGIMP_vs_LME_Dyka.png>
 Package pdftex.def Info: ./Figures/Velocity_uGIMP_vs_LME_Dyka.png  used on inpu
-t line 1216.
+t line 1222.
 (pdftex.def)             Requested size: 390.0pt x 292.34674pt.
- [22pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
-) has been already used, duplicate ignored
+ [21] [22pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1221 
-        <./Figures/Velocity_FE_vs_PCE_CFL_01.png>]
-<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=634, 617.30624pt x 462.72874pt>
-File: ./Figures/Velocity_MPM_vs_OTM_Dyka.png Graphic file (type png)
-<use ./Figures/Velocity_MPM_vs_OTM_Dyka.png>
-Package pdftex.def Info: ./Figures/Velocity_MPM_vs_OTM_Dyka.png  used on input 
-line 1235.
-(pdftex.def)             Requested size: 390.0pt x 292.34674pt.
- [23] [24pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.8}) has been already used, duplicate ignored
+l.1227 
+        <./Figures/Error_evol.png>] [23pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1241 \clearpage
-                  <./Figures/Velocity_LME_gamma_comparative.png>] [25pdfTeX war
-ning (ext4): destination with the same identifier (name{figure.9}) has been alr
-eady used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1241 \clearpage
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{figure.10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1241 \clearpage
-                  <./Figures/Velocity_uGIMP_vs_LME_Dyka.png> <./Figures/Velocit
-y_MPM_vs_OTM_Dyka.png>] (./Figures/Block.tex
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-) [26pdfTeX warning (ext4): destination with the same identifier (name{figure.1
-1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1291 
-       
-
-]
-<Figures/Block_LME3_PCE_a_t0.png, id=665, 420.57124pt x 515.9275pt>
-File: Figures/Block_LME3_PCE_a_t0.png Graphic file (type png)
-<use Figures/Block_LME3_PCE_a_t0.png>
-Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 13
-03.
-(pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures/Block_LME3_PCE_b_t025.png, id=666, 420.57124pt x 515.9275pt>
-File: Figures/Block_LME3_PCE_b_t025.png Graphic file (type png)
-<use Figures/Block_LME3_PCE_b_t025.png>
-Package pdftex.def Info: Figures/Block_LME3_PCE_b_t025.png  used on input line 
-1306.
-(pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures/Block_LME3_PCE_c_t1.png, id=667, 420.57124pt x 515.9275pt>
-File: Figures/Block_LME3_PCE_c_t1.png Graphic file (type png)
-<use Figures/Block_LME3_PCE_c_t1.png>
-Package pdftex.def Info: Figures/Block_LME3_PCE_c_t1.png  used on input line 13
-09.
-(pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<./Figures/Block_CFL_01_Comparative.png, id=674, 462.528pt x 346.896pt>
-File: ./Figures/Block_CFL_01_Comparative.png Graphic file (type png)
-<use ./Figures/Block_CFL_01_Comparative.png>
-Package pdftex.def Info: ./Figures/Block_CFL_01_Comparative.png  used on input 
-line 1346.
-(pdftex.def)             Requested size: 390.0pt x 292.5128pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{figure.12
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1353 
-        <./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.pn
-g> <./Figures/Block_LME3_PCE_c_t1.png>]
-./LME-MPM.tex:1359: Undefined control sequence.
-<recently read> \sidecaption 
-                             
-l.1359 \sidecaption
-                   
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(./Figures/Sulsky_discs.tex) [28pdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.13}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1380 
-        <./Figures/Block_CFL_01_Comparative.png>] [29pdfTeX warning (ext4): des
-tination with the same identifier (name{figure.14}) has been already used, dupl
+l.1227 
+        <./Figures/Velocity_FE_vs_PCE_CFL_01.png>] [24pdfTeX warning (ext4): de
+stination with the same identifier (name{figure.8}) has been already used, dupl
 icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1393 
+l.1227 
+        <./Figures/Velocity_LME_gamma_comparative.png>]
+<./Figures/Velocity_MPM_vs_OTM_Dyka.png, id=653, 617.30624pt x 462.72874pt>
+File: ./Figures/Velocity_MPM_vs_OTM_Dyka.png Graphic file (type png)
+<use ./Figures/Velocity_MPM_vs_OTM_Dyka.png>
+Package pdftex.def Info: ./Figures/Velocity_MPM_vs_OTM_Dyka.png  used on input 
+line 1241.
+(pdftex.def)             Requested size: 390.0pt x 292.34674pt.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1247 \clearpage
+                  <./Figures/Velocity_uGIMP_vs_LME_Dyka.png>] [26pdfTeX warning
+ (ext4): destination with the same identifier (name{figure.10}) has been alread
+y used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1247 \clearpage
+                  <./Figures/Velocity_MPM_vs_OTM_Dyka.png>]
+(./Figures/Block.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+) [27pdfTeX warning (ext4): destination with the same identifier (name{figure.1
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1297 
+       
+
+]
+<Figures/Block_LME3_PCE_a_t0.png, id=678, 420.57124pt x 515.9275pt>
+File: Figures/Block_LME3_PCE_a_t0.png Graphic file (type png)
+<use Figures/Block_LME3_PCE_a_t0.png>
+Package pdftex.def Info: Figures/Block_LME3_PCE_a_t0.png  used on input line 13
+09.
+(pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
+<Figures/Block_LME3_PCE_b_t025.png, id=679, 420.57124pt x 515.9275pt>
+File: Figures/Block_LME3_PCE_b_t025.png Graphic file (type png)
+<use Figures/Block_LME3_PCE_b_t025.png>
+Package pdftex.def Info: Figures/Block_LME3_PCE_b_t025.png  used on input line 
+1312.
+(pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
+<Figures/Block_LME3_PCE_c_t1.png, id=680, 420.57124pt x 515.9275pt>
+File: Figures/Block_LME3_PCE_c_t1.png Graphic file (type png)
+<use Figures/Block_LME3_PCE_c_t1.png>
+Package pdftex.def Info: Figures/Block_LME3_PCE_c_t1.png  used on input line 13
+15.
+(pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
+<./Figures/Block_CFL_01_Comparative.png, id=687, 462.528pt x 346.896pt>
+File: ./Figures/Block_CFL_01_Comparative.png Graphic file (type png)
+<use ./Figures/Block_CFL_01_Comparative.png>
+Package pdftex.def Info: ./Figures/Block_CFL_01_Comparative.png  used on input 
+line 1352.
+(pdftex.def)             Requested size: 390.0pt x 292.5128pt.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1359 
+        <./Figures/Block_LME3_PCE_a_t0.png> <./Figures/Block_LME3_PCE_b_t025.pn
+g> <./Figures/Block_LME3_PCE_c_t1.png>] [29pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.13}) has been already used, duplicate igno
+red
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1370 }
+         <./Figures/Block_CFL_01_Comparative.png>] (./Figures/Sulsky_discs.tex)
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.14}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1383 
        ]
+<./Figures/Sulsky_energy.png, id=724, 501.5538pt x 578.8827pt>
+File: ./Figures/Sulsky_energy.png Graphic file (type png)
+<use ./Figures/Sulsky_energy.png>
+Package pdftex.def Info: ./Figures/Sulsky_energy.png  used on input line 1390.
+(pdftex.def)             Requested size: 390.0pt x 450.14874pt.
+ [31] [32pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1421 
+        <./Figures/Sulsky_energy.png>]
 No file LME-MPM.gls.
 No file LME-MPM.acr.
-[30] [31] [32] (./LME-MPM.bbl
+[33] [34] (./LME-MPM.bbl [35]
 Underfull \hbox (badness 10000) in paragraph at lines 36--43
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 https : / / www . sciencedirect . com /
  science / article / pii /
  []
 
-[33]
+
 Underfull \hbox (badness 10000) in paragraph at lines 45--53
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
 science / article / pii /
@@ -1694,7 +1704,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--77
 science / article / pii /
  []
 
-[34] [35]
+[36] [37]
 Underfull \hbox (badness 1931) in paragraph at lines 179--187
 []\OT1/cmr/m/n/12 S. Ku-larathna, K. Soga, []Im-plicit for-mu-la-tion of ma-te-
 rial point
@@ -1718,71 +1728,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--196
 science / article / pii /
  []
 
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 214--222
+\OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
+science / article / pii /
+ []
 
-Underfull \hbox (badness 1924) in paragraph at lines 214--219
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--238
+\OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
+science / article / pii /
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 240--245
 []\OT1/cmr/m/n/12 B. Rie-mann, []Uber die darstell-barkeit einer func-tion durc
 h eine
  []
 
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 273--278
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 299--304
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 https : / / books . google . es / books
  / about /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--278
+Underfull \hbox (badness 10000) in paragraph at lines 299--304
 \OT1/cmtt/m/n/12 Smoothed{_}Particle{_}Hydrodynamics . html ? id =
  []
 
 
-Underfull \hbox (badness 4531) in paragraph at lines 280--288
+Underfull \hbox (badness 4531) in paragraph at lines 306--314
 []\OT1/cmr/m/n/12 Z. Ul-lah, W. Coombs, C. Au-garde, []An adap-tive fi-nite el-
 e-
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 280--288
+Underfull \hbox (badness 1052) in paragraph at lines 306--314
 \OT1/cmr/m/n/12 ment/meshless cou-pled method based on lo-cal max-i-mum en-trop
 y
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--288
+Underfull \hbox (badness 10000) in paragraph at lines 306--314
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
 science / article / pii /
  []
 
-[37]
-Underfull \hbox (badness 1629) in paragraph at lines 290--298
+[40]
+Underfull \hbox (badness 1629) in paragraph at lines 316--324
 []\OT1/cmr/m/n/12 W.-C. Yang, P. Ar-duino, G. R. Miller, P. Mackenzie-Helnwein,
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--298
+Underfull \hbox (badness 10000) in paragraph at lines 316--324
 []\OT1/cmr/m/n/12 Smooth-ing al-go-rithm for sta-bi-liza-tion of the ma-te-rial
  point
  []
 
 
-Underfull \hbox (badness 6708) in paragraph at lines 290--298
+Underfull \hbox (badness 6708) in paragraph at lines 316--324
 \OT1/cmr/m/n/12 method for fluid{solid in-ter-ac-tion prob-lems[], Com-puter Me
 th-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--298
+Underfull \hbox (badness 10000) in paragraph at lines 316--324
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / www . sciencedirect . com / 
 science / article / pii /
  []
 
-) [38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1587.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1587.
+) [41]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1615.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1615.
  (./LME-MPM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1587.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1587.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1615.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1615.
 
 Package rerunfilecheck Info: File `LME-MPM.out' has not changed.
 (rerunfilecheck)             Checksum: 224F9D7706D6D34EBC5C2503CFC606E4;796.
@@ -1790,18 +1812,24 @@ Package rerunfilecheck Info: File `LME-MPM.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1587.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1615.
  ) 
 Here is how much of TeX's memory you used:
- 28111 strings out of 480608
- 540028 string characters out of 5903630
- 935284 words of memory out of 5000000
- 43132 multiletter control sequences out of 15000+600000
+ 28545 strings out of 480608
+ 550606 string characters out of 5903630
+ 946840 words of memory out of 5000000
+ 43551 multiletter control sequences out of 15000+600000
  550347 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,17n,81p,987b,828s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:ugimp} has been referenced but does not exist
-, replaced by a fixed one
+ 68i,17n,81p,987b,827s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:usl} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:usf} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:ugimp} has been referenced but does not exist, 
+replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:efgm} has been referenced but does not exist, r
 eplaced by a fixed one
@@ -1835,6 +1863,9 @@ pdfTeX warning (dest): name{glo:contour} has been referenced but does not exist
 
 pdfTeX warning (dest): name{glo:domain} has been referenced but does not exist,
  replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:pic} has been referenced but does not exist, re
+placed by a fixed one
 
 pdfTeX warning (dest): name{glo:npc} has been referenced but does not exist, re
 placed by a fixed one
@@ -1897,10 +1928,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2020/texmf
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on LME-MPM.pdf (38 pages, 1825646 bytes).
+Output written on LME-MPM.pdf (41 pages, 1879302 bytes).
 PDF statistics:
- 1065 PDF objects out of 1200 (max. 8388607)
- 949 compressed objects within 10 object streams
- 218 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1121 PDF objects out of 1200 (max. 8388607)
+ 999 compressed objects within 10 object streams
+ 228 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -22,13 +22,15 @@
 
 
   \path [draw=black,fill=gray!10] (2,2) circle (2);
-  \draw node at (6,2) {\normalsize $x_{c,1} = \left(0.2, 0.2 \right)$};
-  \draw node at (6,1) {\normalsize $\mathbf{v}_{1} = \left(1, 1 \right)$};
-  \draw[->] (2,2) -- (4,2)  node [midway] {\Large $r_1$};
+  \draw node at (6,3) {\normalsize $x_{c,1} = \left(0.2, 0.2 \right)$};
+  \draw node at (6,2) {\normalsize $\mathbf{v}_{1} = \left(1, 1 \right)$};
+  \draw node at (6,1) {\normalsize $r_{1} = 0.2$};
+  \draw[-{Latex[length=2.5mm, width=1mm]}] (2,2) -- (4,2)  node [below, midway] {\Large $r_1$};
 
   \path [draw=black,fill=gray!10] (8,8) circle (2);
-  \draw node at (4,8) {\normalsize $x_{c,2} = \left(0.8, 0.8 \right)$};
-  \draw node at (4,7) {\normalsize $\mathbf{v}_{2} = \left(-1, -1 \right)$};
-  \draw[->] (8,8) -- (10,8)  node [midway] {\Large $r_2$};
+  \draw node at (4,9) {\normalsize $x_{c,2} = \left(0.8, 0.8 \right)$};
+  \draw node at (4,8) {\normalsize $\mathbf{v}_{2} = \left(-1, -1 \right)$};
+  \draw node at (4,7) {\normalsize $r_{2} = 0.2$};
+  \draw[-{Latex[length=2.5mm, width=1mm]}] (8,8) -- (10,8)  node [below, midway] {\Large $r_2$};
   
 \end{tikzpicture}

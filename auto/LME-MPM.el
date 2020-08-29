@@ -117,6 +117,7 @@
     "fig:vertical-displacement-block"
     "sec:Impact-two-elastic-discs"
     "fig:Sulsky_discs"
+    "fig:Sulsky-energy"
     "sec:conclusions"
     "app:analytical_sol"
     "eq:1D-balance-linear-momentum"

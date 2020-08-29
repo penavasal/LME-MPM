@@ -210,6 +210,32 @@ J.~Chung, G.~M. Hulbert, {A Time Integration Algorithm for Structural Dynamics
 \newblock \href {http://dx.doi.org/10.1115/1.2900803}
   {\path{doi:10.1115/1.2900803}}.
 
+\bibitem{BRACKBILL1988469}
+J.~Brackbill,
+  \href{http://www.sciencedirect.com/science/article/pii/0021999188901234}{The
+  ringing instability in particle-in-cell calculations of low-speed flow},
+  Journal of Computational Physics 75~(2) (1988) 469 -- 492.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/0021-9991(88)90123-4}
+  {\path{doi:https://doi.org/10.1016/0021-9991(88)90123-4}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/0021999188901234}
+
+\bibitem{Gritton2017}
+C.~Gritton, M.~Berzins, {Improving accuracy in the MPM method using a null
+  space filter}, Computational Particle Mechanics\href
+  {http://dx.doi.org/10.1007/s40571-016-0134-3}
+  {\path{doi:10.1007/s40571-016-0134-3}}.
+
+\bibitem{HAMMERQUIST2017724}
+C.~C. Hammerquist, J.~A. Nairn,
+  \href{http://www.sciencedirect.com/science/article/pii/S004578251631547X}{A
+  new method for material point method particle updates that reduces noise and
+  enhances stability}, Computer Methods in Applied Mechanics and Engineering
+  318 (2017) 724 -- 738.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1016/j.cma.2017.01.035}
+  {\path{doi:https://doi.org/10.1016/j.cma.2017.01.035}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S004578251631547X}
+
 \bibitem{Riemann_1854}
 B.~Riemann, Über die darstellbarkeit einer function durch eine
   trigonometrische reihe, Abhandlungen der Königlichen Gesellschaft der

@@ -35,6 +35,7 @@
     decorations.pathreplacing,%
     decorations.pathmorphing%
   }
+\usetikzlibrary{arrows.meta}
 
 
 \newcommand{\vect}[1]{
@@ -173,6 +174,7 @@
 \newacronym{efgm}{EFGM}{Element-Free Galerkin Method} 
 \newacronym{lme}{LME}{Local Maximum-Entropy}
 \newacronym{flip}{FLIP}{Fluid Implicit Particle}
+\newacronym{pic}{PIC}{Particle in Cell}
 \newacronym{gimp}{GIMP}{Generalized Interpolation Material Point}
 \newacronym{igimp}{iGIMP}{Implicit GIMP}
 \newacronym{ugimp}{uGIMP}{Uniform GIMP}
@@ -180,6 +182,8 @@
 \newacronym{cpdi}{CPDI}{Convected Particle Domain Interpolation}
 \newacronym{ctls}{CTLS}{Conservative Taylor Least Squares}
 \newacronym{npc}{NPC}{Newmark Predictor-Corrector}
+\newacronym{usl}{USL}{Update Stress Last}
+\newacronym{usf}{USF}{Update Stress First}
 \newacronym{fe}{FE}{Forward Euler}
 \newacronym{dbc}{DBC}{Dirichlet boundary conditions}
 \newacronym{nbc}{NBC}{Neumann boundary conditions}
@@ -399,7 +403,9 @@ has been chosen among other suitable alternatives as those proposed
 by Wilson {\it et al.} (1972)~\cite{Wilson1972} or Chung \& Hulbert
 (1993)~\cite{Geranlized_alpha_1993} because its simplicity and good
 performance dealing with solid dynamic problems under a meshfree
-framework in~\cite{Navas2018a}.
+framework in~\cite{Navas2018a}.  
+\MODIFIED{ Other well known source of energy dissipation and numerical noise is the presence of a non-trivial null space of the linear operator that maps particles values onto nodal values. It was earlier identified by Brackbill~\cite{BRACKBILL1988469} as ringing instability in the \acrfull{pic} method. A recent development in the field of particle methods is a null-space filter engineered by Gritton \&
+Berzins~\cite{Gritton2017} which overcome this limitation but still introduce unwelcome damping.  Later, Hammerquist \& Nairn~\cite{HAMMERQUIST2017724} introduced the XPIC as a parametric extension of the aforementioned research with excellent results.}
 
 The aim of this document is to mitigate the spurious oscillations due to
 inaccuracies in both space and time discretisation by the employment of a
@@ -573,7 +579,7 @@ formulation of the problem. Next, we will discretise the set of equations of the
     \label{eq:particle_acceleration_forces_II}
     \sum_{I,J\ \in\ \mathcal{B}} \vec{u}_I^{\psi} \cdot \Integral{3}{ N_I(\vec{x})\ \rho\ N_J(\vec{x})}\ \frac{d\vec{v}_J}{dt}.
 \end{equation}
-\MODIFIED{Now, employing the particle integral definition \eqref{eq:particle_riemann_integral} to compute the integral of \eqref{eq:particle_acceleration_forces_II}, and simplifying the it, is possible to achieve a discrete expression o the acceleration forces term as}
+\MODIFIED{Now, introducing the particle integral definition \eqref{eq:particle_riemann_integral} to compute the integral of \eqref{eq:particle_acceleration_forces_II}, and simplifying the it, is possible to achieve a discrete expression o the acceleration forces term as}
 %%%%%%%%%%%%%%%%
 \begin{equation}
 \label{eq:particle_acceleration_forces_III}
@@ -1351,17 +1357,39 @@ meshfree methods, with seamless transitions between those regions.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Impact of two elastic discs}
+\MODIFIED{\subsection{Impact of two elastic discs}}
 \label{sec:Impact-two-elastic-discs}
 
+\MODIFIED{The following test is best suited to validate the ability of the discussed
+interpolation technique to deal with grid crossing instabilities. Also, it enlightens the energy conservation properties of the integration scheme, since it should remains constant before and after collision. The test proposed by Sulsky {\it et al.} (1994) \cite{Sulsky1994} consists in the impact of two identical elastic discs with the following elastic parameters :
+\begin{itemize} 
+\item  Initial density : $20$
+\item  Poisson ratio : $0.3$
+\item  Elastic modulus : $10^5$
+\end{itemize}
+}
+\MODIFIED{The discs starts in the lower left and upper right corners with initial velocities of $(1, 1)$ and $(-1, -1)$, respectively. The computational domain consists in a square of 10 meters. It is discretised with a cartesian grid with a meshsize of 0.1. The courant number is fixed to 0.1 during the whole simulation. Details of the problem are sketched in figure~\ref{fig:Sulsky_discs}.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
-\sidecaption
+%\sidecaption
  \centering
  \resizebox{0.7\hsize}{!}{
    \input{Figures/Sulsky_discs.tex}}
  \caption{Geometrical description of the two colliding discs problem.}
  \label{fig:Sulsky_discs}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MODIFIED{Energy plots in figure~\ref{fig:Sulsky-energy} proofs in one hand the ability of the \acrshort{lme} approximation to mitigate the grid-crossing error as well as the \acrshort{ugimp} interpolants, but without some  of its shortcomings previously mentioned in this paper. And in the other hand the energy conservation is also guaranteed with the \acrshort{npc} time integration scheme, unlike what happens in the \acrfull{usf} and \acrfull{usl} schemes. Although during impact mechanical energy decreases, no real dissipation occurs since after collision the value is again 5 Jules like before collision. Furthermore, kinetic energy has been exactly computed. Therefore, this apparently dissipation of mechanical energy is due to a numerical cancellation during the computation of the mechanical energy during post-process stage. }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+%\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/Sulsky_energy}
+  }
+  \caption{Energy plots for different interpolation/approximation techniques. All simulations where performed with the already tested \acrshort{npc} algorithm. The evolution of the total energy of the system is represented with the solid line, the dashed line shows the evolution of the deformation energy, while the doted line represents the evolution of the kinetic energy.} 
+  \label{fig:Sulsky-energy}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
