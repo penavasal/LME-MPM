@@ -537,7 +537,7 @@ Thus, equation~\eqref{eq:BalanceMomentum_wf}, together with
 \eqref{eq:Rho-material-derivative}, represents the weak form
 formulation of the problem. Next, we will discretise the set of equations of the mathematical model using a double discretisation procedure, see figure~\ref{fig:MPM-discretization}.\\
 
-\MODIFIED{First, the velocity field and the virtual displacements fields are discretised in a finite set of nodes $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^n$, where $\mathcal{B} = 1, \ldots, N_I$. The continuum field can be reconstructed with the help of nodal values and an appropriate interpolation function $N_I(\vec{x})$. Also spatial derivatives of those quantities, such as gradients and divergences, are computed through the support of the background set of nodes as.}
+\MODIFIED{First, the velocity field and the virtual displacements fields are discretised in a finite set of nodes $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^n$, where $\mathcal{B} = 1, \ldots, N_I$. The continuum field can be reconstructed with the help of nodal values and an appropriate interpolation function $N_I(\vec{x})$. Also spatial derivatives of those quantities, such as gradients and divergences, are computed through the support of the background set of nodes as}
 \begin{align}
     \label{eq:variable_reconstruction}
     \varphi(\vec{x}) &= \sum_{I\ \in\ \mathcal{B}} N_I(\vec{x})\ \varphi_I \\
@@ -569,7 +569,7 @@ formulation of the problem. Next, we will discretise the set of equations of the
   \label{fig:MPM-discretization}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\MODIFIED{Let us illustrate the procedure described above by fully developing the term of the acceleration forces in \eqref{eq:BalanceMomentum_wf}. Employing the definition \eqref{eq:variable_reconstruction} the velocity and virtual displacement fields can be approximated within its nodal values. Hence, the acceleration forces is reduced to}
+\MODIFIED{Let us illustrate the procedure described above by fully developing the term of the acceleration forces in \eqref{eq:BalanceMomentum_wf}. Employing the definition \eqref{eq:variable_reconstruction}, the velocity and virtual displacement fields can be approximated within its nodal values. Hence, the acceleration forces is reduced to}
 \begin{equation}
     \label{eq:particle_acceleration_forces_I}
     \sum_{I,J\ \in\ \mathcal{B}} \Integral{3}{ \rho\ N_J(\vec{x})  \frac{d\vec{v}_J}{dt}\ \cdot N_I(\vec{x})\vec{u}_I^{\psi}}.
@@ -590,7 +590,7 @@ formulation of the problem. Next, we will discretise the set of equations of the
 \end{split}
 \end{equation}
 %%%%%%%%%%%%%%%%
-\MODIFIED{Where $\tens{m}_{IJ}$, is the nodal mass matrix, and $N_{Ip}, N_{Jp}$ are the interpolation functions for nodes $I,J$ evaluated in the position of each particle $p$. In order to improve the computational efficiency and stability, the nodal mass matrix can be substituted by the lumped mass matrix $\tens{m}_{IJ}^{lumped}$. The remaining terms of \eqref{eq:BalanceMomentum_wf} are obtained within a similar procedure and can be found in literature, see for instance \cite{Zhang_book_2016}.
+\MODIFIED{$\tens{m}_{IJ}$, is the nodal mass matrix, and $N_{Ip}, N_{Jp}$ are the interpolation functions for nodes $I,J$ evaluated in the position of each particle $p$. In order to improve the computational efficiency and stability, the nodal mass matrix can be substituted by the lumped mass matrix $\tens{m}_{IJ}^{lumped}$. The remaining terms of \eqref{eq:BalanceMomentum_wf} are obtained within a similar procedure and can be found in literature, see for instance \cite{Zhang_book_2016}.
 So equation \eqref{eq:BalanceMomentum_wf} has been discretised as}
 %%%%%%%%%%%%%%%%%%%%%
 \begin{equation}
@@ -1052,15 +1052,14 @@ tensile instability. This is another benefit of the proposed methodology, that, 
 This section is devoted to test the ability of both predictor-corrector
 time integration scheme and the Local \textit{Max-Ent} approximants to
 overcome spurious oscillations due to the grid crossing and high
-frequency loads under the context of \acrshort{mpm}. \MODIFIED{Three different test have
+frequency loads under the context of \acrshort{mpm}. \MODIFIED{Three different tests have
 been adopted for this purpose: the benchmark proposed by Dyka \& Ingel
 (1995)\cite{Dyka1995}, the test proposed in the PhD thesis of
-Andersen (2009)\cite{thesis_Andersen_2009} and the classical example of two colliding discs provided by Sulsky {\it et al.} (1994) \cite{Sulsky1994}. The first example is devoted to test the accuracy of the \acrfull{npc} scheme is compared to the standard \acrfull{fe} in order to assess the performance of the time integration schemes. In the second example,  \acrshort{lme} solutions
+Andersen (2009)\cite{thesis_Andersen_2009} and the evolution of velocity waves in an elastic square. The first example is devoted to test the accuracy of the \acrfull{npc} scheme is compared to the standard \acrfull{fe} in order to assess the performance of the time integration schemes. In the second example,  \acrshort{lme} solutions
 are compared with those provided by \acrfull{ugimp} and Q4 shape
 functions. Finally, in the third example the present approach is tested under a scenario where shocks and grid crossing occurs.} To avoid some mesh-dependent issues, in all
 calculations a regular background mesh was set. All simulations were
 performed with in-house software.
-
 
 \subsection{Dyka's bar \cite{Dyka1995}}
 \label{sec:dyka-bar}
@@ -1357,41 +1356,46 @@ meshfree methods, with seamless transitions between those regions.
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\MODIFIED{\subsection{Impact of two elastic discs}}
-\label{sec:Impact-two-elastic-discs}
+\MODIFIED{\subsection{Velocity waves in an elastic domain}}
+\label{sec:Velocity-waves-elastic-domain}
 
 \MODIFIED{The following test is best suited to validate the ability of the discussed
-interpolation technique to deal with grid crossing instabilities. Also, it enlightens the energy conservation properties of the integration scheme, since it should remains constant before and after collision. The test proposed by Sulsky {\it et al.} (1994) \cite{Sulsky1994} consists in the impact of two identical elastic discs with the following elastic parameters :
+time integration scheme to reproduce 2D wave propagation problem.  It consists of the side impact of a moving elastic square. The square was 50 x 50 mm and modeled with the following elastic parameters :
 \begin{itemize} 
 \item  Initial density : $20$
 \item  Poisson ratio : $0.3$
 \item  Elastic modulus : $10^5$
 \end{itemize}
 }
-\MODIFIED{The discs starts in the lower left and upper right corners with initial velocities of $(1, 1)$ and $(-1, -1)$, respectively. The computational domain consists in a square of 10 meters. It is discretised with a cartesian grid with a meshsize of 0.1. The courant number is fixed to 0.1 during the whole simulation. Details of the problem are sketched in figure~\ref{fig:Sulsky_discs}.}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
-%\sidecaption
- \centering
- \resizebox{0.7\hsize}{!}{
-   \input{Figures/Sulsky_discs.tex}}
- \caption{Geometrical description of the two colliding discs problem.}
- \label{fig:Sulsky_discs}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\MODIFIED{Energy plots in figure~\ref{fig:Sulsky-energy} proofs in one hand the ability of the \acrshort{lme} approximation to mitigate the grid-crossing error as well as the \acrshort{ugimp} interpolants, but without some  of its shortcomings previously mentioned in this paper. And in the other hand the energy conservation is also guaranteed with the \acrshort{npc} time integration scheme, unlike what happens in the \acrfull{usf} and \acrfull{usl} schemes. Although during impact mechanical energy decreases, no real dissipation occurs since after collision the value is again 5 Jules like before collision. Furthermore, kinetic energy has been exactly computed. Therefore, this apparently dissipation of mechanical energy is due to a numerical cancellation during the computation of the mechanical energy during post-process stage. }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MODIFIED{The background set of nodes consists in a cartesian grid with a uniform gap between nodes of 1 mm, and square was discretised with four material points by cell. The courant number is fixed to 0.1 during the whole simulation and $\text{LME}_{4.0}$ shape functions where used. The square initially move horizontally through the grid at $\text{V}_0 = 1.0$ until it hits an obstacle modelled as a set of nodes with  zero velocity prescribed. The collision produce stress waves and cause the square to bounce back.}
+
+\MODIFIED{Snapshots of velocity field magnitude within the square are given in\ref{fig:Magnitude_velocity_impact_square}. At early times, \acrshort{npc} and \acrshort{fe} are similar. At later times, the \acrshort{fe} introduces significant numerical noise while \acrshort{npc} is almost clean. }
+%%%%%%%%%%%%%%%%
 \begin{figure}
 %\sidecaption
   \centering
   \resizebox{\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/Sulsky_energy}
+\includegraphics[scale=1]{Figures/Velocity_FE_vs_NPC_square.png} 
   }
-  \caption{Energy plots for different interpolation/approximation techniques. All simulations where performed with the already tested \acrshort{npc} algorithm. The evolution of the total energy of the system is represented with the solid line, the dashed line shows the evolution of the deformation energy, while the doted line represents the evolution of the kinetic energy.} 
-  \label{fig:Sulsky-energy}
+  \caption{Snapshots of velocity magnitudes in an elastic square impacted at a point on the right edge. The top row is for \acrshort{npc} updates and the bottom row is for \acrshort{fe} updates.}
+  \label{fig:Magnitude_velocity_impact_square}
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% 
+\MODIFIED{Energy plots in figure \ref{fig:Energy_impact_square} shows that after collision the total amount of energy is preserved. In the bounce back stress wave are still travelling thorough the elastic domain introducing numerical noise due to the inaccuracies of the time integration scheme as figure \ref{fig:Magnitude_velocity_impact_square} proves. However, \acrshort{npc} introduces a minimal energy loss (less than 0.1\%) to significantly reduce the numerical noise. }
+
+\MODIFIED{Although during impact mechanical energy decreases, no real dissipation occurs since after collision the value is again 25 kJ like before collision. Furthermore, kinetic energy has been exactly computed. Hence, this apparently dissipation of mechanical energy is probably due to numerical cancellation of shear terms contribution. }
+%%%%%%%%%%%%%%%%
+\begin{figure}
+%\sidecaption
+  \centering
+  \resizebox{0.8\hsize}{!}{
+\includegraphics[scale=1]{Figures/Energy_square.png} 
+  }
+  \caption{Snapshots of velocity magnitudes in an elastic square impacted at a point on the right edge. The top row is for \acrshort{npc} updates and the bottom row is for \acrshort{fe} updates.}
+  \label{fig:Energy_impact_square}
+\end{figure}
+%%%%%%%%%%%%%%%% 
 
 \section{Conclusions}
 \label{sec:conclusions}
