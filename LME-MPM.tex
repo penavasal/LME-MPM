@@ -1044,7 +1044,12 @@ sphere in 3D. Building upon the idea of anisotropic shape functions,
 \cite{Kochmann2019} introduced an enhanced version of the original
 \acrshort{lme} scheme, which uses an anisotropic support to deal with 
 tensile instability. This is another benefit of the proposed methodology, that, although is out of the scope of the present document, will be incorporated in future research.
-\MODIFIED{Unfortunately, local \textit{max-ent} approximation technique only provides an efficient tool to transfer information from particles to nodes and vice versa to the \acrshort{mpm}. Hence, the difficulties of imposing \acrshort{dbc} in the \acrshort{mpm} persists since they are a direct consequence of discretising the continuum with material points instead of nodes, where traditionally \acrshort{dbc} are imposed. However, any available technique employed to overcome this situation in the standard \acrshort{mpm} can be translated to the \textit{max-ent} one thanks to the Kronecker-Delta property inherent to it \cite{Arroyo2006}. See for instance the work of Cortis {\it et al.} (2018) \cite{Cortis2018a}}.
+
+\MODIFIED{Unfortunately, the employment of \textit{max-ent} approximants is not free of pitfalls. Some requirements such as the need for a convex domain, as well as those derived from its calculation (the determination of the Lagrange Multipliers, specially at the boundaries, or the obtainment of the minimizer of the logarithmic function), make the usage of it a challenging tool. Concerning the convex domain requirement, Arroyo \& Ortiz~\cite{Arroyo2006} briefly discussed the existence of non-convex domains, and proposed some solutions to it. For instance, the possibility of replacing the Euclidean distance $\lVert x - x_a \rVert$ in the definition of the shape functions by the length of the shortest path contained within the domain connecting $x$ and $x_a$. Or by decomposing the non-convex domain into convex sub-domains.}
+
+\MODIFIED{Of course the requirement of convex domain is not exclusive from \textit{max-ent}, it also concerns to the remaining interpolation techniques in the \acrshort{mpm} and other meshfree methods. For instance, this topic has been extensively studied in the context of MLS-based meshfree methods, for instance visibility, diffraction, and constrained path criteria. These methods are directly applicable to local \textit{max-ent} approximation. }
+
+\MODIFIED{Despite these drawbacks, the results depicted in this manuscript will strengthen the motivation of its employment in order to mitigate typical \acrshort{mpm} problems such as cell-crossing or stress instabilities in a wide range of problem.}
 
 \section{Application to linear elasticity dynamic problems.}
 \label{sec:Application-linear-elasticity-dynamic-problems}
@@ -1360,15 +1365,15 @@ meshfree methods, with seamless transitions between those regions.
 \label{sec:Velocity-waves-elastic-domain}
 
 \MODIFIED{The following test is best suited to validate the ability of the discussed
-time integration scheme to reproduce 2D wave propagation problem.  It consists of the side impact of a moving elastic square. The square was 50 x 50 mm and modeled with the following elastic parameters :
+time integration scheme to reproduce 2D wave propagation problem.  It consists of the side impact of a moving elastic square. The square was 50 x 50 m and modeled with the following elastic parameters :
 \begin{itemize} 
-\item  Initial density : $20$
+\item  Initial density : $20 kg/m^3$
 \item  Poisson ratio : $0.3$
-\item  Elastic modulus : $10^5$
+\item  Elastic modulus : $0.1 MPa$
 \end{itemize}
 }
 
-\MODIFIED{The background set of nodes consists in a cartesian grid with a uniform gap between nodes of 1 mm, and square was discretised with four material points by cell. The courant number is fixed to 0.1 during the whole simulation and $\text{LME}_{4.0}$ shape functions where used. The square initially move horizontally through the grid at $\text{V}_0 = 1.0$ until it hits an obstacle modelled as a set of nodes with  zero velocity prescribed. The collision produce stress waves and cause the square to bounce back.}
+\MODIFIED{The background set of nodes consists in a cartesian grid with a uniform gap between nodes of 1 mm, and square was discretised with four material points by cell. The courant number is fixed to 0.1 during the whole simulation and $\text{LME}_{4.0}$ shape functions where used. The square initially move horizontally through the grid at $\text{V}_0 = 1.0 m/s$ until it hits an obstacle modelled as a set of nodes with  zero velocity prescribed. The collision produce stress waves and cause the square to bounce back.}
 
 \MODIFIED{Snapshots of velocity field magnitude within the square are given in\ref{fig:Magnitude_velocity_impact_square}. At early times, \acrshort{npc} and \acrshort{fe} are similar. At later times, the \acrshort{fe} introduces significant numerical noise while \acrshort{npc} is almost clean. }
 %%%%%%%%%%%%%%%%
@@ -1392,7 +1397,7 @@ time integration scheme to reproduce 2D wave propagation problem.  It consists o
   \resizebox{0.8\hsize}{!}{
 \includegraphics[scale=1]{Figures/Energy_square.png} 
   }
-  \caption{Snapshots of velocity magnitudes in an elastic square impacted at a point on the right edge. The top row is for \acrshort{npc} updates and the bottom row is for \acrshort{fe} updates.}
+  \caption{Total energy (kinetic energy plus strain energy) evolution for the square. Solid line represent total energy, dashed line represent strain energy, and dotted line represent kinetic energy.}
   \label{fig:Energy_impact_square}
 \end{figure}
 %%%%%%%%%%%%%%%% 
@@ -1400,15 +1405,10 @@ time integration scheme to reproduce 2D wave propagation problem.  It consists o
 \section{Conclusions}
 \label{sec:conclusions}
 We have proposed in this paper an enhanced methodology which improves \acrfull{mpm} behaviour in fast dynamics problems. Different time and space discretisation techniques have been presented and their performance being compared agains other approaches in two benchmark problems.
-First, a novel time integration scheme for
-\acrshort{mpm} has been carried out. The \acrshort{npc} has been
-  shown to be a highly efficient alternative for demanding fast dynamics problems. In the literature, several approaches of the \acrshort{npc} are proposed in order to compete on accuracy with expensive implicit time integration algorithms. The main achievement of the proposed time discretisation has been observed within the Dyka's bar \ref{sec:dyka-bar}, obtaining lower values of the error than the ones obtained with the \acrfull{fe} scheme.
+First, a novel time integration scheme for \acrshort{mpm} has been carried out. The \acrshort{npc} has been shown to be a highly efficient alternative for demanding fast dynamics problems. In the literature, several approaches of the \acrshort{npc} are proposed in order to compete on accuracy with expensive implicit time integration algorithms. The main achievement of the proposed time discretisation has been observed within the Dyka's bar \ref{sec:dyka-bar}, obtaining lower values of the error than the ones obtained with the \acrfull{fe} scheme, \MODIFIED{with a minimal loose of energy as in highlighted in \ref{sec:Velocity-waves-elastic-domain} }.
 Also, the procedure employed to design the \acrshort{npc} algorithm opens the
 door to revisit a huge variety of time integration schemes developed
-originally for \acrshort{fem}, which can be implemented within a
-  \acrshort{mpm} framework with the suitable modifications. In
-addition to the implementation of enhanced time integration schemes, further
-research can be done in the analysis of the good performance of the algorithm within non-linear solutions, such as the coupling between different phases or the non-linear constitutive behaviour of the materials: the employment of this scheme to strengthen the localization capabilities of \acrshort{mpm} for viscoplastic materials is on the scope of this research line. The comparison with traditional time schemes in the non-linear field will improve the formal understanding of the proposed methodology.
+originally for \acrshort{fem}, which can be implemented within a \acrshort{mpm} framework with the suitable modifications. In addition to the implementation of enhanced time integration schemes, further research can be done in the analysis of the good performance of the algorithm within non-linear solutions, such as the coupling between different phases or the non-linear constitutive behaviour of the materials: the employment of this scheme to strengthen the localization capabilities of \acrshort{mpm} for viscoplastic materials is on the scope of this research line. The comparison with traditional time schemes in the non-linear field will improve the formal understanding of the proposed methodology.
 
 On the other hand, the spatial discretisation of the \acrshort{mpm} is enhanced thanks to the powerful skills of the \acrfull{lme} approximation scheme, which has been validated as a robust and versatile
 tool in the \acrshort{mpm} framework. It also comes up as a promising
