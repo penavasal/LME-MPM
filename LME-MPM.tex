@@ -980,32 +980,7 @@ tensile instability. This is another benefit of the proposed methodology, that, 
 This section is devoted to test the ability of both predictor-corrector
 time integration scheme and the Local \textit{Max-Ent} approximants to
 overcome spurious oscillations due to the grid crossing and high
-frequency loads under the context of \acrshort{mpm}. Three different tests have been adopted for this purpose: 
-
-
-%\begin{itemize}
-%    \item The first example is the well known benchmark proposed by Dyka \& %Ingel (1995)\cite{Dyka1995}. It is devoted to test the accuracy of the %\acrfull{npc} scheme. Several comparison have been performed: 
-%    \begin{enumerate}
-%        \item  
-%        \item Comparison \acrshort{fe} \textit{versus} \acrshort{npc}. %Evolution of the velocity at the point on the left side. In this case, the %standard linear interpolation (Q4) has been established. 
-%        \item Comparison MPM-LME$_{2.0}$-NPC \textit{versus} %MPM-LME$_{3.0}$-NPC \textit{versus} MPM-LME$_{4.0}$
-%        \item MPM-LME$_{4.0}$-NPC \textit{versus} MPM-uGIMP-NPC
-%        \item MPM-LME$_{4.0}$-NPC \textit{versus} OTM-LME$_{4.0}$-NPC
-%    \end{enumerate}
-%    
-%    \item the test proposed in the PhD thesis of Andersen %(2009)\cite{thesis_Andersen_2009}
-    
-%    \acrshort{lme} solutions
-%    are compared with those provided by \acrfull{ugimp} and Q4 shape
-%    functions.
-
-%    \item the evolution of velocity waves in an elastic square. 
-%    in the third example the present approach is tested under a scenario %where shocks and grid crossing occurs
-%\end{itemize}
- 
- %To avoid some mesh-dependent issues, in all calculations a regular background mesh was set. 
- 
- %All simulations were performed with in-house software.
+frequency loads under the context of \acrshort{mpm}. Three different tests have been adopted for this purpose: The first example is the well known benchmark proposed by Dyka \& Ingel (1995)\cite{Dyka1995}. It is devoted to test the accuracy of the \acrfull{npc} scheme. The second example is the test proposed in the PhD thesis of Andersen (2009)\cite{thesis_Andersen_2009} where the evolution of velocity waves in an elastic square. In the third example the present approach is tested under a scenario where shocks and grid crossing occurs. All simulations were performed with in-house software.
 
 \subsection{Dyka\textquotesingle s bar \cite{Dyka1995}}
 \label{sec:dyka-bar}
@@ -1281,16 +1256,7 @@ the analytic value given by $\sigma_{yy} = \rho g h_y$.
 
 Figure~\ref{fig:vertical-displacement-block} shows the vertical
 displacement evolution of a point in the free surface of the
-block. \textcolor{purple}{This figure shows how simulations performed with a bi-linear interpolation technique (Q4) turns out to be unstable during
-cell-crossing and consequently fail. FEM-Q4 ARE NOT UNSTABLE AND MPM-Q4-NPC DO NO APPEAR IN THIS FIGURE SO CANNOT BE SHOWN.} \textcolor{purple}{The \acrshort{ugimp} simulation is more stable than the one performed by the Q4, although is still unstable NOT MORE THAN THE OTHERS} and could trigger severe oscillations in simulation with non-linear  materials. The \acrshort{lme} simulation was performed
-using two kinds of shape functions, one with a low value of the
-dimensionless parameter, $\widehat{\gamma} = 0.8$, and other with a larger value
-of it, $\widehat{\gamma} = 3.0$. Notice that the results \textcolor{purple}{are both stable NOT MORE THAN THE REST}, but
-the larger values of $\widehat{\gamma}$ give us a very stable solution. This is
-due to the fact that with larger value of $\widehat{\gamma}$, the shape
-functions behaves in a similar way to the \acrshort{fem}, which performs very
-accurate in those cases with a reasonable mesh distorsion, and with a
-lower value it behaves in a similar way to the \acrshort{ugimp}. \textcolor{purple}{COMPARISON WITH ANALYTICAL SOLUTION MIGHT BE WORTH IT} 
+block. \textcolor{green}{This figure shows how the \acrshort{mpm} simulation performed with a bi-linear interpolation technique (Q4) turns out to be unstable during cell-crossing and consequently fail}. \textcolor{green}{The \acrshort{lme} simulation was performed using two kinds of shape functions, one with a low value of the dimensionless parameter, $\widehat{\gamma} = 0.8$, and other with a larger value of it, $\widehat{\gamma} = 3.0$. Both simulations behaves with minimal oscillations, also not appreciable difference is observed between them. The \acrshort{ugimp} simulation is more stable than the one performed with the \acrshort{mpm}-Q4 and behaves like the \acrshort{lme} simulations. Finally, we have compared our results against two contrasted techniques. The \acrshort{fem} solution has been done with a regular mesh of linear quadrilaterals, meanwhile the \acrshort{otm} solution has been done with \acrshort{lme} approximation. The final displacement in both solutions oscillates around a value of 0.59 m.} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 %\sidecaption
@@ -1310,16 +1276,13 @@ lower value it behaves in a similar way to the \acrshort{ugimp}. \textcolor{purp
 
 \textcolor{blue}{The following test is intended to validate the ability of the discussed time integration schemes to reproduce 2D wave propagation problems.  It consists of the side impact of a moving elastic square. The square was 50 x 50 m  and modeled with the following elastic parameters :
 \begin{itemize} 
-\item  Initial density : $20 kg/m^3$
+\item  Initial density : $20\ kg/m^3$
 \item  Poisson ratio : $0.3$
-\item  Elastic modulus : $0.1 MPa$
+\item  Elastic modulus : $0.1\ MPa$
 \end{itemize}
 }
-
-\textcolor{blue}{The background set of nodes consists of a cartesian grid with a uniform gap between nodes of 1 m, and four material points per cell were considered. The courant number is fixed to 0.1 during the whole simulation and $\text{LME}_{4.0}$ shape functions where used. The square initially move horizontally through the grid at $\text{V}_0 = 1.0 m/s$ until it hits an obstacle modelled as a set of nodes with zero velocity prescribed. The collision produce stress waves and cause the square to bounce back.}
-
-\textcolor{blue}{Snapshots of velocity field magnitude within the square are given in Figure\ref{fig:Magnitude_velocity_impact_square}. At early times, \acrshort{npc} and \acrshort{fe} are similar. At later times, the \acrshort{fe} introduces significant numerical noise as compared with \acrshort{npc}. }
-
+\textcolor{blue}{The background set of nodes consists of a cartesian grid with a uniform gap between nodes of 1 m, and four material points per cell were considered. The courant number is fixed to 0.1 during the whole simulation and $\text{LME}_{3.0}$ shape functions where used. The square initially move horizontally through the grid at $\text{V}_0 = 1.0 m/s$ until it hits an obstacle modelled as a set of nodes with zero velocity prescribed. The collision produce stress waves and cause the square to bounce back. Snapshots of velocity field magnitude within the square are given in figure
+~\ref{fig:Magnitude_velocity_impact_square}}. 
 %%%%%%%%%%%%%%%%
 \begin{figure}
 %\sidecaption
@@ -1331,6 +1294,19 @@ lower value it behaves in a similar way to the \acrshort{ugimp}. \textcolor{purp
   \label{fig:Magnitude_velocity_impact_square}
 \end{figure}
 %%%%%%%%%%%%%%%% 
+\textcolor{blue}{At early times, \acrshort{npc} and \acrshort{fe} are similar. At later times, the \acrshort{fe} introduces significant numerical noise as compared with \acrshort{npc}. At the end of the simulation, the filtering process when \acrshort{npc} is used leads to a negligible loss of mechanical energy (about 0.1\%). Finally, let us consider an unstructured background mesh.}
+%%%%%%%%%%%%%%%%
+\begin{figure}
+%\sidecaption
+  \centering
+  \resizebox{\hsize}{!}{
+\includegraphics[scale=0.8]{Figures/Velocity-structured-unstructured-lme-ugimp.png}
+  }
+  \caption{Sensitive of \acrshort{ugimp} and \acrshort{lme} to the randomness in the layout of the background set of nodes. On the left side of the image we can see sketches of the two meshes that have been used. And on the right side, snapshots with the velocity magnitudes in each case. All the simulation where carried out with the proposed \acrshort{npc}.}
+  \label{fig:Magnitude_velocity_impact_square_structured_unestructured}
+\end{figure}
+%%%%%%%%%%%%%%%%
+\textcolor{blue}{ As we can see in figure~\ref{fig:Magnitude_velocity_impact_square_structured_unestructured}, the \acrshort{lme} approximation preserves the solution even though the mesh is not structured. Meanwhile, the \acrshort{ugimp} is not able to deal with the unstructured mesh as expected. It goes without saying that there is no point in using unstructured meshes in this type of situation. Despite this, the \acrshort{lme} approach shows remarkable robustness in dealing with an unstructured mesh. This is useful in more complicated computational domains where structured mesh are not possible.}
 
 \section{Conclusions}
 \label{sec:conclusions}
