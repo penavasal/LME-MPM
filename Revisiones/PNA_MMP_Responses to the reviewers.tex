@@ -22,7 +22,7 @@ and Miguel Mart\'in-Stickle}
 \maketitle
 %\tableofcontents
 
-We  are grateful to the reviewers for taking their time  to review our work. Their comments have helped us to improve the paper. Changes to the original manuscript are given in  color (\textcolor{red}{red} for corrections, \textcolor{blue}{blue} for modified texts)  in the revised version.  A detailed response to both reviewers is given below.
+We  are grateful to the reviewers for taking their time  to review our work. Their comments have helped us to improve the paper. Changes to the original manuscript are given in  color \textcolor{blue}{red} for corrections and for modified text in the revised version.  A detailed response to both reviewers is given below.
 
 \section*{Response to Reviewer \#1}
 {\it
@@ -55,15 +55,17 @@ A citation of the work of \cite{Sadeghirad_2011} with the CPDI has been added to
 \item \textit{The development is very confusing and would make more sense were it to be tied to 
 the way that GIMP methods are usually stated, i.e. that the standard FE shape functions are replaced by weighting functions comprised of the conjugation of a standard shape function and a particle "characteristic" function. Line 155 demonstrates this, i.e. the use of $N_{Ip}$ before explanation.}\\
 
-The development of the MPM approach has been revised considering the proposal of the reviewer. 
+Unfortunately, the \textit{max-ent} approximation can not be expressed as the conjugation of a standard shape function and a particle "characteristic" function. Furthermore, in order to improve the readability of the development of the MPM, the approach has been revised with a detailed explanation.
 
 \item \textit{There is little discussion on some of the pitfalls of using max-ent, e.g. the need for a convex domain, the issue of determining Lagrange Multiplier solutions for points close to boundaries, i.e. the solutions process here at Eqns 37 and 38.}\\
 
-Of course, the employment of the \textit{max-ent} approximants is not free of difficulties. Some requirements such as the need for a convex domain, as well as those derived from its calculation (the determination of the Lagrange Multipliers, specially at the boundaries, or the obtainment of the minimizer of the logarithmic function), make the usage of it a challenging tool.
+Of course, the employment of the \textit{max-ent} approximants is not free of difficulties. Some requirements such as the need for a convex domain, as well as those derived from its calculation (the determination of the Lagrange Multipliers, specially at the boundaries, or the obtainment of the minimizer of the logarithmic function), make the usage of it a challenging tool. 
 
-Additionally, Arroyo \& Ortiz~\cite{Arroyo2006} briefly discussed the existence of non-convex domains, and proposed some solutions to it.  For instance, the possibility of replacing the Euclidean distance $\lVert  x - x_a  \rVert$ in the definition of the shape functions by the length of the shortest path contained within the domain connecting $x$ and $x_a$. Or by decomposing the non-convex domain into convex sub-domains.  On the other hand, this topic has been extensively studied in the context of MLS-based meshfree methods, for instance visibility, diffraction, and constrained path criteria.  These methods are directly applicable to local \textit{max-ent} approximation. 
+On the other hand, the special case of non-convex domains was discussed by Arroyo \& Ortiz~\cite{Arroyo2006}. Some of the solutions proposed by the aforementioned authors are : the possibility of replacing the Euclidean distance $\lVert  x - x_a  \rVert$ in the definition of the shape functions by the length of the shortest path contained within the domain connecting $x$ and $x_a$. Or the decomposition of the non-convex domain into convex sub-domains. 
 
-However, the results depicted in this manuscript will strengthen the motivation of its employment in order to mitigate typical MPM problems such as cell-crossing or stress instabilities.  
+On the other hand, this topic has been extensively studied in the context of MLS-based meshfree methods, for instance visibility, diffraction, and constrained path criteria.  These methods are directly applicable to local \textit{max-ent} approximation. 
+
+However, the results depicted in this manuscript will strengthen the motivation of its employment in order to mitigate typical MPM problems such as cell-crossing, stress instabilities and the use of unstructured mesh.  
 
 \item \textit{Does the use of max-ent solve the problem of imposing Dirichlet boundary conditions in the MPM?}\\
 
