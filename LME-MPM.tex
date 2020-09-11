@@ -413,8 +413,8 @@ by Wilson {\it et al.} (1972)~\cite{Wilson1972} or Chung \& Hulbert
 (1993)~\cite{Geranlized_alpha_1993} because its simplicity and good
 performance dealing with solid dynamic problems under a meshfree
 framework.  
-\textcolor{blue}{Other well known source of energy dissipation and numerical noise is the presence of a non-trivial null space of the linear operator that maps particles values onto nodal values. It was earlier identified by Brackbill~\cite{BRACKBILL1988469} as ringing instability in the \acrfull{pic} method. A recent development in the field of particle methods is a null-space filter engineered by Gritton \&
-Berzins~\cite{Gritton2017} which overcome this limitation but still introduce unwelcome damping.  Later, Hammerquist \& Nairn~\cite{HAMMERQUIST2017724} introduced the XPIC as a parametric extension of the aforementioned research with excellent results.}
+\textcolor{blue}{Other well known source of energy dissipation and numerical noise is the presence of a non-trivial null space of the linear operator that maps particles values onto nodal values. It was earlier identified by Brackbill (1984)~\cite{BRACKBILL1988469} as ringing instability in the \acrfull{pic} method. A recent development in the field of particle methods is a null-space filter engineered by Gritton \&
+Berzins (2017)~\cite{Gritton2017} which overcome this limitation but still introduce unwelcome damping.  Later, Hammerquist \& Nairn (2017)~\cite{HAMMERQUIST2017724} introduced the XPIC as a parametric extension of the aforementioned research with excellent results.}
 
 The aim of this document is to mitigate the spurious oscillations due to
 inaccuracies in both space and time discretisation by the employment of a
@@ -1285,7 +1285,7 @@ block. \textcolor{blue}{This figure shows how the \acrshort{mpm} simulation, per
 \subsection{2D elastic wave propagation}
 \label{sec:Velocity-waves-elastic-domain}
 
-\textcolor{blue}{The following test is intended to validate the ability of the discussed time integration schemes in order to reproduce the wave propagation in 2D. The impact of an elastic square plate against a vertical wall is assessed. The square plate dimensions are 50 x 50 m and their elastic parameters are:
+\textcolor{blue}{This benchmark has been conveniently adapted from the one proposed by  Hammerquist \& Nairn (2017)~\cite{HAMMERQUIST2017724}, it is intended to validate the ability of the discussed time integration schemes in order to reproduce the wave propagation in 2D. The impact of an elastic square plate against a vertical wall is assessed. The square plate dimensions are 50 x 50 m and their elastic parameters are:
 \begin{itemize} 
 \item  Initial density : $20\ kg/m^3$
 \item  Poisson ratio : $0.3$
