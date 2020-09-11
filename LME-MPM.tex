@@ -307,12 +307,13 @@ Miguel Molinos, Pedro Navas, Manuel Pastor and Miguel Mart\'in-Stickle.
 \large
 \textbf{Highlights}
 \normalsize
+{\color{blue}
 \begin{itemize}
-\item \sout{We have proposed a} A new \textcolor{green}{accurate} and efficient time integration scheme for the \acrshort{mpm} is proposed. \sout{in order to dissipate spurious stress oscillations without damping the solution.}
-\item The \sout{proposal of the} \acrfull{lme} approximation technique  \sout{under the} is a robust substitute of the traditional shape functions \textcolor{green}{within the} \acrshort{mpm} framework .
-\item \sout{Our} \textcolor{green}{The proposed approach might improve} \sout{have clear benefits on}  large strain fast dynamic \acrshort{mpm} simulations \sout{, where the grid-crossing pathology appears.} as grid-crossing pathology are clearly mitigated.  
+\item A new accurate and efficient time integration scheme for the \acrshort{mpm} is proposed.
+\item The \acrfull{lme} approximation technique is a robust substitute of the traditional shape functions within the \acrshort{mpm} framework .
+\item The proposed approach might improve large strain fast dynamic \acrshort{mpm} simulations as grid-crossing pathology are clearly mitigated.  
 \end{itemize}
-
+}
 %\begin{highlights}
 %\end{highlights}
 
@@ -528,10 +529,9 @@ the following holds:
 %%%%%%%%%%%%%%%%%%%%%
 Thus, equation~\eqref{eq:BalanceMomentum_wf}, together with
 \eqref{eq:Constitutive-equation} and
-\eqref{eq:Rho-material-derivative}, represents the weak form
-\sout{formulation} of the problem. Next, we will discretise the set of equations of the mathematical model using a double discretisation procedure, see figure~\ref{fig:MPM-discretization}.\\
+\eqref{eq:Rho-material-derivative}, represents the weak form of the problem. Next, we will discretise the set of equations of the mathematical model using a double discretisation procedure, see figure~\ref{fig:MPM-discretization}.\\
 
-\textcolor{blue}{First, the velocity field and the virtual displacements fields are discretised in a finite set of nodes $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^{2}$, where $\mathcal{B} = 1, \ldots, n_I$. An approximation of the continuum field can be obtained with the help of nodal values and \sout{an} appropriate interpolation functions $N_I(\vec{x})$. Also spatial derivatives of those quantities, such as gradients and divergences, are computed through the support of the background set of nodes as}
+\textcolor{blue}{First, the velocity field and the virtual displacements fields are discretised in a finite set of nodes $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^{2}$, where $\mathcal{B} = 1, \ldots, n_I$. An approximation of the continuum field can be obtained with the help of nodal values and appropriate interpolation functions $N_I(\vec{x})$. Also spatial derivatives of those quantities, such as gradients and divergences, are computed through the support of the background set of nodes as}
 \begin{align}
     \label{eq:variable_reconstruction}
     \varphi(\vec{x}) &= \sum_{I\ \in\ \mathcal{B}} N_I(\vec{x})\ \varphi_I \\
@@ -1097,12 +1097,12 @@ The right figure, with the \acrshort{npc} results, shows lower values of the est
 
 \textcolor{blue}{Figure \eqref{fig:Dyka-error-evol} also highlights how on the one hand the slope of the \acrshort{lme} error decreases monotonously for the lower $\widehat{\gamma}$ values up to the \textit{grid-crossing region} (dark grey region), where more error is accumulated. On the other hand, when higher values of $\widehat{\gamma}$ are considered in \acrshort{lme} and also for the \acrshort{ugimp} and the bi-linear shape functions, the change in error slope occurs in the \textit{transition region} (middle grey region). It might be concluded that the latter methods are more sensitive to grid crossing than the former}.
 
-\textcolor{blue}{Finally,  the absence of \acrshort{ugimp} values for a mesh size of 0.3325 and 0.5 millimeters in figure \eqref{fig:Dyka-error-evol} is remarkable. The reason is due to an unstable increasing \sout{of the} error suffered during \acrshort{ugimp} simulations for these mesh sizes. A feasible explanation for this phenomena could be the presence of numerical cancellation which could produce gaps between voxels. Further research should be done in this direction for getting a better comprehension of this phenomenon. Conversely, this shortcoming is not suffered by \acrshort{lme}, independently of regular or irregular nodal layout.}
+\textcolor{blue}{Finally,  the absence of \acrshort{ugimp} values for a mesh size of 0.3325 and 0.5 millimeters in figure \eqref{fig:Dyka-error-evol} is remarkable. The reason is due to an unstable increasing error suffered during \acrshort{ugimp} simulations for these mesh sizes. A feasible explanation for this phenomena could be the presence of numerical cancellation which could produce gaps between voxels. Further research should be done in this direction for getting a better comprehension of this phenomenon. Conversely, this shortcoming is not suffered by \acrshort{lme}, independently of regular or irregular nodal layout.}
 
 \subsubsection{FE \textit{versus} NPC}
 \label{sec:FE-vs-NPC}
 
-\textcolor{blue}{A \sout{first} comparison of the performance of both time integration schemes is presented in figure \ref{fig:Dyka-NPC-FE}. Both integration schemes show numerical oscillations with respect to the analytical solution all over the simulation time, being worse just after jump discontinuities. However, the \acrshort{npc} approach damps out these oscillations faster than the \acrshort{fe} scheme. The oscillations of the \acrshort{npc} almost disappeared before reaching subsequent jump discontinuities, while those of \acrshort{fe} do not. Moreover, oscillations of the \acrshort{fe} seems to increase further after each jump discontinuity and an unstable tendency can by foreseen. This unstable tendency is not appreciated in the \acrshort{npc} integration scheme.} 
+\textcolor{blue}{A comparison of the performance of both time integration schemes is presented in figure \ref{fig:Dyka-NPC-FE}. Both integration schemes show numerical oscillations with respect to the analytical solution all over the simulation time, being worse just after jump discontinuities. However, the \acrshort{npc} approach damps out these oscillations faster than the \acrshort{fe} scheme. The oscillations of the \acrshort{npc} almost disappeared before reaching subsequent jump discontinuities, while those of \acrshort{fe} do not. Moreover, oscillations of the \acrshort{fe} seems to increase further after each jump discontinuity and an unstable tendency can by foreseen. This unstable tendency is not appreciated in the \acrshort{npc} integration scheme.} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 %\sidecaption
@@ -1299,7 +1299,7 @@ block. \textcolor{blue}{No results can be appreciated for the \acrshort{mpm} sim
 %%%%%%%%%%%%%%%%
 \textcolor{blue}{ As it is observed in figure~\ref{fig:Magnitude_velocity_impact_square_structured_unestructured}, the \acrshort{lme} approximation preserves the solution even though the mesh is not structured. Meanwhile, the \acrshort{ugimp} is not able to deal with the unstructured mesh as expected. %It goes without saying that there is no point in using unstructured meshes in this type of situation. 
 %Despite this, 
-Thus, the \acrshort{lme} approach adopted in the present work shows a remarkable robustness \sout{in} dealing with unstructured meshes. From this last comparison it can be deduced that \acrshort{lme}  might be an adequate choice approximation technique when dealing with complex domains where a structured mesh is usually not possible .}
+Thus, the \acrshort{lme} approach adopted in the present work shows a remarkable robustness dealing with unstructured meshes. From this last comparison it can be deduced that \acrshort{lme}  might be an adequate choice approximation technique when dealing with complex domains where a structured mesh is usually not possible .}
 
 \section{Conclusions}
 \label{sec:conclusions}
