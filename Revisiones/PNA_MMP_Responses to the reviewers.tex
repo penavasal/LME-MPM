@@ -12,7 +12,7 @@
 \title{Response to the reviewers of the manuscript ``On the dynamic assessment of the Local-Maximum Entropy Material Point Method through an Explicit Predictor-Corrector Scheme"}
 \author{Miguel Molinos, Pedro Navas, Manuel Pastor\\
 and Miguel Mart\'in-Stickle}
-\date{September 1, 2020}
+\date{September 11, 2020}
 
 %\date{} % delete this line to display the current date
 
@@ -32,9 +32,10 @@ The authors have presented a promissing approach for MPM to surpass the shock wa
 \\
 The reviewer's positive commentaries are greatly appreciated.
 \\
+
 \textit{However, most of the applications presented in this manuscript are relatively simple and does not really demonstrate the capability of the proposed approach. I suggest the authors to extend their manuscript to predict more challenging problems and compare their results to the original MPM solutions.}\\
 
-Authors agree with the proposal of the reviewer. In the first version, aiming to make a readable manuscript, several examples were not shown. In this revised version, in order to clarify several questions of both reviewers, we have introduced an additional case of study which consists in the simulation of a side impact in an elastic square. This test has been conveniently adapted from the work of Hammerquist \& Nairn \cite{HAMMERQUIST2017724}, where fast dynamics were also studied.
+Authors agree with the proposal of the reviewer. In the first version, aiming to make a readable manuscript, several examples were not shown. In this revised version, in order to clarify several questions of both reviewers, we have introduced an additional case of study which consists in the simulation of a side impact in an elastic square plate. This test has been conveniently adapted from the work of Hammerquist \& Nairn \cite{HAMMERQUIST2017724}, where fast dynamics were also studied.
 
 \hspace{5mm}
 
@@ -44,7 +45,7 @@ Authors agree with the proposal of the reviewer. In the first version, aiming to
 
 \textit {This is, on the face of it, an interesting piece of work but in its present form I don't think this is ready for CMAME. The paper is too long, rambling and has many grammatical and spelling errors. }\\
 
-Authors really appreciate that the reviewer consider the present research as an interest piece of work. In order to improve the readability of the revised paper, a proofreading is made.\\
+Authors really appreciate that the reviewer consider the present research as an interest piece of work. In order to improve the readability of the revised paper, a proofreading is made. Changes are found in the revised manuscript on \textcolor{blue}{blue} colour.\\
 
 \textit{Technical issues for the authors follow:}
  \begin{enumerate}
@@ -70,7 +71,7 @@ Unfortunately, local \textit{max-ent} approximation technique only provides an e
 
 \item \textit{I am sceptical of the novelty of the proposed explicit scheme as there is no mention of the recent XPIC(m) approach of Hammerquist and Nairn or similar approaches used in the Computational Graphics community, e.g. Stomakhin et al. (2013) or the more recent Polypic.}\\
 
-These interesting publications will be added to the state of art of the revised manuscript.In the humble opinion of the authors, the XPIC approach is dedicated to mitigate the null space error produced during the transfer of information between particles and nodes. Therefore, it is related to the spatial discretisation in stead of temporal. Meanwhile, the algorithm introduced in this research proposes the stabilisation within the adaptation of the predictor-corrector algorithm, which has been used traditionally in FEM to deal with fast dynamics. To the author\textquotesingle s knowledge, this is the first attempt to adapt the  traditional predictor-corrector for the MPM framework. 
+These interesting publications will be added to the state of art of the revised manuscript. In the humble opinion of the authors, the XPIC approach is dedicated to mitigate the null space error produced during the transfer of information between particles and nodes. Therefore, it is related to the spatial discretisation instead of the temporal one. Meanwhile, the algorithm introduced in this research proposes the stabilisation within the adaptation of the predictor-corrector algorithm, which has been used traditionally in FEM to deal with fast dynamics. To the author\textquotesingle s knowledge, this is the first attempt to adapt the  traditional predictor-corrector scheme for the MPM framework. 
 
 \end{enumerate}
 
@@ -78,37 +79,35 @@ These interesting publications will be added to the state of art of the revised 
 
 Contrary to the reviewer\textquotesingle s opinion, the provided results are capable to highlight the strong capabilities of the MPM Newmark Predictor-Corrector scheme (NPC). It is important to remark the extension of this research: in order to isolate the strength of the proposed methodology, covering spatial and time discretization, only linear elastic problems are assessed. 
 
-Although the results presented in Ma {\it et al.} \cite{MA2009272} are impressive, the proposed examples are out of the scope of the present research. In order to reinforce the benefits of the proposed methodology, we propose a 2D wave propagation problem has been simulated. It is analogous to the work of Hammerquist \& Nairn \cite{HAMMERQUIST2017724} (previously cited by the reviewer). This new test highlights the capabilities of the NPC to reproduce complex wave patterns under challenging loads such as impacts. Which is more, it is able to reduce the presence of numerical noise compared with the FE solution. Additionally, the robustness of the local \textit{max-ent} approximation is exposed dealing with unstructured mesh. 
+Although the results presented in Ma {\it et al.} \cite{MA2009272} are impressive, the proposed examples are out of the scope of the present research. In order to reinforce the benefits of the proposed methodology, we propose a 2D wave propagation problem. It is analogous to the work of Hammerquist \& Nairn \cite{HAMMERQUIST2017724} (previously cited by the reviewer). This new test highlights the capabilities of the NPC to reproduce complex wave propagation patterns under challenging loads such as impacts. Moreover, it is capable to reduce the presence of numerical noise compared with the FE solution. Additionally, the robustness of the local \textit{max-ent} approximation dealing with unstructured mesh is depicted.
 
 \bibliographystyle{unsrt}
 \begin{thebibliography}{10}
 
-\bibitem{Cortis_et_al_2017_IJNME}
-Cortis, Michael and Augarde, Charles and Coombs, William and Robinson, Scott and Brown, Michael and Brennan, Andrew.
-\newblock {Imposition of essential boundary conditions in the material point method}.
-\newblock {International Journal for Numerical Methods in Engineering}, 113, 2017.
+\bibitem{HAMMERQUIST2017724}
+Chad C. Hammerquist and John A. Nairn.
+\newblock {A new method for material point method particle updates that reduces noise and enhances stability}.
+\newblock {Computer Methods in Applied Mechanics and Engineering},  318: 724--738, 2017.
 
 \bibitem{Sadeghirad_2011}
 Sadeghirad, A. and Brannon, R. M. and Burghardt, J.
 \newblock {A convected particle domain interpolation technique to extend applicability of the material point method for problems involving massive deformations}.
-\newblock {International Journal for Numerical Methods in Engineering}, 86(12) : 1435-1456, 2011.
-
-
-\bibitem{HAMMERQUIST2017724}
-Chad C. Hammerquist and John A. Nairn.
-\newblock {A new method for material point method particle updates that reduces noise and enhances stability}.
-\newblock {\em Computer Methods in Applied Mechanics and Engineering},  318:724--738, 2017.
-
-
-\bibitem{MA2009272}
-S. Ma and X. Zhang and X.M. Qiu.
-\newblock{Comparison study of MPM and SPH in modeling hypervelocity impact problems}.
-\newblock{International Journal of Impact Engineering}, 36(2):272--282, 2009.
+\newblock {International Journal for Numerical Methods in Engineering}, 86(12): 1435-1456, 2011.
 
 \bibitem{Arroyo2006}
-Arroyo, M. and Ortiz, M..
+Arroyo, M. and Ortiz, M.
 \newblock{Local maximum-entropy approximation schemes: A seamless bridge between finite elements and meshfree methods}.
-\newblock{International Journal for Numerical Methods in Engineering},  2006.
+\newblock{International Journal for Numerical Methods in Engineering},  65(13): 2167--2202, 2006.
+
+\bibitem{Cortis_et_al_2017_IJNME}
+Cortis, Michael and Augarde, Charles and Coombs, William and Robinson, Scott and Brown, Michael and Brennan, Andrew.
+\newblock {Imposition of essential boundary conditions in the material point method}.
+\newblock {International Journal for Numerical Methods in Engineering}, 113: 130--152, 2017.
+
+\bibitem{MA2009272}
+Ma, S., Zhang, X.  and  Qiu, X.M.
+\newblock{Comparison study of MPM and SPH in modeling hypervelocity impact problems}.
+\newblock{International Journal of Impact Engineering}, 36(2): 272--282, 2009.
 
 \end{thebibliography}
 
