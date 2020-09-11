@@ -272,11 +272,9 @@ and Miguel Mart\'in Stickle$^a$}
 }
 
 \begin{abstract}
-  \acrfull{mpm} has arisen in the recent years as an
-  alternative to \acrfull{fem} under the large
-  deformation regime. However, the simulation of shock waves
-  propagation in the large deformation regime is still challenging
-  under this approach due \textcolor{red}{to} the incapability of the standard \acrshort{mpm} time
+  \acrfull{mpm} has arisen in the recent years as an alternative to \acrfull{fem} under large
+  \textcolor{blue}{deformations}. However, the simulation of shock waves
+  propagation in the large deformation regime is still challenging  under this approach due to the incapability of the standard \acrshort{mpm} time
   integration scheme to filter spurious noises. To overcome it, we propose in this paper an explicit Predictor-Corrector time
     integration scheme. Its powerful performance mitigates the
   presence of spurious oscillations with minimal dissipation in high
@@ -288,14 +286,8 @@ and Miguel Mart\'in Stickle$^a$}
   solutions as well as aborted simulations in the worst cases. To
   surmount it, we propose in this work the \acrfull{lme} approximation
   schemes as a robust substitute of the traditional shape function in
-  \acrshort{mpm}. \acrshort{lme} approximation may be regarded as a
-  \textit{thermalization} of Delaunay triangulation which resolves the
-  degenerate cases resulting from the lack or uniqueness of the
-  triangulation. Furthermore, by modifying a regularization parameter,
-  they are able to behave finite element like or as a meshfree
-  method. This capability allows to face a wide range of physics
-  with a single shape function family. Finally this paper demonstrates
-  the performance of both improvements through numerical examples.    
+  \acrshort{mpm}. \textcolor{blue}{The performance of both improvements is validated by the high quality
+   results of the numerical examples}.
 \end{abstract}
 
 \begin{keyword}
@@ -316,11 +308,9 @@ Miguel Molinos, Pedro Navas, Manuel Pastor and Miguel Mart\'in-Stickle.
 \textbf{Highlights}
 \normalsize
 \begin{itemize}
-\item We have proposed a new and efficient time integration scheme for the \acrshort{mpm} in order to dissipate spurious stress oscillations without damping the solution.
-\item The proposal of the \acrshort{lme} approximation technique
-  under the \acrshort{mpm} framework is a robust substitute of the
-  traditional shape functions.
-\item Our approach have clear benefits on large strain fast dynamic simulations, where the grid-crossing pathology appears. 
+\item \sout{We have proposed a} A new \textcolor{green}{accurate} and efficient time integration scheme for the \acrshort{mpm} is proposed. \sout{in order to dissipate spurious stress oscillations without damping the solution.}
+\item The \sout{proposal of the} \acrfull{lme} approximation technique  \sout{under the} is a robust substitute of the traditional shape functions \textcolor{green}{within the} \acrshort{mpm} framework .
+\item \sout{Our} \textcolor{green}{The proposed approach might improve} \sout{have clear benefits on}  large strain fast dynamic \acrshort{mpm} simulations \sout{, where the grid-crossing pathology appears.} as grid-crossing pathology are clearly mitigated.  
 \end{itemize}
 
 %\begin{highlights}
@@ -413,19 +403,19 @@ by Wilson {\it et al.} (1972)~\cite{Wilson1972} or Chung \& Hulbert
 (1993)~\cite{Geranlized_alpha_1993} because its simplicity and good
 performance dealing with solid dynamic problems under a meshfree
 framework.  
-\textcolor{blue}{Other well known source of energy dissipation and numerical noise is the presence of a non-trivial null space of the linear operator that maps particles values onto nodal values. It was earlier identified by Brackbill~\cite{BRACKBILL1988469} as ringing instability in the \acrfull{pic} method. A recent development in the field of particle methods is a null-space filter engineered by Gritton \&
-Berzins~\cite{Gritton2017} which overcome this limitation but still introduce unwelcome damping.  Later, Hammerquist \& Nairn~\cite{HAMMERQUIST2017724} introduced the XPIC as a parametric extension of the aforementioned research with excellent results.}
+\textcolor{blue}{Other well known source of energy dissipation and numerical noise is the presence of a non-trivial null space of the linear operator that maps particles values onto nodal values. It was earlier identified by Brackbill (1984)~\cite{BRACKBILL1988469} as ringing instability in the \acrfull{pic} method. A recent development in the field of particle methods is a null-space filter engineered by Gritton \&
+Berzins (2017)~\cite{Gritton2017} which overcome this limitation but still introduce unwelcome damping.  Later, Hammerquist \& Nairn (2017)~\cite{HAMMERQUIST2017724} introduced the XPIC as a parametric extension of the aforementioned research with excellent results.}
 
 The aim of this document is to mitigate the spurious oscillations due to
 inaccuracies in both space and time discretisation by the employment of a
-suitable combination of the \acrshort{lme} family shape functions, and the proposal of an explicit predictor-corrector scheme. The advantages of
+suitable combination of the \acrshort{lme} family shape functions, and the proposal of a predictor-corrector scheme. The advantages of
 this approach will be illustrated through several demanding test cases on the elastic regime: the
 propagation of shock waves in an elastic bar and the response of a block of soil gradually loaded with gravitational forces.
 
 The article is organised as follows : Section \ref{sec:meshfree-methodology}
 is devoted to describe the meshfree methodology adopted in this
 research, first \acrshort{mpm} procedure is introduced in
-\ref{sec:derivation-mpm}, second the explicit predictor-corrector
+\ref{sec:derivation-mpm}, second the predictor-corrector
 time integration scheme is presented in \ref{sec:epc-algor-mpm}, and
 third \acrshort{lme} approximation scheme will be introduced in
 \ref{sec:local-max-ent}. In Section
@@ -446,22 +436,26 @@ procedure, and finally (iii) a Lagrangian advection of the
 particles. In consequence, \acrshort{mpm} can be regarded as a
 Lagrangian-Eulerian method where particles carry on all the physical
 information and a set of background nodes is employed to
-compute the equilibrium equation. In what follows, we will adopt the
-following convention: \textcolor{blue}{Any vectorial field is defined with an overarrow as $\vec{\square}$}. Three kind of subscripts or superscripts are used within paper. The subscript $\square_p$ is used to define a particle
-variable. While the subscript $\square_I$ is reserved in this notation for denoting nodal
-variables. And finally, the superscript $\square^{\psi}$ involves a
-virtual magnitude. For the operators, the convention is: $\dot{\square}$ and
-$\ddot{\square}$ for the first and second time derivative, $\square \otimes
-\square$ means the dyadic operator, $\square \cdot \square$ and $\square \colon \square$ means the
-first and second contraction of a tensor, $\Div{\square}$ denotes the
-divergence operator, and finally $\Grad{\square}$ and $\GradS{\square}$ denotes the gradient and its symmetric part. Following, the \acrshort{mpm} methodology, the explicit predictor-corrector scheme and \acrshort{lme} approximation shape functions are \textcolor{blue}{described} in subsection \ref{sec:derivation-mpm}, \ref{sec:epc-algor-mpm} and \ref{sec:local-max-ent} respectively.
+compute the equilibrium equation. \textcolor{blue}{The described methodology is sketched by the scheme of the figure~\ref{fig:MPM_algorithm}.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+%\sidecaption
+  \centering
+  \resizebox{0.8\hsize}{!}{
+    \includegraphics[width=\textwidth]{./Figures/MPM_scheme_horizontal}
+  }
+  \caption{Description of the three steps in \acrshort{mpm} standard algorithm.}
+  \label{fig:MPM_algorithm}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ In what follows, we will adopt the following convention: \textcolor{blue}{Any vector field is defined with an overarrow as $\vec{\square}$}. Three kind of subscripts or superscripts are  considered:  subscript $\square_p$ is used to define a particle variable,  subscript $\square_I$ is reserved for nodal variables, superscript $\square^{\psi}$ involves a virtual magnitude. \textcolor{blue}{The convention adopted for the operators is as folows:} $\dot{\square}$ and $\ddot{\square}$ \textcolor{blue}{are considered} for the first and second time derivative, $\square \otimes \square$ means the dyadic operator, $\square \cdot \square$ and $\square \colon \square$ \textcolor{blue}{are the single and double contraction of tensor index}, $\Div{\square}$ denotes the divergence operator, and finally $\Grad{\square}$ and $\GradS{\square}$ denotes the gradient and its symmetric part. Following, the \acrshort{mpm} methodology, the explicit predictor-corrector scheme and \acrshort{lme} approximation shape functions are \textcolor{red}{described} in subsection \ref{sec:derivation-mpm}, \ref{sec:epc-algor-mpm} and \ref{sec:local-max-ent} respectively.
 
 \subsection{Derivation of MPM procedure}
 \label{sec:derivation-mpm}
 
 In \acrshort{mpm} the continuum mechanics approach is considered. We consider a region \gls{domain} occupied by an elastic body like
 the sketched in the figure~\ref{fig:Continuum-solid}, and \gls{contour} the boundaries of the domain defined by $\partial \Omega
-= \Gamma_d \cup \Gamma_n$ and $\Gamma_d \cap  \Gamma_n = \emptyset$.
+= \Gamma_d \cup \Gamma_n$  \textcolor{red}{where} $\Gamma_d \cap  \Gamma_n = \emptyset$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 %\sidecaption
@@ -535,16 +529,16 @@ the following holds:
 Thus, equation~\eqref{eq:BalanceMomentum_wf}, together with
 \eqref{eq:Constitutive-equation} and
 \eqref{eq:Rho-material-derivative}, represents the weak form
-formulation of the problem. Next, we will discretise the set of equations of the mathematical model using a double discretisation procedure, see figure~\ref{fig:MPM-discretization}.\\
+\sout{formulation} of the problem. Next, we will discretise the set of equations of the mathematical model using a double discretisation procedure, see figure~\ref{fig:MPM-discretization}.\\
 
-\textcolor{blue}{First, the velocity field and the virtual displacements fields are discretised in a finite set of nodes $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^{2}$, where $\mathcal{B} = 1, \ldots, n_I$. An approximation of the continuum field can be obtained with the help of nodal values and an appropriate interpolation functions $N_I(\vec{x})$. Also spatial derivatives of those quantities, such as gradients and divergences, are computed through the support of the background set of nodes as}
+\textcolor{blue}{First, the velocity field and the virtual displacements fields are discretised in a finite set of nodes $\textbf{X} = \{ \vec{x}_I, I \in \mathcal{B} \} \subset \mathbb{R}^{2}$, where $\mathcal{B} = 1, \ldots, n_I$. An approximation of the continuum field can be obtained with the help of nodal values and \sout{an} appropriate interpolation functions $N_I(\vec{x})$. Also spatial derivatives of those quantities, such as gradients and divergences, are computed through the support of the background set of nodes as}
 \begin{align}
     \label{eq:variable_reconstruction}
     \varphi(\vec{x}) &= \sum_{I\ \in\ \mathcal{B}} N_I(\vec{x})\ \varphi_I \\
     \label{eq:grad_variable_reconstruction}
     \Grad{\varphi}(\vec{x}) &= \sum_{I\ \in\ \mathcal{B}} \varphi_I\ \otimes \Grad{N_I(\vec{x})}
 \end{align}
-\textcolor{blue}{Secondly, the continuum \gls{domain} is discretised with a finite set of material points (also denominated particles the manuscript) $\hat{\Omega} = \{ \vec{x}_p, p \in \mathcal{C} \} \subset \Omega$, where $\mathcal{C} = 1, \ldots, n_p$. Any particle field such as position, velocity, mass, volume and stress denoted by $\vec{x}_p$, $\vec{v}_p$, $m_p$, $V_p$ and $\tens{\sigma}_p$, respectively, are assigned to each material point. Furthermore, any particle field $\varphi_p$ can be approximated within the nodes in the neighbourhood of each particle, $\mathcal{B}_p \subset \mathcal{B}$, and evaluating the interpolation function in the position of each particle as}
+\textcolor{blue}{Secondly, the continuum \gls{domain} is discretised with a finite set of material points (also known as particles in this manuscript) $\hat{\Omega} = \{ \vec{x}_p, p \in \mathcal{C} \} \subset \Omega$, where $\mathcal{C} = 1, \ldots, n_p$. Any particle field such as position, velocity, mass, volume and stress denoted by $\vec{x}_p$, $\vec{v}_p$, $m_p$, $V_p$ and $\tens{\sigma}_p$, respectively, are assigned to each material point. Furthermore, any particle field $\varphi_p$ can be approximated within the nodes in the neighbourhood of each particle, $\mathcal{B}_p \subset \mathcal{B}$, and evaluating the interpolation function in the position of each particle as}
 \begin{align}
     \label{eq:particle_variable_reconstruction}
 \varphi_p &= \sum_{I\ \in\ \mathcal{B}_p} N_I(\vec{x}_p)\ \varphi_I \\
@@ -628,20 +622,7 @@ are solved with an explicit forward Euler algorithm. In the following subsection
 \label{sec:epc-algor-mpm}
 
 As stated previously, an explicit forward Euler algorithm has been utilized widely within the \acrshort{mpm} methodology. This scheme has been described in detail by many researchers
-\cite{Sulsky1994}, \cite{Bardenhagen2002}, \cite{thesis_Andersen_2009} and can be sketched by the scheme of the figure~\ref{fig:MPM_algorithm}.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}
-%\sidecaption
-  \centering
-  \resizebox{0.8\hsize}{!}{
-    \includegraphics[width=\textwidth]{./Figures/MPM_scheme_horizontal}
-  }
-  \caption{Description of the three steps in \acrshort{mpm} standard algorithm.}
-  \label{fig:MPM_algorithm}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Other authors have proposed many others time integration alternatives
-like \cite{Guilkey_2003,Charlton_2017,Tran2019e}. In the
+\cite{Sulsky1994}, \cite{Bardenhagen2002}, \cite{thesis_Andersen_2009}. Other authors have proposed many others time integration alternatives like \cite{Guilkey_2003,Charlton_2017,Tran2019e}. In the
 first publication on \acrshort{mpm} \cite{Sulsky1994}, \textcolor{blue}{the nodal acceleration
 was considered to update the particles by}
 \begin{equation}
@@ -697,8 +678,7 @@ scheme is proposed, which is based on the Newmark central differences explicit s
   \Matrix{K}_{IJ}\Vector{d}_{J} = \Vector{F}_{I}.
 \end{equation*}
 }
-The nodal \acrshort{mpm} stage allows to apply this method
-within the \acrshort{mpm} framework in a similar manner that the one
+\textcolor{blue}{The presence of a background grid of nodes} allows to apply this \textcolor{red}{integration} method within the \acrshort{mpm} framework in a similar manner that the one
 proposed by Tran~\textit{et al.}~\cite{Tran2019e}. By using the predictor \textcolor{blue}{step}  it is possible to calculate nodal velocities and update particles position employing nodal values
 of velocity and acceleration. 
 
@@ -748,7 +728,7 @@ and minimize the computational effort. Once nodal velocities are
 obtained, the \acrshort{dbc} are imposed over \gls{dirichlet-boundary}. \textcolor{blue}{Next the \textit{corrector}  step is introduced. Predicted nodal velocities obtained in \eqref{eq:Predictor-velocity-II}, are now corrected by the equation}
 \begin{equation}
   \label{eq:Corrector-velocity}
-  \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k+1}}{\tens{m}_I}.
+  \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k}}{\tens{m}_I}.
 \end{equation}
 Finally particle accelerations, velocities and positions are updated as,
 \begin{align}
@@ -764,7 +744,7 @@ Finally particle accelerations, velocities and positions are updated as,
         \frac{1}{2}\Delta t^2\ \frac{N_{Ip}\
         \vec{f}_{I}^{k}}{\tens{m}_I}.
 \end{align}
-\textcolor{blue}{In our proposed scheme, accelerations \eqref{eq:Update-lagrangian-pce-a} and velocities \eqref{eq:Update-lagrangian-pce-v} are computed with information coming from the predictor step. On the other hand, positions \eqref{eq:Update-lagrangian-pce-u} are evaluated with information coming from the corrector step in the velocity term, while acceleration term introduces information from the corrector. Therefore it shares clear similarities with the \textit{leapfrog scheme} \cite{Zhang_book_2016},} where position is not updated at full time step, but the velocity is updated at half time steps. Notice also that, with this approach, the calculation of nodal momentum values are not required. Due to its simplicity, the proposed scheme can be implemented with minor modifications over the standard forward Euler. The full implementation is summarized in the algorithm \ref{alg:the_npc_alg}.
+\textcolor{blue}{In the proposed scheme, accelerations \eqref{eq:Update-lagrangian-pce-a} and velocities \eqref{eq:Update-lagrangian-pce-v} are computed with information coming from the predictor step. On the other hand, positions \eqref{eq:Update-lagrangian-pce-u} are evaluated with information coming from the corrector step in the velocity term, while acceleration term introduces information from the corrector. Therefore, it can be appreciated some similarities with the \textit{leapfrog scheme} \cite{Zhang_book_2016},} where position is not updated at full time step, but the velocity is updated at half time steps. Notice also that, with this approach, the calculation of nodal momentum values are not required. Due to its simplicity, the proposed scheme can be implemented with minor modifications over the standard forward Euler. The full implementation is summarized in the algorithm \ref{alg:the_npc_alg}.
 
 \begin{algorithm}
 \caption{\acrfull{npc} scheme}
@@ -795,7 +775,7 @@ Finally particle accelerations, velocities and positions are updated as,
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Balance of forces calculation}.\\
     Calculate the total grid nodal forces by evaluating the right hand side of 
-    \eqref{eq:BalanceMomentum_wf_discretized} in the time step $k+1$.
+    \eqref{eq:BalanceMomentum_wf_discretized} with the information from the predictor step.
     In those nodes where $\Deriv{\vec{v}_I^{k}}{t} \big\rvert_{\Gamma_d} = 0$, the acceleration is fixed to zero and nodal forces are stored as reactions.\\
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
     \STATE \textbf{Explicit Newmark Corrector}.
@@ -843,8 +823,7 @@ functions of \textit{least width} the least biased shape functions.
   \label{eq:Shannon-entropy}
   H(p_1,\ldots,p_n) = -\sum^{N_n}_{I=1}{p_I\ \log p_I }
 \end{equation}
-where $p_I$ \textcolor{blue}{stands for probability of the random variable outcomes. By interpreting these probabilities as the shape functions $N_I(\vec{x})$ of an approximation scheme, equation \eqref{eq:Shannon-entropy} can be regarded as a measure of the uncertainty of the approximation. Thus, according to Jaynes's principle of maximum entropy \cite{Jaynes1957},} the least-biased approximation scheme is
-given by
+where $p_I$ \textcolor{blue}{stands for probability of the random variable outcomes. By interpreting these probabilities as the shape functions $N_I(\vec{x})$ of an approximation scheme, equation \eqref{eq:Shannon-entropy} can be regarded as a measure of the uncertainty of the approximation. Thus, according to Jaynes's principle of maximum entropy \cite{Jaynes1957},} the least-biased approximation scheme  \textcolor{red}{can be} given by
 \begin{align*}
   \label{eq:least-biased-approximation-scheme}
   \text{(LME)} \hspace{0.15cm} &\text{Maximize} \hspace{0.15cm} H(N_I) \equiv
@@ -1018,7 +997,7 @@ left quarter of the bar. Finally, the elastic parameters chosen for this test ar
   \label{fig:Dyka_Bar}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In the proposed example, the simulation extends from time zero up to \textcolor{blue}{$10^{-4}$} s.
+In the proposed example, the simulation extends from time zero up to \textcolor{red}{$10^{-4}$} s.
 This time interval allows the elastic wave to travel a distance of 2.6
 lengths of the bar. For the spatial discretisation, a set of seven nodal mesh sizes (0.1, 0.3325, 0.5, 1.0, 3.3325, 6.665, 10.0 millimeters) are considered. For each element a number of four particles was selected. In the initial layout, particles are located the exact quadrature points of a linear quadrilateral, with the exception of the \acrshort{ugimp} simulation, where gaps or overlap between
 voxels of each particle are not allowed. In those cases, each particle occupies the center of each cell quarter. For all simulations, time step is controlled by a Courant-Friedrichs-Levy condition of 0.1 , were the adopted celerity is computed as:
@@ -1032,7 +1011,7 @@ horizontal displacement of 0.03 millimeters, therefore
 a computational domain with an extra gap of 0.03 millimeters is
 required in order to accommodate the unconstrained displacement of the
 particles in the left border of the bar. This problem arises
-when the mesh size is small enough that relative displacement of the particles is larger \textcolor{red}{than} the distance to the border, so grid crossing phenomena could appear even in those cases with infinitesimal displacements. In this case, an analytical solution can be obtained through the characteristics method, described in the appendix~\ref{app:analytical_sol}. \textcolor{blue}{This section contains a large number of comparisons, which have been summarised in Table \ref{tab:dyka-cases-summarized}. First, the convergence of the time integration scheme for different mesh sizes, and the interpolation techniques is analyzed in  \ref{sec:Convergence-analysis}. Later, interest focuses on how each combination of interpolation technique and time integration scheme is able to damp the numerical noise by: the comparison between \acrshort{fe} and \acrshort{npc}, \ref{sec:FE-vs-NPC}; the response of the \acrshort{lme} approximation for different $\widehat{\gamma}$ values,  \ref{sec:Sensitive-analysis-gamma}; the comparison between the well-known \acrshort{ugimp} shape function against the \acrshort{lme} approximation, \ref{sec:LME-vs-uGIMP}, and finally a comparison between the \acrshort{otm} method \textit{versus} the \acrshort{mpm}, using the same time integration scheme and interpolation technique, \ref{sec:OTM-vs-MPM}.}
+when the mesh size is small enough that relative displacement of the particles is larger \textcolor{red}{than} the distance to the border, so grid crossing phenomena could appear even in those cases with infinitesimal displacements. In this case, an analytical solution can be obtained through the characteristics method, described in the appendix~\ref{app:analytical_sol}. \textcolor{blue}{This section contains a large number of comparisons, which have been summarised in Table \ref{tab:dyka-cases-summarized}. First, a convergence study regarding the integration scheme and interpolation technique is performed in  \ref{sec:Convergence-analysis}. Second, comparison of the capabilities of the \acrshort{npc} and \acrshort{fe} algorithms to damp out numerical noise is analysed in \ref{sec:FE-vs-NPC}. Third, the response of the \acrshort{lme} approximation for different $\widehat{\gamma}$ values is study in  \ref{sec:Sensitive-analysis-gamma}. Fourth, comparison between the well-known \acrshort{ugimp} shape function against the \acrshort{lme} approximation is performed in \ref{sec:LME-vs-uGIMP}. Finally, a comparison between the \acrshort{mpm} and the \acrfull{otm} method, using the same time integration scheme and interpolation technique, is conducted in \ref{sec:OTM-vs-MPM}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{sidewaystable}
@@ -1116,14 +1095,14 @@ of each particle. In Fig. \ref{fig:Dyka-error-evol} the evolution of the RMS is 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The right figure, with the \acrshort{npc} results, shows lower values of the estimated error, denoting the higher performance of this methodology. About the spatial discretisation, the \acrshort{lme} schemes show an error comparable to the obtained with the \acrshort{ugimp}, being even lower close to the \textit{grid-crossing region}. \textcolor{blue}{In this region the performance is punished with significant movement of the particles as far as the mesh size is reduced.}
 
-\textcolor{blue}{Figure \eqref{fig:Dyka-error-evol} also highlights how on the one hand the slope of the \acrshort{lme} error decreases monotonously for the lower $\widehat{\gamma}$ values up to the \textit{grid-crossing region}, where more error accumulates. And, on the other hand, the slope of the error is punished for the higher values of $\widehat{\gamma}$ in \acrshort{lme}, \acrshort{ugimp} or bi-linear shape functions. This occurs earlier than in the previous case, during the \textit{transition region}.}
+\textcolor{blue}{Figure \eqref{fig:Dyka-error-evol} also highlights how on the one hand the slope of the \acrshort{lme} error decreases monotonously for the lower $\widehat{\gamma}$ values up to the \textit{grid-crossing region} (dark grey region), where more error is accumulated. On the other hand, when higher values of $\widehat{\gamma}$ are considered in \acrshort{lme} and also for the \acrshort{ugimp} and the bi-linear shape functions, the change in error slope occurs in the \textit{transition region} (middle grey region). It might be concluded that the latter methods are more sensitive to grid crossing than the former}.
 
-\textcolor{blue}{Finally, notice the absence of \acrshort{ugimp} values for a mesh size of 0.3325 and 0.5 millimeters in figure \eqref{fig:Dyka-error-evol}. The reason is due to an unstable increasing of the error suffered during \acrshort{ugimp} simulations of these mesh sizes which yields unacceptable results. A feasible explanation for this phenomena could be the presence of numerical cancellation which could produce gaps between voxels. Further research should be done in this direction for getting a better comprehension of this phenomenon. Conversely, this shortcoming is not suffered by \acrshort{lme}, independently of regular or irregular nodal layout.}
+\textcolor{blue}{Finally,  the absence of \acrshort{ugimp} values for a mesh size of 0.3325 and 0.5 millimeters in figure \eqref{fig:Dyka-error-evol} is remarkable. The reason is due to an unstable increasing \sout{of the} error suffered during \acrshort{ugimp} simulations for these mesh sizes. A feasible explanation for this phenomena could be the presence of numerical cancellation which could produce gaps between voxels. Further research should be done in this direction for getting a better comprehension of this phenomenon. Conversely, this shortcoming is not suffered by \acrshort{lme}, independently of regular or irregular nodal layout.}
 
 \subsubsection{FE \textit{versus} NPC}
 \label{sec:FE-vs-NPC}
 
-\textcolor{blue}{A first comparison of the performance of both time integration schemes is presented in figure \ref{fig:Dyka-NPC-FE}. Both integration schemes show numerical oscillations with respect to the analytical solution all over the simulation time, being worse just after jump discontinuities. However, the \acrshort{npc} approach damps out these oscillations faster than the \acrshort{fe} scheme. The oscillations of the \acrshort{npc} almost disappeared before reaching subsequent jump discontinuities, while those of \acrshort{fe} do not. Moreover, oscillations of the \acrshort{fe} seems to increase further after each jump discontinuity and an unstable tendency can by foreseen. This unstable tendency is not appreciated in the \acrshort{npc} integration scheme.} 
+\textcolor{blue}{A \sout{first} comparison of the performance of both time integration schemes is presented in figure \ref{fig:Dyka-NPC-FE}. Both integration schemes show numerical oscillations with respect to the analytical solution all over the simulation time, being worse just after jump discontinuities. However, the \acrshort{npc} approach damps out these oscillations faster than the \acrshort{fe} scheme. The oscillations of the \acrshort{npc} almost disappeared before reaching subsequent jump discontinuities, while those of \acrshort{fe} do not. Moreover, oscillations of the \acrshort{fe} seems to increase further after each jump discontinuity and an unstable tendency can by foreseen. This unstable tendency is not appreciated in the \acrshort{npc} integration scheme.} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 %\sidecaption
@@ -1180,7 +1159,7 @@ solution sensibility depending on the regularization parameters, is the behaviou
 \subsubsection{OTM \textit{versus} MPM}
 \label{sec:OTM-vs-MPM}
 
-\textcolor{blue}{Finally, the \acrshort{mpm} approach is compared with the \acrfull{otm}~\cite{Li2010} method, both with same time integration scheme, spatial discretisation and interpolation technique. Results of the comparison are shown in figure \ref{fig:Dyka-OTM-MPM}. During the first half of the simulation both methods seem to perform in a similar way, but during the second half of the simulation after the elastic wave has traveled from the free border to
+\textcolor{blue}{Finally, the \acrshort{mpm} approach is compared with the \acrfull{otm}~\cite{Li2010} method, both with the same time integration scheme, spatial discretisation and interpolation technique. Results of the comparison are shown in figure \ref{fig:Dyka-OTM-MPM}. During the first half of the simulation both methods seem to perform in a similar way, but during the second half of the simulation after the elastic wave has traveled from the free border to
 the fixed one and back, in \acrshort{otm} the solution becomes more noisy than the one performed by \acrshort{mpm}.}   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
@@ -1229,7 +1208,7 @@ in order to reach the equilibrium state:
   \right.
 \end{equation}
 In order to get a stable solution, time step was conducted by a
-Courant number of 0.1. \textcolor{blue}{On the other hand, the explicit
+Courant number of 0.1. \textcolor{blue}{The explicit
 predictor-corrector scheme proposed in previous sections is employed.} For the initial spatial discretisation four particles per cell
 ($\Delta x = 2\ m$) were adopted. The initial layout of particles inside of the
 cell changes according to the approximation technique adopted. For the
@@ -1267,7 +1246,7 @@ the analytic value given by $\sigma_{yy} = \rho g h_y$.
 
 Figure~\ref{fig:vertical-displacement-block} shows the vertical
 displacement evolution of a point in the free surface of the
-block. \textcolor{blue}{This figure shows how the \acrshort{mpm} simulation, performed with a bi-linear interpolation technique (Q4), turns out to be unstable during cell-crossing and consequently fail. The \acrshort{lme} simulation was performed using two kinds of shape functions, one with a low value of the dimensionless parameter, $\widehat{\gamma} = 0.8$, and other with a larger value of it, $\widehat{\gamma} = 3.0$. Both simulations behave with minimal oscillations; also not appreciable differences are observed between them. The \acrshort{ugimp} simulation is more stable than the one performed with the \acrshort{mpm}-Q4 and behaves like the \acrshort{lme} simulations. Finally, these results are compared against two contrasted techniques. The \acrshort{fem} solution has been done with a regular mesh of linear quadrilaterals, meanwhile the \acrshort{otm} solution has been done with \acrshort{lme} approximation. The final displacement in both solutions oscillates around a value of 0.59 m.} 
+block. \textcolor{blue}{No results can be appreciated for the \acrshort{mpm} simulation with a bi-linear interpolation technique (Q4) as a clear unstable behaviour is observed within the first time steps.The \acrshort{lme} simulation was performed using two kinds of shape functions, one with a low value of the dimensionless parameter, $\widehat{\gamma} = 0.8$, and other with a larger value of it, $\widehat{\gamma} = 3.0$. Both simulations behave with minimal oscillations and no appreciable differences are observed between them. The \acrshort{ugimp} simulation is more stable than the one performed with the \acrshort{mpm}-Q4 and behaves like the \acrshort{lme} simulations. Finally, these results are compared against two contrasted techniques. The \acrshort{fem} solution has been done with a regular mesh of linear quadrilaterals, meanwhile the \acrshort{otm} solution has been done with \acrshort{lme} approximation. The final displacement in both solutions oscillates around a value of 0.59 m.} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}
 %\sidecaption
@@ -1285,14 +1264,14 @@ block. \textcolor{blue}{This figure shows how the \acrshort{mpm} simulation, per
 \subsection{2D elastic wave propagation}
 \label{sec:Velocity-waves-elastic-domain}
 
-\textcolor{blue}{The following test is intended to validate the ability of the discussed time integration schemes in order to reproduce the wave propagation in 2D. The impact of an elastic square plate against a vertical wall is assessed. The square plate dimensions are 50 x 50 m and their elastic parameters are:
+\textcolor{blue}{This benchmark has been conveniently adapted from the one proposed by  Hammerquist \& Nairn (2017)~\cite{HAMMERQUIST2017724}, it is intended to validate the ability of the discussed time integration schemes in order to reproduce the wave propagation in 2D. The impact of an elastic square plate against a vertical wall is assessed. The square plate dimensions are 50 x 50 m and their elastic parameters are:
 \begin{itemize} 
 \item  Initial density : $20\ kg/m^3$
 \item  Poisson ratio : $0.3$
 \item  Elastic modulus : $0.1\ MPa$
 \end{itemize}
 }
-\textcolor{blue}{The background set of nodes is composed by a cartesian grid with an uniform spatial discretisation of 1 m. Four material points per cell are considered. The Courant number is fixed to 0.1 during the whole simulation and $\text{LME}_{3.0}$ shape functions are employed. A horizontal velocity of the square plate of $\text{V}_0 = 1.0 m/s$ until the shock against the obstacle, which has been modelled as a set of nodes with prescribed velocity equal to zero. Stress waves are produced by the aforementioned shock what causes the square to bounce back. Both \acrshort{npc} and \acrshort{fe} schemes are compared. Spatial distribution of the velocity field inside the square plate obtained with both schemes at different times are given in figure ~\ref{fig:Magnitude_velocity_impact_square}}. 
+\textcolor{blue}{The background set of nodes is composed by a cartesian grid with an uniform spatial discretisation of 1 m. Four material points per cell are considered. The Courant number is fixed to 0.1 during the whole simulation and $\text{LME}_{3.0}$ shape functions are employed. A horizontal velocity of the square plate of $\text{V}_0 = 1.0 m/s$ is considered until the the plate impacts against the obstacle generating stress waves. The obstacle is modelled as a set of nodes with prescribed velocity equal to zero. Both \acrshort{npc} and \acrshort{fe} schemes are compared. Spatial distribution of the velocity field inside the square plate obtained with both schemes at different times are given in figure ~\ref{fig:Magnitude_velocity_impact_square}}. 
 %%%%%%%%%%%%%%%%
 \begin{figure}
 %\sidecaption
@@ -1304,7 +1283,7 @@ block. \textcolor{blue}{This figure shows how the \acrshort{mpm} simulation, per
   \label{fig:Magnitude_velocity_impact_square}
 \end{figure}
 %%%%%%%%%%%%%%%% 
-\textcolor{blue}{At early times, \acrshort{npc} and \acrshort{fe} behvae in a similar manner. However, at later times, the \acrshort{fe} scheme introduces significant numerical noise compared with the \acrshort{npc} one. At the end of the simulation, the filtering process when \acrshort{npc} is used leads to a negligible loss of mechanical energy (about 0.1\%).} 
+\textcolor{blue}{At early times, \acrshort{npc} and \acrshort{fe} behave in a similar manner. However, at later times, the \acrshort{fe} scheme introduces significant numerical noise compared with the \acrshort{npc} one. } 
 
 \textcolor{blue}{Finally, an unstructured background mesh is proposed in order to validate the performance of the \acrshort{lme} shape function against the \acrshort{ugimp} one.}
 %%%%%%%%%%%%%%%%
@@ -1320,22 +1299,15 @@ block. \textcolor{blue}{This figure shows how the \acrshort{mpm} simulation, per
 %%%%%%%%%%%%%%%%
 \textcolor{blue}{ As it is observed in figure~\ref{fig:Magnitude_velocity_impact_square_structured_unestructured}, the \acrshort{lme} approximation preserves the solution even though the mesh is not structured. Meanwhile, the \acrshort{ugimp} is not able to deal with the unstructured mesh as expected. %It goes without saying that there is no point in using unstructured meshes in this type of situation. 
 %Despite this, 
-Thus, the \acrshort{lme} approach shows remarkable robustness in dealing with an unstructured mesh. This is useful when more complex domains are to be discretised since the employment of  structured mesh is not possible.}
+Thus, the \acrshort{lme} approach adopted in the present work shows a remarkable robustness \sout{in} dealing with unstructured meshes. From this last comparison it can be deduced that \acrshort{lme}  might be an adequate choice approximation technique when dealing with complex domains where a structured mesh is usually not possible .}
 
 \section{Conclusions}
 \label{sec:conclusions}
-We have proposed in this paper an enhanced methodology which improves \acrfull{mpm} behaviour in fast dynamics problems. Different time and space discretisation techniques have been presented and their performance being compared agains other approaches in three benchmark problems.
-First, a novel time integration scheme for \acrshort{mpm} has been carried out. The \acrfull{npc}. The \acrshort{npc} has been shown to be a highly efficient alternative for demanding fast dynamics problems. In the literature, several approaches of the \acrshort{npc} are proposed in order to compete on accuracy with expensive implicit time integration algorithms. The main achievement of the proposed time discretisation has been observed within the Dyka's bar \ref{sec:dyka-bar}, obtaining lower values of the error than the ones obtained with the \acrfull{fe} scheme.
-Also, the procedure employed to design the \acrshort{npc} algorithm opens the
-door to revisit a huge variety of time integration schemes developed
-originally for \acrshort{fem}, which can be implemented within a \acrshort{mpm} framework with the suitable modifications. In addition to the implementation of enhanced time integration schemes, further research can be done in the analysis of the good performance of the algorithm within non-linear solutions, such as the coupling between different phases or the non-linear constitutive behaviour of the materials: the employment of this scheme to strengthen the localization capabilities of \acrshort{mpm} for viscoplastic materials is on the scope of this research line. The comparison with traditional time schemes in the non-linear field will improve the formal understanding of the proposed methodology.
+We have proposed in this paper an enhanced methodology which improves \acrfull{mpm} behaviour in fast dynamic problems.\textcolor{blue}{The proposed improvements implemented in the present work are twofold: First, the \acrfull{npc} time integration algorithm to update particles' information, and second, the \acrfull{lme} approximation scheme to define the shape functions. The performance of both improvements has been assessed with three different benchmarks: Dyka's bar, a solid block under gravity loading and 2D elastic waves propagation.}
 
-On the other hand, the spatial discretisation of the \acrshort{mpm} is enhanced thanks to the powerful skills of the \acrfull{lme} approximation scheme, which has been validated as a robust and versatile tool in the \acrshort{mpm} framework. It also comes up as a promising alternative to other approximation techniques, developed within the \acrshort{mpm} framework, in order to overcome grid crossing limitations and to avoid the constriction of the \acrshort{ugimp} of a regular mesh or a high density of particles per cell \textcolor{blue}{as was observed in section \ref{sec:Velocity-waves-elastic-domain}}. Several research lines of the \acrshort{lme} scheme dive into the improvement of the methodology, focusing in the optimization of the calculation of the shape function and the possibility of adapting the parameter $\beta(\vec{x})$ through the finite strain
-tensor in order to align the shape functions in the principal strain
-direction to select the most suitable set of nodes adapted to the strain as well as the possibility of adapting the value of $\beta$ to solve the equations
-\acrshort{fem}-like of meshfree-like depending of how behaves the
-region. Together with the implementation of non-linear behaviours, previously mentioned, challenging scenarios could be reproduced, being the main purpose of the research line the simultaneous simulation of both initialization and
-propagation stages of fast landslides.
+\textcolor{blue}{The main achievements of the proposed time discretisation have been observed within Dyka's bar \ref{sec:dyka-bar}, where lower error values are obtained compared with the \acrfull{fe} scheme ones. Furthermore, the \acrshort{npc} approach has shown a more stable performance compared with the \acrshort{fe} scheme, being able to dump out spurious numerical oscillations where the \acrshort{fe} scheme could not}. As per the promising results obtained with the \acrshort{npc} algorithm, the procedure employed in the present work opens the possibility to revisit a huge variety of time integration schemes developed originally for \acrshort{fem}, which can be implemented within a \acrshort{mpm} framework with few modifications. In addition to the implementation of enhanced time integration schemes, further research can be done in the analysis of the good performance of the algorithm within non-linear models, both material and geometric nonlinearity.
+
+Regarding the spatial discretisation the \acrfull{lme} approximation scheme has been validated as a robust and versatile tool in the \acrshort{mpm} framework. It also comes up as a promising alternative to other approximation techniques, developed within the \acrshort{mpm} framework, in order to overcome grid crossing limitations and to avoid the constriction of the \acrshort{ugimp} of a regular mesh or a high density of particles per cell \textcolor{blue}{as it was observed in section \ref{sec:Velocity-waves-elastic-domain}}. Several research lines of the \acrshort{lme} scheme dive into the improvement of the methodology, focusing in the optimization of the calculation of the shape function and the possibility of adapting the parameter $\beta(\vec{x})$ through the \textcolor{red}{deformation gradient} in order to align the shape functions in the principal strain direction to select the most suitable set of nodes adapted to the strain. \textcolor{blue}{Another possibility could be to adapt}  the value of $\beta$ to solve the equations \acrshort{fem}-like \textcolor{red}{or} meshfree-like depending  \textcolor{red}{on the behaviour of the region}. Together with the implementation of non-linear behaviours, previously mentioned, challenging scenarios could be reproduced, being the main purpose of the research line the simultaneous simulation of both initialization and propagation stages of fast landslides.
 
 % 
 \section*{Conflict of interest}
