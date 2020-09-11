@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.23)  11 SEP 2020 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.23)  11 SEP 2020 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,62 +1184,57 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 297
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (7.03625pt too wide) in paragraph at lines 313--314
-\OT1/cmr/m/n/12 strain fast dy-namic [][]MPM[] sim-u-la-tions |   []   |   []  
- |   []   |   []   |   []
- []
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 319.
+(hyperref)                removing `superscript' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 319.
+(hyperref)                removing `math shift' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 319.
+(hyperref)                removing `math shift' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 319.
+(hyperref)                removing `superscript' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 319.
+(hyperref)                removing `math shift' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 319.
+(hyperref)                removing `\@ifnextchar' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 319.
+(hyperref)                removing `math shift' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 319.
+(hyperref)                removing `superscript' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 319.
+(hyperref)                removing `math shift' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 319.
+(hyperref)                removing `math shift' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 319.
+(hyperref)                removing `superscript' on input line 320.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 319.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 319.
+(hyperref)                removing `math shift' on input line 320.
 
 [1
 
@@ -1263,22 +1258,22 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 File: ./Figures/MPM_scheme_horizontal.pdf Graphic file (type pdf)
 <use ./Figures/MPM_scheme_horizontal.pdf>
 Package pdftex.def Info: ./Figures/MPM_scheme_horizontal.pdf  used on input lin
-e 446.
+e 447.
 (pdftex.def)             Requested size: 390.0pt x 123.25203pt.
  [5]
 <Figures/Continuum-solid.png, id=263, 789.6702pt x 574.7874pt>
 File: Figures/Continuum-solid.png Graphic file (type png)
 <use Figures/Continuum-solid.png>
-Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 464.
+Package pdftex.def Info: Figures/Continuum-solid.png  used on input line 465.
 (pdftex.def)             Requested size: 390.0pt x 283.876pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.491 \begin{equation}
+l.492 \begin{equation}
                        <./Figures/MPM_scheme_horizontal.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 527--533
+Underfull \hbox (badness 10000) in paragraph at lines 528--533
 
  []
 
@@ -1961,7 +1956,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1505.
 Here is how much of TeX's memory you used:
  29117 strings out of 480608
  559312 string characters out of 5903630
- 967513 words of memory out of 5000000
+ 967507 words of memory out of 5000000
  44090 multiletter control sequences out of 15000+600000
  549236 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2073,7 +2068,7 @@ dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/
 texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on LME-MPM.pdf (42 pages, 46736737 bytes).
+Output written on LME-MPM.pdf (42 pages, 46735378 bytes).
 PDF statistics:
  1203 PDF objects out of 1440 (max. 8388607)
  1072 compressed objects within 11 object streams
