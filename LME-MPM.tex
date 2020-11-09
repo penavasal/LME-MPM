@@ -719,13 +719,13 @@ procedures described by Zienkiewicz \& Zhu \cite{ZZ1992_I} (\textit{ZZ}) in the 
 \textcolor{blue}{However}, this way of computing the predictor stage can introduce instabilities due to numerical cancellation likewise the original Sulky algorithm. This \textcolor{blue}{issue} can be avoided easily by the equivalent formulation inspired in the \textit{ZZ} technique,
 {\color{red}
 \begin{equation}
-  \label{eq:Predictor-velocity-II}
+  \label{eq:Predictor-velocity-III}
   \vec{v}_{I}^{pred} =  \sum_{p\ \in\ \mathcal{C}} \frac{ N_{Ip} m_p (\vec{v}_p^k + (1 - \gamma)\ \Delta t\ \vec{a}_p^k)}{m_I}.
 \end{equation}
 }
 This way of computing the nodal predictor is numerically stable
 and minimize the computational effort. Once nodal velocities are
-obtained, the \acrshort{dbc} are imposed over \gls{dirichlet-boundary}. \textcolor{blue}{Next the \textit{corrector}  step is introduced. Predicted nodal velocities obtained in \eqref{eq:Predictor-velocity-II}, are now corrected by the equation}
+obtained, the \acrshort{dbc} are imposed over \gls{dirichlet-boundary}. \textcolor{blue}{Next the \textit{corrector}  step is introduced. Predicted nodal velocities obtained in \eqref{eq:Predictor-velocity-III}, are now corrected by the equation}
 \begin{equation}
   \label{eq:Corrector-velocity}
   \vec{v}_{I}^{k+1} = \vec{v}_{I}^{pred} + \gamma\ \Delta t\ \frac{\vec{f}_{I}^{k}}{\tens{m}_I}.
@@ -812,8 +812,7 @@ the principle of maximum-entropy (\textit{max-ent}) statistical
 inference stated by \cite{Jaynes1957}, and the Delaunay triangulation
 which ensures the minimal width of the shape function. 
 
-This approximation scheme represents an optimal compromise, in the sense of
-Pareto, between the \textit{unbiased statistical inference} based on
+This approximation scheme represents an optimal compromise, in the sense of Pareto, between the \textit{unbiased statistical inference} based on
 the nodal data which leads to the principle of \textit{Maximum-Entropy}
 stated by Jaynes \cite{Jaynes1957}, and the definition of local shape
 functions of \textit{least width} the least biased shape functions.
@@ -1501,7 +1500,7 @@ By imposing this boundary conditions, the problem is fully defined as in \cite{D
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % name your BibTeX data base
-\bibliography{Biblio/Biblio}
+\bibliography{Biblio}
 \end{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
