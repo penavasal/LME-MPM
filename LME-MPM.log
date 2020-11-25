@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.23)  9 NOV 2020 11:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.23)  25 NOV 2020 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1092,11 +1092,11 @@ Package: glossary-tree 2020/03/19 v4.46 (NLCT)
 \glo@main@file=\write6
 \openout6 = `LME-MPM.glo'.
 
-Package glossaries Info: Writing glossary file LME-MPM.glo on input line 81.
+Package glossaries Info: Writing glossary file LME-MPM.glo on input line 80.
 \glo@acronym@file=\write7
 \openout7 = `LME-MPM.acn'.
 
-Package glossaries Info: Writing glossary file LME-MPM.acn on input line 81.
+Package glossaries Info: Writing glossary file LME-MPM.acn on input line 80.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
@@ -1106,22 +1106,22 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (./LME-MPM.aux)
 \openout1 = `LME-MPM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 257.
-LaTeX Font Info:    ... okay on input line 257.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 256.
+LaTeX Font Info:    ... okay on input line 256.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 256.
+LaTeX Font Info:    ... okay on input line 256.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 256.
+LaTeX Font Info:    ... okay on input line 256.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 256.
+LaTeX Font Info:    ... okay on input line 256.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 256.
+LaTeX Font Info:    ... okay on input line 256.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 256.
+LaTeX Font Info:    ... okay on input line 256.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 256.
+LaTeX Font Info:    ... okay on input line 256.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 256.
+LaTeX Font Info:    ... okay on input line 256.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1146,7 +1146,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box102
-Package hyperref Info: Link coloring OFF on input line 257.
+Package hyperref Info: Link coloring OFF on input line 256.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1160,22 +1160,22 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count352
 )
-LaTeX Info: Redefining \ref on input line 257.
-LaTeX Info: Redefining \pageref on input line 257.
-LaTeX Info: Redefining \nameref on input line 257.
+LaTeX Info: Redefining \ref on input line 256.
+LaTeX Info: Redefining \pageref on input line 256.
+LaTeX Info: Redefining \nameref on input line 256.
  (./LME-MPM.out) (./LME-MPM.out)
 \@outlinefile=\write8
 \openout8 = `LME-MPM.out'.
 
  ABD: EveryShipout initializing macros
 (./LME-MPM.glsdefs)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 297
+LaTeX Font Info:    Trying to load font information for U+msa on input line 296
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 297
+LaTeX Font Info:    Trying to load font information for U+msb on input line 296
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1183,64 +1183,64 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 320.
+(hyperref)                removing `superscript' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 320.
+(hyperref)                removing `superscript' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 320.
+(hyperref)                removing `\@ifnextchar' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 320.
+(hyperref)                removing `superscript' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 320.
+(hyperref)                removing `superscript' on input line 319.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 320.
+(hyperref)                removing `math shift' on input line 319.
 
 [1
 
 \openout5 = `LME-MPM.ist'.
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (28.78499pt too wide) has occurred while \output is active
+Overfull \hbox (33.89607pt too wide) has occurred while \output is active
 \OT1/cmr/m/it/10 Preprint submitted to Computer Methods in Applied Mechanics an
-d Engineering November 9, 2020
+d Engineering November 25, 2020
  []
 
 
@@ -1251,26 +1251,26 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [2
 
 ] [3] [4]
-<./Figures-MPM-scheme-horizontal.pdf, id=241, 1093.2543pt x 345.51567pt>
+<./Figures-MPM-scheme-horizontal.pdf, id=238, 1093.2543pt x 345.51567pt>
 File: ./Figures-MPM-scheme-horizontal.pdf Graphic file (type pdf)
 <use ./Figures-MPM-scheme-horizontal.pdf>
 Package pdftex.def Info: ./Figures-MPM-scheme-horizontal.pdf  used on input lin
-e 447.
+e 446.
 (pdftex.def)             Requested size: 390.0pt x 123.25203pt.
  [5]
-<Figures-Continuum-solid.png, id=263, 789.6702pt x 574.7874pt>
+<Figures-Continuum-solid.png, id=260, 789.6702pt x 574.7874pt>
 File: Figures-Continuum-solid.png Graphic file (type png)
 <use Figures-Continuum-solid.png>
-Package pdftex.def Info: Figures-Continuum-solid.png  used on input line 465.
+Package pdftex.def Info: Figures-Continuum-solid.png  used on input line 464.
 (pdftex.def)             Requested size: 390.0pt x 283.876pt.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.492 \begin{equation}
+l.491 \begin{equation}
                        <./Figures-MPM-scheme-horizontal.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 528--533
+Underfull \hbox (badness 10000) in paragraph at lines 527--532
 
  []
 
@@ -1279,120 +1279,120 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.535 \begin{align}
+l.534 \begin{align}
                     <./Figures-Continuum-solid.png>]
-<Figures-Mesh-particles-back.png, id=318, 775.2162pt x 819.06pt>
+<Figures-Mesh-particles-back.png, id=315, 775.2162pt x 819.06pt>
 File: Figures-Mesh-particles-back.png Graphic file (type png)
 <use Figures-Mesh-particles-back.png>
 Package pdftex.def Info: Figures-Mesh-particles-back.png  used on input line 55
-7.
+6.
 (pdftex.def)             Requested size: 390.0pt x 412.06606pt.
  [8] [9pdfTeX warning (ext4): destination with the same identifier (name{figure
 .3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.597 \begin{equation}
+l.596 \begin{equation}
                        <./Figures-Mesh-particles-back.png>] [10] [11] [12]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 750.
+put line 749.
 
 
-LaTeX Warning: Float too large for page by 21.85574pt on input line 800.
+LaTeX Warning: Float too large for page by 21.85574pt on input line 799.
 
 [13] [14] [15] [16]
-<Figures-MPM-Shape-Fun.png, id=530, 772.8875pt x 667.49374pt>
+<Figures-MPM-Shape-Fun.png, id=527, 772.8875pt x 667.49374pt>
 File: Figures-MPM-Shape-Fun.png Graphic file (type png)
 <use Figures-MPM-Shape-Fun.png>
-Package pdftex.def Info: Figures-MPM-Shape-Fun.png  used on input line 921.
+Package pdftex.def Info: Figures-MPM-Shape-Fun.png  used on input line 920.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures-MPM-Shape-Fun-dx.png, id=531, 772.8875pt x 671.50874pt>
+<Figures-MPM-Shape-Fun-dx.png, id=528, 772.8875pt x 671.50874pt>
 File: Figures-MPM-Shape-Fun-dx.png Graphic file (type png)
 <use Figures-MPM-Shape-Fun-dx.png>
-Package pdftex.def Info: Figures-MPM-Shape-Fun-dx.png  used on input line 921.
+Package pdftex.def Info: Figures-MPM-Shape-Fun-dx.png  used on input line 920.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures-MPM-Shape-Fun-dy.png, id=532, 772.8875pt x 671.50874pt>
+<Figures-MPM-Shape-Fun-dy.png, id=529, 772.8875pt x 671.50874pt>
 File: Figures-MPM-Shape-Fun-dy.png Graphic file (type png)
 <use Figures-MPM-Shape-Fun-dy.png>
-Package pdftex.def Info: Figures-MPM-Shape-Fun-dy.png  used on input line 921.
+Package pdftex.def Info: Figures-MPM-Shape-Fun-dy.png  used on input line 920.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures-LME-17-3-Shape-Fun.png, id=533, 772.8875pt x 667.49374pt>
+<Figures-LME-17-3-Shape-Fun.png, id=530, 772.8875pt x 667.49374pt>
 File: Figures-LME-17-3-Shape-Fun.png Graphic file (type png)
 <use Figures-LME-17-3-Shape-Fun.png>
-Package pdftex.def Info: Figures-LME-17-3-Shape-Fun.png  used on input line 928
+Package pdftex.def Info: Figures-LME-17-3-Shape-Fun.png  used on input line 927
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures-LME-17-3-Shape-Fun-dx.png, id=534, 772.8875pt x 671.50874pt>
+<Figures-LME-17-3-Shape-Fun-dx.png, id=531, 772.8875pt x 671.50874pt>
 File: Figures-LME-17-3-Shape-Fun-dx.png Graphic file (type png)
 <use Figures-LME-17-3-Shape-Fun-dx.png>
 Package pdftex.def Info: Figures-LME-17-3-Shape-Fun-dx.png  used on input line 
-928.
+927.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures-LME-17-3-Shape-Fun-dy.png, id=535, 772.8875pt x 671.50874pt>
+<Figures-LME-17-3-Shape-Fun-dy.png, id=532, 772.8875pt x 671.50874pt>
 File: Figures-LME-17-3-Shape-Fun-dy.png Graphic file (type png)
 <use Figures-LME-17-3-Shape-Fun-dy.png>
 Package pdftex.def Info: Figures-LME-17-3-Shape-Fun-dy.png  used on input line 
-928.
+927.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures-GIMP-Shape-Fun.png, id=536, 772.8875pt x 667.49374pt>
+<Figures-GIMP-Shape-Fun.png, id=533, 772.8875pt x 667.49374pt>
 File: Figures-GIMP-Shape-Fun.png Graphic file (type png)
 <use Figures-GIMP-Shape-Fun.png>
-Package pdftex.def Info: Figures-GIMP-Shape-Fun.png  used on input line 935.
+Package pdftex.def Info: Figures-GIMP-Shape-Fun.png  used on input line 934.
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures-GIMP-Shape-Fun-dx.png, id=537, 772.8875pt x 671.50874pt>
+<Figures-GIMP-Shape-Fun-dx.png, id=534, 772.8875pt x 671.50874pt>
 File: Figures-GIMP-Shape-Fun-dx.png Graphic file (type png)
 <use Figures-GIMP-Shape-Fun-dx.png>
-Package pdftex.def Info: Figures-GIMP-Shape-Fun-dx.png  used on input line 935.
+Package pdftex.def Info: Figures-GIMP-Shape-Fun-dx.png  used on input line 934.
 
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures-GIMP-Shape-Fun-dy.png, id=538, 772.8875pt x 671.50874pt>
+<Figures-GIMP-Shape-Fun-dy.png, id=535, 772.8875pt x 671.50874pt>
 File: Figures-GIMP-Shape-Fun-dy.png Graphic file (type png)
 <use Figures-GIMP-Shape-Fun-dy.png>
-Package pdftex.def Info: Figures-GIMP-Shape-Fun-dy.png  used on input line 935.
+Package pdftex.def Info: Figures-GIMP-Shape-Fun-dy.png  used on input line 934.
 
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures-LME-10-0-Shape-Fun.png, id=539, 772.8875pt x 667.49374pt>
+<Figures-LME-10-0-Shape-Fun.png, id=536, 772.8875pt x 667.49374pt>
 File: Figures-LME-10-0-Shape-Fun.png Graphic file (type png)
 <use Figures-LME-10-0-Shape-Fun.png>
-Package pdftex.def Info: Figures-LME-10-0-Shape-Fun.png  used on input line 940
+Package pdftex.def Info: Figures-LME-10-0-Shape-Fun.png  used on input line 939
 .
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures-LME-10-0-Shape-Fun-dx.png, id=540, 772.8875pt x 671.50874pt>
+<Figures-LME-10-0-Shape-Fun-dx.png, id=537, 772.8875pt x 671.50874pt>
 File: Figures-LME-10-0-Shape-Fun-dx.png Graphic file (type png)
 <use Figures-LME-10-0-Shape-Fun-dx.png>
 Package pdftex.def Info: Figures-LME-10-0-Shape-Fun-dx.png  used on input line 
-940.
+939.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures-LME-10-0-Shape-Fun-dy.png, id=541, 772.8875pt x 671.50874pt>
+<Figures-LME-10-0-Shape-Fun-dy.png, id=538, 772.8875pt x 671.50874pt>
 File: Figures-LME-10-0-Shape-Fun-dy.png Graphic file (type png)
 <use Figures-LME-10-0-Shape-Fun-dy.png>
 Package pdftex.def Info: Figures-LME-10-0-Shape-Fun-dy.png  used on input line 
-940.
+939.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures-LME-5-0-Shape-Fun.png, id=542, 772.8875pt x 667.49374pt>
+<Figures-LME-5-0-Shape-Fun.png, id=539, 772.8875pt x 667.49374pt>
 File: Figures-LME-5-0-Shape-Fun.png Graphic file (type png)
 <use Figures-LME-5-0-Shape-Fun.png>
-Package pdftex.def Info: Figures-LME-5-0-Shape-Fun.png  used on input line 947.
+Package pdftex.def Info: Figures-LME-5-0-Shape-Fun.png  used on input line 946.
 
 (pdftex.def)             Requested size: 54.59976pt x 47.14693pt.
-<Figures-LME-5-0-Shape-Fun-dx.png, id=543, 772.8875pt x 671.50874pt>
+<Figures-LME-5-0-Shape-Fun-dx.png, id=540, 772.8875pt x 671.50874pt>
 File: Figures-LME-5-0-Shape-Fun-dx.png Graphic file (type png)
 <use Figures-LME-5-0-Shape-Fun-dx.png>
 Package pdftex.def Info: Figures-LME-5-0-Shape-Fun-dx.png  used on input line 9
-47.
+46.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
-<Figures-LME-5-0-Shape-Fun-dy.png, id=544, 772.8875pt x 671.50874pt>
+<Figures-LME-5-0-Shape-Fun-dy.png, id=541, 772.8875pt x 671.50874pt>
 File: Figures-LME-5-0-Shape-Fun-dy.png Graphic file (type png)
 <use Figures-LME-5-0-Shape-Fun-dy.png>
 Package pdftex.def Info: Figures-LME-5-0-Shape-Fun-dy.png  used on input line 9
-47.
+46.
 (pdftex.def)             Requested size: 54.59976pt x 47.43051pt.
  [17] [18pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.962 
+l.961 
        <./Figures-MPM-Shape-Fun.png (PNG copy)> <./Figures-MPM-Shape-Fun-dx.png
  (PNG copy)> <./Figures-MPM-Shape-Fun-dy.png (PNG copy)> <./Figures-LME-17-3-Sh
 ape-Fun.png (PNG copy)> <./Figures-LME-17-3-Shape-Fun-dx.png (PNG copy)> <./Fig
@@ -1404,35 +1404,35 @@ opy)> <./Figures-GIMP-Shape-Fun-dx.png (PNG copy)> <./Figures-GIMP-Shape-Fun-dy
 .png (PNG copy)> <./Figures-LME-5-0-Shape-Fun-dy.png (PNG copy)>] [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 975.
+(hyperref)                removing `\begingroup' on input line 974.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 975.
+(hyperref)                removing `\<let>-command' on input line 974.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 975.
+(hyperref)                removing `\NAT@ctype' on input line 974.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 975.
+(hyperref)                removing `\z@' on input line 974.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 975.
+(hyperref)                removing `\let' on input line 974.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 975.
+(hyperref)                removing `\let' on input line 974.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 975.
+(hyperref)                removing `\new@ifnextchar' on input line 974.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\textquotesingle' on input line 975.
+(hyperref)                removing `\textquotesingle' on input line 974.
 
 (./Figures-Dyka-bar.tex
 Missing character: There is no ; in font nullfont!
@@ -1454,104 +1454,51 @@ Missing character: There is no ; in font nullfont!
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1015 
+l.1014 
        ]
-<./Figures-Error-evol.png, id=631, 745.8264pt x 443.7378pt>
+<./Figures-Error-evol.png, id=628, 745.8264pt x 443.7378pt>
 File: ./Figures-Error-evol.png Graphic file (type png)
 <use ./Figures-Error-evol.png>
-Package pdftex.def Info: ./Figures-Error-evol.png  used on input line 1084.
+Package pdftex.def Info: ./Figures-Error-evol.png  used on input line 1083.
 (pdftex.def)             Requested size: 390.0pt x 232.03822pt.
  [21] [22pdfTeX warning (ext4): destination with the same identifier (name{tabl
 e.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1099 
+l.1098 
        ] [23pdfTeX warning (ext4): destination with the same identifier (name{f
 igure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1099 
+l.1098 
         <./Figures-Error-evol.png>]
-<./Figures-Velocity-FE-vs-PCE-CFL-01.png, id=671, 617.30624pt x 462.72874pt>
+<./Figures-Velocity-FE-vs-PCE-CFL-01.png, id=668, 617.30624pt x 462.72874pt>
 File: ./Figures-Velocity-FE-vs-PCE-CFL-01.png Graphic file (type png)
 <use ./Figures-Velocity-FE-vs-PCE-CFL-01.png>
 Package pdftex.def Info: ./Figures-Velocity-FE-vs-PCE-CFL-01.png  used on input
- line 1112.
+ line 1111.
 (pdftex.def)             Requested size: 390.0pt x 292.34674pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\setbox' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\hbox' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\textstyle' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathaccent' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gamma' on input line 1120.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1120.
-
-<./Figures-Velocity-LME-gamma-comparative.png, id=679, 651.43375pt x 889.3225pt
+<./Figures-Velocity-LME-gamma-comparative.png, id=676, 651.43375pt x 889.3225pt
 >
 File: ./Figures-Velocity-LME-gamma-comparative.png Graphic file (type png)
 <use ./Figures-Velocity-LME-gamma-comparative.png>
 Package pdftex.def Info: ./Figures-Velocity-LME-gamma-comparative.png  used on 
-input line 1135.
+input line 1134.
 (pdftex.def)             Requested size: 390.0pt x 532.43059pt.
-<./Figures-Velocity-uGIMP-vs-LME-Dyka.png, id=684, 617.30624pt x 462.72874pt>
+<./Figures-Velocity-uGIMP-vs-LME-Dyka.png, id=681, 617.30624pt x 462.72874pt>
 File: ./Figures-Velocity-uGIMP-vs-LME-Dyka.png Graphic file (type png)
 <use ./Figures-Velocity-uGIMP-vs-LME-Dyka.png>
 Package pdftex.def Info: ./Figures-Velocity-uGIMP-vs-LME-Dyka.png  used on inpu
-t line 1157.
+t line 1156.
 (pdftex.def)             Requested size: 390.0pt x 292.34674pt.
-[24]
-<./Figures-Velocity-MPM-vs-OTM-Dyka.png, id=700, 617.30624pt x 462.72874pt>
+ [24]
+<./Figures-Velocity-MPM-vs-OTM-Dyka.png, id=697, 617.30624pt x 462.72874pt>
 File: ./Figures-Velocity-MPM-vs-OTM-Dyka.png Graphic file (type png)
 <use ./Figures-Velocity-MPM-vs-OTM-Dyka.png>
 Package pdftex.def Info: ./Figures-Velocity-MPM-vs-OTM-Dyka.png  used on input 
-line 1170.
+line 1169.
 (pdftex.def)             Requested size: 390.0pt x 292.34674pt.
  (./Figures-Block.tex
 Missing character: There is no ; in font nullfont!
@@ -1716,28 +1663,28 @@ Missing character: There is no ; in font nullfont!
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1194 \item
+l.1193 \item
               Initial density : $6\cdot 10^3\ kg/m^3$ <./Figures-Velocity-FE-vs
 -PCE-CFL-01.png>] [26pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1194 \item
+l.1193 \item
               Initial density : $6\cdot 10^3\ kg/m^3$ <./Figures-Velocity-LME-g
 amma-comparative.png>] [27pdfTeX warning (ext4): destination with the same iden
 tifier (name{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1194 \item
+l.1193 \item
               Initial density : $6\cdot 10^3\ kg/m^3$pdfTeX warning (ext4): des
 tination with the same identifier (name{figure.10}) has been already used, dupl
 icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1194 \item
+l.1193 \item
               Initial density : $6\cdot 10^3\ kg/m^3$ <./Figures-Velocity-uGIMP
 -vs-LME-Dyka.png> <./Figures-Velocity-MPM-vs-OTM-Dyka.png>] [28pdfTeX warning (
 ext4): destination with the same identifier (name{figure.11}) has been already 
@@ -1745,74 +1692,74 @@ used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1219 
+l.1218 
        ]
-<Figures-Block-LME3-PCE-a-t0.png, id=735, 420.57124pt x 515.9275pt>
+<Figures-Block-LME3-PCE-a-t0.png, id=732, 420.57124pt x 515.9275pt>
 File: Figures-Block-LME3-PCE-a-t0.png Graphic file (type png)
 <use Figures-Block-LME3-PCE-a-t0.png>
 Package pdftex.def Info: Figures-Block-LME3-PCE-a-t0.png  used on input line 12
-31.
+30.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures-Block-LME3-PCE-b-t025.png, id=736, 420.57124pt x 515.9275pt>
+<Figures-Block-LME3-PCE-b-t025.png, id=733, 420.57124pt x 515.9275pt>
 File: Figures-Block-LME3-PCE-b-t025.png Graphic file (type png)
 <use Figures-Block-LME3-PCE-b-t025.png>
 Package pdftex.def Info: Figures-Block-LME3-PCE-b-t025.png  used on input line 
-1234.
+1233.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<Figures-Block-LME3-PCE-c-t1.png, id=737, 420.57124pt x 515.9275pt>
+<Figures-Block-LME3-PCE-c-t1.png, id=734, 420.57124pt x 515.9275pt>
 File: Figures-Block-LME3-PCE-c-t1.png Graphic file (type png)
 <use Figures-Block-LME3-PCE-c-t1.png>
 Package pdftex.def Info: Figures-Block-LME3-PCE-c-t1.png  used on input line 12
-37.
+36.
 (pdftex.def)             Requested size: 117.00119pt x 143.52977pt.
-<./Figures-Block-CFL-01-Comparative.png, id=747, 462.528pt x 346.896pt>
+<./Figures-Block-CFL-01-Comparative.png, id=744, 462.528pt x 346.896pt>
 File: ./Figures-Block-CFL-01-Comparative.png Graphic file (type png)
 <use ./Figures-Block-CFL-01-Comparative.png>
 Package pdftex.def Info: ./Figures-Block-CFL-01-Comparative.png  used on input 
-line 1256.
+line 1255.
 (pdftex.def)             Requested size: 390.0pt x 292.5128pt.
  [29pdfTeX warning (ext4): destination with the same identifier (name{figure.12
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1263 
+l.1262 
         <./Figures-Block-LME3-PCE-a-t0.png> <./Figures-Block-LME3-PCE-b-t025.pn
 g> <./Figures-Block-LME3-PCE-c-t1.png>]
-<Figures-Velocity-FE-vs-NPC-square.png, id=764, 1568.9817pt x 998.2896pt>
+<Figures-Velocity-FE-vs-NPC-square.png, id=761, 1568.9817pt x 998.2896pt>
 File: Figures-Velocity-FE-vs-NPC-square.png Graphic file (type png)
 <use Figures-Velocity-FE-vs-NPC-square.png>
 Package pdftex.def Info: Figures-Velocity-FE-vs-NPC-square.png  used on input l
-ine 1281.
+ine 1280.
 (pdftex.def)             Requested size: 1568.97789pt x 998.28717pt.
  [30pdfTeX warning (ext4): destination with the same identifier (name{figure.13
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1287 
+l.1286 
         <./Figures-Block-CFL-01-Comparative.png>]
-<Figures-Velocity-structured-unstructured-lme-ugimp.png, id=780, 3869.8176pt x 
+<Figures-Velocity-structured-unstructured-lme-ugimp.png, id=777, 3869.8176pt x 
 3185.1798pt>
 File: Figures-Velocity-structured-unstructured-lme-ugimp.png Graphic file (type
  png)
 <use Figures-Velocity-structured-unstructured-lme-ugimp.png>
 Package pdftex.def Info: Figures-Velocity-structured-unstructured-lme-ugimp.png
-  used on input line 1295.
+  used on input line 1294.
 (pdftex.def)             Requested size: 3095.85835pt x 2548.14735pt.
  [31pdfTeX warning (ext4): destination with the same identifier (name{figure.14
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1303 
+l.1302 
         <./Figures-Velocity-FE-vs-NPC-square.png>] [32pdfTeX warning (ext4): de
 stination with the same identifier (name{figure.15}) has been already used, dup
 licate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1303 
+l.1302 
         <./Figures-Velocity-structured-unstructured-lme-ugimp.png>] [33]
 No file LME-MPM.gls.
 No file LME-MPM.acr.
@@ -1936,24 +1883,20 @@ science / article / pii /
  []
 
 ) [42]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1505.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1505.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1504.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1504.
  (./LME-MPM.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1505.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1505.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1504.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1504.
 
 Package rerunfilecheck Info: File `LME-MPM.out' has not changed.
-(rerunfilecheck)             Checksum: 8480D6C10739F3A641F2591728E9F245;1195.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1505.
+(rerunfilecheck)             Checksum: 986DEC1237FAA070EE5EDD6E28B67938;1195.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1504.
  ) 
 Here is how much of TeX's memory you used:
  29096 strings out of 480608
  559046 string characters out of 5903630
- 967566 words of memory out of 5000000
+ 968583 words of memory out of 5000000
  44091 multiletter control sequences out of 15000+600000
  549236 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2033,10 +1976,10 @@ eplaced by a fixed one
 pdfTeX warning (dest): name{glo:flip} has been referenced but does not exist, r
 eplaced by a fixed one
 
-pdfTeX warning (dest): name{glo:fem} has been referenced but does not exist, re
+pdfTeX warning (dest): name{glo:lme} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{glo:lme} has been referenced but does not exist, re
+pdfTeX warning (dest): name{glo:fem} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{glo:mpm} has been referenced but does not exist, re
@@ -2065,10 +2008,10 @@ dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/
 texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on LME-MPM.pdf (42 pages, 46735654 bytes).
+Output written on LME-MPM.pdf (42 pages, 46735437 bytes).
 PDF statistics:
- 1203 PDF objects out of 1440 (max. 8388607)
- 1072 compressed objects within 11 object streams
+ 1200 PDF objects out of 1200 (max. 8388607)
+ 1069 compressed objects within 11 object streams
  236 named destinations out of 1000 (max. 500000)
  286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

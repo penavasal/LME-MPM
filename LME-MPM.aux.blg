@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'LME-MPM.aux.blg'
+[96] biber-darwin:322> INFO - === Wed Nov 25, 2020, 11:10:47
+[290] Utils.pm:320> ERROR - Cannot find 'LME-MPM.aux.bcf'!
+[291] Biber.pm:132> INFO - ERRORS: 1
